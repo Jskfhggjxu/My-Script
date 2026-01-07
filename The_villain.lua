@@ -1,4 +1,10 @@
 -- 我就混淆啦啦啦那咋了
+-- 有些老傻逼别逗你爸笑，别以为有PermanentDeath你的hat就不会掉，除了你是服务端的永久死亡
+-- 防饰品掉落不能100%做到不掉，只能提升一点机会
+-- fixed The villain by 老人
+-- 加点老爷东西 by Tory
+-- 还有就是，这个不是完全修了翅膀，重生之后仍会spam报错(我寻思这脚本应该本来也没打算会重生)
+-- 这个是limb reanim和The villain放一起的，可以直接运行
 -- 有问题找老人去，不给CH
 -- This file was protected using Luraph Obfuscator v14.5.2 [https://lura.ph/]
 
