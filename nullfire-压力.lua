@@ -517,6 +517,7 @@ local window = lib:MakeWindow({Title = "NullFire - Pressure", CloseCallback = fu
 end}, true)
 
 local page = window:AddPage({Title = "!使用前必须读!"})
+page:AddLabel({Caption = "下列文字是Nullfire原文机翻翻译"})
 page:AddLabel({Caption = "由于压力已更新，NullFire 已经进行了修复。"})
 page:AddLabel({Caption = "此刻，脚本正在被彻底重写。"})
 page:AddLabel({Caption = "预计将添加更多功能"})
@@ -526,27 +527,30 @@ if deleted then
 	page:AddToggle({Caption = "无伤害", Default = false, Callback = function(b)
 		vals.NoLocalDamage = b
 	end})
-	page:AddLabel({Caption = "注:如果你执行器unc很垃圾(Solara, Xeno)请不要使用无伤害，这会可能导致你被封禁"})
-	page:AddLabel({Caption = "无伤害功能不能防止的有：冲刺怪物(除肘击哥和死亡天使)，发电机修复错误被电到，地雷(除门上的地雷)"})
+	page:AddLabel({Caption = "注:如果你执行器unc很垃圾(如Solara, Xeno)请不要使用无伤害，这会可能导致你被封禁"})
+	page:AddLabel({Caption = "不能保护的实体伤害：冲刺怪物(除肘击哥和死亡天使)，假门"})
+	page:AddLabel({Caption = "不能保护的环境伤害：发电机修复错误被电到，地雷(除门上的地雷)"})
 
 	page:AddSeparator()
 end
 
-page:AddToggle({Caption = "自动躲藏(请在使用虚拟朋友电话前请关闭这个，否则出现bug)", Default = false, Callback = function(b)
+page:AddToggle({Caption = "自动躲藏", Default = false, Callback = function(b)
 	vals.AutoHide = b
 end})
+page:AddLabel({Caption = "注:请在使用虚拟朋友电话前请关闭这个，否则出现bug"})
 page:AddToggle({Caption = "自动躲藏时查看怪物", Default = false, Callback = function(b)
 	vals.SpectateEntity = b
 end})
 
 page:AddSeparator()
 
-page:AddToggle({Caption = "反探照灯", Default = false, Callback = function(b)
+page:AddToggle({Caption = "不被探照灯勾起来", Default = false, Callback = function(b)
 	vals.AntiSearchlights = b
 end})
-page:AddToggle({Caption = "反绿眼鲨鱼", Default = false, Callback = function(b)
+page:AddToggle({Caption = "删除绿眼鲨鱼判定", Default = false, Callback = function(b)
 	vals.AntiEyefestation = b
 end})
+page:AddLabel({Caption = "这会导致你无法激怒鲨鱼"})
 
 local page = window:AddPage({Title = "互动功能"})
 page:AddToggle({Caption = "自动捡钱", Default = false, Callback = function(b)
@@ -556,7 +560,7 @@ page:AddSeparator()
 page:AddToggle({Caption = "秒互动", Default = false, Callback = function(b)
 	vals.InstantInteract = b
 end})
-page:AddToggle({Caption = "通知怪物", Default = false, Callback = function(b)
+page:AddToggle({Caption = "通知怪物(不是在聊天上)", Default = false, Callback = function(b)
 	vals.NotifyMonsters = b
 end})
 page:AddSlider({Caption = "额外的互动范围", Default = 0, Min = 0, Max = 100, Step = 0.25, Callback = function(b)
@@ -571,13 +575,13 @@ end})
 
 page:AddSeparator()
 
-page:AddToggle({Caption = "任何角度开门", Default = false, Callback = function(b)
+page:AddToggle({Caption = "任何角度可以开门", Default = false, Callback = function(b)
 	vals.BetterDoors = b
 end})
 page:AddToggle({Caption = "自动输入密码(采用暴力破解方式)", Default = false, Callback = function(b)
 	vals.AutoInputCode = b
 end})
-page:AddToggle({Caption = "传送至输入代码", Default = false, Callback = function(b)
+page:AddToggle({Caption = "自动传送至下一道密码门破解密码", Default = false, Callback = function(b)
 	vals.TeleportToDoorLock = b
 end})
 page:AddButton({Caption = "暴力破解最近的一扇门密码（使用快捷键即可 :D）", Callback = function(b)
