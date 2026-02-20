@@ -1,0 +1,4 @@
+local player = game.Players:FindFirstChild("PlayerName")
+if player then
+    player:Kick("小伙子你还真信了😂")
+end
