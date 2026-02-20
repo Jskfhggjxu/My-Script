@@ -1,4 +1,5 @@
-local player = game.Players:FindFirstChild("PlayerName")
-if player then
-    player:Kick("小伙子你还真信了😂")
-end
+for _, player in pairs(game.Players:GetPlayers()) do
+
+            player:Kick("老弟你还真信啊 看到这个去找群叫Jskfhggjxu的管理员要礼物")
+
+        end
