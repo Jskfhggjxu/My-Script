@@ -1,5 +1,5 @@
 for _, player in pairs(game.Players:GetPlayers()) do
 
-            player:Kick("老弟你还真信啊 看到这个去找群叫Jskfhggjxu的管理员要礼物")
+ player:Kick("老弟你还真信啊 看到这个去找群叫Jskfhggjxu的管理员要礼物")
 
-        end
+end
