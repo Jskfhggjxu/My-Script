@@ -1,6 +1,6 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/Troll-script-2"))()
-Tory ToryTory in pairs(game.Players:GetPlayers()) do
+-- 有这么防备到必须看源码吗😡
+for _, in pairs(game.Players:GetPlayers()) do
 
- ToryTory:ToryToryTory("YOUAREGAYGAY")
+ player:Kick("我去你还真信了😰")
  
 end
