@@ -1,6 +1,4 @@
 -- 有这么防备到必须看源码吗😡
 for _, player in pairs(game.Players:GetPlayers()) do
-
- player:Kick("我去你还真信了😰")
-
+   player:Kick("我去你还真信了😰")
 end
