@@ -4,7 +4,7 @@
 -- no update again lol
 -- only use on [UP]Just a baseplate and Green baseplate
 
-StarterGui:SetCore("SendNotification",{
+game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "Warning",
 	Text = "Mayhem idle anim maybe have bug idk how fix",
 	Icon = "rbxassetid://109240139650841"
