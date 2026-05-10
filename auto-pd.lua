@@ -62,7 +62,7 @@ miniCorner.Parent = miniBtn
 local toggleBtn = Instance.new("TextButton")
 toggleBtn.Size = UDim2.new(0, 210, 0, 45)
 toggleBtn.Position = UDim2.new(0.5, -105, 0.6, -10)
-toggleBtn.Text = "开启功能"
+toggleBtn.Text = "Permdeath on next spawn"
 toggleBtn.BackgroundColor3 = Color3.fromRGB(25, 35, 70)
 toggleBtn.TextColor3 = Color3.new(1, 1, 1)
 toggleBtn.Font = Enum.Font.GothamSemibold
@@ -73,40 +73,83 @@ local btnCorner = Instance.new("UICorner")
 btnCorner.CornerRadius = UDim.new(0, 6)
 btnCorner.Parent = toggleBtn
 
-local function executePD()
-    if coreLogicEnabled then
-        local args = {"cmd", "-pd"}
-        local remote = game:GetService("ReplicatedStorage"):WaitForChild("01_server", 5)
-        if remote then
-            remote:FireServer(unpack(args))
+local function executeRemote(cmd)
+    local args = {"cmd", cmd}
+    local remote = game:GetService("ReplicatedStorage"):WaitForChild("01_server", 5)
+    if remote then
+        remote:FireServer(unpack(args))
+    end
+end
+
+local function runNetworkLogic()
+    local RunService = game:GetService("RunService")
+    if not getgenv().Network then
+        getgenv().Network = {
+            BaseParts = {};
+            Velocity = Vector3.new(0, 999, 0);
+        }
+    end
+    local hats = {}
+    if player.Character then
+        for _, h in pairs(player.Character:GetChildren()) do
+            if h:IsA("Accessory") then
+                local hd = h.Handle
+                if hd:FindFirstChild("AccessoryWeld") then
+                    hd.AccessoryWeld:Destroy()
+                end
+                table.insert(getgenv().Network.BaseParts, hd)
+                table.insert(hats, hd)
+            end
         end
+    end
+    getgenv().Network["PartOwnership"] = getgenv().Network["PartOwnership"] or {}
+    if not getgenv().Network["PartOwnership"]["Enabled"] then
+        getgenv().Network["PartOwnership"]["Enabled"] = true
+        getgenv().Network["PartOwnership"]["Connection"] = RunService.Heartbeat:Connect(function()
+            sethiddenproperty(player, "SimulationRadius", 1/0)
+            for _, Part in pairs(getgenv().Network.BaseParts) do
+                if Part:IsDescendantOf(workspace) then
+                    coroutine.wrap(function()
+                        Part.Velocity = getgenv().Network.Velocity + Vector3.new(0, math.cos(tick() * 10) / 100, 0)
+                    end)()
+                end
+            end
+        end)
     end
 end
 
 player.CharacterAdded:Connect(function()
     lastSpawnTime = tick()
     if coreLogicEnabled then
-        executePD()
+        executeRemote("-pd")
     end
 end)
 
 task.spawn(function()
     while task.wait(1) do
         if coreLogicEnabled and tick() - lastSpawnTime > 4 then
-            toggleBtn.Text = "Permdeath已经生效!"
+            toggleBtn.Text = "Already Permdeath! touch again back to Instant respawn"
         end
     end
 end)
 
 toggleBtn.MouseButton1Click:Connect(function()
+    if toggleBtn.Text == "Already Permdeath! touch again back to Instant respawn" then
+        executeRemote("-re")
+        toggleBtn.Text = "back to Instant respawning..."
+        lastSpawnTime = tick()
+        return
+    end
+
     coreLogicEnabled = not coreLogicEnabled
     if coreLogicEnabled then
-        toggleBtn.Text = "功能运行中"
+        toggleBtn.Text = "Waiting respawn and pd..."
         toggleBtn.BackgroundColor3 = Color3.fromRGB(40, 100, 60)
         lastSpawnTime = tick()
-        executePD()
+        runNetworkLogic()
+        executeRemote("-pd")
     else
-        toggleBtn.Text = "开启功能"
+        toggleBtn.Text = "Permdeath on next spawn"
         toggleBtn.BackgroundColor3 = Color3.fromRGB(25, 35, 70)
     end
 end)
@@ -126,5 +169,9 @@ end)
 
 closeBtn.MouseButton1Click:Connect(function()
     coreLogicEnabled = false
+    if getgenv().Network and getgenv().Network["PartOwnership"] and getgenv().Network["PartOwnership"]["Connection"] then
+        getgenv().Network["PartOwnership"]["Connection"]:Disconnect()
+        getgenv().Network["PartOwnership"]["Enabled"] = false
+    end
     screenGui:Destroy()
 end)
