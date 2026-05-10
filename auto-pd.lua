@@ -104,7 +104,7 @@ toggleBtn.MouseButton1Click:Connect(function()
     if toggleBtn.Text == "Already Permdeath! touch again back to Instant respawn" then
         executeRemote("-re")
         coreLogicEnabled = false
-        toggleBtn.Text = "back to Instant respawning..."
+        toggleBtn.Text = "Already turn off Permdeath! touch again enabled Permdeath"
         toggleBtn.BackgroundColor3 = Color3.fromRGB(25, 35, 70)
         return
     end
