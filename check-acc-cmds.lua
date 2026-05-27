@@ -1,7 +1,6 @@
 local Players = game:GetService("Players")
 local StarterGui = game:GetService("StarterGui")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
 local localPlayer = Players.LocalPlayer
 
 local serverEvent = ReplicatedStorage:WaitForChild("01_server", 1)
@@ -14,25 +13,25 @@ if not serverEvent then
             Duration = 5
         })
     end)
-    return
+    return false -- 没有找到事件，直接返回失败
 end
 
-local args = {
-    "cmd",
-    "-rs"
-}
+-- 发送重置命令
+local args = {"cmd", "-rs"}
 serverEvent:FireServer(unpack(args))
 
 local hasReset = false
-local connection
+local isChecked = false -- 用来标记是否检测完毕
 
+local connection
 connection = localPlayer.CharacterAdded:Connect(function(newCharacter)
     hasReset = true
+    isChecked = true
     
     pcall(function()
         StarterGui:SetCore("SendNotification", {
             Title = "NOTE",
-            Text = "Your account can use cmds!Loading...",
+            Text = "Your account can use cmds!",
             Duration = 5
         })
     end)
@@ -43,8 +42,9 @@ connection = localPlayer.CharacterAdded:Connect(function(newCharacter)
     end
 end)
 
-task.delay(1, function()
+task.delay(0.5, function()
     if not hasReset then
+        isChecked = true
         pcall(function()
             StarterGui:SetCore("SendNotification", {
                 Title = "NOTE",
@@ -59,3 +59,9 @@ task.delay(1, function()
         end
     end
 end)
+
+while not isChecked do
+    task.wait()
+end
+
+return hasReset
