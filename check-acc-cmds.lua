@@ -1,16 +1,7 @@
 local Players = game:GetService("Players")
 local StarterGui = game:GetService("StarterGui")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local GroupService = game:GetService("GroupService")
 local localPlayer = Players.LocalPlayer
-
-local function promptGroup()
-    task.spawn(function()
-        pcall(function()
-            GroupService:PromptGroupJoinAsync(localPlayer, 34901800)
-        end)
-    end)
-end
 
 local serverEvent = ReplicatedStorage:WaitForChild("01_server", 1)
 
@@ -22,7 +13,6 @@ if not serverEvent then
             Duration = 5
         })
     end)
-    promptGroup()
     return false
 end
 
