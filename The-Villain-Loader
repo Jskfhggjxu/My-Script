@@ -1,5 +1,6 @@
 local success = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/check-acc-cmds.lua"))()
 if success then
+    getgenv().SCRIPT_KEY = ""
     loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/ec955a96d2ae1e22f9ae06407ec0f5e2ffe6f49833f37d030695248706960df7/download"))()
 else
     return
