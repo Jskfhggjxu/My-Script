@@ -9,7 +9,7 @@ if not serverEvent then
     pcall(function()
         StarterGui:SetCore("SendNotification", {
             Title = "NOTE",
-            Text = "Youre not on just a baseplate execute script!",
+            Text = "Youre not on Just a baseplate execute script!",
             Duration = 5
         })
     end)
@@ -30,7 +30,7 @@ connection = localPlayer.CharacterAdded:Connect(function(newCharacter)
     pcall(function()
         StarterGui:SetCore("SendNotification", {
             Title = "NOTE",
-            Text = "checked,Loading...",
+            Text = "checked,Loading loader...",
             Duration = 5
         })
     end)
@@ -57,7 +57,7 @@ task.delay(0.5, function()
         pcall(function()
             StarterGui:SetCore("SendNotification", {
                 Title = "NOTE",
-                Text = "Join game group to use script!",
+                Text = "Join game group to use script!\ngroup link copied!",
                 Duration = 5
             })
         end)
@@ -66,7 +66,7 @@ task.delay(0.5, function()
             connection:Disconnect()
             connection = nil
         end
-        promptGroup()
+        setclipboard(https://www.roblox.com/communities/34901800/The-Local-Maze)
     end
 end)
 
