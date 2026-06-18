@@ -19,7 +19,7 @@ local files = {
         "Dance On The Mars.mp3", "Dark Matter.mp3", "Deorc Decuple.mp3", "Dimension.mp3",
         "EQUINOX.mp3", "Epistula Noctis.mp3", "Gaia.mp3", "Hall.mp3", "Hyper Hexed Hero.mp3",
         "I Am Unbreakable.mp3", "Jvnko Still Loves You.mp3", "Lexapro Doesn't Work.mp3",
-        "Lux.mp3", "MAKE A SCENE!.mp3", "Nhelv.mp3", "Pandemonium.mp3", "README.md",
+        "Lux.mp3", "MAKE A SCENE!.mp3", "Nhelv.mp3", "Pandemonium.mp3",
         "Rainshower.mp3", "Restless.mp3", "Robotic.mp3", "Scarlet Night.mp3", "Shriek.mp3",
         "Synthesis.mp3", "The Rain.mp3", "Tides.mp3", "Treasures.mp3", "Twisted.mp3",
         "massacre.mp3", "star.png"

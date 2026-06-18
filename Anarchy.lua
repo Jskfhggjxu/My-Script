@@ -11,7 +11,7 @@ local UserConfig = {
         TextColor = Color3.fromRGB(293, 115, 222),
         HighlightColor = Color3.fromRGB(293, 155, 222),
     },
-    [""] = {
+    ["Theo_TheoBenzo"] = {
         Text = "🤯omg script owner🤯",
         TextColor = Color3.fromRGB(255, 215, 0),
         HighlightColor = Color3.fromRGB(255, 215, 0),
@@ -91,7 +91,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
             Title = "Notification";
             Text = "press f9 to check modes";
             Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
-        Duration = 20;
+        Duration = 30;
 
 local modes = {
     "1 - Iviriza",
