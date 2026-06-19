@@ -85,7 +85,7 @@ Players.PlayerAdded:Connect(onPlayerAdded)
 
 game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("Axirian or smth idk glitcher by theo")
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Jskfhggjxu/deltakeybord/refs/heads/main/DeltaKeyboard.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/VirtualKeyboard.lua"))()
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
             Title = "Notification";
