@@ -20530,11 +20530,8 @@ local ToggleGui=MainMainFrame1.Parent["ToggleGui"]
 local Players=game.Players
 local rus=game:GetService('RunService')
 local PostSimulation=rus.PostSimulation
-local userId = Players:GetUserIdFromNameAsync("TH33NERGIZER")
 local thumbType = Enum.ThumbnailType.HeadShot
 local thumbSize = Enum.ThumbnailSize.Size420x420
-local content = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
-CredsImage.Image=content
 
 local CanvasShown=BetterTween(Canvas,1.5,{Position=u2(0, 0, 0, 12)})
 local CanvasHidden=BetterTween(Canvas,1.5,{Position=u2(0, 0, 0, 500)},"Back")
