@@ -1,4 +1,4 @@
--- script by Chinese community someone and Gemini
+-- Orbit Tool System V4.4
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local CoreGui = game:GetService("CoreGui")
@@ -19,6 +19,8 @@ local movers = {}
 local connections = {}
 local toolNames = {}
 local lastResyncTime = {}
+
+getgenv().OrbitAccBlacklist = getgenv().OrbitAccBlacklist or {}
 
 local offset = 8
 local speed = 1
@@ -109,17 +111,12 @@ function setupOrbitingItem(item, handle)
     ap.Attachment1 = Instance.new("Attachment", p)
 
     movers[handle] = { align = ap, angular = av }
-
     handle.CFrame = p.CFrame
 
     task.defer(function()
-        if handle and handle.Parent then
-            handle.CFrame = p.CFrame
-        end
+        if handle and handle.Parent then handle.CFrame = p.CFrame end
         task.wait(0.05)
-        if handle and handle.Parent then
-            handle.CFrame = p.CFrame
-        end
+        if handle and handle.Parent then handle.CFrame = p.CFrame end
     end)
 end
 
@@ -130,6 +127,9 @@ function setupTool(v)
 end
 
 function setupAccessory(v)
+    if getgenv().OrbitAccBlacklist[v.Name] then
+        return 
+    end
     local h = v:FindFirstChild("Handle")
     if h then setupOrbitingItem(v, h) end
 end
@@ -167,9 +167,7 @@ end
 function addAllExistingTools()
     if not toolsEnabled then return end
     for _, v in ipairs(chr:GetChildren()) do
-        if v:IsA("Tool") then
-            setupTool(v)
-        end
+        if v:IsA("Tool") then setupTool(v) end
     end
 end
 
@@ -226,10 +224,124 @@ local function createButtonGUI()
     title.Size = UDim2.new(1, -60, 1, 0)
     title.Position = UDim2.new(0, 8, 0, 0)
     title.BackgroundTransparency = 1
-    title.Text = "Orbit Ctrl"
+    title.Text = "Orbit Ctrl V4.4"
     title.TextColor3 = Color3.new(1, 1, 1)
     title.Font = Enum.Font.GothamBold
     title.TextSize = 13
+
+    local blMenu = Instance.new("Frame", screenGui)
+    blMenu.Size = UDim2.new(0, 280, 0, 350)
+    blMenu.Position = UDim2.new(0.5, 0, 0.5, 0)
+    blMenu.AnchorPoint = Vector2.new(0.5, 0.5)
+    blMenu.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+    blMenu.BackgroundTransparency = 0.1
+    blMenu.BorderSizePixel = 0
+    blMenu.Visible = false
+    blMenu.Active = true
+    blMenu.Draggable = true
+    Instance.new("UICorner", blMenu).CornerRadius = UDim.new(0, 8)
+    Instance.new("UIStroke", blMenu).Color = Color3.fromRGB(60, 60, 60)
+
+    local blTitleBar = Instance.new("Frame", blMenu)
+    blTitleBar.Size = UDim2.new(1, 0, 0, 30)
+    blTitleBar.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+    blTitleBar.BorderSizePixel = 0
+    Instance.new("UICorner", blTitleBar).CornerRadius = UDim.new(0, 8)
+
+    local blTitle = Instance.new("TextLabel", blTitleBar)
+    blTitle.Size = UDim2.new(1, -40, 1, 0)
+    blTitle.Position = UDim2.new(0, 12, 0, 0)
+    blTitle.BackgroundTransparency = 1
+    blTitle.Text = "Accs blacklist"
+    blTitle.TextColor3 = Color3.new(1, 1, 1)
+    blTitle.Font = Enum.Font.GothamBold
+    blTitle.TextSize = 13
+    blTitle.TextXAlignment = Enum.TextXAlignment.Left
+
+    local blCloseBtn = Instance.new("TextButton", blTitleBar)
+    blCloseBtn.Size = UDim2.new(0, 22, 0, 22)
+    blCloseBtn.Position = UDim2.new(1, -26, 0.5, -11)
+    blCloseBtn.Text = "✕"
+    blCloseBtn.BackgroundColor3 = Color3.fromRGB(150, 40, 40)
+    blCloseBtn.TextColor3 = Color3.new(1, 1, 1)
+    blCloseBtn.Font = Enum.Font.GothamBold
+    blCloseBtn.TextSize = 11
+    Instance.new("UICorner", blCloseBtn).CornerRadius = UDim.new(0, 4)
+    blCloseBtn.MouseButton1Click:Connect(function() blMenu.Visible = false end)
+
+    local blScroll = Instance.new("ScrollingFrame", blMenu)
+    blScroll.Size = UDim2.new(1, -16, 1, -42)
+    blScroll.Position = UDim2.new(0, 8, 0, 36)
+    blScroll.BackgroundTransparency = 1
+    blScroll.BorderSizePixel = 0
+    blScroll.CanvasSize = UDim2.new(0, 0, 0, 0)
+    blScroll.ScrollBarThickness = 4
+
+    local blLayout = Instance.new("UIListLayout", blScroll)
+    blLayout.Padding = UDim.new(0, 4)
+    blLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+    local function refreshBlacklistMenu()
+        for _, child in ipairs(blScroll:GetChildren()) do
+            if child:IsA("Frame") then child:Destroy() end
+        end
+        
+        if not chr then return end
+        
+        for _, child in ipairs(chr:GetChildren()) do
+            if child:IsA("Accessory") then
+                local accName = child.Name
+                
+                local itemRow = Instance.new("Frame", blScroll)
+                itemRow.Size = UDim2.new(1, -4, 0, 32)
+                itemRow.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+                itemRow.BorderSizePixel = 0
+                Instance.new("UICorner", itemRow).CornerRadius = UDim.new(0, 4)
+
+                local nameLabel = Instance.new("TextLabel", itemRow)
+                nameLabel.Size = UDim2.new(1, -70, 1, 0)
+                nameLabel.Position = UDim2.new(0, 8, 0, 0)
+                nameLabel.BackgroundTransparency = 1
+                nameLabel.Text = accName
+                nameLabel.TextColor3 = Color3.fromRGB(220, 220, 220)
+                nameLabel.Font = Enum.Font.Gotham
+                nameLabel.TextSize = 11
+                nameLabel.TextXAlignment = Enum.TextXAlignment.Left
+                nameLabel.ClipsDescendants = true
+
+                local statusBtn = Instance.new("TextButton", itemRow)
+                statusBtn.Size = UDim2.new(0, 55, 0, 22)
+                statusBtn.Position = UDim2.new(1, -60, 0.5, -11)
+                statusBtn.Font = Enum.Font.GothamBold
+                statusBtn.TextSize = 10
+                Instance.new("UICorner", statusBtn).CornerRadius = UDim.new(0, 4)
+
+                local function updateBtnStyle()
+                    if getgenv().OrbitAccBlacklist[accName] then
+                        statusBtn.Text = "blacked"
+                        statusBtn.BackgroundColor3 = Color3.fromRGB(150, 40, 40)
+                        statusBtn.TextColor3 = Color3.new(1, 1, 1)
+                    else
+                        statusBtn.Text = "Normally"
+                        statusBtn.BackgroundColor3 = Color3.fromRGB(40, 120, 40)
+                        statusBtn.TextColor3 = Color3.new(1, 1, 1)
+                    end
+                end
+
+                updateBtnStyle()
+
+                statusBtn.MouseButton1Click:Connect(function()
+                    if getgenv().OrbitAccBlacklist[accName] then
+                        getgenv().OrbitAccBlacklist[accName] = nil
+                    else
+                        getgenv().OrbitAccBlacklist[accName] = true
+                    end
+                    updateBtnStyle()
+                end)
+            end
+        end
+        blScroll.CanvasSize = UDim2.new(0, 0, 0, blLayout.AbsoluteContentSize.Y + 10)
+    end
 
     local minimizeBtn = Instance.new("TextButton", titleBar)
     minimizeBtn.Size = UDim2.new(0, 20, 0, 20)
@@ -242,7 +354,7 @@ local function createButtonGUI()
     Instance.new("UICorner", minimizeBtn).CornerRadius = UDim.new(0, 4)
     minimizeBtn.MouseButton1Click:Connect(function()
         minimized = not minimized
-        minimizeBtn.Text = minimized and "+" or "−"
+        minimizeBtn.Text = minimized and "＋" or "−"
         content.Visible = not minimized
         mainFrame.Size = UDim2.new(0, BASE_WIDTH, 0, minimized and TITLEBAR_HEIGHT or (TITLEBAR_HEIGHT + contentRequiredHeight))
         mainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -260,7 +372,7 @@ local function createButtonGUI()
     closeBtn.MouseButton1Click:Connect(function()
         guiVisible = false
         mainFrame.Visible = false
-        toggleBall.Visible = true
+        blMenu.Visible = false
     end)
 
     local content = Instance.new("Frame", mainFrame)
@@ -323,14 +435,8 @@ local function createButtonGUI()
             valueBox.Text = tostring(newVal)
         end
 
-        btnMinus.MouseButton1Click:Connect(function()
-            local cur = getFunc()
-            updateValue(cur - step)
-        end)
-        btnPlus.MouseButton1Click:Connect(function()
-            local cur = getFunc()
-            updateValue(cur + step)
-        end)
+        btnMinus.MouseButton1Click:Connect(function() updateValue(getFunc() - step) end)
+        btnPlus.MouseButton1Click:Connect(function() updateValue(getFunc() + step) end)
         valueBox.FocusLost:Connect(function()
             local num = tonumber(valueBox.Text)
             if num ~= nil then updateValue(num) else valueBox.Text = tostring(getFunc()) end
@@ -340,8 +446,8 @@ local function createButtonGUI()
     end
 
     addInputRow("Distance", function() return offset end, function(v) offset = v end, 1, 1, true)
-    addInputRow("Orbit Spd", function() return speed end, function(v) speed = v end, 0.5, nil, true)
-    addInputRow("Spin Spd", function() return toolRotSpeed end, function(v) toolRotSpeed = v end, 0.5, nil, true)
+    addInputRow("Orbit speed", function() return speed end, function(v) speed = v end, 0.5, nil, true)
+    addInputRow("Spin speed", function() return toolRotSpeed end, function(v) toolRotSpeed = v end, 0.5, nil, true)
     addInputRow("Smoothness", function() return lerpSpeed end, function(v) lerpSpeed = v end, 0.5, 0.1, true)
 
     local modeRow = Instance.new("Frame", content)
@@ -352,7 +458,7 @@ local function createButtonGUI()
     local modeLbl = Instance.new("TextLabel", modeRow)
     modeLbl.Size = UDim2.new(0, 55, 1, 0)
     modeLbl.BackgroundTransparency = 1
-    modeLbl.Text = "Orbit Mode"
+    modeLbl.Text = "Modes"
     modeLbl.TextColor3 = Color3.fromRGB(200, 200, 200)
     modeLbl.Font = Enum.Font.Gotham
     modeLbl.TextSize = 11
@@ -412,7 +518,7 @@ local function createButtonGUI()
     targetInput.Position = UDim2.new(0, 0, 0.5, -10)
     targetInput.BackgroundColor3 = Color3.fromRGB(40,40,40)
     targetInput.TextColor3 = Color3.new(1,1,1)
-    targetInput.PlaceholderText = "Player Name"
+    targetInput.PlaceholderText = "display/user name"
     targetInput.PlaceholderColor3 = Color3.fromRGB(150,150,150)
     targetInput.Font = Enum.Font.Code
     targetInput.TextSize = 11
@@ -422,7 +528,7 @@ local function createButtonGUI()
     local btnLock = Instance.new("TextButton", targetRow)
     btnLock.Size = UDim2.new(0, 40, 0, 20)
     btnLock.Position = UDim2.new(0, 94, 0.5, -10)
-    btnLock.Text = "Lock"
+    btnLock.Text = "lock plr"
     btnLock.BackgroundColor3 = Color3.fromRGB(255, 180, 0)
     btnLock.TextColor3 = Color3.new(0,0,0)
     btnLock.Font = Enum.Font.GothamBold
@@ -432,7 +538,7 @@ local function createButtonGUI()
     local btnSelf = Instance.new("TextButton", targetRow)
     btnSelf.Size = UDim2.new(0, 40, 0, 20)
     btnSelf.Position = UDim2.new(0, 138, 0.5, -10)
-    btnSelf.Text = "Self"
+    btnSelf.Text = "lock self"
     btnSelf.BackgroundColor3 = Color3.fromRGB(80,80,80)
     btnSelf.TextColor3 = Color3.new(1,1,1)
     btnSelf.Font = Enum.Font.Gotham
@@ -466,7 +572,7 @@ local function createButtonGUI()
 
     local btnToolsToggle = Instance.new("TextButton", row1)
     btnToolsToggle.Size = UDim2.new(0, 60, 1, 0)
-    btnToolsToggle.Text = toolsEnabled and "Tools:ON" or "Tools:OFF"
+    btnToolsToggle.Text = toolsEnabled and "use tool:on" or "use tool:off"
     btnToolsToggle.BackgroundColor3 = toolsEnabled and Color3.fromRGB(0, 130, 80) or Color3.fromRGB(130, 50, 50)
     btnToolsToggle.TextColor3 = Color3.new(1,1,1)
     btnToolsToggle.Font = Enum.Font.GothamBold
@@ -474,19 +580,15 @@ local function createButtonGUI()
     Instance.new("UICorner", btnToolsToggle).CornerRadius = UDim.new(0,4)
     btnToolsToggle.MouseButton1Click:Connect(function()
         toolsEnabled = not toolsEnabled
-        btnToolsToggle.Text = toolsEnabled and "Tools:ON" or "Tools:OFF"
+        btnToolsToggle.Text = toolsEnabled and "use tool:on" or "use tool:off"
         btnToolsToggle.BackgroundColor3 = toolsEnabled and Color3.fromRGB(0, 130, 80) or Color3.fromRGB(130, 50, 50)
-        if not toolsEnabled then
-            removeAllTools()
-        else
-            addAllExistingTools()
-        end
+        if not toolsEnabled then removeAllTools() else addAllExistingTools() end
     end)
 
     local btnEquipAll = Instance.new("TextButton", row1)
     btnEquipAll.Position = UDim2.new(0, 65, 0, 0)
     btnEquipAll.Size = UDim2.new(0, 50, 1, 0)
-    btnEquipAll.Text = "Equip"
+    btnEquipAll.Text = "equip tools"
     btnEquipAll.BackgroundColor3 = Color3.fromRGB(0, 130, 80)
     btnEquipAll.TextColor3 = Color3.new(1,1,1)
     btnEquipAll.Font = Enum.Font.GothamBold
@@ -501,7 +603,7 @@ local function createButtonGUI()
     local btnUnequipAll = Instance.new("TextButton", row1)
     btnUnequipAll.Position = UDim2.new(0, 120, 0, 0)
     btnUnequipAll.Size = UDim2.new(0, 50, 1, 0)
-    btnUnequipAll.Text = "Drop"
+    btnUnequipAll.Text = "unequip tools"
     btnUnequipAll.BackgroundColor3 = Color3.fromRGB(180, 60, 60)
     btnUnequipAll.TextColor3 = Color3.new(1,1,1)
     btnUnequipAll.Font = Enum.Font.GothamBold
@@ -521,8 +623,8 @@ local function createButtonGUI()
     row2.BackgroundTransparency = 1
 
     local btnCaptureAccessories = Instance.new("TextButton", row2)
-    btnCaptureAccessories.Size = UDim2.new(0, 80, 1, 0)
-    btnCaptureAccessories.Text = "Get Accs"
+    btnCaptureAccessories.Size = UDim2.new(0, 62, 1, 0)
+    btnCaptureAccessories.Text = "use Accs"
     btnCaptureAccessories.BackgroundColor3 = Color3.fromRGB(100, 100, 200)
     btnCaptureAccessories.TextColor3 = Color3.new(1,1,1)
     btnCaptureAccessories.Font = Enum.Font.GothamBold
@@ -547,11 +649,27 @@ local function createButtonGUI()
         end)
     end)
 
+    local btnBlacklistToggle = Instance.new("TextButton", row2)
+    btnBlacklistToggle.Position = UDim2.new(0, 66, 0, 0)
+    btnBlacklistToggle.Size = UDim2.new(0, 72, 1, 0)
+    btnBlacklistToggle.Text = "Accs blacklist"
+    btnBlacklistToggle.BackgroundColor3 = Color3.fromRGB(140, 90, 20)
+    btnBlacklistToggle.TextColor3 = Color3.new(1,1,1)
+    btnBlacklistToggle.Font = Enum.Font.GothamBold
+    btnBlacklistToggle.TextSize = 10
+    Instance.new("UICorner", btnBlacklistToggle).CornerRadius = UDim.new(0,4)
+    btnBlacklistToggle.MouseButton1Click:Connect(function()
+        blMenu.Visible = not blMenu.Visible
+        if blMenu.Visible then
+            refreshBlacklistMenu()
+        end
+    end)
+
     local stopConfirm = false
     local btnStop = Instance.new("TextButton", row2)
-    btnStop.Position = UDim2.new(1, -55, 0, 0)
-    btnStop.Size = UDim2.new(0, 55, 1, 0)
-    btnStop.Text = "Stop"
+    btnStop.Position = UDim2.new(1, -50, 0, 0)
+    btnStop.Size = UDim2.new(0, 50, 1, 0)
+    btnStop.Text = "stop"
     btnStop.BackgroundColor3 = Color3.fromRGB(200, 0, 0)
     btnStop.TextColor3 = Color3.new(1,1,1)
     btnStop.Font = Enum.Font.GothamBold
@@ -560,11 +678,11 @@ local function createButtonGUI()
     btnStop.MouseButton1Click:Connect(function()
         if not stopConfirm then
             stopConfirm = true
-            btnStop.Text = "Sure?"
+            btnStop.Text = "sure?"
             task.delay(2, function()
                 if btnStop and btnStop.Parent then
                     stopConfirm = false
-                    btnStop.Text = "Stop"
+                    btnStop.Text = "stop"
                 end
             end)
         else
@@ -585,7 +703,6 @@ local function createButtonGUI()
     toggleBall.Position = UDim2.new(1, -57, 1, -57)
     toggleBall.BackgroundTransparency = 1
     toggleBall.Image = "rbxassetid://0"
-    toggleBall.ImageColor3 = Color3.fromRGB(255, 255, 255)
     toggleBall.ImageTransparency = 0.65
     toggleBall.Active = true
     Instance.new("UICorner", toggleBall).CornerRadius = UDim.new(1, 0)
@@ -597,15 +714,15 @@ local function createButtonGUI()
     local ballLabel = Instance.new("TextLabel", toggleBall)
     ballLabel.Size = UDim2.new(1, 0, 1, 0)
     ballLabel.BackgroundTransparency = 1
-    ballLabel.Text = "⏻"
+    ballLabel.Text = "X"
     ballLabel.TextColor3 = Color3.new(1,1,1)
     ballLabel.Font = Enum.Font.GothamBold
     ballLabel.TextSize = 18
-    ballLabel.TextStrokeTransparency = 0.5
 
     toggleBall.MouseButton1Click:Connect(function()
         guiVisible = not guiVisible
         mainFrame.Visible = guiVisible
+        if not guiVisible then blMenu.Visible = false end
     end)
 
     UserInputService.InputBegan:Connect(function(input, gameProcessed)
@@ -613,6 +730,7 @@ local function createButtonGUI()
         if input.KeyCode == Enum.KeyCode.RightShift then
             guiVisible = not guiVisible
             mainFrame.Visible = guiVisible
+            if not guiVisible then blMenu.Visible = false end
         end
     end)
 end
@@ -635,18 +753,14 @@ local function bindToolAdded()
     if toolAddedConnection then toolAddedConnection:Disconnect() end
     toolAddedConnection = chr.ChildAdded:Connect(function(c)
         task.wait()
-        if c:IsA("Tool") and toolsEnabled then
-            setupTool(c)
-        end
+        if c:IsA("Tool") and toolsEnabled then setupTool(c) end
     end)
 end
 bindToolAdded()
 
 if toolsEnabled then
     for _, v in ipairs(chr:GetChildren()) do
-        if v:IsA("Tool") then
-            setupTool(v)
-        end
+        if v:IsA("Tool") then setupTool(v) end
     end
 end
 
@@ -741,9 +855,7 @@ RunService.RenderStepped:Connect(function(dt)
     end
 end)
 
-if hrp then
-    lastHRPPos = hrp.Position
-end
+if hrp then lastHRPPos = hrp.Position end
 
 RunService.Stepped:Connect(function()
     pcall(function() settings().Physics.AllowSleep = false end)
@@ -813,15 +925,11 @@ plr.CharacterAdded:Connect(function(c)
     hrp = c.HumanoidRootPart
     bp = plr:WaitForChild("Backpack")
 
-    for _, p in ipairs(orbitParts) do
-        p:Destroy()
-    end
+    for _, p in ipairs(orbitParts) do p:Destroy() end
     for _, h in ipairs(handles) do
         if connections[h] then connections[h]:Disconnect() end
-        if movers[h] then
-            if movers[h].align then movers[h].align:Destroy() end
-            if movers[h].angular then movers[h].angular:Destroy() end
-        end
+        if movers[h] and movers[h].align then movers[h].align:Destroy() end
+        if movers[h] and movers[h].angular then movers[h].angular:Destroy() end
     end
     table.clear(handles)
     table.clear(orbitParts)
@@ -839,16 +947,12 @@ plr.CharacterAdded:Connect(function(c)
     if toolAddedConnection then toolAddedConnection:Disconnect() end
     toolAddedConnection = chr.ChildAdded:Connect(function(child)
         task.wait()
-        if child:IsA("Tool") and toolsEnabled then
-            setupTool(child)
-        end
+        if child:IsA("Tool") and toolsEnabled then setupTool(child) end
     end)
 
     if toolsEnabled then
         for _, v in ipairs(c:GetChildren()) do
-            if v:IsA("Tool") then
-                setupTool(v)
-            end
+            if v:IsA("Tool") then setupTool(v) end
         end
     end
 end)
