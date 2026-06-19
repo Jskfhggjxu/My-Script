@@ -13,11 +13,11 @@ local UserConfig = {
     },
     ["samjonas30"] = {
         Text = "🤯omg script owner🤯",
-        TextColor = Color3.fromRGB(255, 215, 0),
-        HighlightColor = Color3.fromRGB(255, 215, 0),
+        TextColor = Color3.fromRGB(255, 255, 255),
+        HighlightColor = Color3.fromRGB(0, 0, 204),
     },
     ["Theo_TheoBenzo"] = {
-        Text = "glitcher builder👀",
+        Text = "cool guy👀",
         TextColor = Color3.fromRGB(255, 215, 0),
         HighlightColor = Color3.fromRGB(255, 215, 0),
     },
@@ -94,7 +94,7 @@ end
 
 Players.PlayerAdded:Connect(onPlayerAdded)
 
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("Axirian or smth idk glitcher by theo")
+game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("Axirian glitcher by theo & sam")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/VirtualKeyboard.lua"))()
 
@@ -138,7 +138,7 @@ local modes = {
     "0 - Axius"
 }
 
-print("=== Total Modes: " .. #modes .. " ===")
+print("===Modes: " .. #modes .. " ===")
 for _, modeName in ipairs(modes) do
     print(modeName)
 end
