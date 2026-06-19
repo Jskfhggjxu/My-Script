@@ -129,13 +129,13 @@ local modes = {
     "7 - Nholiviction  -- (Nhelv)",
     "7+M - Cascade",
     "7+N - Zionlihilic",
-    "7+R - Vergence  -- [Hide mode]",
     "8 - Layers  -- (Equinox) (omg this a equinox from sols rng 衡衡衡衡衡衡衡衡衡衡衡)",
     "8+M - Fatal  -- ⚠️Photosensitive epilepsy Warning⚠️",
     "9 - Anarchus & 9+R Different animation",
     "9+M - Sentiel",
     "9+N - Arithios",
     "0 - Axius"
+    "33 modes, try find 3 hide mode!😈"
 }
 
 print("===Modes: " .. #modes .. " ===")
@@ -350,7 +350,7 @@ local Modes={
   {Name="Delisium",WingAnim="Delisium",MusicTitle="Lexapro Doesn't Work",Music="Lexapro Doesn't Work",HHeight=12,Author="Cythoni",ActualName="Arius"},
   {Name="Restless",WingAnim="Restless",MusicTitle="Restless",Music="Restless",HHeight=0,Author="Creo",ActualName="Restless"},
   {Name="HYPERINTERVENTIC",WingAnim="HYPERINTERVENTIC",MusicTitle="Cheatreal #TPZREMAKE",Music="Cheatreal1",HHeight=10,Author="t+pazolite",ActualName="Hyperwork"},
-  {Name="Parallax",WingAnim="Parallax",MusicTitle="Panorama",Music="Panorama",HHeight=0,Author="Artcore",ActualName="Parallax"},
+  {Name="Parallax",WingAnim="Parallax",MusicTitle="Panorama",Music="Panorama",HHeight=0,Author="Artcore | fishisuso",ActualName="Parallax"},
   {Name="Horion",WingAnim="Horion",MusicTitle="Hyper Hexed Hero",Music="Hyper Hexed Hero",HHeight=7,Author="Kobaryo",ActualName="Horiozin"},
   {Name="Zionihilic",WingAnim="Zionihilic",MusicTitle="MAKE A SCENE!",Music="MAKE A SCENE!",HHeight=10,Author="Z∅MB",ActualName="Zion"},
   {Name="Axius",WingAnim="Axius",MusicTitle="Jvnko Still Loves You",Music="Jvnko Still Loves You",HHeight=7,Author="Sewerslvt",ActualName="Axirian"},
