@@ -11,8 +11,13 @@ local UserConfig = {
         TextColor = Color3.fromRGB(293, 115, 222),
         HighlightColor = Color3.fromRGB(293, 155, 222),
     },
-    ["Theo_TheoBenzo"] = {
+    ["samjonas30"] = {
         Text = "🤯omg script owner🤯",
+        TextColor = Color3.fromRGB(255, 215, 0),
+        HighlightColor = Color3.fromRGB(255, 215, 0),
+    },
+    ["Theo_TheoBenzo"] = {
+        Text = "glitcher builder👀",
         TextColor = Color3.fromRGB(255, 215, 0),
         HighlightColor = Color3.fromRGB(255, 215, 0),
     },
@@ -21,8 +26,12 @@ local UserConfig = {
 }
 
 local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
 
 local function applyEffects(player, character)
+
+    if player == LocalPlayer then return end
+
     local config = UserConfig[player.Name]
     if not config then return end
 
@@ -65,8 +74,10 @@ local function applyEffects(player, character)
 end
 
 local function onPlayerAdded(player)
-    if UserConfig[player.Name] then
 
+    if player == LocalPlayer then return end
+
+    if UserConfig[player.Name] then
         player.CharacterAdded:Connect(function(character)
             applyEffects(player, character)
         end)
