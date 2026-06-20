@@ -3,7 +3,7 @@ if not isfolder("Axirian Assets/VFX") then makefolder("Axirian Assets/VFX") end
 
 local baseUrl = "https://raw.githubusercontent.com/Jskfhggjxu/Axirian-glicher-Assets/main/"
 local execScript = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/Anarchy.lua"))()
+    loadstring(game:HttpGet("https://github.com/Jskfhggjxu/My-Script/blob/main/Anarchy.lua?raw=true"))()
 end
 
 local files = {
