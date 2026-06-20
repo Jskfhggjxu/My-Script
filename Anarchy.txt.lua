@@ -1,9 +1,25 @@
 if not isfolder("Axirian Assets") then makefolder("Axirian Assets") end
 if not isfolder("Axirian Assets/VFX") then makefolder("Axirian Assets/VFX") end
+if not isfolder("Axirian Assets/Script") then makefolder("Axirian Assets/Script") end
 
 local baseUrl = "https://raw.githubusercontent.com/Jskfhggjxu/Axirian-glicher-Assets/main/"
+local scriptPath = "Axirian Assets/Script/Anarchy.lua"
+local scriptUrl = "https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/Anarchy.lua"
+
 local execScript = function()
-    loadstring(game:HttpGet("https://github.com/Jskfhggjxu/My-Script/blob/main/Anarchy.lua?raw=true"))()
+    local success, content = pcall(function()
+        return readfile(scriptPath)
+    end)
+    if success and content then
+        local func, err = loadstring(content)
+        if func then
+            func()
+        else
+            warn("Failed to compile script: " .. tostring(err))
+        end
+    else
+        warn("Failed to read local script file.")
+    end
 end
 
 local files = {
@@ -28,24 +44,32 @@ local files = {
 
 local missingFiles = {}
 
-for _, fileName in ipairs(files.VFX) do
-    local path = "Axirian Assets/VFX/" .. fileName
+local function cleanString(str)
+    return str:gsub("[\128-\191]", ""):gsub("%s+$", ""):gsub("^%s+", "")
+end
+
+for i, v in ipairs(files.VFX) do
+    files.VFX[i] = cleanString(v)
+    local path = "Axirian Assets/VFX/" .. files.VFX[i]
     if not isfile(path) then
-        table.insert(missingFiles, {name = fileName, path = path})
+        table.insert(missingFiles, {name = files.VFX[i], path = path, isMain = false})
     end
 end
 
-for _, fileName in ipairs(files.Root) do
-    local path = "Axirian Assets/" .. fileName
+for i, v in ipairs(files.Root) do
+    files.Root[i] = cleanString(v)
+    local path = "Axirian Assets/" .. files.Root[i]
     if not isfile(path) then
-        table.insert(missingFiles, {name = fileName, path = path})
+        table.insert(missingFiles, {name = files.Root[i], path = path, isMain = false})
     end
 end
 
-if #missingFiles == 0 then
-    execScript()
-    return
-end
+table.insert(missingFiles, {
+    name = "Anarchy.lua", 
+    path = scriptPath, 
+    url = scriptUrl,
+    isMain = true
+})
 
 local CoreGui = game:GetService("CoreGui")
 local TweenService = game:GetService("TweenService")
@@ -89,14 +113,14 @@ StatusLabel.Parent = MainFrame
 
 task.spawn(function()
     for i, fileInfo in ipairs(missingFiles) do
-        local fileUrl = baseUrl .. game:GetService("HttpService"):UrlEncode(fileInfo.name)
+        local fileUrl = fileInfo.isMain and fileInfo.url or (baseUrl .. game:GetService("HttpService"):UrlEncode(fileInfo.name))
         StatusLabel.Text = string.format("Downloading (%d/%d): %s", i, #missingFiles, fileInfo.name)
         
         local success, content = pcall(function()
             return game:HttpGet(fileUrl)
         end)
         
-        if success and content then
+        if success and content and #content > 0 then
             writefile(fileInfo.path, content)
         else
             warn("Failed to download: " .. fileInfo.name)

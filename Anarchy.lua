@@ -134,8 +134,8 @@ local modes = {
     "9 - Anarchus & 9+R Different animation",
     "9+M - Sentiel",
     "9+N - Arithios",
-    "0 - Axius"
-    "33 modes, try find 3 hide mode!😈",
+    "0 - Axius",
+    "33 modes, try find 3 hide mode!😈"
 }
 
 print("===Modes: " .. #modes .. " ===")
