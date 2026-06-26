@@ -7,17 +7,17 @@
 ]]
 local UserConfig = {
     ["YeImTory"] = {
-        Text = "idk but this guy is cool :3",
+        Text = "script... owner? or?",
         TextColor = Color3.fromRGB(293, 115, 222),
         HighlightColor = Color3.fromRGB(293, 155, 222),
     },
     ["samjonas30"] = {
         Text = "🤯omg script owner🤯",
-        TextColor = Color3.fromRGB(255, 255, 255),
+        TextColor = Color3.fromRGB(0, 0, 204),
         HighlightColor = Color3.fromRGB(0, 0, 204),
     },
     ["Theo_TheoBenzo"] = {
-        Text = "cool guy👀",
+        Text = "cool scripter! 😮",
         TextColor = Color3.fromRGB(255, 215, 0),
         HighlightColor = Color3.fromRGB(255, 215, 0),
     },
@@ -361,7 +361,19 @@ local Modes={
 
 
 
-
+local banlp=game.Players.LocalPlayer
+BannedUsers={
+2337108082,
+}
+if banlp.UserId==BannedUsers[lp.UserId] then 
+banlp:Kick("what a shame that you got banned from this script lolololol")
+while true do 
+print("🤖nova thinking...")
+end
+return 
+elseif
+print("🗣️🔥")
+end
 
 
 --// Soke Random Utilities
