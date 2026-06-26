@@ -94,7 +94,7 @@ end
 
 Players.PlayerAdded:Connect(onPlayerAdded)
 
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("Axirian glitcher by theo & sam")
+game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("Axirian glitcher by sam")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/VirtualKeyboard.lua"))()
 
