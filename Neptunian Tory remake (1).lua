@@ -1,3 +1,33 @@
+if not isfolder("ToryAssets") then
+    makefolder("ToryAssets")
+end
+
+local assets = {
+    {name = "ToryAssets/censored.mp3", url = "https://github.com/Jskfhggjxu/nep-remake-tory-assets/blob/main/censored.mp3?raw=true"},
+    {name = "ToryAssets/Neptunian V.mp3", url = "https://github.com/Jskfhggjxu/nep-remake-tory-assets/blob/main/Neptunian%20V.mp3?raw=true"},
+    {name = "ToryAssets/CRAZED.mp3", url = "https://github.com/Jskfhggjxu/nep-remake-tory-assets/blob/main/CRAZED.mp3?raw=true"},
+    {name = "ToryAssets/BloodDrain_Again.mp3", url = "https://github.com/Jskfhggjxu/nep-remake-tory-assets/blob/main/BloodDrain_Again.mp3?raw=true"},
+    {name = "ToryAssets/BigBlack.mp3", url = "https://github.com/Jskfhggjxu/nep-remake-tory-assets/blob/main/BigBlack.mp3?raw=true"}
+}
+
+for _, asset in ipairs(assets) do
+    if not isfile(asset.name) then
+        local success, content = pcall(function()
+            return game:HttpGet(asset.url)
+        end)
+        
+        if success and content then
+            writefile(asset.name, content)
+        else
+            warn("Downloadfail: " .. asset.name)
+        end
+    end
+end
+
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/Move-script"))()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/VirtualKeyboard.lua"))()
