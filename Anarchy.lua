@@ -360,20 +360,20 @@ local Modes={
 }
 
 
-
-local banlp=game.Players.LocalPlayer
-BannedUsers={
-2337108082,
+local banlp = game.Players.LocalPlayer
+local BannedUsers = {
+    [2337108082] = true,
 }
-if banlp.UserId==BannedUsers[lp.UserId] then 
+
+if BannedUsers[banlp.UserId] then 
 banlp:Kick("what a shame that you got banned from this script lolololol")
-while true do 
+while true do
 print("🤖nova thinking...")
 end
-return 
-elseif
+else
 print("🗣️🔥")
 end
+
 
 
 --// Soke Random Utilities
