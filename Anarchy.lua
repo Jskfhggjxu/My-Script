@@ -7,12 +7,12 @@
 ]]
 local UserConfig = {
     ["YeImTory"] = {
-        Text = "script... owner? or?",
+        Text = "big quacker🦆",
         TextColor = Color3.fromRGB(293, 115, 222),
         HighlightColor = Color3.fromRGB(293, 155, 222),
     },
     ["samjonas30"] = {
-        Text = "🤯omg script owner🤯",
+        Text = "axirian glitcher script owner",
         TextColor = Color3.fromRGB(0, 0, 204),
         HighlightColor = Color3.fromRGB(0, 0, 204),
     },
@@ -95,9 +95,9 @@ end
 Players.PlayerAdded:Connect(onPlayerAdded)
 
 game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("Axirian glitcher by sam")
-
+pcall(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/VirtualKeyboard.lua"))()
-
+end)
 game:GetService("StarterGui"):SetCore("SendNotification", { 
             Title = "Notification";
             Text = "press f9 to check modes";
