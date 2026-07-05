@@ -350,7 +350,7 @@ local Modes={
   {Name="Delisium",WingAnim="Delisium",MusicTitle="Lexapro Doesn't Work",Music="Lexapro Doesn't Work",HHeight=12,Author="Cythoni",ActualName="Arius"},
   {Name="Restless",WingAnim="Restless",MusicTitle="Restless",Music="Restless",HHeight=0,Author="Creo",ActualName="Restless"},
   {Name="HYPERINTERVENTIC",WingAnim="HYPERINTERVENTIC",MusicTitle="Cheatreal #TPZREMAKE",Music="Cheatreal1",HHeight=10,Author="t+pazolite",ActualName="Hyperwork"},
-  {Name="Parallax",WingAnim="Parallax",MusicTitle="Panorama",Music="Panorama",HHeight=0,Author="Artcore | fishisuso",ActualName="Parallax"},
+  {Name="Parallax",WingAnim="Parallax",MusicTitle="Panorama",Music="Panorama",HHeight=0,Author="Artcore",ActualName="Parallax"},
   {Name="Horion",WingAnim="Horion",MusicTitle="Hyper Hexed Hero",Music="Hyper Hexed Hero",HHeight=7,Author="Kobaryo",ActualName="Horiozin"},
   {Name="Zionihilic",WingAnim="Zionihilic",MusicTitle="MAKE A SCENE!",Music="MAKE A SCENE!",HHeight=10,Author="Z∅MB",ActualName="Zion"},
   {Name="Axius",WingAnim="Axius",MusicTitle="Jvnko Still Loves You",Music="Jvnko Still Loves You",HHeight=7,Author="Sewerslvt",ActualName="Axirian"},
@@ -360,19 +360,7 @@ local Modes={
 }
 
 
-local banlp = game.Players.LocalPlayer
-local BannedUsers = {
-    [2337108082] = true,
-}
 
-if BannedUsers[banlp.UserId] then 
-banlp:Kick("what a shame that you got banned from this script lolololol")
-while true do
-print("🤖nova thinking...")
-end
-else
-print("🗣️🔥")
-end
 
 
 
@@ -21801,4 +21789,3 @@ end, ...)
 
 
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
