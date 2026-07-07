@@ -7,7 +7,7 @@
 ]]
 local UserConfig = {
     ["YeImTory"] = {
-        Text = "big quacker🦆",
+        Text = "loadstring provider",
         TextColor = Color3.fromRGB(293, 115, 222),
         HighlightColor = Color3.fromRGB(293, 155, 222),
     },
