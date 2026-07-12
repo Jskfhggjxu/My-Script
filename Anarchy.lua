@@ -7,7 +7,7 @@
 ]]
 local UserConfig = {
     ["YeImTory"] = {
-        Text = "loadstring provider",
+        Text = "axirian glitcher loadstring provider",
         TextColor = Color3.fromRGB(293, 115, 222),
         HighlightColor = Color3.fromRGB(293, 155, 222),
     },
@@ -17,7 +17,7 @@ local UserConfig = {
         HighlightColor = Color3.fromRGB(0, 0, 204),
     },
     ["Theo_TheoBenzo"] = {
-        Text = "cool scripter! 😮",
+        Text = "axirian glitcher builder",
         TextColor = Color3.fromRGB(255, 215, 0),
         HighlightColor = Color3.fromRGB(255, 215, 0),
     },
