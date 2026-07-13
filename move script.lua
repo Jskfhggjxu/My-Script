@@ -14,63 +14,69 @@ local maxRadius = 50
 local cons = {} 
 
 -- ==========================================
--- 【优化逻辑】完美移植不灭盾牌（加入防重复执行检测）
+-- 【终极核心】完全重组 TouchGui 与防穿透矩阵
 -- ==========================================
-local function applyDexShieldLogic()
+local function rebuildTouchGuiShields()
     local playerGui = player:WaitForChild("PlayerGui", 10)
     if not playerGui then return end
     
-    -- 【核心防重】如果检测到有 FakeTouchGui，说明已经移植过，直接拦截，不重复执行
-    if playerGui:FindFirstChild("FakeTouchGui") then
+    -- 防呆拦截：如果已经处理过，说明是重复执行，直接跳过
+    if playerGui:FindFirstChild("FakeTouchGui") and playerGui:FindFirstChild("TouchGui") and playerGui.TouchGui:GetAttribute("IsToryFake") then
         return
     end
     
-    local touchGui = playerGui:WaitForChild("TouchGui", 10)
-    if touchGui then
-        -- 1. 复制 TouchGui 并改名为 FakeTouchGui
-        local fakeTouchGui = touchGui:Clone()
+    local realTouchGui = playerGui:WaitForChild("TouchGui", 10)
+    if realTouchGui then
+        -- 1. 复制原 TouchGui 为基础模板
+        local baseClone = realTouchGui:Clone()
+        
+        -- 2. 彻底销毁原本的真 TouchGui
+        realTouchGui:Destroy()
+        
+        -- 3. 构造全新的【假 TouchGui】塞回 PlayerGui
+        local fakeRealTouchGui = baseClone:Clone()
+        fakeRealTouchGui.Name = "TouchGui"
+        fakeRealTouchGui.ResetOnSpawn = false
+        fakeRealTouchGui:SetAttribute("IsToryFake", true) -- 打上假货标记
+        
+        -- 4. 构造【FakeTouchGui】
+        local fakeTouchGui = baseClone:Clone()
         fakeTouchGui.Name = "FakeTouchGui"
         fakeTouchGui.ResetOnSpawn = false
         
-        -- 3. 删除 FakeTouchGui 的 JumpButton，防止遮挡到 TouchGui 的 JumpButton
-        local fakeControl = fakeTouchGui:FindFirstChild("TouchControlFrame")
-        if fakeControl then
-            local fakeJump = fakeControl:FindFirstChild("JumpButton")
-            if fakeJump then fakeJump:Destroy() end
-        end
-        
-        -- 2. 提取 FakeTouchGui 下的 DynamicThumbstickFrame 并处理属性
-        local shieldFrame = fakeControl and fakeControl:FindFirstChild("DynamicThumbstickFrame")
-        if shieldFrame then
-            shieldFrame.Name = "FakeShieldThumbstick" -- 改个名防止冲突
-            shieldFrame.BackgroundTransparency = 1   -- 完全透明
-            shieldFrame.Visible = true               -- 必须可见才能挡住
-            shieldFrame.Active = true                -- 必须 Active 来吸收触摸流
-            
-            -- 让这个盾牌框变成一个死死守住左下角的绝对屏障
-            shieldFrame.Size = UDim2.new(0.4, 0, 0.6, 0)
-            shieldFrame.Position = UDim2.new(0, 0, 0.4, 0)
-            
-            -- 2. 删除 TouchGui 原本下的 DynamicThumbstickFrame
-            local realControl = touchGui:FindFirstChild("TouchControlFrame")
-            if realControl then
-                local realThumbstick = realControl:FindFirstChild("DynamicThumbstickFrame")
-                if realThumbstick then realThumbstick:Destroy() end
+        -- 清理两个 GUI，使其只剩下 TouchControlFrame -> DynamicThumbstickFrame
+        local function cleanAndFixFrame(guiInstance)
+            local controlFrame = guiInstance:FindFirstChild("TouchControlFrame")
+            if controlFrame then
+                -- 核心逻辑：删除所有无法工作的原装 JumpButton
+                local jump = controlFrame:FindFirstChild("JumpButton")
+                if jump then jump:Destroy() end
                 
-                -- 将 FakeTouchGui 下抽出来的盾牌，真正塞回 TouchGui 下！
-                shieldFrame.Parent = realControl
+                local thumb = controlFrame:FindFirstChild("DynamicThumbstickFrame")
+                if thumb then
+                    thumb.BackgroundTransparency = 1
+                    thumb.Visible = true
+                    thumb.Active = true -- 极度关键：靠它挡住相机流
+                    
+                    -- 写入你测试出的精准位置与大小
+                    thumb.Position = UDim2.new(0.400000006, 100, 0.666666687, 100)
+                    thumb.Size = UDim2.new(0, -100, 0.333333343, 0)
+                end
             end
+            guiInstance.Parent = playerGui
         end
         
-        -- FakeTouchGui 放在外面打标记并保留其结构基础
-        fakeTouchGui.Parent = playerGui
+        cleanAndFixFrame(fakeRealTouchGui)
+        cleanAndFixFrame(fakeTouchGui)
+        
+        baseClone:Destroy() -- 销毁模板
     end
 end
 
-applyDexShieldLogic()
+rebuildTouchGuiShields()
 
 -- ==========================================
--- 自定义 GUI 元素创建
+-- 自定义移动 GUI 元素创建
 -- ==========================================
 local MainGui = Instance.new("ScreenGui")
 MainGui.Name = "ToryMobileMoveGui"
@@ -115,6 +121,36 @@ local UICornerStick = Instance.new("UICorner")
 UICornerStick.CornerRadius = UDim.new(1, 0)
 UICornerStick.Parent = Stick
 
+-- ==========================================
+-- 自定义物理跳跃按钮创建 (纯移动版)
+-- ==========================================
+local CustomJumpButton = Instance.new("ImageButton")
+CustomJumpButton.Name = "CustomJumpButton"
+CustomJumpButton.AnchorPoint = Vector2.new(1, 1)
+-- 写入你给出的精准数据
+CustomJumpButton.Position = UDim2.new(1, -95, 1, -90)
+CustomJumpButton.Size = UDim2.new(0, 70, 0, 70)
+CustomJumpButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CustomJumpButton.BackgroundTransparency = 0.5
+CustomJumpButton.Image = "rbxasseturl://textures/ui/Input/TouchJump.png" -- 还原官方跳跃圆图标
+CustomJumpButton.Parent = MainGui
+
+local UICornerJump = Instance.new("UICorner")
+UICornerJump.CornerRadius = UDim.new(1, 0)
+UICornerJump.Parent = CustomJumpButton
+
+table.insert(cons, CustomJumpButton.InputBegan:Connect(function(input)
+    if not scriptEnabled then return end
+    if input.UserInputType == Enum.UserInputType.Touch or input.UserInputType == Enum.UserInputType.MouseButton1 then
+        if player.Character and player.Character:FindFirstChild("Humanoid") then
+            player.Character.Humanoid.Jump = true -- 写入纯移动端的物理跳跃触发
+        end
+    end
+end))
+
+-- ==========================================
+-- 移动输入流拦截处理
+-- ==========================================
 table.insert(cons, workspace:GetPropertyChangedSignal("CurrentCamera"):Connect(function()
     camera = workspace.CurrentCamera
 end))
@@ -130,13 +166,10 @@ table.insert(cons, UserInputService.InputBegan:Connect(function(input, gameProce
     if not scriptEnabled then return end
     if (input.UserInputType == Enum.UserInputType.Touch or input.UserInputType == Enum.UserInputType.MouseButton1) and not dragging then
         local inputPos = Vector2.new(input.Position.X, input.Position.Y)
-        
         if isInputInZone(inputPos) then
             if gameProcessed then return end 
-            
             dragging = true
             touchInput = input
-            
             Base.Modal = true
             Base.Visible = true
             local absPos = JoystickArea.AbsolutePosition
@@ -152,9 +185,7 @@ table.insert(cons, UserInputService.InputChanged:Connect(function(input)
         local diff = inputPos - center
         local distance = math.min(diff.Magnitude, maxRadius)
         local direction = diff.Unit
-        
         if diff.Magnitude == 0 then direction = Vector2.new(0,0) end
-        
         Stick.Position = UDim2.new(0.5, direction.X * distance, 0.5, direction.Y * distance)
         moveDir = Vector3.new(direction.X, 0, direction.Y)
     end
@@ -164,7 +195,6 @@ table.insert(cons, UserInputService.InputEnded:Connect(function(input)
     if input == touchInput then
         dragging = false
         touchInput = nil
-        
         Base.Modal = false
         Base.Visible = false
         Stick.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -175,12 +205,10 @@ end))
 table.insert(cons, RunService.RenderStepped:Connect(function()
     if scriptEnabled and dragging and player.Character and player.Character:FindFirstChild("Humanoid") and camera then
         local humanoid = player.Character.Humanoid
-        
         if moveDir.Magnitude > 0 then
             local cameraLook = camera.CFrame.LookVector
             local forward = Vector3.new(cameraLook.X, 0, cameraLook.Z).Unit
             local right = Vector3.new(camera.CFrame.RightVector.X, 0, camera.CFrame.RightVector.Z).Unit
-            
             local relativeMoveVector = (right * moveDir.X) + (forward * -moveDir.Z)
             humanoid:Move(relativeMoveVector, false)
         else
@@ -207,15 +235,6 @@ local function onChatted(msg)
             if connection then connection:Disconnect() end
         end
         cons = {}
-        local pGui = player:FindFirstChild("PlayerGui")
-        if pGui then
-            if pGui:FindFirstChild("FakeTouchGui") then pGui.FakeTouchGui:Destroy() end
-            local touchGui = pGui:FindFirstChild("TouchGui")
-            local ctrl = touchGui and touchGui:FindFirstChild("TouchControlFrame")
-            if ctrl and ctrl:FindFirstChild("FakeShieldThumbstick") then
-                ctrl.FakeShieldThumbstick:Destroy()
-            end
-        end
         if MainGui then MainGui:Destroy() end
     end
 end
