@@ -14,46 +14,60 @@ local maxRadius = 50
 local cons = {} 
 
 -- ==========================================
--- 天才核心：创建 FakeTouchGui 挡箭牌
+-- 【优化逻辑】完美移植不灭盾牌（加入防重复执行检测）
 -- ==========================================
-local function setupShieldGui()
+local function applyDexShieldLogic()
     local playerGui = player:WaitForChild("PlayerGui", 10)
     if not playerGui then return end
     
-    -- 等待官方原生 TouchGui 加载
+    -- 【核心防重】如果检测到有 FakeTouchGui，说明已经移植过，直接拦截，不重复执行
+    if playerGui:FindFirstChild("FakeTouchGui") then
+        return
+    end
+    
     local touchGui = playerGui:WaitForChild("TouchGui", 10)
     if touchGui then
-        -- 1. 官方原生的 JumpButton 保持原样，千万不能删，这样右下角能正常跳跃
-        -- 2. 隐藏官方原生的摇杆 Frame 阻挡，不让它干扰视觉
-        local controlFrame = touchGui:FindFirstChild("TouchControlFrame")
-        if controlFrame then
-            local thumbstick = controlFrame:FindFirstChild("DynamicThumbstickFrame")
-            if thumbstick then
-                thumbstick.Visible = false -- 让原生的隐形，但保持其 Active 阻挡特质
-            end
-        end
-        
-        -- 3. 克隆一个 FakeTouchGui 用来作为我们自己的安全区域容器
-        local fakeTouchGui = playerGui:FindFirstChild("FakeTouchGui")
-        if fakeTouchGui then fakeTouchGui:Destroy() end
-        
-        fakeTouchGui = touchGui:Clone()
+        -- 1. 复制 TouchGui 并改名为 FakeTouchGui
+        local fakeTouchGui = touchGui:Clone()
         fakeTouchGui.Name = "FakeTouchGui"
         fakeTouchGui.ResetOnSpawn = false
-        fakeTouchGui.DisplayOrder = 999 -- 略低于主 GUI
         
-        -- 删掉影子里的 JumpButton，防止双重渲染或误触
+        -- 3. 删除 FakeTouchGui 的 JumpButton，防止遮挡到 TouchGui 的 JumpButton
         local fakeControl = fakeTouchGui:FindFirstChild("TouchControlFrame")
         if fakeControl then
             local fakeJump = fakeControl:FindFirstChild("JumpButton")
             if fakeJump then fakeJump:Destroy() end
         end
         
+        -- 2. 提取 FakeTouchGui 下的 DynamicThumbstickFrame 并处理属性
+        local shieldFrame = fakeControl and fakeControl:FindFirstChild("DynamicThumbstickFrame")
+        if shieldFrame then
+            shieldFrame.Name = "FakeShieldThumbstick" -- 改个名防止冲突
+            shieldFrame.BackgroundTransparency = 1   -- 完全透明
+            shieldFrame.Visible = true               -- 必须可见才能挡住
+            shieldFrame.Active = true                -- 必须 Active 来吸收触摸流
+            
+            -- 让这个盾牌框变成一个死死守住左下角的绝对屏障
+            shieldFrame.Size = UDim2.new(0.4, 0, 0.6, 0)
+            shieldFrame.Position = UDim2.new(0, 0, 0.4, 0)
+            
+            -- 2. 删除 TouchGui 原本下的 DynamicThumbstickFrame
+            local realControl = touchGui:FindFirstChild("TouchControlFrame")
+            if realControl then
+                local realThumbstick = realControl:FindFirstChild("DynamicThumbstickFrame")
+                if realThumbstick then realThumbstick:Destroy() end
+                
+                -- 将 FakeTouchGui 下抽出来的盾牌，真正塞回 TouchGui 下！
+                shieldFrame.Parent = realControl
+            end
+        end
+        
+        -- FakeTouchGui 放在外面打标记并保留其结构基础
         fakeTouchGui.Parent = playerGui
     end
 end
 
-setupShieldGui()
+applyDexShieldLogic()
 
 -- ==========================================
 -- 自定义 GUI 元素创建
@@ -69,7 +83,7 @@ JoystickArea.Name = "JoystickArea"
 JoystickArea.Position = UDim2.new(0, 0, 0.4, 0)
 JoystickArea.Size = UDim2.new(0.4, 0, 0.6, 0)
 JoystickArea.BackgroundTransparency = 1
-JoystickArea.Active = false -- 不抢夺点击焦点，允许穿透到聊天框
+JoystickArea.Active = false 
 JoystickArea.Visible = true
 JoystickArea.Parent = MainGui
 
@@ -118,8 +132,7 @@ table.insert(cons, UserInputService.InputBegan:Connect(function(input, gameProce
         local inputPos = Vector2.new(input.Position.X, input.Position.Y)
         
         if isInputInZone(inputPos) then
-            -- 如果点到了聊天框等游戏内置UI，直接放行
-            if gameProcessed then return end
+            if gameProcessed then return end 
             
             dragging = true
             touchInput = input
@@ -195,7 +208,14 @@ local function onChatted(msg)
         end
         cons = {}
         local pGui = player:FindFirstChild("PlayerGui")
-        if pGui and pGui:FindFirstChild("FakeTouchGui") then pGui.FakeTouchGui:Destroy() end
+        if pGui then
+            if pGui:FindFirstChild("FakeTouchGui") then pGui.FakeTouchGui:Destroy() end
+            local touchGui = pGui:FindFirstChild("TouchGui")
+            local ctrl = touchGui and touchGui:FindFirstChild("TouchControlFrame")
+            if ctrl and ctrl:FindFirstChild("FakeShieldThumbstick") then
+                ctrl.FakeShieldThumbstick:Destroy()
+            end
+        end
         if MainGui then MainGui:Destroy() end
     end
 end

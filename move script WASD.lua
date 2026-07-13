@@ -13,47 +13,57 @@ local maxRadius = 50
 local cons = {} 
 
 -- ==========================================
--- 天才核心：创建不灭的 FakeTouchGui 挡箭牌，拦截穿透
+-- 【优化逻辑】完美移植不灭盾牌（加入防重复执行检测）
 -- ==========================================
-local function setupShieldGui()
+local function applyDexShieldLogic()
     local playerGui = player:WaitForChild("PlayerGui", 10)
     if not playerGui then return end
     
+    -- 【核心防重】如果检测到有 FakeTouchGui，说明已经移植过，直接拦截，不重复执行
+    if playerGui:FindFirstChild("FakeTouchGui") then
+        return
+    end
+    
     local touchGui = playerGui:WaitForChild("TouchGui", 10)
     if touchGui then
-        -- 克隆它成为绝对挡箭牌
-        local fakeTouchGui = playerGui:FindFirstChild("FakeTouchGui")
-        if fakeTouchGui then fakeTouchGui:Destroy() end
-        
-        fakeTouchGui = touchGui:Clone()
+        -- 1. 复制 TouchGui 并改名为 FakeTouchGui
+        local fakeTouchGui = touchGui:Clone()
         fakeTouchGui.Name = "FakeTouchGui"
         fakeTouchGui.ResetOnSpawn = false
-        fakeTouchGui.DisplayOrder = 999 -- 刚好压在核心 UI 之下，但高于 3D 渲染视图
         
-        -- 清理影子中的组件
+        -- 3. 删除 FakeTouchGui 的 JumpButton
         local fakeControl = fakeTouchGui:FindFirstChild("TouchControlFrame")
         if fakeControl then
-            -- 移除影子跳跃键
             local fakeJump = fakeControl:FindFirstChild("JumpButton")
             if fakeJump then fakeJump:Destroy() end
+        end
+        
+        -- 2. 提取 FakeTouchGui 下的 DynamicThumbstickFrame 并处理属性
+        local shieldFrame = fakeControl and fakeControl:FindFirstChild("DynamicThumbstickFrame")
+        if shieldFrame then
+            shieldFrame.Name = "FakeShieldThumbstick" 
+            shieldFrame.BackgroundTransparency = 1   
+            shieldFrame.Visible = true               
+            shieldFrame.Active = true                
             
-            -- 让影子摇杆完全透明且铺满左下角，专门作为防视角的吸能海绵
-            local fakeThumbstick = fakeControl:FindFirstChild("DynamicThumbstickFrame")
-            if fakeThumbstick then
-                fakeThumbstick.BackgroundTransparency = 1
-                fakeThumbstick.Visible = true 
-                fakeThumbstick.Active = true -- 核心所在：用它的 Active 挡住视角穿透！
-                -- 确保它能完全罩住我们的自定义左侧操控区
-                fakeThumbstick.Size = UDim2.new(0.4, 0, 0.6, 0)
-                fakeThumbstick.Position = UDim2.new(0, 0, 0.4, 0)
+            shieldFrame.Size = UDim2.new(0.4, 0, 0.6, 0)
+            shieldFrame.Position = UDim2.new(0, 0, 0.4, 0)
+            
+            -- 2. 删除 TouchGui 原本下的 DynamicThumbstickFrame
+            local realControl = touchGui:FindFirstChild("TouchControlFrame")
+            if realControl then
+                local realThumbstick = realControl:FindFirstChild("DynamicThumbstickFrame")
+                if realThumbstick then realThumbstick:Destroy() end
+                
+                -- 将盾牌真正移接到原生的 TouchGui 下！
+                shieldFrame.Parent = realControl
             end
         end
         fakeTouchGui.Parent = playerGui
     end
 end
 
--- 执行屏蔽盾挂载
-setupShieldGui()
+applyDexShieldLogic()
 
 -- ==========================================
 -- 1. 初始化 VirtualInputManager 与按键状态
@@ -150,7 +160,7 @@ JoystickArea.Name = "JoystickArea"
 JoystickArea.Position = UDim2.new(0, 0, 0.4, 0)
 JoystickArea.Size = UDim2.new(0.4, 0, 0.6, 0)
 JoystickArea.BackgroundTransparency = 1
-JoystickArea.Active = false -- 设为 false，防止其把聊天框点按功能卡死
+JoystickArea.Active = false 
 JoystickArea.Parent = MainGui
 
 local Base = Instance.new("ImageButton")
@@ -194,11 +204,11 @@ local function isInputInZone(pos)
 end
 
 -- ==========================================
--- 3. 基于纯对象比对的丝滑触摸拦截
+-- 3. 完美触摸捕捉
 -- ==========================================
 table.insert(cons, UserInputService.TouchStarted:Connect(function(touch, gameProcessed)
     if not scriptEnabled or dragging then return end
-    if gameProcessed then return end -- 确保聊天框点击能被完美忽略
+    if gameProcessed then return end 
     
     local startPos = Vector2.new(touch.Position.X, touch.Position.Y)
     if isInputInZone(startPos) then
@@ -264,7 +274,14 @@ local function onChatted(msg)
         cons = {}
         releaseAllKeys()
         local pGui = player:FindFirstChild("PlayerGui")
-        if pGui and pGui:FindFirstChild("FakeTouchGui") then pGui.FakeTouchGui:Destroy() end
+        if pGui then
+            if pGui:FindFirstChild("FakeTouchGui") then pGui.FakeTouchGui:Destroy() end
+            local touchGui = pGui:FindFirstChild("TouchGui")
+            local ctrl = touchGui and touchGui:FindFirstChild("TouchControlFrame")
+            if ctrl and ctrl:FindFirstChild("FakeShieldThumbstick") then
+                ctrl.FakeShieldThumbstick:Destroy()
+            end
+        end
         if MainGui then MainGui:Destroy() end
     end
 end
