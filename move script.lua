@@ -13,6 +13,51 @@ local moveDir = Vector3.new(0, 0, 0)
 local maxRadius = 50 
 local cons = {} 
 
+-- ==========================================
+-- 天才核心：创建 FakeTouchGui 挡箭牌
+-- ==========================================
+local function setupShieldGui()
+    local playerGui = player:WaitForChild("PlayerGui", 10)
+    if not playerGui then return end
+    
+    -- 等待官方原生 TouchGui 加载
+    local touchGui = playerGui:WaitForChild("TouchGui", 10)
+    if touchGui then
+        -- 1. 官方原生的 JumpButton 保持原样，千万不能删，这样右下角能正常跳跃
+        -- 2. 隐藏官方原生的摇杆 Frame 阻挡，不让它干扰视觉
+        local controlFrame = touchGui:FindFirstChild("TouchControlFrame")
+        if controlFrame then
+            local thumbstick = controlFrame:FindFirstChild("DynamicThumbstickFrame")
+            if thumbstick then
+                thumbstick.Visible = false -- 让原生的隐形，但保持其 Active 阻挡特质
+            end
+        end
+        
+        -- 3. 克隆一个 FakeTouchGui 用来作为我们自己的安全区域容器
+        local fakeTouchGui = playerGui:FindFirstChild("FakeTouchGui")
+        if fakeTouchGui then fakeTouchGui:Destroy() end
+        
+        fakeTouchGui = touchGui:Clone()
+        fakeTouchGui.Name = "FakeTouchGui"
+        fakeTouchGui.ResetOnSpawn = false
+        fakeTouchGui.DisplayOrder = 999 -- 略低于主 GUI
+        
+        -- 删掉影子里的 JumpButton，防止双重渲染或误触
+        local fakeControl = fakeTouchGui:FindFirstChild("TouchControlFrame")
+        if fakeControl then
+            local fakeJump = fakeControl:FindFirstChild("JumpButton")
+            if fakeJump then fakeJump:Destroy() end
+        end
+        
+        fakeTouchGui.Parent = playerGui
+    end
+end
+
+setupShieldGui()
+
+-- ==========================================
+-- 自定义 GUI 元素创建
+-- ==========================================
 local MainGui = Instance.new("ScreenGui")
 MainGui.Name = "ToryMobileMoveGui"
 MainGui.ResetOnSpawn = false
@@ -24,7 +69,7 @@ JoystickArea.Name = "JoystickArea"
 JoystickArea.Position = UDim2.new(0, 0, 0.4, 0)
 JoystickArea.Size = UDim2.new(0.4, 0, 0.6, 0)
 JoystickArea.BackgroundTransparency = 1
-JoystickArea.Active = false 
+JoystickArea.Active = false -- 不抢夺点击焦点，允许穿透到聊天框
 JoystickArea.Visible = true
 JoystickArea.Parent = MainGui
 
@@ -73,13 +118,13 @@ table.insert(cons, UserInputService.InputBegan:Connect(function(input, gameProce
         local inputPos = Vector2.new(input.Position.X, input.Position.Y)
         
         if isInputInZone(inputPos) then
+            -- 如果点到了聊天框等游戏内置UI，直接放行
             if gameProcessed then return end
             
             dragging = true
             touchInput = input
             
             Base.Modal = true
-            
             Base.Visible = true
             local absPos = JoystickArea.AbsolutePosition
             Base.Position = UDim2.new(0, input.Position.X - absPos.X, 0, input.Position.Y - absPos.Y)
@@ -108,7 +153,6 @@ table.insert(cons, UserInputService.InputEnded:Connect(function(input)
         touchInput = nil
         
         Base.Modal = false
-        
         Base.Visible = false
         Stick.Position = UDim2.new(0.5, 0, 0.5, 0)
         moveDir = Vector3.new(0, 0, 0)
@@ -123,9 +167,8 @@ table.insert(cons, RunService.RenderStepped:Connect(function()
             local cameraLook = camera.CFrame.LookVector
             local forward = Vector3.new(cameraLook.X, 0, cameraLook.Z).Unit
             local right = Vector3.new(camera.CFrame.RightVector.X, 0, camera.CFrame.RightVector.Z).Unit
-           
-            local relativeMoveVector = (right * moveDir.X) + (forward * -moveDir.Z)
             
+            local relativeMoveVector = (right * moveDir.X) + (forward * -moveDir.Z)
             humanoid:Move(relativeMoveVector, false)
         else
             humanoid:Move(Vector3.new(0, 0, 0), false)
@@ -151,6 +194,8 @@ local function onChatted(msg)
             if connection then connection:Disconnect() end
         end
         cons = {}
+        local pGui = player:FindFirstChild("PlayerGui")
+        if pGui and pGui:FindFirstChild("FakeTouchGui") then pGui.FakeTouchGui:Destroy() end
         if MainGui then MainGui:Destroy() end
     end
 end
