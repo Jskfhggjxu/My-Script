@@ -12,7 +12,7 @@ if _G.ToryJoystickRunning == true then
 return
 end
 _G.ToryJoystickRunning = true
-local CURRENT_VERSION_TYPE = "HRP" -- choose move mode "WASD" or "HRP"
+local CURRENT_VERSION_TYPE = "WASD" -- choose move mode "WASD" or "HRP"
 -- WASD use keyboard to move, HRP use forcing HRP to inject at speed
 local scriptEnabled = true
 local dragging = false
