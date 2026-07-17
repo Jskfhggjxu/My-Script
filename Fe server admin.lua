@@ -1,2 +1,3270 @@
---// This file was created by Tora uwu uwu uwu uwu meowing meow 
-return(function(...)local r,F do local y,k,a,b,s=math.floor,string.char,string.byte,tonumber,string.sub local function l(k,a)local b=0x0 for s=0x0,0x7,0x1 do local l=k/0x2+a/0x2 if l~=y(l)then b=b+0x2^s end k=y(k/0x2)a=y(a/0x2)end return b end local u,E="iiihhhiiiiihssss","\248\186\195\140\015\174\248\234\235\177\021\029\230\030\t\160\189\177\135\254\000\000\001\000\000\001\a\000\000\000__index\006\000\000\000__call\005\000\000\000__mod\005\000\000\000__mul"local z=0x41 local C=0x435 local I=true local function Y(b)local s={}for k=0x1,#b,0x4 do local l,u,r,F=a(b,k,k+0x3)local function E(y)if not y then return 0x0 end local k if y>=0x41 and y<=0x5A then k=y-0x41 elseif y>=0x61 and y<=0x7A then k=y-0x47 elseif y>=0x30 and y<=0x39 then k=y+0x4 elseif y==0x2B then k=0x3E elseif y==0x2F then k=0x3F else k=0x0 end return k end local z=E(l)local C=E(u)local I=r~=0x3D and E(r)or 0x0 local Y=F~=0x3D and E(F)or 0x0 local x=((z*0x40000+C*0x1000)+I*0x40)+Y s[#s+0x1]=y(x/0x10000)%0x100 if r~=0x3D then s[#s+0x1]=y(x/0x100)%0x100 end if F~=0x3D then s[#s+0x1]=x%0x100 end end local r={}for y=0x0,0x3,0x1 do local k=s[y+0x1]local b=((k-C)+0x100)%0x100 local F=a(u,y%0x10+0x1)local I=a(E,y%z+0x1)r[y+0x1]=l(l(b,F),I)end local Y=((r[0x1]+r[0x2]*0x100)+r[0x3]*0x10000)+r[0x4]*0x1000000 local x={}for b=0x1,Y,0x1 do local r=s[b+0x4]if I and b%0x2==0x0 then r=(r%0x10)*0x10+y(r/0x10)end local F=((r-C)+0x100)%0x100 local Y=(b-0x1)%0x10+0x1 local W=(b-0x1)%z+0x1 local V=a(u,Y)local m=a(E,W)x[b]=k(l(l(F,V),m))end return table.concat(x)end local x={{0x1C89,"zAjfGRkvD6s5Lg=="};{0x5F1;"ywjfGQMc+Ps4jR4="},{"ygjfGQMcAss=";0x9AD},{0x2257;"yQjfGQMc+2s+"};{"zgjfGQ0vDlw73Sex",0x1C4C};{0x19B5;"zQjfGRsfDUxJviVRHA=="};{0x1C35;"0QjfGQe9Dbw33RpfGK5Owyk="},{0x22B6,"xwjfGTS+Eg=="};{0x1A2C,"zAjfGQwf+1s3ng=="},{0x1E74;"0QjfGQx+9mtZPiViGA89VBw="};{0xDD1,"ygjfGRR+/Gs="};{0x20A0;"zwjfGQu+E81ETjLBJS9H"},{"yQjfGREfA2tA";0x2523},{0x1FE3;"zwjfGfi+APtDDiXCIM5H"},{"yQjfGRZ++LxJ";0x64};{0x252B,"0wjfGQUv+Os7fi0SIctkoyXTUw=="};{"ywjfGQ++CM09fSk=",0x19B},{"ygjfGQkvFOs=";0xD62},{0x1173,"xQjfGfs="};{0x228B,"zgjfGRG+DhxszRjC"};{0x138E,"xwjfGQ1dIA=="};{0xBC4,"ywjfGfy+/lw9ntc="},{0x252C,"0wjfGQUvAmxAzRigHJ5ItDHkOA=="},{0x13DF;"ygjfGTF+Exw="},{0x100D,"ygjfGRd9DVw="},{"0QjfGSiuAxxgTftQJGE61CU=";0x246F},{"ygjfGfZ+DVw=",0xBBF};{"0gjfGQmcz+07PRCwHz19Vg==",0x4AD},{"0gjfGRJ+Eas+fSli/+5Kww==";0x3F9},{0x1537;"zQjfGfgf+lxi7S0iKw=="};{"yQjfGfedACxI",0x25F7};{"yAjfGQes";0x1FC};{0x250D;"yQjfGQdPBLxM"},{"yAjfGQeB";0x1CB},{0x1AC2,"xwjfGfh8Iw=="};{"zAjfGQUtIt1XrA==";0x161C};{0xDF0,"ygjfGRS+/kw="},{0x1D79;"0QjfGfj+AhxIrC4SLJ5NVBw="},{"0gjfGRK+AVxpPjOyIx9Oww==";0x418},{0x23BE,"zgjfGfj+AhxIPC2C"},{"ywjfGRK+AVxkThY=",0x93C};{0x1440,"1AjfGRprGVxMTDOADM5CxC43"};{0x1D3B,"0QjfGfh++Vs9DvfCJW5HdBs="},{0x79B,"0gjfGRh++Vs9DvfCJW5HdA=="},{"0gjfGdd7Mo1brhhgHh55tA==",0x23AE},{0x2615,"0QjfGSy+MVBjnRgAAK5BwxE="};{0x1270;"zQjfGQVe/mtJrjNiMA=="};{"tgjfGQ69/Ks+7S3BBc5IY/oUPc0=",0xD9C},{"zAjfGfZ+DWs+fg==",0x1725};{"ywjfGRFrIP1Y6xE=",0x8E8},{0x6AC,"ygjfGQ6+AFs="};{"zQjfGQcf+fs3rRqxGw==";0x1404},{0x22E5;"zgjfGQgfAy1VTxgS"},{0xE88,"ygjfGfq+B1w="},{"tgjfGf8NNL5gTBSf1x1uxvzVdDw=";0xEA6},{0x239C,"zgjfGfgf+lxszRjC"},{0x22D6,"yAjfGQ3L"},{0x2524;"yQjfGREfFMw3"},{0x517;"yAjfGfzL"};{"xQjfGQo=",0x1040};{0xE4D;"xQjfGfY="};{"zQjfGRF+B149nhWyHA==";0x1407};{"zAjfGQesDas/jQ==",0x180B};{0x21EA;"zgjfGfYfDixITjMi"},{0x140F;"xwjfGQ7+Ew=="};{"xQjfGRY=",0x1157};{"zQjfGScfDQxHfi0iHA==";0x1B86};{0x1C00,"zAjfGRi+Dmw/jQ=="},{0x1F6F,"zAjfGSdtBKtIjQ=="},{"1AjfGQz++VtWThhSKw1JFS7j";0x116E},{"1AjfGQd++Xw7rvYSJm49FS+D",0xEC4};{"ywjfGfy+/lw9ntg=",0xBC5};{"xQjfGf4=",0x9D2},{"ygjfGQ3O+2s=";0x673};{"zwjfGRIf/qtArCdiIN09",0x1F48},{"ygjfGfr+/Gs=";0xEA7},{"0AjfGfcfFPs4vC3CFl4=";0x2097};{0x955,"ywjfGfcfFPs4TAo="},{"0QjfGff+BWta7TMyHP1SBSc=",0x1CFD},{0x1508;"tgjfGfldBL097TGxJe5HdA0UQw8="},{0x1F64,"zwjfGfcfFPs4XDNCLK5O"},{"zQjfGQgf+us3niUiGg==";0x1480};{"0QjfGQ7NJB1z29ryJcw/xNo=",0x16B8};{0x828;"ywjfGfZPAC1D3Ss="},{"1AjfGQu+E103riexIR9SBRY1";0x10D3},{"zgjfGQ69/Ks+7S3B";0x1CC9};{"uAjfGQhtBKtBHDPxIR5E9jDlVH7VXg==",0x1F4B},{"zgjfGQz++2tfjRcC",0x24F7},{0x200D,"0AjfGQdtBKtIjRGxJl4="},{"zQjfGdWhxxGTktpe5Q==",0xBC7};{"xgjfGQ==",0x1897};{"zwjfGfeNBMtDzTIwHA5J";0x1F8A},{0x17E2,"zAjfGRG+DhxjfQ=="};{0x20DD;"zgjfGQWND9tTyzO/"};{0x1538,"zQjfGfgfE6tITjMiDQ=="};{0x1BC,"yAjfGQdR"};{0x226C;"zgjfGRF+E2tKTiVC"},{"zQjfGfgfE6tITjMiEA==";0x1539},{0x2145;"zwjfGft8Hk5ziwyv/A1d"};{0x189D;"zAjfGfeN92tKjQ=="};{0x2125;"0AjfGQmuAWs5fvryJy8="};{"yQjfGff+BWuK";0x25DD};{"ygjfGff+BWs=",0xD33};{"ygjfGRS++vs=";0xDF1},{0x2504;"yQjfGQcf+wxK"};{0x1E7C,"0QjfGfptAPtJviViHL5UFNw="};{0x5D2;"0gjfGfptAPtJviViHL5UFA=="},{"zQjfGfgfE6tITjMiDw==";0x153A};{0x1423;"zQjfGREfEWto7fYSJg=="},{"ygjfGRt++Fw=";0x11EF},{"yQjfGfdeANs3",0x25D9},{"zAjfGROuAcw3fg==";0x1924},{"xQjfGQA=",0xAAE},{"yQjfGfcfFPs4";0x25BB},{"uQjfGQz++VtWThhSKw1JFS7jaq7MnsShUA==",0x1D74};{"1AjfGdd8Lr5ePg5v6c59xBNG";0x806},{0x21B5,"0AjfGfmND2tKfDNiJs4="},{"1AjfGTN7+W5JfQXA5/E/GPsU";0x1769};{0x1BE1,"zAjfGRh++Vs9Dg=="},{"yQjfGRp+/ds3",0x30E};{"zAjfGScf+cs7fg==",0x1F42};{"zwjfGQ0vAQxKDiXCIM5H";0x1890},{"1AjfGdbBz15kvN1A/CxO5BlG";0x7D2},{"0wjfGfx+DSw3fh1QH+5NVBspfQ==";0x2C5},{"zAjfGRi+/AxGjQ==";0x1C01};{"ywjfGQdtBFtDfhc=";0x8CB},{0x956,"ywjfGfcfFPs4TCo="};{"ygjfGSe++Ns=";0x13E0};{"yQjfGfa+ALxA";0x2542},{0x200E,"0AjfGQdtBKtIjfZxJR4="},{0x1867;"zAjfGQhrGM1hqw=="},{0x1937,"zAjfGQq+/bw3jQ=="},{0x1FC4,"0AjfGQd++c09/TLxGy8="};{"zAjfGS0vDmtKfg==";0x1925},{"zAjfGRIf+pw3fQ==",0x185B},{"yQjfGfb+E8tE";0x2561};{0x1AE3,"zAjfGfwf+2w/jQ=="};{"zwjfGQk/+FxIjRhQIH1O",0x1F6E},{0xB02,"1AjfGQChzpBVshx/6O5axNa1"};{0x25BC;"0gjfGf5tAy89fN0AG4xFhw=="};{"zQjfGdyhzWCUgta+7w==";0xFE5},{"ygjfGfu++1s=",0xF04};{"zAjfGQ5++VtAjQ==",0x11F3};{"vAjfGQz++VtWThhSKw1JFS7jYg/yD7tBUOU=";0x1030};{0x2EB;"uwjfGRhuB6tJrinCIB97+O/oeIEVIhKdjmiO"};{"yAjfGQOc",0x2651},{"zwjfGQMc/GtIzRpxFZ5O",0x1C02};{0xBFB,"vQjfGfoP+Mx8DinCGB5SxC7Tj/7c0rfiQINCJHw="},{"0QjfGSBNJx05XjKw6p5fBSc=";0x1F8F},{0x4F9,"tQjfGRG+DhxszRjC+A9UVBs1Sm3i"};{0xEE;"0AjfGTIfAFtJfhjxIU8="};{"AwjfGS7NE5xJE/MeJe5ACSeTQw/W/tChQvRAszwVQLM8KYSHotV8O7DTNjRDGYM7cnibCW/zUDl8al5LPkRPx3nntHmrP/P/wuMdEyGS8tiRrVPk8C/dDej4jkdd9mFnVLNH";0x194C};{0x332,"ywjfGQ7NE5xVjRo="},{"ygjfGSt+/Gs=";0x15B0},{0x7E6;"1AjfGdauCI5LviuS6P6ElC11"};{"ywjfGdqR0pCHM9c=";0x371},{0x174A,"zAjfGfZPAC03ng=="},{"yQjfGfofDcw9",0x20},{"0wjfGfe8LX5XnObAAKxuqN0oVg==";0x85},{"xQjfGQE=",0xB2A},{0x7A4;"xQjfGeA="},{0xE37,"zQjfGQ5+Ex473SpCHA=="};{0x21EF;"0AjfGfp+DYs3fvZxJR4="};{0xEE5,"ygjfGft+EWs="};{"zQjfGRF+AvtDfhnBHA==",0x1408};{"0gjfGSvNARFCXSnR6Gt0tA==";0xD31},{"yQjfGSdPBKtK",0x580};{0x1E2,"yAjfGQdx"},{0x199C,"xwjfGQcdLg=="};{0x1A5B,"zAjfGQz8Jy5eaw=="},{"zgjfGQh+DmtszRjC",0x22C9};{"zQjfGfj+AhxIsQViJA==";0x1559},{0x13EE,"zQjfGQcPALw7rRqxJQ=="},{0x156A;"0QjfGQ+tMz1zbDMQBgJPJRs="};{"zgjfGfy++ww5Thry",0x258F};{"zAjfGQUvAts3rg==",0x161E},{"yQjfGSltDQxK",0x69C};{"zgjfGRofDlxKTjSR";0x8F},{0x2089;"0AjfGQht+MtBqzNCIv0="};{"zwjfGQhtBKtBHDPxIR5E",0x1F56},{"1AjfGdze/pyJgg0wHzJ9hRjE",0xADD},{0xA15;"ywjfGQq+DlxK7R0="},{"0AjfGQ0vE7w9fC7xIU8=";0x19C3};{"0gjfGQ5+BEw4btXBKCxdRw==";0x24BC};{"1AjfGdZN0pyLbQnh6Gs6Ziiz",0x6E6},{0x14A2,"zQjfGRK+AVxpPi2hKw=="};{0x1B2F,"xwjfGRQdLw=="};{0xAE9,"0gjfGTCrNHCIbdzR6GxJYw=="},{0x20E9,"xwjfGSc/Aw=="},{"ygjfGfEvBFw=",0x97F},{"tQjfGfi+D9tDrSXCHB9kYy9FUJ7m";0x60D};{"0AjfGQu+E843nhzxFi8=";0x21D3},{"zQjfGdZxKsw3nhyxJQ==";0xC34},{"0gjfGft++FxW7RhfH25FZA==",0x605};{0x226E,"0AjfGQz+DWtpjRiiHP0="},{"yQjfGRZeANtA";0x9E},{0xEB3;"zQjfGQ9+E2t8PCXxJQ=="},{"xwjfGRlt+w==";0x1E84},{0x3F6,"0gjfGQgfFD0469r+B+1lBQ=="};{0x829;"ywjfGfZPAC03nhc="};{0x1F49,"zwjfGRIf/qtAvDJxMC9D"},{0x9F3;"ywjfGfj+Al5Tvik="},{"0wjfGQ69/Ks+7S3BBW5QZSElVA==",0x212D};{"yAjfGfih";0x324};{0x166A,"ygjfGSz++2s="};{0x1BC6;"zAjfGRfNDSw+bQ=="};{0xB0D;"ywjfGRZ+/kw7bSk="};{"yAjfGTNd";0xA67},{"yAjfGS0f",0x306},{"0gjfGR37Mu0+MwrfI35SlQ==";0x13C},{0x1513,"zAjfGQMc/qtA/Q=="};{"0gjfGdi8MfuJzgD/LfyE9g==",0x244A},{"zgjfGRof+Ww/nSli",0x90},{"ywjfGeADxFuCQuA=";0x154};{0xDAF;"ygjfGfj++Ys="},{0x24E5,"0gjfGdn8Eh5UbiWfLXtTkw=="},{0x1B02;"xwjfGfhx1A=="};{"ygjfGSz++Vs=";0x166B},{0x17E3,"zAjfGRG+Dhxjew=="},{"ywjfGREfEwxKUgo=",0x8BD};{"0QjfGQz8E4x0fv3yAVFjNS4=";0x1EBF};{0x1FFD,"0AjfGREdGS5o6/j/AU0="},{"zgjfGQcNJM1hTBSf",0x2251},{"xwjfGRe9/Q==";0x1D70};{"ywjfGfdeAFxIjRg=";0x973};{0x2024,"zwjfGQq+/bw3jQcSLL49"};{0x25C4,"yQjfGfdPAFw3"};{0x15D7;"zAjfGQU/+mw+fg=="};{0x23FF;"zgjfGQr+Dlw73Sex"};{0x267B;"yQjfGQq++6tT"};{0x111A,"1AjfGS7rHjxsTCoAED1PRShl"},{"0AjfGfofDS1brhexKw4=";0x220B},{"zgjfGS1dAQxAfSli";0x23DB};{0xB4C,"0gjfGTFxFW5HPTB+6sw6dw=="},{"ygjfGRr+/Gs=";0x11B1},{0xC0E,"ygjfGRC9/Jw="},{0x250E;"yQjfGQdP+vs3"};{"yQjfGQq+/qtA";0x267C};{"1AjfGSVP+wxFXRhxJC9F9Bs1",0x14B9},{"1AjfGff+z+1EzRVSHdtntg6k",0xFB9};{0xFFF,"xQjfGfg="},{"zAjfGQ6+ANtIPg==";0x1212};{0xC8A;"ygjfGQf9APs="};{0x1893;"zAjfGfdcLW1X2w=="};{"uwjfGQdtBKtIjfuxIx9ow/uDUI3Q/djiUcNP";0x25BD};{"0AjfGfe9DXs7rSmfLG4=";0x20A8},{"zAjfGfi+/AxGjQ==";0x18F6};{0xFCE;"0QjfGd6NyJ6TzRRiDUyBxRA="};{"0QjfGQgfE1w9DveyJT9StCU=";0x1CA0};{0x613,"0gjfGQxt+vtIrBliGe5UVA=="};{"zwjfGRK+AVxpjhihGA9O",0x1F4C},{0x4CF,"0gjfGfj+AhxIrBliGe5UVA=="};{0x1F0D;"zwjfGQh+/kxpjhihGA9O"};{0x220C;"0AjfGfofD85HnixxFi8="},{0xDCE;"1AjfGfUOHH10yxlSKdGEtRHG"};{"uQjfGfsdLU5pvAVf/NJwxQkHaMvC0gi+aA==",0x1D8B};{"ywjfGQttAHxDfh0=",0xABB},{"xQjfGSA=";0x1230};{0x152;"ugjfGfW9AFw3njTxIr5vwy9Tbqzb7riC"},{0xC60;"xQjfGR0="},{"xQjfGR4=";0xCDC},{0x1DB8;"uAjfGfW9AFw3njTxIr5d9AsGPX7uLw=="};{0x25E3,"0wjfGfW9AFw3njTxIr5k5CVFPw=="},{"1AjfGSDB/D6Fe9bxJVxjlPrE",0x127D},{"vQjfGQu+E55AzR3xIU9yBTFTUM3yzrV/T+NAc08=",0xBD9};{0x1572,"ygjfGTS+B1w="},{"tQjfGREfFMw3mxnCK85HlwtjSF70";0x4F6},{0x89E;"ywjfGQcf+fs3rRo="},{0x18E8,"1AjfGSyBFL5SvBZxDF1nlC40"},{0x1FFF,"0AjfGREfFMw3DDOiHB8="},{"0AjfGREfFMw3+ylxKS8=",0x2000};{"ygjfGQVcGs4=",0xAC4},{0x1A84;"xwjfGff8GQ=="},{0x140D;"zQjfGQdPAMxJ2yUyHA=="},{"0gjfGQyRIq1kTysAIQ9S9A==",0x610},{0x115B;"1AjfGQy7Mf1Tfhkg/z5rgy/T"};{0x1CBA;"vwjfGSht+p8+7eYyIv1OqAxzQ4LbL8TSNqM+JTXDNQ=="},{0x1A1A;"xwjfGQgfEw=="};{0x1E22;"0QjfGQstF3xk/RyhMDJBGAI="},{0x146F;"tgjfGfgf/ds9PydCGA5EFStFVM4="},{0xF2A,"1AjfGRFr+1Bl6wDOKrxOVvij"};{0x2326;"zgjfGRL+AhxITjSR"},{0x2584,"yQjfGfc/+kw3"},{"zQjfGfsfDUxJviVRHA==",0x16AB},{0x2632;"0wjfGfZ+DVxDrTKx/K5KYxbTPQ=="},{"0AjfGQhPFLxXXSyxFh4=";0x2065},{0xEE8,"ygjfGQz+DWs="};{"zwjfGQhP+gw/iyyhHA89";0x1F32};{0x220E,"0AjfGfq+B1xZ7TISJQI="};{0x18AE;"1AjfGSveGH1KbjKgIx5OldUJ"},{0x15E8,"0QjfGQ18LQ5qa/0iCx1hY/k="};{0x168F;"zQjfGft++0xpvimxGw=="};{"ygjfGft++0w=";0xEE6},{"1AjfGTKBICxrfCDv5SxQJQhJ",0x1717};{"yQjfGRZt+PtI",0xAD},{0x1FDD;"zAjfGTIfEWt8jg=="};{"0QjfGSgMM4uHixWf/A+At9g=";0x2409};{"1AjfGRZt+lw3rRqfI85TlC41";0x1198};{"0gjfGRZt+lw3rRrAGP5FVA==";0x632},{"0wjfGRZt+lw3rRqvLL5UYzFzSQ==";0x276},{"1AjfGdxtMAxdHSUgLOtIlSsE",0xAAF},{"0QjfGfpuHY5lDgXPC+tvh/g=",0x1E7D},{"1AjfGRauza2J/SUg+P1+VQcH",0x1272};{0x1F3A,"zwjfGQi9E1w93dXPIk5H"};{"ywjfGScf+fs3rRo=";0x1020},{0x1491;"zQjfGQi9E1w93dWwJw=="},{"ywjfGQ++CF09bjQ=";0x19C};{0x1E01;"yQjfGQ++CG5M"};{0x23;"zgjfGRkvAPs5PjNi"},{0x888,"ywjfGQcPAPs1jSo="};{"0AjfGfi9+c43nhzxFi8=",0x2124};{"ywjfGffNBJxMjSo=",0x99A},{0x16C7,"1AjfGTHODatLH9f+5/yDGBSz"},{"yQjfGfZ+DVyL";0x2469},{0x1A90;"0QjfGQVe/mtJrjNiMExO5CY="},{"yQjfGfZ+DVyM",0x246A},{"1AjfGfze/IA1nTGwB/FUJhAJ";0x125F},{0x15F6;"zAjfGR6N/qtA/Q=="};{"zQjfGQhP+stBDClSHw==";0x1489},{"wQjfGS7NE5xJE/MeG25EtC9FUyPoT/YxP+SQJ0PlWfNm",0x220D},{0x26F7;"yQjfGfnM+OuK"};{"0gjfGRe+E8tAThZhIu5DZA==",0x73E},{"0QjfGfqdBGs+vDNSIB5K9DA=",0x1E8B},{"ygjfGQh+/kw=";0xCBA};{"xwjfGRO9Ew==",0x1AC6};{"0QjfGdy+Mi5FzA+R7E1ig9k=",0x17C8};{"zAjfGRIfAFs3fQ==",0x185C},{0xEE7;"ygjfGft++Fw="};{"1AjfGdWNMx6GDiuyB75MpyxT",0x689};{"yAjfGQ0v",0x22A3},{"ygjfGff++Ws=";0xD34};{"ugjfGfqdBGs+rC3iHOxHZPpzPv7VbrbS";0x4A3},{"twjfGQgfAy1b3SuyI+5DhSVjSl7yHsw=";0xFFC};{0xE3C;"ygjfGS69Ams="};{0x164E,"xQjfGSc="},{0x14D9,"zQjfGfdeDWs33QuyIA=="};{0x138F;"zQjfGfZPAC03nguyIA=="},{"zgjfGQu+E+09jhex",0x245C};{0x17C0,"zAjfGQcf+wxKog=="},{"vAjfGfed+Fw5PuZQFv1OVDBGVA/qPrziUvQ=";0xE95},{0x1982,"xwjfGQd+/A=="},{0x22CA;"zgjfGQh+/kxMzSfR"},{"0QjfGRofDsxKjTFxIL5NVBw=",0x2159},{"zwjfGQxtAOs37PeCHC9N",0x2146};{0x11B2;"ygjfGRr+/kw="},{0x23BF,"zgjfGfj+AhxIyxgy"},{0x2307,"zgjfGRK+AVx8yxgy"};{"ywjfGRK+AVxbnjE=",0x93D};{"zQjfGfj+AhxIsRKxGg==";0x155A};{0x23C0,"zgjfGfj+AhxI+ymR"},{0x2308,"zgjfGRK+AVx8+ymR"};{"ywjfGRK+AVxgjSs=",0x93E},{"zAjfGRdeDSxMfg==";0x1B9F},{"1AjfGfj+AhxIsfcCIi5FZCVF",0x1035},{"0QjfGRK+AVx8rC4SLJ5NVBw=";0x1CC2};{"zQjfGfj+AhxIsQ7xJw==",0x155B};{"zgjfGRK+AVx8PC2C";0x2309},{0x1DBF;"xwjfGRh+Aw=="};{0x1262;"zQjfGQUv+Os7fi0SIQ=="},{"xwjfGfnMzQ==",0x1B91},{0x1AE;"uAjfGSxt+utXjjKxJexHdC7TPgzCew=="};{"yQjfGQm7G21q";0x260B},{"xwjfGScfDg==";0x2120};{"ygjfGSVe+sw=";0x1248};{"twjfGfkv+KxHjQ3BIy9yBTFTUM3yzrU=";0x113F};{"xwjfGRf++Q==",0x1D81},{0x1247;"ygjfGSVd+Ps="},{0xAC3;"ygjfGQVbGP0="};{"xwjfGSVuDg==";0x1F9C};{"xwjfGQVsLg==",0x1818},{"yQjfGSxP+gxK",0x7EC};{0x68,"yQjfGQxNGg5q"},{"zwjfGQWND9tTeyUyGE9O";0x1D21},{0x166D;"xQjfGTE="},{"uQjfGfgf/ds9P+b/G55OqAmDSD/qHrziOw==";0x1C19},{0x1C67,"7QjfGS7NE5yS4fOSKk6Hwy9ESx/hssLiOsc+9E8kT8eB9H1kZkdy5lgJkTmN"};{"zwjfGQUv+Os7fi0SIWxN";0x1D0B},{0x228A;"0AjfGfu+AJw93eafDGw="};{0x9E3;"ywjfGQmuAWs5fhc="};{0x1CC3;"0QjfGQj++Vs7nTKx/D5OBRY="};{"0gjfGQVtEyw2TifxGJ5pxg==";0x1F5};{0x2038,"7AjfGfofDS1brhexKw6IsyVFQb7by8RyOmM7tlJTQKNLFnWHpMpYWZUp"};{"yQjfGSxtAOs3",0x810},{0x733,"yAjfGRqu"},{"zAjfGd+s+yw+bQ==",0xA3A};{0x1C05;"zQjfGTJ+Dlw2niUyHA=="};{"zQjfGQ6+ALxInSlxKw==";0xE56},{0x9B5;"ywjfGfh+CMs7rho="};{"0QjfGfYfDixIThyx+L5Q5CU=";0x1BA5};{0x1DBA;"0QjfGRS+AqtIThyx+L5Q5CU="};{"zwjfGQdtBKtIjQxiGK5O",0x1EDA};{"zwjfGQdtBKtIjRJxFS9F",0x1EDB};{0x2173,"0AjfGRQfGmxI/S0iHA4="};{0x1EDC;"zwjfGQdtBKtIjfcSLL5N"};{0x522,"tQjfGQesDas/jQxiIq5d9BpGUF70"};{"zAjfGQq+/bxDrg==";0x1938};{0x226D;"zgjfGRF+9mtW7Rgy"},{0x1C08,"0QjfGQd+DlxsnjOCHP1jlCE="},{0x14F9,"xQjfGRw="},{"1AjfGSu+E8tHrhoSJO5EsyXk";0x1855},{"zQjfGfdeDWs33S0iGg==",0x14DA},{"zAjfGRK+Aqs5Tw==",0x185E};{"yQjfGd/LD149";0x17D3},{0x18EC,"yQjfGd8NFLxA"},{"yQjfGd/c+NtA";0x17EA};{"zQjfGfb++Ux8PCXxJQ==",0x1461};{"yQjfGSq+/Ww1";0x6EE};{0x73F;"0gjfGRe+E+s3fiXCGP5FVA=="};{0x1477,"ygjfGTIfAFs="},{0xCEF;"0gjfGSu+E+s3fiXCGP5FVA=="},{"ygjfGRr9D2s=";0x11BF},{"ywjfGQcfDWtVji0=";0x89F},{0x1D5A,"0QjfGfi+DmtIa/n/Ce5FUyU="},{"yQjfGfx++2w3";0xFC},{0xCD6,"ygjfGQgfExw="};{0x1271;"zQjfGQVeEyxGzRqxGw=="},{"yQjfGRIf+sw3",0x259F},{"zgjfGRIf/qtITjMi";0x2304},{0xBA5,"ywjfGfx+DSw73Ro="};{"yQjfGQhP+stB",0x2589},{"ygjfGQ0vAQw=";0x63D};{0x1409,"zQjfGRF+Bx43zTLCHw=="},{"0gjfGQnOEv1LXjSy+ixgVQ==",0x4B8};{"1AjfGSW8CG5baxjxFf5ek+IF";0x14C0},{"0gjfGQ5RDbA3ovrCIV5Tlg==",0x24E3},{"ywjfGQcdGf1Xq/o=";0x89C},{"0AjfGQr+Dss93TSxFh4=";0x2176};{0x1116,"6wjfGfofDS1brhexKw6IsyVFQb7by8RyOmM7tlJTQKNLFpTYlqquhbI1jw=="};{"zwjfGfq8Ll5j2wsuHF1O";0x20E8};{0x4BE;"0gjfGfi9+ftD3SvAHA49sw=="};{"0wjfGf9sGg5oTBSf1yxhCfCHXA==",0x227B},{"zgjfGQwf+VxpTiCx",0x24D5},{"zAjfGff+BWuIMw==";0x1899};{0xC5A;"ygjfGQcfA2s="},{"ygjfGRK+AVw=";0xCF8},{"1AjfGfq+B1x0yzLxGr5GVDDk",0x110E},{"zwjfGfq+B1xlniWCJy9N",0x20DB};{"uAjfGfe8LX5XnOag/PtkFw+FjzIpiw==";0x1F69};{"0gjfGfZPAMs3XCliJm5IBQ==";0x304};{0xD1C,"0gjfGSv9DpxGfCsQKDxLxQ=="};{"zwjfGfgfE343/TNRIB46";0x1FE0};{"xQjfGf0=";0x957};{0x20C7,"zgjfGQUv/hw9ninB"};{0x208F;"0QjfGRhuB6tJrinCIB97+O8="};{0x8E;"yQjfGQxtAOs3"},{"zQjfGfq+B1xgzSixIw==";0x1632},{"zAjfGQVeEyxGjQ==";0x162C};{"ywjfGSxt+utqawg=";0x12B9},{"tgjfGQh+/kw1njOyIR909C5zPVE=",0x139C},{0x209A,"0AjfGfe++2s5fiVhIy8="};{"tgjfGQq+DstKThbCIM5HhhwUTL4=",0x14B3},{0x2025;"zwjfGQq+DstKThbCIM5H"},{0xE02,"vAjfGQh+/kw1njOyIR9dwymDPo3q/cDSQGQ="},{0xEC6,"ygjfGQwf+Vw="};{0x2098,"0AjfGfcfFLw5jfdxIQ4="};{0x220F,"0AjfGfq+B1xprSVCHB8="};{0x2497;"zgjfGfq+B1xpTiCx"};{0x110F,"1AjfGfq+B1xzyzLxGr5GVDDk"};{"xwjfGfofDw==";0x1BC9};{0x42,"yQjfGfr+E9s3"};{0x174B;"1AjfGSl8DmBXHBpeG6xDZPtH"};{0x68C;"0gjfGfvtAnxgTSz/Bu5fxA=="},{"0QjfGS3sIbtJwhWxLPxepxY=",0x1DE3};{0x1174;"ygjfGRp+Dkw="};{"yQjfGReNAIw+",0x1DC};{"5wjfGfe+DXw3nuZxG65KBeoUTl7mDtLiT2R99EWzQtc2s3d3numf";0x20A5};{"0AjfGTIf+kxmjSfCIv0=",0xEF},{0x16FE,"0QjfGf2xzVs/kgt/MGw5dRU="};{0x71,"ywjfGdWx0oCJUtY="},{0x72,"ywjfGdWx0oCJct0="};{"0AjfGfq+B1xajhrCIr4=";0x2210},{"1AjfGfdeDQxA/S0iGj1DlC3T";0xFB5};{0x2039,"uAjfGRS+E9s3rhdQHP0/VBwWUz/yvg=="};{"1AjfGQD8+Vs3PwixH+4/FS9F";0xAF1};{0x977;"ywjfGff+/dtD3Ss="},{0x140A;"zQjfGRF++PtWniUyHA=="},{0x15A5,"zQjfGQptAIs1zShCHA=="},{0x23A;"0wjfGQy8v843nhyxJdJyZC2TSQ=="},{"ywjfGRO9E9tD3Sk=",0x9C6};{"0gjfGQgfDVs3ngcSI85Dtw==",0x3F7};{"0wjfGQgfDVs3nvfxLS9hFSLTSw==";0x3A};{"0AjfGQ0vAQxajhrCIr4=";0x19C4};{0x102;"0wjfGQmtBLxTfi7xIU9vwylTVA=="},{0x1FC5;"0AjfGQd++Xw7rvfxLS8="},{0x1411;"tgjfGfdeDQxA/S0iGi1HlCxjVM4="};{"wAjfGfdeDQxA/QhxJWxGlCfTY23qvtKxPvRCwz9k";0x2486},{"tgjfGfi+APtDDiXCIM5HhhwUTL4=";0x1472};{"ugjfGfa+Des73SkiK/tOlDCTTH7VbrbS",0x27A},{"yQjfGffNCNs3",0x2600};{0x1F3B,"zwjfGQi9E1w93ffCMJ5O"};{"vQjfGfgf/ds9P/gSLL5NZhxzP87wTrWQUhVRszw=",0xB19};{0x1442,"zQjfGfa+Des73SkiKw=="};{"0AjfGfi+APtDDg0iGc4=",0x2116};{0x18E0,"zwjfGQ5+EWt8Wxki13GK"};{0xDE7;"zQjfGQ0vAQxWniUyHA=="},{0xFCB;"jQjfGfGCGQx8DjNiHNJT9BYoPb7qvrwDPhU2szyXg8NSRYoUpOmdJpcEPcM1CYxLsFqmuDX0fliNGp35gSU715Hon7WxM9sMwuPoM9hy8kQ4koI14a7hy+3XmKd+U33jTwRL10sqp0uZioTTPCRLC6q5dBpEBUEkjtDt+4MYNyQ/FLNqtDrmngMygMH6AhziVgcRKEO92OLN4jw4UedAFInES1N3l6RLnulm1DYUPMSKS5xHrONPJFHEiWmVeVMkiGN+KJ+qnWLbf8BjHg=="},{0x3A7,"0gjfGQdtBFtDfhevJe5GVA=="},{"zwjfGQdtBFtDfhfAHF09";0x1EDD};{"lAjfGfGCGrxDbTRxI9JktByTP80p/My+cFVe9VeVcAdctrMUXXiYO5oVQVeYBUvXsmqehFAlQYhMaJ4mdPZ+9YoUgrqZcuvxxzTboSFSLahwA1NE8G4mofDXX8M8RUIlPLRMFJdKXPd9VmJUfrWtenfKnvpT9EEGi6eVpW1JjeiIC3r5qaUOzvyce2sYEiTiarMv9EPb2R8BzY3Yjol5RlIES8RLCaqqmjpmNDwkfrh9mmcan2NBFTU5jYlbSkrXXBWTqFmWevLWX7g01bIeA+xI",0x1896};{"0AjfGQcfDyw3fRLxIY4=",0x1FE1};{0x23B1;"wAjfGQcfDyw3febPIA5U9Bzjj1vm/c2CT9dZUzyD"};{0xA34;"ywjfGQr+Dss9nio="};{"1AjfGQr+Dss9niqNBi9DgyVF";0x1076},{"zAjfGSs/AFw5Pg==",0x20FB},{0x5AD,"0gjfGQvLB42IQ/XgFlF+RQ=="};{0x1097,"1AjfGQrLMpA6QyngKj2Bl9pz"};{"0AjfGTF+9ms27TLBHP0=";0x56};{0x1C09,"0QjfGQd+/GtKzfeyFX5OtBY="};{0x13C8;"1AjfGRn8zf1qiw2yKDKDxAwE"},{"zwjfGRNt+Gs+fiXCIM5H",0x1FF1},{0x25E1;"yQjfGfeNAMs3"};{"xQjfGf8=";0xA4E},{"tQjfGREdGS5o6/j/AU2RVfvVXdEp",0x4F4},{"ygjfGQEjuf8=",0x8BC},{"0QjfGfe8LX5XnOZQC+xdteM=";0x1CEB},{"AAjfGS7NE5xJE/MeJe5ACSeTQw/W/tChQvRAszwVQLM8KYSHotV8O7DTNjRDGYM7cnibCW/zUDl8al5LPkRPx3nntHmrP/P/wuMdzx9S4dNE4ltF5b7sPBkUfJNR0w==";0x1260},{0x1252,"1AjfGSAtzxyIDNux6V5o1hBl"};{"5gjfGS7NE5yS4fOSKk6Hwy9ESx/hssLiOsc+9E8kT8eB9H1k",0x25BE},{0xF93,"zQjfGeWsIC5gjPi/2A=="};{"ywjfGfe7Hs1XrPQ=",0x964},{"1AjfGfq8Ll5j2wuN+WxlVuo4";0x111B},{"yAjfGebb";0x2593},{0x1213;"ywjfGSu+E4s33Rw="};{0x1A3D,"zAjfGQy9/kx8jA=="},{0x242A;"0QjfGTIOF31hzPuuHkxEY9w="};{0x9FF,"yAjfGTJx"};{"yAjfGTJh",0x9EF},{"0AjfGQW9Ewxq7RpxKy8=";0x1E3F},{0x13B8,"zQjfGRC9/Jxs7RuxJQ=="},{"1AjfGRr9BHxlni5SMPw9Zfiz",0x1445},{"1AjfGTLtMixWHTQiBC6DowYZ";0x1768},{0x262A,"0gjfGdwfJ1xlqxAPHE9hxQ=="};{"xwjfGQgfBw==",0x1A1B},{0x1FC1,"0QjfGSDBxx1sWylhMD2Bo/Y="},{0x1E73,"0AjfGQXNE6s5PjGxIR4="};{"1AjfGQ7MD5yMPjQPG9tlBQ4W";0x974};{"ywjfGSu+Eyw+XTM=";0x1214};{"0QjfGQr9BKtpfvlR+Q55czI=";0x1DC8},{"1AjfGQv7zoxIPBIiIC5zY9g1";0x10FE},{0x5C7,"0gjfGfr+/Gts7RfxK25IBQ=="},{0x2BF,"0AjfGSwfDetWzSfCIv0="};{"zwjfGfi+Ads3rRpxIQ9O";0x1FE4};{0x185D;"zAjfGRIf/kw3fQ=="};{0x9F,"yQjfGfu+A4s3"},{0xC9E;"0gjfGSpuLV09YjK+57w7hA=="};{0x19CE,"xwjfGQf9+w=="};{"1AjfGQh+Ew5DPipCBxyCVjKz",0xF40};{"0AjfGRIfEmtKfDNiJs4=",0x207B},{"0gjfGRK+AVxnvhaxJexD1A==";0x419},{"0gjfGRK+AVxg7RuxJexD1A==",0x41A},{0x230A,"zgjfGRK+AVxkzTTB"};{0x1D7A,"0QjfGfj+AhxIjBaCHP1ywy0="},{0x1D7B;"0QjfGfj+AhxI+zOSHP1ywy0="},{"zQjfGfj+AhxIPCUiGw==";0x155C};{"0gjfGRK+AVxnvhaxJZxOdA==";0x41B},{"0gjfGRK+AVxg7RuxJZxOdA==";0x41C};{"zgjfGRK+AVxW7TPC",0x230B},{0x1D7C,"0QjfGfj+AhxIjBaCHP1lVCc="},{"0QjfGfj+AhxI+zOSHP1lVCc=";0x1D7D},{"zQjfGfj+AhxIWzMSKw==",0x155D},{0x9AE;"ygjfGQMcBKw="},{"yQjfGQMcDwxF";0x2258},{"xQjfGS8=";0x1119},{"0AjfGQMcEwxJfhjxIU8=";0x1D33};{"ygjfGQMc+2s=",0x9AF},{"yQjfGQMcAyxG",0x2259};{"zgjfGQMc/gw+rSXC",0x1FBC};{"ywjfGQMcA2s6jis=",0x5F2},{"yQjfGQMcDmw6",0x225A};{"yQjfGQMc/Aw4",0x225B},{0x225C;"yQjfGQMcAFs4"},{0x1FBD,"zgjfGQMc+Jw7ThhS"};{"yQjfGQMcFPs/",0x225D},{0x9B0;"ygjfGQMc+1w="},{"zAjfGQMc/Aw4jQ==";0x1514},{0x5F3,"ywjfGQMcD6tDnhc="},{"yQjfGQMc/GxA";0x225E},{"0AjfGQMc+WtFTjTBHF0=";0x1D34};{"1AjfGRubBG4529iiD0xTlwcX",0x14CB},{"TwjfGfoP+Mx8TheNGNJDVCmDSD/qHrziO9dUY0H0QNc/FY4UmTqdJpUEUJM92Iipm4qbuD3DQsR4WZ/ZUbNQFUGopoqsbuaftTUcYRdS4TSDwT3z4a7h+yeTRddSs300iJhKKJKpXEqaalLTPyWIp2x2oMpCJX4UjXistaFTOtc8l343sgotT/9cRN00UuE=",0xEC3},{"zwjfGfa+Des7sQqxGB5J";0x1EEB};{0x214C;"0QjfGRnxJ3BKUtZQIQxQdCw="},{0x120D;"vAjfGRhuB6tJrinCIB97+O8JgJEVQg+dj1g="},{"ygjfGRkv+Fw=";0x1123};{0x1AB5,"xwjfGfh+CA=="};{"0QjfGQz++VtszRjCAr5jlCE=";0x1EB2};{"1AjfGTBhF2xmLBqABw1GKCij";0x1626};{0x1DB4,"0QjfGS2cGotbnRd+JE5DGBQ="},{0x2030;"0QjfGResA4tbXRdiCFFsVTQ="},{0x226F;"zgjfGRF+DsxAjRdS"};{"ygjfGSx+/ms=",0x162D};{"ywjfGfq+B1xHnik=",0xACC};{0x1F51;"uQjfGRhuB6tJrinCIB97+O8JfaEh8Q+NhQ=="};{0x1215,"ywjfGSu+Exw97S8="};{0xECA;"1AjfGQcPALw7rRqxJexNZCXj"},{"0QjfGRpbHRFVnBiQEA9rYxw=",0x2174};{0x1F3D,"uAjfGRIfAFtD3Ssu4dtFs+r0UP7Vsg=="};{0x20DC,"0AjfGffNALxIjRifLG4="};{"0wjfGQy+v8w3nhyxJdJSZC2TSQ==";0x22D};{"ywjfGfe+E809nik=";0x958};{0x13F6,"tgjfGfe++Vte7RrxGW5UlBaTSi8="},{0x21E2,"NwjfGfGe95+Lkt1e59GAx9fofUMa8QytjdiUCZMZkZd3Z0pFZcZvR1z4kKeNk0TWV0Zdl5MpkAU7xnQ3keiT+FDUYfVpjR/cCcgljem+H2iUzYnnLpEkIdYZkJeNCYYZeId5NTaWalVxdYv4jug2o1y1YoaSCYUJPMNolm/YkJd3NUomYabbUdFQiQLVbvDxiznXSYwjGw=="},{"BwjfGfGe95+Lwtm+59GBx9b4flEbUQ2+juiSGY7Yk/h8l1RFZ0dwJlZJkRmOszvmW9Vhp5BolMQ7lmjWkeiO+E0FYqZs7Ro=",0x388};{"xwjfGfGNAw==",0x16D9};{"twjfGfofDS1i7R1SK25UNfzUSS/yvr4=",0x11AB},{"1AjfGQ8dEMtEQ/5yAlxultrE",0x9A9};{0x1651,"zwjfGdVhzhGHgtcP5SKA"},{"tQjfGfe+ALw5Pg0iBM5NVC51SU/i";0x591},{"1AjfGfp+DYs3fvZxJR5nlC3T",0x10EF};{"0gjfGQr+Dqs6/SkR/S5Gow==",0x510},{"ygjfGTR+/Gs=";0x1553},{"GgjfGS7NE5xJE/MeGm49JRVEiV7wrvYRUINDY0NEOVQ7GZaoYpijS641UrdQyHaVlfquo3tjQbiIul5ZQlM8x5SHqIldUtXQtoTpP/rBvDZAwVBF8AzODDBjPMdPFE/kS2NhKIcqo3mHmTwUORSel5mKogp3k04J";0x526};{0x126A,"FwjfGS7NE5xJE/MeGm49JRVEiV7wrvYRUINDY0NEOVQ7GZaoYpijS641UrdQyHaVlfquo3tjQbiIul5ZQlM8x5SHqIldUtXQtoTpP/rBvDZAwVBF8AzODDBjPMdPFE/kS2NhKIcqo3mHmTwUORSeCbQrpGY25I8="},{"zAjfGS2NACxKrg==";0x193B};{"xQjfGfc=",0xF83},{0x23A7,"5gjfGQcf+YtKzRqyI+49FS+DPoLwvgNCPCVP508lQgRLU5Qk"};{"0gjfGf7LAy6UPxTPEP47dQ==",0x25D2},{0x2582,"0gjfGdqxNKw/fA6hFg+BlA=="};{0x228C,"zgjfGRG+DhxoTxax"};{0x1A4E;"0QjfGR6BJK1CjdtCLO07BQ4="},{"ygjfGQ5+E6A=";0x68D};{"1AjfGShhx31KyxRvB6yERNtz";0x16FF},{0xC0D,"vAjfGQVdDms/nTLyA25HVClFYb7tzsJDUWQ="};{0x1096;"1AjfGflNBExla/Wv69tSxyL1"},{"0gjfGS7O+8tZfvzRJiJElg==",0x592},{0x1C34;"zgjfGdiBzrCTQ9uu"};{0x950,"1AjfGQ5hAByJPxuv/QJBFwSk"};{"0gjfGSsOHHBDMxrRBS1zBQ==",0xCD5},{0xBB3;"0gjfGTJcLpCTTCUBHRKBsw=="};{0x1509,"tgjfGfldBLxj3RayKwxOwxiTTr4="};{0x19C5;"0AjfGQ0vD2xImymRGL4="},{0x19C6,"0AjfGQ0vD2xIizTBHB8="};{"1AjfGQh90bCGvh3AINtBlwHT";0xF4E},{"0QjfGQlRNDx0fQ3x/FtGdg0=",0x1D27};{0xB1E,"twjfGf9cGt1giwfAALxwqAbVbWvGLeg="};{"1AjfGSreD3xoLP5AAmF01vW1";0x1832},{0xDED;"ygjfGRQf+Ws="},{"twjfGQr+DpxAzR3PIA49lDA0VMvi3cA=",0x1117},{0x631,"0gjfGRZsFMxDHA3C6S5nRg=="},{"1AjfGf67BXyJPhqe6w9msw/T";0x9F5},{0x347;"0gjfGRCRyGxVDB6CIixoNw=="},{0x1C0C;"0QjfGRE/F7tbXPnO/TxfN9Y="},{"ywjfGQXOAy5IjTE=",0x732};{0x1A21,"0QjfGR3rMqBXrdcBBQyARxY="};{"ywjfGfqLMw6Ssf8=";0xAED};{"xQjfGfQ=",0xD55},{0x18D7;"zAjfGfh++Vs9Dg=="},{0x1E5B;"zwjfGfZt+Os7nh2AGP09"};{"1AjfGdV9LgxC+xhuGE1/Ztum";0x655},{0x1FE2;"zwjfGfgfFPs4sfdCGA5J"},{0x2414,"0QjfGSh9ES6GPyViJ01HFCQ="},{0x559,"zgjfGSy9+ctITjMi"};{"xQjfGQU=";0xD1A};{0x17E1,"xQjfGTQ="};{0x1E5C;"0wjfGdVRyBGJM9me8AKCd9U5gQ=="};{"0gjfGdptAx01HPzf6A5SNQ==";0x255F};{0x1A10,"zAjfGQx+/bxDrQ=="};{0xA97,"ywjfGQtPAMxJjRc="},{0x19CF;"zAjfGfp+DYs3fg=="},{0x19EB,"zAjfGfofDcw9wg=="};{0x21CE;"zgjfGfZ++59kzS1i"};{"0QjfGfy7JPtnoh5A+v1OxhU=";0x1F57};{0x13F7;"0QjfGdWx/GtZfRueCf5otgk="};{"1AjfGTJRIS5M2wtRI31ERSgH",0x1708},{"yQjfGSdP+stB";0x581},{0xEEE;"ygjfGRZPAC0="};{"1AjfGfahMb1isgxAKft/BxjU";0xF5B};{"1AjfGQ+BFFuFwh7i6D9EBfw5",0x7F4};{0x19E2,"zQjfGRtt+Fw3XS1CHA=="},{"0gjfGSVdDmtIbSUyHHGI+A==";0x967};{"0QjfGSxbG6CJHBTC+1FU1DE=";0x262D},{0x1357,"1AjfGRibMZBDfRVeEBxAFCGl"};{"zQjfGdyhzWCUUt6+7w==";0xFE6},{0x97A;"1AjfGf28yC1Iiy/B7LxIs/W1"},{0x1E33,"0QjfGRUfEV1Wm9aOGOuAg9U="};{0x2443,"0gjfGQ0M/AxeDhleD65AVg=="};{"1AjfGSedJXxdXiUP+Ps+hPxz",0x169E};{"0gjfGQudHGA4/S0SGP1QFw==",0x5A6},{"0QjfGd5syK4/jBDPK45mNQE=";0xFD4},{0x805,"1AjfGdbuzr5GMxXv+4x6wykG"};{"ygjfGRsPAFw=",0x11F5},{0xECC,"xQjfGQc="},{0x975,"0gjfGRurNG50jSXCLwJnVA=="},{"1AjfGdns0ayHfRSOFi19dvYV";0x978},{0xD56,"ygjfGffN+pw="},{0x2539;"0gjfGf2NI2xAzBIQ73xDcw=="},{"1AjfGf37/Y46YhgBAOtKhgxl";0x998};{0x1905,"zAjfGQmuAWs5fg=="},{0x7C7;"0gjfGRgvE3CIrtmy5ntmRw=="},{"twjfGQr+DlxKTiiyKy9NdilTVMvyrsA=";0x1118},{0xB2B;"1AjfGQDrI4uG7QliJS151PtE"};{"1AjfGdph9RxAbhLvEPxkxw8Z";0x9AA};{"0AjfGRF++Ww7/fuxIx8=",0x1FE5};{"ywjfGS0vEWtKrik=";0xA03},{0x140B,"0QjfGdZ+CGtADiBSBT5Nh/U="},{0x238B,"yAjfGeQi"},{0x1633;"zQjfGfq+B1xHnin/Gw=="},{0xB0E,"1AjfGQCt/v1CfjPB7H5adfwE"},{0x2581,"0gjfGf59A65fi91QK91rYw=="};{"0gjfGQz+Byw+beYyLA5KtA==";0x608};{0x1B89;"zQjfGTF+AvtDfhnBHA=="};{"zwjfGQHRv31djBTP7dJc",0x1B54},{0x1B84;"wQjfGeWsGm5ee+Yw+JxqthF1ZFspDdbQcSZbJ35lVddd"},{0x1AA1,"0QjfGQX8Mm5lexjC65xIhxw="};{"yQjfGQdt+sxJ";0x2531};{"1AjfGdvMIYBJTAgS+e2AxAQ0";0xA49};{0x1DC7,"0QjfGRS8NC9nQxdAH26Dgxg="};{"yQjfGQXMHC5e",0x2396};{0x1D85,"0QjfGfhuDu1XPy/fKUI/tCE="},{0xFD0;"vAjfGfq+B1xpfhgSHi9dwymDPo3q/cDSQGQ="};{"tgjfGfq+B1xoniUiJt1SwyWDTv0=";0x156B};{0xC9F;"0gjfGTS8GcBZQy/B61FBkw=="},{"zwjfGda9D41H295eBh1O";0x1777};{"1AjfGRwCFC86PBHgGq47ldoU";0x14EA};{"0QjfGTQ/9SGIrfXCMA16tgI=",0x2502};{"1AjfGR27BX5DrRby+OtDJyTW";0xC83},{0x228D,"zgjfGRG+Ayxk7TPB"};{0x1727,"0QjfGdrcFB5WPxTA/R1ydg8="};{0x2138,"zwjfGft++0xo7fYSIL49"},{0x1759;"1AjfGTLeMK6GTQfx7NFft9Y2"},{"xwjfGd+CJg==";0xBE8},{0x18EA;"1AjfGSxc+rthP97BBiw/hwgX"},{"0gjfGQf9+yw+fSliBC9EJQ==";0x3AA},{"0gjfGQUMGX09jhWhBDxSFg==",0x1AF};{0x2648;"yQjfGQmtBPtI"},{"1AjfGQdR0G1KfddRJEx0kyml",0xEEB},{0x205C;"0AjfGQgfAy1Z7TISJQ4="};{"zwjfGffe+NtAsQxiGK5O";0x1FC0},{"0AjfGffe+NtAsRqxLx4=";0x20F3},{0x2659,"yQjfGfj+AhxI"};{"yQjfGRmND2tK";0x2D4};{0x19EC;"zAjfGfofDcw9kg=="};{0xBB8;"0gjfGSihyCFJixpv8G1yUw=="},{"ywjfGfZPAMs3TCo=";0x82A},{"ywjfGd2R1HCJUtg=",0x22DF};{"zQjfGQgf+ttmzTKyHA==",0x1481};{0x8B1,"1AjfGQ0d1B1JHQlxAz4/c/Vz"};{0x153B;"zQjfGfi+DmtIfi0iGg=="};{0x908;"ywjfGRGsLWtJjRo="},{"zQjfGfq+B1xWniUyHA==";0x1634},{0x153C;"zQjfGfi+DmtIfCkDKw=="};{0x994,"vQjfGfZtBMxJsfcCID89qPMoXYLVzgORQgVCJXw="};{"ygjfGfW9AFs=";0xB70},{"ygjfGStdFLs=";0x15E9},{0xD4F,"0gjfGSwMDetnHTHxDV5wcw=="},{0x29D;"1AjfGd7B9dtbThmvCl1QR/xz"},{0x197C,"0AjfGQ0/AIs3+yVhHJ4="};{0x1EA0,"yQjfGQ0/AIs3"},{"zAjfGQD8+Vs3Pw==";0x13D1},{0x95B,"1AjfGf1804xXTRNxHkxfhhAZ"},{"ywjfGQdtCMxIzTI=",0x8CC},{"xwjfGTT++w==",0x22D5},{0x1D2A;"0QjfGQktGHxHjBqfK2FAZgY="};{"ygjfGRt+Dfs=",0x11F0},{"1AjfGQofEvtA7SXBGe5K5OQo";0x1054};{0x25C5,"yQjfGfdPAMxE"},{"zwjfGRq++2tM7RjCIL5Q";0x23E5};{"0gjfGQ1xx61MHN3R/2tHkw==";0x248D},{0xE81;"zQjfGdmxyBGJwt7O6w=="},{0x12F0,"1AjfGRg9JAxZghqCCf5ldgJE"},{0x21A8;"0QjfGRs9CA5gMzKSDA86tPg="};{"tgjfGfe8LX5XnObvAvxqZupYj9s=",0x1403};{0x24A7,"yQjfGRAf/S44"};{0x10FA;"1AjfGQuRHi86zAWwAWtq1Pg2"},{0x1345;"tgjfGQdPBKtKyzJC9l5K5CZFVC8="},{"0QjfGREfEWtYThixFh5K9DA=",0x1C43},{0x2505;"0gjfGf18L25UbhoB6wJ+9A=="};{"0QjfGSx91B9KTS6fAkJTZuI=",0x2604},{"0QjfGQ9eGy1lzBuQA1xqpS8=",0x170D};{"0gjfGSqBBctnay9yHB5mhw==",0xC8B},{"1AjfGSvc/o1pQwhwFWFhRRQ5",0x18AC};{"ygjfGQx++9s=";0xEAA},{0xCBB;"ygjfGQh++9s="},{0x1C59,"zgjfGQ1dGww7fSnB"};{"ygjfGTF++Ps=",0x13E1};{"1AjfGdktLx10sgq+Gh5sZRbk",0x91B};{"1AjfGQC8zp5oiwsiHexKUyu1";0xAD2};{0x2526,"yQjfGRG+Mc05"};{0x12D0,"1AjfGRf8CHBmjSrC5WFvVjRj"},{0x1932,"zAjfGS1dASxAjQ=="};{0x41D;"0gjfGRK++Kxhci5iHoxShg=="};{"0QjfGf5dFnxkmweCBz9jlyU=",0x1747},{0x53,"0AjfGScf/Jw93SkiKw4="},{0x1E03;"0QjfGfn9KH5dXNnf+jJagy4="},{"yQjfGfed+LxA",0x25F8};{0x2617;"yQjfGffeFNtA"};{0x222F,"0QjfGRvcEK5ywvxu+eF6RhY="},{"1AjfGfteJM1kvAiA5eFENRL2";0x11A5};{0x1547,"0QjfGdbs00xfHwWS5z07JyI="};{"vwjfGQz++VtszRjCAr5jlCH2SM3xbL7SPPRCpTUFTw==",0x171D},{0x251D;"0gjfGQ7NCItpy/leI455Fg=="};{0x49C;"0gjfGRNR+Sxmq91/CXtb5g=="};{"9QjfGS7NE5xJE/MeGm49JRVEiV7wrvZ/ORY2wzaFO8NPGa7YngpXS6bkewVBWHqVr/qzdE+3ObiTCl7oObM8RKMopuV5Ye+hwHXeciGx8uZQEmRF2w==",0x2177};{0x16AE;"0QjfGf0fFJ9bnimNA85EY+k="};{0x2271;"0gjfGdYOAL03eypg/9FG9A=="},{0xF6B,"1AjfGRJ7A4xDPNyvGS5lFjEX"},{"0QjfGdZs0T1Z6zSSG8w6xAs=",0x144F}}local W={}F=setmetatable({},{__index=function(y,k)return W[k]end,__call=function(y,k)return W[k]end,__mod=function(y,k)return W[k]end;__mul=function(y,k)return W[k]end;__metatable=false})function r(y)local k=W if not k[y]then for a=0x1,#x,0x1 do local b=x[a]local s=type(b[0x1])=="number"and b[0x1]or b[0x2]if s==y then local a=type(b[0x1])=="string"and b[0x1]or b[0x2]k[y]=Y(a)break end end end return y end end local y,k,a,b,s,l,u=getfenv and getfenv()or _ENV,unpack or table[F[r(0x1C89)]],newproxy,setmetatable,getmetatable,select,{...}return(function(y,a,b,s,l,u,E,W,V,j,k,q,C,A,z,v,I,U,M,m,d,Y,g,p,t,S,L,x,N)x,L,j,k,N,C,Y,M,t,q,S,V,v,W,I,p,d,A,U,g,z,m=function(y)for k=0x1,#y,0x1 do C[y[k]]=C[y[k]]+0x1 end if b then local k=b(true)local a=l(k)a[F[r(0x5F1)]],a[F[r(0x9AD)]],a[F[r(0x2257)]]=y,W,function()return-2931872 end return k else return s({},{[F[r(0x9AD)]]=W,[F[r(0x5F1)]]=y,[F[r(0x2257)]]=function()return-2931872 end})end end,function(y,a)local b=x(a)local s=function(s,l,u,r,F)return k(y,{s;l,u,r;F},a,b)end return s end,function(y,a)local b=x(a)local s=function(s,l,u,r,F,E,z,C,I,Y,x)return k(y,{s;l,u,r;F,E;z;C;I,Y,x},a,b)end return s end,function(k,b,s,l)local tt={}local w,B,P,T,W,Ct,D,c,Lt,G,R,It,Q,bt,mt,Ut,K,O,Ft,E,o,Y,yt,ut,at,H,Et,Mt,st,n,e,Nt,C,X,rt,i,Z,lt,vt,kt,h,St,Wt,Yt,f,zt,x,xt,Vt,J while k do if k<0x8065CD then if k<0x445D23 then if k<0x2478F9 then if k<0x138A9F then if k<0x9CA91 then if k<0x4271E then if k<0x1B82B then if k<0xF353 then if k<0x7C35 then if k<0x168C then if k<0x55A then f=F[r(0x1C4C)]T=F[r(0x1C4C)]n=F[r(0x19B5)]o=y[n]n=F[r(0x1C35)]k=o[n]n=y[T]o=k T=F[r(0x22B6)]k=n[T]T=F[r(0x1A2C)]n=k(T,Y)T=F[r(0x1E74)]k=F[r(0xDD1)]c=F[r(0x20A0)]n[k]=T T=y[f]f=F[r(0x22B6)]k=T[f]f=F[r(0x2523)]T=k(f,n)k=F[r(0xDD1)]c=Y[c]f=F[r(0x1FE3)]T[k]=f f=F[r(0x64)]k=y[f]w={c(Y)}c={k(a(w))}f=c[0x1]k=0xA6A104 Q=c[0x2]h=c[0x3]else E=0x0 C=1.3 k=0xF4083A x=.1 Y=C R=F[r(0x252B)]W=y[R]C=x/W x=C C=0x0 W=x<C C=E-x end else o=F[r(0x19B)]x=k R=C[o]f=F[r(0xD62)]T=y[f]f=F[r(0x19B)]n=T[f]T=F[r(0x1173)]o=n[T]W=R==o k=W and 0x6B4146 or 0xA7906A E=W end else if k<0xCEA9 then if k<0xB747 then T=F[r(0x228B)]k=0x33063C n=F[r(0x138E)]n=R[n]n=n(R,T)o=n else k=Yt Ft=It k=0x8F9EB8 end else k=z[s[0x4]]W=F[r(0xBC4)]C=F[r(0x252C)]x=y[W]W=F[r(0x22B6)]o=0x0 Y=x[W]R=0x0 W=0x0 x=Y(W,R,o)k[C]=x k=0x74BA9B end end else if k<0x17086 then if k<0x12137 then if k<0x10645 then k=E and 0xBA2467 or 0x8E25E2 else D=F[r(0x13DF)]J=y[D]D=F[r(0x100D)]Z=J[D]k=y[F[r(0x246F)]]O=x-n X=O-h O=0x1 D=X+O J=Z(D)D=.5 Z=D/J X=.5 D=X*J O=o+W X=O*Z K=f+R O=K*Z G=Q-T K=G*Z E={D,X,O,K}end else W=Y Q=F[r(0xBBF)]f=F[r(0x138E)]T=k f=R[f]f=f(R,Q)k=f and 0xF584B6 or 0x53B1D4 n=f end else if k<0x1A4BA then if k<0x17944 then k=z[s[0x1]]E=k()E={}k=y[F[r(0x4AD)]]else k=0x7D28E9 end else k=Wt k=0xC3C2 It=xt end end end else if k<0x2C2AA then if k<0x215C1 then if k<0x1D3D6 then if k<0x1C44B then B=F[r(0xDD1)]c=w[B]B=F[r(0x3F9)]E=c==B k=E and 0xDC724B or 0x1851AC else K=0x0 h=n J=F[r(0x1537)]w=F[r(0x25F7)]E=y[w]O=F[r(0x1FC)]B=F[r(0x250D)]w=E()G=0x0 P=0x0 w=F[r(0x1537)]E=y[w]w=F[r(0x1CB)]i=0x0 c=y[B]Z=y[J]J=F[r(0x1CB)]e=Z[J]D=z[s[0x4]]X=y[O]k=0x3B2617 O=X(K,G,P)K=F[r(0x1AC2)]X=F[r(0x161C)]G=0x0 J=D*O D=y[X]O=y[K]K=O(G)G=F[r(0x1AC2)]P=0x0 O=y[G]G=O(P)P=F[r(0x1AC2)]O=y[P]P={O(i)}X=D(K,G,a(P))O=F[r(0x252B)]D=0x1 Z=J*X X=y[O]J=D/X B=c(e,Z,J)O=F[r(0x1FC)]G=0x0 E[w]=B i=-35 w=F[r(0xDF0)]E=y[w]J=F[r(0xDF0)]w=F[r(0x1CB)]B=F[r(0x250D)]c=y[B]P=0x0 Z=y[J]J=F[r(0x1CB)]K=0x0 e=Z[J]D=z[s[0x6]]X=y[O]O=X(K,G,P)X=F[r(0x161C)]J=D*O P=0x0 G=0x2D D=y[X]K=F[r(0x1AC2)]O=y[K]K=O(G)G=F[r(0x1AC2)]O=y[G]G=O(P)P=F[r(0x1AC2)]O=y[P]P={O(i)}X=D(K,G,a(P))K=.45 D=0x1 O=F[r(0x252B)]Z=J*X X=y[O]H=0x23 G=-0.1 J=D/X B=c(e,Z,J)X=F[r(0x1FC)]E[w]=B w=F[r(0x1D79)]E=y[w]J=F[r(0x1D79)]P=0x1E B=F[r(0x250D)]c=y[B]w=F[r(0x1CB)]O=1.5 Z=y[J]J=F[r(0x1CB)]e=Z[J]D=y[X]X=D(O,K,G)O=F[r(0x161C)]D=y[O]G=F[r(0x1AC2)]K=y[G]i=-5 G=K(P)P=F[r(0x1AC2)]K=y[P]P=K(i)i=F[r(0x1AC2)]K=y[i]i={K(H)}O=D(G,P,a(i))J=X*O i=0x5 D=z[s[0x7]]O=F[r(0x252B)]Z=J*D X=y[O]D=0x1 P=0x0 J=D/X h=nil B=c(e,Z,J)E[w]=B w=F[r(0x418)]B=F[r(0x250D)]J=F[r(0x418)]E=y[w]X=F[r(0x1FC)]c=y[B]G=0x0 w=F[r(0x1CB)]K=.5 Z=y[J]O=-1.5 J=F[r(0x1CB)]e=Z[J]D=y[X]X=D(O,K,G)O=F[r(0x161C)]D=y[O]G=F[r(0x1AC2)]K=y[G]G=K(P)H=0x0 P=F[r(0x1AC2)]K=y[P]P=K(i)i=F[r(0x1AC2)]K=y[i]i={K(H)}O=D(G,P,a(i))J=X*O O=F[r(0x252B)]D=z[s[0x8]]Z=J*D X=y[O]O=0x1 D=0x1 J=D/X G=0x0 X=F[r(0x1FC)]B=c(e,Z,J)E[w]=B w=F[r(0x23BE)]E=y[w]K=-1 B=F[r(0x250D)]c=y[B]w=F[r(0x1CB)]J=F[r(0x23BE)]Z=y[J]J=F[r(0x1CB)]P=0x0 e=Z[J]i=0x55 D=y[X]X=D(O,K,G)O=F[r(0x161C)]D=y[O]G=F[r(0x1AC2)]K=y[G]G=K(P)P=F[r(0x1AC2)]K=y[P]P=K(i)i=F[r(0x1AC2)]H=0x0 K=y[i]i={K(H)}O=D(G,P,a(i))J=X*O X=F[r(0x161C)]P=0x0 i=0x0 D=y[X]K=F[r(0x1AC2)]O=y[K]G=0x0 K=O(G)G=F[r(0x1AC2)]O=y[G]G=O(P)P=F[r(0x1AC2)]O=y[P]P={O(i)}X=D(K,G,a(P))K=-1 Z=J*X O=F[r(0x252B)]D=0x1 X=y[O]J=D/X B=c(e,Z,J)G=0x0 E[w]=B w=F[r(0x93C)]B=F[r(0x250D)]P=0x0 E=y[w]H=0x0 c=y[B]w=F[r(0x1CB)]O=-1 J=F[r(0x93C)]X=F[r(0x1FC)]i=-85 Z=y[J]J=F[r(0x1CB)]e=Z[J]D=y[X]X=D(O,K,G)O=F[r(0x161C)]D=y[O]G=F[r(0x1AC2)]K=y[G]G=K(P)P=F[r(0x1AC2)]K=y[P]P=K(i)i=F[r(0x1AC2)]K=y[i]i={K(H)}O=D(G,P,a(i))K=F[r(0x1AC2)]J=X*O X=F[r(0x161C)]D=y[X]O=y[K]G=0x0 P=0x0 K=O(G)G=F[r(0x1AC2)]O=y[G]G=O(P)P=F[r(0x1AC2)]O=y[P]i=0x0 P={O(i)}X=D(K,G,a(P))Z=J*X D=0x1 O=F[r(0x252B)]X=y[O]J=D/X B=c(e,Z,J)E[w]=B end else k=o and 0x94F4E4 or 0x5FE857 end else if k<0x2B1D7 then if k<0x28BBD then E={}C=nil Y=nil k=y[F[r(0x1440)]]x=nil else k=0xF40C47 end else Mt=0x1000000 Lt=0x1 vt=z[Wt]Nt=vt(Lt,Mt)St=F[r(0x1D3B)]Mt=y[St]St=F[r(0x79B)]Lt=Mt[St]tt[0x1]=0x1 tt[0x2]=0x1000000 Mt=Lt()Lt=z[Wt]St=Lt(tt[0x1],tt[0x2])vt=Mt^St Ut=Nt-vt Mt=F[r(0x1D3B)]Lt=y[Mt]Mt=F[r(0x79B)]Nt=Lt[Mt]Lt=Nt()k=y[F[r(0x23AE)]]vt=Lt/Ut E={vt}end end else if k<0x3BE3F then if k<0x39E95 then if k<0x3515F then C=b[0x1]k=false C=nil z[s[0x1]]=k k=y[F[r(0x2615)]]E={}else B=.1 E=0x0 Z=F[r(0x252B)]w=.4 c=w e=y[Z]h=n w=B/e B=w k=0xDE8F4C w=0x0 e=B<w w=E-B end else x=false Y=z[s[0x2]]E=Y==x k=E and 0xF2837A or 0x4CD06E end else if k<0x3FC40 then if k<0x3D628 then T=0x1 n=C<T k=0x8BD88E R=n else e=B k=F[r(0x138E)]k=Z[k]J=F[r(0x1270)]k=k(Z,J)k=k and 0x42CBFC or 0xA2DE72 end else k=0xDD73F5 at=F[r(0xDD1)]rt=i[at]at=F[r(0xD9C)]yt=rt~=at H=yt end end end end else if k<0x6F01A then if k<0x5F697 then if k<0x4A5C2 then if k<0x48488 then if k<0x448E4 then Z=F[r(0x1725)]e=Q[Z]Z=F[r(0x1725)]B=e[Z]e=F[r(0xDD1)]k=0xAEB0BB c=B[e]B=F[r(0x1FE3)]w=c~=B E=w else Ft=F[r(0x8E8)]It=0x3 Et=y[Ft]Ct=0x1 Ft=Et(Ct,It)Et=0x1 lt=Ft==Et k=lt and 0xE5D1EC or 0xDB80A5 end else x=b[0x3]n=0x1 Y=b[0x2]C=b[0x1]o=C[n]T=0x1 n=Y[T]T=0x2 f=0x2 R=o*n n=C[T]T=Y[f]o=n*T W=R+o n=0x3 o=C[n]T=0x3 n=Y[T]R=o*n E=W+R n=0x4 o=0x4 R=C[o]o=Y[n]W=R*o k=E+W W=k k=nil R=k E=nil o=E E=.0001 k=W>=E k=k and 0xA26A40 or 0xACE256 end else if k<0x59D06 then if k<0x4CF0F then h=c k=B k=0xADD2E9 else k=w and 0x8FB662 or 0x1B8A88 end else f=F[r(0xDD1)]T=R[f]f=F[r(0x6AC)]n=T~=f o=n k=n and 0x232687 or 0xD46654 end end else if k<0x6CC0B then if k<0x69C86 then if k<0x6482F then k=0xA80F44 else k=0xA67CA9 end else k=0xE43E80 o=z[s[0x5]]n=true R=o==n x=R end else if k<0x6D5BC then if k<0x6D003 then C=z[s[0x3]]Y=F[r(0x1404)]E=C[Y]k=not E k=k and 0x8F44FC or 0x6D5615 else f=F[r(0x22E5)]x=F[r(0xE88)]T=F[r(0xEA6)]h=F[r(0x239C)]o[x]=T T=F[r(0x22D6)]x=y[T]Z=F[r(0x2524)]Q=y[h]w=0x0 T=x(f,Q)x=I()B=0x0 z[x]=T T=z[x]h=F[r(0x517)]Q=0x2 f=F[r(0x1040)]T[f]=Q Q=0x4E20 f=F[r(0xE4D)]T=z[x]T[f]=Q c=0x3D0900 f=F[r(0x1407)]T=z[x]Q=y[h]h=Q(w,c,B)T[f]=h B=F[r(0x239C)]f=F[r(0x180B)]h=F[r(0x1FC)]T=z[x]Q=y[h]c=y[B]B=F[r(0x21EA)]w=c[B]k=0x719839 e=y[Z]Z=F[r(0x140F)]B=e[Z]e=F[r(0x1157)]c=B[e]h=Q(w,c)T[f]=h Q=F[r(0x1B86)]f=y[Q]Q=F[r(0x1C00)]T=f[Q]w=F[r(0x1B86)]c=F[r(0x1B86)]h=y[w]w=F[r(0x1F6F)]Q=h[w]w=S(0x183395,{x;s[0x2]})h={Q(w)}f=T(a(h))f=I()T=true z[f]=T h=F[r(0x1B86)]Q=y[h]h=F[r(0x1C00)]T=Q[h]w=y[c]c=F[r(0x1F6F)]h=w[c]c=S(0xBE92B0,{s[0x6],s[0x7],s[0x8];s[0x9];s[0xA],f})w={h(c)}Q=T(a(w))h=z[n]Q=#h h=Q T=0x1 Q=0x1 w=Q Q=0x0 c=w<Q Q=T-w end else J=F[r(0x3F9)]Z=F[r(0x116E)]k=0xB50789 Z=Y[Z]Z=Z(Y,J)B=Z end end end else if k<0x84CBD then if k<0x7618C then if k<0x7293D then if k<0x7144F then f=F[r(0x239C)]T=y[f]k=0xD1E2F7 n=R~=T o=n else x,R=C(Y,x)k=x and 0xA0A6A5 or 0x4BF52C end else n=F[r(0xEC4)]Q=F[r(0xBC5)]f=y[Q]Q=F[r(0x22B6)]T=f[Q]c=F[r(0xEC4)]w=C[c]c=F[r(0x9D2)]h=w[c]Q=h+Y h=0x0 f=T(Q,h)C[n]=f Q=F[r(0xEC4)]f=C[Q]Q=F[r(0x9D2)]T=f[Q]f=478.5 n=T<f k=n and 0x9BD6DD or 0x5DF10B end else if k<0x7E933 then if k<0x7BCBA then T=F[r(0x673)]n=z[s[0x2]]k=0x790B2E o=n~=T E=o else f=F[r(0x1F48)]n=R k=F[r(0x138E)]k=T[k]k=k(T,f)k=k and 0x4395A3 or 0x662397 end else Z=F[r(0xEA7)]D=F[r(0x2097)]k=c B=k J=F[r(0x955)]B=I()c=I()z[c]=E e=C[Z]Z=0x2D E=e or Z z[B]=E e=k Z=C[J]J=nil e=I()E=Z or J G=F[r(0x1CFD)]z[e]=E J=C[D]Z=k O=F[r(0x1508)]D=nil Z=I()E=J or D z[Z]=E J=k J=I()X=F[r(0x1F64)]D=C[X]X=nil E=D or X D=k z[J]=E K=F[r(0x1480)]X=C[O]D=I()O=false E=X or O X=k X=I()z[D]=E O=C[K]K=0x0 E=O or K z[X]=E K=C[G]O=k k=y[F[r(0x16B8)]]G=0x0 E=K or G O=I()z[O]=E G=F[r(0x1B86)]C=nil i=F[r(0x1B86)]K=y[G]G=F[r(0x1C00)]E=K[G]P=y[i]i=F[r(0x1F6F)]G=P[i]i=v(0xAC2F5E,{s[0x1],w,R;e,Z;J,c;Y;x,X;O,T,D,n,B,W,o,f,Q;h})O=V(O)J=V(J)B=V(B)o=V(o)D=V(D)R=V(R)W=V(W)h=V(h)Y=V(Y)P={G(i)}c=V(c)n=V(n)e=V(e)Q=V(Q)T=V(T)X=V(X)w=V(w)x=V(x)Z=V(Z)K=E(a(P))E={}f=V(f)end end else if k<0x915D0 then if k<0x8F204 then if k<0x8ABB6 then k=0x895C2F else Y=F[r(0x828)]E=F[r(0x25F7)]k=y[E]E=k()E=F[r(0x1725)]k=z[s[0x1]]C=z[s[0x2]]k[E]=C C=z[s[0x1]]E=C[Y]C=false k=E==C k=k and 0x3AB7CB or 0x8B543 end else K=0x0 O=e==K X=k J=k k=O and 0x1A8914 or 0x7F599C D=O end else if k<0x9714E then if k<0x920F3 then w=F[r(0x10D3)]w=o[w]f=false E=F[r(0x1CC9)]k=o[E]E=F[r(0x1F4B)]k[E]=f E=F[r(0x64)]k=y[E]h={w(o)}w={k(a(h))}Q=w[0x3]f=w[0x2]E=w[0x1]k=0xDE013 h=E else W=nil k=0xB94298 R=nil end else h=z[Q]c=x w=F[r(0x180B)]k=0x8BFFC6 h[w]=c end end end end end else if k<0xDC79C then if k<0xBAE2D then if k<0xB2D71 then if k<0xAF059 then if k<0xA1590 then if k<0x9FD75 then B=F[r(0x24F7)]w=F[r(0x200D)]E=y[w]e=F[r(0xBC7)]O=0x0 G=0x0 J=z[s[0x9]]X=F[r(0x517)]Z=F[r(0x1897)]c=F[r(0x1F8A)]K=0x0 D=y[X]X={D(O,K,G)}w=E(c,x,B,e,Z,J,a(X))k=0x7B418F R=w else k=0x2C9C11 end else k=0x237AD0 D=F[r(0x17E2)]J=w[D]e=J end else if k<0xB12ED then if k<0xAF26B then w=k e=F[r(0xDD1)]B=R[e]J=0x4 Z=z[s[0x4]]e=Z[J]c=B==e k=c and 0xD97B9D or 0x3B9276 h=c else k={}C=k Y=0x1 x=z[s[0x8]]k=0x9B0E21 W=x x=0x1 R=x x=0x0 o=R<x x=Y-R end else J=0x1 Z=e==J k=Z and 0x7C1003 or 0xFD9386 end end else if k<0xB4CD4 then if k<0xB4AFF then if k<0xB31FF then Q=0x4 O=F[r(0x1FC)]Et=0x1 Z=0x96 W=F[r(0x20DD)]T=F[r(0x239C)]f=0x0 C=y[W]n=y[T]T=F[r(0x21EA)]o=n[T]T=F[r(0x517)]n=y[T]c=0x0 h=0x0 w=F[r(0x517)]Ct=0x6 T=n(f,Q,h)zt=0x1 Yt=true J=0x96 yt=F[r(0x1538)]f=0x226 st=F[r(0x1BC)]Q=false H=0x0 P=F[r(0x239C)]R=o-T T=0xC B=0x0 It=F[r(0x1508)]o=0x4B mt=0x5 n=0x5 W=C(R,o,n,T,f,Q)at=F[r(0x226C)]k=0x98B2FB n=0x23 i=F[r(0x1539)]W=F[r(0x2145)]Y=nil o=F[r(0xEA7)]f=F[r(0x189D)]e=0x0 x=nil T=F[r(0x2125)]C=y[W]h=y[w]Wt=0x0 rt=0x0 w=h(c,B,e)B=F[r(0x517)]c=y[B]Vt=F[r(0x1CFD)]h=F[r(0x25DD)]Q=F[r(0xD33)]D=F[r(0x180B)]e=0x96 B=c(e,Z,J)J=0x1 e=.75 X=y[O]kt=F[r(0xDF1)]G=y[P]P=F[r(0x21EA)]K=G[P]P=0x0 bt=F[r(0x2504)]Z=F[r(0x1E7C)]c=F[r(0x5D2)]Ft=F[r(0x1F64)]O=X(K)K=nil ut=y[st]G=F[r(0x153A)]X=F[r(0x1423)]xt=F[r(0x1480)]lt=0x1 st=ut(lt,zt,Et)zt=F[r(0x2097)]ut=F[r(0x955)]lt=0x24615926 Et=0x1 R={[o]=n;[T]=f;[Q]=w;[h]=B,[c]=e;[Z]=J;[D]=O;[X]=K,[G]=P,[i]=H,[yt]=rt;[at]=kt,[bt]=st,[ut]=lt,[zt]=Et,[Ft]=Ct,[It]=Yt;[xt]=Wt,[Vt]=mt}W=C(R)R=0x1 W=F[r(0x11EF)]C=y[W]W=C(R)C=false z[s[0x5]]=C else O=F[r(0x17E2)]k=0x2A017C X=c[O]J=X end else k=Et and 0x69AB19 or 0x98FBC1 end else if k<0xB8C10 then if k<0xB6B59 then H=z[s[0xF]]P=0x1 yt=0x1 i=H+yt H=i i=0x1 yt=i i=0x0 rt=yt<i i=P-yt k=0xA9CEC2 else kt=0x1 at=yt[kt]rt=at k=0xE774E5 end else Z=n k=0x53AAB3 end end end else if k<0xC4F55 then if k<0xC15A8 then if k<0xC0623 then if k<0xBF6E1 then st=0x0 Ct=F[r(0x25D9)]ut=0x0 bt=F[r(0x517)]at=F[r(0x1924)]kt=y[bt]Ft=R[Ct]Ct=F[r(0xAAE)]k=0x4B4AF9 Et=Ft[Ct]zt=-Et Et=0x8 lt=zt/Et bt=kt(ut,st,lt)R[at]=bt else T=k h=F[r(0xDD1)]Q=R[h]w=z[s[0x4]]c=0x2 h=w[c]f=Q==h k=f and 0x5D6A5E or 0xD10690 n=f end else k=0xAD67DF end else if k<0xC2B4E then if k<0xC2381 then k=z[s[0x7]]k=k and 0x6AEAF8 or 0xB32527 else k=o and 0xEDB79D or 0x921CA end else H=F[r(0x116E)]rt=F[r(0xDD1)]i=z[o]yt=P[rt]H=i[H]H=H(i,yt)k=0xB57AF7 z[c]=H end end else if k<0xD6A54 then if k<0xD340F then if k<0xCC6CC then J=F[r(0x25BB)]Z=F[r(0x25F7)]e=y[Z]Z=e()Z=F[r(0x1D74)]Z=x[Z]Z=Z(x,J)J=nil e=Z==J k=e and 0x56DDDC or 0xC8E3B else k=0x4D2026 W=nil R=nil end else e=F[r(0x11EF)]B=y[e]T=Q Z=.05 J=F[r(0x1B86)]e=B(Z)e=z[n]B=e[T]e=I()z[e]=B Z=y[J]J=F[r(0x1C00)]B=Z[J]X=F[r(0x1B86)]D=y[X]X=F[r(0x1F6F)]J=D[X]X=M(0xD024D0,{e})D={J(X)}J=.05 Z=B(a(D))Z=F[r(0x11EF)]k=0x719839 e=V(e)B=y[Z]Z=B(J)T=nil end else if k<0xDB082 then if k<0xD9723 then Y=nil k=y[F[r(0x806)]]C=nil E={}else rt=z[Y]k=rt and 0xFED004 or 0x6F8A4A E=rt end else k=z[s[0x6]]C=F[r(0x21EA)]W=z[s[0x5]]R=F[r(0x21B5)]x=W[R]W=F[r(0x21EA)]Y=x[W]k[C]=Y k=0xD02438 end end end end else if k<0xFE39E then if k<0xF4265 then if k<0xE0B99 then if k<0xDE5F1 then if k<0xDE020 then Q,c=h(f,Q)k=Q and 0x2D72C9 or 0xD1E63E else k=0x9B84F2 W=#Y x=0x1 R=W W=0x1 o=W W=0x0 n=o<W W=x-o end else k=0x1E4DEC h=nil w=nil end else if k<0xEDDF8 then if k<0xE91A1 then R=k n=z[s[0x5]]T=nil o=n~=T k=o and 0xD08BAC or 0xA738FD W=o else E={}k=y[F[r(0x1769)]]end else X=z[s[0x15]]D=#X X=0x0 J=D>X k=J and 0x2D3692 or 0x3DDBF2 end end else if k<0xF56A2 then if k<0xF4A96 then if k<0xF4549 then k=0xB4ABBA w=nil h=nil B=nil c=nil else o=E n=F[r(0x13DF)]E=y[n]n=F[r(0x1BE1)]w=F[r(0x30E)]k=E[n]n=I()T=F[r(0x30E)]z[n]=k E=y[T]T=F[r(0x1F42)]k=E[T]T=k Q=k h=y[w]k=h and 0x3373C0 or 0x6CCE64 f=h end else C=F[r(0x1890)]k=z[s[0x1]]E=F[r(0x116E)]E=k[E]E=E(k,C)k=E and 0xAD4106 or 0xE3A167 end else if k<0xF7228 then if k<0xF68A0 then c=false w=z[s[0x1]]k=w==c k=k and 0xE80B3C or 0x6F0894 else k=y[F[r(0x7D2)]]E={}end else e=nil h=I()Q=I()f=false c=I()Z=I()w=M(0x25FC1A,{h})k=0xC37A6E z[Q]=f D=I()f=nil z[h]=f f=I()z[f]=w w=nil z[c]=w H=F[r(0x20A0)]B=I()w=nil z[B]=w z[Z]=e w=nil O=F[r(0x64)]e=nil J=I()z[J]=e e=false z[D]=e e=F[r(0x2C5)]X=y[O]P=z[Y]H=P[H]i={H(P)}P={X(a(i))}K=P[0x2]O=P[0x1]G=P[0x3]end end end else if k<0x1128C1 then if k<0x10C0E3 then if k<0x10A6C0 then if k<0x101C86 then P=F[r(0x1C01)]k=0x251809 P=x[P]P=P(x)else k=n k=o and 0xED3BFA or 0xF70B91 end else x=x+R E=x<=W n=not o E=n and E n=x>=W n=o and n E=n or E n=0x78ABC2 k=E and n E=0x7755DC k=k or E end else if k<0x1115BD then if k<0x10DAF3 then T=f k=Q k=0xAA8C74 else E=z[s[0x1]]C=true k=E==C k=k and 0x35CEB0 or 0x5152E4 end else x=z[s[0x4]]W=F[r(0x8CB)]E=x==W k=E and 0xDABBB6 or 0x4A85AD end end else if k<0x12E74C then if k<0x127D5F then if k<0x11D8DA then E=false k=0xB06892 z[s[0x3]]=E else Y=F[r(0x956)]k=z[s[0x2]]x=C k[Y]=x k=0x9C3DE8 end else f=z[s[0x2]]h=F[r(0x161C)]J=0x168 x=W Q=y[h]B=0x0 c=F[r(0x1AC2)]w=y[c]c=w(B)B=F[r(0x1AC2)]w=y[B]D=z[s[0x4]]Z=J/D J=F[r(0x13DF)]e=Z*x B=w(e)Z=0x0 e=F[r(0x1AC2)]w=y[e]e={w(Z)}O=0x168 h=Q(c,B,a(e))T=f*h Q=F[r(0x1FC)]c=F[r(0x8E8)]h=0x0 f=y[Q]w=y[c]X=0x4 Z=y[J]J=F[r(0x13E0)]e=Z[J]D=z[s[0x1]]J=D/X Z=e(J)B=-Z J=F[r(0x13DF)]Z=y[J]J=F[r(0x13E0)]e=Z[J]X=0x4 D=z[s[0x1]]J=D/X Z={e(J)}c=w(B,a(Z))e=0x0 B=F[r(0x8E8)]J=F[r(0x2542)]w=y[B]Z=z[s[0x5]]B={w(e,Z)}Q=f(h,c,a(B))w=F[r(0x19B5)]f=F[r(0x200E)]k=T*Q c=0x0 B=0x0 T=k x=nil D=0x168 k=y[f]h=y[w]Q=0x3 Z=F[r(0x1867)]w=z[s[0x6]]X=0x168 e=y[Z]Z=e(J)e=F[r(0x1937)]J=true f=k(Q,h,w,c,B,Z,e,C,J)w=F[r(0x161C)]k=F[r(0x1FC4)]Z=F[r(0x8E8)]Q=true B=F[r(0x1AC2)]f[k]=Q k=F[r(0x180B)]h=y[w]J=0x0 c=y[B]e=y[Z]Z={e(J,D)}J=F[r(0x8E8)]e=F[r(0x1AC2)]D=0x0 B=c(a(Z))c=y[e]Z=y[J]J={Z(D,X)}Z=F[r(0x1AC2)]e=c(a(J))D=F[r(0x8E8)]c=y[Z]X=0x0 J=y[D]D={J(X,O)}Z={c(a(D))}w=h(B,e,a(Z))Q=T*w f[k]=Q k=F[r(0x2504)]h=F[r(0x30E)]Q=z[s[0x7]]f[k]=Q Q=y[h]h=F[r(0x1925)]k=Q[h]Q=k(Y,f)T=nil k=0x91B184 f=nil end else if k<0x134961 then if k<0x131592 then n=0x4 o=Y T=n E=F[r(0x25F7)]k=y[E]E=k()E=0x1 n=0x1 f=n k=0xB4ABBA n=0x0 Q=f<n n=E-f else D=F[r(0x1725)]J=w[D]k=0x8C64FD D=F[r(0x1725)]Z=J[D]J=F[r(0xDD1)]e=Z[J]Z=F[r(0x1FE3)]B=e~=Z E=B end else w=z[s[0xE]]B=z[s[0xF]]c=F[r(0x956)]w[c]=B w=z[s[0xE]]B=true c=F[r(0x185B)]w[c]=B w=z[s[0xE]]B=z[s[0x10]]c=F[r(0x2561)]w[c]=B w=z[s[0xE]]B=z[s[0x11]]c=F[r(0x1AE3)]w[c]=B w=z[s[0xE]]c=F[r(0x828)]B=z[s[0x12]]w[c]=B w=z[s[0xE]]B=0x32 c=F[r(0x1F6E)]w[c]=B B=z[s[0xE]]e=F[r(0x1725)]c=B[e]e=F[r(0x239C)]B=y[e]w=c~=B k=w and 0xB604FB or 0x1BDD6F end end end end end end else if k<0x1AE631 then if k<0x17CC35 then if k<0x15B2B4 then if k<0x146B18 then if k<0x13AB8D then if k<0x13A233 then if k<0x1398A2 then E=F[r(0x138E)]h=Q E=w[E]c=F[r(0x1270)]E=E(w,c)k=E and 0x383F94 or 0xDEAA9 else e=B X=F[r(0xBBF)]D=F[r(0x138E)]D=Z[D]D=D(Z,X)J=D k=D and 0x8EB968 or 0x2FC2CB end else k=z[s[0xA]]Y=z[s[0xB]]C[k]=Y k=z[s[0xC]]Y={k(C)}E={a(Y)}k=y[F[r(0xB02)]]end else if k<0x14368F then if k<0x13F169 then Q=nil h=nil E={}o=nil W=nil n=nil T=nil Y=nil f=nil k=y[F[r(0x25BC)]]x=nil R=nil C=nil else B=F[r(0xFE5)]K=F[r(0x9D2)]k=0x7B418F h=F[r(0x200D)]e=F[r(0x1897)]c=F[r(0x24F7)]E=y[h]J=F[r(0x517)]w=F[r(0x1F8A)]Z=y[J]O=z[s[0x9]]P=F[r(0x9D2)]X=O[K]O=0xA D=X/O X=0x0 G=z[s[0x9]]K=G[P]G=0xA O=K/G J=Z(D,X,O)O=0x0 D=F[r(0x517)]X=0x0 Z=y[D]K=0x0 D={Z(X,O,K)}h=E(w,x,c,B,e,J,a(D))R=h end else x=F[r(0xF04)]E=F[r(0x11F3)]k=C[E]E=F[r(0x1030)]E=k[E]E=E(k,x)k=E and 0x45F181 or 0x64BC90 end end else if k<0x152AA1 then if k<0x14ED29 then if k<0x14C2B5 then k=0xAC6820 Ut=nil else D=F[r(0x1F8A)]J=F[r(0x11F3)]Z=w[J]J=F[r(0x1030)]J=Z[J]J=J(Z,D)Z=F[r(0x17E2)]e=J[Z]Z=F[r(0x2EB)]B=e==Z k=0x76FD69 E=B end else k=z[s[0x4]]Y=z[s[0x3]]C=k(Y)k=F[r(0x2651)]R=F[r(0x1C02)]W=F[r(0x2651)]y[k]=C o=F[r(0xBFB)]k=z[s[0x5]]x=y[W]W={[R]=o}Y=k(x,W)k=y[F[r(0x1F8F)]]E={}end else if k<0x1583D2 then if k<0x154C28 then k=R k=W and 0xB39141 or 0xC6DFC1 else Z=F[r(0xDD1)]e=w[Z]c=k Z=F[r(0x4F9)]B=e==Z E=B k=B and 0x14D385 or 0x76FD69 end else W=nil R=nil k=0x71B443 end end end else if k<0x16A01B then if k<0x15F8CD then if k<0x15EFCD then if k<0x15CDE4 then Q=F[r(0x1B86)]f=y[Q]Q=F[r(0x1C00)]x=f[Q]w=F[r(0x1B86)]h=y[w]o=nil w=F[r(0x1F6F)]k=0x4C9B07 R=nil n=V(n)Q=h[w]w=S(0x6FBBD8,{Y,C})h={Q(w)}f=x(a(h))x=false f=false C=V(C)z[s[0x2]]=x z[s[0x3]]=f w=0x1 h=F[r(0x11EF)]W=nil Q=y[h]h=Q(w)Q=false Y=V(Y)z[s[0xB]]=Q else k=0x4AD964 end else n,T=R(o,n)k=n and 0xFE1408 or 0xB00020 end else if k<0x164DAF then if k<0x1621B5 then k=0x5889B8 Z=z[s[0x5]]e=Z[w]B=not e c=B else E=F[r(0xEE)]x=F[r(0x194C)]W=F[r(0x332)]k=y[E]Y=F[r(0x15B0)]C=y[Y]W=C[W]Y={W(C,x)}E=k(a(Y))k=E()E={}k=y[F[r(0x7E6)]]end else G=0x0 e=F[r(0x24F7)]Z=F[r(0x371)]J=F[r(0x1897)]P=0x0 K=0x0 O=F[r(0x517)]c=F[r(0x200D)]E=y[c]B=F[r(0x1F8A)]k=0x7B418F D=z[s[0x9]]X=y[O]O={X(K,G,P)}c=E(B,x,e,Z,J,D,a(O))R=c end end else if k<0x175C9A then if k<0x1721CF then if k<0x1710F2 then k=w k=f and 0x9D9502 or 0xDEBC87 else C=F[r(0x64)]k=y[C]W=z[s[0x1]]o=F[r(0x20A0)]o=W[o]R={o(W)}W={k(a(R))}Y=W[0x2]k=0x719C0 C=W[0x1]x=W[0x3]end else k=o k=R and 0x5470AC or 0xE7C10A end else if k<0x178619 then if k<0x17762B then X=F[r(0xDD1)]D=h[X]Z=k K=F[r(0x174A)]O=y[K]K=F[r(0xDD1)]X=O[K]J=D~=X e=J k=J and 0x4C9A64 or 0xA5C8D8 else k=0x13CF2C end else C=F[r(0x21EA)]k=z[s[0x6]]W=z[s[0x2]]R=F[r(0x20)]x=W[R]W=F[r(0x21EA)]Y=x[W]x=F[r(0x252C)]W=F[r(0xBC4)]R=0x2710 k[C]=Y Y=z[s[0x4]]C=Y[x]x=y[W]W=F[r(0x22B6)]Y=x[W]W=0x2710 o=0x2710 x=Y(W,R,o)k=C==x k=k and 0xF02E or 0x74BA9B end end end end else if k<0x19BBA6 then if k<0x18D8CB then if k<0x183AE5 then if k<0x18220B then if k<0x181AC0 then J=F[r(0xDD1)]X=0x8 Z=R[J]D=z[s[0x4]]J=D[X]k=0x7027EB e=Z==J c=e else k=0x3BABC6 R=nil end else k=0x95541D end else if k<0x18CDEE then if k<0x189C52 then E=n(w)k=0xDEAA9 else ut=F[r(0x85)]Yt=F[r(0xB2A)]zt=F[r(0x7A4)]Ct=F[r(0x7A4)]It=K..Yt Ft=Ct..It Et=G..Ft lt=zt..Et k=0x7939B3 kt=F[r(0xE88)]st=D..lt bt=ut..st at[kt]=bt end else E=F[r(0x64)]k=y[E]x=z[s[0x2]]W={k(x)}E=W[0x1]x=E Y=W[0x3]C=W[0x2]k=0x7B334C end end else if k<0x193E87 then if k<0x1934E9 then if k<0x19061A then W=Y o=F[r(0xE37)]n=F[r(0x21EF)]k=R[o]o=I()z[o]=k k=R[n]f=z[o]n=k k=f and 0x48A841 or 0xAA8C74 T=f else P=i kt=F[r(0x25F7)]ut=F[r(0x25D9)]at=y[kt]kt=at()at=F[r(0x25D9)]bt=R[ut]st=z[s[0xF]]ut=X/st kt=bt-ut bt=F[r(0xEE5)]R[at]=kt kt=z[s[0x8]]at=kt==bt k=at and 0xBB6AD or 0x4B4AF9 end else o=n k=T k=0xD46654 end else if k<0x198291 then if k<0x196739 then k=0xC916FE else k=x k=E and 0x24DD99 or 0x906875 end else E=z[s[0x4]]k=E and 0x4A8BE6 or 0x495B29 end end end else if k<0x1A9092 then if k<0x1A2C8C then if k<0x1A0D42 then if k<0x19DFB9 then o=F[r(0xEC4)]f=F[r(0xBC5)]T=y[f]f=F[r(0x22B6)]n=T[f]Q=0x0 f=0x13F T=n(f,Q)C[o]=T o=F[r(0x1FE3)]k=0xFD39F5 n=false z[s[0x4]]=o z[s[0x1]]=n else T=F[r(0x25F7)]x=W k=y[T]T=k()T=0x1 k=0x84173F f=#Y Q=f f=0x1 h=f f=0x0 w=h<f f=T-h end else k=0x524CDC end else if k<0x1A8959 then if k<0x1A4562 then H=z[s[0x19]]P=0x1 i=#H H=i i=0x1 yt=i i=0x0 rt=yt<i i=P-yt k=0xCF6793 else k=0x7F599C D=x end else G=z[s[0xE]]P=F[r(0x1157)]K=G[P]G=z[s[0xC]]k=0xD1B34A O=K-G K=F[r(0x1408)]X=O[K]O=z[s[0xF]]D=X/O E=D*e J=E end end else if k<0x1AC678 then if k<0x1AC3DC then if k<0x1A9CB3 then k=y[F[r(0xD31)]]E={}C=nil else Yt=k k=B and 0x5D41D5 or 0x66277D lt=B end else k=o k=E and 0x34B081 or 0xE3B268 end else if k<0x1AE127 then if k<0x1AC828 then Y=F[r(0x30E)]C=y[Y]Y=F[r(0x580)]k=0x19B9B8 E=C[Y]Y=z[s[0x3]]C=E(Y)else R=false z[s[0x6]]=R k=0x23C159 end else k=0xAFEC8C end end end end end else if k<0x1EEF26 then if k<0x1C96F9 then if k<0x1BE720 then if k<0x1B5F0D then if k<0x1B4AD1 then if k<0x1B2335 then k=0xAD4B7C else Q=f w=F[r(0x1270)]k=F[r(0x138E)]k=h[k]k=k(h,w)k=k and 0x5AF430 or 0xAA2571 end else E=F[r(0x1E2)]k=z[s[0x3]]n=F[r(0x250D)]o=y[n]B=0x0 Q=F[r(0x1E2)]f=z[s[0x3]]c=0x0 w=0x0 h=F[r(0x1FC)]T=f[Q]Q=y[h]Z=0x0 h=Q(w,c,B)w=F[r(0x161C)]e=0x0 B=F[r(0x1AC2)]Q=y[w]c=y[B]B=c(e)e=F[r(0x1AC2)]J=0x5 c=y[e]e=c(Z)Z=F[r(0x1AC2)]X=F[r(0x199C)]c=y[Z]Z={c(J)}w=Q(B,e,a(Z))c=F[r(0x252B)]f=h*w w=y[c]G=0x18 h=.2 Q=h/w i=0xC n=o(T,f,Q)k[E]=n J=.04 Q=F[r(0x1537)]e=0x0 E=F[r(0x1537)]k=y[E]E=F[r(0x1CB)]n=F[r(0x250D)]o=y[n]f=y[Q]Q=F[r(0x1CB)]T=f[Q]c=F[r(0x1FC)]h=z[s[0x4]]w=y[c]D=y[X]K=z[s[0x5]]O=K/G X=D(O)K=F[r(0x199C)]Z=J*X X=.05 B=e-Z J=0x0 e=0x0 O=y[K]P=z[s[0x5]]G=P/i K=O(G)D=X*K Z=J+D c=w(B,e,Z)w=F[r(0x161C)]Q=h*c i=0x18 B=F[r(0x1AC2)]h=y[w]K=F[r(0x199C)]e=0x0 J=0x0 c=y[B]B=c(e)e=F[r(0x1AC2)]c=y[e]O=y[K]X=2.5 P=z[s[0x5]]G=P/i K=O(G)D=X*K Z=J-D e=c(Z)Z=F[r(0x1AC2)]J=0x0 c=y[Z]Z={c(J)}J=0x0 c=F[r(0x252B)]w=h(B,e,a(Z))e=0x0 B=0x0 h=0x1 f=Q*w w=y[c]Q=h/w n=o(T,f,Q)k[E]=n E=F[r(0xDF0)]n=F[r(0x250D)]k=y[E]o=y[n]E=F[r(0x1CB)]Q=F[r(0xDF0)]f=y[Q]Q=F[r(0x1CB)]T=f[Q]c=F[r(0x1FC)]Z=0x0 h=z[s[0x6]]w=y[c]c=w(B,e,Z)w=F[r(0x161C)]Z=0x0 B=F[r(0x1AC2)]Q=h*c h=y[w]e=0x0 c=y[B]B=c(e)e=F[r(0x1AC2)]P=0xC c=y[e]e=c(Z)Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}w=h(B,e,a(Z))f=Q*w h=0x1 c=F[r(0x252B)]w=y[c]c=F[r(0x1FC)]Q=h/w B=1.1 n=o(T,f,Q)D=.1 Q=F[r(0x1D79)]Z=.35 k[E]=n E=F[r(0x1D79)]k=y[E]n=F[r(0x250D)]o=y[n]E=F[r(0x1CB)]f=y[Q]Q=F[r(0x1CB)]O=F[r(0x199C)]T=f[Q]w=y[c]X=y[O]G=z[s[0x5]]K=G/P H=0xC G=F[r(0x199C)]O=X(K)J=D*O e=Z+J Z=.2 c=w(B,e,Z)Z=F[r(0x1AC2)]B=F[r(0x161C)]w=y[B]D=-45 e=y[Z]O=1.5 K=y[G]i=z[s[0x5]]P=i/H G=K(P)X=O*G J=D-X Z=e(J)X=-45 J=F[r(0x1AC2)]e=y[J]R=nil D=0x0 J=e(D)D=F[r(0x1AC2)]e=y[D]D={e(X)}B=w(Z,J,a(D))h=c*B c=F[r(0x161C)]Z=0x0 J=0x19 e=F[r(0x1AC2)]w=y[c]B=y[e]e=B(Z)Z=F[r(0x1AC2)]B=y[Z]Z=B(J)O=F[r(0x199C)]J=F[r(0x1AC2)]B=y[J]D=0x0 J={B(D)}c=w(e,Z,a(J))Q=h*c c=F[r(0x252B)]h=z[s[0x7]]f=Q*h h=0x1 w=y[c]Q=h/w D=0xC n=o(T,f,Q)c=-1.25 B=.15 k[E]=n E=F[r(0x418)]w=F[r(0x1FC)]k=y[E]E=F[r(0x1CB)]n=F[r(0x250D)]Q=F[r(0x418)]o=y[n]Z=0xA0 f=y[Q]J=0x5 e=-0.3 Q=F[r(0x1CB)]T=f[Q]h=y[w]w=h(c,B,e)e=F[r(0x1AC2)]c=F[r(0x161C)]h=y[c]B=y[e]e=B(Z)Z=F[r(0x1AC2)]B=y[Z]Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}c=h(e,Z,a(J))P=0x18 Q=w*c Z=-1 h=z[s[0x8]]f=Q*h c=F[r(0x252B)]h=.2 w=y[c]D=.035 Q=h/w n=o(T,f,Q)k[E]=n n=F[r(0x250D)]E=F[r(0x23BE)]Q=F[r(0x23BE)]k=y[E]E=F[r(0x1CB)]o=y[n]f=y[Q]c=0x1 w=F[r(0x1FC)]Q=F[r(0x1CB)]T=f[Q]h=y[w]X=y[O]G=z[s[0x5]]K=G/P G=0xC O=X(K)J=D*O X=F[r(0x199C)]e=Z+J J=.05 D=y[X]K=z[s[0x5]]O=K/G X=D(O)Z=J*X B=e-Z e=0x0 Z=0x0 w=h(c,B,e)c=F[r(0x161C)]h=y[c]e=F[r(0x1AC2)]P=0x18 D=0x0 O=F[r(0x199C)]J=0x55 B=y[e]e=B(Z)Z=F[r(0x1AC2)]B=y[Z]Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}c=h(e,Z,a(J))Q=w*c B=F[r(0x1AC2)]w=F[r(0x161C)]h=y[w]Z=-2 D=2.5 c=y[B]X=y[O]G=z[s[0x5]]K=G/P O=X(K)J=D*O e=Z-J B=c(e)P=0x18 e=F[r(0x1AC2)]J=0x0 c=y[e]Z=0x0 e=c(Z)Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}D=.035 w=h(B,e,a(Z))c=F[r(0x252B)]f=Q*w h=0x1 O=F[r(0x199C)]w=y[c]Q=h/w n=o(T,f,Q)k[E]=n Z=-1 E=F[r(0x93C)]k=y[E]n=F[r(0x250D)]E=F[r(0x1CB)]w=F[r(0x1FC)]o=y[n]c=-1 Q=F[r(0x93C)]f=y[Q]Q=F[r(0x1CB)]T=f[Q]h=y[w]X=y[O]G=z[s[0x5]]K=G/P G=0xC O=X(K)X=F[r(0x199C)]J=D*O e=Z-J D=y[X]K=z[s[0x5]]J=.05 P=0x18 O=K/G X=D(O)Z=J*X D=0x0 B=e-Z e=0x0 w=h(c,B,e)Z=0x0 c=F[r(0x161C)]J=-85 h=y[c]e=F[r(0x1AC2)]B=y[e]e=B(Z)Z=F[r(0x1AC2)]B=y[Z]Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}c=h(e,Z,a(J))Q=w*c w=F[r(0x161C)]Z=-2 h=y[w]B=F[r(0x1AC2)]D=2.5 O=F[r(0x199C)]c=y[B]X=y[O]G=z[s[0x5]]K=G/P O=X(K)J=D*O e=Z+J B=c(e)J=0x0 e=F[r(0x1AC2)]c=y[e]Z=0x0 e=c(Z)Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}w=h(B,e,a(Z))h=0x1 c=F[r(0x252B)]f=Q*w w=y[c]Q=h/w n=o(T,f,Q)k[E]=n k=0xF4083A end else if k<0x1BD600 then if k<0x1BAD81 then Q=nil k=0x768C7B h=nil else k=0x280B81 end else Z=F[r(0x1A5B)]e=y[Z]Z=false B=e==Z k=B and 0x67DA80 or 0xF3F823 end end else if k<0x1C38F1 then if k<0x1C0D8D then if k<0x1BECDE then k=Q k=0x91E274 n=f else k=0xFE24E6 end else f=F[r(0x22C9)]T=F[r(0x138E)]T=o[T]T=T(o,f)k=0x6B0DCB n=T end else if k<0x1C7E11 then if k<0x1C4DAF then w=F[r(0xD62)]o=k f=F[r(0x19B)]T=C[f]h=y[w]w=F[r(0x19B)]Q=h[w]h=F[r(0x1040)]f=Q[h]n=T==f k=n and 0x2CEBA9 or 0x431401 R=n else ut=0x2 k=0xB9E42D bt=yt[ut]ut=z[H]kt=bt==ut rt=kt end else c=F[r(0x1559)]E=F[r(0xDD1)]w[E]=c E=z[s[0x4]]e=F[r(0xDD1)]B=w[e]c=0x4 k=0x9E2D74 E[c]=B end end end else if k<0x1E13AE then if k<0x1D8273 then if k<0x1CC69E then if k<0x1CC11C then f=F[r(0xEC4)]T=C[f]f=F[r(0x9D2)]n=T[f]T=0x13F o=n<=T k=o and 0x19C251 or 0x7D358B else n,T=R(o,n)k=n and 0xF33E13 or 0xEDD0A3 end else k=0x9827F3 end else if k<0x1DC702 then if k<0x1DC156 then k=R k=W and 0x59CFD1 or 0x1C49CE else W=F[r(0x13EE)]E=F[r(0x64)]R=F[r(0x20A0)]k=y[E]x=y[W]R=x[R]W={R(x)}x={k(a(W))}E=x[0x1]Y=x[0x3]C=x[0x2]x=E k=0xEF3F0A end else k=z[s[0x1]]E=k()E={}k=y[F[r(0x156A)]]end end else if k<0x1E4908 then if k<0x1E3BF2 then if k<0x1E2080 then C=F[r(0x252C)]W=F[r(0xBC4)]k=z[s[0x4]]x=y[W]W=F[r(0x22B6)]Y=x[W]R=0x2710 W=0x2710 o=0x2710 x=Y(W,R,o)k[C]=x k=0xEB0C69 else k=F[r(0x1D74)]k=w[k]c=F[r(0x1F8A)]J=F[r(0x138E)]k=k(w,c)c=k Z=k J=w[J]D=F[r(0x228B)]J=J(w,D)k=J and 0xAEB9F or 0x237AD0 e=J end else C=F[r(0x64)]E=y[C]k=0x4C83B7 W=z[s[0x7]]R={E(W)}Y=R[0x2]x=R[0x3]C=R[0x1]end else if k<0x1EB45C then if k<0x1E6F72 then Q,w=T(f,Q)k=Q and 0x1391E0 or 0xA5B610 else h=nil k=0x77CF4B end else o=F[r(0x11F3)]k=R[o]o=F[r(0x258F)]f=F[r(0xBC4)]T=y[f]h=0x4B f=F[r(0x22B6)]n=T[f]f=0x4B Q=0x0 T=n(f,Q,h)k[o]=T k=0xCEC68F end end end end else if k<0x222130 then if k<0x1FD66C then if k<0x1F5605 then if k<0x1F5428 then if k<0x1F36C1 then Y=F[r(0x1890)]E=z[s[0x1]]C=F[r(0x116E)]C=E[C]C=C(E,Y)k=not C k=k and 0x6F78E5 or 0x86E870 else o=F[r(0x11F3)]k=R[o]c=0x0 w=F[r(0x20)]o=F[r(0x180B)]h=z[s[0x2]]Q=h[w]h=F[r(0x180B)]w=F[r(0x180B)]f=Q[h]B=0x0 h=y[w]w=F[r(0x22B6)]Q=h[w]w=.5 h=Q(w,c,B)T=f*h h=F[r(0x180B)]Q=y[h]c=0x0 h=F[r(0x161E)]f=Q[h]h=1.5708 w=0x0 Q=f(h,w,c)n=T*Q k[o]=n k=0x22307B end else k=h T=Q k=0x454646 end else if k<0x1FC152 then if k<0x1F718F then k=0xFB5A14 else R,T=o(W,R)k=R and 0x7CD27 or 0xBF8F65 end else C=F[r(0x69C)]k=y[C]Y=z[s[0x7]]x=0x0 C=k(Y,x)k=0xB1281 end end else if k<0x20916F then if k<0x203F3A then if k<0x1FF62A then P=F[r(0x1157)]G=z[s[0xE]]K=G[P]G=z[s[0xC]]O=K-G k=0xD1B34A K=F[r(0x1408)]X=O[K]O=z[s[0xF]]D=X/O J=D else c=F[r(0x8F)]k=F[r(0x2089)]h=F[r(0x1867)]E=y[h]w=y[c]c={w(o)}h=E(a(c))Q[k]=h k=F[r(0xDD1)]E=n Q[k]=E E=T k=F[r(0xD33)]Q[k]=E w=F[r(0x20)]k=F[r(0x21EA)]h=y[w]w=F[r(0x21EA)]E=h[w]Q[k]=E k=F[r(0x226C)]E=x Q[k]=E k=F[r(0x1F56)]k=Q[k]E=Y k=k(Q)k=F[r(0x1725)]Q[k]=E k=y[F[r(0xADD)]]E={Q}end else k=0xB1A117 end else if k<0x221063 then if k<0x21CF86 then E=F[r(0x11F3)]x=F[r(0x1F8A)]k=C[E]E=F[r(0x1030)]E=k[E]E=E(k,x)k=F[r(0xA15)]k=E[k]k=k(E)k=0x143861 else k=Lt k=0x2CD525 Ut=Nt end else h=F[r(0xEC4)]R=F[r(0xEC4)]T=F[r(0xBC5)]n=y[T]T=F[r(0x22B6)]o=n[T]Q=C[h]h=F[r(0x9D2)]f=Q[h]T=f-Y f=0x0 n=o(T,f)T=F[r(0xEC4)]C[R]=n n=C[T]T=F[r(0x9D2)]o=n[T]n=478.5 R=o>n k=R and 0xA851BE or 0x1CBF72 end end end else if k<0x227AB9 then if k<0x22421A then if k<0x2235DE then if k<0x22289F then k=0x3D4CA4 R=not Y x=R else k=0xB63E8C end else E=F[r(0x19C3)]k=y[E]E=k()E={}k=y[F[r(0x24BC)]]end else if k<0x22674F then if k<0x22481E then bt=0x18 K=F[r(0x1FC)]x=T c=F[r(0x25F7)]D=F[r(0x1537)]w=y[c]c=w()e=F[r(0x250D)]H=.04 c=F[r(0x1537)]w=y[c]c=F[r(0x1CB)]st=0xC B=y[e]rt=F[r(0x199C)]J=y[D]D=F[r(0x1CB)]Z=J[D]P=0x0 X=z[s[0x6]]O=y[K]yt=y[rt]kt=z[s[0x7]]at=kt/bt rt=yt(at)i=H*rt G=P-i rt=.05 kt=F[r(0x199C)]H=0x0 P=0x0 at=y[kt]ut=z[s[0x7]]bt=ut/st kt=at(bt)yt=rt*kt i=H+yt H=0x0 K=O(G,P,i)kt=F[r(0x199C)]P=0x0 D=X*K O=F[r(0x161C)]X=y[O]G=F[r(0x1AC2)]K=y[G]G=K(P)P=F[r(0x1AC2)]rt=2.5 K=y[P]at=y[kt]st=0x18 ut=z[s[0x7]]x=nil bt=ut/st kt=at(bt)yt=rt*kt i=H-yt P=K(i)i=F[r(0x1AC2)]H=0x0 K=y[i]i={K(H)}O=X(G,P,a(i))K=F[r(0x252B)]X=0x1 J=D*O P=0x0 ut=0xC O=y[K]K=F[r(0x1FC)]D=X/O e=B(Z,J,D)w[c]=e c=F[r(0xDF0)]w=y[c]c=F[r(0x1CB)]e=F[r(0x250D)]D=F[r(0xDF0)]i=0x0 B=y[e]at=F[r(0x199C)]J=y[D]D=F[r(0x1CB)]G=0x0 Z=J[D]X=z[s[0x8]]O=y[K]K=O(G,P,i)O=F[r(0x161C)]D=X*K X=y[O]G=F[r(0x1AC2)]yt=0x7 i=0xF K=y[G]rt=y[at]bt=z[s[0x7]]kt=bt/ut at=rt(kt)H=yt*at P=i-H G=K(P)i=0x0 P=F[r(0x1AC2)]K=y[P]P=K(i)H=0x0 i=F[r(0x1AC2)]K=y[i]i={K(H)}K=F[r(0x252B)]O=X(G,P,a(i))X=0x1 J=D*O O=y[K]D=X/O e=B(Z,J,D)w[c]=e K=F[r(0x1FC)]yt=.1 e=F[r(0x250D)]c=F[r(0x1D79)]w=y[c]at=F[r(0x199C)]G=1.3 B=y[e]c=F[r(0x1CB)]D=F[r(0x1D79)]J=y[D]D=F[r(0x1CB)]i=.75 Z=J[D]O=y[K]ut=0xC rt=y[at]bt=z[s[0x7]]kt=bt/ut at=rt(kt)H=yt*at rt=-15 P=i+H i=-0.1 K=O(G,P,i)G=F[r(0x161C)]i=F[r(0x1AC2)]O=y[G]yt=0x0 H=0x91 P=y[i]i=P(H)H=F[r(0x1AC2)]ut=0xC P=y[H]H=P(yt)yt=F[r(0x1AC2)]P=y[yt]yt={P(rt)}G=O(i,H,a(yt))H=0xF i=0x0 P=F[r(0x1AC2)]X=K*G k=0xA5384B K=F[r(0x161C)]O=y[K]G=y[P]P=G(i)i=F[r(0x1AC2)]yt=0x0 G=y[i]i=G(H)H=F[r(0x1AC2)]G=y[H]H={G(yt)}K=O(P,i,a(H))G=-1.1 D=X*K K=F[r(0x252B)]X=z[s[0x9]]J=D*X X=0x1 O=y[K]D=X/O e=B(Z,J,D)at=F[r(0x199C)]i=.35 w[c]=e c=F[r(0x418)]w=y[c]c=F[r(0x1CB)]e=F[r(0x250D)]D=F[r(0x418)]B=y[e]yt=.1 K=F[r(0x1FC)]J=y[D]D=F[r(0x1CB)]Z=J[D]O=y[K]rt=y[at]bt=z[s[0x7]]lt=0xC kt=bt/ut at=rt(kt)H=yt*at P=i+H i=.2 K=O(G,P,i)bt=F[r(0x199C)]at=1.5 i=F[r(0x1AC2)]yt=-44 G=F[r(0x161C)]O=y[G]P=y[i]kt=y[bt]st=z[s[0x7]]ut=st/lt bt=kt(ut)rt=at*bt H=yt-rt i=P(H)yt=0x0 H=F[r(0x1AC2)]rt=0x2D P=y[H]H=P(yt)yt=F[r(0x1AC2)]P=y[yt]yt={P(rt)}G=O(i,H,a(yt))P=F[r(0x1AC2)]X=K*G K=F[r(0x161C)]O=y[K]H=-25 yt=0x0 G=y[P]i=0x0 P=G(i)i=F[r(0x1AC2)]G=y[i]i=G(H)H=F[r(0x1AC2)]G=y[H]H={G(yt)}K=O(P,i,a(H))D=X*K X=z[s[0xA]]at=F[r(0x199C)]J=D*X K=F[r(0x252B)]X=0x1 O=y[K]D=X/O e=B(Z,J,D)i=-1 w[c]=e c=F[r(0x23BE)]O=F[r(0x1FC)]e=F[r(0x250D)]D=F[r(0x23BE)]yt=.035 w=y[c]B=y[e]ut=0x18 J=y[D]D=F[r(0x1CB)]c=F[r(0x1CB)]K=0x1 Z=J[D]X=y[O]rt=y[at]bt=z[s[0x7]]kt=bt/ut at=rt(kt)H=yt*at bt=0xC rt=F[r(0x199C)]P=i+H yt=y[rt]H=.05 kt=z[s[0x7]]at=kt/bt rt=yt(at)i=H*rt H=0x55 at=F[r(0x199C)]G=P-i i=0x0 P=0x0 O=X(K,G,P)K=F[r(0x161C)]X=y[K]P=F[r(0x1AC2)]G=y[P]P=G(i)i=F[r(0x1AC2)]G=y[i]i=G(H)H=F[r(0x1AC2)]yt=0x0 G=y[H]H={G(yt)}K=X(P,i,a(H))D=O*K O=F[r(0x161C)]ut=0x18 X=y[O]G=F[r(0x1AC2)]yt=2.5 K=y[G]rt=y[at]i=-2 bt=z[s[0x7]]kt=bt/ut at=rt(kt)H=yt*at P=i-H G=K(P)P=F[r(0x1AC2)]i=0x0 K=y[P]P=K(i)H=0x0 at=F[r(0x199C)]i=F[r(0x1AC2)]K=y[i]i={K(H)}K=F[r(0x252B)]O=X(G,P,a(i))ut=0x18 J=D*O O=y[K]X=0x1 yt=.035 D=X/O e=B(Z,J,D)w[c]=e e=F[r(0x250D)]D=F[r(0x93C)]c=F[r(0x93C)]w=y[c]B=y[e]c=F[r(0x1CB)]J=y[D]K=-1 i=-1 D=F[r(0x1CB)]Z=J[D]O=F[r(0x1FC)]X=y[O]rt=y[at]bt=z[s[0x7]]kt=bt/ut at=rt(kt)H=yt*at rt=F[r(0x199C)]P=i-H H=.05 bt=0xC yt=y[rt]kt=z[s[0x7]]at=kt/bt rt=yt(at)i=H*rt G=P-i ut=0x18 P=0x0 O=X(K,G,P)yt=0x0 P=F[r(0x1AC2)]H=-85 K=F[r(0x161C)]X=y[K]G=y[P]i=0x0 P=G(i)i=F[r(0x1AC2)]G=y[i]i=G(H)H=F[r(0x1AC2)]G=y[H]H={G(yt)}K=X(P,i,a(H))at=F[r(0x199C)]yt=2.5 D=O*K O=F[r(0x161C)]G=F[r(0x1AC2)]X=y[O]i=-2 K=y[G]rt=y[at]bt=z[s[0x7]]kt=bt/ut at=rt(kt)H=yt*at P=i+H G=K(P)P=F[r(0x1AC2)]K=y[P]i=0x0 H=0x0 P=K(i)i=F[r(0x1AC2)]K=y[i]i={K(H)}O=X(G,P,a(i))X=0x1 K=F[r(0x252B)]J=D*O O=y[K]D=X/O e=B(Z,J,D)w[c]=e else E={}k=y[F[r(0x6E6)]]end else Y,R=x(C,Y)k=Y and 0x1626A or 0x5FC83B end end else if k<0x238BA5 then if k<0x235B30 then if k<0x22E38D then Mt=tt[0x1]k=tt[0x2]k=0xE11100 else w=F[r(0xDD1)]Q=F[r(0x116E)]T=k f=z[s[0x2]]Q=f[Q]h=R[w]Q=Q(f,h)k=Q and 0x871545 or 0x193744 n=Q end else k=Z k=e and 0x2D07DA or 0x694992 B=e end else if k<0x2454B5 then if k<0x23E25E then c=F[r(0xD62)]Q=F[r(0x19B)]n=k f=C[Q]w=y[c]c=F[r(0x19B)]h=w[c]w=F[r(0x14A2)]Q=h[w]T=f==Q o=T k=T and 0x2E2AD2 or 0xEFB614 else Yt=F[r(0x1B2F)]It=ut~=Yt k=It and 0xCDE46A or 0x4463F4 end else k=0xB23AAC lt=nil end end end end end end end else if k<0x346222 then if k<0x2CFDF9 then if k<0x2A1A6B then if k<0x282BD9 then if k<0x265345 then if k<0x25C064 then if k<0x255E51 then if k<0x24FD4D then E=true k=0x906875 z[s[0x3]]=E else k=0xA80F44 X=nil J=nil e=nil G=nil Z=nil end else k=0x88CC25 end else if k<0x262711 then if k<0x2604AB then C=b[0x1]E={}k=C C=nil z[s[0x1]]=k k=y[F[r(0xAE9)]]else k=z[s[0x6]]k=k and 0x1FC1C0 or 0xB1281 end else k=C k=E and 0xE59D63 or 0x448296 end end else if k<0x27FF18 then if k<0x2702D2 then if k<0x26EA17 then k=0x41435E o=W else ut,lt=kt(bt,ut)k=ut and 0xEB6D9D or 0xB7F7CE end else tt[0x9]=F[r(0x1B86)]tt[0x8]=y[tt[0x9]]tt[0x6]=k tt[0x7]=tt[0x8]~=O k=tt[0x7]and 0xB92737 or 0xB8C393 tt[0x5]=tt[0x7]end else if k<0x2810D7 then if k<0x280393 then P=nil k=0x2F8F5C else f=F[r(0x20E9)]w=F[r(0x1C89)]Q=F[r(0x97F)]h=F[r(0x60D)]T={f,Q}Q=F[r(0x15B0)]f=y[Q]Q=F[r(0x21D3)]Q=f[Q]Q=Q(f,h)k=0x92CEE0 h=F[r(0xC34)]f=F[r(0x605)]f=Q[f]f=f(Q,h)Q=F[r(0x226E)]Q=f[Q]h=y[w]w={h(T)}T=nil Q=Q(f,a(w))end else bt=0x4 kt=P==bt k=kt and 0xE49C22 or 0x6CACDD end end end else if k<0x29AEC5 then if k<0x29636D then if k<0x2952FF then if k<0x293B59 then E=F[r(0x9E)]W=N(0x164699,{})k=y[E]E=k(W)W=0x1 E=F[r(0x11EF)]k=y[E]E=k(W)k=z[s[0x3]]E=k()E=F[r(0x20E9)]R=F[r(0x60D)]W=F[r(0x97F)]k={E;W}E=F[r(0x15B0)]W=k k=y[E]E=F[r(0x21D3)]E=k[E]E=E(k,R)R=F[r(0xC34)]k=F[r(0x605)]k=E[k]o=F[r(0x1C89)]k=k(E,R)R=y[o]o={R(W)}E=F[r(0x226E)]W=nil E=k[E]E=E(k,a(o))k=0xE6FE5D else T=z[s[0x3]]f=false n=T==f o=n k=0xE4EB24 end else B=F[r(0xDD1)]c=w[B]B=F[r(0xEB3)]E=c==B k=E and 0xFD9C48 or 0x6A06DB end else if k<0x2990AF then if k<0x29771A then k=w k=h and 0xB0A90B or 0xB163CE else X=F[r(0xDD1)]D=c[X]X=F[r(0x1CC9)]k=0xEC159F J=D==X e=J end else E=F[r(0x15B0)]k=y[E]Y=z[s[0x1]]x=F[r(0x1E84)]C=Y[x]Y=F[r(0x332)]Y=k[Y]E={Y(k,C)}E={a(E)}k=y[F[r(0x3F6)]]end end else if k<0x29E11D then if k<0x29BD33 then if k<0x29B2FC then W=F[r(0x11F3)]C=b[0x1]E=F[r(0xDD1)]k=C[E]Y=k R=F[r(0x1F8A)]x=C[W]W=F[r(0x1030)]W=x[W]W=W(x,R)E=W k=W and 0xFD6BE9 or 0xD1B88A else Q=F[r(0x15B0)]f=y[Q]Q=F[r(0x829)]T=f[Q]f=F[r(0x1F49)]Q=F[r(0x15B0)]E=T[f]f=o T=F[r(0x13EE)]E[T]=f T=F[r(0x11EF)]w=F[r(0xD62)]f=2.5 E=y[T]T=E(f)f=y[Q]Q=F[r(0x829)]T=f[Q]f=F[r(0x1F49)]E=T[f]f=Y T=F[r(0x13EE)]E[T]=f T=F[r(0x11EF)]f=0x3 E=y[T]Q=F[r(0x1CC9)]T=E(f)f=Y[Q]Q=F[r(0x9F3)]T=f[Q]h=y[w]w=F[r(0x212D)]Q=h[w]h=F[r(0x324)]f=Q[h]E=T==f k=E and 0x3E887C or 0x60142A end else R=not Y x=R k=0xE9F2C5 end else if k<0x2A0175 then if k<0x29F123 then kt=F[r(0x166A)]i=F[r(0x30E)]Ft=F[r(0x2651)]k=K K=nil ut=I()P=F[r(0x13DF)]G=F[r(0x1BC6)]e=O or K O=F[r(0xB0D)]X=y[O]K=F[r(0x1B86)]bt={}H=F[r(0xA67)]O=y[K]K=y[G]G=y[P]P=y[i]yt=F[r(0x306)]i=y[H]H=y[yt]yt=y[kt]kt={}k=0x8D1FBC z[ut]=bt bt=z[o]Et=y[Ft]Ft={bt(Et)}lt=Ft[0x2]zt=Ft[0x3]st=Ft[0x1]else E={C}k=y[F[r(0x13C)]]end else k=D k=0xC9546A D=F[r(0x1897)]e=J or D B=e end end end end else if k<0x2BCC02 then if k<0x2ABD8E then if k<0x2A6E7E then if k<0x2A667E then if k<0x2A3DE9 then C=b[0x1]E=F[r(0x1513)]Y=b[0x2]k=Y==E k=k and 0x9CC4C3 or 0x5015D8 else kt=F[r(0x64)]lt=F[r(0x20A0)]lt=Y[lt]k=y[kt]st={lt(Y)}lt={k(a(st))}ut=lt[0x3]bt=lt[0x2]k=0x26FE1D kt=lt[0x1]end else x=x+W o=not R E=x<=Y E=o and E o=x>=Y o=R and o E=o or E o=0xC9C2ED k=E and o E=0x1CC982 k=k or E end else if k<0x2AB9EF then if k<0x2A8485 then n=z[s[0x6]]T=n(R)k=T and 0xAB6D25 or 0xEBBC3F else k=z[s[0x1]]E=k()E={}k=y[F[r(0x244A)]]end else C=0x5 Y=C C=0x1 x=C C=0x0 W=x<C k=0x805D57 E=0x1 C=E-x end end else if k<0x2B1830 then if k<0x2B07F2 then if k<0x2AD309 then vt=0x0 Mt=F[r(0x9E)]Ut=0x0 Lt=y[Mt]tt[0x4]=F[r(0x8F)]St=U(0xABE0DA,{Wt})k=0xFC0811 Mt={Lt(St)}Nt={a(Mt)}Mt=0x2 Lt=Nt[Mt]St=F[r(0x90)]Mt=y[St]tt[0x1]=z[Ft]tt[0x3]=y[tt[0x4]]tt[0x4]=tt[0x3](Lt)tt[0x3]=F[r(0x154)]tt[0x2]=tt[0x1](tt[0x4],tt[0x3])tt[0x1]={tt[0x2]()}St=Mt(a(tt[0x1]))tt[0x1]=0x64 Mt=I()tt[0x2]=tt[0x1]z[Mt]=St tt[0x1]=0x1 St=0x1 tt[0x3]=tt[0x1]tt[0x1]=0x0 tt[0x4]=tt[0x3]<tt[0x1]tt[0x1]=St-tt[0x3]else n=z[s[0x2]]Q=F[r(0xDD1)]T=F[r(0x116E)]f=R[Q]k=F[r(0x180B)]T=n[T]T=T(n,f)n=F[r(0x180B)]o=T[n]R[k]=o k=0x15A522 end else k=n k=0xE21FF9 E=o end else if k<0x2BC363 then if k<0x2B61F2 then E=F[r(0x517)]k=y[E]C=z[s[0x1]]Y=z[s[0x1]]x=z[s[0x1]]E=k(C,Y,x)C=E o=F[r(0xDAF)]k={}E=F[r(0x1FC)]Y=k k=y[E]x=z[s[0x2]]E=k(x)z[s[0x2]]=E R=z[s[0x3]]W=R==o k=W and 0xFD33F1 or 0x481128 x=W else k=0x48AC40 w=nil end else E=F[r(0xA15)]E=Q[E]E=E(Q)k=0x6766DA end end end else if k<0x2C7385 then if k<0x2C0735 then if k<0x2BF21A then if k<0x2BD60B then C=b[0x1]E=0x0 Y=b[0x2]k=Y>E k=k and 0xA5A21B or 0xD8EF4 else n=n+f E=n<=T h=not Q E=h and E h=n>=T h=Q and h E=h or E h=0x3E9CB7 k=E and h E=0xE9985B k=k or E end else k=0x15B978 x=V(x)T=false z[f]=T f=V(f)end else if k<0x2C4AE7 then if k<0x2C0B48 then k=0x8B4028 o=nil else k=0x47E08B E=z[s[0x2]]R=E()end else k=0x38A15A Q=F[r(0x1897)]f=W~=Q E=f end end else if k<0x2CAE25 then if k<0x2C9ACC then if k<0x2C8278 then f=F[r(0xDD1)]h=0x5 T=R[f]Q=z[s[0x4]]f=Q[h]n=T==f k=n and 0x8AA8A9 or 0xD65ECD o=n else Q=nil h=nil k=0x3BB8D1 end else Y=nil C=nil k=y[F[r(0x24E5)]]E={}end else if k<0x2CED72 then if k<0x2CE614 then k=vt k=0xE722EB Vt=Ut else n=not Y R=n k=0x431401 end else E=true k=C==E k=k and 0x2C0774 or 0x965BC6 end end end end end else if k<0x303AE7 then if k<0x2E9276 then if k<0x2DB8FF then if k<0x2D5C8A then if k<0x2D0819 then if k<0x2D04B4 then R=z[s[0x1]]o=F[r(0x1CC9)]n=F[r(0xD62)]W=R[o]R=F[r(0x9F3)]x=W[R]o=y[n]n=F[r(0x212D)]R=o[n]o=F[r(0x1B02)]W=R[o]Y=x==W k=Y and 0xB66C85 or 0x6435CA C=Y else Z=F[r(0x1BC6)]e=y[Z]Z=F[r(0x166B)]D=F[r(0x17E3)]J=F[r(0x8F)]k=e[Z]Z=y[J]J=Z(B)Z=R[D]e=k(J,Z)k=e and 0xD72649 or 0x35439A end else X=z[s[0x15]]J=0x1 D=#X X=D D=0x1 O=D k=0xBD878B D=0x0 K=O<D D=J-O end else if k<0x2D926A then if k<0x2D76C0 then w=Q Z=F[r(0x8BD)]e=F[r(0x138E)]e=c[e]e=e(c,Z)k=e and 0x2FBC81 or 0x8E0BB7 B=e else E=F[r(0x11EF)]C=0x1 k=y[E]E=k(C)k=false z[s[0x1]]=k k=y[F[r(0x1EBF)]]E={}end else Ft=F[r(0xE88)]H=yt ut=z[s[0x19]]bt=ut[H]lt=F[r(0x1FFD)]ut=F[r(0x1897)]zt=F[r(0x2251)]st={lt;zt}Et=F[r(0x1BC6)]zt=y[Et]Et=F[r(0x1D70)]lt=zt[Et]Et=bt[Ft]Ft=0x3 zt=lt(Et,Ft)Et=0x5 lt=H>Et k=lt and 0x3B0F9C or 0x4AD964 end end else if k<0x2E3EF4 then if k<0x2E2CFF then if k<0x2E2544 then k=0x7DB1FA tt[0x2]=Ut==vt St=tt[0x2]else T=not Y o=T k=0xEFB614 end else n=F[r(0x226C)]T=F[r(0x973)]k=W R=k W=I()Q=F[r(0x2024)]z[W]=E o=C[n]n=F[r(0x25C4)]R=I()E=o or n w=F[r(0xD33)]o=k z[R]=E n=C[T]o=I()T=0x1 f=F[r(0x15D7)]E=n or T n=k z[o]=E T=C[f]f=0x1 n=I()E=T or f z[n]=E T=k T=I()f=C[Q]Q=0x1 E=f or Q h=F[r(0x23FF)]z[T]=E Q=C[h]h=0x1 E=Q or h f=k f=I()z[f]=E Q=k h=C[w]w=0x1 Q=I()c=F[r(0x267B)]E=h or w z[Q]=E w=C[c]h=k e=F[r(0x1B86)]c=1.5 h=I()C=nil E=w or c c=F[r(0x1B86)]z[h]=E w=y[c]c=F[r(0x1C00)]E=w[c]B=y[e]e=F[r(0x1F6F)]c=B[e]e=N(0x2B19AC,{Q,x;Y;n,f;R;W,T,o,h})B={c(e)}W=V(W)w=E(a(B))x=V(x)h=V(h)f=V(f)E={}n=V(n)R=V(R)Y=V(Y)k=y[F[r(0x111A)]]T=V(T)o=V(o)Q=V(Q)end else if k<0x2E8CC2 then if k<0x2E69C8 then o=F[r(0xBC5)]n=0x0 k=0xFD39F5 x=F[r(0xEC4)]R=y[o]o=F[r(0x22B6)]W=R[o]o=0x13F R=W(o,n)W=false C[x]=R x=F[r(0x1FE3)]z[s[0x4]]=x z[s[0x1]]=W else W=F[r(0x9E)]Y=y[W]o=F[r(0x220B)]R=U(0x5DADA0,{})W=Y(R)R=F[r(0x23DB)]W=y[R]R=W(o)Y=not R k=Y and 0x5A174C or 0x794469 end else o=nil T=nil k=F[r(0xA15)]k=C[k]x=nil Y=nil k=k(C)k=y[F[r(0xB4C)]]n=nil R=nil E={}C=nil W=nil end end end else if k<0x2FA67C then if k<0x2F4EDA then if k<0x2F2EEE then if k<0x2EE786 then mt=F[r(0x11B1)]k=0x61B01C Vt=i[mt]xt=Vt else x=true C=b[0x1]Y=b[0x2]E=z[s[0x1]]k=E==x k=k and 0xFEEFF9 or 0xBE3905 end else k=z[s[0x6]]E=F[r(0x1030)]C=F[r(0x1CC9)]E=k[E]E=E(k,C)k=F[r(0xC0E)]C=true E[k]=C k=0x6FB7B4 end else if k<0x2F6185 then if k<0x2F5703 then C=C+x R=not W E=C<=Y E=R and E R=C>=Y R=W and R E=R or E R=0xB7D512 k=E and R E=0xB1A k=k or E else k=F[r(0x250E)]k=c[k]k=k(c)B=k k=F[r(0x1725)]e=T B[k]=e e=F[r(0x267C)]k=F[r(0x1030)]k=B[k]k=k(B,e)k=k and 0x94212A or 0xE08C72 end else at=not rt i=i+yt P=i<=H P=at and P at=i>=H at=rt and at P=at or P at=0x192B63 k=P and at P=0xFBB0EB k=k or P end end else if k<0x2FCF92 then if k<0x2FBCC4 then if k<0x2FB4DC then Y=Y+W E=Y<=x o=not R E=o and E o=Y>=x o=R and o E=o or E o=0xE6E798 k=E and o E=0x1960F8 k=k or E else X=F[r(0x1725)]D=c[X]X=F[r(0x1725)]J=D[X]k=0x8E0BB7 D=F[r(0xDD1)]Z=J[D]J=F[r(0x1FE3)]e=Z~=J B=e end else k=J and 0x527698 or 0x92B3D5 end else if k<0x3027BF then if k<0x30119D then k=0xD4E545 Q=nil f=nil else J=z[Y]k=J and 0x306D14 or 0xA42C7E Z=J end else R=R+n E=R<=o f=not T E=f and E f=R>=o f=T and f E=f or E f=0x328640 k=E and f E=0x92C90C k=k or E end end end end else if k<0x320C52 then if k<0x315D31 then if k<0x31250D then if k<0x30DD2B then if k<0x30535B then n=F[r(0x673)]Q=false z[s[0x5]]=n f=z[s[0x7]]T=f==Q k=T and 0xF0C21D or 0x895C2F else k=0xA42C7E J=h==w Z=J end else o=V(o)n=nil k=0xE62682 R=nil W=nil end else if k<0x3140E7 then if k<0x31321A then E=F[r(0x64)]R=F[r(0x20A0)]k=y[E]x=z[s[0x2]]R=x[R]W={R(x)}x={k(a(W))}k=0x4D2026 E=x[0x1]C=x[0x2]Y=x[0x3]x=E else x=F[r(0x14B9)]E=y[x]k=E and 0x838918 or 0xFF8AC0 end else x=W k=Y[x]T=F[r(0xA15)]x=nil T=k[T]T=T(k)k=0x9B84F2 end end else if k<0x31B019 then if k<0x31AA20 then if k<0x3187F4 then Wt,Vt=Yt(xt,Wt)k=Wt and 0x856425 or 0x1A9FCD else C=nil E={}k=y[F[r(0xFB9)]]end else T=k B=F[r(0xD62)]h=F[r(0x19B)]Q=C[h]c=y[B]B=F[r(0x19B)]w=c[B]c=F[r(0xFFF)]h=w[c]f=Q==h n=f k=f and 0x6111DC or 0x91E274 end else if k<0x31EB43 then if k<0x31E04B then n=z[s[0x2]]T=F[r(0x673)]o=n~=T E=o k=0x9B141D else C=z[s[0x1]]E=#C Y=z[s[0x2]]C=#Y k=E<C k=k and 0x6CFB2 or 0x225047 end else k=o and 0x71DE18 or 0xDFF9C3 end end end else if k<0x3373AF then if k<0x329B89 then if k<0x328184 then if k<0x322689 then x=k f=F[r(0xD62)]o=F[r(0x19B)]R=C[o]T=y[f]f=F[r(0x19B)]n=T[f]T=F[r(0x1173)]o=n[T]W=R==o k=W and 0x7D4649 or 0x197386 E=W else k=0x4E4880 E=0x3 W=0x3 x=W Y=E end else E=F[r(0x25F7)]h=F[r(0x250D)]k=y[E]J=F[r(0x1FC)]B=F[r(0x1537)]f=R E=k()E=F[r(0x1537)]O=0x0 k=y[E]E=F[r(0x1CB)]Q=y[h]c=y[B]D=0x0 B=F[r(0x1CB)]w=c[B]X=0x0 e=z[s[0x4]]Z=y[J]J=Z(D,X,O)Z=F[r(0x161C)]X=0x0 B=e*J D=F[r(0x1AC2)]e=y[Z]J=y[D]D=J(X)O=0x0 X=F[r(0x1AC2)]J=y[X]K=0x0 X=J(O)O=F[r(0x1AC2)]J=y[O]O={J(K)}Z=e(D,X,a(O))c=B*Z K=-45 e=0x1 J=F[r(0x252B)]Z=y[J]B=e/Z h=Q(w,c,B)k[E]=h E=F[r(0xDF0)]D=0x0 B=F[r(0xDF0)]h=F[r(0x250D)]k=y[E]J=F[r(0x1FC)]E=F[r(0x1CB)]Q=y[h]c=y[B]G=-45 X=0x0 B=F[r(0x1CB)]w=c[B]e=z[s[0x6]]O=0x0 Z=y[J]J=Z(D,X,O)Z=F[r(0x161C)]X=0x2D B=e*J D=F[r(0x1AC2)]O=0x0 e=y[Z]J=y[D]D=J(X)X=F[r(0x1AC2)]J=y[X]X=J(O)O=F[r(0x1AC2)]J=y[O]O={J(K)}Z=e(D,X,a(O))X=.7 J=F[r(0x252B)]e=0x1 c=B*Z Z=y[J]B=e/Z h=Q(w,c,B)k[E]=h J=1.25 E=F[r(0x1D79)]k=y[E]E=F[r(0x1CB)]h=F[r(0x250D)]D=.5 B=F[r(0x1D79)]Q=y[h]O=-45 c=y[B]Z=F[r(0x1FC)]B=F[r(0x1CB)]w=c[B]K=0x0 e=y[Z]Z=e(J,D,X)J=F[r(0x161C)]X=F[r(0x1AC2)]e=y[J]D=y[X]X=D(O)O=F[r(0x1AC2)]D=y[O]O=D(K)K=F[r(0x1AC2)]D=y[K]K={D(G)}J=e(X,O,a(K))B=Z*J e=z[s[0x7]]c=B*e J=F[r(0x252B)]D=.5 Z=y[J]X=0x0 e=0x1 B=e/Z K=0x5 h=Q(w,c,B)B=F[r(0x418)]k[E]=h E=F[r(0x418)]J=-1.5 Z=F[r(0x1FC)]h=F[r(0x250D)]G=0x0 k=y[E]Q=y[h]c=y[B]B=F[r(0x1CB)]w=c[B]e=y[Z]O=0x0 E=F[r(0x1CB)]Z=e(J,D,X)J=F[r(0x161C)]X=F[r(0x1AC2)]e=y[J]D=y[X]X=D(O)O=F[r(0x1AC2)]D=y[O]O=D(K)K=F[r(0x1AC2)]D=y[K]K={D(G)}J=e(X,O,a(K))K=0x55 B=Z*J e=z[s[0x8]]c=B*e J=F[r(0x252B)]Z=y[J]D=-1 e=0x1 B=e/Z h=Q(w,c,B)G=0x0 k[E]=h h=F[r(0x250D)]E=F[r(0x23BE)]k=y[E]Q=y[h]E=F[r(0x1CB)]B=F[r(0x23BE)]c=y[B]Z=F[r(0x1FC)]B=F[r(0x1CB)]X=0x0 O=0x0 w=c[B]e=y[Z]J=0x1 Z=e(J,D,X)X=F[r(0x1AC2)]J=F[r(0x161C)]e=y[J]D=y[X]X=D(O)O=F[r(0x1AC2)]D=y[O]O=D(K)K=F[r(0x1AC2)]D=y[K]K={D(G)}J=e(X,O,a(K))B=Z*J Z=F[r(0x161C)]e=y[Z]D=F[r(0x1AC2)]X=0x0 J=y[D]D=J(X)X=F[r(0x1AC2)]J=y[X]G=0x0 O=0x0 X=J(O)O=F[r(0x1AC2)]K=0x0 J=y[O]O={J(K)}Z=e(D,X,a(O))c=B*Z J=F[r(0x252B)]Z=y[J]X=0x0 e=0x1 O=0x0 D=-1 B=e/Z h=Q(w,c,B)k[E]=h E=F[r(0x93C)]h=F[r(0x250D)]k=y[E]E=F[r(0x1CB)]J=-1 B=F[r(0x93C)]Q=y[h]c=y[B]B=F[r(0x1CB)]w=c[B]K=-85 Z=F[r(0x1FC)]e=y[Z]Z=e(J,D,X)J=F[r(0x161C)]e=y[J]X=F[r(0x1AC2)]D=y[X]X=D(O)O=F[r(0x1AC2)]f=nil D=y[O]O=D(K)K=F[r(0x1AC2)]D=y[K]K={D(G)}J=e(X,O,a(K))B=Z*J X=0x0 D=F[r(0x1AC2)]Z=F[r(0x161C)]e=y[Z]O=0x0 J=y[D]D=J(X)K=0x0 X=F[r(0x1AC2)]J=y[X]X=J(O)O=F[r(0x1AC2)]J=y[O]O={J(K)}Z=e(D,X,a(O))c=B*Z J=F[r(0x252B)]Z=y[J]e=0x1 B=e/Z h=Q(w,c,B)k[E]=h k=0x3035E6 end else if k<0x3313F1 then if k<0x32F342 then k=0xCDD5D0 x=false z[s[0x4]]=x else k=o and 0xCE1EA1 or 0xCCC33 end else T=not n W=W+o x=W<=R x=T and x T=W>=R T=n and T x=T or x T=0x19FD7C k=x and T x=0xDE021 k=k or x end end else if k<0x33C8FA then if k<0x33AB59 then if k<0x338A6D then c=F[r(0x30E)]k=0x6CCE64 w=y[c]c=F[r(0x1C89)]h=w[c]f=h else R=F[r(0x1212)]W=C[R]k=0xD0A53A E=F[r(0x1212)]x=W-Y C[E]=x end else ut=F[r(0x30E)]bt=y[ut]i=rt k=0xB7466F ut=F[r(0x1925)]kt=bt[ut]i=nil bt=kt(P,at)at=nil end else if k<0x3407B8 then if k<0x33E37B then f=k w=false h=z[s[0xA]]Q=h==w k=Q and 0x936951 or 0x92A953 T=Q else k=0xD8EF4 end else n=F[r(0x90)]o=y[n]k=0xD43588 n=o(C)o=nil R=n==o x=R end end end end end end else if k<0x3BB2E1 then if k<0x37B581 then if k<0x35CBD5 then if k<0x3514F3 then if k<0x34B55C then if k<0x34AC6A then if k<0x34946E then J=0x1 w=F[r(0x25F7)]X=F[r(0x1867)]e=F[r(0xDF1)]h=n Z=0x0 c=0x3 G=F[r(0x517)]E=y[w]O=F[r(0xC8A)]P=2.5 k=0x5C98A0 w=E()w=F[r(0x200E)]H=0x0 E=y[w]B=z[s[0x2]]yt=0x3C D=y[X]i=.8 X=D(O)K=y[G]G=K(P,i,H)K=0x2 O=G*K i=0x0 D=F[r(0x1893)]P=0x0 K=false w=E(c,B,e,Z,J,X,D,O,K)J=F[r(0x239C)]c=F[r(0x25BD)]O=F[r(0x1FC)]E=y[c]B=F[r(0xF04)]G=0x0 Z=F[r(0x239C)]e=y[Z]K=0x0 Z=y[J]X=y[O]O=X(K,G,P)K=F[r(0x161C)]P=F[r(0x1AC2)]X=y[K]G=y[P]P=G(i)i=F[r(0x1AC2)]G=y[i]H=yt*h yt=0x0 i=G(H)H=F[r(0x1AC2)]G=y[H]H={G(yt)}K=X(P,i,a(H))yt=1.5 i=0x3 G=0x0 D=O*K O=F[r(0x1FC)]K=0x0 X=y[O]H=h/yt P=i+H O=X(K,G,P)X=F[r(0x1FC)]K=0x0 G=0x0 J=D*O O=0x0 D=y[X]X={D(O,K,G)}c=E(B,e,Z,w,J,a(X))e=F[r(0x30E)]B=y[e]e=F[r(0x1925)]E=B[e]e=z[s[0xE]]B=E(e,w)e=F[r(0x30E)]B=y[e]e=F[r(0x1925)]E=B[e]e=z[s[0xF]]B=E(e,c)B=F[r(0x22D6)]E=y[B]e=F[r(0x20A8)]B=E(e,w)e=0x5 E=0x1 Z=e e=0x1 J=e e=0x0 D=J<e e=E-J else X=z[s[0x7]]k=0xC351CB O=false D=X==O Z=D end else E=F[r(0xA15)]k=0xE3B268 E=R[E]E=E(R)end else if k<0x34ED34 then if k<0x34D4D1 then at=F[r(0x1924)]ut=0x0 bt=F[r(0x517)]kt=y[bt]Ct=F[r(0x25D9)]Ft=R[Ct]st=0x0 Ct=F[r(0xAAE)]Et=Ft[Ct]zt=-Et Et=0x8 k=0x4A807F lt=zt/Et bt=kt(ut,st,lt)R[at]=bt else C=z[s[0x1]]Y=true k=C==Y k=k and 0xE5C56F or 0xBC3DB0 end else i=0x1 P=F[r(0x5D2)]x[P]=i i=false P=C==i k=P and 0x100DC0 or 0x7D05D0 end end else if k<0x3584B0 then if k<0x355233 then if k<0x353994 then k=z[s[0x1]]E=F[r(0x18F6)]E=k[E]E=E(k)k=y[F[r(0xFCE)]]E={}else B=nil k=0x2BA3C9 c=nil end else o=0xA f=0xA T=0xA E=F[r(0x1CA0)]n=0xA W=F[r(0x613)]h=0xA Y=F[r(0x1F4C)]x=F[r(0x4CF)]R=F[r(0x1F0D)]k=F[r(0x220C)]C=b[0x1]Q=0xA C[k]=o C[E]=n k=y[F[r(0xDCE)]]C[Y]=T C[x]=f E={}C[W]=Q C[R]=h C=nil end else if k<0x35BC07 then if k<0x3597C3 then Q=nil f=W~=Q k=0xFF7EB7 n=f else ut=F[r(0x1D8B)]kt=F[r(0xE88)]Et=F[r(0x19B5)]k=0x7939B3 zt=y[Et]Et=F[r(0xABB)]lt=zt[Et]zt=F[r(0xB2A)]st=lt..zt bt=ut..st at[kt]=bt end else n=F[r(0x1230)]x=b[0x3]Y=b[0x2]W=F[r(0x152)]C=b[0x1]E=y[W]f=F[r(0xC60)]W={E(C)}o=F[r(0xC60)]R=F[r(0x152)]k={a(W)}E=y[R]R={E(Y)}W=k E=F[r(0xCDC)]Q=F[r(0x1230)]k={a(R)}R=k k=C[E]E=C[o]o=C[n]T=E n=k E=F[r(0xCDC)]k=Y[E]E=Y[f]f=Y[Q]h=E Q=k E=0x1 k=E-x w=k E=F[r(0x1DB8)]k=y[E]B=w*n e=x*Q c=B+e e=w*T Z=x*h B=e+Z Z=w*o J=x*f e=Z+J J=F[r(0x25E3)]Z=y[J]J={Z(W,R,x)}E={k(c,B,e,a(J))}E={a(E)}k=y[F[r(0x127D)]]end end end else if k<0x36A030 then if k<0x3641A4 then if k<0x361459 then if k<0x35F8DD then C=F[r(0x1CC9)]x=F[r(0xBD9)]E=F[r(0x25F7)]k=y[E]E=k()E=F[r(0x1572)]k=y[E]E=y[C]x=E[x]x={x(E)}Y=x[0x2]C=x[0x1]x=k k=0xC75E15 else i=I()Et=M(0xCF7A53,{})Ft=N(0x5FB1EB,{kt})lt=L(0x3E143D,{ut,yt,kt})X=nil z[i]=lt Nt=F[r(0x4F6)]G=nil lt=I()Ut=I()n=nil zt=v(0x52B112,{R})P=nil z[lt]=zt Yt=M(0xC4F0FE,{ut,kt;st})It=S(0x81FB58,{ut,bt;kt})Ct=S(0xC22AC2,{yt})O=nil zt=I()z[zt]=Et x=nil Et=I()z[Et]=Ft Ft=I()ut=V(ut)z[Ft]=Ct E={}Ct=I()z[Ct]=It It=I()z[It]=Yt xt=N(0x6539A4,{yt;Et,Ft,zt,Ct,It,i})Yt=I()z[Yt]=xt K=nil c=nil xt=v(0x8B7F06,{W;kt;Et;st;zt,Ct,It,i})Wt=false mt=I()z[mt]=Wt Wt=F[r(0x1FE3)]vt=I()Lt=U(0xC8B587,{mt;o,T,Ut})z[Ut]=Wt Wt=false z[vt]=Wt Wt=h[Nt]Nt=F[r(0x89E)]Nt=Wt[Nt]Nt=Nt(Wt,Lt)Nt=F[r(0x4F6)]Lt=U(0xC01F72,{mt,o;T,Ut})Wt=f[Nt]Nt=F[r(0x89E)]Nt=Wt[Nt]st=V(st)k=y[F[r(0x18E8)]]i=V(i)Nt=Nt(Wt,Lt)Nt=F[r(0x4F6)]Lt=S(0x50098C,{mt,o,T;Ut})Wt=Q[Nt]Nt=F[r(0x89E)]Et=V(Et)Nt=Wt[Nt]Nt=Nt(Wt,Lt)Nt=F[r(0x4F6)]Wt=H[Nt]Nt=F[r(0x89E)]o=V(o)Lt=S(0xADE261,{vt,w})Nt=Wt[Nt]Nt=Nt(Wt,Lt)f=nil Lt=M(0x571B0C,{R,lt})Nt=F[r(0x1FFF)]Wt=e[Nt]Ct=V(Ct)xt=nil Nt=F[r(0x89E)]vt=V(vt)Nt=Wt[Nt]mt=V(mt)h=nil Nt=Nt(Wt,Lt)Lt=U(0xF4EAB,{R})Nt=F[r(0x2000)]Wt=e[Nt]Y=nil Nt=F[r(0x89E)]Nt=Wt[Nt]Nt=Nt(Wt,Lt)w=V(w)Nt=F[r(0x1FFF)]Lt=N(0x1F25E7,{R;lt})It=V(It)Wt=B[Nt]T=V(T)Ut=V(Ut)lt=V(lt)Nt=F[r(0x89E)]Q=nil Nt=Wt[Nt]Nt=Nt(Wt,Lt)Nt=F[r(0x2000)]zt=V(zt)Lt=N(0x93FC93,{R})Ft=V(Ft)e=nil bt=V(bt)Wt=B[Nt]Nt=F[r(0x89E)]Nt=Wt[Nt]Nt=Nt(Wt,Lt)Nt=F[r(0x4F6)]kt=V(kt)Lt=S(0xB4A5EB,{yt,W;Yt})W=V(W)yt=V(yt)Wt=B[Nt]Nt=F[r(0x89E)]Yt=V(Yt)R=V(R)Nt=Wt[Nt]H=nil Nt=Nt(Wt,Lt)B=nil end else E=F[r(0xAC4)]k=y[E]E=k(W)n=E E=0x1 f=F[r(0x1A84)]T=y[f]f=T(n)k=E/f f=F[r(0x1A84)]T=k E=y[f]w=0x1 h=w-x Q=h*n f=E(Q)k=f*T R=k Q=F[r(0x1A84)]f=y[Q]h=x*n Q=f(h)n=nil E=Q*T k=0x6510A T=nil o=E end else if k<0x367F1A then if k<0x366C30 then Yt=F[r(0x1897)]It=ut~=Yt k=It and 0x241B59 or 0x978A65 else e=F[r(0x140D)]Q=T B=h[e]e=F[r(0x2523)]c=B==e w=c k=c and 0xDF0391 or 0x549C8 end else k=y[F[r(0x610)]]R=nil C=nil W=nil E={}Y=nil x=nil end end else if k<0x374F9F then if k<0x373CB0 then if k<0x36CF5A then tt[0x53]=nil tt[0x55]=F[r(0x30E)]tt[0x54]=y[tt[0x55]]tt[0x55]=F[r(0x1925)]tt[0x50]=tt[0x54][tt[0x55]]tt[0x51]=nil tt[0x54]=tt[0x50](tt[0x49],tt[0x52])tt[0x52]=nil tt[0x4B]=nil k=0xC34E59 else E=F[r(0x64)]k=y[E]R=F[r(0x20A0)]x=z[s[0x2]]R=x[R]W={R(x)}x={k(a(W))}k=0x227396 C=x[0x2]E=x[0x1]Y=x[0x3]x=E end else k=F[r(0x1F56)]k=o[k]k=k(o)k=0xD31641 end else if k<0x3771C4 then if k<0x375B3C then E={}k=y[F[r(0x115B)]]else k=z[s[0x3]]E=k()k=0xE6FE5D end else Y=F[r(0x1CBA)]C=F[r(0x1A1A)]x=true k=z[s[0x2]]E=k(C,Y,x)k=0xADC772 end end end end else if k<0x3A5F96 then if k<0x389B28 then if k<0x383035 then if k<0x380798 then if k<0x37FD3B then C=true E=z[s[0x1]]k=E==C k=k and 0x9A0D21 or 0x60FF06 else W=F[r(0xBC4)]C=F[r(0x21EA)]k=z[s[0x6]]T=F[r(0x20)]x=y[W]W=F[r(0x22B6)]Q=F[r(0x20)]Y=x[W]n=z[s[0x2]]o=n[T]n=F[r(0x21EA)]R=o[n]o=F[r(0x9D2)]W=R[o]R=-50 f=z[s[0x2]]T=f[Q]f=F[r(0x21EA)]n=T[f]T=F[r(0xAAE)]o=n[T]x=Y(W,R,o)k[C]=x k=0x1A16E6 end else k=z[s[0x1]]E=k()k=y[F[r(0x1E22)]]E={}end else if k<0x388914 then if k<0x386923 then B=F[r(0xDD1)]c=w[B]B=F[r(0x146F)]E=c==B k=E and 0x8D3ADC or 0xDB9C87 else E={}k=y[F[r(0xF2A)]]end else k=lt k=st and 0x8FF8C3 or 0xEFB6A8 end end else if k<0x3A0171 then if k<0x39777B then if k<0x38EE19 then k=E and 0x5DD091 or 0xDA0341 else n=F[r(0x25F7)]C=Y f=F[r(0x250D)]o=y[n]e=F[r(0x1FC)]n=o()n=F[r(0x1537)]o=y[n]n=F[r(0x1CB)]J=0x0 T=y[f]w=F[r(0x1537)]X=0x0 O=0x0 D=0x0 h=y[w]w=F[r(0x1CB)]Q=h[w]Z=0x0 c=z[s[0x4]]B=y[e]e=B(Z,J,D)D=0x0 Z=F[r(0x1AC2)]w=c*e B=F[r(0x161C)]c=y[B]e=y[Z]J=0x0 Z=e(J)J=F[r(0x1AC2)]e=y[J]J=e(D)D=F[r(0x1AC2)]e=y[D]D={e(X)}e=F[r(0x252B)]B=c(Z,J,a(D))h=w*B B=y[e]c=0x1 w=c/B D=0x0 f=T(Q,h,w)o[n]=f X=0x0 n=F[r(0xDF0)]f=F[r(0x250D)]o=y[n]w=F[r(0xDF0)]T=y[f]h=y[w]w=F[r(0x1CB)]J=0x0 Q=h[w]Z=0x0 c=z[s[0x5]]n=F[r(0x1CB)]e=F[r(0x1FC)]B=y[e]e=B(Z,J,D)B=F[r(0x161C)]w=c*e D=0x0 c=y[B]Z=F[r(0x1AC2)]e=y[Z]J=0x0 Z=e(J)J=F[r(0x1AC2)]e=y[J]J=e(D)D=F[r(0x1AC2)]e=y[D]D={e(X)}e=F[r(0x252B)]B=c(Z,J,a(D))h=w*B B=y[e]c=0x1 w=c/B f=T(Q,h,w)J=0x0 o[n]=f n=F[r(0x1D79)]w=F[r(0x1D79)]e=1.5 o=y[n]B=F[r(0x1FC)]f=F[r(0x250D)]n=F[r(0x1CB)]T=y[f]h=y[w]w=F[r(0x1CB)]Q=h[w]Z=.5 c=y[B]B=c(e,Z,J)e=F[r(0x161C)]X=-5 J=F[r(0x1AC2)]c=y[e]Z=y[J]D=0x0 J=Z(D)D=F[r(0x1AC2)]Z=y[D]D=Z(X)X=F[r(0x1AC2)]Z=y[X]X={Z(O)}e=c(J,D,a(X))w=B*e c=z[s[0x6]]h=w*c e=F[r(0x252B)]B=y[e]c=0x1 w=c/B f=T(Q,h,w)o[n]=f n=F[r(0x418)]J=0x0 w=F[r(0x418)]O=0x0 o=y[n]f=F[r(0x250D)]e=-1.5 B=F[r(0x1FC)]n=F[r(0x1CB)]T=y[f]Z=.5 h=y[w]w=F[r(0x1CB)]Q=h[w]c=y[B]B=c(e,Z,J)J=F[r(0x1AC2)]e=F[r(0x161C)]D=0x0 c=y[e]Z=y[J]J=Z(D)X=0x5 D=F[r(0x1AC2)]Z=y[D]D=Z(X)X=F[r(0x1AC2)]Z=y[X]X={Z(O)}e=c(J,D,a(X))w=B*e c=z[s[0x7]]e=F[r(0x252B)]h=w*c k=0x3E0778 B=y[e]c=0x1 D=0x0 w=c/B Z=-1 f=T(Q,h,w)O=0x0 o[n]=f w=F[r(0x23BE)]n=F[r(0x23BE)]o=y[n]f=F[r(0x250D)]X=0x55 T=y[f]e=0x1 h=y[w]w=F[r(0x1CB)]n=F[r(0x1CB)]Q=h[w]J=0x0 B=F[r(0x1FC)]c=y[B]B=c(e,Z,J)e=F[r(0x161C)]J=F[r(0x1AC2)]c=y[e]Z=y[J]J=Z(D)D=F[r(0x1AC2)]Z=y[D]D=Z(X)X=F[r(0x1AC2)]Z=y[X]X={Z(O)}e=c(J,D,a(X))Z=F[r(0x1AC2)]w=B*e X=0x0 B=F[r(0x161C)]O=0x0 J=0x0 c=y[B]e=y[Z]Z=e(J)J=F[r(0x1AC2)]e=y[J]D=0x0 J=e(D)D=F[r(0x1AC2)]e=y[D]D={e(X)}B=c(Z,J,a(D))c=0x1 h=w*B D=0x0 e=F[r(0x252B)]B=y[e]e=-1 w=c/B J=0x0 f=T(Q,h,w)o[n]=f n=F[r(0x93C)]Z=-1 o=y[n]f=F[r(0x250D)]T=y[f]n=F[r(0x1CB)]w=F[r(0x93C)]h=y[w]w=F[r(0x1CB)]Q=h[w]B=F[r(0x1FC)]X=-85 c=y[B]C=nil B=c(e,Z,J)e=F[r(0x161C)]c=y[e]J=F[r(0x1AC2)]Z=y[J]J=Z(D)D=F[r(0x1AC2)]Z=y[D]D=Z(X)X=F[r(0x1AC2)]Z=y[X]X={Z(O)}e=c(J,D,a(X))w=B*e B=F[r(0x161C)]Z=F[r(0x1AC2)]D=0x0 J=0x0 c=y[B]X=0x0 e=y[Z]Z=e(J)J=F[r(0x1AC2)]e=y[J]J=e(D)D=F[r(0x1AC2)]e=y[D]D={e(X)}e=F[r(0x252B)]B=c(Z,J,a(D))c=0x1 h=w*B B=y[e]w=c/B f=T(Q,h,w)o[n]=f end else yt=F[r(0x30E)]at=F[r(0x15B0)]H=y[yt]yt=F[r(0x1925)]i=H[yt]rt=y[at]at=F[r(0x2326)]yt=rt[at]H=i(P,yt)yt=F[r(0x30E)]H=y[yt]yt=F[r(0x1925)]kt=F[r(0x2584)]i=H[yt]at=F[r(0x15B0)]rt=y[at]at=F[r(0x16AB)]yt=rt[at]H=i(P,yt)at=F[r(0x2632)]H=F[r(0x2065)]rt=F[r(0xEE8)]yt=F[r(0x1F32)]i={H,yt;rt,at,kt}rt=z[s[0x19]]yt=#rt rt=0x0 H=yt>rt k=H and 0xA5A26E or 0xC8566C end else if k<0x3A548D then if k<0x3A0B95 then o=0x5 R=0x5 Y=R x=o k=0x8BCB16 else Nt=0x0 vt=0x1 Vt=F[r(0x220E)]k=0x246F6C Ut=F[r(0x1BC)]Ft=nil Lt=0x0 mt=y[Ut]Ut=mt(vt,Nt,Lt)bt[Vt]=Ut end else f=F[r(0xDD1)]h=F[r(0xDD1)]W=x T=R[f]Q=z[s[0x7]]f=Q[h]n=T==f o=n k=n and 0xEA9389 or 0xC26D7 end end end else if k<0x3B1F96 then if k<0x3AA464 then if k<0x3A898F then if k<0x3A64CE then w=F[r(0x20A0)]k=0x1E4DEC T=F[r(0x64)]E=y[T]w=Y[w]h={w(Y)}w={E(a(h))}Q=w[0x3]T=w[0x1]f=w[0x2]else f=.1 h=F[r(0x252B)]k=0xF93CC3 E=0x0 Q=y[h]n=.3 T=n n=f/Q f=n n=0x0 Q=f<n n=E-f end else B=F[r(0x138E)]c=k e=F[r(0x8BD)]B=w[B]B=B(w,e)k=B and 0x1324CB or 0x8C64FD h=Q E=B end else if k<0x3B0312 then if k<0x3ABCFC then k=true z[s[0x3]]=k E={}k=y[F[r(0x18AE)]]else k=y[F[r(0x15E8)]]E={}C=nil end else Et=0xF lt=H<=Et k=lt and 0x47E31 or 0xA6DA07 end end else if k<0x3B87AE then if k<0x3B5630 then if k<0x3B32F5 then n=n+f h=not Q E=n<=T E=h and E h=n>=T h=Q and h E=h or E h=0x1D21F k=E and h E=0x3A7246 k=k or E else k=0xDEDDFA end else k=f W=x(R,o,n,T)R=0x8 f=F[r(0x1CC9)]T=y[f]f=F[r(0x168F)]n=T[f]T=0x10 o=n/T x=R/o T=z[s[0x5]]o=k f=F[r(0xEE6)]n=T==f R=n k=n and 0xE1E70A or 0xB72E03 end else if k<0x3B9D8A then if k<0x3B9862 then B=k J=F[r(0xDD1)]X=0x7 Z=R[J]D=z[s[0x4]]J=D[X]e=Z==J k=e and 0x7027EB or 0x1816C7 c=e else W=nil R=nil k=0x579453 end else k=false z[s[0x9]]=k k=y[F[r(0x1717)]]E={}end end end end end else if k<0x40FA7C then if k<0x3DD063 then if k<0x3C477A then if k<0x3BED73 then if k<0x3BDD03 then if k<0x3BD083 then W=nil T=V(T)k=0x1CC261 else tt[0xC]=k tt[0xD]=z[x]k=tt[0xD]and 0xC5DE6F or 0x63F89F tt[0xB]=tt[0xD]end else E=z[s[0x1]]C=true k=E==C k=k and 0x6B5103 or 0x65B113 end else if k<0x3C24AA then if k<0x3C1C13 then J=z[s[0xA]]X=0x32 D=0x32 e=0x1 Z=J/D E=e+Z e=E Z=0x1 D=z[s[0xB]]J=D/X E=Z+J Z=E X=nil D=z[s[0xC]]E=nil J=E E=D~=X k=E and 0xE5F7DE or 0x597F3E else k=0xB23117 C=1.7 Y=C x=.1 R=F[r(0x252B)]E=0x0 W=y[R]C=x/W x=C C=0x0 W=x<C C=E-x end else k=0x3A6062 end end else if k<0x3D712F then if k<0x3D1A0D then if k<0x3CBA12 then Y=z[s[0x1]]R=0x2 W=0x1 x=Y(W,R)Y=0x1 C=x==Y k=C and 0x53082B or 0x472361 E=C else o=F[r(0x11F3)]k=R[o]o=F[r(0x258F)]f=F[r(0xBC4)]T=y[f]f=F[r(0x22B6)]h=0x14 Q=0x0 n=T[f]f=0x14 T=n(f,Q,h)k[o]=T k=0xD0E156 end else k=W k=x and 0x3D7980 or 0x79CE14 end else if k<0x3D9820 then if k<0x3D7D2D then k=0x79CE14 x=true z[s[0x4]]=x else h=z[s[0x1]]T=k w=0x4 Q=h[w]f=Y==Q n=f k=f and 0xC2D8F3 or 0x51D5A8 end else E=F[r(0xAD)]k=y[E]C=F[r(0x1FDD)]E=k(C)E=F[r(0x9E)]C=L(0x5FB0E3,{})k=y[E]E=k(C)E=F[r(0x9E)]k=y[E]C=M(0x7AE3C8,{})E=k(C)k={}C=k k=0x4573E5 end end end else if k<0x3E903F then if k<0x3E0864 then if k<0x3E00B8 then if k<0x3DEBEB then X=z[s[0x16]]D=#X X=0x0 J=D>X k=J and 0xEF01F4 or 0xADD7CB else k=0xDA5F58 tt[0x11]=0x2 tt[0x10]=tt[0x5][tt[0x11]]tt[0x11]=z[tt[0xA]]tt[0xF]=tt[0x10]==tt[0x11]tt[0xD]=tt[0xF]end else Y=Y+W C=Y<=x o=not R C=o and C o=Y>=x o=R and o C=o or C o=0x392A65 k=C and o C=0x8F3AB5 k=k or C end else if k<0x3E7111 then if k<0x3E5905 then C=F[r(0x15B0)]Y=F[r(0x829)]E=y[C]R=F[r(0x1E74)]C=F[r(0x21D3)]x=F[r(0xD9C)]C=E[C]n=F[r(0x20)]C=C(E,Y)E=F[r(0x1F49)]k=C[E]E=F[r(0x13EE)]C=k Y=I()k=C[E]z[Y]=k o=I()E=z[Y]k=E[x]x=I()z[x]=k k=nil E=z[Y]W=k k=E[R]R=k E=F[r(0x1FE3)]T=F[r(0xD9C)]k=R[E]z[o]=k E=z[o]k=E[n]E=z[o]n=k k=E[T]T=k k=true w=true z[s[0x1]]=k h=z[s[0x2]]f=k Q=h==w E=Q k=Q and 0x9672AB or 0xC6F618 else E={}C=nil Y=nil k=y[F[r(0x2409)]]end else E=F[r(0x1F56)]k=0x60142A E=Y[E]E=E(Y)end end else if k<0x3F3FCB then if k<0x3F27DF then if k<0x3EFD91 then D=0x0 O=0x0 h=n K=0x0 w=F[r(0x25F7)]P=0x0 G=0x0 X=0x0 J=F[r(0x1FC)]E=y[w]e=F[r(0x1E2)]w=E()c=F[r(0x250D)]w=y[c]E=F[r(0x1E2)]B=o[e]Z=y[J]J=Z(D,X,O)D=F[r(0x161C)]O=F[r(0x1AC2)]Z=y[D]X=y[O]O=X(K)K=F[r(0x1AC2)]X=y[K]K=X(G)G=F[r(0x1AC2)]i=0x0 X=y[G]G={X(P)}D=Z(O,K,a(G))e=J*D Z=.4 c=w(B,e,Z)B=F[r(0x250D)]o[E]=c J=F[r(0x1537)]w=F[r(0x1537)]G=0x0 O=F[r(0x1FC)]E=y[w]w=F[r(0x1CB)]P=0x0 c=y[B]Z=y[J]J=F[r(0x1CB)]e=Z[J]D=z[s[0x4]]X=y[O]K=0x0 O=X(K,G,P)K=F[r(0x1AC2)]P=0x0 J=D*O G=0x0 X=F[r(0x161C)]D=y[X]O=y[K]K=O(G)G=F[r(0x1AC2)]O=y[G]G=O(P)P=F[r(0x1AC2)]O=y[P]P={O(i)}X=D(K,G,a(P))D=0x1 Z=J*X O=F[r(0x252B)]X=y[O]P=0x0 O=F[r(0x1FC)]J=D/X B=c(e,Z,J)E[w]=B B=F[r(0x250D)]w=F[r(0xDF0)]E=y[w]c=y[B]G=0x0 J=F[r(0xDF0)]Z=y[J]J=F[r(0x1CB)]e=Z[J]w=F[r(0x1CB)]D=z[s[0x6]]K=0x0 X=y[O]O=X(K,G,P)P=0x0 X=F[r(0x161C)]J=D*O i=0x0 K=F[r(0x1AC2)]G=0x0 D=y[X]O=y[K]K=O(G)G=F[r(0x1AC2)]O=y[G]G=O(P)P=F[r(0x1AC2)]O=y[P]P={O(i)}H=0xC X=D(K,G,a(P))Z=J*X D=0x1 O=F[r(0x252B)]i=-5 X=y[O]J=D/X B=c(e,Z,J)O=1.35 G=-0.25 E[w]=B w=F[r(0x1D79)]K=.15 B=F[r(0x250D)]X=F[r(0x1FC)]E=y[w]w=F[r(0x1CB)]c=y[B]J=F[r(0x1D79)]Z=y[J]J=F[r(0x1CB)]e=Z[J]D=y[X]X=D(O,K,G)O=F[r(0x161C)]D=y[O]G=F[r(0x1AC2)]P=0xA0 K=y[G]G=K(P)P=F[r(0x1AC2)]K=y[P]P=K(i)i=F[r(0x1AC2)]K=y[i]i={K(H)}O=D(G,P,a(i))J=X*O D=z[s[0x7]]Z=J*D D=0x1 O=F[r(0x252B)]X=y[O]J=D/X B=c(e,Z,J)J=F[r(0x418)]E[w]=B w=F[r(0x418)]E=y[w]w=F[r(0x1CB)]B=F[r(0x250D)]c=y[B]K=.15 Z=y[J]h=nil H=-12 O=-1.35 J=F[r(0x1CB)]G=-0.25 e=Z[J]i=0x5 X=F[r(0x1FC)]D=y[X]X=D(O,K,G)G=F[r(0x1AC2)]O=F[r(0x161C)]D=y[O]P=0xA0 K=y[G]G=K(P)P=F[r(0x1AC2)]K=y[P]P=K(i)i=F[r(0x1AC2)]K=y[i]i={K(H)}O=D(G,P,a(i))J=X*O D=z[s[0x8]]Z=J*D D=0x1 O=F[r(0x252B)]X=y[O]J=D/X B=c(e,Z,J)E[w]=B O=0x1 K=-1 B=F[r(0x250D)]w=F[r(0x23BE)]E=y[w]w=F[r(0x1CB)]G=0x0 X=F[r(0x1FC)]P=0x0 J=F[r(0x23BE)]c=y[B]Z=y[J]J=F[r(0x1CB)]e=Z[J]D=y[X]X=D(O,K,G)O=F[r(0x161C)]D=y[O]i=0x55 G=F[r(0x1AC2)]K=y[G]G=K(P)P=F[r(0x1AC2)]K=y[P]P=K(i)i=F[r(0x1AC2)]H=0x0 K=y[i]i={K(H)}O=D(G,P,a(i))J=X*O i=0x0 X=F[r(0x161C)]K=F[r(0x1AC2)]D=y[X]O=y[K]P=0x0 G=0x0 K=O(G)G=F[r(0x1AC2)]O=y[G]G=O(P)P=F[r(0x1AC2)]O=y[P]P={O(i)}X=D(K,G,a(P))D=0x1 O=F[r(0x252B)]Z=J*X X=y[O]P=0x0 J=D/X B=c(e,Z,J)X=F[r(0x1FC)]G=0x0 H=0x0 E[w]=B w=F[r(0x93C)]E=y[w]w=F[r(0x1CB)]K=-1 O=-1 B=F[r(0x250D)]c=y[B]J=F[r(0x93C)]Z=y[J]J=F[r(0x1CB)]e=Z[J]D=y[X]X=D(O,K,G)O=F[r(0x161C)]D=y[O]G=F[r(0x1AC2)]K=y[G]G=K(P)k=0x2BEE1C i=-85 P=F[r(0x1AC2)]K=y[P]P=K(i)i=F[r(0x1AC2)]K=y[i]i={K(H)}O=D(G,P,a(i))K=F[r(0x1AC2)]J=X*O X=F[r(0x161C)]D=y[X]i=0x0 G=0x0 O=y[K]K=O(G)G=F[r(0x1AC2)]O=y[G]P=0x0 G=O(P)P=F[r(0x1AC2)]O=y[P]P={O(i)}O=F[r(0x252B)]X=D(K,G,a(P))D=0x1 Z=J*X X=y[O]J=D/X B=c(e,Z,J)E[w]=B else st=M(0x6F7145,{ut;Y,n})lt=F[r(0x1198)]bt=I()z[bt]=st st=v(0x5C03EF,{o,f;ut;bt,n})kt[lt]=st st=L(0x6FFF88,{bt})lt=F[r(0x632)]kt[lt]=st lt=F[r(0x276)]st=v(0xA141A7,{n,Y})kt[lt]=st Ft=F[r(0x69C)]Et=y[Ft]lt=k zt=Et~=W k=zt and 0x3895DA or 0x4AB801 st=zt end else w=F[r(0x1924)]c=0x0 h=F[r(0x180B)]k=z[o]T=F[r(0x180B)]Q=n[h]h=R[w]f=Q*h k[T]=f k=z[o]T=F[r(0x258F)]w=0x23 h=F[r(0xBC4)]Q=y[h]h=F[r(0x22B6)]f=Q[h]h=0x0 Q=f(h,w,c)k[T]=Q T=F[r(0x9E)]k=y[T]f=S(0x7E44DE,{o})T=k(f)k=0x311C14 end else if k<0x4036ED then if k<0x3FBAC1 then x=nil E={}k=y[F[r(0xAAF)]]Y=nil C=nil else C=F[r(0x64)]k=y[C]W=z[s[0x1]]o=F[r(0x20A0)]o=W[o]R={o(W)}W={k(a(R))}Y=W[0x2]k=0xB94298 x=W[0x3]C=W[0x1]end else Ut=F[r(0x1BC)]Vt=F[r(0x220E)]vt=0x1 Lt=0x1 k=0x5F9442 Nt=0x1 mt=y[Ut]Ut=mt(vt,Nt,Lt)bt[Vt]=Ut end end end end else if k<0x42FDE4 then if k<0x421587 then if k<0x41DCCC then if k<0x41483D then if k<0x41207A then Y=nil C=nil k=y[F[r(0x1E7D)]]E={}else E=o k=n k=o and 0xF9CB36 or 0xF70552 end else k=y[F[r(0x1272)]]E={}end else if k<0x421103 then if k<0x41FF4F then k=o and 0x2AFEC2 or 0x15A522 else k=F[r(0xA15)]k=Q[k]k=k(Q)k=0x2FE8E7 end else tt[0x4D]=F[r(0x2524)]tt[0x4C]=y[tt[0x4D]]tt[0x4D]=F[r(0x1F3A)]tt[0x4B]=tt[0x4C][tt[0x4D]]tt[0x4C]=F[r(0x1020)]tt[0x4C]=tt[0x4B][tt[0x4C]]tt[0x4D]=v(0x540C69,{})tt[0x4C]=tt[0x4C](tt[0x4B],tt[0x4D])tt[0x4D]=F[r(0x2524)]tt[0x4C]=y[tt[0x4D]]tt[0x4D]=F[r(0x1491)]tt[0x4B]=tt[0x4C][tt[0x4D]]tt[0x4C]=F[r(0x1020)]tt[0x4C]=tt[0x4B][tt[0x4C]]tt[0x4D]=A(0xFC17A7,{})tt[0x4C]=tt[0x4C](tt[0x4B],tt[0x4D])tt[0x4D]=F[r(0x2524)]tt[0x4C]=y[tt[0x4D]]tt[0x4D]=F[r(0x19C)]tt[0x4B]=tt[0x4C][tt[0x4D]]k=0xC12887 tt[0x4D]=L(0x89EFFC,{tt[0x1D];tt[0x26];tt[0x17],tt[0x4A]})tt[0x4C]=F[r(0x1020)]tt[0x4C]=tt[0x4B][tt[0x4C]]tt[0x4C]=tt[0x4C](tt[0x4B],tt[0x4D])tt[0x4D]=F[r(0x2524)]tt[0x4C]=y[tt[0x4D]]tt[0x4D]=F[r(0x1E01)]tt[0x4B]=tt[0x4C][tt[0x4D]]tt[0x4D]=L(0x2D84E,{tt[0x1D]})tt[0x4C]=F[r(0x1020)]tt[0x4C]=tt[0x4B][tt[0x4C]]tt[0x4C]=tt[0x4C](tt[0x4B],tt[0x4D])tt[0x4C]=F[r(0x23)]tt[0x4D]=F[r(0x1CC9)]tt[0x4F]=F[r(0x15B0)]tt[0x4B]=N(0x1DC32A,{tt[0x25]})y[tt[0x4C]]=tt[0x4B]tt[0x4C]=y[tt[0x4D]]tt[0x4D]=F[r(0x888)]tt[0x4B]=tt[0x4C][tt[0x4D]]tt[0x4D]=U(0xD0E1F6,{})tt[0x4C]=F[r(0x1020)]tt[0x50]=F[r(0x2124)]tt[0x4C]=tt[0x4B][tt[0x4C]]tt[0x4C]=tt[0x4C](tt[0x4B],tt[0x4D])tt[0x4C]=I()tt[0x4B]=false tt[0x4D]=I()z[tt[0x4C]]=tt[0x4B]tt[0x4B]=0x0 z[tt[0x4D]]=tt[0x4B]tt[0x4E]=y[tt[0x4F]]tt[0x4F]=F[r(0x21D3)]tt[0x4F]=tt[0x4E][tt[0x4F]]tt[0x4F]=tt[0x4F](tt[0x4E],tt[0x50])tt[0x4E]=F[r(0x99A)]tt[0x4B]=tt[0x4F][tt[0x4E]]tt[0x4E]=F[r(0x89E)]tt[0x4F]=S(0x11029E,{s[0x1],tt[0x1C];tt[0x1E],Y,tt[0x16],tt[0x11],tt[0x17],tt[0x12];tt[0x13],tt[0x14],tt[0x40],tt[0x1B];tt[0x10];tt[0x2E],tt[0x31],tt[0x33];tt[0x32];tt[0x35],tt[0x4D];tt[0x36],tt[0x37];tt[0x38],tt[0x26],tt[0x4C],tt[0x39]})tt[0x4E]=tt[0x4B][tt[0x4E]]tt[0x4E]=tt[0x4E](tt[0x4B],tt[0x4F])end end else if k<0x42DB4E then if k<0x42BD2C then if k<0x422AB6 then T=f c=F[r(0x5D2)]k=Y[T]Z=Y[T]J=F[r(0x5D2)]e=Z[J]Z=.022222222222222 B=e+Z k[c]=B T=nil k=0x84173F else C=I()k=nil Y=I()R=I()x=I()z[C]=b[0x1]z[Y]=b[0x2]z[x]=b[0x3]f=F[r(0x1B86)]o=I()W=I()z[W]=b[0x4]z[R]=b[0x5]z[o]=k n=F[r(0x1B86)]E=y[n]n=F[r(0x1C00)]k=E[n]T=y[f]f=F[r(0x1F6F)]n=T[f]f=L(0x9EAAD3,{s[0x1];o,Y;x;W;C;R})T={n(f)}E=k(a(T))k=z[o]E={k}k=y[F[r(0x16C7)]]end else k=F[r(0x250E)]D=F[r(0x11F3)]X=F[r(0xF04)]i=F[r(0x11F3)]k=Z[k]k=k(Z)J=k k=Z[D]K=F[r(0x1C4C)]P=F[r(0x11F3)]D=F[r(0x1030)]D=k[D]D=D(k,X)X=F[r(0x2469)]k=D[X]X=k O=y[K]K=F[r(0x22B6)]k=O[K]G=J[P]K=F[r(0xF04)]P=F[r(0x11F3)]O=k(K,G)G=Z[P]P=F[r(0x1A90)]K=G[P]G=F[r(0x1CB)]k=K[G]P=Z[i]D=nil i=F[r(0x1A90)]G=P[i]P=F[r(0x1E2)]K=k k=G[P]G=k P=f k=F[r(0x1725)]J[k]=P P=F[r(0x1A90)]i=F[r(0x11F3)]k=F[r(0xDD1)]O[k]=P k=F[r(0x1CB)]P=K O[k]=P P=G k=F[r(0x1E2)]O[k]=P G=nil k=F[r(0x246A)]P=J[i]H=F[r(0xDD1)]O[k]=P i=X[H]k=F[r(0x2469)]P=F[r(0x116E)]P=f[P]P=P(f,i)O[k]=P K=nil i=0x1 O=nil P=F[r(0x11F3)]k=J[P]P=F[r(0x5D2)]X=nil J=nil k[P]=i k=0xA2DE72 end else if k<0x42F8BD then if k<0x42E275 then St=V(St)tt[0xA]=V(tt[0xA])tt[0x5]=nil tt[0x9]=V(tt[0x9])k=0xFC0811 tt[0x8]=V(tt[0x8])tt[0x6]=V(tt[0x6])tt[0x7]=V(tt[0x7])else E=0x2 e=E k=0xC3EF65 end else k=z[s[0x9]]Y=z[s[0xA]]C[k]=Y k=z[s[0xB]]Y={k(C)}k=y[F[r(0x125F)]]E={a(Y)}end end end else if k<0x43B390 then if k<0x4346AC then if k<0x433BC3 then if k<0x433456 then k=o k=R and 0x1AD3CA or 0x23C159 else St=k tt[0x3]=F[r(0x15F6)]tt[0x2]=y[tt[0x3]]tt[0x1]=tt[0x2]~=c k=tt[0x1]and 0xE11100 or 0xD38645 Mt=tt[0x1]end else k=0x754AE1 end else if k<0x43A118 then if k<0x43808F then k=0x4573E5 else k=F[r(0xA15)]k=T[k]k=k(T)k=0x662397 end else T=F[r(0x1489)]n=F[r(0x22D6)]E=y[n]k=0x7B418F n=E(T,x)R=n T=z[s[0x9]]E=F[r(0x25D9)]R[E]=T end end else if k<0x4428A5 then if k<0x43CDCD then if k<0x43BAA9 then J=F[r(0x1B86)]Z=y[J]k=0xE5A9F6 X=F[r(0x1B86)]J=F[r(0x1C00)]e=Z[J]D=y[X]X=F[r(0x1F6F)]J=D[X]X=v(0xFD2859,{s[0x4],w,B;c,n})D={J(X)}Z=e(a(D))else C=true E=z[s[0x1]]k=E==C k=k and 0x83815A or 0x4C9B07 end else e=F[r(0x25BB)]k=F[r(0x1030)]k=B[k]k=k(B,e)e=F[r(0xA15)]e=k[e]e=e(k)k=0xE65209 end else if k<0x4454E1 then k=0x91D07A h=F[r(0x4F9)]Q=F[r(0x116E)]Q=Y[Q]Q=Q(Y,h)T=Q else P=F[r(0x64)]kt=F[r(0x20A0)]k=0xCAA4C9 X=y[P]rt=z[Y]kt=rt[kt]at={kt(rt)}rt={X(a(at))}P=rt[0x1]yt=rt[0x3]i=rt[0x2]end end end end end end end end else if k<0x6497D7 then if k<0x544C35 then if k<0x4C0D6C then if k<0x47DBC1 then if k<0x459596 then if k<0x45418E then if k<0x44C7F2 then if k<0x44822F then if k<0x446A29 then Yt=F[r(0x1897)]k=0xC15112 It=F[r(0xE88)]bt[It]=Yt else Y=F[r(0x220D)]W=F[r(0x26F7)]n=0x0 k=true C=F[r(0x73E)]R=0x0 z[s[0x1]]=k k=0x81A1AC E=y[C]C=E(Y)E=z[s[0x2]]C=F[r(0x1E8B)]x=y[W]o=.545 W=F[r(0x22B6)]Y=x[W]C=E[C]W=.185 x=Y(W,R,o,n)W=F[r(0xCBA)]n=0x0 R=.25 Y=F[r(0x1AC6)]o=true C=C(E,x,Y,W,R,o)Y=0x3 W=F[r(0x26F7)]C=F[r(0x11EF)]E=y[C]C=E(Y)E=z[s[0x2]]x=y[W]o=.747 W=F[r(0x22B6)]R=0x0 Y=x[W]W=.185 x=Y(W,R,o,n)R=.25 o=true C=F[r(0x1E8B)]Y=F[r(0x1AC6)]W=F[r(0xCBA)]C=E[C]C=C(E,x,Y,W,R,o)Y=.25 C=F[r(0x11EF)]E=y[C]C=E(Y)E=false z[s[0x1]]=E end else k=y[F[r(0x17C8)]]E={}end else if k<0x451686 then if k<0x44F6A6 then o=F[r(0x15B0)]R=y[o]o=F[r(0x185C)]W=R[o]R=F[r(0xEE7)]k=0x56C48F R=W[R]R=R(W)else k=w k=0x10C5DA f=h end else X=z[Y]K=F[r(0x2C5)]O=F[r(0x116E)]O=X[O]O=O(X,K)k=O and 0xBD100D or 0x4455DB end end else if k<0x456A0C then if k<0x4558E7 then if k<0x454B44 then o=T k=f k=0x2B1231 else k=0xDF1CD1 end else at=z[Y]rt=at k=at and 0xB897E or 0xE774E5 end else if k<0x457E37 then if k<0x456EF7 then Q=F[r(0xDAF)]f=z[s[0x8]]E=f==Q k=E and 0xE3B470 or 0xE09CE6 else k=true k=k and 0xF742D5 or 0x57A68B end else E={}k=y[F[r(0x689)]]end end end else if k<0x46B514 then if k<0x4655E6 then if k<0x45EFE9 then if k<0x45CBA3 then k=true z[s[0x1]]=k o=0x0 R=0x65 W=F[r(0x26F7)]n=0x1C E=z[s[0x2]]x=y[W]W=F[r(0x22B6)]Y=x[W]W=0x0 x=Y(W,R,o,n)R=F[r(0x26F7)]W=y[R]n=.105 R=F[r(0x22B6)]o=0x0 Y=W[R]T=0x0 R=.335 W=Y(R,o,n,T)Y=F[r(0x22A3)]R=F[r(0xD34)]n=false C=F[r(0x4A3)]o=.5 C=E[C]C=C(E,x,W,Y,R,o,n)E=z[s[0x3]]C=E E=0x3 k=0x56F61B Y=E else i=F[r(0x1C4C)]P=y[i]bt=F[r(0x13DF)]i=F[r(0x22B6)]X=P[i]i=F[r(0xFFC)]tt[0x13]=0x0 at=F[r(0xBC4)]yt=z[x]tt[0xA]=F[r(0x13DF)]P=X(i,yt)X=I()ut=F[r(0x13DF)]tt[0x14]=0x0 i=F[r(0x1407)]Ct=F[r(0x13EE)]z[X]=P tt[0x18]=0xB4 P=z[X]rt=y[at]at=F[r(0x22B6)]yt=rt[at]kt=y[bt]bt=F[r(0xE3C)]at=kt[bt]Yt=F[r(0x13EE)]tt[0x4D]=F[r(0x1230)]bt=y[ut]st=F[r(0x13DF)]ut=F[r(0xE3C)]tt[0xB]=F[r(0x13DF)]kt=bt[ut]ut=y[st]st=F[r(0xE3C)]bt=ut[st]rt=yt(at,kt,bt)kt=0x2710 P[i]=rt tt[0xE]=F[r(0x13DF)]bt=0x2710 P=z[X]i=F[r(0xE4D)]yt=1e+27 tt[0x4F]=F[r(0x164E)]tt[0x5]=F[r(0x2089)]P[i]=yt P=z[X]Et=F[r(0x13EE)]i=F[r(0x252C)]at=F[r(0xBC4)]rt=y[at]zt=F[r(0x174A)]at=F[r(0x22B6)]yt=rt[at]at=0x2710 Vt=F[r(0x20)]rt=yt(at,kt,bt)P[i]=rt vt=F[r(0x20)]P=L(0x7E5EE1,{Y,o,Q;X;h,x;c,s[0x3],D})tt[0x28]=F[r(0x174A)]tt[0xC]=F[r(0x13DF)]bt=F[r(0x19B5)]rt=F[r(0x15B0)]tt[0x24]=F[r(0x14D9)]at=F[r(0x829)]Nt=F[r(0x20)]tt[0x45]=0x7D05F8D6 yt=y[rt]rt=F[r(0x21D3)]rt=yt[rt]rt=rt(yt,at)at=F[r(0x174A)]yt=F[r(0x1F49)]i=rt[yt]yt=F[r(0x174A)]y[yt]=i rt=y[at]at=F[r(0x138F)]yt=rt[at]rt=F[r(0x138F)]y[rt]=yt at=F[r(0x174A)]xt=F[r(0x13EE)]tt[0x32]=0x0 Wt=F[r(0x239C)]rt=y[at]ut=F[r(0x174A)]tt[0x2]=F[r(0x13DF)]at=F[r(0x245C)]at=rt[at]at=at(rt)tt[0x3]=F[r(0x17C0)]rt=F[r(0x2524)]y[rt]=at tt[0x4B]=F[r(0xE95)]kt=y[bt]mt=F[r(0x20)]bt=F[r(0x1C35)]It=F[r(0x13EE)]rt=kt[bt]Ft=F[r(0x13EE)]kt=F[r(0x1982)]y[kt]=rt bt=y[ut]ut=F[r(0x22CA)]kt=bt[ut]bt=F[r(0x22CA)]y[bt]=kt lt=y[zt]zt=F[r(0x13EE)]tt[0x2B]=F[r(0x2159)]st=lt[zt]lt=F[r(0x1E74)]ut=st[lt]st=F[r(0x1FE3)]bt=ut[st]Ut=F[r(0x20)]ut=F[r(0x13EE)]lt=F[r(0x1CC9)]y[ut]=bt st=F[r(0x13EE)]tt[0xF]=F[r(0x2146)]zt=F[r(0x13EE)]ut=y[st]st=F[r(0x1030)]st=ut[st]st=st(ut,lt)ut=F[r(0x1CC9)]y[ut]=st lt=y[zt]zt=F[r(0xD9C)]ut=lt[zt]St=F[r(0x180B)]lt=F[r(0x239C)]y[lt]=ut zt=y[Et]Et=F[r(0x20)]lt=zt[Et]zt=F[r(0x20)]y[zt]=lt Et=y[Ft]Ft=F[r(0x6AC)]zt=Et[Ft]Et=F[r(0x6AC)]y[Et]=zt Ft=y[Ct]tt[0x2C]=F[r(0x11B2)]Ct=F[r(0x1559)]tt[0x10]=I()tt[0x12]=F[r(0x1FC)]Et=Ft[Ct]Ft=F[r(0x23BF)]y[Ft]=Et Ct=y[It]It=F[r(0x2307)]tt[0x7]=F[r(0x180B)]tt[0x6]=F[r(0x180B)]Ft=Ct[It]Ct=F[r(0x93D)]y[Ct]=Ft It=y[Yt]Yt=F[r(0x155A)]Ct=It[Yt]It=F[r(0x23C0)]y[It]=Ct Yt=y[xt]tt[0x17]=0x0 xt=F[r(0x2308)]It=Yt[xt]Yt=F[r(0x93E)]y[Yt]=It xt=y[Wt]tt[0x8]=F[r(0x13DF)]Wt=F[r(0x1537)]Yt=xt[Wt]xt=F[r(0x1537)]y[xt]=Yt Wt=y[Vt]Vt=F[r(0xDF0)]xt=Wt[Vt]Wt=F[r(0xDF0)]tt[0x2E]=F[r(0x1B9F)]y[Wt]=xt Vt=y[mt]mt=F[r(0x1035)]Wt=Vt[mt]Vt=F[r(0x1D79)]y[Vt]=Wt mt=y[Ut]Mt=F[r(0x174A)]Ut=F[r(0x1CC2)]Vt=mt[Ut]mt=F[r(0x418)]y[mt]=Vt tt[0x15]=0x0 Ut=y[vt]vt=F[r(0x155B)]mt=Ut[vt]Ut=F[r(0x23BE)]y[Ut]=mt vt=y[Nt]Nt=F[r(0x2309)]Ut=vt[Nt]tt[0x1]=F[r(0xBC4)]vt=F[r(0x93C)]y[vt]=Ut Lt=y[Mt]Mt=F[r(0x13EE)]Nt=Lt[Mt]Lt=F[r(0xD9C)]vt=Nt[Lt]Nt=F[r(0x5D2)]Mt=F[r(0x1C4C)]Lt=0x0 vt[Nt]=Lt Lt=y[Mt]tt[0x19]=0xB4 Mt=F[r(0x22B6)]Nt=Lt[Mt]Lt=F[r(0x22D6)]y[Lt]=Nt Mt=y[St]St=F[r(0x22B6)]Lt=Mt[St]Mt=F[r(0x1FC)]y[Mt]=Lt tt[0x4]=F[r(0x26F7)]St=y[tt[0x1]]tt[0x1]=F[r(0x22B6)]Mt=St[tt[0x1]]St=F[r(0x517)]tt[0x3B]=F[r(0x19C3)]y[St]=Mt tt[0x1A]=0x0 tt[0x1]=y[tt[0x2]]tt[0x2]=F[r(0x1DBF)]tt[0x22]=F[r(0x22D6)]St=tt[0x1][tt[0x2]]tt[0x1]=F[r(0x1AC2)]tt[0x20]=F[r(0x252B)]y[tt[0x1]]=St tt[0x2]=y[tt[0x3]]tt[0x3]=F[r(0x22B6)]tt[0x1]=tt[0x2][tt[0x3]]tt[0x2]=F[r(0x1BC)]y[tt[0x2]]=tt[0x1]tt[0x3]=y[tt[0x4]]tt[0x23]=F[r(0x1262)]tt[0x4]=F[r(0x22B6)]tt[0x2]=tt[0x3][tt[0x4]]tt[0x3]=F[r(0x1B91)]y[tt[0x3]]=tt[0x2]tt[0x4]=y[tt[0x5]]tt[0x5]=F[r(0x22B6)]tt[0x3]=tt[0x4][tt[0x5]]tt[0x4]=F[r(0x1867)]y[tt[0x4]]=tt[0x3]tt[0x5]=y[tt[0x6]]tt[0x6]=F[r(0x161E)]tt[0x4]=tt[0x5][tt[0x6]]tt[0x5]=F[r(0x161C)]tt[0x9]=F[r(0x13DF)]y[tt[0x5]]=tt[0x4]tt[0x6]=y[tt[0x7]]tt[0x7]=F[r(0x1AE)]tt[0x5]=tt[0x6][tt[0x7]]tt[0x6]=F[r(0x260B)]y[tt[0x6]]=tt[0x5]tt[0x7]=y[tt[0x8]]tt[0x8]=F[r(0x2120)]tt[0x6]=tt[0x7][tt[0x8]]tt[0x7]=F[r(0x199C)]y[tt[0x7]]=tt[0x6]tt[0x8]=y[tt[0x9]]tt[0x9]=F[r(0x1248)]tt[0x7]=tt[0x8][tt[0x9]]tt[0x8]=F[r(0xAC4)]y[tt[0x8]]=tt[0x7]tt[0x41]=F[r(0x113F)]tt[0x9]=y[tt[0xA]]tt[0xA]=F[r(0x1D81)]tt[0x8]=tt[0x9][tt[0xA]]tt[0x16]=-90 tt[0xD]=F[r(0x13DF)]tt[0x9]=F[r(0x1A84)]tt[0x1D]=I()y[tt[0x9]]=tt[0x8]tt[0xA]=y[tt[0xB]]tt[0xB]=F[r(0x1247)]tt[0x9]=tt[0xA][tt[0xB]]tt[0xA]=F[r(0xAC3)]y[tt[0xA]]=tt[0x9]tt[0xB]=y[tt[0xC]]tt[0xC]=F[r(0x1F9C)]tt[0xA]=tt[0xB][tt[0xC]]tt[0xB]=F[r(0x1818)]y[tt[0xB]]=tt[0xA]tt[0xC]=y[tt[0xD]]tt[0xD]=F[r(0x1BE1)]tt[0xB]=tt[0xC][tt[0xD]]tt[0xC]=F[r(0x8E8)]tt[0x31]=0x0 y[tt[0xC]]=tt[0xB]tt[0xD]=y[tt[0xE]]tt[0x2F]=F[r(0x2124)]tt[0xE]=F[r(0x7EC)]tt[0x1B]=0x0 tt[0xC]=tt[0xD][tt[0xE]]tt[0xD]=F[r(0x68)]tt[0xE]=F[r(0x252B)]y[tt[0xD]]=tt[0xC]tt[0xD]=0x3 y[tt[0xE]]=tt[0xD]tt[0xE]=.016666666666667 y[tt[0xF]]=tt[0xE]tt[0xF]=0x10 z[tt[0x10]]=tt[0xF]tt[0x11]=y[tt[0x12]]tt[0x12]=tt[0x11](tt[0x13],tt[0x14],tt[0x15])tt[0x13]=F[r(0x161C)]tt[0x11]=y[tt[0x13]]tt[0x15]=F[r(0x1AC2)]tt[0x14]=y[tt[0x15]]tt[0x15]=tt[0x14](tt[0x16])tt[0x16]=F[r(0x1AC2)]tt[0x14]=y[tt[0x16]]tt[0x16]=tt[0x14](tt[0x17])tt[0x17]=F[r(0x1AC2)]tt[0x14]=y[tt[0x17]]tt[0x17]={tt[0x14](tt[0x18])}tt[0x18]=0x0 tt[0x13]=tt[0x11](tt[0x15],tt[0x16],a(tt[0x17]))tt[0x16]=0x0 tt[0x14]=0x0 tt[0x11]=I()tt[0xF]=tt[0x12]*tt[0x13]tt[0x13]=F[r(0x1FC)]z[tt[0x11]]=tt[0xF]tt[0x1C]=I()tt[0x12]=y[tt[0x13]]tt[0x15]=0x1 tt[0x17]=-90 tt[0x13]=tt[0x12](tt[0x14],tt[0x15],tt[0x16])tt[0x16]=F[r(0x1AC2)]tt[0x14]=F[r(0x161C)]tt[0x12]=y[tt[0x14]]tt[0x15]=y[tt[0x16]]tt[0x16]=tt[0x15](tt[0x17])tt[0x17]=F[r(0x1AC2)]tt[0x15]=y[tt[0x17]]tt[0x17]=tt[0x15](tt[0x18])tt[0x18]=F[r(0x1AC2)]tt[0x15]=y[tt[0x18]]tt[0x18]={tt[0x15](tt[0x19])}tt[0x14]=tt[0x12](tt[0x16],tt[0x17],a(tt[0x18]))tt[0x18]=0x0 tt[0x12]=I()tt[0xF]=tt[0x13]*tt[0x14]tt[0x16]=0x0 tt[0x17]=0x0 tt[0x19]=0x5A tt[0x14]=F[r(0x1FC)]z[tt[0x12]]=tt[0xF]tt[0x13]=y[tt[0x14]]tt[0x15]=-0.5 tt[0x14]=tt[0x13](tt[0x15],tt[0x16],tt[0x17])tt[0x17]=F[r(0x1AC2)]tt[0x15]=F[r(0x161C)]tt[0x13]=y[tt[0x15]]tt[0x16]=y[tt[0x17]]tt[0x17]=tt[0x16](tt[0x18])tt[0x18]=F[r(0x1AC2)]tt[0x16]=y[tt[0x18]]tt[0x3A]=F[r(0x1D21)]tt[0x18]=tt[0x16](tt[0x19])tt[0x19]=F[r(0x1AC2)]tt[0x16]=y[tt[0x19]]tt[0x19]={tt[0x16](tt[0x1A])}tt[0x15]=tt[0x13](tt[0x17],tt[0x18],a(tt[0x19]))tt[0xF]=tt[0x14]*tt[0x15]tt[0x19]=0x0 tt[0x13]=I()tt[0x38]=I()tt[0x16]=.5 tt[0x18]=0x0 z[tt[0x13]]=tt[0xF]tt[0x15]=F[r(0x1FC)]tt[0x14]=y[tt[0x15]]tt[0x1A]=-90 tt[0x17]=0x0 tt[0x15]=tt[0x14](tt[0x16],tt[0x17],tt[0x18])tt[0x16]=F[r(0x161C)]tt[0x14]=y[tt[0x16]]tt[0x18]=F[r(0x1AC2)]tt[0x17]=y[tt[0x18]]tt[0x18]=tt[0x17](tt[0x19])tt[0x26]=F[r(0x138F)]tt[0x19]=F[r(0x1AC2)]tt[0x44]=0x1 tt[0x17]=y[tt[0x19]]tt[0x19]=tt[0x17](tt[0x1A])tt[0x1A]=F[r(0x1AC2)]tt[0x17]=y[tt[0x1A]]tt[0x1A]={tt[0x17](tt[0x1B])}tt[0x16]=tt[0x14](tt[0x18],tt[0x19],a(tt[0x1A]))tt[0x46]=0x7D05FB94 tt[0x1E]=0x2 tt[0xF]=tt[0x15]*tt[0x16]tt[0x2A]=F[r(0x1B9F)]tt[0x14]=I()tt[0x15]=I()z[tt[0x14]]=tt[0xF]tt[0x16]=I()tt[0x18]=false tt[0xF]=0x1 tt[0x17]=I()z[tt[0x15]]=tt[0xF]tt[0x1A]=false tt[0x37]=I()tt[0x1B]=I()tt[0xF]=F[r(0x673)]z[tt[0x16]]=tt[0xF]tt[0x19]=0x1 tt[0xF]=false tt[0x43]=0x1 tt[0x4C]=F[r(0x166D)]z[tt[0x17]]=tt[0xF]z[tt[0x1B]]=tt[0x1A]tt[0x1A]=0x0 z[tt[0x1C]]=tt[0x1A]tt[0xF]=false tt[0x3D]=S(0x8B8005,{s[0x1];tt[0x17],tt[0x1B];Q;f})tt[0x1A]=false z[tt[0x1D]]=tt[0x1A]tt[0x1F]=y[tt[0x20]]tt[0x1A]=tt[0x1E]/tt[0x1F]tt[0x1E]=I()z[tt[0x1E]]=tt[0x1A]tt[0x1F]=false tt[0x1A]=false tt[0x20]=false tt[0x21]=y[tt[0x22]]tt[0x22]=tt[0x21](tt[0x23])tt[0x23]=F[r(0x1C19)]tt[0x21]=F[r(0xDD1)]tt[0x22][tt[0x21]]=tt[0x23]k=0xC34E59 tt[0x23]=F[r(0x1C67)]tt[0x21]=F[r(0x1D0B)]tt[0x22][tt[0x21]]=tt[0x23]tt[0x23]=F[r(0x22D6)]tt[0x21]=y[tt[0x23]]tt[0x25]=y[tt[0x26]]tt[0x23]=tt[0x21](tt[0x24],tt[0x25])tt[0x40]=I()tt[0x3F]=false tt[0x24]=F[r(0x228A)]tt[0x25]=F[r(0x1A2C)]tt[0x21]=F[r(0xDD1)]tt[0x23][tt[0x21]]=tt[0x24]tt[0x24]=F[r(0x22D6)]tt[0x21]=y[tt[0x24]]tt[0x27]=y[tt[0x28]]tt[0x34]=F[r(0x239C)]tt[0x28]=F[r(0x13EE)]tt[0x26]=tt[0x27][tt[0x28]]tt[0x24]=tt[0x21](tt[0x25],tt[0x26])tt[0x26]=F[r(0x9E3)]tt[0x21]=I()z[tt[0x21]]=tt[0x24]tt[0x25]=F[r(0xDD1)]tt[0x24]=z[tt[0x21]]tt[0x4A]={tt[0x4B];tt[0x4C]}tt[0x24][tt[0x25]]=tt[0x26]tt[0x25]=I()tt[0x24]=true tt[0x26]=I()tt[0x39]=I()tt[0x28]=F[r(0x1C4C)]z[tt[0x25]]=tt[0x24]tt[0x24]=false z[tt[0x26]]=tt[0x24]tt[0x27]=y[tt[0x28]]tt[0x28]=F[r(0x22B6)]tt[0x24]=tt[0x27][tt[0x28]]tt[0x28]=F[r(0x1CC3)]tt[0x29]=y[tt[0x2A]]tt[0x27]=tt[0x24](tt[0x28],tt[0x29])tt[0x28]=F[r(0x1F5)]tt[0x24]=F[r(0x1F5)]y[tt[0x24]]=tt[0x27]tt[0x35]=F[r(0x2038)]tt[0x24]=y[tt[0x28]]tt[0x29]=F[r(0x1F5)]tt[0x28]=F[r(0xDD1)]tt[0x2A]=F[r(0x14B9)]tt[0x24][tt[0x28]]=tt[0x29]tt[0x28]=F[r(0x1B9F)]tt[0x29]=F[r(0x1F5)]tt[0x24]=y[tt[0x28]]tt[0x28]=F[r(0x605)]tt[0x28]=tt[0x24][tt[0x28]]tt[0x28]=tt[0x28](tt[0x24],tt[0x29])tt[0x28]=F[r(0x2146)]tt[0x24]=y[tt[0x28]]tt[0x28]=F[r(0x810)]y[tt[0x28]]=tt[0x24]tt[0x29]=F[r(0x733)]tt[0x28]=0x0 y[tt[0x29]]=tt[0x28]tt[0x33]=0x0 tt[0x29]=false y[tt[0x2A]]=tt[0x29]tt[0x2A]=false y[tt[0x2B]]=tt[0x2A]tt[0x2B]=y[tt[0x2C]]tt[0x2C]=tt[0x2B]()tt[0x4C]=F[r(0xA3A)]tt[0x2B]=F[r(0x1C05)]y[tt[0x2B]]=tt[0x2C]tt[0x2D]=y[tt[0x2E]]tt[0x2E]=F[r(0x1F5)]tt[0x2B]=tt[0x2D][tt[0x2E]]tt[0x2E]=F[r(0x15B0)]tt[0x2D]=F[r(0xEE8)]tt[0x2D]=tt[0x2B][tt[0x2D]]tt[0x2D]=tt[0x2D](tt[0x2B])tt[0x2D]=y[tt[0x2E]]tt[0x36]=I()tt[0x2E]=F[r(0x21D3)]tt[0x2E]=tt[0x2D][tt[0x2E]]tt[0x47]=0x7D05FEB4 tt[0x2E]=tt[0x2E](tt[0x2D],tt[0x2F])tt[0x2D]=F[r(0xE56)]tt[0x2B]=tt[0x2E][tt[0x2D]]tt[0x2E]=U(0x7699EB,{})tt[0x2D]=F[r(0x1020)]tt[0x2D]=tt[0x2B][tt[0x2D]]tt[0x2D]=tt[0x2D](tt[0x2B],tt[0x2E])tt[0x2D]=F[r(0x9B5)]tt[0x2B]=p(0x710187,{})tt[0x2E]=F[r(0x152)]y[tt[0x2D]]=tt[0x2B]tt[0x2D]=F[r(0x1BA5)]tt[0x2B]=U(0x84AF2C,{})y[tt[0x2D]]=tt[0x2B]tt[0x2B]=M(0x9BA990,{})tt[0x2D]=F[r(0x1DBA)]y[tt[0x2D]]=tt[0x2B]tt[0x2B]=v(0xFACF0A,{})tt[0x2D]=F[r(0x25F7)]y[tt[0x2D]]=tt[0x2B]tt[0x2D]=F[r(0x200D)]tt[0x2B]=q(0xC737A0,{})y[tt[0x2D]]=tt[0x2B]tt[0x2D]=F[r(0x200E)]tt[0x2B]=d(0x699A21,{})y[tt[0x2D]]=tt[0x2B]tt[0x2B]=U(0xB1B48E,{})tt[0x2D]=v(0xF5673C,{})y[tt[0x2E]]=tt[0x2D]tt[0x2D]=t(0x52EAFD,{})tt[0x2E]=F[r(0x1DB8)]y[tt[0x2E]]=tt[0x2D]tt[0x2D]=v(0x48FC9,{})tt[0x2E]=F[r(0x25E3)]y[tt[0x2E]]=tt[0x2D]tt[0x48]=0x7D0600A5 tt[0x2E]=F[r(0x250D)]tt[0x2D]=t(0x35CB42,{})y[tt[0x2E]]=tt[0x2D]tt[0x2E]=F[r(0x1EDA)]tt[0x2D]=g(0xA98445,{})y[tt[0x2E]]=tt[0x2D]tt[0x2F]=F[r(0x25BB)]tt[0x2D]=j(0xBDB4B9,{})tt[0x2E]=F[r(0x1EDB)]y[tt[0x2E]]=tt[0x2D]tt[0x2E]=F[r(0x2173)]tt[0x2D]=S(0x357E4A,{})y[tt[0x2E]]=tt[0x2D]tt[0x2E]=F[r(0x25BD)]tt[0x2D]=j(0xFD3741,{})y[tt[0x2E]]=tt[0x2D]tt[0x2E]=F[r(0x22D6)]tt[0x2D]=y[tt[0x2E]]tt[0x2E]=tt[0x2D](tt[0x2F])tt[0x2D]=I()tt[0x2F]=F[r(0x1EDC)]z[tt[0x2D]]=tt[0x2E]tt[0x4E]=F[r(0xCDC)]tt[0x2E]=t(0x429214,{tt[0x2D]})tt[0x3C]=S(0x43BF1A,{s[0x1],tt[0x17];tt[0x1B];tt[0x21];Y,tt[0x11],tt[0x1C],tt[0x12],tt[0x13],tt[0x14],Q})y[tt[0x2F]]=tt[0x2E]tt[0x2E]=M(0xBA5BFB,{})tt[0x2F]=F[r(0x522)]y[tt[0x2F]]=tt[0x2E]tt[0x30]=F[r(0x1938)]tt[0x2E]=A(0x865829,{tt[0x21]})tt[0x2F]=F[r(0x2145)]y[tt[0x2F]]=tt[0x2E]tt[0x2E]=p(0x6D4777,{})tt[0x2F]=F[r(0x226D)]y[tt[0x2F]]=tt[0x2E]tt[0x2F]=F[r(0x15B0)]tt[0x2E]=y[tt[0x2F]]tt[0x2F]=F[r(0x21D3)]tt[0x2F]=tt[0x2E][tt[0x2F]]tt[0x2F]=tt[0x2F](tt[0x2E],tt[0x30])tt[0x2E]=F[r(0x1938)]y[tt[0x2E]]=tt[0x2F]tt[0x30]=F[r(0x1C08)]tt[0x2E]=L(0xC539A2,{})tt[0x50]=F[r(0x14F9)]y[tt[0x30]]=tt[0x2E]tt[0x30]=F[r(0x1937)]tt[0x2E]=v(0x5FD443,{})y[tt[0x30]]=tt[0x2E]tt[0x42]=0x1 tt[0x30]=F[r(0x1BC)]tt[0x2E]=y[tt[0x30]]tt[0x30]=tt[0x2E](tt[0x31],tt[0x32],tt[0x33])tt[0x32]=F[r(0x25BB)]tt[0x31]=F[r(0x22D6)]tt[0x2E]=y[tt[0x31]]tt[0x33]=y[tt[0x34]]tt[0x31]=tt[0x2E](tt[0x32],tt[0x33])tt[0x2E]=I()z[tt[0x2E]]=tt[0x31]tt[0x33]=I()tt[0x32]=I()tt[0x31]=0x1 tt[0x34]=F[r(0x1855)]z[tt[0x32]]=tt[0x31]tt[0x31]=0x1 z[tt[0x33]]=tt[0x31]tt[0x31]=y[tt[0x34]]tt[0x34]=tt[0x31](tt[0x35])tt[0x35]=I()tt[0x31]=I()z[tt[0x31]]=tt[0x34]tt[0x34]=false z[tt[0x35]]=tt[0x34]tt[0x34]=false z[tt[0x36]]=tt[0x34]tt[0x34]={}z[tt[0x37]]=tt[0x34]tt[0x34]={}z[tt[0x38]]=tt[0x34]tt[0x34]={}z[tt[0x39]]=tt[0x34]tt[0x34]=U(0x2BD148,{tt[0x15]})y[tt[0x3A]]=tt[0x34]tt[0x34]=j(0x739C3E,{Q,f})tt[0x3A]=F[r(0x20DD)]y[tt[0x3A]]=tt[0x34]tt[0x34]=nil tt[0x3A]=I()z[tt[0x3A]]=tt[0x34]tt[0x3E]=v(0x5D2106,{s[0x1],tt[0x17];tt[0x1B],tt[0x11];tt[0x12],tt[0x13],tt[0x14]})tt[0x34]=S(0x6412A0,{tt[0x17],tt[0x1B],Y;tt[0x21],tt[0x35];tt[0x11],tt[0x1C];tt[0x12],tt[0x13],tt[0x14];c;B;Z;J;D;tt[0x37];tt[0x38];tt[0x39];tt[0x3A]})y[tt[0x3B]]=tt[0x34]tt[0x3B]=F[r(0x14DA)]tt[0x34]=p(0xFEBF3D,{s[0x1];tt[0x21];tt[0x11],tt[0x1C];tt[0x12],tt[0x13];tt[0x14],tt[0x17];tt[0x1B]})y[tt[0x3B]]=tt[0x34]tt[0x3B]=S(0xE3B0AA,{s[0x1];tt[0x17];tt[0x1B];o})tt[0x34]=v(0x72C77F,{s[0x1];tt[0x17],tt[0x1B];Y,Q})z[tt[0x40]]=tt[0x3F]tt[0x3F]=N(0x37EDEF,{s[0x1],tt[0x17];tt[0x16];tt[0x3A];tt[0x11],tt[0x1C],tt[0x12];tt[0x13];tt[0x14],tt[0x40]})y[tt[0x41]]=tt[0x3F]tt[0x41]=F[r(0x1BC)]tt[0x3F]=y[tt[0x41]]tt[0x4B]={tt[0x4C];tt[0x4D],tt[0x47];tt[0x34]}tt[0x41]=tt[0x3F](tt[0x42],tt[0x43],tt[0x44])tt[0x3F]=F[r(0x185E)]tt[0x43]=0x7D05F42F tt[0x44]=0x7D05F767 tt[0x42]=2.5 tt[0x4D]=F[r(0x17D3)]tt[0x4C]={tt[0x4D];tt[0x4E],tt[0x45];tt[0x3B]}tt[0x4E]=F[r(0x18EC)]tt[0x4D]={tt[0x4E],tt[0x4F],tt[0x46];tt[0x3C]}tt[0x4F]=F[r(0x17EA)]tt[0x4E]={tt[0x4F];tt[0x50],tt[0x43],tt[0x3D]}tt[0x49]={tt[0x4A],tt[0x4B];tt[0x4C],tt[0x4D];tt[0x4E]}tt[0x4B]=0x1 tt[0x4A]=I()z[tt[0x4A]]=tt[0x49]tt[0x4D]=z[tt[0x4A]]tt[0x49]={}tt[0x4C]=#tt[0x4D]tt[0x4D]=tt[0x4C]tt[0x4C]=0x1 tt[0x4E]=tt[0x4C]tt[0x4C]=0x0 tt[0x4F]=tt[0x4E]<tt[0x4C]tt[0x4C]=tt[0x4B]-tt[0x4E]end else x=F[r(0xF04)]E=F[r(0x11F3)]k=C[E]E=F[r(0x1030)]E=k[E]E=E(k,x)k=F[r(0xA15)]k=E[k]k=k(E)k=0x64BC90 end else if k<0x46958D then if k<0x468B3B then J=F[r(0x1461)]e=k Z=F[r(0x116E)]Z=Y[Z]Z=Z(Y,J)k=Z and 0x6D837 or 0xB50789 B=Z else D=nil k=0x5FD1CF end else k=0x4A85AD end end else if k<0x47317D then if k<0x47115F then if k<0x46F5FC then Q=V(Q)K=k Y=V(Y)P=F[r(0x6EE)]o=nil e=V(e)n=V(n)T=nil B=nil w=nil W=V(W)f=V(f)x=V(x)Y=true n=F[r(0x73F)]c=nil B=F[r(0x13DF)]o=F[r(0x64)]x=I()e=F[r(0x6EE)]z[x]=Y Q=F[r(0x1477)]T=F[r(0xCEF)]f=F[r(0x11BF)]Y=I()W=U(0x3DC55A,{})h=nil z[Y]=W w=F[r(0x9E)]R=V(R)R=F[r(0x69C)]W=y[R]R=y[o]o=I()z[o]=R R=y[n]h=F[r(0xEE)]n=I()z[n]=R R=y[T]T=y[f]f=I()z[f]=T T=y[Q]Q=y[h]h=y[w]c=y[B]B=F[r(0x1BE1)]w=c[B]B=F[r(0x15F6)]X=k c=y[B]B=y[e]G=y[P]O=G k=G and 0x65665D or 0x29F00F else Nt=F[r(0x1477)]vt=y[Nt]mt=k Ut=vt~=T k=Ut and 0xE722EB or 0x8F5838 Vt=Ut end else Y=z[s[0x2]]x=z[s[0x3]]C=Y==x E=C k=0x53082B end else if k<0x47C223 then if k<0x47868A then R=not W C=C+x E=C<=Y E=R and E R=C>=Y R=W and R E=R or E R=0x8338C8 k=E and R E=0x802F52 k=k or E else R=R+n Y=R<=o f=not T Y=f and Y f=R>=o f=T and f Y=f or Y f=0x8B4DB5 k=Y and f Y=0xC125B0 k=k or Y end else x=F[r(0x1725)]k=0xD0A53A E=C[x]x=F[r(0x1F56)]x=E[x]x=x(E)end end end end else if k<0x4A652E then if k<0x48AC92 then if k<0x488744 then if k<0x483D26 then if k<0x47E689 then R=F[r(0x605)]R=Y[R]Q=F[r(0x15B0)]o=F[r(0x1E74)]R=R(Y,o)o=F[r(0x1FE3)]E=R[o]R=E f=y[Q]Q=F[r(0x89F)]T=f[Q]f=F[r(0x1D5A)]n=T[f]T=F[r(0xFC)]o=n[T]n=false E=o==n k=E and 0xCC96AC or 0xC168EF else o=F[r(0xCD6)]R=z[s[0x3]]k=0xFD33F1 W=R==o x=W end else E=0x0 k=0x4C089E C=.3 x=.1 Y=C R=F[r(0x252B)]W=y[R]C=x/W x=C C=0x0 W=x<C C=E-x end else if k<0x48AACF then if k<0x489745 then W=Y n=F[r(0x1271)]o=R[n]k=not o k=k and 0x6C805F or 0xAB5BB1 else w=z[o]c=F[r(0x1725)]h=w[c]f=h Q=k k=h and 0x73DADD or 0x10C5DA end else Q=nil h=nil k=0xDAB728 end end else if k<0x49B685 then if k<0x494026 then if k<0x48BE17 then Wt=k Ut=F[r(0x11BF)]mt=y[Ut]Ut=z[f]Vt=mt~=Ut k=Vt and 0x1B783 or 0x470689 xt=Vt else n=n+f E=n<=T h=not Q E=h and E h=n>=T h=Q and h E=h or E h=0x3468CE k=E and h E=0x752EE2 k=k or E end else E=z[s[0x5]]k=E and 0x910243 or 0x5FED2F end else if k<0x4A21B5 then if k<0x49B841 then C=b[0x1]o=F[r(0x10D3)]E=F[r(0x64)]k=y[E]W=z[s[0x1]]o=W[o]R={o(W)}W={k(a(R))}k=0x52F685 E=W[0x1]Y=W[0x2]x=W[0x3]W=E else w=not h T=T+Q x=T<=f x=w and x w=T>=f w=h and w x=w or x w=0x8BFC15 k=x and w x=0x9E5E3C k=k or x end else w=F[r(0xDD1)]o=F[r(0x11F3)]k=R[o]Q=F[r(0x116E)]o=F[r(0x180B)]f=z[s[0x2]]Q=f[Q]h=R[w]Q=Q(f,h)f=F[r(0x180B)]h=F[r(0x180B)]T=Q[f]c=0x0 Q=y[h]h=F[r(0x161E)]f=Q[h]w=0x0 h=1.5708 Q=f(h,w,c)n=T*Q k[o]=n k=0x56B4F5 end end end else if k<0x4B20F8 then if k<0x4A8A06 then if k<0x4A840C then if k<0x4A6EDC then i=F[r(0x21EA)]J=F[r(0x267B)]h=nil bt=F[r(0xD33)]O=F[r(0x259F)]e=F[r(0x1937)]D=.8 Ct=0x55 yt=F[r(0x2504)]st=F[r(0x226C)]E=y[e]B=nil P=z[s[0x1]]K=F[r(0x2304)]X=F[r(0xBA5)]G=P[i]P=F[r(0x2504)]H=z[s[0x1]]i=H[yt]H=F[r(0xD33)]kt=z[s[0x1]]at=kt[bt]kt=F[r(0xAAE)]k=0x2CF550 Et=F[r(0x8E8)]rt=at[kt]Ft=0x4B at=0x3 lt=F[r(0x15D7)]yt=rt/at ut=z[s[0x1]]rt=F[r(0x23FF)]kt=F[r(0x226C)]bt=ut[st]zt=y[Et]w=nil Et=zt(Ft,Ct)zt=F[r(0x2024)]at=0x4B st=0x23 Ft=0x8 ut=F[r(0x973)]Z={[J]=D,[X]=O;[K]=G;[P]=i,[H]=yt;[rt]=at,[kt]=bt;[ut]=st,[lt]=Et;[zt]=Ft}e=E(Z)c=nil else ut=F[r(0x5D2)]bt=x[ut]st=z[s[0xF]]ut=G/st kt=bt-ut at=F[r(0x5D2)]x[at]=kt bt=F[r(0x2589)]kt=z[s[0x8]]at=kt==bt k=at and 0xFBA730 or 0x4C1D47 end else n=F[r(0x63D)]o=z[s[0x4]]R=o==n k=R and 0x221EEC or 0xF137C6 end else if k<0x4ABB92 then if k<0x4AA9A1 then Y=F[r(0x30E)]C=y[Y]Y=F[r(0x580)]k=0x495B29 E=C[Y]Y=z[s[0x4]]C=E(Y)else It=F[r(0x64)]Et=k Ct=y[It]It=z[o]Ft=Ct~=It zt=Ft k=Ft and 0xD2C313 or 0x7CAFFB end else k=0x88E4E7 zt=nil H=nil bt=nil ut=nil st=nil end end else if k<0x4B9E5A then if k<0x4B7321 then if k<0x4B414A then R=0x2 Y=z[s[0x1]]W=0x1 x=Y(W,R)Y=0x1 C=x==Y E=C k=C and 0x74CE59 or 0xF26F3A else at=F[r(0x5D2)]ut=F[r(0x5D2)]bt=x[ut]st=z[s[0xF]]ut=G/st kt=bt-ut x[at]=kt kt=z[s[0x8]]bt=F[r(0x2589)]at=kt==bt k=at and 0xBDE8A2 or 0x956580 end else D=X i=0x1 P=D==i k=P and 0x7DEB45 or 0xEDCE10 end else if k<0x4BFB1E then if k<0x4BD86E then k=0xEC5182 else C=z[s[0x7]]Y=nil k=C~=Y k=k and 0x3FDACB or 0x711B86 end else C=C+x E=C<=Y R=not W E=R and E R=C>=Y R=W and R E=R or E R=0x9AC797 k=E and R E=0x67A2A7 k=k or E end end end end end else if k<0x50CBEA then if k<0x4DDF0C then if k<0x4CB9BF then if k<0x4C7A84 then if k<0x4C4088 then if k<0x4C1944 then C=C+x E=C<=Y R=not W E=R and E R=C>=Y R=W and R E=R or E R=0x9A5142 k=E and R E=0x3BABC6 k=k or E else k=0x8497A5 at=F[r(0x180B)]st=F[r(0x161C)]zt=F[r(0x1AC2)]ut=F[r(0x180B)]bt=x[ut]ut=y[st]lt=y[zt]Et=z[s[0x12]]zt=lt(Et)Et=F[r(0x1AC2)]lt=y[Et]Ft=z[s[0x13]]Et=lt(Ft)Ft=F[r(0x1AC2)]lt=y[Ft]Ct=z[s[0x14]]Ft={lt(Ct)}st=ut(zt,Et,a(Ft))kt=bt*st x[at]=kt end else w=0x3E8 h=F[r(0x23)]Q=y[h]h=Q()h=F[r(0x1CC9)]Q=y[h]h=F[r(0x1409)]Q[h]=w h=F[r(0x1CC9)]Q=y[h]w=0x3E8 h=F[r(0x1212)]Q[h]=w h=z[s[0xC]]w=false Q=h==w k=Q and 0x7E5024 or 0x70A61A end else if k<0x4C9A81 then if k<0x4C8650 then x,R=C(Y,x)k=x and 0x62F815 or 0x9B7586 else X=F[r(0xDD1)]D=h[X]X=F[r(0x1897)]J=D~=X e=J k=0xA5C8D8 end else E={}k=y[F[r(0x4B8)]]end end else if k<0x4D084C then if k<0x4CF4BD then if k<0x4CD5FB then k=0x4CFBF2 Y=false z[s[0x2]]=Y else R=F[r(0xD62)]x=z[s[0x1]]W=F[r(0x1CC9)]Y=x[W]x=F[r(0x9F3)]C=Y[x]W=y[R]R=F[r(0x212D)]x=W[R]W=F[r(0x324)]Y=x[W]k=C==Y k=k and 0x38024A or 0x178F98 end else k=0xD7B726 end else if k<0x4D38EB then if k<0x4D18F3 then k=y[F[r(0x14C0)]]E={}else Y,R=x(C,Y)k=Y and 0xFC1BC3 or 0x8AD5FC end else O=z[s[0x18]]K=false k=0xC793CD X=O==K J=X end end end else if k<0x4FABC6 then if k<0x4EAB4F then if k<0x4E4D18 then if k<0x4E2C95 then k=0x337206 x=nil else n=F[r(0x63D)]o=z[s[0x4]]R=o==n k=R and 0x3A02E3 or 0x8BCB16 end else k=y[F[r(0x24E3)]]C=nil E={}Y=nil end else if k<0x4F2F37 then if k<0x4EEA10 then Q=0x1 f=x-Q R=f k=0xE0633B Q=x o=Q else B=0x0 o=F[r(0x11F3)]w=F[r(0x20)]k=R[o]o=F[r(0x180B)]c=0x0 h=z[s[0x2]]Q=h[w]h=F[r(0x180B)]w=F[r(0x180B)]f=Q[h]h=y[w]w=F[r(0x22B6)]Q=h[w]w=-0.5 h=Q(w,c,B)T=f*h h=F[r(0x180B)]c=0x0 w=0x0 Q=y[h]h=F[r(0x161E)]f=Q[h]h=1.5708 Q=f(h,w,c)n=T*Q k[o]=n k=0xCD88E2 end else f=F[r(0x252B)]E=F[r(0x89C)]k=y[E]E=F[r(0x2176)]E=k[E]E=E(k)E=F[r(0x1EDC)]R=F[r(0x1855)]o=F[r(0x1116)]k=y[E]W=y[R]n=0x1 R=W(o)o=0x5 W=z[s[0x2]]E=k(R,W,o,n)W=I()z[W]=E R=F[r(0x1B86)]n=F[r(0x1B86)]E=y[R]R=F[r(0x1C00)]k=E[R]o=y[n]n=F[r(0x1F6F)]R=o[n]n=U(0xFB410D,{W;s[0x2];s[0x3]})o={R(n)}n=.1 E=k(a(o))R=.4 T=y[f]o=R R=n/T E=0x0 k=0x52A5CA n=R R=0x0 T=n<R R=E-n end end else if k<0x500DE2 then if k<0x4FFAA8 then if k<0x4FF700 then X=e i=F[r(0x1B91)]K=0x1 O=F[r(0x1EDA)]H=0x0 yt=0x0 G=0x2 E=y[O]P=y[i]kt=.2 at=kt*X kt=.2 rt=at-kt at=0x0 i=P(H,yt,rt,at)at=.2 H=F[r(0x1B91)]kt=0x0 yt=0x1 P=y[H]rt=0x0 H=P(yt,rt,at,kt)at=0x0 kt=0x0 rt=0x0 yt=F[r(0x1BC)]k=0x5C98A0 P=y[yt]yt=P(rt,at,kt)rt=F[r(0x1BC)]at=0x0 P=y[rt]kt=0x0 bt=0x0 rt=P(at,kt,bt)P=F[r(0x20E8)]kt=F[r(0x4BE)]O=E(B,K,G,i,H,yt,rt,P)K=F[r(0x1EDB)]yt=0x1 G=F[r(0x227B)]at=0x1 H=0x1 rt=0x1 i=F[r(0x1BC)]E=y[K]P=y[i]i=P(H,yt,rt)rt=F[r(0xD62)]yt=y[rt]rt=F[r(0x24D5)]H=yt[rt]yt=F[r(0x1899)]rt=0x1 P=H[yt]yt=.5 H=F[r(0xC5A)]K=E(O,G,i,P,H,yt,rt,at,kt)G=F[r(0xCF8)]O=nil E=F[r(0x110E)]K[E]=G P=F[r(0x30E)]E=F[r(0x20DB)]G=true X=nil K[E]=G G=y[P]P=F[r(0x1925)]E=G[P]P=z[s[0x10]]G=E(P,K)K=nil else Y=b[0x2]E=z[s[0x1]]C=b[0x1]k=E[Y]k=k and 0x63A87B or 0xE9C173 x=b[0x3]end else C=false E=z[s[0x1]]k=E==C k=k and 0x45BC42 or 0xBD3FA1 end else if k<0x50B4DA then if k<0x508869 then k=z[s[0x2]]E=k()k=0xE63D53 else k=0x172419 n=not Y R=n end else ut=F[r(0x1F69)]kt=F[r(0xE88)]Et=F[r(0x15B0)]zt=y[Et]Et=F[r(0x304)]lt=zt[Et]zt=F[r(0xB2A)]st=lt..zt bt=ut..st k=0x7939B3 at[kt]=bt end end end end else if k<0x52AF78 then if k<0x5206AE then if k<0x51B2E2 then if k<0x515AC2 then if k<0x510A2C then T=z[s[0x8]]f=F[r(0xEE5)]E=T==f k=E and 0x7FF4F3 or 0x456E93 else k=y[F[r(0xD1C)]]E={}end else E=F[r(0xA15)]E=w[E]E=E(w)k=0xD14714 end else if k<0x51FB77 then if k<0x51F554 then B=0x5 c=z[s[0x1]]w=c[B]Q=k h=Y==w k=h and 0xDEBF82 or 0xDC898C f=h else o=F[r(0x1537)]R=y[o]B=F[r(0x1FC)]h=F[r(0x1537)]Z=0x0 T=F[r(0x250D)]D=.1 o=F[r(0x1E2)]O=F[r(0x199C)]n=y[T]Q=y[h]h=F[r(0x1E2)]e=0x0 k=0x98D007 f=Q[h]w=z[s[0x6]]c=y[B]X=y[O]i=0x2 G=z[s[0x2]]P=x/i K=G/P O=X(K)J=D*O B=c(e,Z,J)h=w*B c=F[r(0x161C)]w=y[c]J=0x0 e=F[r(0x1AC2)]B=y[e]Z=0x0 e=B(Z)Z=F[r(0x1AC2)]B=y[Z]Z=B(J)D=0x0 J=F[r(0x1AC2)]B=y[J]J={B(D)}c=w(e,Z,a(J))J=F[r(0x1CC9)]Q=h*c Z=y[J]J=F[r(0x168F)]e=Z[J]Z=0x10 X=0xB4 B=e/Z c=0x2 w=c*B B=F[r(0x252B)]c=y[B]h=w/c e=-0.5 T=n(f,Q,h)D=0x0 J=-90 R[o]=T o=F[r(0xDF0)]T=F[r(0x250D)]h=F[r(0xDF0)]R=y[o]o=F[r(0x1E2)]c=F[r(0x1FC)]Z=0x0 n=y[T]Q=y[h]B=0x0 h=F[r(0x1E2)]f=Q[h]w=y[c]c=w(B,e,Z)B=F[r(0x161C)]Z=F[r(0x1AC2)]w=y[B]e=y[Z]Z=e(J)J=F[r(0x1AC2)]G=F[r(0x6AC)]e=y[J]J=e(D)D=F[r(0x1AC2)]e=y[D]D={e(X)}B=w(Z,J,a(D))h=c*B J=0x0 c=F[r(0x161C)]e=F[r(0x1AC2)]Z=0x0 w=y[c]B=y[e]e=B(Z)Z=F[r(0x1AC2)]D=F[r(0x1AC2)]X=0x0 B=y[Z]Z=B(J)J=y[D]D=J(X)K=y[G]G=F[r(0x1FE0)]O=K[G]K=F[r(0x957)]X=O[K]O=0x1E J=X/O B=D-J J=F[r(0x1CC9)]c=w(e,Z,B)Q=h*c c=.2 Z=y[J]J=F[r(0x168F)]e=Z[J]Z=0x10 B=e/Z w=c*B B=F[r(0x252B)]c=y[B]h=w/c X=.125 T=n(f,Q,h)R[o]=T o=F[r(0x23BE)]T=F[r(0x250D)]R=y[o]n=y[T]o=F[r(0x1E2)]K=F[r(0x1A84)]h=F[r(0x23BE)]c=F[r(0x1FC)]Q=y[h]h=F[r(0x1E2)]f=Q[h]w=y[c]B=.5 O=y[K]P=z[s[0x2]]G=P/x K=O(G)J=.875 D=X*K Z=J-D O=F[r(0x199C)]X=y[O]D=.15 P=z[s[0x2]]G=P/x P=0x2 K=G*P O=X(K)J=D*O X=F[r(0x1A84)]e=Z-J J=.25 D=y[X]K=z[s[0x2]]O=K/x X=D(O)Z=J*X c=w(B,e,Z)D=0x5A B=F[r(0x161C)]Z=F[r(0x1AC2)]X=0x0 w=y[B]e=y[Z]K=0x32 J=0x0 Z=e(J)J=F[r(0x1AC2)]e=y[J]J=e(D)D=F[r(0x1AC2)]e=y[D]D={e(X)}B=w(Z,J,a(D))h=c*B c=F[r(0x161C)]e=F[r(0x1AC2)]X=0xA Z=0x0 J=0x0 w=y[c]B=y[e]e=B(Z)Z=F[r(0x1AC2)]B=y[Z]Z=B(J)P=F[r(0x199C)]J=F[r(0x1AC2)]B=y[J]G=y[P]H=z[s[0x2]]i=H/x P=G(i)O=K*P D=X+O J={B(D)}c=w(e,Z,a(J))Q=h*c B=F[r(0x252B)]K=F[r(0x1A84)]c=y[B]J=.875 X=.125 w=.6 h=w/c T=n(f,Q,h)R[o]=T o=F[r(0x93C)]R=y[o]T=F[r(0x250D)]h=F[r(0x93C)]c=F[r(0x1FC)]o=F[r(0x1E2)]n=y[T]Q=y[h]B=-0.5 h=F[r(0x1E2)]f=Q[h]w=y[c]O=y[K]P=z[s[0x2]]G=P/x K=O(G)O=F[r(0x199C)]D=X*K Z=J+D X=y[O]D=.15 P=z[s[0x2]]G=P/x P=0x2 K=G*P O=X(K)J=D*O X=F[r(0x1A84)]e=Z-J D=y[X]K=z[s[0x2]]O=K/x J=-0.25 X=D(O)Z=J*X c=w(B,e,Z)X=0x0 D=-90 B=F[r(0x161C)]w=y[B]Z=F[r(0x1AC2)]J=0x0 e=y[Z]Z=e(J)P=F[r(0x199C)]J=F[r(0x1AC2)]e=y[J]J=e(D)D=F[r(0x1AC2)]e=y[D]D={e(X)}K=0x32 X=-10 B=w(Z,J,a(D))J=0x0 h=c*B c=F[r(0x161C)]Z=0x0 e=F[r(0x1AC2)]w=y[c]B=y[e]e=B(Z)Z=F[r(0x1AC2)]B=y[Z]Z=B(J)J=F[r(0x1AC2)]B=y[J]G=y[P]H=z[s[0x2]]i=H/x P=G(i)O=K*P D=X+O J={B(D)}c=w(e,Z,a(J))Q=h*c B=F[r(0x252B)]w=.6 c=y[B]h=w/c T=n(f,Q,h)R[o]=T end else E=false k=F[r(0x20C7)]Q[k]=E k=0x1FF691 end end else if k<0x5264FE then if k<0x524DC7 then if k<0x523C5E then k=vt k=Ut and 0x2B3D9 or 0x2AC8FE else W=F[r(0x1CC9)]R=F[r(0xD62)]x=z[s[0x1]]Y=x[W]x=F[r(0x9F3)]C=Y[x]W=y[R]R=F[r(0x212D)]x=W[R]W=F[r(0x1B02)]Y=x[W]k=C==Y k=k and 0x6E527B or 0x171FCD end else W=k n=F[r(0x1BC6)]o=y[n]n=F[r(0x166B)]R=o[n]n=F[r(0x208F)]o=R(C,n)x=o k=o and 0xD43588 or 0x345713 end else if k<0x52A63C then if k<0x527800 then k=F[r(0x5D2)]J=0x1 Z[k]=J k=0x92B3D5 else f=not T R=R+n E=R<=o E=f and E f=R>=o f=T and f E=f or E f=0x64C0D8 k=E and f E=0xCA5AB3 k=k or E end else E=z[s[0x1]]C=F[r(0x1890)]k=E[C]E=F[r(0xA15)]E=k[E]E=E(k)k=0xCD94EF end end end else if k<0x535E8A then if k<0x52F771 then if k<0x52F2EF then if k<0x52DB95 then Y=b[0x2]C=b[0x1]W=F[r(0x1C4C)]E=y[W]x=b[0x3]W=F[r(0x22B6)]R=F[r(0x1C4C)]k=E[W]W=F[r(0x8E)]Q=0x67 o=F[r(0x1C4C)]E=k(W)W=E E=y[R]f=F[r(0x17C0)]R=F[r(0x22B6)]k=E[R]R=F[r(0x8E)]E=k(R)h=0x67 R=E E=y[o]o=F[r(0x22B6)]k=E[o]o=F[r(0x1632)]n=F[r(0x1C4C)]E=k(o)o=E E=y[n]n=F[r(0x22B6)]k=E[n]n=F[r(0x1632)]w=0x0 E=k(n)k=F[r(0xDD1)]n=E E=F[r(0x1890)]W[k]=E k=F[r(0x1725)]E=z[s[0x1]]W[k]=E k=F[r(0x162C)]E=true W[k]=E T=y[f]f=F[r(0x12B9)]k=F[r(0x139C)]E=T[f]f=0x67 T=E(f,Q,h)h=-0.000556112325 W[k]=T f=F[r(0x26F7)]k=F[r(0x21EA)]Q=0x0 T=y[f]f=F[r(0x22B6)]E=T[f]f=1.02117348 T=E(f,Q,h,w)W[k]=T E=true k=F[r(0x209A)]W[k]=E f=F[r(0x26F7)]T=y[f]f=F[r(0x22B6)]Q=0xF0 k=F[r(0xD33)]E=T[f]h=0x0 f=0x0 w=0xEE T=E(f,Q,h,w)W[k]=T k=F[r(0xDD1)]E=F[r(0x14B3)]R[k]=E E=W k=F[r(0x1725)]R[k]=E E=true k=F[r(0x162C)]w=0x0 R[k]=E k=F[r(0x139C)]f=F[r(0x17C0)]T=y[f]h=0x44 f=F[r(0x12B9)]E=T[f]f=0x44 Q=0x44 T=E(f,Q,h)R[k]=T h=.276556075 f=F[r(0x26F7)]Q=0x0 T=y[f]k=F[r(0x21EA)]f=F[r(0x22B6)]E=T[f]f=0x0 T=E(f,Q,h,w)R[k]=T k=F[r(0x209A)]E=true w=0x9F f=F[r(0x26F7)]R[k]=E h=0x0 k=F[r(0xD33)]T=y[f]Q=0xF0 f=F[r(0x22B6)]E=T[f]f=0x0 T=E(f,Q,h,w)R[k]=T k=F[r(0xDD1)]f=F[r(0x17C0)]E=F[r(0x2025)]o[k]=E E=R k=F[r(0x1725)]Q=0xFF o[k]=E k=F[r(0x139C)]T=y[f]f=F[r(0x12B9)]h=0xFF E=T[f]f=0xFF T=E(f,Q,h)o[k]=T E=0x1 k=F[r(0xE02)]o[k]=E Q=0x0 k=F[r(0x21EA)]f=F[r(0x26F7)]h=.016 w=0x0 T=y[f]f=F[r(0x22B6)]E=T[f]f=.0170000009 T=E(f,Q,h,w)w=0x9A o[k]=T f=F[r(0x26F7)]h=0x0 k=F[r(0xD33)]Q=0xE9 T=y[f]f=F[r(0x22B6)]E=T[f]f=0x0 T=E(f,Q,h,w)o[k]=T k=F[r(0xEC6)]Q=F[r(0xD62)]f=y[Q]Q=F[r(0xEC6)]T=f[Q]f=F[r(0x2098)]E=T[f]o[k]=E h=0xFF k=F[r(0xE88)]E=Y o[k]=E w=0x0 f=F[r(0x17C0)]k=F[r(0x220E)]Q=0xFF T=y[f]f=F[r(0x12B9)]E=T[f]f=0xFF T=E(f,Q,h)E=x o[k]=T k=F[r(0x220F)]o[k]=E E=0x14 k=F[r(0x2497)]o[k]=E E=true k=F[r(0x20DB)]o[k]=E k=F[r(0x110E)]Q=F[r(0xD62)]f=y[Q]Q=F[r(0x110E)]T=f[Q]Q=F[r(0xD62)]f=F[r(0xCF8)]E=T[f]h=0xFF o[k]=E k=F[r(0x110F)]f=y[Q]Q=F[r(0x110F)]T=f[Q]f=F[r(0x1BC9)]E=T[f]o[k]=E k=F[r(0xDD1)]E=F[r(0x42)]n[k]=E E=W k=F[r(0x1725)]n[k]=E k=F[r(0x139C)]Q=0xFF f=F[r(0x17C0)]T=y[f]f=F[r(0x12B9)]E=T[f]f=0xFF T=E(f,Q,h)f=F[r(0x26F7)]n[k]=T E=0x1 h=.0350000001 k=F[r(0xE02)]o=nil n[k]=E T=y[f]k=F[r(0x21EA)]Y=nil f=F[r(0x22B6)]Q=0x0 E=T[f]f=0x0 T=E(f,Q,h,w)w=0x29 n[k]=T k=F[r(0xD33)]f=F[r(0x26F7)]T=y[f]h=0x0 f=F[r(0x22B6)]E=T[f]Q=0xF0 f=0x0 T=E(f,Q,h,w)Q=F[r(0xD62)]n[k]=T f=y[Q]k=F[r(0xEC6)]Q=F[r(0xEC6)]T=f[Q]f=F[r(0x2098)]E=T[f]Q=0x0 n[k]=E W=nil f=F[r(0x17C0)]h=0x0 k=F[r(0xE88)]E=C n[k]=E x=nil T=y[f]f=F[r(0x12B9)]E=T[f]k=F[r(0x220E)]C=nil f=0x0 T=E(f,Q,h)n[k]=T E=true k=F[r(0x220F)]n[k]=E k=F[r(0x2497)]E=0xE R=nil n[k]=E E=true k=F[r(0x20DB)]n[k]=E E={}n=nil k=y[F[r(0x174B)]]else H=0x1 x=b[0x3]Y=b[0x2]n=b[0x7]o=b[0x6]C=b[0x1]W=b[0x4]k=W+W R=b[0x5]E=R+R T=o+o f=k k=n*f Q=E E=n*Q w=k c=E h=n*T O=F[r(0x180B)]k=W*f kt=0x1 B=k k=W*Q e=k k=W*T Z=k k=R*Q J=k k=R*T K=0x1 D=k k=o*T E=y[O]O=F[r(0x22B6)]X=k k=E[O]G=J+X O=K-G K=e-h G=Z+c P=e+h yt=B+X i=H-yt H=D-w yt=Z-c rt=D+w bt=B+J at=kt-bt E={k(C,Y,x,O,K,G,P,i,H,yt,rt,at)}k=y[F[r(0x68C)]]E={a(E)}end else x,o=W(Y,x)k=x and 0x7D204D or 0xF755C6 end else if k<0x530CD1 then if k<0x52FD3F then T=true z[s[0xB]]=T Q=F[r(0x113F)]k=0x964E82 f=y[Q]Q=f()else k=E and 0xDCFD25 or 0xC2356 end else Z=F[r(0x1725)]e=Q[Z]Z=F[r(0x1725)]B=e[Z]e=F[r(0xDD1)]c=B[e]B=F[r(0x1FE3)]k=0x741794 w=c~=B E=w end end else if k<0x53E1A6 then if k<0x53AB2A then if k<0x539614 then E=F[r(0xA15)]k=z[s[0x1]]n=F[r(0x1E74)]E=k[E]E=E(k)k=true z[s[0x2]]=k E=z[s[0x3]]o=E()o=Y[n]n=F[r(0x1FE3)]E=o[n]w=F[r(0x15B0)]o=E E=S(0x29B1E7,{s[0x4]})n=E h=y[w]w=F[r(0x89F)]Q=h[w]h=F[r(0x1D5A)]f=Q[h]Q=F[r(0xFC)]T=f[Q]f=false E=T==f k=E and 0x7414E4 or 0x29BC18 else E=h>Z k=J k=E and 0x42ED79 or 0xC3EF65 end else Q=F[r(0x228B)]f=F[r(0x138E)]k=0xF584B6 f=R[f]f=f(R,Q)n=f end else if k<0x540D23 then if k<0x5406CB then W=z[s[0x8]]x=0x1 R=W W=0x1 o=W k=0xE5AEF2 W=0x0 n=o<W W=x-o else E={}C=b[0x1]C=nil k=y[F[r(0x1DE3)]]end else E=o n=false z[s[0x11]]=E W=V(W)z[s[0x12]]=n T=false h=F[r(0x1174)]o=nil z[s[0x13]]=T Q=y[h]h=F[r(0x1DC)]k=0x3F48A9 f=Q[h]h=L(0x917CA1,{s[0xE],s[0xF];s[0x1]})Q=f(h)h=F[r(0x20A5)]Q=F[r(0xAD)]R=nil f=y[Q]Q=f(h)end end end end end end else if k<0x5D6746 then if k<0x58F8B7 then if k<0x56D311 then if k<0x56851A then if k<0x558EB5 then if k<0x557E8D then if k<0x54D8B1 then R=true z[s[0x6]]=R k=0xE7C10A else J=F[r(0x21EA)]Z=c[J]e=Z-C Z=F[r(0x1408)]B=e[Z]k=B<=Y k=k and 0xD1DBCA or 0xAD4B7C end else x=W f=z[s[0x2]]h=F[r(0x161C)]c=F[r(0x1AC2)]Q=y[h]B=0x0 w=y[c]c=w(B)J=0x168 B=F[r(0x1AC2)]w=y[B]D=z[s[0x4]]Z=J/D e=Z*x J=F[r(0x13DF)]Z=0x0 B=w(e)e=F[r(0x1AC2)]w=y[e]e={w(Z)}h=Q(c,B,a(e))T=f*h Q=F[r(0x1FC)]f=y[Q]c=F[r(0x8E8)]w=y[c]h=0x0 Z=y[J]J=F[r(0x13E0)]e=Z[J]D=z[s[0x1]]K=0x2 O=z[s[0x1]]X=O/K J=D-X Z=e(J)J=F[r(0x13DF)]B=-Z Z=y[J]J=F[r(0x13E0)]e=Z[J]K=0x2 D=z[s[0x1]]O=z[s[0x1]]X=O/K J=D-X Z={e(J)}rt=0x168 c=w(B,a(Z))w=.7 Q=f(h,c,w)k=T*Q J=F[r(0x2542)]Z=F[r(0x1867)]O=0x168 w=F[r(0x19B5)]Q=0x3 f=F[r(0x200E)]c=0x0 T=k B=0x0 k=y[f]h=y[w]w=z[s[0x6]]e=y[Z]Z=e(J)e=F[r(0x1937)]J=false f=k(Q,h,w,c,B,Z,e,C,J)Q=true w=F[r(0x161C)]k=F[r(0x1FC4)]D=0x168 f[k]=Q k=F[r(0x180B)]h=y[w]H=0x168 J=0x0 X=0x168 B=F[r(0x1AC2)]c=y[B]Z=F[r(0x8E8)]e=y[Z]Z={e(J,D)}B=c(a(Z))J=F[r(0x8E8)]e=F[r(0x1AC2)]c=y[e]D=0x0 Z=y[J]J={Z(D,X)}e=c(a(J))Z=F[r(0x1AC2)]D=F[r(0x8E8)]X=0x0 c=y[Z]J=y[D]D={J(X,O)}Z={c(a(D))}K=F[r(0x1AC2)]O=0x0 i=0x0 c=F[r(0x1FC)]w=h(B,e,a(Z))x=nil Q=T*w P=F[r(0x8E8)]f[k]=Q Z=F[r(0x21EA)]D=0x0 J=F[r(0x517)]k=F[r(0x258F)]w=y[c]e=f[Z]X=0x4 Z=y[J]J=Z(D,X,O)X=F[r(0x161C)]D=F[r(0x180B)]B=e-J yt=0x168 J=f[D]D=y[X]O=y[K]G=y[P]P={G(i,H)}i=F[r(0x8E8)]G=F[r(0x1AC2)]K=O(a(P))O=y[G]P=y[i]H=0x0 i={P(H,yt)}H=F[r(0x8E8)]G=O(a(i))P=F[r(0x1AC2)]O=y[P]i=y[H]yt=0x0 H={i(yt,rt)}P={O(a(H))}X=D(K,G,a(P))Z=J*X O=0x0 K=0x5 G=0x0 X=F[r(0x1FC)]D=y[X]X=D(O,K,G)D=F[r(0x1157)]J=X[D]e=Z*J c=w(B,e)X=1.5 w=F[r(0xEF)]h=c[w]c=F[r(0x8E8)]D=1.5 w=y[c]e=z[s[0x9]]J=z[s[0x9]]Z=J/D B=e-Z Z=z[s[0x9]]D=z[s[0x9]]J=D/X e=Z+J c=w(B,e)Q=h*c f[k]=Q Q=z[s[0x7]]k=F[r(0x2504)]T=nil h=F[r(0x30E)]f[k]=Q Q=y[h]h=F[r(0x1925)]k=Q[h]Q=k(Y,f)f=nil k=0xE5AEF2 end else if k<0x562B4C then if k<0x5615F1 then k=xt mt=F[r(0x30E)]vt=k Lt=F[r(0x30E)]Vt=F[r(0x13DF)]Wt=y[Vt]Vt=F[r(0x1BE1)]xt=Wt[Vt]Wt=I()z[Wt]=xt Vt=y[mt]mt=F[r(0x1F42)]xt=Vt[mt]mt=k Nt=y[Lt]k=Nt and 0x8E66D7 or 0x7E1A0C Ut=Nt else D=k P=0x4B G=0x1 K=F[r(0x8E8)]O=y[K]K=O(G,P)O=0x1 X=K==O k=X and 0x4DD271 or 0xC793CD J=X end else k=y[F[r(0x16FE)]]E={}end end else if k<0x56C090 then if k<0x56B8F0 then if k<0x56A78B then f=F[r(0x71)]w=F[r(0x517)]e=0x1 o=F[r(0x200D)]n=F[r(0x1F8A)]Q=F[r(0x72)]E=y[o]J=0x0 c=0x1 h=y[w]B=1.3 D=0xB4 w=h(c,B,e)c=F[r(0x517)]Z=0x0 T=F[r(0x24F7)]e=0x0 B=0x0 h=y[c]c={h(B,e,Z)}o=E(n,R,T,f,Q,w,a(c))o=F[r(0x25BD)]n=F[r(0xF04)]Z=0x5A B=-1.4 e=0x0 c=0x0 f=F[r(0x23BF)]Q=F[r(0x23BF)]E=y[o]T=y[f]f=y[Q]w=F[r(0x1FC)]h=y[w]w=h(c,B,e)e=F[r(0x1AC2)]c=F[r(0x161C)]h=y[c]B=y[e]e=B(Z)Z=F[r(0x1AC2)]B=y[Z]Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}c=h(e,Z,a(J))Q=w*c B=0x0 e=0x0 w=F[r(0x1FC)]h=y[w]c=0x0 w={h(c,B,e)}o=E(n,T,f,R,Q,a(w))Q=1.3 n=F[r(0x1EDC)]k=0x3B2617 f=0x2 h=false E=y[n]T=0x8CE0FF3 n=E(T,R,f,Q,h)E=0x0 n=.25 T=n f=.1 h=F[r(0x252B)]Q=y[h]n=f/Q f=n n=0x0 Q=f<n n=E-f else n=F[r(0xDD1)]o=R[n]n=F[r(0x6AC)]k=o==n k=k and 0x70732A or 0xF2A6D0 end else k=z[s[0x1]]C=b[0x1]E=k()k=z[s[0x2]]k=k and 0xDC95A1 or 0x318D9A end else if k<0x56CDA9 then if k<0x56C597 then K=F[r(0x1C4C)]o=F[r(0x1C4C)]R=y[o]f=F[r(0x1C4C)]n=F[r(0x1C4C)]o=F[r(0x22B6)]W=R[o]o=F[r(0x14D9)]R=W(o)W=I()Et=F[r(0x15B0)]e=F[r(0x1C4C)]z[W]=R o=y[n]n=F[r(0x22B6)]h=F[r(0x1C4C)]R=o[n]P=F[r(0x1C4C)]n=F[r(0x8E)]T=F[r(0x1C4C)]o=R(n)st=F[r(0xD62)]R=I()z[R]=o n=y[T]T=F[r(0x22B6)]G=F[r(0x1C4C)]o=n[T]T=F[r(0x1632)]n=o(T)T=y[f]c=F[r(0x1C4C)]i=F[r(0x1C4C)]f=F[r(0x22B6)]o=T[f]f=F[r(0x8E)]Q=F[r(0x1C4C)]T=o(f)o=I()B=F[r(0x1C4C)]O=F[r(0x1C4C)]z[o]=T f=y[Q]Q=F[r(0x22B6)]T=f[Q]w=F[r(0x1C4C)]H=F[r(0x1C4C)]Q=F[r(0x2210)]f=T(Q)Q=y[h]h=F[r(0x22B6)]zt=0x0 T=Q[h]h=F[r(0x2210)]Q=T(h)h=y[w]w=F[r(0x22B6)]T=h[w]w=F[r(0x2210)]h=T(w)w=y[c]c=F[r(0x22B6)]T=w[c]c=F[r(0xFB5)]w=T(c)T=I()z[T]=w c=y[B]B=F[r(0x22B6)]w=c[B]B=F[r(0x8E)]c=w(B)B=y[e]e=F[r(0x22B6)]w=B[e]e=F[r(0x2210)]B=w(e)X=F[r(0x1C4C)]e=y[X]X=F[r(0x22B6)]w=e[X]X=F[r(0x2210)]e=w(X)X=y[O]O=F[r(0x22B6)]w=X[O]O=F[r(0x1632)]X=w(O)O=y[K]K=F[r(0x22B6)]w=O[K]K=F[r(0x8E)]O=w(K)ut=F[r(0x15B0)]K=y[G]G=F[r(0x22B6)]w=K[G]G=F[r(0x1632)]K=w(G)G=y[P]kt=F[r(0x2039)]P=F[r(0x22B6)]w=G[P]P=F[r(0x8E)]G=w(P)yt=F[r(0x1C4C)]P=y[i]i=F[r(0x22B6)]w=P[i]i=F[r(0x1632)]P=w(i)i=y[H]H=F[r(0x22B6)]w=i[H]H=F[r(0x1632)]i=w(H)w=I()z[w]=i H=y[yt]yt=F[r(0x22B6)]i=H[yt]yt=F[r(0x2210)]H=i(yt)i=z[W]yt=F[r(0xDD1)]i[yt]=kt i=z[W]bt=y[ut]ut=F[r(0x89F)]yt=F[r(0x1725)]kt=bt[ut]i[yt]=kt yt=F[r(0xAF1)]i=z[W]ut=y[st]st=F[r(0xAF1)]bt=ut[st]lt=0x67 ut=F[r(0x977)]kt=bt[ut]i[yt]=kt kt=F[r(0x140A)]i=z[R]yt=F[r(0xDD1)]i[yt]=kt yt=F[r(0x1725)]st=0x67 i=z[R]kt=z[W]i[yt]=kt yt=F[r(0x162C)]kt=true ut=F[r(0x17C0)]i=z[R]i[yt]=kt i=z[R]bt=y[ut]ut=F[r(0x12B9)]kt=bt[ut]yt=F[r(0x139C)]ut=0x67 bt=kt(ut,st,lt)i[yt]=bt lt=.427597612 i=z[R]st=0x0 ut=F[r(0x26F7)]bt=y[ut]ut=F[r(0x22B6)]kt=bt[ut]yt=F[r(0x21EA)]ut=.0645398498 bt=kt(ut,st,lt,zt)i[yt]=bt i=z[R]zt=0xEE yt=F[r(0x209A)]kt=true i[yt]=kt yt=F[r(0xD33)]ut=F[r(0x26F7)]i=z[R]st=0x13F lt=0x0 bt=y[ut]ut=F[r(0x22B6)]kt=bt[ut]ut=0x0 bt=kt(ut,st,lt,zt)i[yt]=bt yt=F[r(0x15A5)]i=z[R]kt=true i[yt]=kt st=0xFF i=F[r(0xDD1)]ut=0xFF yt=F[r(0x42)]n[i]=yt i=F[r(0x1725)]yt=z[R]n[i]=yt i=F[r(0x139C)]bt=F[r(0x17C0)]kt=y[bt]bt=F[r(0x12B9)]yt=kt[bt]bt=0xFF kt=yt(bt,ut,st)n[i]=kt yt=0x1 lt=0x13 st=0x0 i=F[r(0xE02)]ut=0x13E n[i]=yt bt=F[r(0x26F7)]i=F[r(0xD33)]kt=y[bt]bt=F[r(0x22B6)]yt=kt[bt]bt=0x0 kt=yt(bt,ut,st,lt)n[i]=kt ut=F[r(0xD62)]i=F[r(0xEC6)]bt=y[ut]ut=F[r(0xEC6)]kt=bt[ut]bt=F[r(0xC5A)]yt=kt[bt]n[i]=yt i=F[r(0xE88)]yt=F[r(0x23A)]n[i]=yt i=F[r(0x220E)]bt=F[r(0x17C0)]kt=y[bt]bt=F[r(0x12B9)]zt=0x0 st=0x0 yt=kt[bt]bt=0x0 ut=0x0 kt=yt(bt,ut,st)yt=true n[i]=kt i=F[r(0x220F)]lt=0x67 n[i]=yt i=F[r(0x2497)]kt=F[r(0x9C6)]yt=0xE n[i]=yt st=0x67 i=F[r(0x20DB)]yt=true n[i]=yt ut=F[r(0x17C0)]i=z[o]yt=F[r(0xDD1)]i[yt]=kt yt=F[r(0x1725)]i=z[o]kt=z[R]i[yt]=kt i=z[o]yt=F[r(0x139C)]bt=y[ut]ut=F[r(0x12B9)]kt=bt[ut]ut=0x67 bt=kt(ut,st,lt)i[yt]=bt yt=F[r(0x3F7)]ut=F[r(0x17C0)]i=z[o]st=0xFF lt=0x0 bt=y[ut]ut=F[r(0x12B9)]kt=bt[ut]ut=0x0 bt=kt(ut,st,lt)kt=0x3 i[yt]=bt yt=F[r(0x3A)]ut=F[r(0x26F7)]i=z[o]st=0x0 i[yt]=kt yt=F[r(0x21EA)]i=z[o]bt=y[ut]ut=F[r(0x22B6)]lt=.104999997 kt=bt[ut]ut=.335000008 bt=kt(ut,st,lt,zt)i[yt]=bt st=0x65 i=z[o]yt=F[r(0xD33)]ut=F[r(0x26F7)]zt=0x1C bt=y[ut]ut=F[r(0x22B6)]lt=0x0 kt=bt[ut]ut=0x0 bt=kt(ut,st,lt,zt)i[yt]=bt i=F[r(0xDD1)]yt=F[r(0x19C4)]f[i]=yt i=F[r(0x1725)]yt=z[R]bt=F[r(0x17C0)]ut=0xFF f[i]=yt kt=y[bt]i=F[r(0x139C)]bt=F[r(0x12B9)]yt=kt[bt]st=0xFF bt=0xFF kt=yt(bt,ut,st)f[i]=kt i=F[r(0xE02)]ut=0x0 st=.105042018 bt=F[r(0x26F7)]yt=0x1 f[i]=yt i=F[r(0x21EA)]kt=y[bt]bt=F[r(0x22B6)]lt=0x0 yt=kt[bt]bt=.752060294 kt=yt(bt,ut,st,lt)bt=F[r(0x26F7)]zt=0x0 ut=0x4F f[i]=kt i=F[r(0xD33)]kt=y[bt]bt=F[r(0x22B6)]lt=0x1C yt=kt[bt]bt=0x0 st=0x0 kt=yt(bt,ut,st,lt)f[i]=kt ut=F[r(0xD62)]i=F[r(0xEC6)]bt=y[ut]ut=F[r(0xEC6)]kt=bt[ut]bt=F[r(0x2098)]yt=kt[bt]f[i]=yt bt=F[r(0x17C0)]i=F[r(0xE88)]ut=0x0 yt=F[r(0x63D)]f[i]=yt st=0x0 i=F[r(0x220E)]kt=y[bt]lt=0x0 bt=F[r(0x12B9)]yt=kt[bt]bt=0x0 kt=yt(bt,ut,st)f[i]=kt i=F[r(0x2497)]yt=0x14 f[i]=yt yt=true i=F[r(0x20DB)]f[i]=yt bt=F[r(0x17C0)]ut=0xFF st=0xFF i=F[r(0xDD1)]yt=F[r(0x1FE3)]Q[i]=yt i=F[r(0x1725)]yt=z[R]Q[i]=yt kt=y[bt]i=F[r(0x139C)]bt=F[r(0x12B9)]yt=kt[bt]bt=0xFF kt=yt(bt,ut,st)yt=0x1 Q[i]=kt i=F[r(0xE02)]bt=F[r(0x26F7)]st=.105042025 Q[i]=yt i=F[r(0x21EA)]kt=y[bt]bt=F[r(0x22B6)]yt=kt[bt]bt=.317328781 ut=0x0 kt=yt(bt,ut,st,lt)Q[i]=kt bt=F[r(0x26F7)]st=0x0 i=F[r(0xD33)]kt=y[bt]bt=F[r(0x22B6)]lt=0x1C yt=kt[bt]ut=0x73 bt=0x0 kt=yt(bt,ut,st,lt)Q[i]=kt i=F[r(0xEC6)]ut=F[r(0xD62)]bt=y[ut]ut=F[r(0xEC6)]lt=0x0 kt=bt[ut]st=0x0 bt=F[r(0x2098)]yt=kt[bt]Q[i]=yt i=F[r(0xE88)]yt=F[r(0x1FE3)]Q[i]=yt ut=0x0 bt=F[r(0x17C0)]i=F[r(0x220E)]kt=y[bt]bt=F[r(0x12B9)]yt=kt[bt]bt=0x0 kt=yt(bt,ut,st)Q[i]=kt i=F[r(0x2497)]yt=0x14 Q[i]=yt yt=true i=F[r(0x20DB)]st=0xFF bt=F[r(0x17C0)]Q[i]=yt yt=F[r(0x8CB)]i=F[r(0xDD1)]h[i]=yt i=F[r(0x1725)]ut=0xFF yt=z[R]h[i]=yt kt=y[bt]i=F[r(0x139C)]bt=F[r(0x12B9)]yt=kt[bt]bt=0xFF kt=yt(bt,ut,st)ut=0x0 yt=0x1 bt=F[r(0x26F7)]h[i]=kt i=F[r(0xE02)]h[i]=yt i=F[r(0x21EA)]kt=y[bt]bt=F[r(0x22B6)]yt=kt[bt]st=.105042018 bt=-0.000290811062 kt=yt(bt,ut,st,lt)ut=0x4F bt=F[r(0x26F7)]h[i]=kt i=F[r(0xD33)]st=0x0 kt=y[bt]bt=F[r(0x22B6)]yt=kt[bt]bt=0x0 lt=0x1C kt=yt(bt,ut,st,lt)ut=F[r(0xD62)]h[i]=kt bt=y[ut]ut=F[r(0xEC6)]kt=bt[ut]bt=F[r(0x2098)]yt=kt[bt]ut=0x0 i=F[r(0xEC6)]h[i]=yt yt=F[r(0x8CB)]bt=F[r(0x17C0)]i=F[r(0xE88)]h[i]=yt kt=y[bt]i=F[r(0x220E)]bt=F[r(0x12B9)]yt=kt[bt]bt=0x0 st=0x0 kt=yt(bt,ut,st)lt=0x67 ut=F[r(0x17C0)]h[i]=kt i=F[r(0x2497)]yt=0x14 h[i]=yt yt=true i=F[r(0x20DB)]kt=F[r(0x102)]h[i]=yt yt=F[r(0xDD1)]i=z[T]i[yt]=kt i=z[T]yt=F[r(0x1725)]kt=z[R]i[yt]=kt st=0x67 i=z[T]kt=true yt=F[r(0x162C)]i[yt]=kt yt=F[r(0x139C)]i=z[T]bt=y[ut]ut=F[r(0x12B9)]kt=bt[ut]ut=0x67 bt=kt(ut,st,lt)i[yt]=bt yt=F[r(0x21EA)]lt=.275999993 ut=F[r(0x26F7)]i=z[T]bt=y[ut]st=0x0 ut=F[r(0x22B6)]kt=bt[ut]ut=0x0 bt=kt(ut,st,lt,zt)i[yt]=bt ut=F[r(0x26F7)]i=z[T]yt=F[r(0xD33)]st=0x13F bt=y[ut]ut=F[r(0x22B6)]lt=0x0 zt=0xAC kt=bt[ut]ut=0x0 bt=kt(ut,st,lt,zt)i[yt]=bt i=z[T]ut=F[r(0x26F7)]yt=F[r(0x1FC5)]bt=y[ut]ut=F[r(0x22B6)]kt=bt[ut]zt=0x0 ut=0x3 st=0x0 lt=0x0 bt=kt(ut,st,lt,zt)i[yt]=bt i=z[T]ut=F[r(0xBC5)]bt=y[ut]ut=F[r(0x22B6)]yt=F[r(0xEC4)]st=0x0 kt=bt[ut]ut=0x13F bt=kt(ut,st)i[yt]=bt kt=false yt=F[r(0x1411)]i=z[T]i[yt]=kt kt=0x1 yt=F[r(0x2486)]st=0x44 i=z[T]i[yt]=kt yt=F[r(0x1472)]i=F[r(0xDD1)]c[i]=yt lt=0x0 yt=z[T]i=F[r(0x1725)]c[i]=yt i=F[r(0x162C)]yt=true ut=0x44 bt=F[r(0x17C0)]c[i]=yt i=F[r(0x139C)]kt=y[bt]bt=F[r(0x12B9)]yt=kt[bt]bt=0x44 kt=yt(bt,ut,st)ut=0x0 bt=F[r(0x26F7)]c[i]=kt kt=y[bt]bt=F[r(0x22B6)]i=F[r(0x21EA)]yt=kt[bt]bt=.333000004 st=0x0 kt=yt(bt,ut,st,lt)c[i]=kt bt=F[r(0x26F7)]yt=true i=F[r(0x209A)]c[i]=yt i=F[r(0xD33)]kt=y[bt]lt=0x9F ut=0x13F st=0x0 bt=F[r(0x22B6)]yt=kt[bt]bt=0x0 kt=yt(bt,ut,st,lt)c[i]=kt yt=F[r(0x27A)]bt=F[r(0x17C0)]i=F[r(0xDD1)]B[i]=yt i=F[r(0x1725)]yt=c B[i]=yt kt=y[bt]i=F[r(0x139C)]bt=F[r(0x12B9)]ut=0x0 yt=kt[bt]st=0x0 bt=0xFF kt=yt(bt,ut,st)B[i]=kt i=F[r(0x21EA)]bt=F[r(0x26F7)]ut=0x0 kt=y[bt]st=.01581534 bt=F[r(0x22B6)]lt=0x0 yt=kt[bt]bt=.0478076488 kt=yt(bt,ut,st,lt)B[i]=kt i=F[r(0xD33)]bt=F[r(0x26F7)]ut=0x121 st=0x0 kt=y[bt]bt=F[r(0x22B6)]yt=kt[bt]bt=0x0 lt=0x1D kt=yt(bt,ut,st,lt)B[i]=kt i=F[r(0x2600)]ut=F[r(0xD62)]bt=y[ut]st=0x0 ut=F[r(0x1F3B)]kt=bt[ut]bt=F[r(0xB19)]yt=kt[bt]ut=F[r(0xD62)]B[i]=yt i=F[r(0xEC6)]bt=y[ut]ut=F[r(0xEC6)]kt=bt[ut]bt=F[r(0x2098)]yt=kt[bt]B[i]=yt yt=F[r(0x1442)]i=F[r(0xE88)]ut=0x0 B[i]=yt i=F[r(0x220E)]bt=F[r(0x17C0)]kt=y[bt]bt=F[r(0x12B9)]yt=kt[bt]bt=0x0 kt=yt(bt,ut,st)B[i]=kt i=F[r(0x2497)]yt=0x14 B[i]=yt ut=F[r(0xD62)]i=F[r(0x20DB)]yt=true B[i]=yt st=0xFF bt=y[ut]ut=F[r(0x110E)]i=F[r(0x110E)]kt=bt[ut]bt=F[r(0xCF8)]yt=kt[bt]B[i]=yt ut=0xFF yt=F[r(0x2116)]bt=F[r(0x17C0)]i=F[r(0xDD1)]X[i]=yt yt=c i=F[r(0x1725)]X[i]=yt kt=y[bt]bt=F[r(0x12B9)]i=F[r(0x139C)]yt=kt[bt]lt=0x0 bt=0xFF kt=yt(bt,ut,st)bt=F[r(0x26F7)]yt=0x1 X[i]=kt i=F[r(0xE02)]X[i]=yt kt=y[bt]st=.411194909 i=F[r(0x21EA)]bt=F[r(0x22B6)]yt=kt[bt]bt=.0130000096 ut=0x0 kt=yt(bt,ut,st,lt)X[i]=kt lt=0x5B st=0x0 i=F[r(0xD33)]bt=F[r(0x26F7)]ut=0x137 kt=y[bt]bt=F[r(0x22B6)]yt=kt[bt]bt=0x0 kt=yt(bt,ut,st,lt)X[i]=kt ut=F[r(0xD62)]bt=y[ut]i=F[r(0xEC6)]ut=F[r(0xEC6)]kt=bt[ut]bt=F[r(0x2098)]yt=kt[bt]X[i]=yt yt=F[r(0x18E0)]i=F[r(0xE88)]X[i]=yt ut=0xFF bt=F[r(0x17C0)]kt=y[bt]st=0xFF i=F[r(0x220E)]bt=F[r(0x12B9)]yt=kt[bt]bt=0xFF kt=yt(bt,ut,st)X[i]=kt i=F[r(0x220F)]yt=false X[i]=yt yt=0x14 i=F[r(0x2497)]X[i]=yt yt=true i=F[r(0x20DB)]X[i]=yt i=F[r(0xDD1)]yt=F[r(0xDE7)]O[i]=yt yt=z[T]i=F[r(0x1725)]O[i]=yt bt=F[r(0x17C0)]yt=true ut=0x44 i=F[r(0x162C)]O[i]=yt i=F[r(0x139C)]st=0x44 kt=y[bt]bt=F[r(0x12B9)]yt=kt[bt]lt=0x0 bt=0x44 kt=yt(bt,ut,st)O[i]=kt bt=F[r(0x26F7)]st=0x0 i=F[r(0x21EA)]kt=y[bt]bt=F[r(0x22B6)]yt=kt[bt]bt=.666999996 ut=0x0 kt=yt(bt,ut,st,lt)O[i]=kt yt=true i=F[r(0x209A)]st=0x0 O[i]=yt bt=F[r(0x26F7)]kt=y[bt]ut=0x13F i=F[r(0xD33)]lt=0x9F bt=F[r(0x22B6)]yt=kt[bt]bt=0x0 kt=yt(bt,ut,st,lt)O[i]=kt bt=F[r(0x17C0)]yt=F[r(0x63D)]i=F[r(0xDD1)]K[i]=yt i=F[r(0x1725)]ut=0xFF yt=O K[i]=yt kt=y[bt]st=0xFF bt=F[r(0x12B9)]yt=kt[bt]bt=0xFF kt=yt(bt,ut,st)ut=0x0 lt=0x0 i=F[r(0x139C)]K[i]=kt bt=F[r(0x26F7)]i=F[r(0xE02)]yt=0x1 K[i]=yt i=F[r(0x21EA)]kt=y[bt]bt=F[r(0x22B6)]yt=kt[bt]st=.0199999996 bt=.0130000003 kt=yt(bt,ut,st,lt)K[i]=kt lt=0x9B bt=F[r(0x26F7)]kt=y[bt]bt=F[r(0x22B6)]yt=kt[bt]ut=0x137 bt=0x0 i=F[r(0xD33)]st=0x0 kt=yt(bt,ut,st,lt)K[i]=kt i=F[r(0xEC6)]ut=F[r(0xD62)]bt=y[ut]ut=F[r(0xEC6)]kt=bt[ut]bt=F[r(0x2098)]ut=0xFF yt=kt[bt]K[i]=yt yt=F[r(0xFCB)]i=F[r(0xE88)]bt=F[r(0x17C0)]K[i]=yt i=F[r(0x220E)]kt=y[bt]st=0xFF bt=F[r(0x12B9)]yt=kt[bt]bt=0xFF kt=yt(bt,ut,st)ut=F[r(0xD62)]K[i]=kt yt=0x14 i=F[r(0x2497)]K[i]=yt i=F[r(0x20DB)]yt=true K[i]=yt i=F[r(0x110E)]bt=y[ut]ut=F[r(0x110E)]lt=0x9F kt=bt[ut]bt=F[r(0xCF8)]yt=kt[bt]K[i]=yt ut=F[r(0xD62)]bt=y[ut]i=F[r(0x110F)]ut=F[r(0x110F)]kt=bt[ut]ut=0x44 bt=F[r(0x1BC9)]yt=kt[bt]K[i]=yt yt=F[r(0x3A7)]i=F[r(0xDD1)]G[i]=yt i=F[r(0x1725)]yt=z[T]G[i]=yt bt=F[r(0x17C0)]yt=true i=F[r(0x162C)]G[i]=yt kt=y[bt]i=F[r(0x139C)]bt=F[r(0x12B9)]st=0x44 yt=kt[bt]bt=0x44 kt=yt(bt,ut,st)G[i]=kt i=F[r(0x209A)]bt=F[r(0x26F7)]ut=0x13F yt=true G[i]=yt kt=y[bt]st=0x0 bt=F[r(0x22B6)]yt=kt[bt]i=F[r(0xD33)]bt=0x0 kt=yt(bt,ut,st,lt)bt=F[r(0x17C0)]G[i]=kt yt=F[r(0x1EDD)]i=F[r(0xDD1)]P[i]=yt i=F[r(0x1725)]yt=G lt=0x0 P[i]=yt kt=y[bt]i=F[r(0x139C)]st=0xFF ut=0xFF bt=F[r(0x12B9)]yt=kt[bt]bt=0xFF kt=yt(bt,ut,st)zt=0x0 yt=0x1 P[i]=kt ut=0x0 st=.0151445884 i=F[r(0xE02)]P[i]=yt bt=F[r(0x26F7)]i=F[r(0x21EA)]kt=y[bt]bt=F[r(0x22B6)]yt=kt[bt]bt=.00940438919 kt=yt(bt,ut,st,lt)P[i]=kt i=F[r(0xD33)]bt=F[r(0x26F7)]ut=0x134 st=0x0 kt=y[bt]lt=0x57 bt=F[r(0x22B6)]yt=kt[bt]bt=0x0 kt=yt(bt,ut,st,lt)P[i]=kt ut=F[r(0xD62)]bt=y[ut]ut=F[r(0xEC6)]i=F[r(0xEC6)]kt=bt[ut]lt=0xFF bt=F[r(0x2098)]yt=kt[bt]P[i]=yt st=0xFF i=F[r(0xE88)]yt=F[r(0x1896)]ut=0xFF P[i]=yt bt=F[r(0x17C0)]kt=y[bt]i=F[r(0x220E)]bt=F[r(0x12B9)]yt=kt[bt]bt=0xFF kt=yt(bt,ut,st)P[i]=kt yt=true i=F[r(0x220F)]ut=F[r(0xD62)]P[i]=yt yt=0x14 i=F[r(0x2497)]P[i]=yt i=F[r(0x20DB)]yt=true P[i]=yt bt=y[ut]ut=F[r(0x110E)]i=F[r(0x110E)]kt=bt[ut]bt=F[r(0xCF8)]ut=F[r(0xD62)]yt=kt[bt]P[i]=yt i=F[r(0x110F)]bt=y[ut]ut=F[r(0x110F)]kt=bt[ut]bt=F[r(0x1BC9)]yt=kt[bt]P[i]=yt yt=F[r(0xDD1)]kt=F[r(0x1FE1)]i=z[w]ut=F[r(0x17C0)]i[yt]=kt kt=G yt=F[r(0x1725)]i=z[w]i[yt]=kt i=z[w]bt=y[ut]ut=F[r(0x12B9)]kt=bt[ut]yt=F[r(0x139C)]st=0xFF ut=0xFF bt=kt(ut,st,lt)i[yt]=bt lt=.746668756 kt=0x1 i=z[w]yt=F[r(0xE02)]ut=F[r(0x26F7)]i[yt]=kt st=0x0 i=z[w]yt=F[r(0x21EA)]bt=y[ut]ut=F[r(0x22B6)]kt=bt[ut]ut=.184952974 bt=kt(ut,st,lt,zt)st=0xC8 zt=0x23 lt=0x0 ut=F[r(0x26F7)]i[yt]=bt i=z[w]yt=F[r(0xD33)]bt=y[ut]ut=F[r(0x22B6)]kt=bt[ut]ut=0x0 bt=kt(ut,st,lt,zt)i[yt]=bt i=z[w]yt=F[r(0xEC6)]st=F[r(0xD62)]ut=y[st]st=F[r(0xEC6)]bt=ut[st]ut=F[r(0x2098)]kt=bt[ut]ut=F[r(0x17C0)]i[yt]=kt kt=F[r(0x23B1)]yt=F[r(0xE88)]i=z[w]i[yt]=kt lt=0xFF st=0xFF i=z[w]bt=y[ut]ut=F[r(0x12B9)]kt=bt[ut]ut=0xFF yt=F[r(0x220E)]bt=kt(ut,st,lt)kt=true i[yt]=bt i=z[w]yt=F[r(0x220F)]i[yt]=kt i=z[w]kt=0xE yt=F[r(0x2497)]i[yt]=kt yt=F[r(0x20DB)]i=z[w]kt=true bt=F[r(0x17C0)]i[yt]=kt i=F[r(0xDD1)]yt=F[r(0xA34)]lt=0x0 H[i]=yt i=F[r(0x1725)]yt=G H[i]=yt i=F[r(0x139C)]st=0x0 ut=0x0 kt=y[bt]bt=F[r(0x12B9)]yt=kt[bt]bt=0xFF kt=yt(bt,ut,st)bt=F[r(0x26F7)]ut=0x0 H[i]=kt i=F[r(0x21EA)]kt=y[bt]bt=F[r(0x22B6)]st=.766720414 yt=kt[bt]bt=.0414489023 kt=yt(bt,ut,st,lt)H[i]=kt i=F[r(0xD33)]bt=F[r(0x26F7)]lt=0x1D ut=0x121 kt=y[bt]bt=F[r(0x22B6)]st=0x0 yt=kt[bt]bt=0x0 kt=yt(bt,ut,st,lt)H[i]=kt i=F[r(0x2600)]ut=F[r(0xD62)]bt=y[ut]ut=F[r(0x1F3B)]kt=bt[ut]bt=F[r(0xB19)]yt=kt[bt]H[i]=yt i=F[r(0xEC6)]ut=F[r(0xD62)]bt=y[ut]ut=F[r(0xEC6)]kt=bt[ut]bt=F[r(0x2098)]yt=kt[bt]bt=F[r(0x17C0)]st=0x0 H[i]=yt ut=0x0 i=F[r(0xE88)]yt=F[r(0x1076)]H[i]=yt i=F[r(0x220E)]kt=y[bt]bt=F[r(0x12B9)]yt=kt[bt]bt=0x0 kt=yt(bt,ut,st)ut=F[r(0xD62)]yt=0x14 H[i]=kt i=F[r(0x2497)]H[i]=yt i=F[r(0x20DB)]yt=true H[i]=yt bt=y[ut]ut=F[r(0x110E)]i=F[r(0x110E)]kt=bt[ut]bt=F[r(0xCF8)]yt=kt[bt]bt=I()kt=I()H[i]=yt yt=I()i=false z[yt]=i i=false z[kt]=i ut=I()i=false st=I()z[bt]=i i=false z[ut]=i i={}z[st]=i zt=y[Et]Et=F[r(0x89F)]lt=zt[Et]Et=F[r(0x1D5A)]zt=F[r(0x116E)]zt=lt[zt]zt=zt(lt,Et)i=not zt k=i and 0xCF098D or 0x360D0B else C=b n=F[r(0x9E)]Y=I()k=true x=F[r(0x1BC6)]z[Y]=k E=y[x]x=F[r(0x20FB)]k=E[x]W=I()x=I()z[x]=k k=U(0xFC066A,{})R=I()z[W]=k k=false T=N(0x67D075,{R})z[R]=k o=y[n]n=o(T)E=n k=n and 0x91B423 or 0xF4744 end else k=0x70A0DE end end end else if k<0x579829 then if k<0x571CAB then if k<0x570624 then if k<0x56DE26 then e=F[r(0x1C01)]e=x[e]k=0x64631 e=e(x)else E=true k=E and 0x1124A0 or 0xFD39F5 end else Y=F[r(0x1890)]C=F[r(0x116E)]E=z[s[0x1]]C=E[C]C=C(E,Y)k=not C k=k and 0x378C01 or 0xADC772 end else if k<0x578D65 then if k<0x5742AC then Ft,Ct=zt(Et,Ft)k=Ft and 0xC73025 or 0x7652AE else O=0x0 kt=0xC i=F[r(0x199C)]rt=0x18 Q=F[r(0x1537)]f=y[Q]e=F[r(0x1537)]Q=F[r(0x1CB)]G=.04 w=F[r(0x250D)]h=y[w]D=F[r(0x1FC)]B=y[e]e=F[r(0x1CB)]c=B[e]Z=z[s[0x6]]J=y[D]P=y[i]yt=z[s[0x2]]H=yt/rt i=P(H)K=G*i G=0x0 X=O-K i=.05 O=0x0 yt=F[r(0x199C)]H=y[yt]at=z[s[0x2]]rt=at/kt yt=H(rt)P=i*yt K=G+P D=J(X,O,K)e=Z*D yt=F[r(0x199C)]J=F[r(0x161C)]Z=y[J]X=F[r(0x1AC2)]kt=0x18 O=0x0 G=0x0 D=y[X]i=2.5 X=D(O)O=F[r(0x1AC2)]D=y[O]H=y[yt]at=z[s[0x2]]rt=at/kt yt=H(rt)P=i*yt K=G-P G=0x0 P=0x7 O=D(K)K=F[r(0x1AC2)]D=y[K]K={D(G)}J=Z(X,O,a(K))D=F[r(0x252B)]B=e*J J=y[D]Z=0x1 e=Z/J w=h(c,B,e)f[Q]=w w=F[r(0x250D)]D=F[r(0x1FC)]Q=F[r(0xDF0)]f=y[Q]e=F[r(0xDF0)]K=0x0 X=0x0 O=0x0 h=y[w]B=y[e]H=F[r(0x199C)]Q=F[r(0x1CB)]e=F[r(0x1CB)]c=B[e]Z=z[s[0x8]]J=y[D]at=0xC D=J(X,O,K)J=F[r(0x161C)]K=0x3 e=Z*D X=F[r(0x1AC2)]bt=0xC Z=y[J]D=y[X]i=y[H]rt=z[s[0x2]]yt=rt/at H=i(yt)G=P*H O=K-G X=D(O)O=F[r(0x1AC2)]G=0x0 D=y[O]K=0x0 O=D(K)K=F[r(0x1AC2)]H=F[r(0x199C)]D=y[K]K={D(G)}k=0x8881C J=Z(X,O,a(K))B=e*J P=.1 D=F[r(0x252B)]J=y[D]Z=0x1 e=Z/J w=h(c,B,e)f[Q]=w Q=F[r(0x1D79)]D=F[r(0x1FC)]f=y[Q]X=1.1 at=0xC w=F[r(0x250D)]Q=F[r(0x1CB)]h=y[w]e=F[r(0x1D79)]B=y[e]e=F[r(0x1CB)]c=B[e]J=y[D]i=y[H]rt=z[s[0x2]]yt=rt/at H=i(yt)K=.35 rt=F[r(0x199C)]G=P*H O=K+G P=-45 K=.2 D=J(X,O,K)X=F[r(0x161C)]J=y[X]K=F[r(0x1AC2)]H=1.5 O=y[K]yt=y[rt]kt=z[s[0x2]]at=kt/bt rt=yt(at)i=H*rt G=P-i K=O(G)G=F[r(0x1AC2)]i=-45 O=y[G]P=0x0 G=O(P)P=F[r(0x1AC2)]O=y[P]P={O(i)}X=J(K,G,a(P))O=F[r(0x1AC2)]Z=D*X G=0x19 D=F[r(0x161C)]K=0x0 J=y[D]X=y[O]O=X(K)K=F[r(0x1AC2)]X=y[K]K=X(G)G=F[r(0x1AC2)]X=y[G]P=0x0 G={X(P)}D=J(O,K,a(G))e=Z*D Z=z[s[0x9]]bt=0xC B=e*Z X=-1.1 K=.35 Z=0x1 D=F[r(0x252B)]J=y[D]e=Z/J at=0xC D=F[r(0x1FC)]w=h(c,B,e)f[Q]=w e=F[r(0x418)]P=.1 w=F[r(0x250D)]Q=F[r(0x418)]f=y[Q]Q=F[r(0x1CB)]h=y[w]B=y[e]e=F[r(0x1CB)]c=B[e]H=F[r(0x199C)]J=y[D]i=y[H]rt=z[s[0x2]]yt=rt/at H=i(yt)G=P*H O=K+G K=.2 D=J(X,O,K)H=1.5 X=F[r(0x161C)]P=-44 J=y[X]K=F[r(0x1AC2)]rt=F[r(0x199C)]O=y[K]yt=y[rt]kt=z[s[0x2]]at=kt/bt rt=yt(at)i=H*rt G=P-i K=O(G)G=F[r(0x1AC2)]P=0x0 O=y[G]G=O(P)i=0x2D P=F[r(0x1AC2)]O=y[P]P={O(i)}X=J(K,G,a(P))O=F[r(0x1AC2)]K=0x0 H=F[r(0x199C)]Z=D*X G=-25 D=F[r(0x161C)]J=y[D]X=y[O]O=X(K)K=F[r(0x1AC2)]X=y[K]P=0x0 K=X(G)G=F[r(0x1AC2)]X=y[G]G={X(P)}at=0x18 D=J(O,K,a(G))K=-1 e=Z*D Z=z[s[0xA]]B=e*Z D=F[r(0x252B)]Z=0x1 J=y[D]e=Z/J w=h(c,B,e)f[Q]=w Q=F[r(0x23BE)]f=y[Q]e=F[r(0x23BE)]w=F[r(0x250D)]Q=F[r(0x1CB)]P=.035 h=y[w]B=y[e]e=F[r(0x1CB)]c=B[e]J=F[r(0x1FC)]Z=y[J]D=0x1 i=y[H]rt=z[s[0x2]]yt=rt/at rt=0xC H=i(yt)i=F[r(0x199C)]at=0x18 G=P*H O=K+G G=.05 P=y[i]yt=z[s[0x2]]H=yt/rt i=P(H)K=G*i X=O-K K=0x0 O=0x0 J=Z(D,X,O)D=F[r(0x161C)]O=F[r(0x1AC2)]Z=y[D]X=y[O]O=X(K)K=F[r(0x1AC2)]G=0x55 X=y[K]P=0x0 K=X(G)G=F[r(0x1AC2)]X=y[G]G={X(P)}D=Z(O,K,a(G))e=J*D X=F[r(0x1AC2)]J=F[r(0x161C)]P=2.5 K=-2 H=F[r(0x199C)]Z=y[J]D=y[X]i=y[H]rt=z[s[0x2]]yt=rt/at H=i(yt)G=P*H O=K-G X=D(O)K=0x0 O=F[r(0x1AC2)]D=y[O]G=0x0 O=D(K)K=F[r(0x1AC2)]D=y[K]K={D(G)}D=F[r(0x252B)]J=Z(X,O,a(K))B=e*J Z=0x1 J=y[D]e=Z/J w=h(c,B,e)f[Q]=w P=.035 J=F[r(0x1FC)]H=F[r(0x199C)]at=0x18 K=-1 Q=F[r(0x93C)]w=F[r(0x250D)]f=y[Q]e=F[r(0x93C)]h=y[w]B=y[e]e=F[r(0x1CB)]c=B[e]D=-1 Q=F[r(0x1CB)]Z=y[J]i=y[H]rt=z[s[0x2]]yt=rt/at H=i(yt)G=P*H i=F[r(0x199C)]O=K-G G=.05 at=0x18 rt=0xC P=y[i]yt=z[s[0x2]]H=yt/rt i=P(H)K=G*i X=O-K P=0x0 O=0x0 J=Z(D,X,O)D=F[r(0x161C)]O=F[r(0x1AC2)]K=0x0 Z=y[D]G=-85 X=y[O]O=X(K)K=F[r(0x1AC2)]X=y[K]K=X(G)G=F[r(0x1AC2)]X=y[G]G={X(P)}D=Z(O,K,a(G))e=J*D H=F[r(0x199C)]J=F[r(0x161C)]K=-2 Z=y[J]X=F[r(0x1AC2)]P=2.5 D=y[X]i=y[H]rt=z[s[0x2]]yt=rt/at H=i(yt)G=P*H O=K+G X=D(O)K=0x0 O=F[r(0x1AC2)]G=0x0 D=y[O]O=D(K)K=F[r(0x1AC2)]D=y[K]K={D(G)}J=Z(X,O,a(K))B=e*J D=F[r(0x252B)]Z=0x1 J=y[D]e=Z/J w=h(c,B,e)f[Q]=w end else x,R=C(Y,x)k=x and 0xE402F5 or 0xE38458 end end else if k<0x584696 then if k<0x57D68F then if k<0x57BC9F then E={}C=nil k=y[F[r(0x5AD)]]else T=F[r(0xBC4)]k=F[r(0x258F)]n=y[T]T=F[r(0x22B6)]Q=-17.7 o=n[T]T=-17.7 f=0x0 n=o(T,f,Q)R[k]=n k=0x7C96B1 end else C=nil E=F[r(0x13EE)]k=z[s[0x9]]k[E]=C k=false z[s[0x1]]=k k=0x86EAA9 end else if k<0x589E97 then if k<0x58989A then k=c and 0x8AACA7 or 0xDB3B08 else E=F[r(0x1725)]k=x[E]o=F[r(0x14DA)]E=false W=k k=true n=F[r(0x17EA)]z[s[0x2]]=k z[s[0x3]]=E R=y[o]w=-0.12 f=false T=true o=R(n,T,f)n=.25 o=F[r(0x11EF)]R=y[o]Q=F[r(0x1D79)]o=R(n)k=0x5BFAED c=0x0 o=F[r(0x1D79)]h=0x0 R=y[o]f=y[Q]Q=F[r(0x1CB)]T=f[Q]Q=F[r(0x1FC)]f=y[Q]o=F[r(0x1CB)]Q=f(h,w,c)n=T*Q R[o]=n f=F[r(0x23BF)]n=0x83CD4A3 o=F[r(0x1EDC)]R=y[o]Q=1.3 T=y[f]f=0x2 h=false o=R(n,T,f,Q,h)o=F[r(0x64)]Q=F[r(0x20A0)]Q=W[Q]R=y[o]f={Q(W)}Q={R(a(f))}o=Q[0x1]n=Q[0x2]T=Q[0x3]end else E={}Y=nil k=y[F[r(0x1097)]]C=nil end end end end else if k<0x5C021B then if k<0x5AF4E9 then if k<0x59E338 then if k<0x59CF11 then if k<0x599D4B then G=true K=z[s[0xD]]O=K==G X=nil k=O and 0xA7C109 or 0x8B7EE8 else k=0x711B86 end else W=false k=0x1C49CE z[s[0x5]]=W end else if k<0x5AD813 then if k<0x5A7D3F then k=0x794469 W=F[r(0x56)]Y=y[W]R=F[r(0x220B)]W=Y(R)else k=c k=E and 0x518165 or 0xD14714 end else w=F[r(0x11F3)]k=F[r(0x116E)]k=h[k]k=k(h,w)w=k k=w and 0x161AD4 or 0x5889B8 c=w end end else if k<0x5BD7E0 then if k<0x5B93CD then if k<0x5B0F27 then k=0xB62A1E T=nil n=W==T R=n else n=F[r(0x1CC9)]Y=nil E=z[s[0x5]]o=E()E=z[s[0x6]]o=E()o=F[r(0x1030)]o=R[o]E=F[r(0x1C09)]o=o(R,n)x=nil R=nil W[E]=o E=z[s[0x7]]W=nil C=nil o=E()E={}k=y[F[r(0x13C8)]]end else E=z[s[0x1]]C=true k=E==C k=k and 0x3738C0 or 0x80842C end else if k<0x5BFD80 then if k<0x5BF741 then T=F[r(0x11F3)]n=R[T]f=F[r(0x1F8A)]T=F[r(0x1030)]T=n[T]T=T(n,f)n=F[r(0x17E2)]o=T[n]n=F[r(0x2EB)]k=o==n k=k and 0xEE3938 or 0xE8A50E else T,f=o(n,T)k=T and 0x89D5FD or 0x5C0701 end else kt=F[r(0x1FF1)]at=x[kt]Et=0x0 zt=F[r(0x21EA)]kt=F[r(0x180B)]st=F[r(0x1FC)]ut=y[st]lt=x[zt]zt=z[s[0xC]]st=ut(lt,zt)lt=F[r(0x1FC)]ut=y[lt]Ct=-J Yt=0x1 Vt=z[s[0xF]]zt=0x0 Wt=P/Vt xt=Wt*e It=Yt-xt Ft=Ct*It lt=ut(zt,Et,Ft)Ct=F[r(0x9D2)]bt=st*lt x[kt]=bt st=F[r(0x1FC)]kt=F[r(0x180B)]ut=y[st]Et=F[r(0x1AC2)]Yt=F[r(0xAAE)]zt=F[r(0x21EA)]It=F[r(0x957)]lt=x[zt]st=ut(lt)lt=F[r(0x161C)]ut=y[lt]zt=y[Et]Ft=at[Ct]Et=zt(Ft)Ft=F[r(0x1AC2)]zt=y[Ft]Ct=at[It]Ft=zt(Ct)Ct=F[r(0x1AC2)]zt=y[Ct]It=at[Yt]Ct={zt(It)}at=nil lt=ut(Et,Ft,a(Ct))bt=st*lt k=0xA25AF3 x[kt]=bt end end end else if k<0x5D0AD0 then if k<0x5C87CE then if k<0x5C5439 then if k<0x5C06E2 then k=z[s[0x1]]W=F[r(0x2651)]x=y[W]W={k(x)}Y=W[0x3]C=W[0x2]k=0xED953C E=W[0x1]x=E else R=true k=0x695FE6 f=F[r(0x1725)]z[s[0x4]]=R o=z[s[0x5]]T=x[f]n=o(T)W=nil n=F[r(0x11EF)]T=0x1 o=y[n]n=o(T)o=false z[s[0x4]]=o end else T=F[r(0xD62)]R=F[r(0x19B)]W=C[R]n=y[T]T=F[r(0x19B)]o=n[T]n=F[r(0x25E1)]R=o[n]x=W==R E=x k=x and 0x6BAADC or 0x982B23 end else if k<0x5CC67A then if k<0x5CB83E then X=not D e=e+J E=e<=Z E=X and E X=e>=Z X=D and X E=X or E X=0x4FF58F k=E and X E=0x93F503 k=k or E else vt=z[Y]k=0x14A928 Nt=vt()end else Mt=F[r(0xA4E)]Nt=F[r(0x4F4)]tt[0x2]=F[r(0xDD1)]tt[0x1]=mt[tt[0x2]]mt=nil k=0x365B47 It=nil tt[0x2]=F[r(0x8BC)]St=tt[0x1]..tt[0x2]Lt=Mt..St vt=Nt..Lt ut=vt end end else if k<0x5D5957 then if k<0x5D53DA then if k<0x5D4046 then E=z[s[0x1]]C=true k=E==C k=k and 0xD62D0A or 0x7BB7C5 else lt=e k=0x66277D end else bt=F[r(0x1CEB)]kt=F[r(0xE88)]k=0x7939B3 at[kt]=bt end else if k<0x5D6236 then if k<0x5D5AC4 then i=z[s[0x16]]P=i[D]ut=F[r(0x1FC)]i=F[r(0x1CB)]k=0x469488 Ft=.05 yt=F[r(0x250D)]H=y[yt]kt=z[s[0x16]]st=0x0 It=F[r(0x1A84)]zt=1.3 Wt=0xC at=kt[D]kt=F[r(0x1CB)]rt=at[kt]bt=y[ut]Ct=y[It]xt=z[s[0x2]]Yt=xt/Wt It=Ct(Yt)Et=Ft*It lt=zt+Et zt=0x0 ut=bt(st,lt,zt)st=F[r(0x161C)]zt=F[r(0x1AC2)]bt=y[st]Et=0x0 Ft=0x8E lt=y[zt]zt=lt(Et)Ct=0x0 Et=F[r(0x1AC2)]lt=y[Et]Et=lt(Ft)Ft=F[r(0x1AC2)]lt=y[Ft]Ft={lt(Ct)}lt=0x0 st=bt(zt,Et,a(Ft))zt=3.4 kt=ut*st ut=F[r(0x1FC)]st=0x0 bt=y[ut]ut=bt(st,lt,zt)at=kt*ut kt=.1 yt=H(rt,at,kt)P[i]=yt else w=F[r(0xDD1)]h=f[w]w=F[r(0xD9C)]Q=h~=w k=Q and 0x638298 or 0x2B0BB end else R=F[r(0x64)]W=y[R]T=z[s[0x3]]k=0x15F1AE f={W(T)}R=f[0x1]o=f[0x2]n=f[0x3]end end end end end else if k<0x600FE6 then if k<0x5F599B then if k<0x5E1409 then if k<0x5DC8E8 then if k<0x5DAB2F then if k<0x5D89AC then k=T o=n k=0x6AAF39 else k=0x803ECD X=F[r(0x1725)]D=c[X]X=F[r(0x1725)]J=D[X]D=F[r(0xDD1)]Z=J[D]J=F[r(0x1FE3)]e=Z~=J B=e end else Y=F[r(0x15B0)]W=F[r(0x332)]E=F[r(0xEE)]k=y[E]C=y[Y]W=C[W]x=F[r(0x1260)]Y={W(C,x)}E=k(a(Y))k=E()k=y[F[r(0x1252)]]E={}end else if k<0x5DEFBF then if k<0x5DDDF5 then f=F[r(0x25BE)]k=F[r(0x17E2)]E=f..W T[k]=E k=0xDA0341 else T=F[r(0x1CC9)]E=Y[T]f=false k=0xA42C36 T=F[r(0x1F4B)]E[T]=f T=F[r(0x64)]w=F[r(0x10D3)]E=y[T]w=Y[w]h={w(Y)}w={E(a(h))}Q=w[0x3]f=w[0x2]T=w[0x1]end else h=F[r(0xEC4)]Q=C[h]h=F[r(0x9D2)]f=Q[h]Q=0x27E T=f>=Q k=T and 0xD982D2 or 0xE1DD94 end end else if k<0x5F3953 then if k<0x5EAA5D then if k<0x5E280F then h=F[r(0x1F48)]k=F[r(0x138E)]k=Q[k]f=n k=k(Q,h)k=k and 0x4207AE or 0x2FE8E7 else w=nil h=nil k=0xA42C36 end else T=F[r(0xBA5)]J=F[r(0x226C)]o=F[r(0x267B)]h=F[r(0x2504)]Z=0x4B n=0x4 W=F[r(0x1937)]X=F[r(0x226C)]O=0x1 f=F[r(0xDAF)]B=0x4 c=F[r(0x2504)]K=F[r(0x15D7)]H=0x55 i=0x4B e=F[r(0x23FF)]Q=F[r(0x2304)]C=y[W]w=Y[c]c=F[r(0xD33)]D=Y[X]X=F[r(0x973)]P=F[r(0x8E8)]k=0xB30EA G=y[P]P=G(i,H)G=F[r(0x2024)]i=0x8 R={[o]=n;[T]=f;[Q]=x;[h]=w,[c]=B;[e]=Z;[J]=D,[X]=O,[K]=P;[G]=i}W=C(R)end else if k<0x5F56EA then if k<0x5F3EC5 then G,i=O(K,G)k=G and 0xCC4152 or 0x846936 else k=0xC2CE1E K=z[s[0x5]]X=K end else w=nil h=W~=w f=h k=0xAA173C end end end else if k<0x5FC753 then if k<0x5FA5AB then if k<0x5F8DF5 then if k<0x5F65C5 then i=0x4 P=D==i k=P and 0x6FE7CE or 0x469488 else Lt=F[r(0x8E8)]It=F[r(0xF93)]Ct=F[r(0x964)]Ut=0x3E7 mt=0x64 Ft={Ct,It}It=F[r(0x111B)]Mt=0x1 Vt=F[r(0x8E8)]xt=y[Vt]Vt=xt(mt,Ut)Nt=y[Lt]St=#Ft Lt=Nt(Mt,St)Nt=F[r(0xB2A)]vt=Ft[Lt]mt=F[r(0x2593)]Ut=vt..Nt Ft=nil xt=mt..Ut Yt=Vt..xt Ct=It..Yt k=0xD35A7B ut=Ct end else Ft=nil k=0xFAAA8B end else if k<0x5FB783 then if k<0x5FB1BE then x=b[0x3]x=nil W=b[0x4]R=t(0xB8C49A,{})C=b[0x1]W=nil Y=b[0x2]E=F[r(0x1213)]k=y[E]C=nil E=k()k=F[r(0x1A3D)]E[k]=R k=y[F[r(0x242A)]]E={}Y=nil else C=F[r(0x15B0)]f=F[r(0x20A0)]Y=F[r(0x829)]E=y[C]C=F[r(0x21D3)]C=E[C]C=C(E,Y)E=F[r(0x1F49)]k=C[E]E=F[r(0x13EE)]C=k k=C[E]Y=k E=F[r(0xD9C)]k=Y[E]x=k E=F[r(0x20)]k=Y[E]f=Y[f]W=k k=F[r(0x2C5)]E=F[r(0x64)]R=k k=y[E]T={f(Y)}f={k(a(T))}k=0xD4E545 o=f[0x2]E=f[0x1]T=E n=f[0x3]end else T=k h=F[r(0xDD1)]Q=R[h]h=F[r(0xD9C)]f=Q~=h n=f k=f and 0xE52193 or 0xF50EF3 end end else if k<0x5FE56E then if k<0x5FD382 then if k<0x5FD0E4 then k=0x80842C else P=not G X=X+K D=X<=O D=P and D P=X>=O P=G and P D=P or D P=0x4B9096 k=D and P D=0x8F4C9E k=k or D end else C=b[0x1]x=F[r(0xBA5)]Y=C[x]x=F[r(0xDAF)]R=F[r(0x2304)]E=Y or x x=k Y=I()z[Y]=E W=C[R]E=W k=W and 0xA1E357 or 0xCE256B end else if k<0x60019D then if k<0x5FE98C then W=nil R=nil k=0x719C0 else E=z[s[0x6]]k=E and 0x9B2534 or 0xD71146 end else x=x+R E=x<=W n=not o E=n and E n=x>=W n=o and n E=n or E n=0xF39F5E k=E and n E=0x4114AE k=k or E end end end end else if k<0x61CD96 then if k<0x60D808 then if k<0x605880 then if k<0x60217B then if k<0x601424 then D=F[r(0x8F)]k=y[D]O=F[r(0x9FF)]X=y[O]D=k(X)k=F[r(0x9EF)]y[k]=D k=0xD02DCF else T=F[r(0x1CC9)]E=Y[T]T=F[r(0x1E3F)]f=false E[T]=f T=F[r(0x1CC9)]E=o[T]w=F[r(0xD62)]Q=F[r(0x1CC9)]T=F[r(0x168F)]f=0x10 E[T]=f f=0x32 T=F[r(0x1CC9)]E=o[T]T=F[r(0x13B8)]E[T]=f f=0x10 T=F[r(0x1CC9)]E=Y[T]T=F[r(0x168F)]E[T]=f T=F[r(0x1CC9)]E=Y[T]f=0x32 T=F[r(0x13B8)]E[T]=f f=Y[Q]Q=F[r(0x9F3)]T=f[Q]h=y[w]w=F[r(0x212D)]Q=h[w]h=F[r(0x1B02)]f=Q[h]E=T==f k=E and 0x5DEF9B or 0x3C40E5 end else x=F[r(0x1174)]Y=y[x]x=F[r(0x11EF)]C=Y[x]x=.2 k=0xFF424B Y=C(x)end else if k<0x60ADB1 then if k<0x60A2CE then E={}k=y[F[r(0x1445)]]else P=z[s[0x3]]i=z[s[0x11]]H=F[r(0x2589)]G=P-i i=z[s[0x8]]P=i==H k=P and 0x77E872 or 0xC7BC91 end else k=0x572EA7 Ct=nil lt=nil end end else if k<0x61158E then if k<0x6105FC then if k<0x60F960 then f=F[r(0xDD1)]T=R[f]k=0x6E054A f=F[r(0xD9C)]n=T==f o=n else E={}k=y[F[r(0x1768)]]end else Q=k h=not Y k=h and 0xCAB98B or 0x1BECC5 f=h end else if k<0x61632D then if k<0x612D22 then o=z[s[0x4]]W=k n=true R=o==n k=R and 0xE43E80 or 0x6A85D x=R else C=C+x R=not W E=C<=Y E=R and E R=C>=Y R=W and R E=R or E R=0x9DB89E k=E and R E=0xE7FB59 k=k or E end else Vt=F[r(0x1925)]k=Wt Wt=P[Vt]lt={Yt;xt,Wt}Yt=z[o]mt={Yt(lt)}k=0x830D11 Wt=mt[0x2]xt=mt[0x1]Vt=mt[0x3]end end end else if k<0x63AEBE then if k<0x62CA9C then if k<0x623024 then if k<0x621E67 then k=y[F[r(0x262A)]]Y=V(Y)x=V(x)E={}C=nil else E=C k=Y k=0xB85CC0 end else k=0xED953C R=nil W=nil end else if k<0x639C35 then if k<0x63358E then W=x E=R o=k k=R and 0x954B0F or 0x1AC677 else P=F[r(0x5D2)]c=F[r(0xEA7)]k=0x2B0BB bt=0x0 Mt=0x0 X=F[r(0xD33)]i=0x1 vt=F[r(0x1508)]e=F[r(0x8E8)]rt=F[r(0x180B)]J=0x1E h=F[r(0x2145)]Vt=0x0 Q=y[h]B=y[e]Z=0xA Lt=F[r(0x1CFD)]Wt=0x0 lt=F[r(0x1538)]ut=F[r(0x1539)]Ut=nil e=B(Z,J)Ct=F[r(0x2504)]Z=F[r(0x1A1B)]B=F[r(0x2125)]D=f[X]G=F[r(0xD33)]zt=0x0 tt[0x1]=0x23 J=F[r(0xD33)]st=0x0 Ft=F[r(0xDF1)]mt=F[r(0x1F64)]Et=F[r(0x226C)]X=F[r(0x25DD)]H=F[r(0x180B)]K=f[G]G=0x2 O=K*G Yt=F[r(0x1BC)]St=F[r(0x1480)]G=f[P]at=nil yt=f[rt]Nt=true kt=F[r(0x153A)]rt=F[r(0x1423)]It=y[Yt]K=F[r(0x5D2)]P=F[r(0x1E7C)]xt=0x1 Yt=It(xt,Wt,Vt)xt=nil Vt=nil It=F[r(0x955)]Wt=F[r(0x2097)]w={[c]=e,[B]=Z;[J]=D,[X]=O,[K]=G;[P]=i;[H]=yt;[rt]=at,[kt]=bt,[ut]=st,[lt]=zt;[Et]=Ft,[Ct]=Yt;[It]=xt;[Wt]=Vt;[mt]=Ut;[vt]=Nt;[Lt]=Mt;[St]=tt[0x1]}h=Q(w)end else k=z[s[0x2]]E=k()k=0x27E8A end end else if k<0x640D0F then if k<0x63FAD4 then if k<0x63EDE2 then k=0xEF3F0A R=nil W=nil else z[x]=tt[0xB]k=tt[0xC]k=0x42DB8C end else T,Q=o(n,T)k=T and 0x7AD6B6 or 0x6A5618 end else if k<0x64427B then if k<0x642DBE then W=F[r(0x1FC)]o=0xFA k=true R=0x0 Y=F[r(0x1537)]n=0x0 E=true z[s[0x1]]=k z[s[0x2]]=E C=y[Y]x=y[W]W=x(R,o,n)Y=F[r(0x1CB)]x=F[r(0x2524)]C[Y]=W Y=y[x]x=F[r(0x19C)]C=Y[x]Y=F[r(0x1020)]E={}Y=C[Y]k=y[F[r(0x1FC1)]]x=S(0x982645,{s[0x3];s[0x4],s[0x5],s[0x6],s[0x7],s[0x8];s[0x9];s[0xA],s[0xB];s[0xC],s[0xD];s[0xE],s[0xF];s[0x10];s[0x11],s[0x12];s[0x13];s[0x1],s[0x2]})Y=Y(C,x)C=F[r(0x89C)]y[C]=Y else k=C and 0x1E1E12 or 0xEB0C69 end else f=z[s[0x8]]n=k Q=F[r(0x2589)]T=f==Q k=T and 0xB477C2 or 0xEF062D E=T end end end end end end end else if k<0x734D68 then if k<0x6D45B4 then if k<0x6935C2 then if k<0x6623BE then if k<0x651FD6 then if k<0x64C4E4 then if k<0x64C0D3 then if k<0x64BD90 then x=F[r(0x1E73)]E=F[r(0x11F3)]k=C[E]E=F[r(0x1030)]E=k[E]E=E(k,x)k=E and 0x9A24CA or 0x4EA9E0 else k=z[s[0x1]]E=k()E={}k=y[F[r(0x974)]]end else H=F[r(0x199C)]K=-0.65 f=R E=F[r(0x25F7)]h=F[r(0x250D)]k=y[E]E=k()D=0x0 B=F[r(0x1537)]E=F[r(0x1537)]k=y[E]Q=y[h]E=F[r(0x1CB)]P=.05 c=y[B]B=F[r(0x1CB)]w=c[B]at=0xC J=F[r(0x1FC)]e=z[s[0x4]]Z=y[J]X=-0.31 i=y[H]rt=z[s[0x5]]yt=rt/at H=i(yt)G=P*H O=K+G rt=0xC J=Z(D,X,O)B=e*J K=0x0 Z=F[r(0x161C)]D=F[r(0x1AC2)]X=0x3C O=0x0 e=y[Z]J=y[D]D=J(X)X=F[r(0x1AC2)]J=y[X]X=J(O)O=F[r(0x1AC2)]J=y[O]O={J(K)}Z=e(D,X,a(O))c=B*Z e=0x1 J=F[r(0x252B)]Z=y[J]B=e/Z h=Q(w,c,B)O=0x0 D=0x0 k[E]=h h=F[r(0x250D)]E=F[r(0xDF0)]B=F[r(0xDF0)]k=y[E]Q=y[h]E=F[r(0x1CB)]X=0x0 i=F[r(0x1A84)]c=y[B]B=F[r(0x1CB)]w=c[B]J=F[r(0x1FC)]e=z[s[0x6]]Z=y[J]J=Z(D,X,O)B=e*J G=2.5 O=0x0 D=F[r(0x1AC2)]Z=F[r(0x161C)]e=y[Z]J=y[D]P=y[i]yt=z[s[0x5]]H=yt/rt i=P(H)K=G*i X=O-K O=0x0 D=J(X)X=F[r(0x1AC2)]J=y[X]X=J(O)O=F[r(0x1AC2)]K=0x0 J=y[O]O={J(K)}K=0x0 Z=e(D,X,a(O))c=B*Z e=0x1 J=F[r(0x252B)]Z=y[J]G=-15 B=e/Z X=-1.4 h=Q(w,c,B)k[E]=h h=F[r(0x250D)]D=.5 B=F[r(0x1D79)]E=F[r(0x1D79)]O=0x41 J=1.35 k=y[E]E=F[r(0x1CB)]Q=y[h]Z=F[r(0x1FC)]c=y[B]B=F[r(0x1CB)]w=c[B]e=y[Z]Z=e(J,D,X)J=F[r(0x161C)]X=F[r(0x1AC2)]e=y[J]D=y[X]X=D(O)P=F[r(0x199C)]O=F[r(0x1AC2)]D=y[O]O=D(K)K=F[r(0x1AC2)]D=y[K]K={D(G)}J=e(X,O,a(K))B=Z*J e=z[s[0x7]]X=0x0 c=B*e J=F[r(0x252B)]e=0x1 Z=y[J]B=e/Z h=Q(w,c,B)k[E]=h K=0x5 B=F[r(0x418)]D=.5 G=-35 E=F[r(0x418)]h=F[r(0x250D)]Z=F[r(0x1FC)]k=y[E]E=F[r(0x1CB)]Q=y[h]J=-1.5 c=y[B]B=F[r(0x1CB)]w=c[B]e=y[Z]Z=e(J,D,X)J=F[r(0x161C)]e=y[J]X=F[r(0x1AC2)]O=0x0 D=y[X]X=D(O)O=F[r(0x1AC2)]D=y[O]O=D(K)K=F[r(0x1AC2)]D=y[K]K={D(G)}J=e(X,O,a(K))B=Z*J J=F[r(0x252B)]e=z[s[0x8]]c=B*e f=nil e=0x1 Z=y[J]X=-0.3 B=e/Z h=Q(w,c,B)k[E]=h E=F[r(0x23BE)]k=y[E]h=F[r(0x250D)]Q=y[h]Z=F[r(0x1FC)]E=F[r(0x1CB)]B=F[r(0x23BE)]c=y[B]yt=0xC B=F[r(0x1CB)]J=0x1 K=.05 w=c[B]e=y[Z]G=y[P]H=z[s[0x5]]i=H/yt P=G(i)O=K*P D=X-O X=-0.4 P=F[r(0x199C)]Z=e(J,D,X)J=F[r(0x161C)]G=0x0 K=0x5A X=F[r(0x1AC2)]e=y[J]O=0x14 D=y[X]X=D(O)O=F[r(0x1AC2)]D=y[O]O=D(K)K=F[r(0x1AC2)]D=y[K]K={D(G)}J=e(X,O,a(K))B=Z*J Z=F[r(0x161C)]e=y[Z]D=F[r(0x1AC2)]X=-15 J=y[D]D=J(X)X=F[r(0x1AC2)]J=y[X]yt=0xC O=0x0 X=J(O)K=0x0 O=F[r(0x1AC2)]J=y[O]O={J(K)}Z=e(D,X,a(O))e=0x1 J=F[r(0x252B)]c=B*Z Z=y[J]B=e/Z h=Q(w,c,B)k[E]=h K=.05 J=-1 E=F[r(0x93C)]k=y[E]E=F[r(0x1CB)]X=-0.1 B=F[r(0x93C)]h=F[r(0x250D)]Q=y[h]c=y[B]B=F[r(0x1CB)]w=c[B]Z=F[r(0x1FC)]e=y[Z]G=y[P]H=z[s[0x5]]i=H/yt P=G(i)O=K*P D=X-O X=-0.4 Z=e(J,D,X)J=F[r(0x161C)]O=0x3C X=F[r(0x1AC2)]e=y[J]G=0x0 D=y[X]X=D(O)O=F[r(0x1AC2)]D=y[O]K=-90 O=D(K)K=F[r(0x1AC2)]D=y[K]K={D(G)}J=e(X,O,a(K))B=Z*J X=-15 Z=F[r(0x161C)]e=y[Z]D=F[r(0x1AC2)]K=0x0 J=y[D]D=J(X)X=F[r(0x1AC2)]J=y[X]O=0x0 X=J(O)O=F[r(0x1AC2)]J=y[O]O={J(K)}J=F[r(0x252B)]Z=e(D,X,a(O))c=B*Z e=0x1 Z=y[J]B=e/Z h=Q(w,c,B)k[E]=h k=0x52A5CA end else if k<0x64FCCE then if k<0x64DAD9 then W=nil Q=V(Q)k=0x15F1AE T=nil else T=F[r(0x673)]k=0x94FFB5 n=z[s[0x2]]o=n~=T E=o end else h=z[s[0x4]]Q=h[x]h=0x2 f=Q[h]T=C==f k=T and 0xB1EE1D or 0xC0682 end end else if k<0x656235 then if k<0x6551CB then if k<0x652CC1 then E=F[r(0x90)]W=F[r(0x8F)]T=F[r(0x9E)]f=N(0xBB5A52,{s[0x1]})k=y[E]C=z[s[0x3]]x=y[W]n=y[T]T={n(f)}n=0x2 o={a(T)}R=o[n]W=x(R)x=F[r(0x154)]Y=C(W,x)C={Y()}E=k(a(C))C=E Y=z[s[0x4]]E=Y k=Y and 0x72E3F3 or 0xC84B57 else C=F[r(0x15B0)]Y=F[r(0x829)]E=y[C]C=F[r(0x21D3)]C=E[C]W=F[r(0x19B5)]C=C(E,Y)E=F[r(0x1F49)]k=C[E]E=F[r(0x13EE)]C=k k=C[E]Y=k n=F[r(0x1CC9)]E=F[r(0xD9C)]k=Y[E]E=y[W]W=F[r(0x1C35)]x=k k=E[W]W=k k=true z[s[0x1]]=k o=Y[n]n=F[r(0x9F3)]R=o[n]f=F[r(0xD62)]T=y[f]f=F[r(0x212D)]n=T[f]T=F[r(0x324)]o=n[T]E=R==o k=E and 0x2C38FD or 0xE8A5E0 end else O=not X Z=Z+D E=Z<=J E=O and E O=Z>=J O=X and O E=O or E O=0xDAD70F k=E and O E=0x3023E4 k=k or E end else if k<0x65F8F4 then if k<0x6599A4 then k=0x29F00F i=F[r(0x6EE)]P=y[i]i=F[r(0x1214)]G=P[i]O=G else k=y[F[r(0x1DC8)]]E={}end else T=nil k=0x1F9CFD n=nil end end end else if k<0x67ABD1 then if k<0x668E30 then if k<0x6631A6 then if k<0x663057 then k=Yt k=lt and 0x9ABC59 or 0xBA7647 else P=0x0 J=F[r(0x25F7)]H=0x0 E=y[J]J=E()yt=0x0 E=F[r(0x1E2)]Z=w D=F[r(0x250D)]G=F[r(0x1FC)]J=y[D]at=-5 O=F[r(0x1E2)]i=0x0 X=o[O]K=y[G]G=K(P,i,H)P=F[r(0x161C)]K=y[P]H=F[r(0x1AC2)]i=y[H]rt=0x0 H=i(yt)yt=F[r(0x1AC2)]i=y[yt]yt=i(rt)rt=F[r(0x1AC2)]i=y[rt]rt={i(at)}P=K(H,yt,a(rt))H=F[r(0x1FC)]yt=0x0 K=.25 O=G*P G=F[r(0x1537)]D=J(X,O,K)at=0x0 J=F[r(0x1537)]X=F[r(0x250D)]rt=0x0 o[E]=D E=y[J]D=y[X]J=F[r(0x1CB)]K=y[G]G=F[r(0x1CB)]O=K[G]P=z[s[0x4]]i=y[H]H=i(yt,rt,at)G=P*H i=F[r(0x161C)]P=y[i]rt=0x0 at=0x0 yt=F[r(0x1AC2)]kt=0x0 H=y[yt]yt=H(rt)rt=F[r(0x1AC2)]H=y[rt]rt=H(at)at=F[r(0x1AC2)]H=y[at]at={H(kt)}H=F[r(0x252B)]i=P(yt,rt,a(at))rt=0x0 P=0x1 K=G*i i=y[H]yt=0x0 G=P/i X=D(O,K,G)E[J]=X J=F[r(0xDF0)]E=y[J]J=F[r(0x1CB)]G=F[r(0xDF0)]X=F[r(0x250D)]D=y[X]K=y[G]kt=0x0 at=0x0 G=F[r(0x1CB)]H=F[r(0x1FC)]O=K[G]P=z[s[0x6]]i=y[H]H=i(yt,rt,at)i=F[r(0x161C)]at=0x0 G=P*H rt=0x0 P=y[i]yt=F[r(0x1AC2)]H=y[yt]bt=-12 yt=H(rt)rt=F[r(0x1AC2)]H=y[rt]rt=H(at)at=F[r(0x1AC2)]H=y[at]at={H(kt)}i=P(yt,rt,a(at))H=F[r(0x252B)]rt=-0.3 K=G*i i=y[H]P=0x1 G=P/i X=D(O,K,G)E[J]=X J=F[r(0x1D79)]X=F[r(0x250D)]G=F[r(0x1D79)]H=1.25 E=y[J]D=y[X]i=F[r(0x1FC)]J=F[r(0x1CB)]K=y[G]G=F[r(0x1CB)]yt=.2 O=K[G]at=0xA0 P=y[i]i=P(H,yt,rt)H=F[r(0x161C)]P=y[H]rt=F[r(0x1AC2)]yt=y[rt]kt=-5 rt=yt(at)at=F[r(0x1AC2)]yt=y[at]at=yt(kt)kt=F[r(0x1AC2)]yt=y[kt]kt={yt(bt)}H=P(rt,at,a(kt))kt=0x5 Z=nil G=i*H P=z[s[0x7]]H=F[r(0x252B)]K=G*P P=0x1 yt=.1 i=y[H]G=P/i X=D(O,K,G)H=-1.25 i=F[r(0x1FC)]E[J]=X J=F[r(0x418)]E=y[J]J=F[r(0x1CB)]X=F[r(0x250D)]D=y[X]G=F[r(0x418)]K=y[G]at=0xA0 G=F[r(0x1CB)]rt=-0.3 O=K[G]P=y[i]i=P(H,yt,rt)rt=F[r(0x1AC2)]H=F[r(0x161C)]bt=0xC P=y[H]yt=y[rt]rt=yt(at)at=F[r(0x1AC2)]yt=y[at]at=yt(kt)kt=F[r(0x1AC2)]yt=y[kt]kt={yt(bt)}H=P(rt,at,a(kt))G=i*H P=z[s[0x8]]bt=0x0 K=G*P P=0x1 H=F[r(0x252B)]rt=0x0 i=y[H]G=P/i kt=0x55 yt=-1 X=D(O,K,G)G=F[r(0x23BE)]E[J]=X X=F[r(0x250D)]H=0x1 J=F[r(0x23BE)]E=y[J]D=y[X]i=F[r(0x1FC)]J=F[r(0x1CB)]at=0x0 K=y[G]G=F[r(0x1CB)]O=K[G]P=y[i]i=P(H,yt,rt)rt=F[r(0x1AC2)]H=F[r(0x161C)]P=y[H]yt=y[rt]rt=yt(at)at=F[r(0x1AC2)]yt=y[at]at=yt(kt)kt=F[r(0x1AC2)]yt=y[kt]kt={yt(bt)}H=P(rt,at,a(kt))rt=0x0 G=i*H yt=F[r(0x1AC2)]i=F[r(0x161C)]P=y[i]H=y[yt]yt=H(rt)at=0x0 rt=F[r(0x1AC2)]H=y[rt]rt=H(at)at=F[r(0x1AC2)]H=y[at]kt=0x0 at={H(kt)}H=F[r(0x252B)]i=P(yt,rt,a(at))K=G*i i=y[H]P=0x1 kt=-85 yt=-1 G=P/i X=D(O,K,G)rt=0x0 E[J]=X J=F[r(0x93C)]E=y[J]J=F[r(0x1CB)]G=F[r(0x93C)]i=F[r(0x1FC)]k=0xDE8F4C at=0x0 H=-1 X=F[r(0x250D)]D=y[X]K=y[G]bt=0x0 G=F[r(0x1CB)]O=K[G]P=y[i]i=P(H,yt,rt)H=F[r(0x161C)]rt=F[r(0x1AC2)]P=y[H]yt=y[rt]rt=yt(at)at=F[r(0x1AC2)]yt=y[at]at=yt(kt)kt=F[r(0x1AC2)]yt=y[kt]kt={yt(bt)}H=P(rt,at,a(kt))rt=0x0 G=i*H yt=F[r(0x1AC2)]i=F[r(0x161C)]kt=0x0 P=y[i]H=y[yt]yt=H(rt)rt=F[r(0x1AC2)]at=0x0 H=y[rt]rt=H(at)at=F[r(0x1AC2)]H=y[at]at={H(kt)}i=P(yt,rt,a(at))H=F[r(0x252B)]P=0x1 K=G*i i=y[H]G=P/i X=D(O,K,G)E[J]=X end else T=F[r(0x30E)]n=y[T]T=F[r(0x1925)]k=n[T]n=k(C,o)k=0xFE5808 end else if k<0x6784F2 then if k<0x67513D then Q=F[r(0xDD1)]f=R[Q]T=not f k=0x1D7A7 f=z[s[0x7]]n=T~=f o=n else B=F[r(0xDD1)]h=k c=Q[B]B=F[r(0x11F3)]w=c==B k=w and 0x5311D1 or 0x741794 E=w end else C=.1 E=0x0 Y=C R=F[r(0x252B)]x=.1 W=y[R]C=x/W x=C C=0x0 W=x<C C=E-x k=0x4C18B0 end end else if k<0x68312B then if k<0x6815DF then if k<0x67D677 then E={}k=true z[s[0x1]]=k k=y[F[r(0x10FE)]]else e=z[s[0xE]]Z=F[r(0x5C7)]B=e[Z]z[s[0x13]]=B k=0x1BECF2 end else st=z[Y]k=0x9C98C3 lt=st()end else if k<0x6922EF then if k<0x68A3FA then f=0xFF Y=x T=0x0 k=z[s[0x1]]n=k(T,f)C[Y]=n Y=nil k=0x9B0E21 else k=0x6F4C07 tt[0xD]=F[r(0x30E)]tt[0xC]=y[tt[0xD]]tt[0xB]=tt[0xC]~=P tt[0x9]=tt[0xB]end else J=0x1 k=0x816DC Z=0x1 e=F[r(0x1BC)]B=y[e]D=0x1 e=B(Z,J,D)E=e end end end end else if k<0x6AFDB4 then if k<0x69AA7F then if k<0x69674A then if k<0x694EB5 then if k<0x694840 then E=z[s[0x6]]T=E()E=z[s[0x7]]T=E()T=F[r(0x1CC9)]f=false E=Y[T]T=F[r(0x1E3F)]E[T]=f n=nil f=F[r(0x1CC9)]T=F[r(0x1030)]E=F[r(0x1C09)]T=o[T]T=T(o,f)k=0xE23D4E W[E]=T o=nil E=z[s[0x8]]T=E()else J=c Z=k D=k k=c and 0x8166F0 or 0x870CAE end else x=nil k=0xB7ABB7 Y=nil end else if k<0x698F9C then if k<0x69820D then R=nil k=0x802F52 else H=z[s[0xF]]yt=0x1 i=H+yt P=0x1 H=i i=0x1 yt=i i=0x0 k=0x2F8F5C rt=yt<i i=P-yt end else T=b[0x8]R=b[0x5]x=b[0x3]C=b[0x1]n=b[0x7]f=b[0x9]Y=b[0x2]W=b[0x4]Q=F[r(0xBBF)]o=b[0x6]E=F[r(0x22D6)]k=y[E]E=k(Q)k=F[r(0x2BF)]Q=E E=C Q[k]=E k=F[r(0x1FE4)]E=W Q[k]=E k=F[r(0x5D2)]E=R Q[k]=E E=false k=F[r(0x1FC4)]Q[k]=E k=F[r(0x185D)]E=true Q[k]=E E=true k=F[r(0x20C7)]Q[k]=E E=false k=f==E k=k and 0x51FE95 or 0x1FF691 end end else if k<0x6A596F then if k<0x6A180F then if k<0x69EE71 then k=0x98FBC1 lt=z[Y]Ft=lt()else B=F[r(0xDD1)]c=w[B]B=F[r(0x1461)]E=c==B k=E and 0x94EFD7 or 0x1B9C3 end else k=0xD3CC45 end else if k<0x6AC87E then if k<0x6A94A6 then c=F[r(0x1537)]Q=F[r(0x250D)]D=0x0 T=F[r(0x1537)]n=y[T]f=y[Q]T=F[r(0x1CB)]rt=0x6 w=y[c]c=F[r(0x1CB)]J=0x0 Z=F[r(0x1FC)]h=w[c]B=z[s[0x6]]X=0x0 e=y[Z]Z=e(J,D,X)e=F[r(0x161C)]c=B*Z O=0x0 J=F[r(0x1AC2)]k=0xF27887 B=y[e]D=0xF X=0x0 Z=y[J]J=Z(D)D=F[r(0x1AC2)]Z=y[D]D=Z(X)X=F[r(0x1AC2)]Z=y[X]X={Z(O)}e=B(J,D,a(X))w=c*e B=0x1 Z=F[r(0x252B)]e=y[Z]kt=0xC c=B/e Q=f(h,w,c)n[T]=Q c=F[r(0xDF0)]J=0x0 Q=F[r(0x250D)]Z=F[r(0x1FC)]T=F[r(0xDF0)]X=0x0 n=y[T]T=F[r(0x1CB)]f=y[Q]w=y[c]c=F[r(0x1CB)]h=w[c]D=0x0 B=z[s[0x8]]e=y[Z]Z=e(J,D,X)J=F[r(0x1AC2)]c=B*Z e=F[r(0x161C)]B=y[e]O=0x0 D=0xF Z=y[J]J=Z(D)D=F[r(0x1AC2)]Z=y[D]X=0x0 D=Z(X)X=F[r(0x1AC2)]Z=y[X]X={Z(O)}e=B(J,D,a(X))J=.5 Z=F[r(0x252B)]B=0x1 w=c*e e=y[Z]c=B/e Q=f(h,w,c)c=F[r(0x1D79)]n[T]=Q O=0x23 i=F[r(0x199C)]D=0x0 Z=1.5 T=F[r(0x1D79)]n=y[T]Q=F[r(0x250D)]f=y[Q]e=F[r(0x1FC)]T=F[r(0x1CB)]w=y[c]c=F[r(0x1CB)]h=w[c]B=y[e]G=0x4 e=B(Z,J,D)D=F[r(0x1AC2)]Z=F[r(0x161C)]B=y[Z]J=y[D]P=y[i]yt=z[s[0x2]]H=yt/rt i=P(H)K=G*i X=O-K O=0x0 D=J(X)G=0x2D i=0xA X=F[r(0x1AC2)]J=y[X]X=J(O)O=F[r(0x1AC2)]yt=F[r(0x199C)]J=y[O]H=y[yt]at=z[s[0x2]]rt=at/kt yt=H(rt)rt=0x6 P=i*yt K=G+P O={J(K)}Z=B(D,X,a(O))c=e*Z B=z[s[0x9]]i=F[r(0x199C)]w=c*B B=0x1 Z=F[r(0x252B)]e=y[Z]c=B/e Z=-1.5 Q=f(h,w,c)n[T]=Q Q=F[r(0x250D)]T=F[r(0x418)]J=.5 c=F[r(0x418)]n=y[T]f=y[Q]e=F[r(0x1FC)]w=y[c]c=F[r(0x1CB)]T=F[r(0x1CB)]D=0x0 h=w[c]B=y[e]e=B(Z,J,D)O=0x23 G=0x4 D=F[r(0x1AC2)]Z=F[r(0x161C)]B=y[Z]J=y[D]P=y[i]yt=z[s[0x2]]H=yt/rt i=P(H)K=G*i kt=0xC X=O-K yt=F[r(0x199C)]D=J(X)G=-45 O=0x0 X=F[r(0x1AC2)]i=0xA J=y[X]X=J(O)O=F[r(0x1AC2)]J=y[O]H=y[yt]at=z[s[0x2]]rt=at/kt yt=H(rt)P=i*yt K=G-P O={J(K)}Z=B(D,X,a(O))c=e*Z B=z[s[0xA]]w=c*B Z=F[r(0x252B)]B=0x1 G=0x5 e=y[Z]c=B/e rt=0xC Q=f(h,w,c)n[T]=Q Q=F[r(0x250D)]D=-0.7 O=-25 T=F[r(0x23BE)]Z=0x1 n=y[T]T=F[r(0x1CB)]f=y[Q]e=F[r(0x1FC)]i=F[r(0x1A84)]c=F[r(0x23BE)]J=-0.3 w=y[c]c=F[r(0x1CB)]h=w[c]B=y[e]e=B(Z,J,D)Z=F[r(0x161C)]D=F[r(0x1AC2)]B=y[Z]J=y[D]P=y[i]yt=z[s[0x2]]H=yt/rt i=P(H)K=G*i X=O+K O=0x5A D=J(X)X=F[r(0x1AC2)]J=y[X]X=J(O)O=F[r(0x1AC2)]i=0x6 K=0x0 J=y[O]O={J(K)}Z=B(D,X,a(O))J=F[r(0x1AC2)]c=e*Z K=F[r(0x1A84)]e=F[r(0x161C)]X=-1 B=y[e]Z=y[J]O=y[K]P=z[s[0x2]]G=P/i K=O(G)D=X*K i=0x6 O=0x0 J=Z(D)X=0x0 D=F[r(0x1AC2)]Z=y[D]D=Z(X)X=F[r(0x1AC2)]Z=y[X]K=0x0 X={Z(O)}Z=F[r(0x252B)]e=B(J,D,a(X))w=c*e B=0x1 e=y[Z]c=B/e e=F[r(0x1FC)]Q=f(h,w,c)Z=-1 n[T]=Q T=F[r(0x93C)]n=y[T]X=-10 c=F[r(0x93C)]D=-0.3 Q=F[r(0x250D)]f=y[Q]T=F[r(0x1CB)]w=y[c]J=-0.8 c=F[r(0x1CB)]h=w[c]B=y[e]e=B(Z,J,D)Z=F[r(0x161C)]O=-80 B=y[Z]D=F[r(0x1AC2)]J=y[D]D=J(X)X=F[r(0x1AC2)]J=y[X]X=J(O)O=F[r(0x1AC2)]J=y[O]O={J(K)}Z=B(D,X,a(O))c=e*Z e=F[r(0x161C)]B=y[e]K=F[r(0x1A84)]J=F[r(0x1AC2)]Z=y[J]X=-1 O=y[K]P=z[s[0x2]]G=P/i K=O(G)O=0x0 D=X*K J=Z(D)X=0x0 D=F[r(0x1AC2)]Z=y[D]D=Z(X)X=F[r(0x1AC2)]Z=y[X]X={Z(O)}e=B(J,D,a(X))w=c*e Z=F[r(0x252B)]B=0x1 e=y[Z]c=B/e Q=f(h,w,c)n[T]=Q else k=o and 0x821843 or 0x2C7806 end else C=F[r(0x69C)]x=0x0 k=y[C]Y=z[s[0x8]]C=k(Y,x)k=0xB32527 end end end else if k<0x6BA70D then if k<0x6B552B then if k<0x6B4C13 then if k<0x6B18C7 then k=n and 0x723A50 or 0x88CC25 else W=not Y E=W k=0xA7906A end else x=true Y=z[s[0x2]]C=Y==x E=C k=C and 0xB85CC0 or 0xEE80AA end else if k<0x6B9D17 then if k<0x6B9890 then E=F[r(0x9F)]k=Y==E k=k and 0x7BBF23 or 0x7D315B else R=F[r(0x1725)]k=0x829C3B W=z[s[0x2]]x=W[R]Y=x end else o=F[r(0x11F3)]k=R[o]o=F[r(0x180B)]Q=F[r(0x11F3)]f=z[s[0x7]]T=f[Q]f=F[r(0x180B)]n=T[f]k[o]=n k=0xB64D1F end end else if k<0x6C9078 then if k<0x6C1A7B then if k<0x6BB0E4 then k=0x982B23 x=not Y E=x else k=z[s[0x1]]E=k()E={}k=y[F[r(0xC9E)]]end else k=nil o=k n=F[r(0x64)]k=y[n]w=F[r(0x20A0)]Q=z[s[0x4]]w=Q[w]h={w(Q)}Q={k(a(h))}k=0xDAB728 T=Q[0x2]n=Q[0x1]f=Q[0x3]end else if k<0x6CD826 then if k<0x6CC286 then bt=0x5 kt=P==bt k=kt and 0x50BEA9 or 0x7939B3 else k=Q k=f and 0xEC8E73 or 0x783783 E=f end else T=F[r(0x13EE)]n=z[s[0x8]]Q=F[r(0x138F)]f=z[s[0x9]]n[T]=f n=z[s[0x9]]T=F[r(0x1F56)]T=n[T]T=T(n)n=false z[s[0x1]]=n f=z[s[0x8]]T=f[Q]Q=F[r(0x228A)]f=F[r(0x116E)]f=T[f]f=f(T,Q)k=f and 0xBEF4D3 or 0x33D242 end end end end end else if k<0x702D92 then if k<0x6F6D8E then if k<0x6E464F then if k<0x6D88CE then if k<0x6D5EC0 then if k<0x6D5418 then E=F[r(0x19CE)]C=b[0x1]Y=b[0x2]k=Y==E k=k and 0xC64664 or 0xED7182 else E=F[r(0x64)]k=y[E]x=z[s[0x2]]W={k(x)}C=W[0x2]k=0xE9C3AE Y=W[0x3]E=W[0x1]x=E end else c=F[r(0x1A84)]Q=F[r(0xAC4)]f=y[Q]h=-W Q=f(h)h=0x1 w=y[c]Z=0x1 c=w(Q)f=h/c c=F[r(0x1A84)]w=y[c]e=x-Z B=e*Q c=w(B)h=c*f B=F[r(0x1A84)]k=0xE0633B c=y[B]e=x*Q Q=nil B=c(e)R=h w=B*f f=nil o=w end else if k<0x6E15EA then if k<0x6E0548 then f=F[r(0x180B)]o=F[r(0x11F3)]k=R[o]Q=-50 o=F[r(0x180B)]T=y[f]f=F[r(0x22B6)]n=T[f]f=0x0 h=0x0 T=n(f,Q,h)k[o]=T k=0xB64D1F else k=o and 0x8CA611 or 0x7B20FC end else k=z[s[0x1]]E=k()E={}k=y[F[r(0xF40)]]end end else if k<0x6EC0DB then if k<0x6E603F then if k<0x6E553F then T=0x0 R=F[r(0x6AC)]Y=F[r(0x6AC)]C=z[s[0x1]]o=F[r(0x20)]k=C[Y]W=z[s[0x2]]C=F[r(0x180B)]x=W[R]W=F[r(0x180B)]Y=x[W]k[C]=Y C=z[s[0x1]]Y=F[r(0x21B5)]k=C[Y]C=F[r(0x180B)]R=z[s[0x2]]n=.185 W=R[o]o=F[r(0x180B)]R=F[r(0x180B)]x=W[R]R=y[o]o=F[r(0x22B6)]W=R[o]o=0x0 R=W(o,n,T)n=-0.8 Y=x*R k[C]=Y Y=F[r(0x207B)]C=z[s[0x1]]k=C[Y]R=z[s[0x2]]o=F[r(0x20)]W=R[o]R=F[r(0x180B)]T=0x0 x=W[R]o=F[r(0x180B)]R=y[o]o=F[r(0x22B6)]W=R[o]o=0x0 R=W(o,n,T)Y=x*R C=F[r(0x180B)]k[C]=Y Y=F[r(0x419)]C=z[s[0x1]]k=C[Y]o=F[r(0x2307)]C=F[r(0x180B)]R=z[s[0x2]]W=R[o]R=F[r(0x180B)]o=F[r(0x180B)]T=0x0 x=W[R]R=y[o]o=F[r(0x22B6)]n=.4 W=R[o]o=0x0 R=W(o,n,T)Y=x*R k[C]=Y Y=F[r(0x41A)]C=z[s[0x1]]T=0x0 n=-0.19 k=C[Y]C=F[r(0x180B)]o=F[r(0x2307)]R=z[s[0x2]]W=R[o]o=F[r(0x180B)]R=F[r(0x180B)]x=W[R]R=y[o]o=F[r(0x22B6)]W=R[o]o=0x0 R=W(o,n,T)Y=x*R k[C]=Y C=z[s[0x1]]n=-0.84 o=F[r(0x2307)]Y=F[r(0x230A)]k=C[Y]C=F[r(0x180B)]R=z[s[0x2]]W=R[o]T=0x0 R=F[r(0x180B)]o=F[r(0x180B)]x=W[R]R=y[o]o=F[r(0x22B6)]W=R[o]o=0x0 R=W(o,n,T)Y=x*R k[C]=Y C=z[s[0x1]]T=0x0 Y=F[r(0x1D7A)]k=C[Y]o=F[r(0x1559)]C=F[r(0x180B)]R=z[s[0x2]]W=R[o]R=F[r(0x180B)]x=W[R]o=F[r(0x180B)]R=y[o]n=.4 o=F[r(0x22B6)]W=R[o]o=0x0 R=W(o,n,T)Y=x*R k[C]=Y C=z[s[0x1]]T=0x0 Y=F[r(0x1D7B)]k=C[Y]o=F[r(0x1559)]R=z[s[0x2]]W=R[o]o=F[r(0x180B)]C=F[r(0x180B)]R=F[r(0x180B)]x=W[R]R=y[o]n=-0.19 o=F[r(0x22B6)]W=R[o]o=0x0 R=W(o,n,T)Y=x*R k[C]=Y C=z[s[0x1]]T=0x0 Y=F[r(0x155C)]k=C[Y]R=z[s[0x2]]o=F[r(0x1559)]C=F[r(0x180B)]W=R[o]R=F[r(0x180B)]o=F[r(0x180B)]x=W[R]n=-0.84 R=y[o]o=F[r(0x22B6)]W=R[o]o=0x0 R=W(o,n,T)Y=x*R k[C]=Y o=F[r(0x2308)]C=z[s[0x1]]Y=F[r(0x41B)]k=C[Y]C=F[r(0x180B)]R=z[s[0x2]]W=R[o]R=F[r(0x180B)]o=F[r(0x180B)]x=W[R]R=y[o]n=.55 o=F[r(0x22B6)]T=0x0 W=R[o]o=0x0 R=W(o,n,T)Y=x*R k[C]=Y Y=F[r(0x41C)]C=z[s[0x1]]k=C[Y]o=F[r(0x2308)]R=z[s[0x2]]W=R[o]C=F[r(0x180B)]R=F[r(0x180B)]n=-0.19 o=F[r(0x180B)]x=W[R]R=y[o]o=F[r(0x22B6)]W=R[o]T=0x0 o=0x0 R=W(o,n,T)Y=x*R k[C]=Y o=F[r(0x2308)]C=z[s[0x1]]Y=F[r(0x230B)]k=C[Y]n=-0.85 C=F[r(0x180B)]R=z[s[0x2]]T=0x0 W=R[o]o=F[r(0x180B)]R=F[r(0x180B)]x=W[R]R=y[o]o=F[r(0x22B6)]W=R[o]o=0x0 R=W(o,n,T)Y=x*R k[C]=Y C=z[s[0x1]]Y=F[r(0x1D7C)]o=F[r(0x155A)]k=C[Y]C=F[r(0x180B)]R=z[s[0x2]]n=.55 T=0x0 W=R[o]R=F[r(0x180B)]x=W[R]o=F[r(0x180B)]R=y[o]o=F[r(0x22B6)]W=R[o]o=0x0 R=W(o,n,T)Y=x*R k[C]=Y Y=F[r(0x1D7D)]C=z[s[0x1]]k=C[Y]T=0x0 o=F[r(0x155A)]R=z[s[0x2]]W=R[o]R=F[r(0x180B)]x=W[R]o=F[r(0x180B)]n=-0.19 C=F[r(0x180B)]R=y[o]o=F[r(0x22B6)]W=R[o]o=0x0 R=W(o,n,T)Y=x*R o=F[r(0x155A)]k[C]=Y C=z[s[0x1]]T=0x0 Y=F[r(0x155D)]k=C[Y]C=F[r(0x180B)]R=z[s[0x2]]W=R[o]R=F[r(0x180B)]x=W[R]o=F[r(0x180B)]R=y[o]o=F[r(0x22B6)]W=R[o]n=-0.85 o=0x0 R=W(o,n,T)Y=x*R k[C]=Y k=0x171FCD else E=z[s[0x8]]C=true k=E==C k=k and 0x2F3F78 or 0x6FB7B4 end else f=0x0 k=0x94F623 T=0x0 o=F[r(0x517)]R=y[o]n=0x0 o=R(n,T,f)E=o end else if k<0x6F453C then if k<0x6F1995 then k=F[r(0x116E)]k=Y[k]k=k(Y,R)k=k and 0x8E9FA7 or 0x13CF2C else C=z[s[0x3]]Y=F[r(0x1404)]E=C[Y]k=not E k=k and 0x609806 or 0x18CF26 end else k=tt[0xA]k=0x935002 tt[0x7]=tt[0x9]end end end else if k<0x6FBEE7 then if k<0x6F9232 then if k<0x6F7E14 then if k<0x6F74AD then Yt=v(0xA3AE7B,{s[0x2]})It=F[r(0x9AE)]Ft=F[r(0x2258)]ut=v(0x64BF16,{s[0x2]})kt=N(0x86920B,{s[0x2]})f=F[r(0x1119)]lt=S(0xF87F4A,{s[0x2]})R=false O=F[r(0x1D33)]Ct=S(0x6BE5C1,{s[0x2]})Vt=F[r(0x9AF)]w=F[r(0x2257)]rt=U(0x8E0BDE,{s[0x2]})Q=F[r(0x1513)]st=F[r(0x2259)]G=F[r(0x1FBC)]D=F[r(0x5F2)]H=v(0xE3CC63,{s[0x2]})at=F[r(0x225A)]K=L(0xA873F3,{s[0x2]})X=U(0x9D5F99,{s[0x2]})x=L(0x4FF984,{s[0x1];s[0x2]})J=L(0xC65352,{s[0x2]})mt=S(0xAE7DDB,{s[0x2]})W=F[r(0x1C02)]Wt=N(0x9807CB,{s[0x2]})zt=F[r(0x225B)]Et=N(0x826902,{s[0x2]})yt=F[r(0x225C)]o=F[r(0x9AD)]h=L(0xC56AF0,{s[0x2]})Z=F[r(0x1FBD)]i=F[r(0x225D)]xt=F[r(0x9B0)]T=F[r(0x1514)]n=L(0x1DE4AF,{s[0x2]})C=b[0x1]P=N(0xAB03F3,{s[0x2]})B=F[r(0x5F3)]bt=F[r(0x225E)]Y=F[r(0x1D34)]c=v(0x173F4,{s[0x2]})e=N(0xA09C84,{s[0x2]})E=F[r(0x5F1)]k={[E]=C,[Y]=x,[W]=R;[o]=n,[T]=f;[Q]=h;[w]=c;[B]=e,[Z]=J;[D]=X;[O]=K;[G]=P,[i]=H,[yt]=rt;[at]=kt;[bt]=ut,[st]=lt;[zt]=Et,[Ft]=Ct;[It]=Yt,[xt]=Wt,[Vt]=mt}Y=k x={}k=z[s[0x3]]E={k(x,Y)}E={a(E)}k=y[F[r(0x14CB)]]else x=false k=z[s[0x2]]Y=F[r(0xEC3)]C=F[r(0x1EEB)]E=k(C,Y,x)k=0x86E870 end else k=0xA04806 z[Y]=E end else if k<0x6FB99F then if k<0x6FB444 then f=h k=0x1709B8 else E=z[s[0x7]]C=F[r(0x116E)]C=E[C]Y=F[r(0x1CC9)]C=C(E,Y)k=not C k=k and 0x5829E5 or 0x86EAA9 end else E=F[r(0x18F6)]k=z[s[0x1]]C=true E=k[E]E=E(k)k=z[s[0x2]]E=F[r(0x20C7)]k[E]=C C=0x5 Y=C C=0x1 E=0x1 x=C C=0x0 W=x<C C=E-x k=0x61437E end end else if k<0x6FF840 then if k<0x6FEDD5 then if k<0x6FE0B8 then k=Q n=f k=0x5D6A5E else Ft=.05 yt=F[r(0x250D)]i=z[s[0x16]]ut=F[r(0x1FC)]P=i[D]H=y[yt]i=F[r(0x1CB)]kt=z[s[0x16]]at=kt[D]It=F[r(0x199C)]kt=F[r(0x1CB)]Wt=0xC zt=1.3 rt=at[kt]bt=y[ut]st=0x0 Ct=y[It]xt=z[s[0x2]]Yt=xt/Wt It=Ct(Yt)Et=Ft*It lt=zt+Et zt=0x0 ut=bt(st,lt,zt)st=F[r(0x161C)]k=0x469488 zt=F[r(0x1AC2)]bt=y[st]Ct=0x0 Ft=0xDA Et=0x0 lt=y[zt]zt=lt(Et)Et=F[r(0x1AC2)]lt=y[Et]Et=lt(Ft)Ft=F[r(0x1AC2)]lt=y[Ft]Ft={lt(Ct)}st=bt(zt,Et,a(Ft))zt=3.4 kt=ut*st lt=0x0 st=0x0 ut=F[r(0x1FC)]bt=y[ut]ut=bt(st,lt,zt)at=kt*ut kt=.1 yt=H(rt,at,kt)P[i]=yt end else B=F[r(0x1725)]k=0xCFAB83 c=z[Q]w=c[B]f=w end else if k<0x701DEE then if k<0x6FFD6E then w=F[r(0x25F7)]O=F[r(0x1FC)]E=y[w]G=0x0 h=n i=0x0 K=0x0 w=E()J=F[r(0x1537)]w=F[r(0x1537)]E=y[w]B=F[r(0x250D)]w=F[r(0x1CB)]c=y[B]Z=y[J]P=0x0 J=F[r(0x1CB)]e=Z[J]D=z[s[0x4]]X=y[O]O=X(K,G,P)X=F[r(0x161C)]J=D*O K=F[r(0x1AC2)]G=0x0 D=y[X]O=y[K]P=0x0 K=O(G)G=F[r(0x1AC2)]O=y[G]G=O(P)P=F[r(0x1AC2)]O=y[P]P={O(i)}X=D(K,G,a(P))O=F[r(0x252B)]Z=J*X X=y[O]D=0x1 J=D/X O=F[r(0x1FC)]B=c(e,Z,J)E[w]=B w=F[r(0xDF0)]J=F[r(0xDF0)]B=F[r(0x250D)]E=y[w]c=y[B]Z=y[J]G=0x0 J=F[r(0x1CB)]e=Z[J]D=z[s[0x6]]K=0x0 i=0x0 P=0x0 X=y[O]w=F[r(0x1CB)]O=X(K,G,P)X=F[r(0x161C)]K=F[r(0x1AC2)]H=0x0 P=0x0 J=D*O D=y[X]O=y[K]G=0x0 K=O(G)G=F[r(0x1AC2)]O=y[G]G=O(P)P=F[r(0x1AC2)]O=y[P]P={O(i)}X=D(K,G,a(P))O=F[r(0x252B)]D=0x1 Z=J*X X=y[O]J=D/X i=-5 B=c(e,Z,J)G=0x0 E[w]=B P=0x0 J=F[r(0x1D79)]O=1.5 B=F[r(0x250D)]w=F[r(0x1D79)]E=y[w]c=y[B]w=F[r(0x1CB)]Z=y[J]J=F[r(0x1CB)]X=F[r(0x1FC)]e=Z[J]D=y[X]K=.5 X=D(O,K,G)O=F[r(0x161C)]D=y[O]G=F[r(0x1AC2)]K=y[G]G=K(P)P=F[r(0x1AC2)]K=y[P]P=K(i)k=0x728233 i=F[r(0x1AC2)]K=y[i]i={K(H)}O=D(G,P,a(i))J=X*O D=z[s[0x7]]Z=J*D D=0x1 O=F[r(0x252B)]h=nil X=y[O]J=D/X B=c(e,Z,J)E[w]=B G=0x0 P=0x0 J=F[r(0x418)]w=F[r(0x418)]E=y[w]B=F[r(0x250D)]c=y[B]X=F[r(0x1FC)]w=F[r(0x1CB)]O=-1.5 Z=y[J]J=F[r(0x1CB)]K=.5 e=Z[J]D=y[X]H=0x0 X=D(O,K,G)O=F[r(0x161C)]G=F[r(0x1AC2)]D=y[O]K=y[G]G=K(P)P=F[r(0x1AC2)]K=y[P]i=0x5 P=K(i)i=F[r(0x1AC2)]K=y[i]i={K(H)}O=D(G,P,a(i))J=X*O D=z[s[0x8]]Z=J*D O=F[r(0x252B)]X=y[O]D=0x1 J=D/X B=c(e,Z,J)K=-1 O=0x1 E[w]=B G=0x0 w=F[r(0x23BE)]E=y[w]J=F[r(0x23BE)]w=F[r(0x1CB)]B=F[r(0x250D)]H=0x0 c=y[B]i=0x55 Z=y[J]P=0x0 J=F[r(0x1CB)]X=F[r(0x1FC)]e=Z[J]D=y[X]X=D(O,K,G)G=F[r(0x1AC2)]O=F[r(0x161C)]D=y[O]K=y[G]G=K(P)P=F[r(0x1AC2)]K=y[P]P=K(i)i=F[r(0x1AC2)]K=y[i]i={K(H)}O=D(G,P,a(i))J=X*O G=0x0 X=F[r(0x161C)]K=F[r(0x1AC2)]D=y[X]O=y[K]i=0x0 K=O(G)G=F[r(0x1AC2)]H=0x0 O=y[G]P=0x0 G=O(P)P=F[r(0x1AC2)]O=y[P]P={O(i)}X=D(K,G,a(P))D=0x1 Z=J*X K=-1 O=F[r(0x252B)]X=y[O]J=D/X B=c(e,Z,J)E[w]=B B=F[r(0x250D)]w=F[r(0x93C)]E=y[w]J=F[r(0x93C)]P=0x0 c=y[B]O=-1 G=0x0 i=-85 w=F[r(0x1CB)]Z=y[J]X=F[r(0x1FC)]J=F[r(0x1CB)]e=Z[J]D=y[X]X=D(O,K,G)O=F[r(0x161C)]G=F[r(0x1AC2)]D=y[O]K=y[G]G=K(P)P=F[r(0x1AC2)]K=y[P]P=K(i)i=F[r(0x1AC2)]K=y[i]i={K(H)}O=D(G,P,a(i))J=X*O X=F[r(0x161C)]D=y[X]G=0x0 K=F[r(0x1AC2)]i=0x0 O=y[K]K=O(G)G=F[r(0x1AC2)]O=y[G]P=0x0 G=O(P)P=F[r(0x1AC2)]O=y[P]P={O(i)}X=D(K,G,a(P))Z=J*X O=F[r(0x252B)]D=0x1 X=y[O]J=D/X B=c(e,Z,J)E[w]=B else C=b[0x1]k=z[s[0x1]]E={k(C)}k=y[F[r(0x214C)]]E={a(E)}end else k=B k=0xD97B9D h=c end end end end else if k<0x71C6E7 then if k<0x711434 then if k<0x70A2FB then if k<0x708B4B then if k<0x704CE7 then e=e+J X=not D E=e<=Z E=X and E X=e>=Z X=D and X E=X or E X=0xE40D40 k=E and X E=0x4A6BBE k=k or E else f=F[r(0x1F8A)]T=F[r(0x11F3)]n=R[T]T=F[r(0x1030)]T=n[T]T=T(n,f)n=F[r(0x17E2)]o=T[n]n=F[r(0x120D)]k=o==n k=k and 0xE984FA or 0x5BE981 end else E=F[r(0x25F7)]k=y[E]R=F[r(0x1537)]E=k()E=F[r(0x1537)]Y=F[r(0x250D)]k=y[E]J=0x18 B=F[r(0x199C)]E=F[r(0x1CB)]C=y[Y]W=y[R]w=.04 R=F[r(0x1CB)]x=W[R]T=F[r(0x1FC)]o=z[s[0x3]]Q=0x0 n=y[T]c=y[B]Z=z[s[0x4]]e=Z/J B=c(e)h=w*B Z=F[r(0x199C)]f=Q-h e=y[Z]D=z[s[0x4]]X=0xC Q=0x0 J=D/X w=0x0 Z=e(J)B=.05 c=B*Z h=w+c w=0x0 O=0xC Z=F[r(0x199C)]T=n(f,Q,h)Q=0x0 R=o*T B=2.5 f=F[r(0x1AC2)]n=F[r(0x161C)]o=y[n]X=0x18 T=y[f]f=T(Q)Q=F[r(0x1AC2)]T=y[Q]e=y[Z]D=z[s[0x4]]J=D/X Z=e(J)c=B*Z h=w-c Q=T(h)h=F[r(0x1AC2)]w=0x0 e=F[r(0x199C)]T=y[h]h={T(w)}n=o(f,Q,a(h))h=0x0 T=F[r(0x252B)]o=0x1 W=R*n n=y[T]T=F[r(0x1FC)]R=o/n Y=C(x,W,R)k[E]=Y R=F[r(0xDF0)]Y=F[r(0x250D)]E=F[r(0xDF0)]k=y[E]f=0x0 E=F[r(0x1CB)]C=y[Y]W=y[R]R=F[r(0x1CB)]x=W[R]o=z[s[0x5]]n=y[T]Q=0x0 T=n(f,Q,h)R=o*T D=0xC n=F[r(0x161C)]c=0x7 f=F[r(0x1AC2)]h=0xF o=y[n]T=y[f]B=y[e]J=z[s[0x4]]Z=J/D e=B(Z)w=c*e Q=h-w c=.1 f=T(Q)Q=F[r(0x1AC2)]w=0x0 T=y[Q]h=0x0 Q=T(h)h=F[r(0x1AC2)]T=y[h]e=F[r(0x199C)]h={T(w)}n=o(f,Q,a(h))o=0x1 T=F[r(0x252B)]W=R*n n=y[T]R=o/n Y=C(x,W,R)k[E]=Y f=1.3 E=F[r(0x1D79)]h=.45 k=y[E]E=F[r(0x1CB)]T=F[r(0x1FC)]R=F[r(0x1D79)]Y=F[r(0x250D)]C=y[Y]W=y[R]R=F[r(0x1CB)]D=0xC x=W[R]n=y[T]B=y[e]J=z[s[0x4]]Z=J/D e=B(Z)w=c*e Q=h+w B=-15 c=0x0 h=-0.2 T=n(f,Q,h)f=F[r(0x161C)]h=F[r(0x1AC2)]n=y[f]w=0x2D Q=y[h]h=Q(w)w=F[r(0x1AC2)]Q=y[w]w=Q(c)c=F[r(0x1AC2)]Q=y[c]c={Q(B)}D=0xC Q=F[r(0x1AC2)]f=n(h,w,a(c))o=T*f c=0x0 h=0x0 T=F[r(0x161C)]n=y[T]f=y[Q]Q=f(h)h=F[r(0x1AC2)]w=0xF f=y[h]h=f(w)w=F[r(0x1AC2)]f=y[w]w={f(c)}T=n(Q,h,a(w))R=o*T o=z[s[0x6]]f=-1.1 e=F[r(0x199C)]W=R*o o=0x1 T=F[r(0x252B)]h=.35 n=y[T]R=o/n Y=C(x,W,R)c=.1 k[E]=Y R=F[r(0x418)]T=F[r(0x1FC)]Y=F[r(0x250D)]E=F[r(0x418)]k=y[E]E=F[r(0x1CB)]C=y[Y]W=y[R]R=F[r(0x1CB)]x=W[R]n=y[T]B=y[e]J=z[s[0x4]]Z=J/D e=B(Z)w=c*e c=-44 Q=h+w h=.2 J=F[r(0x199C)]T=n(f,Q,h)f=F[r(0x161C)]e=1.5 h=F[r(0x1AC2)]n=y[f]Q=y[h]Z=y[J]X=z[s[0x4]]D=X/O J=Z(D)B=e*J w=c-B h=Q(w)c=0x0 B=0x2D w=F[r(0x1AC2)]Q=y[w]w=Q(c)c=F[r(0x1AC2)]Q=y[c]c={Q(B)}f=n(h,w,a(c))o=T*f T=F[r(0x161C)]Q=F[r(0x1AC2)]n=y[T]f=y[Q]w=-25 c=0x0 h=0x0 Q=f(h)h=F[r(0x1AC2)]f=y[h]h=f(w)w=F[r(0x1AC2)]f=y[w]w={f(c)}T=n(Q,h,a(w))R=o*T o=z[s[0x7]]D=0x18 e=F[r(0x199C)]W=R*o c=.035 o=0x1 T=F[r(0x252B)]n=y[T]R=o/n h=-1 Y=C(x,W,R)k[E]=Y E=F[r(0x23BE)]n=F[r(0x1FC)]R=F[r(0x23BE)]k=y[E]Y=F[r(0x250D)]T=0x1 E=F[r(0x1CB)]C=y[Y]W=y[R]R=F[r(0x1CB)]x=W[R]o=y[n]B=y[e]J=z[s[0x4]]Z=J/D e=B(Z)w=c*e Q=h+w J=0xC B=F[r(0x199C)]w=.05 c=y[B]Z=z[s[0x4]]e=Z/J B=c(e)h=w*B f=Q-h Q=0x0 n=o(T,f,Q)w=0x55 Q=F[r(0x1AC2)]T=F[r(0x161C)]e=F[r(0x199C)]o=y[T]f=y[Q]h=0x0 Q=f(h)h=F[r(0x1AC2)]f=y[h]h=f(w)w=F[r(0x1AC2)]c=0x0 D=0x18 f=y[w]w={f(c)}T=o(Q,h,a(w))c=2.5 R=n*T n=F[r(0x161C)]h=-2 o=y[n]f=F[r(0x1AC2)]T=y[f]B=y[e]J=z[s[0x4]]Z=J/D e=B(Z)w=c*e D=0x18 e=F[r(0x199C)]Q=h-w h=0x0 f=T(Q)Q=F[r(0x1AC2)]c=.035 T=y[Q]Q=T(h)h=F[r(0x1AC2)]w=0x0 T=y[h]h={T(w)}n=o(f,Q,a(h))T=F[r(0x252B)]W=R*n o=0x1 n=y[T]R=o/n Y=C(x,W,R)h=-1 k[E]=Y T=-1 E=F[r(0x93C)]Y=F[r(0x250D)]k=y[E]C=y[Y]n=F[r(0x1FC)]E=F[r(0x1CB)]R=F[r(0x93C)]W=y[R]R=F[r(0x1CB)]x=W[R]o=y[n]B=y[e]J=z[s[0x4]]Z=J/D e=B(Z)w=c*e D=0x18 Q=h-w J=0xC B=F[r(0x199C)]c=y[B]Z=z[s[0x4]]w=.05 e=Z/J B=c(e)h=w*B f=Q-h c=0x0 h=0x0 Q=0x0 n=o(T,f,Q)e=F[r(0x199C)]Q=F[r(0x1AC2)]T=F[r(0x161C)]w=-85 o=y[T]f=y[Q]Q=f(h)h=F[r(0x1AC2)]f=y[h]h=f(w)w=F[r(0x1AC2)]f=y[w]w={f(c)}f=F[r(0x1AC2)]T=o(Q,h,a(w))R=n*T n=F[r(0x161C)]h=-2 o=y[n]T=y[f]c=2.5 B=y[e]J=z[s[0x4]]Z=J/D e=B(Z)w=c*e Q=h+w f=T(Q)Q=F[r(0x1AC2)]T=y[Q]h=0x0 w=0x0 Q=T(h)h=F[r(0x1AC2)]T=y[h]h={T(w)}n=o(f,Q,a(h))W=R*n o=0x1 T=F[r(0x252B)]n=y[T]R=o/n Y=C(x,W,R)k[E]=Y E=z[s[0x8]]C=false k=E==C k=k and 0xBE6895 or 0x70A0DE end else if k<0x710CDF then if k<0x70E393 then c=true w=z[s[0xC]]h=w==c k=h and 0x78D8C0 or 0x136019 else x=b[0x3]E=F[r(0x19B5)]f=F[r(0x1123)]n=F[r(0x1AB5)]Y=b[0x2]C=b[0x1]W=b[0x4]k=y[E]o=y[n]n=F[r(0x22B6)]R=o[n]T=Y[f]n=T*x o=R(C,n)R=F[r(0x1EB2)]R=k[R]E={R(k,o,W)}k=y[F[r(0x1626)]]E={a(E)}end else k=nil n=F[r(0x64)]o=k w=F[r(0x20A0)]k=y[n]Q=z[s[0x4]]w=Q[w]h={w(Q)}Q={k(a(h))}k=0x7329A2 n=Q[0x1]f=Q[0x3]T=Q[0x2]end end else if k<0x7175BE then if k<0x713B42 then if k<0x7129A6 then Y=F[r(0x15B0)]x=F[r(0x2124)]C=y[Y]Y=F[r(0x21D3)]E={}Y=C[Y]Y=Y(C,x)C=F[r(0xE56)]k=Y[C]C=F[r(0x11EF)]C=k[C]C=C(k)k=y[F[r(0x1DB4)]]else e=F[r(0xEB3)]B=F[r(0x116E)]c=k B=Y[B]B=B(Y,e)w=B k=B and 0x468B34 or 0xBF5CA1 end else T=not n R=R+o E=R<=W E=T and E T=R>=W T=n and T E=T or E T=0xA28C72 k=E and T E=0xE37FF7 k=k or E end else if k<0x71B416 then if k<0x7196DF then k=z[s[0x1]]E=k()k=y[F[r(0x2030)]]E={}else B=not c Q=Q+w T=Q<=h T=B and T B=Q>=h B=c and B T=B or T B=0xD4B85 k=T and B T=0x2BF9FC k=k or T end else Y,R=x(C,Y)k=Y and 0xE50BE2 or 0xC79EDC end end end else if k<0x729132 then if k<0x724A7B then if k<0x71FD32 then if k<0x71E53E then n=z[s[0x5]]T=true n[o]=T T=false n=F[r(0x1F56)]n=o[n]n=n(o)n=F[r(0x1FC4)]o[n]=T T=true n=F[r(0x226F)]o[n]=T w=F[r(0x1924)]h=F[r(0xE37)]n=F[r(0x1271)]T=true f=F[r(0x30E)]R[n]=T k=0xDFF9C3 T=y[f]B=F[r(0x1924)]f=F[r(0x1925)]n=T[f]f=z[s[0x1]]c=R[B]Q={[h]=o;[w]=c}T=n(f,Q)else k=0x4C6B4A end else T=z[s[0x2]]n=T[o]k=not n k=k and 0xB4E792 or 0x25740E end else if k<0x728283 then if k<0x727049 then D=F[r(0x6AC)]k=0xBC27A1 J=y[D]D=F[r(0x162D)]Z=J[D]J=F[r(0xACC)]D=F[r(0x1F51)]Z[J]=D else n=n+f E=n<=T h=not Q E=h and E h=n>=T h=Q and h E=h or E h=0x6FFC69 k=E and h E=0x542F49 k=k or E end else k=0xD53368 It=nil mt=nil end end else if k<0x732764 then if k<0x72DED3 then if k<0x72B4D1 then Ft=F[r(0x8E8)]Et=y[Ft]It=#P Ct=0x1 Ft=Et(Ct,It)It=0x1 Ct=F[r(0x8E8)]lt=P[Ft]Yt=0x2 Ft=y[Ct]Ct=Ft(It,Yt)Ft=0x1 Et=Ct==Ft k=Et and 0xC4FBDE or 0xF790A5 else C=true E=z[s[0x1]]k=E==C k=k and 0x883A89 or 0x98B2FB end else x=z[s[0x5]]k=0xC84B57 Y=x==C E=Y end else if k<0x73403C then if k<0x73397F then f,h=n(T,f)k=f and 0x1B3FE7 or 0xC64EC8 else Y=F[r(0x64)]n=F[r(0x10D3)]k=y[Y]R=z[s[0x2]]n=R[n]o={n(R)}R={k(a(o))}x=R[0x2]Y=R[0x1]k=0xFE66A2 W=R[0x3]end else W=z[s[0x4]]x=0x1 R=W W=0x1 o=W W=0x0 n=o<W k=0xC06E35 W=x-o end end end end end end else if k<0x7AFB63 then if k<0x77351F then if k<0x74CE9D then if k<0x7408EE then if k<0x73AF47 then if k<0x738A89 then if k<0x73779F then Q=F[r(0xBC5)]f=y[Q]n=F[r(0xEC4)]Q=F[r(0x22B6)]c=F[r(0xEC4)]T=f[Q]w=C[c]c=F[r(0x9D2)]h=w[c]Q=h-Y h=0x0 f=T(Q,h)Q=F[r(0xEC4)]C[n]=f f=C[Q]Q=F[r(0x9D2)]T=f[Q]f=159.5 n=T>f k=n and 0xCBCE11 or 0xBA06FE else E=F[r(0x25F7)]k=y[E]E=k()k=F[r(0x180B)]Q=F[r(0x180B)]n=x T=F[r(0x250D)]E=y[T]f=C[Q]n=nil Q=.1 T=E(f,Y,Q)C[k]=T k=0xDFD068 end else Y=b[0x2]C=b[0x1]W=b[0x4]R=b[0x5]o=b[0x6]x=b[0x3]E=F[r(0x64)]k=y[E]Q=F[r(0x19B5)]f=y[Q]h=F[r(0x10D3)]h=f[h]Q={h(f)}f={k(a(Q))}n=f[0x2]E=f[0x1]T=f[0x3]f=E k=0x768C7B end else if k<0x73DFDA then if k<0x73D971 then k=0x9EA8B1 else w=k k=n and 0xFE349F or 0x4514CE h=n end else w=0x1 h=C>w f=h Q=k k=h and 0x5F5917 or 0xAA173C end end else if k<0x744DEF then if k<0x742105 then if k<0x74178B then E=z[s[0x5]]T=E()k=0x3A6062 else k=h k=E and 0xA5CA74 or 0xA1DCD6 end else k=0x0 e=k k=n>x k=k and 0x7B0692 or 0x90FD7 end else if k<0x74C0A3 then if k<0x74A27C then k=E and 0x6979F1 or 0xB9F82B else k=0x1A16E6 end else k=E and 0x6527E2 or 0x26254B end end end else if k<0x7605B5 then if k<0x753C4F then if k<0x75171F then if k<0x74F656 then k=true o=0x0 R=0x41 W=F[r(0x26F7)]z[s[0x1]]=k E=z[s[0x2]]x=y[W]W=F[r(0x22B6)]Y=x[W]T=0x0 W=0x0 n=0x1C x=Y(W,R,o,n)n=.105 R=F[r(0x26F7)]W=y[R]R=F[r(0x22B6)]Y=W[R]o=0x0 R=.022 W=Y(R,o,n,T)R=F[r(0xD34)]C=F[r(0x4A3)]o=.5 n=false Y=F[r(0x22A3)]C=E[C]C=C(E,x,W,Y,R,o,n)E=z[s[0x3]]W=z[s[0x4]]C=E E=0x0 Y=E E=0x0 R=F[r(0x1FE3)]x=E E=W==R k=E and 0x3246FC or 0x4E4880 else Lt=F[r(0x1725)]mt=F[r(0x1EDC)]tt[0x2]=0xC Vt=y[mt]Nt=bt[Lt]St=F[r(0x8E8)]Ut=0x81C576D tt[0x1]=0x8 Lt=F[r(0x1725)]vt=Nt[Lt]Nt=.6 Mt=y[St]St=Mt(tt[0x1],tt[0x2])Mt=0xA k=0x3A3B88 Lt=St/Mt mt=Vt(Ut,vt,Nt,Lt)end else h=F[r(0x252B)]n=0x1 Q=y[h]f=.1 T=n k=0x2BEE1C E=0x0 n=f/Q f=n n=0x0 Q=f<n n=E-f end else if k<0x7578DC then if k<0x7571EB then k=F[r(0x1924)]f=k k=n and 0x846BD4 or 0x7E7A62 E=n else k=true z[s[0x2]]=k k=0x3210BE end else Q=F[r(0xDD1)]f=o[Q]Q=F[r(0x1937)]T=f==Q R=W k=T and 0xDDBCA0 or 0xE00F7A n=T end end else if k<0x769751 then if k<0x7669B8 then if k<0x763BE7 then o=0x1 k=0x8A010B R=F[r(0x517)]W=y[R]n=0x1 T=0x1 R=W(o,n,T)E=R else Ct=F[r(0x1215)]zt=F[r(0x9E)]lt=y[zt]Ft=B[Ct]Ct={lt(Ft)}zt=Ct[0x1]k=zt and 0xB4CCC or 0xF2095A Et=Ct[0x2]end else T,h=f(n,T)k=T and 0x3672C5 or 0xA63232 end else if k<0x76FC13 then if k<0x76C0FD then C=b[0x1]x=F[r(0x733)]Y=b[0x2]W=F[r(0x733)]R=F[r(0x810)]E=y[x]k=E+C E=F[r(0x733)]y[E]=k x=y[W]W=y[R]E=x>=W k=E and 0x313C4D or 0x2C9C11 else T=F[r(0x1725)]n=R[T]E=n k=0x83E04A end else k=c k=E and 0x78A20F or 0x84B558 end end end end else if k<0x78AB99 then if k<0x77F4ED then if k<0x77D4EE then if k<0x77C7AD then if k<0x776D55 then x=F[r(0x2124)]Q=I()E=F[r(0x15B0)]k=y[E]E=F[r(0x21D3)]f=I()W=I()E=k[E]R=I()c=F[r(0x829)]T=I()o=I()E=E(k,x)k={}x=E z[W]=k k={}n=I()z[R]=k k={}z[o]=k k={}z[n]=k k=nil z[T]=k k=N(0x8623C9,{T,W,R;o;n,s[0x1],s[0x2],s[0x3]})z[f]=k w=F[r(0x15B0)]k=nil z[Q]=k h=y[w]w=F[r(0x21D3)]w=h[w]w=w(h,c)h=F[r(0x1F49)]E=w[h]h=F[r(0xECA)]k=E[h]h=U(0x56B9E3,{f,Q})E=F[r(0x89E)]E=k[E]E=E(k,h)k=S(0x49B7D9,{s[0x3],o})o=V(o)z[Q]=E h=I()c=F[r(0x1174)]z[h]=k w=y[c]c=F[r(0x1DC)]k=w[c]c=v(0xA28EEC,{W,C,Q,s[0x3],n;h})w=k(c)f=V(f)c=F[r(0x1174)]w=y[c]c=F[r(0x1DC)]k=w[c]c=U(0xAFDBC1,{R;Y;Q,s[0x3],n})w=k(c)h=V(h)w=F[r(0xE56)]C=V(C)c=L(0xC28676,{W,s[0x3];R})k=x[w]w=F[r(0x89E)]n=V(n)w=k[w]R=V(R)W=V(W)E={}x=nil w=w(k,c)z[T]=w Q=V(Q)T=V(T)Y=V(Y)k=y[F[r(0x2174)]]else It=Vt vt=0x1 Ut=Ft+vt Ft=Ut vt=Ft==lt k=vt and 0x5CD037 or 0xB599A6 end else h=not Q n=n+f E=n<=T E=h and E h=n>=T h=Q and h E=h or E h=0x38FEA k=E and h E=0x85F997 k=k or E end else if k<0x77EA57 then if k<0x77E0F1 then D=0x8 J=z[s[0x1]]k=0x4ACAA Z=J[D]e=Y==Z c=e else H=z[s[0xE]]P=F[r(0x180B)]lt=0x168 ut=F[r(0x8E8)]rt=F[r(0x161C)]kt=F[r(0x1AC2)]yt=y[rt]at=y[kt]st=0x0 Et=0x168 bt=y[ut]ut={bt(st,lt)}zt=0x168 bt=F[r(0x1AC2)]st=F[r(0x8E8)]lt=0x0 kt=at(a(ut))at=y[bt]ut=y[st]st={ut(lt,zt)}lt=F[r(0x8E8)]zt=0x0 ut=F[r(0x1AC2)]bt=at(a(st))at=y[ut]st=y[lt]lt={st(zt,Et)}ut={at(a(lt))}k=0xF78AD9 rt=yt(kt,bt,a(ut))i=H*rt x[P]=i end else W=0x19 Y=F[r(0x8E8)]x=-25 C=y[Y]Y=C(x,W)C=0xA x=0x2D E=Y/C C=0x1 Y=-45 k=E+C E=F[r(0x8E8)]C=k k=y[E]E=k(Y,x)x=0x37 Y=E k=0x600BF2 E=0x1 W=x x=0x1 R=x x=0x0 o=R<x x=E-R end end else if k<0x786C4F then if k<0x783738 then if k<0x7827FE then E=F[r(0x246A)]h=-0.15 T=F[r(0x6AC)]Q=.1 n=y[T]o[E]=n k=0x77CF4B E=F[r(0x1725)]f=0x0 T=F[r(0x6AC)]n=y[T]o[E]=n E=F[r(0x1CB)]T=F[r(0x1FC)]n=y[T]T=n(f,Q,h)h=0x0 o[E]=T E=F[r(0x1E2)]T=F[r(0x1FC)]n=y[T]Q=0x0 f=0x0 T=n(f,Q,h)n=0x3 o[E]=T E=0x1 T=n n=0x1 f=n n=0x0 Q=f<n n=E-f else o=F[r(0x1F3D)]k=z[s[0x2]]E=F[r(0xA15)]x=F[r(0x42)]R=F[r(0xE88)]C=F[r(0x20DC)]E=k[E]E=E(k)E=F[r(0x15B0)]k=y[E]E=F[r(0x21D3)]E=k[E]W=F[r(0x22D)]E=E(k,C)Y={[x]=W,[R]=o}k=F[r(0x958)]x=F[r(0x1C89)]C=F[r(0x13F6)]k=E[k]k=k(E,C,Y)C=F[r(0x21E2)]W=F[r(0x1C89)]E=F[r(0x20E9)]k={E,C}R=F[r(0x1C89)]E=F[r(0x15B0)]C=k Y=F[r(0x60D)]k=y[E]E=F[r(0x21D3)]E=k[E]E=E(k,Y)k=F[r(0x605)]Y=F[r(0xC34)]k=E[k]k=k(E,Y)E=F[r(0x226E)]Y=y[x]x={Y(C)}E=k[E]Y=0x2 E=E(k,a(x))E=F[r(0x11EF)]k=y[E]E=k(Y)x=F[r(0x60D)]E=F[r(0x20E9)]Y=F[r(0x388)]k={E,Y}E=F[r(0x15B0)]Y=k k=y[E]E=F[r(0x21D3)]E=k[E]E=E(k,x)k=F[r(0x605)]k=E[k]x=F[r(0xC34)]k=k(E,x)x=y[W]W={x(Y)}E=F[r(0x226E)]E=k[E]E=E(k,a(W))E=F[r(0x11EF)]x=0x2 k=y[E]E=k(x)x=F[r(0x16D9)]E=F[r(0x20E9)]k={E,x}E=F[r(0x15B0)]x=k W=F[r(0x60D)]k=y[E]E=F[r(0x21D3)]E=k[E]E=E(k,W)W=F[r(0xC34)]k=F[r(0x605)]k=E[k]k=k(E,W)W=y[R]R={W(x)}E=F[r(0x226E)]E=k[E]E=E(k,a(R))E=F[r(0x11EF)]W=0x1 k=y[E]E=k(W)R=F[r(0x2651)]W=y[R]R=F[r(0x11AB)]E=W[R]W=true k=E==W k=k and 0x376407 or 0x28D497 end else k=0xEC8E73 Q=F[r(0x1C89)]f=y[Q]E=f end else if k<0x78A019 then if k<0x789311 then k=y[F[r(0x9A9)]]E={}C=nil else B=F[r(0xF04)]k=F[r(0x1030)]k=c[k]k=k(c,B)B=F[r(0xA15)]B=k[B]B=B(k)k=0xAB7F4F end else E=F[r(0xDD1)]e=F[r(0xDD1)]k=0x84B558 c=F[r(0x6AC)]w[E]=c E=z[s[0x4]]c=0x3 B=w[e]E[c]=B end end end else if k<0x7989CF then if k<0x78FC3A then if k<0x78D46C then if k<0x78B370 then n=x T=F[r(0x30E)]G=0x0 Q=F[r(0x17E3)]E=y[T]h=F[r(0x1651)]T=F[r(0x1925)]k=E[T]B=F[r(0x591)]P=0x0 n=nil c=F[r(0x1937)]O=F[r(0x180B)]e=false w=F[r(0x10EF)]T=z[Y]Z=F[r(0x1924)]X=y[O]O=F[r(0x22B6)]D=X[O]K=0x0 O=0x0 X=D(O,K,G)K=F[r(0x180B)]G=0x0 O=y[K]K=F[r(0x161E)]D=O[K]K=0x0 O=D(K,G,P)J=X*O f={[Q]=h,[w]=c,[B]=e,[Z]=J}E=k(T,f)k=0x10B02F else o=F[r(0x11F3)]k=R[o]o=F[r(0x258F)]Q=0x0 f=F[r(0xBC4)]T=y[f]f=F[r(0x22B6)]h=0x28 n=T[f]f=0x28 T=n(f,Q,h)k[o]=T k=0xD0E156 end else k=0x136019 h=true w=F[r(0x510)]y[w]=h c=F[r(0x1CC9)]w=y[c]B=0x0 c=F[r(0x168F)]w[c]=B end else if k<0x794400 then if k<0x7935E0 then k=E and 0xB8BFB8 or 0xEB4766 else at=nil P=nil k=0xCF6793 end else o=F[r(0x1116)]R=F[r(0x1553)]T=F[r(0x526)]n=F[r(0x1E84)]W={[R]=o,[n]=T}n=F[r(0x2038)]f=F[r(0x126A)]T=F[r(0x1E84)]o=F[r(0x1553)]k=0x1CC261 R={[o]=n,[T]=f}Y={W;R}R=F[r(0x193B)]W=y[R]T={W(Y)}o=T[0x2]R=T[0x1]n=T[0x3]end end else if k<0x79DBE5 then if k<0x79D523 then if k<0x79C3D3 then k=0xBACCCD else T=F[r(0x19B)]R=k h=F[r(0xD62)]n=C[T]Q=y[h]h=F[r(0x19B)]f=Q[h]Q=F[r(0xF83)]T=f[Q]o=n==T k=o and 0x9EE8AC or 0x1532EE W=o end else f=0xFF Y=x T=0x0 k=z[s[0x1]]n=k(T,f)k=0xB03ADF C[Y]=n Y=nil end else if k<0x7AE023 then if k<0x7A4B80 then Vt=F[r(0xCEF)]Wt=y[Vt]xt=Wt~=R Yt=k It=xt k=xt and 0xC3C2 or 0x48B80F else h=k c=F[r(0x8BD)]w=F[r(0x138E)]w=Q[w]w=w(Q,c)k=w and 0x44816 or 0xAEB0BB f=T E=w end else Y=0x0 C=F[r(0x23A7)]E=F[r(0x69C)]k=y[E]E=k(C,Y)k=y[F[r(0x25D2)]]E={}end end end end end else if k<0x7DBD41 then if k<0x7C5876 then if k<0x7B9C01 then if k<0x7B29DE then if k<0x7B10C8 then if k<0x7B07E1 then k=0x1 e=k k=0x90FD7 else J=F[r(0xDD1)]Z=c[J]J=F[r(0x11F3)]e=Z==J k=e and 0x5D9EE7 or 0x803ECD B=e end else k=F[r(0x138E)]o=F[r(0x1270)]k=R[k]k=k(R,o)k=k and 0xBAAA99 or 0xB1A117 end else if k<0x7B46E9 then if k<0x7B3497 then Y,R=x(C,Y)k=Y and 0x489605 or 0x603CFF else e=nil E=R~=e k=E and 0x3C1AB2 or 0x7DD7E1 end else f=z[Y]k=0xFA9D6 Q=F[r(0x20)]E=f[Q]W=E end end else if k<0x7C0A54 then if k<0x7BF786 then if k<0x7BBD0D then E={}k=y[F[r(0x2582)]]else E=F[r(0x22D6)]x=F[r(0x1F8A)]k=y[E]E=k(x,C)k=F[r(0x228C)]x=E E=F[r(0x9F)]x[k]=E x=nil k=0x7D315B end else k=0xDB3B08 c=nil B=nil end else if k<0x7C4ACA then if k<0x7C1518 then D=F[r(0x13DF)]J=y[D]D=F[r(0x100D)]Z=J[D]O=n-h X=O-x O=0x1 D=X+O J=Z(D)D=.5 Z=D/J X=W+o O=.5 D=X*Z X=O*J K=Q+T O=K*Z k=y[F[r(0x1A4E)]]G=R-f K=G*Z E={D;X,O;K}else Q=F[r(0x116E)]h=F[r(0x68D)]Q=Y[Q]f=k Q=Q(Y,h)T=Q k=Q and 0x96804F or 0x454646 end else k=0xADD7CB end end end else if k<0x7D1932 then if k<0x7CB5B2 then if k<0x7CAEB0 then if k<0x7C7C0D then k=0x98FAC9 R=0x5 o=0x5 Y=R x=o else n=F[r(0x138E)]T=F[r(0xBBF)]n=R[n]n=n(R,T)k=n and 0x60E45A or 0x6E054A o=n end else xt=F[r(0x73F)]Yt=y[xt]xt=z[n]Ct=k It=Yt~=xt k=It and 0x8F9EB8 or 0x79DC84 Ft=It end else if k<0x7D1380 then if k<0x7D0BEE then k=0xEC4A9E else Y=F[r(0x30E)]C=y[Y]k=0x8F2C4D Y=F[r(0x580)]E=C[Y]Y=z[s[0x2]]C=E(Y)end else k=true k=k and 0xF59AFD or 0xCA84B1 end end else if k<0x7D32EB then if k<0x7D2D0A then if k<0x7D25D6 then R=x h=F[r(0x10EF)]Q=F[r(0xDD1)]f=o[Q]Q=C[h]T=f==Q k=T and 0x1C1C6F or 0x6B0DCB n=T else Y=F[r(0x116E)]x=F[r(0x20)]k=z[s[0x2]]Y=k[Y]Y=Y(k,x)k=nil x=k k=Y and 0xD9CF91 or 0x5D6427 end else C=nil E={}Y=nil k=y[F[r(0x16FF)]]end else if k<0x7D7D33 then if k<0x7D3B8D then k=0xF137C6 else W=not Y k=0x197386 E=W end else k=tt[0x1]z[x]=St tt[0x1]=z[x]k=tt[0x1]and 0x3B53C9 or 0xF3B2F8 end end end end else if k<0x7ED633 then if k<0x7E5126 then if k<0x7E2C71 then if k<0x7E149A then if k<0x7DE89B then Z=false e=C==Z k=e and 0xBFD8AE or 0x890457 else i=z[s[0x16]]zt=-1 P=i[D]yt=F[r(0x250D)]st=0x0 k=0x469488 H=y[yt]i=F[r(0x1CB)]Wt=0xC kt=z[s[0x16]]at=kt[D]kt=F[r(0x1CB)]rt=at[kt]Ft=.05 ut=F[r(0x1FC)]bt=y[ut]It=F[r(0x199C)]Ct=y[It]xt=z[s[0x2]]Yt=xt/Wt It=Ct(Yt)Et=Ft*It Ft=0x8C lt=zt+Et zt=0x0 ut=bt(st,lt,zt)st=F[r(0x161C)]zt=F[r(0x1AC2)]Et=0x0 bt=y[st]lt=y[zt]zt=lt(Et)Et=F[r(0x1AC2)]lt=y[Et]Et=lt(Ft)Ct=0x0 Ft=F[r(0x1AC2)]lt=y[Ft]Ft={lt(Ct)}st=bt(zt,Et,a(Ft))zt=3.4 kt=ut*st ut=F[r(0x1FC)]bt=y[ut]st=0x0 lt=0x0 ut=bt(st,lt,zt)at=kt*ut kt=.1 yt=H(rt,at,kt)P[i]=yt end else Vt=Ut k=vt k=Ut and 0xDA1F3A or 0x7FC3F0 end else if k<0x7E4B78 then if k<0x7E45B3 then x=F[r(0xBC4)]E=F[r(0xC0D)]k=z[s[0x1]]W=0x23 Y=y[x]R=0x0 x=F[r(0x22B6)]C=Y[x]x=0x0 Y=C(x,W,R)k[E]=Y k=y[F[r(0x1096)]]E={}else It=z[Y]Yt=It()k=0x60D775 end else k=0x136019 h=F[r(0x510)]w=F[r(0x1CC9)]Q=false y[h]=Q h=y[w]w=F[r(0x168F)]c=z[s[0xD]]h[w]=c end end else if k<0x7E85DB then if k<0x7E6DB4 then if k<0x7E6104 then R=F[r(0x20A0)]E=F[r(0x64)]k=y[E]x=z[s[0x1]]R=x[R]W={R(x)}x={k(a(W))}Y=x[0x3]E=x[0x1]C=x[0x2]x=E k=0x71B443 else k=0xD5595D end else h=F[r(0x517)]B=0x0 w=0x0 k=0x846BD4 Q=y[h]c=0x0 h=Q(w,c,B)E=h end else if k<0x7EBEE2 then if k<0x7E94D2 then W=F[r(0x510)]x=y[W]k=0xB6D534 W=true Y=x==W E=Y else h=F[r(0x161C)]x=W c=F[r(0x1AC2)]f=z[s[0x2]]Q=y[h]B=0x0 w=y[c]c=w(B)J=0x168 B=F[r(0x1AC2)]w=y[B]D=z[s[0x4]]Z=J/D e=Z*x B=w(e)e=F[r(0x1AC2)]w=y[e]X=0x4 Z=0x0 J=F[r(0x13DF)]e={w(Z)}h=Q(c,B,a(e))Q=F[r(0x1FC)]T=f*h c=F[r(0x8E8)]h=0x0 f=y[Q]w=y[c]Z=y[J]J=F[r(0x13E0)]e=Z[J]D=z[s[0x1]]J=D/X Z=e(J)J=F[r(0x13DF)]B=-Z X=0x4 Z=y[J]J=F[r(0x13E0)]e=Z[J]D=z[s[0x1]]J=D/X Z={e(J)}c=w(B,a(Z))w=z[s[0x5]]X=0x168 Q=f(h,c,w)k=T*Q f=F[r(0x200E)]w=F[r(0x19B5)]T=k k=y[f]D=0x168 c=0x0 h=y[w]B=0x0 J=F[r(0x2542)]w=z[s[0x6]]Z=F[r(0x1867)]Q=0x3 O=0x168 e=y[Z]Z=e(J)J=true e=F[r(0x1937)]f=k(Q,h,w,c,B,Z,e,C,J)Q=true w=F[r(0x161C)]x=nil J=0x0 Z=F[r(0x8E8)]k=F[r(0x1FC4)]B=F[r(0x1AC2)]f[k]=Q k=F[r(0x180B)]h=y[w]c=y[B]e=y[Z]Z={e(J,D)}e=F[r(0x1AC2)]B=c(a(Z))J=F[r(0x8E8)]c=y[e]D=0x0 Z=y[J]J={Z(D,X)}D=F[r(0x8E8)]e=c(a(J))Z=F[r(0x1AC2)]c=y[Z]J=y[D]X=0x0 D={J(X,O)}Z={c(a(D))}w=h(B,e,a(Z))Q=T*w h=F[r(0x30E)]f[k]=Q Q=z[s[0x7]]T=nil k=F[r(0x2504)]f[k]=Q Q=y[h]h=F[r(0x1925)]k=Q[h]Q=k(Y,f)k=0xC06E35 f=nil end else o=F[r(0xEC4)]R=C[o]o=F[r(0x9D2)]W=R[o]R=0x13F x=W>=R k=x and 0x2E6048 or 0x46AAE1 end end end else if k<0x7FF71C then if k<0x7F5AF9 then if k<0x7F512E then if k<0x7EF224 then R=nil k=0x486932 else k=z[s[0x1]]E=k()k=y[F[r(0x592)]]E={}end else Z=D k=X k=D and 0x53AAB3 or 0xBA273 end else if k<0x7FF3D2 then if k<0x7FA2F2 then o=z[s[0x4]]n=F[r(0x8CB)]R=o==n k=R and 0x7C6D3A or 0x98FAC9 else vt=F[r(0x1C89)]k=0xDA1F3A Ut=y[vt]Vt=Ut end else Z=0x0 J=0x0 e=F[r(0x517)]w=F[r(0x1897)]Q=F[r(0x24F7)]G=F[r(0x9D2)]T=F[r(0x200D)]E=y[T]f=F[r(0x1F8A)]k=0x7B418F h=F[r(0x1C34)]c=z[s[0x9]]B=y[e]K=z[s[0x9]]O=K[G]X=-O O=0x8 D=X/O e={B(Z,J,D)}T=E(f,x,Q,h,w,c,a(e))R=T end end else if k<0x8038AC then if k<0x80307D then if k<0x80268C then k=z[s[0x1]]E=F[r(0x18F6)]E=k[E]C=true E=E(k)k=z[s[0x2]]E=F[r(0x20C7)]k[E]=C C=0x5 Y=C E=0x1 C=0x1 x=C C=0x0 W=x<C k=0xE89AAD C=E-x else E=0x0 x=.1 k=0x2F5640 C=.4 R=F[r(0x252B)]W=y[R]Y=C C=x/W x=C C=0x0 W=x<C C=E-x end else w=nil c=nil k=0xA6A104 end else if k<0x804355 then k=B and 0x789E85 or 0xAB7F4F else C=C+x R=not W E=C<=Y E=R and E R=C>=Y R=W and R E=R or E R=0xA5C3FA k=E and R E=0x562CAF k=k or E end end end end end end end end end else if k<0xC137E4 then if k<0xA21E8A then if k<0x9080B0 then if k<0x88FD3F then if k<0x84149C then if k<0x8297D5 then if k<0x81CFF2 then if k<0x8154C2 then if k<0x80B204 then if k<0x80A44A then k=y[F[r(0x950)]]E={}else R=C E=F[r(0x25F7)]k=y[E]E=k()T=true n=z[s[0x1]]o=n==T k=o and 0x94FFB5 or 0x64F06B E=o end else x=not Y k=0x9E0DAB E=x end else if k<0x8193B3 then if k<0x816AA6 then O=F[r(0x17E2)]X=c[O]k=0x870CAE J=X else w=w+B Z=not e E=w<=c E=Z and E Z=w>=c Z=e and Z E=Z or E Z=0xFB826D k=E and Z E=0x1EA0AF k=k or E end else E={}k=y[F[r(0xCD5)]]end end else if k<0x822852 then if k<0x81FDD3 then if k<0x81E99F then E={}k=y[F[r(0xBB3)]]else C=F[r(0x15B0)]Y=F[r(0x829)]E=y[C]C=F[r(0x21D3)]f=I()C=E[C]C=C(E,Y)Y=F[r(0x13EE)]E=F[r(0x1F49)]x=F[r(0x605)]W=F[r(0x1E74)]k=C[E]C=I()z[C]=k T=nil E=z[C]k=E[Y]Y=I()z[Y]=k E=z[Y]x=E[x]x=x(E,W)E=F[r(0x1FE3)]n=nil k=x[E]x=I()z[x]=k W=F[r(0x19B5)]E=y[W]W=F[r(0x1C35)]k=E[W]W=I()o=nil Q=I()z[W]=k E=F[r(0x15B0)]k=y[E]E=F[r(0x21D3)]E=k[E]R=F[r(0x1509)]E=E(k,R)k=false h=I()R=E z[f]=k E=nil z[Q]=E z[h]=o o=I()z[o]=n n=I()E=F[r(0x19C5)]z[n]=T T=M(0x2EFB7E,{s[0x1],n,f,Q;h;o;s[0x2];C,x;s[0x3],Y,W})k=R[E]E=F[r(0x89E)]W=V(W)E=k[E]E=E(k,T)T=A(0x8395BC,{s[0x1];n,f,Q;h,o,s[0x2]})E=F[r(0x19C6)]k=R[E]R=nil E=F[r(0x89E)]w=F[r(0x2124)]E=k[E]E=E(k,T)T=F[r(0x15B0)]E=y[T]T=F[r(0x21D3)]T=E[T]T=T(E,w)E=F[r(0x99A)]k=T[E]E=F[r(0x89E)]T=L(0x3BE3A4,{s[0x1],f;Q,h,o;x;Y;n,C})Q=V(Q)o=V(o)E=k[E]f=V(f)h=V(h)Y=V(Y)E=E(k,T)k=y[F[r(0xF4E)]]E={}n=V(n)x=V(x)C=V(C)end else f=F[r(0xBC4)]o=F[r(0x11F3)]k=R[o]T=y[f]o=F[r(0x258F)]f=F[r(0x22B6)]n=T[f]Q=0x0 f=0x32 h=0x32 T=n(f,Q,h)k[o]=T k=0x2C7806 end else if k<0x82812D then if k<0x826D17 then k=z[s[0x1]]E=k()E={}k=y[F[r(0x1D27)]]else k=0x7E618C o=false z[s[0x7]]=o end else J=true G=F[r(0x1B86)]z[s[0x18]]=J O=F[r(0x1B86)]X=y[O]O=F[r(0x1C00)]D=X[O]K=y[G]G=F[r(0x1F6F)]O=K[G]G=v(0x2D9105,{s[0x18]})K={O(G)}X=D(a(K))O=z[s[0x16]]X=#O O=X D=0x1 X=0x1 K=X X=0x0 G=K<X k=0xC42D11 X=D-K end end end else if k<0x83883C then if k<0x8333C3 then if k<0x82FF43 then if k<0x82D01F then k=Y and 0x733FFF or 0x7D28E9 else k=0x0 C=k k=0x2A0142 end else Vt,mt=xt(Wt,Vt)k=Vt and 0x8A471C or 0xF9C64E end else if k<0x8362FA then if k<0x833E7E then E=F[r(0x25F7)]k=y[E]R=C E=k()T=true n=z[s[0x1]]o=n==T k=o and 0x745E27 or 0xDBA369 E=o else C=true E=z[s[0x2]]k=E==C k=k and 0x56CE9C or 0xE8CBFB end else Y=F[r(0x200E)]Q=F[r(0xC8A)]e=0x0 R=F[r(0xDF1)]n=0x1 k=true z[s[0x2]]=k E=false z[s[0x3]]=E x=0x3 C=y[Y]f=F[r(0x1867)]W=z[s[0x4]]o=0x0 T=y[f]f=T(Q)w=F[r(0x517)]Z=0xB4 T=F[r(0x1893)]B=.8 J=0x0 h=y[w]c=2.5 w=h(c,B,e)e=-12 h=1.5 Q=w*h h=false Y=C(x,W,R,o,n,f,T,Q,h)x=F[r(0x25BD)]w=0x0 n=F[r(0x239C)]k=0x49FD90 W=F[r(0xF04)]C=I()z[C]=Y o=F[r(0x239C)]h=F[r(0x1FC)]Y=y[x]B=0x0 c=0x0 R=y[o]o=y[n]n=z[C]Q=y[h]h=Q(w,c,B)B=F[r(0x1AC2)]w=F[r(0x161C)]Q=y[w]c=y[B]B=c(e)e=F[r(0x1AC2)]c=y[e]e=c(Z)Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}w=Q(B,e,a(Z))c=0x0 f=h*w B=1.5 h=F[r(0x1FC)]Q=y[h]w=0x0 h=Q(w,c,B)w=0x0 Q=F[r(0x1FC)]T=f*h B=0x0 f=y[Q]h=0x0 c=0x0 Q={f(h,w,c)}x=Y(W,R,o,n,T,a(Q))R=F[r(0x20A8)]Y=I()w=0x0 z[Y]=x h=0x0 W=F[r(0x22D6)]x=y[W]Q=0x0 n=0x2 o=z[C]W=x(R,o)R=F[r(0x1EDA)]f=F[r(0x1B91)]c=0x0 o=0x1 x=y[R]T=y[f]f=T(Q,h,w,c)c=0x1 w=0x0 e=0x0 h=0x1 Q=F[r(0x1B91)]T=y[Q]Q=T(h,w,c,B)w=0x0 c=0x0 h=F[r(0x1BC)]T=y[h]B=0x0 h=T(w,c,B)w=F[r(0x1BC)]T=y[w]B=0x0 c=0x0 w=T(c,B,e)T=F[r(0x20E8)]B=F[r(0x4BE)]R=x(W,o,n,f,Q,h,w,T)h=0x1 Q=0x1 n=F[r(0xB1E)]f=F[r(0x1BC)]c=0x1 o=F[r(0x1EDB)]w=0x1 x=y[o]T=y[f]f=T(Q,h,w)w=F[r(0xD62)]h=y[w]w=F[r(0x24D5)]Q=h[w]h=F[r(0x1899)]T=Q[h]Q=F[r(0xC5A)]w=0x1 h=.5 o=x(R,n,f,T,Q,h,w,c,B)f=F[r(0x1B86)]h=F[r(0x1B86)]n=I()x={}z[n]=x T=y[f]f=F[r(0x1C00)]x=T[f]Q=y[h]h=F[r(0x1F6F)]f=Q[h]h=S(0xEE9DC0,{C})Q={f(h)}T=x(a(Q))x=0x1 T=0xC f=T T=0x1 Q=T T=0x0 h=Q<T T=x-Q end end else if k<0x83CE1D then if k<0x83A4FE then if k<0x83922C then x=F[r(0x1F5)]E=y[x]x=F[r(0xEE8)]k=0xE0FF0D x=E[x]x=x(E)x=F[r(0x11B2)]E=y[x]x=E()E=F[r(0x1C05)]y[E]=x else x=true E=z[s[0x1]]k=E==x k=k and 0x5C5DBE or 0xD5595D Y=b[0x2]C=b[0x1]end else o=F[r(0x1CC9)]E=Y[o]n=false o=F[r(0x1E3F)]E[o]=n n=0x10 o=F[r(0x1CC9)]E=R[o]o=F[r(0x168F)]E[o]=n o=F[r(0x1CC9)]n=0x32 E=R[o]o=F[r(0x13B8)]E[o]=n o=F[r(0x1CC9)]T=F[r(0x1CC9)]E=Y[o]n=0x10 o=F[r(0x168F)]Q=F[r(0xD62)]E[o]=n o=F[r(0x1CC9)]E=Y[o]n=0x32 o=F[r(0x13B8)]E[o]=n n=Y[T]T=F[r(0x9F3)]o=n[T]f=y[Q]Q=F[r(0x212D)]T=f[Q]f=F[r(0x1B02)]n=T[f]E=o==n k=E and 0xFEA8D7 or 0xD3CC45 end else if k<0x840645 then if k<0x83DD2F then R=R+n f=not T E=R<=o E=f and E f=R>=o f=T and f E=f or E f=0xCFF131 k=E and f E=0x857A11 k=k or E else k=o k=E and 0x9A91FB or 0x3B9904 end else e=F[r(0x21B5)]k=0xBE3CF7 B=F[r(0x116E)]B=h[B]B=B(h,e)c=B end end end end else if k<0x8640B9 then if k<0x84B33F then if k<0x846955 then if k<0x84575E then if k<0x844071 then c=not w f=f+h T=f<=Q T=c and T c=f>=Q c=w and c T=c or T c=0x421DCE k=T and c T=0x4DFCB9 k=k or T else Q=nil f=nil W=nil E={}h=nil C=nil w=nil o=nil R=nil Y=nil x=nil c=nil B=nil k=y[F[r(0x1832)]]n=nil T=nil end else K=F[r(0x1C4C)]at=0x1 O=y[K]K=F[r(0x22B6)]k=O[K]K=F[r(0x8BD)]O=k(K,B)k=F[r(0x246A)]K=B O[k]=K ut=0x0 k=F[r(0x2469)]K=Z Yt=0x0 yt=0x0 O[k]=K i=.5 rt=0x0 K=F[r(0x1035)]kt=0x0 k=F[r(0xDD1)]H=0x0 O[k]=K P=F[r(0x180B)]lt=0x0 G=y[P]zt=0x0 k=F[r(0x1CB)]P=F[r(0x22B6)]K=G[P]st=-1 bt=0x1 P=0x1 G=K(P,i,H,yt,rt,at,kt,bt,ut,st,lt,zt)P=F[r(0x180B)]i=.5 rt=0x0 yt=0x0 H=0x0 bt=0x1 st=-1 O[k]=G G=y[P]kt=0x0 ut=0x0 lt=0x0 P=F[r(0x22B6)]at=0x1 K=G[P]k=F[r(0x1E2)]zt=0x0 P=-0.5 G=K(P,i,H,yt,rt,at,kt,bt,ut,st,lt,zt)O[k]=G i=F[r(0x180B)]G=F[r(0x1C4C)]K=y[G]Ft=0x0 lt=0x1 G=F[r(0x22B6)]k=K[G]bt=0x0 G=F[r(0x8BD)]K=k(G,B)G=B zt=0x0 k=F[r(0x246A)]K[k]=G kt=-1 k=F[r(0x2469)]G=e K[k]=G k=F[r(0xDD1)]Ct=0x0 ut=0x1 at=0x0 H=.5 st=0x0 G=F[r(0x1CC2)]K[k]=G P=y[i]i=F[r(0x22B6)]k=F[r(0x1CB)]G=P[i]i=-1 Et=0x0 yt=0x0 rt=0x0 P=G(i,H,yt,rt,at,kt,bt,ut,st,lt,zt,Et)i=F[r(0x180B)]rt=0x0 bt=0x0 yt=0x0 K[k]=P k=F[r(0x1E2)]zt=0x0 P=y[i]lt=0x1 i=F[r(0x22B6)]Et=0x0 H=.5 st=0x0 kt=-1 G=P[i]ut=0x1 at=0x0 i=.5 P=G(i,H,yt,rt,at,kt,bt,ut,st,lt,zt,Et)Et=0x0 K[k]=P P=F[r(0x1C4C)]G=y[P]It=0x0 at=0x0 kt=0x0 P=F[r(0x22B6)]k=G[P]P=F[r(0x8BD)]G=k(P,B)ut=0x0 bt=0x1 H=F[r(0x180B)]P=B k=F[r(0x246A)]G[k]=P k=F[r(0x2469)]st=0x1 P=D G[k]=P k=F[r(0xDD1)]zt=-1 P=F[r(0x155B)]rt=0x0 lt=0x0 yt=-1 G[k]=P i=y[H]H=F[r(0x22B6)]k=F[r(0x1CB)]P=i[H]H=0x1 i=P(H,yt,rt,at,kt,bt,ut,st,lt,zt,Et,Ft)Et=0x0 G[k]=i k=F[r(0x1E2)]lt=0x0 at=0x0 H=F[r(0x180B)]rt=0x0 kt=0x0 ut=0x0 st=0x1 i=y[H]H=F[r(0x22B6)]yt=0x1 P=i[H]zt=-1 bt=0x1 H=.5 Ft=0x0 i=P(H,yt,rt,at,kt,bt,ut,st,lt,zt,Et,Ft)G[k]=i yt=F[r(0x180B)]i=F[r(0x1C4C)]P=y[i]i=F[r(0x22B6)]zt=0x0 k=P[i]i=F[r(0x8BD)]st=0x0 kt=0x0 P=k(i,B)k=F[r(0x246A)]rt=-1 i=B Et=0x1 P[k]=i i=J k=F[r(0x2469)]P[k]=i k=F[r(0xDD1)]lt=0x1 i=F[r(0x2309)]P[k]=i bt=0x0 ut=-1 k=F[r(0x1CB)]H=y[yt]yt=F[r(0x22B6)]at=0x0 i=H[yt]Ft=0x0 yt=-1 H=i(yt,rt,at,kt,bt,ut,st,lt,zt,Et,Ft,Ct)P[k]=H yt=F[r(0x180B)]H=y[yt]st=0x0 yt=F[r(0x22B6)]k=F[r(0x1E2)]kt=0x0 ut=-1 i=H[yt]Ft=0x0 Ct=0x0 rt=0x1 zt=0x0 bt=0x0 yt=-0.5 Et=0x1 lt=0x1 at=0x0 H=i(yt,rt,at,kt,bt,ut,st,lt,zt,Et,Ft,Ct)P[k]=H ut=0x0 H=F[r(0x1C4C)]i=y[H]H=F[r(0x22B6)]Et=0x1 k=i[H]st=0x0 H=F[r(0x8BD)]zt=0x0 i=k(H,B)H=B rt=F[r(0x180B)]k=F[r(0x246A)]bt=-1 i[k]=H k=F[r(0x2469)]H=c i[k]=H kt=0x0 H=F[r(0xDF0)]Ft=0x0 k=F[r(0xDD1)]i[k]=H yt=y[rt]k=F[r(0x1CB)]rt=F[r(0x22B6)]H=yt[rt]Ct=0x1 at=0x1 rt=0x0 lt=0x0 yt=H(rt,at,kt,bt,ut,st,lt,zt,Et,Ft,Ct,It)It=0x0 i[k]=yt zt=0x0 st=0x0 rt=F[r(0x180B)]Ct=0x1 k=F[r(0x1E2)]at=-0.5 kt=0x0 yt=y[rt]rt=F[r(0x22B6)]Ft=0x0 lt=0x0 Et=0x1 H=yt[rt]rt=0x0 bt=-1 ut=0x0 yt=H(rt,at,kt,bt,ut,st,lt,zt,Et,Ft,Ct,It)ut=-1 i[k]=yt yt=F[r(0x1C4C)]H=y[yt]zt=0x0 yt=F[r(0x22B6)]It=0x1 k=H[yt]yt=F[r(0x8BD)]H=k(yt,X)yt=X st=0x0 k=F[r(0x246A)]H[k]=yt yt=B lt=0x0 k=F[r(0x2469)]H[k]=yt k=F[r(0xDD1)]yt=F[r(0x1537)]Ct=0x0 at=F[r(0x180B)]Ft=0x1 H[k]=yt k=F[r(0x1CB)]rt=y[at]Et=0x0 at=F[r(0x22B6)]kt=0x0 yt=rt[at]bt=0x0 at=0x0 rt=yt(at,kt,bt,ut,st,lt,zt,Et,Ft,Ct,It,Yt)lt=0x0 Ft=0x1 H[k]=rt at=F[r(0x180B)]st=0x0 ut=-1 Yt=0x0 rt=y[at]zt=0x0 bt=0x0 Ct=0x0 k=F[r(0x1E2)]at=F[r(0x22B6)]It=0x1 yt=rt[at]Et=0x0 at=0x0 kt=0x0 rt=yt(at,kt,bt,ut,st,lt,zt,Et,Ft,Ct,It,Yt)H[k]=rt rt=F[r(0x1C4C)]yt=y[rt]rt=F[r(0x22B6)]k=yt[rt]rt=F[r(0x1CC9)]bt=F[r(0xBC4)]yt=k(rt,o)rt=F[r(0xDED)]ut=1.25 k=F[r(0x1117)]yt[k]=rt at=F[r(0x1C4C)]rt=y[at]at=F[r(0x22B6)]k=rt[at]st=1.25 at=F[r(0x1F8A)]rt=k(at,c)k=F[r(0x25D9)]kt=y[bt]bt=F[r(0x22B6)]at=kt[bt]bt=1.25 kt=at(bt,ut,st)rt[k]=kt at=o kt=z[s[0x1]]bt=true k=kt==bt k=k and 0x2A5D62 or 0xF47113 end else if k<0x84A7E9 then if k<0x849316 then k=f T[k]=E E=o k=F[r(0x25D9)]T[k]=E k=F[r(0x1725)]E=Y T[k]=E k=y[F[r(0x631)]]E={T}else bt=nil kt=z[s[0xC]]at=kt~=bt k=at and 0x5BFE91 or 0xA25AF3 end else C=b[0x1]E=0x0 k=C>=E k=k and 0x8D693E or 0xABCCC3 end end else if k<0x857886 then if k<0x851166 then if k<0x84D97E then B=F[r(0xDD1)]c=w[B]B=F[r(0x68D)]E=c==B k=E and 0x1C81AC or 0x9E2D74 else k=Y and 0x122A02 or 0xB9FFE6 end else Mt=F[r(0x2651)]vt=F[r(0xCEF)]Ut=y[vt]Lt=y[Mt]lt=Wt Nt=Lt[Vt]vt=Ut(Nt)Nt=F[r(0xCEF)]Ut=y[Nt]Mt=z[ut]Lt=Mt[Vt]Nt=Ut(Lt)mt=vt~=Nt k=mt and 0x9060ED or 0xA2F2A3 end else if k<0x860A90 then if k<0x857E7D then O=0x1 P=F[r(0x2024)]o=F[r(0x267B)]i=0x8 E=F[r(0x1937)]Q=F[r(0x2304)]T=F[r(0xBA5)]n=0x4 e=F[r(0x23FF)]f=F[r(0xDAF)]Z=0xF B=0x3 G=0x1E J=F[r(0x226C)]k=y[E]h=F[r(0x2504)]c=F[r(0x2504)]w=x[c]X=F[r(0x226C)]D=x[X]K=F[r(0x15D7)]c=F[r(0xD33)]X=F[r(0x973)]R={[o]=n;[T]=f;[Q]=Y,[h]=w,[c]=B;[e]=Z;[J]=D;[X]=O;[K]=G;[P]=i}f=F[r(0x252B)]E=k(R)R=.85 o=R T=y[f]n=.1 k=0xDA2FFE R=n/T E=0x0 n=R R=0x0 T=n<R R=E-n else n=0x4 T=n n=0x1 k=0x48E945 f=n n=0x0 E=0x1 Q=f<n n=E-f end else k=z[s[0x1]]k=k and 0xD5E45E or 0xC30300 end end end else if k<0x873B09 then if k<0x86E95F then if k<0x86B5F2 then if k<0x86742B then C=b[0x1]x=F[r(0x2125)]Y=C[x]R=F[r(0xD33)]x=F[r(0x189D)]E=Y or x x=k Y=I()z[Y]=E W=C[R]E=W k=W and 0x8A010B or 0x763122 else k=z[s[0x1]]E=k()k=y[F[r(0x9F5)]]E={}end else E={}k=y[F[r(0x347)]]end else if k<0x870F23 then if k<0x86F08B then k=0x65B113 else k=D D=F[r(0x1897)]k=0x2D07DA e=J or D B=e end else h=F[r(0xDD1)]c=F[r(0xDD1)]k=0x193744 Q=R[h]w=z[s[0x7]]h=w[c]f=Q~=h n=f end end else if k<0x8874D5 then if k<0x884125 then if k<0x882C00 then W=F[r(0x9E3)]Y=z[s[0x8]]x=F[r(0x116E)]x=Y[x]x=x(Y,W)k=0x26277B E=x else Y=F[r(0x14DA)]k=true R=false x=F[r(0xA3A)]z[s[0x2]]=k E=false n=0x0 z[s[0x3]]=E W=true C=y[Y]Y=C(x,W,R)f=0x0 x=.25 Y=F[r(0x11EF)]C=y[Y]Y=C(x)Y=F[r(0x1D79)]C=y[Y]o=F[r(0x1D79)]Y=F[r(0x1CB)]R=y[o]o=F[r(0x1CB)]T=-0.12 W=R[o]Q=F[r(0x239C)]o=F[r(0x1FC)]R=y[o]o=R(n,T,f)x=W*o w=F[r(0x239C)]C[Y]=x R=F[r(0x23BF)]Y=F[r(0x1EDC)]B=-1 n=false o=1.3 x=0x83CD4A3 C=y[Y]W=y[R]c=0x0 R=0x2 Y=C(x,W,R,o,n)Y=F[r(0x9B5)]o=F[r(0x239C)]C=y[Y]n=F[r(0x1FC)]R=y[o]o=F[r(0x21EA)]W=R[o]o=y[n]f=y[Q]Q=F[r(0x21EA)]T=f[Q]h=y[w]e=0x0 w=F[r(0x21EA)]Q=h[w]w=F[r(0x517)]h=y[w]w=h(c,B,e)f=Q+w n=o(T,f)o=F[r(0xEF)]Q=F[r(0x13EE)]R=n[o]f=y[Q]T=k n=f o=0x4 k=f and 0xCD6EDB or 0xA09F10 end else J=z[s[0x1]]D=0x7 B=k Z=J[D]e=Y==Z k=e and 0x4ACAA or 0x77DBE1 c=e end else if k<0x88CFF0 then if k<0x88B52C then xt=z[Y]k=0xAA28B8 Wt=xt()else o=nil R=nil k=0x52F685 end else yt=yt+at bt=not kt H=yt<=rt H=bt and H bt=yt>=rt bt=kt and bt H=bt or H bt=0x2D92DB k=H and bt H=0x4BB3B8 k=k or H end end end end end else if k<0x8C39C7 then if k<0x8B26FD then if k<0x8A4AF5 then if k<0x89ED68 then if k<0x897A7A then if k<0x891098 then k=0xC8E3B else k=0x4C6B4A end else Q=F[r(0x138E)]R=T Q=f[Q]h=F[r(0x22C9)]Q=Q(f,h)k=Q and 0xD78668 or 0xF40C47 end else if k<0x8A2992 then if k<0x89FAB1 then C=b[0x1]k=true Y=F[r(0x166D)]z[s[0x1]]=k E=C==Y k=E and 0x3AD80 or 0xD7B726 else k=x W=k o=F[r(0x25DD)]x=I()z[x]=E R=C[o]k=R and 0x94F623 or 0x6E642F E=R end else Yt=Vt k=mt and 0xE8D88D or 0xAC6820 end end else if k<0x8AD375 then if k<0x8AAA95 then if k<0x8A94C7 then e=F[r(0x13DF)]X=.5 E=y[e]e=F[r(0x100D)]k=E[e]Z=0x1 e=Z+B E=k(e)e=E E=.5 k=E/e E=Q-T Z=k k=E*Z J=R-f E=J*Z D=o-W J=D*Z D=e*X E={k;E,J;D}k=y[F[r(0x1C0C)]]else k=o and 0x1EE9EA or 0xCEC68F end else k=F[r(0x1D74)]D=F[r(0x228B)]k=w[k]c=F[r(0x1F8A)]J=F[r(0x138E)]J=w[J]k=k(w,c)c=k Z=k J=J(w,D)e=J k=J and 0xACA73E or 0xC41FEC end else if k<0x8AEC04 then if k<0x8ADD25 then k=0xF6B51 else k=true D=0x2 G=F[r(0xD33)]X=1.6 C=k Z=0xA67E2FC e=F[r(0x1EDC)]E=y[e]J=z[s[0x1]]k=0x702EB9 O=false e=E(Z,J,D,X,O)e=F[r(0x20DD)]D=F[r(0x21EA)]E=y[e]J=z[s[0x1]]Z=J[D]D=0x6 K=z[s[0x1]]O=K[G]K=F[r(0xAAE)]X=O[K]K=false J=D*X X=0x23 O=0xC D=0x19 e=E(Z,J,D,X,O,K)e=0x2 Z=e E=0x1 e=0x1 J=e e=0x0 D=J<e e=E-J end else O=false X=z[s[0x17]]D=X==O k=D and 0xFCC973 or 0x7C5543 end end end else if k<0x8BB2AB then if k<0x8B7E3A then if k<0x8B52CD then if k<0x8B4B51 then Y=0x1 C=nil k=z[s[0x1]]E=F[r(0x5D2)]k[E]=Y E=F[r(0x1938)]k=y[E]E=F[r(0x732)]E=k[E]x=0x5 Y=z[s[0x1]]E=E(k,Y,x)k=y[F[r(0x1A21)]]E={}else D=F[r(0x2524)]Y=R Q=F[r(0x25F7)]f=y[Q]Q=f()B=F[r(0x13DF)]Q=F[r(0xAED)]c=y[B]B=F[r(0x13E0)]w=c[B]J=y[D]D=F[r(0x140F)]Z=J[D]J=F[r(0x1157)]D=F[r(0x13DF)]e=Z[J]Z=F[r(0x9D2)]B=e[Z]c=w(B)J=y[D]P=F[r(0x2524)]D=F[r(0x13E0)]Z=J[D]G=y[P]P=F[r(0x140F)]K=G[P]G=F[r(0x1157)]k=0x478B34 B=F[r(0xD55)]O=K[G]G=F[r(0x13DF)]K=F[r(0x957)]Y=nil X=O[K]O=3.15 yt=F[r(0x2524)]D=X+O J=Z(D)K=y[G]D=F[r(0xD55)]G=F[r(0x13E0)]O=K[G]H=y[yt]yt=F[r(0x140F)]i=H[yt]H=F[r(0x1157)]P=i[H]i=F[r(0xAAE)]G=P[i]K=O(G)O=F[r(0xB2A)]X=K..O Z=D..X e=J..Z w=B..e h=c..w f=Q..h h=f Q=F[r(0xE88)]W[Q]=h f=nil end else w=F[r(0x11F3)]k=F[r(0x116E)]k=h[k]k=k(h,w)w=k k=w and 0x9A87A7 or 0xC162A4 c=w end else if k<0x8B7FB1 then if k<0x8B7EF0 then G=z[s[0x9]]P=z[s[0x10]]K=G-P k=0x60A501 X=K else C=F[r(0x15B0)]W=F[r(0x19B5)]Y=F[r(0x829)]E=y[C]C=F[r(0x21D3)]C=E[C]C=C(E,Y)E=F[r(0x1F49)]k=C[E]o=F[r(0x116E)]C=k E=F[r(0x13EE)]k=C[E]E=F[r(0xD9C)]Y=k k=Y[E]x=k E=y[W]W=F[r(0x1C35)]n=F[r(0x146F)]k=E[W]o=Y[o]W=k k=F[r(0x2C5)]o=o(Y,n)E=o R=k k=o and 0xBF462D or 0xE21FF9 end else C=true E=z[s[0x1]]k=E==C k=k and 0x92F7DC or 0x4584C8 end end else if k<0x8BFD6F then if k<0x8BD8FF then if k<0x8BD19F then k=0x8C414A else k=o k=R and 0xAF2291 or 0x98D007 end else D=F[r(0x239C)]e=F[r(0x1FC)]x=T B=y[e]G=0x0 J=y[D]K=F[r(0x8E8)]D=F[r(0x21EA)]Z=J[D]e=B(Z)Z=F[r(0x161C)]D=F[r(0x1AC2)]H=0x0 X=0x0 B=y[Z]J=y[D]D=J(X)X=F[r(0x1AC2)]J=y[X]P=0x168 O=y[K]K={O(G,P)}rt=0x0 X=J(a(K))O=F[r(0x1AC2)]K=0x0 J=y[O]O={J(K)}Z=B(D,X,a(O))c=e*Z e=F[r(0x1FC)]B=y[e]i=F[r(0x239C)]J=0x0 X=F[r(0x8E8)]O=0x4 D=y[X]K=0xF G=F[r(0x239C)]X={D(O,K)}Z=0x0 e=B(Z,J,a(X))X=F[r(0x1FC)]w=c*e c=I()B=F[r(0x9B5)]z[c]=w D=F[r(0x239C)]w=y[B]J=y[D]yt=-1 D=F[r(0x21EA)]Z=J[D]D=y[X]K=y[G]G=F[r(0x21EA)]O=K[G]P=y[i]i=F[r(0x21EA)]G=P[i]i=F[r(0x517)]P=y[i]i=P(H,yt,rt)K=G+i X=D(O,K)O=k D=F[r(0xEF)]J=X[D]G=F[r(0x13EE)]K=y[G]X=K k=K and 0x5F443A or 0xC2CE1E D=0x4 end else if k<0x8C0AD7 then if k<0x8C0266 then J=0x0 w=F[r(0x258F)]e=F[r(0xBC4)]Z=0x23 h=z[Q]k=0x64CCE6 B=y[e]e=F[r(0x22B6)]c=B[e]f=nil e=0x0 B=c(e,Z,J)c=L(0xB55666,{Q})h[w]=B w=F[r(0x9E)]h=y[w]w=h(c)else W=F[r(0x18D7)]x=z[s[0x3]]k=x==W k=k and 0xD61CB6 or 0x9EA8B1 end else f=F[r(0x1FE3)]Q=F[r(0x20)]k=n[f]f=k h=F[r(0xD9C)]k=f[Q]Q=k k=f[h]h=k c=Q w=F[r(0x1035)]k=Q[w]B=F[r(0x1559)]w=F[r(0x246A)]k[w]=c w=F[r(0x1035)]k=Q[w]c=f[B]w=F[r(0x2469)]k[w]=c B=F[r(0x2307)]w=F[r(0x1CC2)]c=Q k=Q[w]w=F[r(0x246A)]k[w]=c w=F[r(0x1CC2)]k=Q[w]w=F[r(0x2469)]c=f[B]k[w]=c B=F[r(0x155A)]w=F[r(0x155B)]k=Q[w]w=F[r(0x246A)]c=Q k[w]=c w=F[r(0x155B)]k=Q[w]c=f[B]w=F[r(0x2469)]k[w]=c c=Q w=F[r(0x2309)]k=Q[w]w=F[r(0x246A)]k[w]=c w=F[r(0x2309)]k=Q[w]Z=F[r(0x20A0)]w=F[r(0x2469)]B=F[r(0x2308)]c=f[B]k[w]=c w=F[r(0xDF0)]B=F[r(0x6AC)]c=Q k=Q[w]w=F[r(0x246A)]k[w]=c w=F[r(0xDF0)]k=Q[w]c=f[B]w=F[r(0x2469)]k[w]=c w=F[r(0x1CC9)]k=f[w]c=F[r(0xDED)]w=F[r(0x1117)]k[w]=c c=0x0 w=F[r(0x1CC9)]k=f[w]w=F[r(0x1212)]k[w]=c w=F[r(0x1537)]k=h[w]c=h w=F[r(0x246A)]k[w]=c w=F[r(0x1537)]k=h[w]c=Q w=F[r(0x2469)]k[w]=c k=F[r(0x1E5B)]c=F[r(0x6AC)]w=Y[c]f[k]=w w=F[r(0x1CC9)]c=0x0 k=f[w]w=F[r(0x168F)]k[w]=c c=0x0 w=F[r(0x1CC9)]Z=f[Z]k=f[w]w=F[r(0x13B8)]k[w]=c w=F[r(0x1CC9)]k=Y[w]c=0x0 w=F[r(0x168F)]k[w]=c w=F[r(0x1CC9)]k=Y[w]c=0x0 w=F[r(0x13B8)]k[w]=c w=F[r(0x64)]k=y[w]e={Z(f)}Z={k(a(e))}c=Z[0x2]w=Z[0x1]k=0x945333 B=Z[0x3]end end end end else if k<0x8EAAF2 then if k<0x8DF3EC then if k<0x8CD052 then if k<0x8C6FE9 then if k<0x8C4BC5 then n=true k=n and 0x734E28 or 0xB731B0 else k=c k=E and 0xFAB906 or 0xB24EF1 end else k=F[r(0x258F)]T=F[r(0xBC4)]n=y[T]T=F[r(0x22B6)]o=n[T]T=0x14 Q=0x14 f=0x0 n=o(T,f,Q)R[k]=n k=0x7B20FC end else if k<0x8D4036 then if k<0x8D2B8A then zt,Et=st(lt,zt)k=zt and 0xFCD469 or 0x3F06F8 else E=F[r(0xDD1)]c=F[r(0x2307)]w[E]=c c=0x1 e=F[r(0xDD1)]E=z[s[0x4]]B=w[e]k=0xDB9C87 E[c]=B end else k=0x0 C=k k=0xABCCC3 end end else if k<0x8E4DEA then if k<0x8E1495 then if k<0x8E0BDD then k=B and 0xCBA9BB or 0x7B0FE6 else k=z[s[0x1]]E=k()k=y[F[r(0x655)]]E={}end else E=F[r(0x2504)]R=z[s[0x7]]x[E]=R E=nil o=z[s[0x8]]n=F[r(0x189D)]R=E E=o==n k=E and 0xCBE4FE or 0x6446B0 end else if k<0x8E95D7 then if k<0x8E5EED then tt[0xC]=F[r(0x1480)]at=0x32 H=F[r(0x2145)]zt=0x0 ut=F[r(0xD33)]vt=F[r(0x21EA)]E=y[H]i=O tt[0x7]=0x1 k=0xB45912 bt=F[r(0x1FE2)]kt=F[r(0x2125)]Et=0x0 rt=F[r(0xEA7)]tt[0x4]=F[r(0x1BC)]Ft=0x0 Vt=F[r(0x1FC)]lt=F[r(0x517)]st=y[lt]lt=st(zt,Et,Ft)Ct=F[r(0x517)]Yt=F[r(0xD33)]Ft=y[Ct]st=F[r(0x25DD)]It=0x0 Ct=Ft(X,It,X)Ft=0xF Et=Ct/Ft It=z[s[0x1]]Ct=It[Yt]tt[0x8]=F[r(0x1F64)]Yt=F[r(0x180B)]St=0x168 It=F[r(0xAAE)]Ft=Ct[It]It=0x1 zt=Et*Ft Ft=.8 tt[0xA]=F[r(0x1508)]Et=F[r(0x5D2)]Ct=F[r(0x1E7C)]Lt=F[r(0x8E8)]tt[0x1]=0x168 Wt=y[Vt]tt[0xE]=F[r(0x1CFD)]Ut=z[s[0x1]]Mt=0x0 mt=Ut[vt]Vt=Wt(mt)vt=F[r(0x1AC2)]tt[0xF]=0xA mt=F[r(0x161C)]tt[0x5]=0x1 i=nil tt[0x9]=nil Wt=y[mt]Ut=y[vt]Nt=y[Lt]Lt={Nt(Mt,St)}vt=Ut(a(Lt))Nt=F[r(0x1AC2)]Mt=F[r(0x8E8)]tt[0x2]=0x168 Ut=y[Nt]St=0x0 Lt=y[Mt]Mt={Lt(St,tt[0x1])}tt[0x1]=0x0 tt[0xB]=true St=F[r(0x8E8)]Nt=Ut(a(Mt))Lt=F[r(0x1AC2)]Ut=y[Lt]Mt=y[St]St={Mt(tt[0x1],tt[0x2])}Mt=0x0 Lt={Ut(a(St))}mt=Wt(vt,Nt,a(Lt))vt=F[r(0x1539)]tt[0x6]=0x1 St=F[r(0x226C)]xt=Vt*mt Wt=F[r(0x1423)]tt[0x1]=F[r(0xDF1)]Lt=F[r(0x1538)]tt[0x3]=y[tt[0x4]]tt[0x4]=tt[0x3](tt[0x5],tt[0x6],tt[0x7])tt[0x6]=F[r(0x2097)]tt[0x2]=F[r(0x2504)]mt=F[r(0x153A)]tt[0x5]=nil tt[0x7]=nil Nt=0x0 Vt=nil Ut=0x0 tt[0xD]=0x0 tt[0x3]=F[r(0x955)]yt={[rt]=at;[kt]=bt,[ut]=lt;[st]=zt,[Et]=Ft,[Ct]=It;[Yt]=xt,[Wt]=Vt;[mt]=Ut;[vt]=Nt;[Lt]=Mt;[St]=tt[0x1],[tt[0x2]]=tt[0x4];[tt[0x3]]=tt[0x5],[tt[0x6]]=tt[0x7],[tt[0x8]]=tt[0x9];[tt[0xA]]=tt[0xB],[tt[0xC]]=tt[0xD];[tt[0xE]]=tt[0xF]}H=E(yt)else Mt=F[r(0x30E)]Lt=y[Mt]k=0x7E1A0C Mt=F[r(0x1C89)]Nt=Lt[Mt]Ut=Nt end else k=F[r(0x116E)]k=Y[k]k=k(Y,R)J=F[r(0x1C4C)]w=k e=F[r(0xF04)]k=F[r(0x250E)]k=w[k]B=F[r(0x11F3)]k=k(w)X=F[r(0x11F3)]c=k k=w[B]B=F[r(0x1030)]B=k[B]B=B(k,e)e=F[r(0x2469)]k=B[e]O=F[r(0x11F3)]Z=y[J]e=k J=F[r(0x22B6)]k=Z[J]D=c[X]J=F[r(0xF04)]Z=k(J,D)X=F[r(0x11F3)]K=F[r(0xDD1)]D=w[X]X=F[r(0x1A90)]J=D[X]D=F[r(0x1CB)]k=J[D]X=w[O]O=F[r(0x1A90)]D=X[O]w=nil X=F[r(0x1E2)]J=k k=D[X]X=f D=k k=F[r(0x1725)]O=F[r(0x11F3)]c[k]=X k=F[r(0xDD1)]X=F[r(0x1A90)]Z[k]=X k=F[r(0x1CB)]X=J Z[k]=X k=F[r(0x1E2)]X=D Z[k]=X D=nil k=F[r(0x246A)]X=c[O]Z[k]=X X=F[r(0x116E)]O=e[K]X=f[X]k=F[r(0x2469)]X=X(f,O)Z[k]=X X=F[r(0x11F3)]O=0x1 e=nil J=nil k=c[X]X=F[r(0x5D2)]c=nil k[X]=O k=0x13CF2C B=nil Z=nil end end end else if k<0x8F9E70 then if k<0x8F3D29 then if k<0x8F3518 then if k<0x8EE326 then O=F[r(0xDD1)]X=Z[O]O=F[r(0xD9C)]D=X~=O J=D k=0x2FC2CB else E=z[s[0x3]]k=E and 0x1AC734 or 0x19B9B8 end else k=0x7BB7C5 C=false Y=false z[s[0x2]]=C z[s[0x3]]=Y end else if k<0x8F5066 then if k<0x8F495A then E={}k=y[F[r(0x2414)]]else k=0x7C5543 end else vt=k Mt=F[r(0xEE)]Lt=y[Mt]Nt=Lt~=Q k=Nt and 0x2CD525 or 0xCA0C80 Ut=Nt end end else if k<0x8FDFF7 then if k<0x8FBC81 then if k<0x8FA996 then k=Ct zt=Ft k=0xD2C313 else w=F[r(0x1CC9)]k=F[r(0x1D74)]k=h[k]k=k(h,w)w=k k=w and 0xB66DCE or 0xDADBF3 end else o=z[s[0x2]]W=Y n=o(R)o=F[r(0x559)]k=n==o k=k and 0xE43372 or 0x62700B end else if k<0x9063B1 then if k<0x90448F then k=0xEFB6A8 st=z[Y]lt=st()else mt=z[Y]k=0xA2F2A3 Ut=mt()end else n=F[r(0x19B)]Q=F[r(0xD62)]W=k o=C[n]f=y[Q]Q=F[r(0x19B)]T=f[Q]f=F[r(0xD1A)]n=T[f]R=o==n x=R k=R and 0x2224A6 or 0x3D4CA4 end end end end end end else if k<0x98FB38 then if k<0x9484DB then if k<0x92ABD2 then if k<0x91B2E6 then if k<0x90F479 then if k<0x90DA3A then if k<0x90A01C then C=F[r(0x21EA)]k=z[s[0x6]]R=F[r(0x20)]W=z[s[0x5]]x=W[R]W=F[r(0x21EA)]Y=x[W]k[C]=Y k=0xDD2A4D else Mt=F[r(0x17E1)]k=0x52243B Lt=y[Mt]Mt=0x41 Nt=Lt>Mt Ut=Nt end else P=z[s[0x15]]yt=F[r(0x8E8)]J=D at=0x63 G=P[J]rt=0x5A H=y[yt]yt=H(rt,at)H=0x64 P=F[r(0x5D2)]J=nil k=0xBD878B i=yt/H G[P]=i end else if k<0x918D1E then if k<0x913496 then Y=F[r(0x30E)]C=y[Y]Y=F[r(0x580)]E=C[Y]Y=z[s[0x5]]C=E(Y)k=0x5FED2F else w=0x0 n=F[r(0x1924)]o=false h=F[r(0x180B)]C=F[r(0x17E3)]Q=y[h]Y=F[r(0x1E5C)]h=F[r(0x22B6)]R=F[r(0x591)]x=F[r(0x10EF)]c=0x0 W=F[r(0x1893)]f=Q[h]h=0x0 Q=f(h,w,c)e=0x0 w=F[r(0x180B)]c=0x0 B=0x0 h=y[w]w=F[r(0x161E)]f=h[w]w=0x0 h=f(w,c,B)T=Q*h E={[C]=Y,[x]=W,[R]=o;[n]=T}Y=F[r(0x17E3)]R=F[r(0x1893)]c=0x0 n=false B=0x0 w=F[r(0x180B)]o=F[r(0x591)]h=y[w]w=F[r(0x22B6)]T=F[r(0x1924)]W=F[r(0x10EF)]x=F[r(0x1E5C)]Q=h[w]w=0x0 h=Q(w,c,B)c=F[r(0x180B)]B=0x0 w=y[c]c=F[r(0x161E)]Q=w[c]c=0x0 w=Q(c,B,e)f=h*w Z=0x0 C={[Y]=x;[W]=R,[o]=n;[T]=f}x=F[r(0x17E3)]o=F[r(0x1893)]R=F[r(0x10EF)]f=F[r(0x1924)]T=false B=0x0 n=F[r(0x591)]c=F[r(0x180B)]W=F[r(0x1E5C)]w=y[c]c=F[r(0x22B6)]h=w[c]e=0x0 c=0x0 w=h(c,B,e)B=F[r(0x180B)]e=0x0 c=y[B]B=F[r(0x161E)]h=c[B]B=0x0 c=h(B,e,Z)Q=w*c B=F[r(0x180B)]Y={[x]=W;[R]=o,[n]=T;[f]=Q}c=y[B]T=F[r(0x591)]e=0x0 R=F[r(0x1E5C)]Z=0x0 J=0x0 o=F[r(0x10EF)]Q=F[r(0x1924)]n=F[r(0x1893)]B=F[r(0x22B6)]W=F[r(0x17E3)]w=c[B]B=0x0 f=false c=w(B,e,Z)e=F[r(0x180B)]B=y[e]e=F[r(0x161E)]Z=0x0 w=B[e]e=0x0 B=w(e,Z,J)h=c*B x={[W]=R,[o]=n,[T]=f,[Q]=h}k={E;C,Y;x}Y=I()x=0xD C=I()W=x x=0x1 z[C]=k R=x x=0x0 E=0x1 k={}o=R<x z[Y]=k k=0x10B02F x=E-R end else W=W+o T=not n x=W<=R x=T and x T=W>=R T=n and T x=T or x T=0x12DEBB k=x and T x=0x73B157 k=k or x end end else if k<0x91F048 then if k<0x91E15A then if k<0x91B621 then k=0xF4744 o=z[R]E=o else o=T k=f k=T and 0x7C24FD or 0x2B1231 end else k=T k=n and 0x6D44EA or 0x92CEE0 end else if k<0x928DF1 then if k<0x925860 then x=F[r(0x1725)]E=C[x]x=F[r(0x1F56)]k=0x33ED3C x=E[x]x=x(E)else tt[0x1]=L(0x2AB683,{Y})k=y[F[r(0x255F)]]tt[0x2]={tt[0x1]()}E={a(tt[0x2])}end else k=f k=T and 0x9D2DC2 or 0x280B81 end end end else if k<0x934F63 then if k<0x92F400 then if k<0x92C978 then if k<0x92BCE1 then k=0x945333 e=nil Z=nil else n=F[r(0x1A10)]E=F[r(0x200E)]k=y[E]f=0x1 w=F[r(0x2542)]Z=0x0 o=z[s[0x2]]h=F[r(0x1867)]T=0x0 Q=y[h]e=0x0 R=0x3 c=F[r(0x517)]B=0x0 h=Q(w)Q=F[r(0xA97)]w=y[c]c=w(B,e,Z)w=false E=k(R,o,n,T,f,h,Q,c,w)o=nil R=E E=z[s[0x9]]k=E~=o k=k and 0xE72AB8 or 0x568721 end else k=0xBE3905 end else if k<0x932106 then if k<0x930454 then C=F[r(0x2524)]E=y[C]C=F[r(0x19CF)]k=E[C]C=k E=nil k=C~=E k=k and 0xB6D060 or 0xA037BB else X=yt X=nil k=0xCAA4C9 rt=nil end else tt[0x7]=F[r(0xB0D)]tt[0x4]=k tt[0x6]=y[tt[0x7]]tt[0x5]=tt[0x6]~=X tt[0x3]=tt[0x5]k=tt[0x5]and 0xA9EE23 or 0x27F0F5 end end else if k<0x93FA3A then if k<0x93E71B then if k<0x935ACC then k=tt[0x8]tt[0x5]=tt[0x7]k=0xB92737 else B=F[r(0x1CC9)]k=0x92A953 c=z[s[0xB]]e=F[r(0xD62)]w=c[B]c=F[r(0x9F3)]h=w[c]B=y[e]e=F[r(0x212D)]c=B[e]B=F[r(0x1B02)]w=c[B]Q=h~=w T=Q end else h=nil c=nil k=0x48E945 B=nil w=nil end else if k<0x9449CC then if k<0x9413F8 then E=F[r(0x116E)]C=F[r(0x1890)]k=z[s[0x1]]E=k[E]E=E(k,C)k=E and 0x52ADB2 or 0xCD94EF else k=F[r(0x1030)]k=B[k]e=F[r(0x267C)]k=k(B,e)e=F[r(0xA15)]e=k[e]e=e(k)k=0xE08C72 end else B,Z=w(c,B)k=B and 0x139B9C or 0xF5CB5 end end end end else if k<0x9673D9 then if k<0x954EA4 then if k<0x94F630 then if k<0x94F579 then if k<0x94F1BC then E=F[r(0xDD1)]c=F[r(0x19EB)]w[E]=c e=F[r(0xDD1)]E=z[s[0x4]]k=0x1B9C3 B=w[e]c=0x7 E[c]=B else o=z[s[0x8]]n=false k=o==n k=k and 0xF46DF6 or 0x5CF01 end else k=W R=k W=I()R=I()T=F[r(0x1E7C)]n=F[r(0x5D2)]z[W]=E o=C[n]f=F[r(0x180B)]n=0x0 E=o or n o=k o=I()z[R]=E n=C[T]T=0x1 E=n or T n=k z[o]=E T=C[f]k=T and 0xA335F3 or 0xC70D78 E=T end else if k<0x9548B0 then if k<0x9512F2 then k=E and 0x7EF17A or 0x1B5AFB else k=B and 0x2F5F93 or 0x803112 end else k=0x1AC677 T=F[r(0x1725)]n=R[T]E=n end end else if k<0x96369C then if k<0x95A427 then if k<0x955BB4 then E=F[r(0x25F7)]k=y[E]E=k()k=z[s[0x1]]R=F[r(0x239C)]E=F[r(0x180B)]Y=F[r(0x1FC)]C=y[Y]W=y[R]n=F[r(0x2524)]R=F[r(0x21EA)]x=W[R]o=y[n]n=F[r(0x140F)]R=o[n]o=F[r(0x1157)]W=R[o]Y=C(x,W)C=false k[E]=Y E=z[s[0x2]]k=E==C k=k and 0x353597 or 0x95541D else zt=F[r(0x1AC2)]st=F[r(0x161C)]at=F[r(0x180B)]ut=F[r(0x180B)]k=0xE723AE bt=x[ut]ut=y[st]lt=y[zt]Et=z[s[0x12]]zt=lt(Et)Et=F[r(0x1AC2)]lt=y[Et]Ft=z[s[0x13]]Et=lt(Ft)Ft=F[r(0x1AC2)]lt=y[Ft]Ct=z[s[0x14]]Ft={lt(Ct)}st=ut(zt,Et,a(Ft))kt=bt*st x[at]=kt end else k=true z[s[0x1]]=k B=z[s[0x2]]k=0x1B0B2B e=B(h)end else if k<0x966604 then if k<0x9659C6 then Q=z[s[0xB]]h=false f=Q==h k=f and 0x57444E or 0x8881C else k=0xA718F7 o=nil end else c=z[Y]B=F[r(0x1CC9)]w=c[B]e=F[r(0xD62)]k=0xC6F618 c=F[r(0x9F3)]h=w[c]B=y[e]e=F[r(0x212D)]c=B[e]B=F[r(0x324)]w=c[B]Q=h==w E=Q end end end else if k<0x98279F then if k<0x96E580 then if k<0x968805 then if k<0x967906 then k=0xA31D33 else w=F[r(0x116E)]h=k c=F[r(0x21CE)]w=Y[w]w=w(Y,c)Q=w k=w and 0x712FBD or 0x1F55AD end else kt=F[r(0x1FF1)]st=F[r(0x1FC)]at=x[kt]zt=F[r(0x21EA)]ut=y[st]lt=x[zt]zt=z[s[0xC]]kt=F[r(0x180B)]Et=0x0 k=0x280031 st=ut(lt,zt)zt=0x0 lt=F[r(0x1FC)]Ct=F[r(0x9D2)]ut=y[lt]Ft=-J lt=ut(zt,Et,Ft)bt=st*lt x[kt]=bt kt=F[r(0x180B)]st=F[r(0x1FC)]ut=y[st]zt=F[r(0x21EA)]lt=x[zt]It=F[r(0x957)]st=ut(lt)Yt=F[r(0xAAE)]lt=F[r(0x161C)]ut=y[lt]Et=F[r(0x1AC2)]zt=y[Et]Ft=at[Ct]Et=zt(Ft)Ft=F[r(0x1AC2)]zt=y[Ft]Ct=at[It]Ft=zt(Ct)Ct=F[r(0x1AC2)]zt=y[Ct]It=at[Yt]Ct={zt(It)}lt=ut(Et,Ft,a(Ct))bt=st*lt x[kt]=bt at=nil end else if k<0x981AE8 then if k<0x97A1BD then Yt=F[r(0x64)]Ut=F[r(0x15B0)]It=y[Yt]k=0xD53368 vt=F[r(0x829)]mt=y[Ut]Ut=F[r(0x21D3)]Ut=mt[Ut]Ut=Ut(mt,vt)vt=F[r(0x20A0)]vt=Ut[vt]mt={vt(Ut)}Ut={It(a(mt))}Yt=Ut[0x1]Vt=Ut[0x3]xt=Ut[0x2]else k=z[s[0x1]]E=k()E={}k=y[F[r(0x1F57)]]end else w=0x0 f=F[r(0x239C)]E=F[r(0x9B5)]C=b[0x1]o=F[r(0x1FC)]R=F[r(0x239C)]c=-1 k=y[E]B=0x0 W=y[R]R=F[r(0x21EA)]x=W[R]R=y[o]h=F[r(0x239C)]T=y[f]f=F[r(0x21EA)]n=T[f]Q=y[h]h=F[r(0x21EA)]f=Q[h]h=F[r(0x517)]Q=y[h]h=Q(w,c,B)T=f+h o=R(n,T)R=F[r(0xEF)]W=o[R]R=0x4 f=F[r(0x13EE)]n=k T=y[f]k=T and 0xD6D09B or 0xD4B0A8 o=T end end else if k<0x9868D5 then if k<0x9836B6 then if k<0x9828E1 then C=nil E={}k=y[F[r(0x13F7)]]else k=E and 0x9FA63A or 0x4A20 end else tt[0xE]=z[x]tt[0xD]=k tt[0xC]=tt[0xE]k=tt[0xE]and 0xF14562 or 0xBED001 end else if k<0x98F76A then if k<0x98C6CF then E={}k=y[F[r(0x1708)]]else o=k T=0x1 n=Y>T R=n k=n and 0x5AFA24 or 0xB62A1E end else k=0xBECE9E end end end end end else if k<0x9D345C then if k<0x9B21FC then if k<0x9A9091 then if k<0x9A1CB0 then if k<0x99ECA1 then if k<0x990FD3 then k=0xF2095A else X=F[r(0x9EF)]k=y[X]X=F[r(0x9FF)]y[X]=k k=0xD02DCF end else C=F[r(0x1B86)]x=F[r(0x1B86)]E=y[C]C=F[r(0x1C00)]k=E[C]Y=y[x]x=F[r(0x1F6F)]C=Y[x]x=S(0xEF805D,{s[0x2],s[0x3];s[0x4],s[0x5],s[0x6];s[0x7],s[0x8],s[0x9],s[0xA]})Y={C(x)}E=k(a(Y))k=0x60FF06 end else if k<0x9A74A8 then if k<0x9A41BE then x=F[r(0x1E73)]E=F[r(0x11F3)]k=C[E]E=F[r(0x1030)]E=k[E]E=E(k,x)k=F[r(0xA15)]k=E[k]k=k(E)k=0x4EA9E0 else E=F[r(0x25F7)]T=true k=y[E]R=C E=k()n=z[s[0x1]]o=n==T k=o and 0x9B141D or 0x31DC0F E=o end else k=0xC162A4 Z=z[s[0x5]]e=Z[w]B=not e c=B end end else if k<0x9AC5E7 then if k<0x9ABA43 then if k<0x9AA4F9 then E=F[r(0xA15)]k=0x3B9904 E=R[E]E=E(R)else Yt=nil k=0xBA7647 xt=nil Wt=nil lt=nil end else mt=F[r(0x581)]Yt=z[o]Vt=i[mt]Wt=k k=Vt and 0x61B01C or 0x2EBD08 xt=Vt end else if k<0x9B12E6 then if k<0x9AFC2A then E=F[r(0x25F7)]k=y[E]E=k()T=true R=C n=z[s[0x1]]o=n==T E=o k=o and 0xEE6FE6 or 0xAEE8FB else x=x+R Y=x<=W n=not o Y=n and Y n=x>=W n=o and n Y=n or Y n=0x689981 k=Y and n Y=0x42FD73 k=k or Y end else k=E and 0x181E16 or 0xDD6508 end end end else if k<0x9BF319 then if k<0x9BA3C6 then if k<0x9B84B8 then if k<0x9B63E3 then k=0x579453 C=F[r(0x64)]E=y[C]W=z[s[0x6]]R={E(W)}C=R[0x1]x=R[0x3]Y=R[0x2]else Y=F[r(0x30E)]k=0xCA8ED6 C=y[Y]Y=F[r(0x580)]E=C[Y]Y=z[s[0x7]]C=E(Y)end else T=not n W=W+o x=W<=R x=T and x T=W>=R T=n and T x=T or x T=0x314953 k=x and T x=0x3E5E1F k=k or x end else if k<0x9BDA6D then if k<0x9BC751 then C=b[0x1]E=0x0 k=C<=E k=k and 0x82E172 or 0x2A0142 else k=0x5DF10B n=Y+x Y=n end else h=z[s[0x8]]w=F[r(0x1FE2)]E=h==w k=E and 0x1433F6 or 0xF5D250 end end else if k<0x9C6866 then if k<0x9C5117 then if k<0x9C442B then Y=F[r(0xEEE)]k=z[s[0x2]]Y=k[Y]Y=Y(k)x=true Y=z[s[0x7]]k=Y==x k=k and 0xB5DC5F or 0xC78682 else k=0x7D1759 end else k=Ct k=Ft and 0x5F694F or 0xD35A7B end else if k<0x9CF241 then if k<0x9C9F2C then Et=F[r(0x166A)]zt=F[r(0x306)]Ft=F[r(0x6EE)]lt=F[r(0xA67)]k=0x572EA7 st={lt,zt,Et,Ft}zt=F[r(0x193B)]lt=y[zt]Ct={lt(st)}Ft=Ct[0x3]zt=Ct[0x1]Et=Ct[0x2]else k=z[s[0x1]]E={k}k=y[F[r(0xF5B)]]end else T=z[s[0xB]]Q=F[r(0x6AC)]f=F[r(0x116E)]f=T[f]f=f(T,Q)k=f and 0xE9FF08 or 0x1BCC13 end end end end else if k<0x9EF05D then if k<0x9E43C6 then if k<0x9DA477 then if k<0x9D9602 then if k<0x9D5FB8 then k=z[s[0x1]]E=k()E={}k=y[F[r(0x7F4)]]else e=F[r(0x1553)]w=F[r(0x19E2)]f=y[w]B=z[T]c=B[e]k=0x2C93D5 w=f(c,h)end else x=E k=x and 0x589E8D or 0x695FE6 end else if k<0x9E2C37 then if k<0x9DCDD7 then f=F[r(0x5D2)]R=C E=F[r(0x25F7)]k=y[E]E=k()E=F[r(0x5D2)]k=z[s[0x2]]T=z[s[0x2]]R=nil n=T[f]T=.02 o=n+T k[E]=o k=0x61437E else k=E and 0x75770C or 0x3210BE end else B=F[r(0xDD1)]c=w[B]B=F[r(0x21CE)]E=c==B k=E and 0xABA4EE or 0x29535B end end else if k<0x9EA9B7 then if k<0x9E82A5 then if k<0x9E7C8F then Q=.1 x=0x0 T=1.7 f=T w=F[r(0x252B)]h=y[w]T=Q/h Q=T k=0xA5384B T=0x0 h=Q<T T=x-Q else H=0x1 k=F[r(0x5D2)]i[k]=H k=0xD78AA7 end else x=F[r(0x11EF)]k=y[x]W=z[s[0xA]]x=k(W)W=0x2D x=0x1 k=0x337206 R=W W=0x1 o=W W=0x0 n=o<W W=x-o end else if k<0x9ED0B3 then if k<0x9EBBA1 then E=F[r(0x250E)]C=F[r(0x1725)]k=z[s[0x1]]E=k[E]E=E(k)z[s[0x2]]=E k=z[s[0x2]]Y=z[s[0x3]]k[C]=Y k=z[s[0x2]]Y=z[s[0x4]]C=F[r(0x1AE3)]k[C]=Y C=F[r(0x2561)]k=z[s[0x2]]Y=z[s[0x5]]k[C]=Y C=F[r(0x8F)]k=y[C]Y=z[s[0x6]]R=F[r(0x1BC6)]C=k(Y)W=y[R]R=F[r(0x166B)]x=W[R]R=F[r(0x967)]W=x(C,R)k=W and 0x84F5C3 or 0x524EDE Y=W else E=false k=false z[s[0x8]]=k k=0xF38CB4 z[s[0xB]]=E end else o=not Y k=0x1532EE W=o end end end else if k<0xA0A53B then if k<0xA03CA4 then if k<0xA0361F then if k<0x9F9CF6 then x=F[r(0x1174)]Y=y[x]x=F[r(0x11EF)]k=0x31EA2C C=Y[x]x=.2 Y=C(x)else k=false z[s[0x2]]=k k=0x4A20 end else k=0x4584C8 C=nil end else if k<0xA09D8E then if k<0xA07323 then O=V(O)k=0x656203 H=V(H)G=V(G)yt=nil i=V(i)K=V(K)P=V(P)else k=z[s[0x1]]E=k()E={}k=y[F[r(0x262D)]]end else k=T T={C(W,R,o,n)}x=T[0x2]Y=T[0x1]k=Y and 0x5F2443 or 0xB30EA end end else if k<0xA15963 then if k<0xA14172 then if k<0xA11BA9 then W=x n=F[r(0x138E)]n=R[n]T=F[r(0x1270)]n=n(R,T)o=n k=n and 0x66D89E or 0x1D7A7 else k=Nt k=vt and 0x5CBE40 or 0x14A928 end else x={}f=F[r(0x1C02)]h=F[r(0x9AD)]C=I()Z=N(0xF29433,{s[0x2]})O=N(0x380C9E,{s[0x2]})Y=I()z[C]=b[0x1]J=F[r(0x2257)]c=F[r(0x1514)]X=F[r(0x5F3)]o=U(0x2A1FA9,{Y,s[0x2]})D=S(0x6E34E3,{s[0x2]})i=U(0x717C07,{s[0x2]})G=U(0x7EF312,{s[0x2]})P=F[r(0x5F2)]k=m(0xEBB9EE,{C})B=F[r(0x1119)]R=F[r(0x5F1)]w=U(0xCF5AE1,{s[0x2]})z[Y]=k K=F[r(0x1FBD)]Q=false e=F[r(0x1513)]k=z[s[0x1]]n=F[r(0x1D34)]T=t(0xE90B49,{s[0x2]})W={[R]=o,[n]=T,[f]=Q;[h]=w;[c]=B;[e]=Z,[J]=D;[X]=O,[K]=G;[P]=i}E={k(x,W)}E={a(E)}k=y[F[r(0x1357)]]end else if k<0xA1E15F then if k<0xA1BEE2 then R=F[r(0x1212)]W=C[R]x=W-Y W=0x0 E=x>W k=E and 0x33A719 or 0x47C64F else f=nil Q=nil k=0x63FC28 end else o=F[r(0x2504)]k=x x=I()W=k z[x]=E R=C[o]k=R and 0x2E3D72 or 0xD055D5 E=R end end end end end end end else if k<0xB1B6E7 then if k<0xA9FBDE then if k<0xA5C7AE then if k<0xA42C52 then if k<0xA2E17E then if k<0xA2871C then if k<0xA26EC9 then if k<0xA25F7C then P=nil k=0xA9CEC2 else n=0x1 E=n-W n=.0001 k=E>n k=k and 0x36350B or 0xE0D0F4 end else G=F[r(0x9D2)]Z=F[r(0x517)]w=F[r(0x24F7)]B=F[r(0x1897)]O=F[r(0x9D2)]c=F[r(0xFE6)]Q=F[r(0x200D)]h=F[r(0x1F8A)]E=y[Q]e=y[Z]X=z[s[0x9]]D=X[O]X=0xA J=D/X D=0x0 K=z[s[0x9]]O=K[G]K=0xA X=O/K Z=e(J,D,X)J=F[r(0x517)]O=0x0 X=0x0 k=0x7B418F e=y[J]D=0x0 J={e(D,X,O)}Q=E(h,x,w,c,B,Z,a(J))R=Q end else if k<0xA2C9FE then if k<0xA28D31 then f=F[r(0x1F5)]T=R E=y[f]T=nil f=F[r(0xEE8)]k=0x713F5D f=E[f]f=f(E)else k=0x31EA2C end else e=nil Z=nil k=0xABDEEC end end else if k<0xA32351 then if k<0xA31734 then if k<0xA2F7EF then Vt=nil lt=nil k=0x315DAF else i=z[s[0x16]]P=i[D]Ft=.05 yt=F[r(0x250D)]i=F[r(0x1CB)]H=y[yt]Wt=0xC st=0x0 zt=-1 ut=F[r(0x1FC)]k=0x469488 It=F[r(0x1A84)]kt=z[s[0x16]]at=kt[D]kt=F[r(0x1CB)]rt=at[kt]bt=y[ut]Ct=y[It]xt=z[s[0x2]]Yt=xt/Wt It=Ct(Yt)Et=Ft*It lt=zt+Et zt=0x0 ut=bt(st,lt,zt)Ft=0xDC st=F[r(0x161C)]zt=F[r(0x1AC2)]bt=y[st]Et=0x0 lt=y[zt]zt=lt(Et)Et=F[r(0x1AC2)]Ct=0x0 lt=y[Et]Et=lt(Ft)Ft=F[r(0x1AC2)]lt=y[Ft]Ft={lt(Ct)}st=bt(zt,Et,a(Ft))kt=ut*st zt=3.4 st=0x0 ut=F[r(0x1FC)]lt=0x0 bt=y[ut]ut=bt(st,lt,zt)at=kt*ut kt=.1 yt=H(rt,at,kt)P[i]=yt end else R=z[s[0x3]]o=F[r(0x259F)]W=R==o k=W and 0xCE93EF or 0xAEA306 x=W end else if k<0xA4086A then if k<0xA3A5FC then k=n h=F[r(0x153A)]n=I()B=F[r(0x226C)]T=k Q=F[r(0x1423)]z[n]=E f=C[Q]Q=nil E=f or Q f=k w=F[r(0x1539)]f=I()c=F[r(0x1538)]e=F[r(0x2504)]T=I()z[T]=E Q=C[h]h=0x0 E=Q or h z[f]=E h=C[w]w=0x0 Q=k Q=I()E=h or w h=k z[Q]=E h=I()w=C[c]c=0x0 E=w or c w=k z[h]=E c=C[B]B=F[r(0xDF1)]w=I()E=c or B c=k z[w]=E B=C[e]E=B k=B and 0x816DC or 0x6932D9 else k=z[s[0x1]]E=k()E={}k=y[F[r(0x97A)]]end else Q,w=T(f,Q)k=Q and 0x3A8C7D or 0xBA406A end end end else if k<0xA565A0 then if k<0xA4A731 then if k<0xA47CFD then if k<0xA44151 then z[Y]=Z k=z[Y]k=k and 0xFE22DA or 0xB3518C else f=F[r(0xEE6)]w=false z[s[0x5]]=f h=z[s[0x7]]Q=h==w k=Q and 0xA6FCD1 or 0x71E733 end else k=0xBACCCD end else if k<0xA5572C then if k<0xA5148D then Z=F[r(0xDD1)]e=w[Z]Z=F[r(0xD9C)]k=0x5A860E B=e~=Z E=B else T=T+Q w=not h x=T<=f x=w and x w=T>=f w=h and w x=w or x w=0x224394 k=x and w x=0xE6624F k=k or x end else k=y[F[r(0x1E33)]]E={}end end else if k<0xA5A229 then if k<0xA59327 then if k<0xA58413 then n=F[r(0x1CC9)]o=Y[n]n=F[r(0x9F3)]f=F[r(0xD62)]E=o[n]T=y[f]f=F[r(0x212D)]n=T[f]T=F[r(0x324)]o=n[T]k=E==o k=k and 0x537EDF or 0xE23D4E else Z=k J=c D=k k=c and 0xB49E7 or 0x2A017C end else E=z[s[0x1]]k=Y*E Y=k W=F[r(0x1212)]x=C[W]W=0x7D0 E=x<W k=E and 0xA16A72 or 0x9254EF end else if k<0xA5C3ED then if k<0xA5B08A then kt=0x7D rt=F[r(0x8E8)]at=0x1 yt=y[rt]rt=yt(at,kt)yt=0x1 H=rt==yt k=H and 0xB4BC6D or 0xEC5182 else T=F[r(0x64)]E=y[T]w=F[r(0x20A0)]w=Y[w]h={w(Y)}k=0xCE6E77 w={E(a(h))}Q=w[0x3]T=w[0x1]f=w[0x2]end else R=C E=F[r(0x25F7)]k=y[E]E=k()E=F[r(0x5D2)]f=F[r(0x5D2)]k=z[s[0x1]]T=z[s[0x1]]n=T[f]T=.02 o=n-T R=nil k[E]=o k=0x805D57 end end end end else if k<0xA78BAF then if k<0xA69FB7 then if k<0xA5F8ED then if k<0xA5CC95 then if k<0xA5C8E8 then c=e k=Z k=0xD9E393 else E=F[r(0x1030)]h=F[r(0xF04)]E=Q[E]E=E(Q,h)h=F[r(0xA15)]h=E[h]k=0xA1DCD6 h=h(E)end else E=F[r(0x25F7)]w=.04 k=y[E]E=k()Y=F[r(0x250D)]R=F[r(0x1537)]E=F[r(0x1537)]k=y[E]C=y[Y]W=y[R]T=F[r(0x1FC)]R=F[r(0x1CB)]E=F[r(0x1CB)]x=W[R]o=z[s[0x1]]B=F[r(0x199C)]X=0xC n=y[T]Q=0x0 c=y[B]Z=z[s[0x2]]J=0x18 e=Z/J B=c(e)Z=F[r(0x199C)]h=w*B B=.05 f=Q-h w=0x0 e=y[Z]Q=0x0 D=z[s[0x2]]J=D/X Z=e(J)c=B*Z h=w+c B=2.5 T=n(f,Q,h)Q=0x0 f=F[r(0x1AC2)]n=F[r(0x161C)]R=o*T X=0x18 o=y[n]T=y[f]f=T(Q)Z=F[r(0x199C)]w=0x0 Q=F[r(0x1AC2)]T=y[Q]e=y[Z]D=z[s[0x2]]J=D/X Z=e(J)c=B*Z h=w-c Q=T(h)h=F[r(0x1AC2)]T=y[h]w=0x19 h={T(w)}n=o(f,Q,a(h))W=R*n e=F[r(0x199C)]T=F[r(0x252B)]D=0xC o=0x1 n=y[T]R=o/n Y=C(x,W,R)k[E]=Y R=F[r(0xDF0)]E=F[r(0xDF0)]Q=0x0 h=0x0 Y=F[r(0x250D)]k=y[E]T=F[r(0x1FC)]C=y[Y]W=y[R]R=F[r(0x1CB)]x=W[R]E=F[r(0x1CB)]o=z[s[0x3]]f=0x0 n=y[T]T=n(f,Q,h)c=0x7 n=F[r(0x161C)]R=o*T o=y[n]f=F[r(0x1AC2)]T=y[f]h=0xF B=y[e]J=z[s[0x2]]Z=J/D e=B(Z)w=c*e Q=h-w w=-25 f=T(Q)Q=F[r(0x1AC2)]h=0x0 T=y[Q]c=.1 Q=T(h)h=F[r(0x1AC2)]T=y[h]h={T(w)}n=o(f,Q,a(h))W=R*n o=0x1 T=F[r(0x252B)]n=y[T]R=o/n Y=C(x,W,R)k[E]=Y E=F[r(0x1D79)]T=F[r(0x1FC)]Y=F[r(0x250D)]h=.45 k=y[E]e=F[r(0x199C)]E=F[r(0x1CB)]f=1.3 R=F[r(0x1D79)]C=y[Y]D=0xC W=y[R]R=F[r(0x1CB)]x=W[R]n=y[T]B=y[e]J=z[s[0x2]]Z=J/D e=B(Z)w=c*e B=0x19 Q=h+w h=-0.2 T=n(f,Q,h)f=F[r(0x161C)]n=y[f]c=0x0 w=0x5A e=F[r(0x199C)]h=F[r(0x1AC2)]Q=y[h]h=Q(w)w=F[r(0x1AC2)]Q=y[w]w=Q(c)c=F[r(0x1AC2)]Q=y[c]c={Q(B)}f=n(h,w,a(c))o=T*f T=F[r(0x161C)]n=y[T]c=0x0 w=0xF h=0x0 D=0xC Q=F[r(0x1AC2)]O=0xC f=y[Q]Q=f(h)h=F[r(0x1AC2)]f=y[h]h=f(w)w=F[r(0x1AC2)]f=y[w]w={f(c)}T=n(Q,h,a(w))R=o*T o=z[s[0x4]]T=F[r(0x252B)]W=R*o n=y[T]o=0x1 R=o/n Y=C(x,W,R)k[E]=Y f=-1.3 E=F[r(0x418)]k=y[E]h=.45 T=F[r(0x1FC)]E=F[r(0x1CB)]c=.1 Y=F[r(0x250D)]C=y[Y]R=F[r(0x418)]W=y[R]R=F[r(0x1CB)]x=W[R]n=y[T]B=y[e]J=z[s[0x2]]Z=J/D e=B(Z)w=c*e Q=h+w h=-0.2 c=0x2C T=n(f,Q,h)e=1.5 f=F[r(0x161C)]n=y[f]h=F[r(0x1AC2)]Q=y[h]J=F[r(0x199C)]Z=y[J]X=z[s[0x2]]D=X/O J=Z(D)B=e*J w=c-B h=Q(w)w=F[r(0x1AC2)]c=0x0 B=0x19 Q=y[w]w=Q(c)c=F[r(0x1AC2)]Q=y[c]c={Q(B)}e=F[r(0x199C)]Q=F[r(0x1AC2)]f=n(h,w,a(c))w=-25 o=T*f h=0x0 T=F[r(0x161C)]n=y[T]f=y[Q]c=0x0 Q=f(h)h=F[r(0x1AC2)]f=y[h]h=f(w)w=F[r(0x1AC2)]f=y[w]w={f(c)}T=n(Q,h,a(w))R=o*T o=z[s[0x5]]T=F[r(0x252B)]W=R*o n=y[T]o=0x1 R=o/n Y=C(x,W,R)R=F[r(0x23BE)]k[E]=Y E=F[r(0x23BE)]k=y[E]E=F[r(0x1CB)]Y=F[r(0x250D)]c=.035 C=y[Y]n=F[r(0x1FC)]W=y[R]R=F[r(0x1CB)]h=-1 T=0x1 x=W[R]o=y[n]B=y[e]J=z[s[0x2]]D=0x18 Z=J/D e=B(Z)w=c*e J=0xC B=F[r(0x199C)]Q=h+w w=.05 c=y[B]Z=z[s[0x2]]e=Z/J B=c(e)h=w*B f=Q-h Q=0x0 n=o(T,f,Q)T=F[r(0x161C)]c=0x0 h=0x0 Q=F[r(0x1AC2)]o=y[T]e=F[r(0x199C)]f=y[Q]w=0x32 Q=f(h)h=F[r(0x1AC2)]f=y[h]h=f(w)w=F[r(0x1AC2)]f=y[w]w={f(c)}T=o(Q,h,a(w))f=F[r(0x1AC2)]R=n*T n=F[r(0x161C)]c=2.5 o=y[n]T=y[f]D=0x18 B=y[e]h=-2 J=z[s[0x2]]Z=J/D e=B(Z)w=c*e Q=h-w f=T(Q)h=0x0 w=0x0 c=.035 Q=F[r(0x1AC2)]T=y[Q]Q=T(h)h=F[r(0x1AC2)]T=y[h]h={T(w)}n=o(f,Q,a(h))o=0x1 W=R*n T=F[r(0x252B)]n=y[T]D=0x18 R=o/n Y=C(x,W,R)h=-1 k[E]=Y E=F[r(0x93C)]R=F[r(0x93C)]e=F[r(0x199C)]k=y[E]E=F[r(0x1CB)]Y=F[r(0x250D)]T=-1 C=y[Y]W=y[R]R=F[r(0x1CB)]n=F[r(0x1FC)]x=W[R]o=y[n]B=y[e]J=z[s[0x2]]Z=J/D e=B(Z)w=c*e J=0xC B=F[r(0x199C)]Q=h-w c=y[B]w=.05 Z=z[s[0x2]]e=Z/J B=c(e)h=w*B f=Q-h h=0x0 Q=0x0 n=o(T,f,Q)e=F[r(0x199C)]T=F[r(0x161C)]Q=F[r(0x1AC2)]o=y[T]f=y[Q]D=0x18 Q=f(h)h=F[r(0x1AC2)]w=-100 c=0x0 f=y[h]h=f(w)w=F[r(0x1AC2)]f=y[w]w={f(c)}T=o(Q,h,a(w))R=n*T n=F[r(0x161C)]f=F[r(0x1AC2)]o=y[n]T=y[f]c=2.5 h=-2 B=y[e]J=z[s[0x2]]Z=J/D e=B(Z)w=c*e Q=h+w f=T(Q)h=0x0 Q=F[r(0x1AC2)]w=0x0 T=y[Q]Q=T(h)h=F[r(0x1AC2)]T=y[h]h={T(w)}n=o(f,Q,a(h))T=F[r(0x252B)]W=R*n o=0x1 n=y[T]R=o/n Y=C(x,W,R)C=false k[E]=Y E=z[s[0x6]]k=E==C k=k and 0xE86066 or 0xA5EAB3 end else if k<0xA678A5 then if k<0xA632CC then E={}C=nil Y=nil x=nil W=nil R=nil o=nil k=y[F[r(0x2443)]]else k=F[r(0x250E)]k=lt[k]k=k(lt)Et=F[r(0x11F3)]Ft=F[r(0xF04)]zt=k k=lt[Et]Et=F[r(0x1030)]Et=k[Et]Et=Et(k,Ft)Wt=F[r(0x11F3)]xt=F[r(0x11F3)]It=F[r(0x1C4C)]Ft=F[r(0x2469)]k=Et[Ft]Ft=k Ct=y[It]It=F[r(0x22B6)]k=Ct[It]Yt=zt[xt]Vt=F[r(0xDD1)]It=F[r(0xF04)]xt=F[r(0x11F3)]Ct=k(It,Yt)Yt=lt[xt]xt=F[r(0x1A90)]It=Yt[xt]Yt=F[r(0x1CB)]k=It[Yt]It=k xt=lt[Wt]Wt=F[r(0x1A90)]Yt=xt[Wt]Wt=F[r(0x1A90)]xt=F[r(0x1E2)]k=Yt[xt]Yt=k xt=F[r(0x11F3)]k=zt[xt]xt=F[r(0x116E)]xt=k[xt]xt=xt(k,Wt)k=F[r(0xA15)]k=xt[k]k=k(xt)xt=at k=F[r(0x1725)]Wt=F[r(0x11F3)]zt[k]=xt k=F[r(0xDD1)]xt=F[r(0x1A90)]Ct[k]=xt k=F[r(0x1CB)]xt=It Ct[k]=xt k=F[r(0x1E2)]xt=Yt Ct[k]=xt xt=zt[Wt]k=F[r(0x246A)]Ct[k]=xt xt=F[r(0x116E)]Wt=Ft[Vt]k=F[r(0x2469)]Et=nil xt=Y[xt]Ft=nil xt=xt(Y,Wt)Ct[k]=xt Wt=0x1 xt=F[r(0x11F3)]k=zt[xt]xt=F[r(0x5D2)]Ct=nil It=nil Yt=nil zt=nil k[xt]=Wt k=0xEFB164 end else Z=0x1 e=C[Z]X=0x3 B=e*R J=0x1 Z=Y[J]e=Z*o D=0x2 c=B+e J=0x2 Z=C[J]e=Z*R J=Y[D]D=0x3 Z=J*o B=e+Z J=C[D]Z=J*R D=Y[X]O=0x4 J=D*o e=Z+J X=0x4 D=C[X]k=y[F[r(0x169E)]]J=D*R X=Y[O]D=X*o Z=J+D E={c;B,e,Z}end end else if k<0xA70ECE then if k<0xA6F8EF then if k<0xA6BE99 then h,c=f(Q,h)k=h and 0xAC5202 or 0x8C34AA else Ft=0xF lt=H>Ft k=lt and 0xAC6B45 or 0x15EEE7 end else h=F[r(0x1537)]Q=y[h]Z=F[r(0x1537)]c=F[r(0x250D)]K=0x0 h=F[r(0x1CB)]w=y[c]O=0x0 G=-0.05 X=F[r(0x1FC)]e=y[Z]Z=F[r(0x1CB)]B=e[Z]J=z[s[0x6]]D=y[X]X=D(O,K,G)i=-7 K=0x5 D=F[r(0x161C)]Z=J*X O=F[r(0x1AC2)]J=y[D]X=y[O]O=X(K)G=0x0 K=F[r(0x1AC2)]yt=F[r(0x199C)]X=y[K]bt=0x2 K=X(G)G=F[r(0x1AC2)]X=y[G]H=y[yt]at=z[s[0x2]]rt=at/x yt=H(rt)P=i*yt G={X(P)}D=J(O,K,a(G))e=Z*D J=0x1 X=F[r(0x252B)]D=y[X]Z=J/D c=w(B,e,Z)Q[h]=c i=0x1 O=0x0 yt=F[r(0x1A84)]h=F[r(0xDF0)]c=F[r(0x250D)]Q=y[h]h=F[r(0x1CB)]Z=F[r(0xDF0)]w=y[c]G=0x0 e=y[Z]Z=F[r(0x1CB)]X=F[r(0x1FC)]B=e[Z]K=0x0 J=z[s[0x8]]D=y[X]X=D(O,K,G)O=F[r(0x1AC2)]G=0x5 D=F[r(0x161C)]Z=J*X J=y[D]X=y[O]H=y[yt]at=z[s[0x2]]kt=x/bt rt=at/kt yt=H(rt)P=i*yt K=G-P i=0x7 O=X(K)G=0x0 yt=F[r(0x199C)]K=F[r(0x1AC2)]X=y[K]K=X(G)G=F[r(0x1AC2)]X=y[G]H=y[yt]at=z[s[0x2]]rt=at/x yt=H(rt)P=i*yt G={X(P)}X=F[r(0x252B)]D=J(O,K,a(G))J=0x1 e=Z*D D=y[X]O=.5 Z=J/D H=F[r(0x199C)]c=w(B,e,Z)Q[h]=c h=F[r(0x1D79)]Z=F[r(0x1D79)]Q=y[h]h=F[r(0x1CB)]K=0x0 c=F[r(0x250D)]w=y[c]e=y[Z]X=1.5 D=F[r(0x1FC)]Z=F[r(0x1CB)]B=e[Z]J=y[D]D=J(X,O,K)K=F[r(0x1AC2)]X=F[r(0x161C)]J=y[X]O=y[K]i=y[H]P=0x3C rt=z[s[0x2]]yt=rt/x H=i(yt)G=P*H P=-5 K=O(G)G=F[r(0x1AC2)]O=y[G]G=O(P)i=0x5 P=F[r(0x1AC2)]O=y[P]H=F[r(0x199C)]P={O(i)}X=J(K,G,a(P))Z=D*X J=z[s[0x9]]K=0x0 X=F[r(0x252B)]e=Z*J J=0x1 D=y[X]Z=J/D c=w(B,e,Z)X=-1.5 Q[h]=c c=F[r(0x250D)]D=F[r(0x1FC)]h=F[r(0x418)]Q=y[h]Z=F[r(0x418)]w=y[c]O=.5 e=y[Z]h=F[r(0x1CB)]Z=F[r(0x1CB)]B=e[Z]k=0x71E733 J=y[D]D=J(X,O,K)K=F[r(0x1AC2)]X=F[r(0x161C)]P=-60 J=y[X]O=y[K]i=y[H]rt=z[s[0x2]]yt=rt/x H=i(yt)G=P*H P=0x5 K=O(G)G=F[r(0x1AC2)]O=y[G]G=O(P)i=-5 P=F[r(0x1AC2)]O=y[P]P={O(i)}X=J(K,G,a(P))Z=D*X J=z[s[0xA]]e=Z*J X=F[r(0x252B)]J=0x1 O=-1 D=y[X]i=0x0 Z=J/D G=0x0 c=w(B,e,Z)Q[h]=c h=F[r(0x23BE)]D=F[r(0x1FC)]Q=y[h]h=F[r(0x1CB)]P=0x55 Z=F[r(0x23BE)]c=F[r(0x250D)]w=y[c]e=y[Z]Z=F[r(0x1CB)]B=e[Z]X=0x1 J=y[D]K=0x0 D=J(X,O,K)X=F[r(0x161C)]J=y[X]K=F[r(0x1AC2)]O=y[K]K=O(G)G=F[r(0x1AC2)]O=y[G]G=O(P)P=F[r(0x1AC2)]O=y[P]P={O(i)}X=J(K,G,a(P))Z=D*X D=F[r(0x161C)]O=F[r(0x1AC2)]J=y[D]G=0x0 X=y[O]K=0x0 i=0x0 O=X(K)P=0x0 K=F[r(0x1AC2)]X=y[K]K=X(G)G=F[r(0x1AC2)]X=y[G]G={X(P)}D=J(O,K,a(G))X=F[r(0x252B)]J=0x2 P=-85 e=Z*D O=-1 K=0x0 G=0x0 D=y[X]Z=J/D X=-1 c=w(B,e,Z)Q[h]=c h=F[r(0x93C)]c=F[r(0x250D)]Q=y[h]h=F[r(0x1CB)]Z=F[r(0x93C)]w=y[c]e=y[Z]Z=F[r(0x1CB)]D=F[r(0x1FC)]B=e[Z]J=y[D]D=J(X,O,K)X=F[r(0x161C)]K=F[r(0x1AC2)]J=y[X]O=y[K]K=O(G)G=F[r(0x1AC2)]O=y[G]G=O(P)P=F[r(0x1AC2)]O=y[P]P={O(i)}O=F[r(0x1AC2)]X=J(K,G,a(P))G=0x0 Z=D*X D=F[r(0x161C)]K=0x0 P=0x0 J=y[D]X=y[O]O=X(K)K=F[r(0x1AC2)]X=y[K]K=X(G)G=F[r(0x1AC2)]X=y[G]G={X(P)}D=J(O,K,a(G))X=F[r(0x252B)]e=Z*D J=0x2 D=y[X]Z=J/D c=w(B,e,Z)Q[h]=c end else if k<0xA73ED1 then if k<0xA71C7B then Y=Y+W o=not R E=Y<=x E=o and E o=Y>=x o=R and o E=o or E o=0x12FF1F k=E and o E=0x8B4028 k=k or E else E=W k=R k=0xF8DD end else D=F[r(0x13DF)]J=y[D]D=F[r(0x100D)]Z=J[D]O=h-x X=O-n k=y[F[r(0x5A6)]]O=0x1 D=X+O K=.5 J=Z(D)D=.5 Z=D/J X=R+f D=X*Z O=T+Q X=O*Z O=K*J G=o-W K=G*Z E={D;X,O,K}end end end else if k<0xA859F5 then if k<0xA80AFF then if k<0xA7C9D5 then if k<0xA7A6BC then k=x k=E and 0x11336E or 0xB06892 else G=z[s[0x9]]P=z[s[0x10]]K=G-P k=0x60A501 P=0x1 G=Z+P O=K*G X=O end else k=0xDADBF3 c=nil end else if k<0xA84BF7 then if k<0xA81BEA then Y=nil k=y[F[r(0xFD4)]]R=nil C=nil E={}x=nil else yt=F[r(0xDD1)]X=G H=P[yt]i=H==e k=i and 0xC316C or 0xB57AF7 end else o=0x3 R=Y+o k=0x1CBF72 Y=R end end else if k<0xA9988F then if k<0xA923DA then if k<0xA881B2 then k=z[s[0x1]]E=k()k=y[F[r(0x805)]]E={}else St=F[r(0x11F5)]Mt=Ut[St]St=F[r(0xECC)]Lt=Mt~=St k=0xA134A1 vt=Lt end else E=F[r(0x22D6)]f=F[r(0x8E)]R=b[0x5]o=b[0x6]T=b[0x8]W=b[0x4]k=y[E]Y=b[0x2]C=b[0x1]n=b[0x7]x=b[0x3]E=k(f)k=F[r(0xE02)]f=E E=Y f[k]=E E=x k=F[r(0x3A)]f[k]=E E=W k=F[r(0x21EA)]f[k]=E E=R k=F[r(0xD33)]f[k]=E E=o k=F[r(0x139C)]f[k]=E k=F[r(0x3F7)]E=n f[k]=E E=T k=F[r(0xDD1)]f[k]=E E=C k=F[r(0x1725)]f[k]=E k=y[F[r(0x975)]]E={f}end else if k<0xA9D11A then if k<0xA9A928 then o=nil k=0xB98ADF else i=i+yt P=i<=H at=not rt P=at and P at=i>=H at=rt and at P=at or P at=0xE7DA3A k=P and at P=0xBF16DA k=k or P end else k=tt[0x4]k=0x22A54E tt[0x1]=tt[0x3]end end end end end else if k<0xAD413E then if k<0xABA4E4 then if k<0xAB01FB then if k<0xAA4AF3 then if k<0xAA2853 then if k<0xAA217E then k=Q k=f and 0xA46526 or 0x4C6B4A else Q=nil k=0x7329A2 h=nil end else Wt=z[o]Vt=F[r(0xF83)]Ut=F[r(0x11F5)]xt=e(Wt,Vt)Vt=U(0x375188,{})mt=F[r(0xF83)]Wt=e(Vt,mt)mt=xt[Ut]vt=F[r(0x11F5)]Ut=Wt[vt]Vt=mt==Ut k=Vt and 0xDD9DC7 or 0x9AB7B1 end else if k<0xAACCF3 then if k<0xAA964D then k=T and 0x3F39BA or 0x311C14 else k=z[s[0x2]]Y=F[r(0x1C01)]Y=k[Y]Y=Y(k)k=0x788CE9 end else x=nil k=0xE73A39 Y=C==x E=Y end end else if k<0xAB7002 then if k<0xAB6A38 then if k<0xAB5B68 then k=z[s[0x1]]E=k()k=y[F[r(0x978)]]E={}else R=nil k=0x7B334C W=nil end else n=z[s[0x5]]f=true n[o]=f n=F[r(0x1F56)]n=o[n]f=false n=n(o)c=F[r(0x21EF)]B=F[r(0x1924)]n=F[r(0x1FC4)]o[n]=f Q=F[r(0x30E)]n=F[r(0x226F)]f=true k=0xEBBC3F Z=F[r(0x1924)]o[n]=f f=true n=F[r(0x1271)]R[n]=f f=y[Q]Q=F[r(0x1925)]n=f[Q]Q=z[s[0x1]]w=F[r(0xE37)]e=R[Z]h={[w]=o,[c]=T,[B]=e}f=n(Q,h)end else if k<0xAB91D2 then if k<0xAB797D then W=Y E=F[r(0xD56)]E=R[E]E=E(R)W=nil R=nil k=0xC75E15 else c=nil k=0xDE013 w=nil end else k=0x2E8C48 end end end else if k<0xAC4C62 then if k<0xABDF07 then if k<0xABD1D4 then if k<0xABB959 then c=F[r(0x2308)]E=F[r(0xDD1)]w[E]=c c=0x5 e=F[r(0xDD1)]E=z[s[0x4]]k=0x29535B B=w[e]E[c]=B else k=y[F[r(0x2539)]]E={C}end else B,Z=w(c,B)k=B and 0x3D676 or 0x178339 end else if k<0xAC496B then if k<0xAC04A1 then Y=0x1 W=F[r(0x1D3B)]E=z[s[0x1]]R=0x1 o=0x1000000 x=0x1000000 C=E(Y,x)x=y[W]W=F[r(0x79B)]Y=x[W]x=Y()Y=z[s[0x1]]W=Y(R,o)E=x^W x=F[r(0x1D3B)]k=C-E Y=y[x]C=k x=F[r(0x79B)]E=Y[x]Y=E()k=Y/C E={k}k=y[F[r(0x998)]]else k=false w=0x1 C=k E=F[r(0x200E)]k=nil c=0x1 x=0x3 h=F[r(0x517)]Q=F[r(0x2542)]o=0x0 Y=k k=y[E]W=z[s[0x1]]f=F[r(0x1867)]R=z[s[0x2]]n=z[s[0x3]]T=y[f]f=T(Q)T=F[r(0x1905)]Q=y[h]B=0x1 h=Q(w,c,B)Q=true E=k(x,W,R,o,n,f,T,h,Q)o=nil x=E R=z[s[0x4]]W=R~=o E=W k=W and 0xE1DAA or 0xF8DD end else k=E and 0xB324F3 or 0x43417F end end else if k<0xAC9464 then if k<0xAC69A3 then if k<0xAC5D1F then e=F[r(0x138E)]w=h e=c[e]Z=F[r(0xBBF)]e=e(c,Z)k=e and 0x9547F5 or 0xCCBD2F B=e else Yt=nil k=0x830D11 mt=nil end else Ft=0xF lt=H-Ft Ft=0x0 k=0x978A65 end else if k<0xAD4051 then if k<0xACC34C then D=F[r(0x17E2)]k=0xC41FEC J=w[D]e=J else h=0x1 Q=h+W h=.0001 f=Q>h k=f and 0x6D75AB or 0x4EAF29 end else E=z[s[0x1]]C=F[r(0x1890)]k=E[C]E=F[r(0xA15)]E=k[E]E=E(k)k=0xE3A167 end end end end else if k<0xAF6CE4 then if k<0xADE324 then if k<0xADCEA9 then if k<0xAD8161 then if k<0xAD6030 then k=0xA7D282 else x=nil k=0xF4957C end else E={}k=y[F[r(0x7C7)]]end else if k<0xADDFF2 then if k<0xADD3E4 then k=w k=0xDEBF82 f=h else O=F[r(0x13DF)]X=y[O]O=F[r(0x7EC)]D=X[O]G=F[r(0x19B5)]K=y[G]G=F[r(0x1118)]O=K[G]X=D(O)K=F[r(0x13DF)]i=F[r(0x19B5)]O=y[K]K=F[r(0x7EC)]D=O[K]P=y[i]i=F[r(0x1118)]G=P[i]P=0x3C K=G/P O=D(K)yt=F[r(0x19B5)]G=F[r(0x13DF)]K=y[G]G=F[r(0x7EC)]D=K[G]H=y[yt]yt=F[r(0x1118)]i=H[yt]H=0x3C P=i/H i=0x3C G=P/i i=0x3C K=D(G)P=0x3C G=O*P D=X-G P=K*i G=O-P H=z[s[0x19]]i=#H H=0x0 P=i>H k=P and 0x1A2F67 or 0xDF1CD1 end else E=z[s[0x1]]C=false k=E==C k=k and 0x447E74 or 0x81A1AC end end else if k<0xAEDB31 then if k<0xAEA42F then if k<0xAE915F then k=z[s[0x1]]E=k()k=y[F[r(0xB2B)]]E={}else R=z[s[0x3]]k=0xCE93EF o=F[r(0xCD6)]W=R==o x=W end else k=h k=E and 0x2BC740 or 0x6766DA end else if k<0xAF3DB6 then if k<0xAF0788 then k=0xEE6FE6 T=F[r(0x673)]n=z[s[0x2]]o=n~=T E=o else T=F[r(0x250D)]h=F[r(0x1537)]J=0x0 Z=0x0 o=F[r(0x1537)]R=y[o]o=F[r(0x1E2)]B=F[r(0x1FC)]n=y[T]e=0x0 Q=y[h]h=F[r(0x1E2)]f=Q[h]w=z[s[0x6]]c=y[B]B=c(e,Z,J)c=F[r(0x161C)]h=w*B e=F[r(0x1AC2)]w=y[c]X=0xB4 Z=0x0 D=0x0 B=y[e]e=B(Z)Z=F[r(0x1AC2)]B=y[Z]J=0x0 Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}c=w(e,Z,a(J))Q=h*c B=F[r(0x252B)]e=-0.5 c=y[B]w=.2 h=w/c T=n(f,Q,h)R[o]=T o=F[r(0xDF0)]h=F[r(0xDF0)]R=y[o]o=F[r(0x1E2)]B=0x0 T=F[r(0x250D)]n=y[T]Q=y[h]h=F[r(0x1E2)]Z=0x0 c=F[r(0x1FC)]f=Q[h]w=y[c]D=0x0 c=w(B,e,Z)J=-90 Z=F[r(0x1AC2)]B=F[r(0x161C)]w=y[B]e=y[Z]Z=e(J)J=F[r(0x1AC2)]e=y[J]J=e(D)D=F[r(0x1AC2)]e=y[D]D={e(X)}B=w(Z,J,a(D))Z=0x0 h=c*B D=0x0 c=F[r(0x161C)]e=F[r(0x1AC2)]w=y[c]B=y[e]e=B(Z)Z=F[r(0x1AC2)]B=y[Z]J=0x0 Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}c=w(e,Z,a(J))B=F[r(0x252B)]Q=h*c c=y[B]w=.2 h=w/c B=.5 T=n(f,Q,h)R[o]=T o=F[r(0x23BE)]e=0x1 X=0x0 T=F[r(0x250D)]R=y[o]h=F[r(0x23BE)]n=y[T]o=F[r(0x1E2)]c=F[r(0x1FC)]Z=0x0 Q=y[h]h=F[r(0x1E2)]f=Q[h]J=0x0 k=0x98D007 w=y[c]c=w(B,e,Z)Z=F[r(0x1AC2)]B=F[r(0x161C)]w=y[B]e=y[Z]Z=e(J)J=F[r(0x1AC2)]e=y[J]D=0x5A J=e(D)D=F[r(0x1AC2)]e=y[D]D={e(X)}B=w(Z,J,a(D))h=c*B J=0x0 c=F[r(0x161C)]Z=0x0 w=y[c]e=F[r(0x1AC2)]B=y[e]e=B(Z)D=0x0 Z=F[r(0x1AC2)]B=y[Z]Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}B=F[r(0x252B)]c=w(e,Z,a(J))w=.7 Q=h*c c=y[B]h=w/c c=F[r(0x1FC)]T=n(f,Q,h)e=0x1 R[o]=T J=0x0 B=-0.5 o=F[r(0x93C)]R=y[o]h=F[r(0x93C)]T=F[r(0x250D)]n=y[T]Q=y[h]h=F[r(0x1E2)]f=Q[h]w=y[c]Z=0x0 o=F[r(0x1E2)]D=-90 c=w(B,e,Z)Z=F[r(0x1AC2)]B=F[r(0x161C)]w=y[B]e=y[Z]Z=e(J)J=F[r(0x1AC2)]e=y[J]J=e(D)X=0x0 D=F[r(0x1AC2)]e=y[D]D={e(X)}B=w(Z,J,a(D))e=F[r(0x1AC2)]h=c*B J=0x0 c=F[r(0x161C)]w=y[c]D=0x0 Z=0x0 B=y[e]e=B(Z)Z=F[r(0x1AC2)]B=y[Z]Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}c=w(e,Z,a(J))w=.7 B=F[r(0x252B)]Q=h*c c=y[B]h=w/c T=n(f,Q,h)R[o]=T end else k=F[r(0x138E)]w=F[r(0x1270)]Q=f k=h[k]k=k(h,w)k=k and 0x8B7A35 or 0x48AC40 end end end else if k<0xB05BB9 then if k<0xB01236 then if k<0xAFFDD4 then if k<0xAFE2B8 then k=0xFF424B else k=true k=k and 0xDD8E1F or 0xF80E24 end else x=nil Y=nil C=nil E={}k=y[F[r(0x9AA)]]end else if k<0xB0364D then if k<0xB024DF then J=0x1E c=F[r(0xEA7)]Z=0xA ut=F[r(0x1539)]Ct=F[r(0x226C)]P=F[r(0xD33)]yt=F[r(0xD33)]h=F[r(0x2145)]e=F[r(0x8E8)]Q=y[h]H=F[r(0xD33)]i=F[r(0xD33)]Wt=F[r(0x1BC)]Et=F[r(0x1538)]tt[0x3]=0x32 X=F[r(0x517)]B=y[e]e=B(Z,J)D=y[X]Z=F[r(0x1A1B)]J=F[r(0xD33)]Ut=0x0 G=F[r(0xD33)]kt=F[r(0x153A)]mt=0x0 B=F[r(0x2125)]lt=F[r(0x1538)]K=f[G]rt=F[r(0xD33)]G=F[r(0xAAE)]O=K[G]bt=0x0 G=f[P]at=nil zt=0x0 P=F[r(0x957)]K=G[P]Mt=true P=f[i]i=F[r(0xAAE)]G=P[i]vt=F[r(0x1F64)]X=D(O,K,G)D=F[r(0x25DD)]tt[0x1]=0x0 G=F[r(0x517)]K=y[G]Nt=nil i=f[H]H=F[r(0xAAE)]P=i[H]H=f[yt]Lt=F[r(0x1508)]yt=F[r(0x957)]Ft=0x0 i=H[yt]Yt=F[r(0x2504)]Vt=0x1 st=0x0 It=F[r(0xDF1)]yt=f[rt]rt=F[r(0xAAE)]H=yt[rt]G=K(P,i,H)i=0x1 K=0x2 P=F[r(0x5D2)]O=G*K rt=F[r(0x180B)]H=F[r(0x180B)]G=f[P]k=0x2B0BB K=F[r(0x5D2)]yt=f[rt]rt=F[r(0x1423)]P=F[r(0x1E7C)]xt=y[Wt]St=F[r(0x1CFD)]tt[0x2]=F[r(0x1480)]Wt=xt(Vt,mt,Ut)xt=F[r(0x955)]Vt=nil Ut=nil mt=F[r(0x2097)]w={[c]=e;[B]=Z;[J]=X,[D]=O,[K]=G,[P]=i,[H]=yt,[rt]=at,[kt]=bt,[ut]=st,[lt]=zt,[Et]=Ft,[Ct]=It,[Yt]=Wt;[xt]=Vt;[mt]=Ut,[vt]=Nt,[Lt]=Mt;[St]=tt[0x1],[tt[0x2]]=tt[0x3]}h=Q(w)else k=0x7ECCBD x=0x3 E=Y+x Y=E end else n=not o x=x+R Y=x<=W Y=n and Y n=x>=W n=o and n Y=n or Y n=0x79DB91 k=Y and n Y=0x13A277 k=k or Y end end else if k<0xB152F9 then if k<0xB0CD56 then if k<0xB07780 then n=F[r(0x19B)]Q=F[r(0xD62)]W=k o=C[n]f=y[Q]Q=F[r(0x19B)]T=f[Q]f=F[r(0xD1A)]n=T[f]R=o==n x=R k=R and 0x29DA72 or 0xE9F2C5 else Z=F[r(0x1924)]e=F[r(0x180B)]w=F[r(0x180B)]h=z[Q]B=f[e]k=0x8BFFC6 e=T[Z]c=B*e h[w]=c end else e=nil k=0x845062 end else if k<0xB1B44E then if k<0xB17345 then k=x and 0x99164 or 0x8BFFC6 else k=0x227396 W=nil R=nil end else C=b[0x1]Y=b[0x2]x=F[r(0x1C4C)]o=F[r(0x180B)]E=y[x]x=F[r(0x22B6)]k=E[x]x=F[r(0x1FE5)]E=k(x)x=E k=F[r(0x246A)]E=C R=F[r(0x180B)]x[k]=E E=Y k=F[r(0x2469)]x[k]=E k=F[r(0x1CB)]W=y[R]R=F[r(0x22B6)]E=W[R]R=F[r(0x180B)]W=E()x[k]=W W=Y[R]R=F[r(0xA03)]k=F[r(0x1E2)]R=W[R]R=R(W)W=C[o]E=R*W x[k]=E k=F[r(0x1725)]E=C x[k]=E E={x}k=y[F[r(0x140B)]]end end end end end end else if k<0xB93EDC then if k<0xB5E877 then if k<0xB44384 then if k<0xB24E33 then if k<0xB22203 then if k<0xB1F526 then if k<0xB1D97C then B=F[r(0x810)]k=0xA06BE h=F[r(0x13DF)]c=F[r(0x733)]f=F[r(0x810)]n=F[r(0x733)]o=y[n]T=y[f]Q=y[h]h=F[r(0x7EC)]f=Q[h]w=y[c]c=y[B]h=w/c Q=f(h)n=T*Q R=o-n o=F[r(0x733)]y[o]=R else Q=z[s[0x4]]k=0xC0682 f=Q[x]Q=0x4 T=f[Q]f=T()end else T=not Y o=T k=0xD85AED end else if k<0xB24071 then if k<0xB235C5 then R=not W C=C+x E=C<=Y E=R and E R=C>=Y R=W and R E=R or E R=0xC9E18C k=E and R E=0xB94BA2 k=k or E else Ft=F[r(0x238B)]lt=Ft..ut It=lt Ft=F[r(0xE88)]lt=nil bt[Ft]=It k=0xDB80A5 end else w=k f=C[W]k=f and 0xB85993 or 0x297046 h=f end end else if k<0xB34D4E then if k<0xB32524 then if k<0xB2E91A then c=k Z=F[r(0xDD1)]e=w[Z]Z=F[r(0x11F3)]B=e==Z E=B k=B and 0xE9308F or 0xFA54E1 else k=F[r(0x1633)]f=F[r(0x25BE)]E=f..R T[k]=E k=0x43417F end else x=z[s[0x9]]k={}W=x Y=0x1 x=0x1 C=k k=0xB03ADF R=x x=0x0 o=R<x x=Y-R end else if k<0xB3691B then if k<0xB354EF then k=0xDAF6A4 else P=.05 H=F[r(0x199C)]E=F[r(0x25F7)]B=F[r(0x1537)]k=y[E]D=0x0 E=k()h=F[r(0x250D)]X=-0.31 at=0xC f=R K=-0.65 E=F[r(0x1537)]J=F[r(0x1FC)]k=y[E]Q=y[h]c=y[B]B=F[r(0x1CB)]E=F[r(0x1CB)]f=nil w=c[B]e=z[s[0x4]]Z=y[J]i=y[H]rt=z[s[0x5]]yt=rt/at H=i(yt)G=P*H O=K+G J=Z(D,X,O)i=F[r(0x1A84)]B=e*J D=F[r(0x1AC2)]Z=F[r(0x161C)]e=y[Z]O=0x0 X=0x3C J=y[D]D=J(X)X=F[r(0x1AC2)]J=y[X]X=J(O)O=F[r(0x1AC2)]K=0x0 J=y[O]O={J(K)}Z=e(D,X,a(O))e=0x1 J=F[r(0x252B)]c=B*Z Z=y[J]rt=0xC B=e/Z h=Q(w,c,B)k[E]=h h=F[r(0x250D)]J=F[r(0x1FC)]X=0x0 B=F[r(0xDF0)]E=F[r(0xDF0)]G=2.5 O=0x0 k=y[E]E=F[r(0x1CB)]Q=y[h]c=y[B]D=0x0 B=F[r(0x1CB)]w=c[B]e=z[s[0x6]]Z=y[J]J=Z(D,X,O)B=e*J D=F[r(0x1AC2)]Z=F[r(0x161C)]e=y[Z]O=0x0 J=y[D]P=y[i]yt=z[s[0x5]]H=yt/rt i=P(H)K=G*i X=O-K K=0x0 D=J(X)O=0x0 X=F[r(0x1AC2)]J=y[X]X=J(O)O=F[r(0x1AC2)]J=y[O]O={J(K)}Z=e(D,X,a(O))J=F[r(0x252B)]c=B*Z Z=y[J]e=0x1 B=e/Z h=Q(w,c,B)k[E]=h E=F[r(0x1D79)]h=F[r(0x250D)]K=0x0 O=0x41 k=y[E]Q=y[h]D=.5 B=F[r(0x1D79)]J=1.35 E=F[r(0x1CB)]c=y[B]X=-1.4 Z=F[r(0x1FC)]B=F[r(0x1CB)]w=c[B]e=y[Z]P=F[r(0x199C)]Z=e(J,D,X)J=F[r(0x161C)]X=F[r(0x1AC2)]e=y[J]D=y[X]X=D(O)O=F[r(0x1AC2)]D=y[O]O=D(K)G=-15 yt=0xC K=F[r(0x1AC2)]D=y[K]K={D(G)}J=e(X,O,a(K))B=Z*J e=z[s[0x7]]c=B*e J=F[r(0x252B)]Z=y[J]e=0x1 O=0x0 B=e/Z h=Q(w,c,B)B=F[r(0x418)]k[E]=h E=F[r(0x418)]J=-1.5 h=F[r(0x250D)]k=y[E]Q=y[h]E=F[r(0x1CB)]c=y[B]K=0x5 Z=F[r(0x1FC)]D=.5 B=F[r(0x1CB)]w=c[B]X=0x0 e=y[Z]Z=e(J,D,X)X=F[r(0x1AC2)]G=-35 J=F[r(0x161C)]e=y[J]D=y[X]X=D(O)O=F[r(0x1AC2)]D=y[O]O=D(K)K=F[r(0x1AC2)]D=y[K]K={D(G)}J=e(X,O,a(K))K=.05 B=Z*J e=z[s[0x8]]c=B*e e=0x1 J=F[r(0x252B)]Z=y[J]B=e/Z h=Q(w,c,B)k[E]=h X=-0.3 E=F[r(0x23BE)]h=F[r(0x250D)]k=y[E]E=F[r(0x1CB)]Q=y[h]J=0x1 Z=F[r(0x1FC)]B=F[r(0x23BE)]c=y[B]B=F[r(0x1CB)]w=c[B]e=y[Z]G=y[P]H=z[s[0x5]]i=H/yt P=G(i)O=K*P D=X-O X=-0.4 Z=e(J,D,X)X=F[r(0x1AC2)]O=0x14 J=F[r(0x161C)]e=y[J]D=y[X]X=D(O)K=0x5A O=F[r(0x1AC2)]G=0x0 D=y[O]O=D(K)K=F[r(0x1AC2)]D=y[K]K={D(G)}J=e(X,O,a(K))D=F[r(0x1AC2)]O=0x0 B=Z*J K=0x0 Z=F[r(0x161C)]X=-15 e=y[Z]J=y[D]D=J(X)X=F[r(0x1AC2)]J=y[X]X=J(O)O=F[r(0x1AC2)]J=y[O]O={J(K)}Z=e(D,X,a(O))e=0x1 c=B*Z J=F[r(0x252B)]Z=y[J]B=e/Z h=Q(w,c,B)k[E]=h Z=F[r(0x1FC)]K=.05 E=F[r(0x93C)]P=F[r(0x199C)]B=F[r(0x93C)]k=y[E]X=-0.1 E=F[r(0x1CB)]h=F[r(0x250D)]Q=y[h]yt=0xC c=y[B]B=F[r(0x1CB)]w=c[B]e=y[Z]G=y[P]H=z[s[0x5]]J=-1 i=H/yt P=G(i)O=K*P D=X-O X=-0.4 K=-90 Z=e(J,D,X)X=F[r(0x1AC2)]J=F[r(0x161C)]e=y[J]D=y[X]O=0x3C X=D(O)G=0x0 O=F[r(0x1AC2)]D=y[O]O=D(K)K=F[r(0x1AC2)]D=y[K]K={D(G)}J=e(X,O,a(K))D=F[r(0x1AC2)]B=Z*J X=-15 Z=F[r(0x161C)]e=y[Z]J=y[D]D=J(X)X=F[r(0x1AC2)]J=y[X]K=0x0 O=0x0 X=J(O)O=F[r(0x1AC2)]J=y[O]O={J(K)}Z=e(D,X,a(O))c=B*Z e=0x1 J=F[r(0x252B)]Z=y[J]B=e/Z h=Q(w,c,B)k[E]=h k=0xDA2FFE end else W=true k=0xC6DFC1 z[s[0x5]]=W end end end else if k<0xB4F590 then if k<0xB4AA6B then if k<0xB487B1 then if k<0xB4644B then O=O+G E=O<=K i=not P E=i and E i=O>=K i=P and i E=i or E i=0x8E5461 k=E and i E=0xDA675C k=k or E else k=n k=E and 0x43A543 or 0x50F896 end else E=z[s[0x1]]C=false k=E==C k=k and 0x782DEA or 0xEDD3C end else if k<0xB4E373 then if k<0xB4B213 then n=n+f E=n<=T h=not Q E=h and E h=n>=T h=Q and h E=h or E h=0xB51E29 k=E and h E=0x2CF550 k=k or E else H=0x1 k=0x88E4E7 rt=z[s[0x19]]yt=#rt rt=yt yt=0x1 at=yt yt=0x0 kt=at<yt yt=H-at end else k=z[s[0x2]]n=true E={o}k[o]=n k=y[F[r(0xB0E)]]end end else if k<0xB56A41 then if k<0xB5300F then if k<0xB51820 then k=e k=0xBF5CA1 w=B else E=F[r(0x180B)]h=n P=F[r(0xD33)]e=F[r(0x180B)]k=z[s[0x1]]J=0x0 B=z[s[0x1]]c=B[e]e=F[r(0x1FC)]Z=0x0 B=y[e]G=z[s[0x1]]K=G[P]G=F[r(0xAAE)]O=K[G]X=-O O=0x2 D=X/O e=B(Z,J,D)w=c*e k[E]=w D=F[r(0x180B)]E=F[r(0x9B5)]k=y[E]O=F[r(0xD33)]Z=F[r(0x21EA)]e=z[s[0x1]]B=e[Z]J=z[s[0x1]]Z=J[D]J=F[r(0xEF)]e=Z[J]X=z[s[0x1]]D=X[O]X=F[r(0xAAE)]J=D[X]D=1.5 Z=J/D D=F[r(0x13EE)]J=y[D]D={k(B,e,Z,J)}c=D[0x3]w=D[0x2]E=D[0x1]B=E k=B and 0x8AE856 or 0xDF9DE2 end else x=F[r(0xBC4)]k=z[s[0x1]]E=F[r(0xC0D)]R=0x0 Y=y[x]x=F[r(0x22B6)]C=Y[x]x=0x0 W=0x23 Y=C(x,W,R)k[E]=Y E={}k=y[F[r(0x2581)]]end else if k<0xB5B47F then if k<0xB59880 then X=nil P=nil k=0xC37A6E else k=0x728720 Nt=F[r(0x1B2F)]ut=Nt end else x=true Y=F[r(0x185B)]k=z[s[0x2]]k[Y]=x k=0x788CE9 end end end end else if k<0xB739E4 then if k<0xB66DC5 then if k<0xB63C54 then if k<0xB62E76 then if k<0xB60C0A then B=F[r(0x608)]c=F[r(0xAD)]Z=F[r(0x239C)]w=y[c]c=w(B)B=F[r(0x25BB)]c=F[r(0x22D6)]w=y[c]e=y[Z]c=w(B,e)B=F[r(0x956)]z[s[0xE]]=c w=z[s[0xE]]e=z[s[0xF]]w[B]=e e=true B=F[r(0x185B)]w=z[s[0xE]]w[B]=e B=F[r(0x2561)]w=z[s[0xE]]e=z[s[0x10]]w[B]=e w=z[s[0xE]]e=z[s[0x11]]B=F[r(0x1AE3)]w[B]=e e=true w=z[s[0xE]]B=F[r(0x828)]w[B]=e e=0x32 w=z[s[0xE]]B=F[r(0x1F6E)]w[B]=e k=0xFE24E6 w=z[s[0xE]]e=z[s[0x13]]B=F[r(0x5C7)]w[B]=e B=F[r(0x1A5B)]w=true y[B]=w else k=o k=R and 0xE70912 or 0xE67DA9 end else C=z[s[0x2]]Y=z[s[0x3]]o=0x1 R=F[r(0x239C)]E=C+Y z[s[0x2]]=E W=y[R]T=0x1 R=F[r(0x258F)]x=W[R]R=F[r(0x517)]W=y[R]n=0x0 R=W(o,n,T)Y=x*R R=F[r(0x239C)]x=F[r(0x1B89)]C=Y[x]e=-1 W=y[R]h=F[r(0x239C)]R=F[r(0x258F)]x=W[R]W=F[r(0xC60)]c=F[r(0x239C)]Z=0x0 Y=x[W]B=0x0 n=F[r(0x239C)]W=F[r(0x9B5)]x=y[W]o=y[n]n=F[r(0x21EA)]T=F[r(0x1FC)]R=o[n]n=y[T]Q=y[h]h=F[r(0x21EA)]f=Q[h]w=y[c]c=F[r(0x21EA)]h=w[c]c=F[r(0x517)]w=y[c]c=w(B,e,Z)Q=h+c T=n(f,Q)n=F[r(0xEF)]o=T[n]h=F[r(0x13EE)]f=k Q=y[h]n=0x4 T=Q k=Q and 0xCC28A7 or 0x3B6065 end else if k<0xB65FF4 then if k<0xB6448E then k=0x5FE857 else k=0x921CA end else o=F[r(0xBC4)]W=z[s[0x4]]T=0x0 k=0x6435CA R=F[r(0x252C)]x=W[R]R=y[o]o=F[r(0x22B6)]W=R[o]n=0x0 o=0x0 R=W(o,n,T)Y=x==R C=Y end end else if k<0xB71032 then if k<0xB6D37A then if k<0xB6B55B then e=F[r(0x20)]B=F[r(0x116E)]B=h[B]B=B(h,e)k=B and 0xBE3CF7 or 0x840945 c=B else E=F[r(0x1725)]k=C[E]E=F[r(0x1D74)]Y=F[r(0x1CC9)]E=k[E]E=E(k,Y)k=E and 0xCC0CE3 or 0xB7ABB7 end else k=E and 0xF22DA8 or 0xBF5416 end else if k<0xB730FB then if k<0xB722CC then k=0x7F5B2D E=0x3 Y=E W=0x3 x=W else k=o k=R and 0x51F70C or 0xBA6E4E end else C=nil k=0x81DA2C x=nil Y=nil end end end else if k<0xB85B60 then if k<0xB7D584 then if k<0xB7B07F then if k<0xB75475 then rt,at=H(yt,rt)k=rt and 0x33AD4D or 0x3983E5 else k=0xA037BB end else E=F[r(0x25F7)]k=y[E]E=k()R=C T=true n=z[s[0x1]]o=n==T k=o and 0x790B2E or 0x79E59 E=o end else if k<0xB85923 then if k<0xB7FD21 then k=0xF47113 else vt=F[r(0xDD1)]Nt=F[r(0x1B54)]Vt=F[r(0x1B84)]St=F[r(0xB2A)]Ut=lt[vt]Mt=i[Ft]Lt=Mt..St vt=Nt..Lt mt=Ut..vt Wt=Vt..mt ut=Wt Vt=ut~=zt k=Vt and 0x75024C or 0x3A3B88 end else k=0x297046 B=F[r(0x1725)]c=f[B]h=c end end else if k<0xB8C10B then if k<0xB88039 then if k<0xB86BAE then k=E and 0xE62C93 or 0xF76138 else T=F[r(0x8CB)]z[s[0x4]]=T f=false k=0xB731B0 z[s[0x1]]=f end else k=0xB1A R=nil end else if k<0xB8CF5C then if k<0xB8C44A then tt[0xB]=F[r(0x1BC6)]tt[0x8]=k tt[0xA]=y[tt[0xB]]tt[0x9]=tt[0xA]~=K tt[0x7]=tt[0x9]k=tt[0x9]and 0x935002 or 0xF3AC3F else Y=b[0x2]Y=nil C=b[0x1]x=b[0x3]k=y[F[r(0x1AA1)]]C=nil E={}W=b[0x4]W=nil x=nil end else tt[0x3]=tt[0x5]k=tt[0x6]k=0xA9EE23 end end end end end else if k<0xBD9C04 then if k<0xBA7511 then if k<0xB9FFE8 then if k<0xB9D5B7 then if k<0xB95E7A then if k<0xB94A75 then x,R=C(Y,x)k=x and 0x3A55FE or 0x59C5A2 else k=0xE8CBFB end else R=nil k=0xE9C3AE W=nil end else if k<0xB9FAF3 then if k<0xB9F097 then k=at E=rt k=0x6F8A4A else Q=F[r(0x1E2)]n=F[r(0x250D)]k=z[s[0x3]]J=0x0 G=0x18 o=y[n]f=z[s[0x3]]e=0x0 h=F[r(0x1FC)]T=f[Q]c=0x0 B=0x0 Q=y[h]w=0x0 h=Q(w,c,B)X=F[r(0x199C)]w=F[r(0x161C)]Z=0x0 B=F[r(0x1AC2)]E=F[r(0x1E2)]Q=y[w]c=y[B]i=0xC B=c(e)e=F[r(0x1AC2)]c=y[e]e=c(Z)Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}w=Q(B,e,a(Z))Q=.25 f=h*w n=o(T,f,Q)k[E]=n e=0x0 n=F[r(0x250D)]E=F[r(0x1537)]k=y[E]o=y[n]J=.04 c=F[r(0x1FC)]E=F[r(0x1CB)]Q=F[r(0x1537)]f=y[Q]Q=F[r(0x1CB)]T=f[Q]h=z[s[0x4]]w=y[c]D=y[X]K=z[s[0x5]]O=K/G X=D(O)Z=J*X J=0x0 X=.05 K=F[r(0x199C)]B=e-Z e=0x0 O=y[K]P=z[s[0x5]]G=P/i K=O(G)D=X*K Z=J+D c=w(B,e,Z)i=0x18 B=F[r(0x1AC2)]Q=h*c w=F[r(0x161C)]h=y[w]X=2.5 K=F[r(0x199C)]e=0x0 c=y[B]B=c(e)J=0x0 e=F[r(0x1AC2)]c=y[e]O=y[K]P=z[s[0x5]]G=P/i K=O(G)D=X*K O=F[r(0x199C)]Z=J-D e=c(Z)J=0x0 Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}w=h(B,e,a(Z))f=Q*w h=0x1 c=F[r(0x252B)]w=y[c]Q=h/w n=o(T,f,Q)k[E]=n E=F[r(0xDF0)]k=y[E]Q=F[r(0xDF0)]n=F[r(0x250D)]c=F[r(0x1FC)]E=F[r(0x1CB)]B=0x0 o=y[n]f=y[Q]Z=0x0 J=0x0 Q=F[r(0x1CB)]T=f[Q]D=.1 h=z[s[0x6]]e=0x0 w=y[c]c=w(B,e,Z)Q=h*c B=F[r(0x1AC2)]w=F[r(0x161C)]h=y[w]c=y[B]e=0x0 B=c(e)e=F[r(0x1AC2)]Z=0x0 c=y[e]e=c(Z)Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}w=h(B,e,a(Z))f=Q*w c=F[r(0x252B)]h=0x1 w=y[c]P=0xC Q=h/w n=o(T,f,Q)Q=F[r(0x1D79)]k[E]=n E=F[r(0x1D79)]k=y[E]B=1.1 E=F[r(0x1CB)]c=F[r(0x1FC)]n=F[r(0x250D)]Z=.35 o=y[n]f=y[Q]Q=F[r(0x1CB)]T=f[Q]w=y[c]X=y[O]G=z[s[0x5]]K=G/P O=X(K)J=D*O D=-45 e=Z+J O=1.5 Z=.2 G=F[r(0x199C)]H=0xC c=w(B,e,Z)B=F[r(0x161C)]w=y[B]Z=F[r(0x1AC2)]e=y[Z]K=y[G]i=z[s[0x5]]P=i/H G=K(P)X=O*G J=D-X X=-45 Z=e(J)D=0x0 J=F[r(0x1AC2)]e=y[J]J=e(D)D=F[r(0x1AC2)]e=y[D]D={e(X)}B=w(Z,J,a(D))h=c*B c=F[r(0x161C)]Z=0x0 w=y[c]J=0x19 e=F[r(0x1AC2)]B=y[e]e=B(Z)D=0x0 Z=F[r(0x1AC2)]B=y[Z]Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}c=w(e,Z,a(J))Q=h*c c=F[r(0x252B)]h=z[s[0x7]]f=Q*h h=0x1 B=.1 J=0x5 Z=0x50 w=y[c]Q=h/w n=o(T,f,Q)k[E]=n E=F[r(0x418)]e=-0.3 k=y[E]E=F[r(0x1CB)]n=F[r(0x250D)]Q=F[r(0x418)]o=y[n]f=y[Q]w=F[r(0x1FC)]O=F[r(0x199C)]c=-1.25 Q=F[r(0x1CB)]T=f[Q]h=y[w]w=h(c,B,e)e=F[r(0x1AC2)]c=F[r(0x161C)]h=y[c]B=y[e]e=B(Z)Z=F[r(0x1AC2)]B=y[Z]Z=B(J)J=F[r(0x1AC2)]D=0xC B=y[J]J={B(D)}c=h(e,Z,a(J))Q=w*c c=F[r(0x252B)]D=.035 h=z[s[0x8]]f=Q*h h=0x1 w=y[c]R=nil c=0x1 P=0x18 Q=h/w n=o(T,f,Q)k[E]=n E=F[r(0x23BE)]n=F[r(0x250D)]Q=F[r(0x23BE)]k=y[E]Z=-1 o=y[n]w=F[r(0x1FC)]f=y[Q]Q=F[r(0x1CB)]T=f[Q]E=F[r(0x1CB)]h=y[w]X=y[O]G=z[s[0x5]]K=G/P O=X(K)P=0x18 J=D*O e=Z+J X=F[r(0x199C)]J=.05 D=y[X]K=z[s[0x5]]G=0xC O=K/G X=D(O)Z=J*X J=0x55 B=e-Z e=0x0 w=h(c,B,e)c=F[r(0x161C)]e=F[r(0x1AC2)]Z=0x0 h=y[c]B=y[e]e=B(Z)D=0x0 Z=F[r(0x1AC2)]B=y[Z]Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}D=2.5 c=h(e,Z,a(J))B=F[r(0x1AC2)]O=F[r(0x199C)]Q=w*c Z=-2 w=F[r(0x161C)]h=y[w]c=y[B]X=y[O]G=z[s[0x5]]K=G/P O=X(K)J=D*O e=Z-J B=c(e)e=F[r(0x1AC2)]Z=0x0 J=0x0 c=y[e]e=c(Z)Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}w=h(B,e,a(Z))f=Q*w O=F[r(0x199C)]c=F[r(0x252B)]w=y[c]h=0x1 Q=h/w n=o(T,f,Q)Q=F[r(0x93C)]k[E]=n E=F[r(0x93C)]D=.035 P=0x18 k=y[E]n=F[r(0x250D)]E=F[r(0x1CB)]o=y[n]c=-1 w=F[r(0x1FC)]Z=-1 f=y[Q]Q=F[r(0x1CB)]T=f[Q]h=y[w]X=y[O]G=z[s[0x5]]K=G/P O=X(K)X=F[r(0x199C)]J=D*O e=Z-J D=y[X]K=z[s[0x5]]G=0xC O=K/G J=.05 X=D(O)Z=J*X B=e-Z Z=0x0 e=0x0 w=h(c,B,e)O=F[r(0x199C)]e=F[r(0x1AC2)]J=-85 c=F[r(0x161C)]h=y[c]D=0x0 B=y[e]e=B(Z)Z=F[r(0x1AC2)]B=y[Z]Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}c=h(e,Z,a(J))Q=w*c w=F[r(0x161C)]P=0x18 B=F[r(0x1AC2)]h=y[w]D=2.5 c=y[B]Z=-2 X=y[O]G=z[s[0x5]]K=G/P O=X(K)J=D*O e=Z+J J=0x0 B=c(e)e=F[r(0x1AC2)]c=y[e]Z=0x0 e=c(Z)Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}c=F[r(0x252B)]w=h(B,e,a(Z))h=0x1 f=Q*w w=y[c]Q=h/w n=o(T,f,Q)k[E]=n k=0x475FE4 end else W=F[r(0x208F)]Y=F[r(0x956)]k=z[s[0x2]]x=W..C k[Y]=x k=0x9C3DE8 end end else if k<0xBA357C then if k<0xBA097C then if k<0xBA049B then tt[0x1]=k tt[0x2]=z[x]k=tt[0x2]and 0x2E1758 or 0x7DB1FA St=tt[0x2]else h=F[r(0xEC4)]Q=C[h]h=F[r(0x9D2)]f=Q[h]Q=0x0 T=f<=Q k=T and 0xB87998 or 0xE3A725 end else T=false k=true C=k W=F[r(0x1EDC)]E=y[W]R=z[s[0x4]]o=z[s[0x6]]n=z[s[0x5]]W=E(R,x,o,n,T)Y=W k=0x8E25E2 end else if k<0xBA6CEC then if k<0xBA460F then k=0x3C40E5 else n=F[r(0xC60)]E=F[r(0x1FC)]e=F[r(0x1230)]T=F[r(0x1230)]Y=b[0x2]k=F[r(0x2531)]C=b[0x1]k=Y[k]x=b[0x3]k=k(Y,x)f=F[r(0xCDC)]h=F[r(0xCDC)]w=F[r(0xC60)]W=k c=F[r(0xC60)]o=F[r(0xCDC)]k=y[E]J=F[r(0x1230)]B=F[r(0xC60)]R=C[o]o=C[n]n=C[T]T=W[f]Q=F[r(0xCDC)]f=Y[Q]Z=F[r(0x1230)]Q=x[h]h=W[w]w=Y[c]c=x[B]B=W[e]e=Y[Z]Z=x[J]E={k(R,o,n,T,f,Q,h,w,c,B,e,Z)}k=y[F[r(0xA49)]]E={a(E)}end else f=F[r(0xEE6)]o=k T=z[s[0x5]]n=T~=f R=n k=n and 0x8BD88E or 0x3C27F end end end else if k<0xBBB165 then if k<0xBAEBD0 then if k<0xBAB164 then if k<0xBA9047 then lt=false xt=k Yt=I()Vt=N(0xD51A79,{Yt})z[Yt]=lt Wt=h(Vt)lt=Wt k=Wt and 0xF87C66 or 0x559A57 else o=z[s[0x3]]n=false k=o==n k=k and 0xEBBEC1 or 0xBCA717 end else B=0x0 k=R>B k=k and 0x95F2F2 or 0x1B0B2B end else if k<0xBB5159 then if k<0xBB1C49 then k={}x=z[s[0x2]]C=k k=x and 0x6B989D or 0x829C3B Y=x else k=0xAC4A2A Q=F[r(0x1897)]f=R~=Q E=f end else Y=0x1 x=0x1000000 o=0x1000000 E=z[s[0x1]]W=F[r(0x1D3B)]C=E(Y,x)x=y[W]W=F[r(0x79B)]R=0x1 Y=x[W]x=Y()Y=z[s[0x1]]W=Y(R,o)E=x^W x=F[r(0x1D3B)]k=C-E Y=y[x]x=F[r(0x79B)]C=k E=Y[x]Y=E()k=Y/C E={k}k=y[F[r(0x1DC7)]]end end else if k<0xBCF58E then if k<0xBC75FA then if k<0xBC3800 then J=F[r(0x1CC9)]O=false Z=y[J]J=F[r(0xDD1)]D=F[r(0x2396)]Z[J]=D X=z[s[0x14]]D=X==O Z=D J=k k=D and 0x34AAFD or 0xC351CB else C=F[r(0x239C)]k=y[C]Y=true C=F[r(0x20C7)]k[C]=Y k=0x41D5E5 end else f=F[r(0xDD1)]T=R[f]h=0x1 Q=z[s[0x4]]f=Q[h]n=T==f k=n and 0x6AAF39 or 0xBFCF6 o=n end else if k<0xBD4803 then if k<0xBD1EBE then K=F[r(0x180B)]P=0x0 O=y[K]K=F[r(0x22B6)]X=O[K]K=0x0 G=0x0 i=0x0 O=X(K,G,P)G=F[r(0x180B)]P=0x0 z[Z]=O K=y[G]k=0x4455DB G=F[r(0x22B6)]X=K[G]G=0x0 K=X(G,P,i)z[J]=K P=F[r(0x11F3)]G=z[c]X=G[P]P=F[r(0xF04)]G=F[r(0x1030)]G=X[G]G=G(X,P)z[B]=G else E={}k=y[F[r(0x1D85)]]end else D=D+O J=D<=X G=not K J=G and J G=D>=X G=K and G J=G or J G=0x90F006 k=J and G J=0xD68280 k=k or J end end end end else if k<0xBF3656 then if k<0xBE5B51 then if k<0xBE1114 then if k<0xBDD023 then if k<0xBDB25C then Z=true K=F[r(0x1B86)]z[s[0x14]]=Z X=F[r(0x1B86)]D=y[X]X=F[r(0x1C00)]J=D[X]O=y[K]K=F[r(0x1F6F)]X=O[K]k=0xEDE06 K=U(0x2236A0,{})O={X(K)}D=J(a(O))else Q=F[r(0x1632)]E=F[r(0x22D6)]R=b[0x5]h=F[r(0x1B91)]x=b[0x3]T=b[0x8]B=0x1 w=0x1 o=b[0x6]n=b[0x7]W=b[0x4]C=b[0x1]k=y[E]E=k(Q)f=b[0x9]Q=E e=0x0 E=0x1 Y=b[0x2]k=F[r(0xE02)]Q[k]=E c=0x0 k=F[r(0xD33)]E=y[h]h=E(w,c,B,e)Q[k]=h h=F[r(0x1B91)]e=0x0 E=y[h]B=0x0 k=F[r(0x21EA)]c=0x0 w=0x0 h=E(w,c,B,e)E=x Q[k]=h k=F[r(0x220E)]Q[k]=E E=T k=F[r(0xFD0)]Q[k]=E E=o k=F[r(0x156B)]Q[k]=E k=F[r(0x24D5)]E=W Q[k]=E k=F[r(0xEC6)]E=R Q[k]=E E=n k=F[r(0x3A)]Q[k]=E E=false k=F[r(0x220F)]Q[k]=E E=Y k=F[r(0xE88)]Q[k]=E k=F[r(0xDD1)]E=f Q[k]=E k=F[r(0x1725)]E=C Q[k]=E k=y[F[r(0xC9F)]]E={Q}end else zt=F[r(0x1AC2)]at=F[r(0x180B)]bt=z[s[0xE]]Ft=F[r(0x8E8)]st=F[r(0x161C)]It=0x168 ut=y[st]Ct=0x0 Yt=0x168 lt=y[zt]Et=y[Ft]Ft={Et(Ct,It)}k=0xE723AE zt=lt(a(Ft))xt=0x168 Et=F[r(0x1AC2)]lt=y[Et]Ct=F[r(0x8E8)]It=0x0 Ft=y[Ct]Ct={Ft(It,Yt)}It=F[r(0x8E8)]Ft=F[r(0x1AC2)]Et=lt(a(Ct))lt=y[Ft]Yt=0x0 Ct=y[It]It={Ct(Yt,xt)}Ft={lt(a(It))}st=ut(zt,Et,a(Ft))kt=bt*st x[at]=kt end else if k<0xBE3C02 then if k<0xBE18C4 then E=0xC371DF Y=F[r(0x1777)]x=0xB62D8D C=Y^x k=E-C E=F[r(0x14EA)]C=k k=E/C E={k}k=y[F[r(0x2502)]]else k=y[F[r(0xC83)]]C=nil E={}Y=nil end else k=c and 0x550697 or 0xA7D282 end end else if k<0xBECF24 then if k<0xBEC14E then if k<0xBE7415 then k=0xE8CBFB else k=0xA5EAB3 end else n=true k=n and 0x760A6 or 0xD999D8 end else if k<0xBF1403 then if k<0xBEEBF5 then z[x]=tt[0xC]tt[0x11]=z[tt[0x8]]tt[0x12]=0x1 k=tt[0xD]tt[0x10]=tt[0x11]+tt[0x12]tt[0xF]=tt[0x5][tt[0x10]]tt[0xE]=Ut+tt[0xF]k=0x42DB8C tt[0xF]=0x100 tt[0xD]=tt[0xE]%tt[0xF]tt[0x10]=z[tt[0x7]]Ut=tt[0xD]tt[0xF]=vt+tt[0x10]tt[0x10]=0x100 tt[0xE]=tt[0xF]%tt[0x10]vt=tt[0xE]else f=z[s[0x8]]Q=F[r(0x138F)]T=f[Q]f=F[r(0x116E)]f=T[f]Q=F[r(0x228A)]f=f(T,Q)T=F[r(0xA15)]T=f[T]T=T(f)k=0x33D242 end else k=0x34F9A0 end end end else if k<0xBFFAAD then if k<0xBF5B97 then if k<0xBF54AC then if k<0xBF4EB6 then n=k f=k Q=F[r(0x116E)]h=F[r(0x228D)]Q=Y[Q]Q=Q(Y,h)k=Q and 0x91D07A or 0x4454DF T=Q else C=nil E={}k=y[F[r(0x1727)]]end else i=0x3 P=D==i k=P and 0x5D5A9D or 0x5F59A4 end else if k<0xBFCE7A then if k<0xBF7540 then k=c k=0x1F55AD Q=w else o=F[r(0x1C4C)]R=F[r(0x19B5)]W=y[R]R=F[r(0x1C35)]k=W[R]R=y[o]Z=F[r(0xBC4)]o=F[r(0x22B6)]W=k k=R[o]o=F[r(0x1A2C)]R=k(o,Y)n=F[r(0x1C4C)]f=nil B=F[r(0x1C4C)]k=F[r(0xDD1)]o=F[r(0x1E74)]R[k]=o T=F[r(0x1509)]o=y[n]n=F[r(0x22B6)]h=nil k=o[n]n=F[r(0x2523)]o=k(n,R)J=0x1 n=F[r(0x1FE3)]k=F[r(0xDD1)]o[k]=n n=F[r(0x15B0)]k=y[n]n=F[r(0x21D3)]Q=nil K=0x1 n=k[n]D=0x1 n=n(k,T)T=nil k=false c=y[B]w=k B=F[r(0x22B6)]O=0x1 k=c[B]B=F[r(0xBBF)]c=k(B,o)e=y[Z]k=F[r(0xD33)]Z=F[r(0x22B6)]B=e[Z]Z=0x2 G=0x1 e=B(Z,J,D)c[k]=e B=F[r(0x6AC)]k=F[r(0xDD1)]e=F[r(0x1C4C)]c[k]=B D=0x2 B=y[e]e=F[r(0x22B6)]k=B[e]X=0x1 e=F[r(0xBBF)]B=k(e,o)k=F[r(0xD33)]J=F[r(0xBC4)]Z=y[J]J=F[r(0x22B6)]e=Z[J]J=0x2 Z=e(J,D,X)B[k]=Z e=F[r(0x20)]k=F[r(0xDD1)]B[k]=e Z=F[r(0x1C4C)]e=y[Z]Z=F[r(0x22B6)]k=e[Z]Z=F[r(0xBBF)]D=F[r(0xBC4)]e=k(Z,o)k=F[r(0xD33)]J=y[D]D=F[r(0x22B6)]Z=J[D]D=0x1 X=0x2 J=Z(D,X,O)e[k]=J J=F[r(0x1C4C)]k=F[r(0xDD1)]O=0x2 Z=F[r(0x2307)]e[k]=Z X=F[r(0xBC4)]Z=y[J]J=F[r(0x22B6)]k=Z[J]J=F[r(0xBBF)]Z=k(J,o)k=F[r(0xD33)]D=y[X]X=F[r(0x22B6)]J=D[X]X=0x1 D=J(X,O,K)Z[k]=D k=F[r(0xDD1)]J=F[r(0x1559)]Z[k]=J D=F[r(0x1C4C)]J=y[D]O=F[r(0xBC4)]D=F[r(0x22B6)]k=J[D]D=F[r(0xBBF)]J=k(D,o)X=y[O]k=F[r(0xD33)]O=F[r(0x22B6)]D=X[O]K=0x2 i=0x1 O=0x1 X=D(O,K,G)D=F[r(0x2308)]J[k]=X X=F[r(0x1C4C)]k=F[r(0xDD1)]G=0x2 P=0x1 J[k]=D D=y[X]X=F[r(0x22B6)]k=D[X]X=F[r(0xBBF)]D=k(X,o)K=F[r(0xBC4)]O=y[K]K=F[r(0x22B6)]X=O[K]K=0x1 k=F[r(0xD33)]O=X(K,G,P)P=0x2 D[k]=O X=F[r(0x155A)]O=F[r(0x1C4C)]k=F[r(0xDD1)]D[k]=X X=y[O]O=F[r(0x22B6)]k=X[O]O=F[r(0xBBF)]X=k(O,o)k=F[r(0xD33)]G=F[r(0xBC4)]K=y[G]G=F[r(0x22B6)]O=K[G]G=0x2 K=O(G,P,i)X[k]=K k=F[r(0xDD1)]O=F[r(0xD9C)]X[k]=O i=F[r(0x20A0)]k=F[r(0x5D2)]O=0x1 X[k]=O O=false k=F[r(0x1FC4)]i=o[i]X[k]=O O=F[r(0x64)]k=y[O]P={i(o)}i={k(a(P))}O=i[0x1]k=0x5F3EBF G=i[0x3]K=i[0x2]end else e=F[r(0x1C01)]k=0x64631 e=x[e]e=e(x)end end else if k<0xC0F319 then if k<0xC08201 then if k<0xC0368F then E=z[s[0x1]]C=false k=E==C k=k and 0xCCAE70 or 0x4D08B7 else T=not n W=W+o x=W<=R x=T and x T=W>=R T=n and T x=T or x T=0x7E9B53 k=x and T x=0x9673EC k=k or x end else w=false k=0xDD118E h=z[s[0xB]]Q=h==w T=Q end else if k<0xC125D5 then Q=0x0 R=F[r(0x1D79)]f=F[r(0x1D79)]h=-0.12 Y=y[R]R=F[r(0x1CB)]Z=F[r(0x239C)]T=y[f]f=F[r(0x1CB)]w=0x0 n=T[f]f=F[r(0x1FC)]T=y[f]f=T(Q,h,w)T=F[r(0x23BF)]Q=false o=n*f Y[R]=o R=F[r(0x1EDC)]o=0x83CD4A3 Y=y[R]e=0x0 n=y[T]f=1.3 T=0x2 c=F[r(0x2524)]R=Y(o,n,T,f,Q)x=nil f=0x1 R=F[r(0x1EDC)]Y=y[R]T=F[r(0x20)]Q=false o=0x43342A06 n=y[T]T=0x2 R=Y(o,n,T,f,Q)R=F[r(0x239C)]Y=y[R]B=3.15 R=F[r(0x180B)]T=F[r(0x1FC)]n=y[T]w=y[c]c=F[r(0x140F)]h=w[c]w=F[r(0x1157)]Q=h[w]w=F[r(0x517)]h=y[w]W=nil c=0x0 w=h(c,B,e)f=Q+w T=n(f)f=F[r(0x161C)]h=F[r(0x1AC2)]n=y[f]w=0x0 Q=y[h]h=Q(w)w=F[r(0x1AC2)]Q=y[w]e=y[Z]Z=F[r(0x1FF1)]B=e[Z]e=F[r(0x957)]c=B[e]B=0x0 w=Q(c)c=F[r(0x1AC2)]Q=y[c]c={Q(B)}f=n(h,w,a(c))o=T*f Y[R]=o o=F[r(0x1CC9)]R=F[r(0x1030)]f=F[r(0x239C)]Y=z[s[0x4]]R=Y[R]R=R(Y,o)Y=F[r(0x2138)]T=y[f]f=F[r(0x180B)]n=T[f]T=F[r(0x21EA)]o=n[T]k=0x387F70 R[Y]=o Y=false R=false z[s[0x2]]=Y z[s[0x3]]=R else tt[0x4F]=true tt[0x4E]=z[s[0x1]]tt[0x4B]=tt[0x4E]==tt[0x4F]k=tt[0x4B]and 0xCFB782 or 0xD9BF6E end end end end end end end end else if k<0xE36A93 then if k<0xD0FCA1 then if k<0xC9EC9B then if k<0xC55F40 then if k<0xC2EB0F then if k<0xC21979 then if k<0xC16392 then if k<0xC161C8 then if k<0xC157DC then Ft=nil lt=nil k=0x15EEE7 else f=not T R=R+n E=R<=o E=f and E f=R>=o f=T and f E=f or E f=0xCD8CDC k=E and f E=0xC5508C k=k or E end else k=c and 0x1E2596 or 0x2BA3C9 end else if k<0xC1DE19 then if k<0xC17C12 then T=F[r(0x15B0)]n=y[T]T=F[r(0x829)]o=n[T]n=F[r(0x1F49)]E=o[n]T=F[r(0x15B0)]o=F[r(0x13EE)]n=R E[o]=n n=2.5 o=F[r(0x11EF)]E=y[o]o=E(n)n=y[T]T=F[r(0x829)]o=n[T]n=F[r(0x1F49)]E=o[n]n=Y o=F[r(0x13EE)]E[o]=n n=0x3 o=F[r(0x11EF)]T=F[r(0x1CC9)]E=y[o]o=E(n)n=Y[T]T=F[r(0x9F3)]Q=F[r(0xD62)]o=n[T]f=y[Q]Q=F[r(0x212D)]T=f[Q]f=F[r(0x324)]n=T[f]E=o==n k=E and 0xE056BF or 0x83C9F2 else k=z[s[0x3]]n=F[r(0x250D)]Q=F[r(0x1E2)]i=0xC c=0x0 B=0x0 E=F[r(0x1E2)]o=y[n]h=F[r(0x1FC)]w=0x0 G=0x18 f=z[s[0x3]]T=f[Q]Q=y[h]e=0x0 h=Q(w,c,B)B=F[r(0x1AC2)]w=F[r(0x161C)]Q=y[w]c=y[B]Z=0x0 B=c(e)e=F[r(0x1AC2)]c=y[e]e=c(Z)Z=F[r(0x1AC2)]c=y[Z]J=0x0 Z={c(J)}X=F[r(0x199C)]w=Q(B,e,a(Z))f=h*w c=F[r(0x252B)]e=0x0 w=y[c]h=0x1 Q=h/w n=o(T,f,Q)k[E]=n E=F[r(0x1537)]Q=F[r(0x1537)]k=y[E]E=F[r(0x1CB)]n=F[r(0x250D)]o=y[n]c=F[r(0x1FC)]f=y[Q]Q=F[r(0x1CB)]T=f[Q]h=z[s[0x4]]w=y[c]D=y[X]J=.04 K=z[s[0x5]]O=K/G X=D(O)K=F[r(0x199C)]Z=J*X J=0x0 B=e-Z e=0x0 X=.05 O=y[K]P=z[s[0x5]]G=P/i K=O(G)D=X*K Z=J+D K=F[r(0x199C)]c=w(B,e,Z)Q=h*c e=0x0 w=F[r(0x161C)]h=y[w]B=F[r(0x1AC2)]c=y[B]B=c(e)i=0x18 e=F[r(0x1AC2)]J=0x0 c=y[e]O=y[K]P=z[s[0x5]]G=P/i K=O(G)X=2.5 D=X*K Z=J-D e=c(Z)Z=F[r(0x1AC2)]J=0x0 c=y[Z]Z={c(J)}w=h(B,e,a(Z))e=0x0 c=F[r(0x252B)]H=0xC h=0x1 f=Q*w w=y[c]D=.1 Q=h/w n=o(T,f,Q)k[E]=n E=F[r(0xDF0)]Q=F[r(0xDF0)]B=0x0 k=y[E]E=F[r(0x1CB)]n=F[r(0x250D)]o=y[n]f=y[Q]c=F[r(0x1FC)]Z=0x0 Q=F[r(0x1CB)]J=0x0 T=f[Q]h=z[s[0x6]]w=y[c]c=w(B,e,Z)B=F[r(0x1AC2)]w=F[r(0x161C)]Q=h*c e=0x0 h=y[w]c=y[B]B=c(e)Z=0x0 e=F[r(0x1AC2)]P=0xC c=y[e]e=c(Z)Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}c=F[r(0x252B)]w=h(B,e,a(Z))O=F[r(0x199C)]h=0x1 f=Q*w w=y[c]Q=h/w n=o(T,f,Q)k[E]=n E=F[r(0x1D79)]k=y[E]Q=F[r(0x1D79)]c=F[r(0x1FC)]n=F[r(0x250D)]o=y[n]Z=.35 f=y[Q]Q=F[r(0x1CB)]E=F[r(0x1CB)]T=f[Q]w=y[c]B=1.1 X=y[O]G=z[s[0x5]]K=G/P O=X(K)J=D*O G=F[r(0x199C)]e=Z+J Z=.2 c=w(B,e,Z)B=F[r(0x161C)]O=1.5 w=y[B]D=-45 Z=F[r(0x1AC2)]e=y[Z]K=y[G]i=z[s[0x5]]P=i/H G=K(P)X=O*G J=D-X Z=e(J)J=F[r(0x1AC2)]e=y[J]D=0x0 J=e(D)D=F[r(0x1AC2)]X=-45 e=y[D]D={e(X)}P=0x18 e=F[r(0x1AC2)]B=w(Z,J,a(D))h=c*B D=0x0 J=0x19 Z=0x0 c=F[r(0x161C)]w=y[c]B=y[e]e=B(Z)Z=F[r(0x1AC2)]B=y[Z]Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}c=w(e,Z,a(J))Q=h*c c=F[r(0x252B)]h=z[s[0x7]]B=.05 f=Q*h w=y[c]h=0x1 Q=h/w n=o(T,f,Q)k[E]=n n=F[r(0x250D)]e=-0.3 J=0x5 D=0xC E=F[r(0x418)]k=y[E]E=F[r(0x1CB)]o=y[n]Q=F[r(0x418)]f=y[Q]c=-1.25 Q=F[r(0x1CB)]w=F[r(0x1FC)]T=f[Q]h=y[w]w=h(c,B,e)e=F[r(0x1AC2)]c=F[r(0x161C)]h=y[c]B=y[e]Z=0xA0 e=B(Z)Z=F[r(0x1AC2)]B=y[Z]Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}c=h(e,Z,a(J))R=nil Q=w*c h=z[s[0x8]]O=F[r(0x199C)]c=F[r(0x252B)]f=Q*h w=y[c]h=0x1 Q=h/w n=o(T,f,Q)k[E]=n Z=-1 c=0x1 E=F[r(0x23BE)]n=F[r(0x250D)]k=y[E]o=y[n]Q=F[r(0x23BE)]f=y[Q]w=F[r(0x1FC)]D=.035 E=F[r(0x1CB)]Q=F[r(0x1CB)]T=f[Q]h=y[w]X=y[O]G=z[s[0x5]]K=G/P O=X(K)J=D*O e=Z+J X=F[r(0x199C)]D=y[X]K=z[s[0x5]]J=.05 G=0xC O=K/G X=D(O)Z=J*X B=e-Z e=0x0 Z=0x0 w=h(c,B,e)e=F[r(0x1AC2)]c=F[r(0x161C)]h=y[c]J=0x55 B=y[e]e=B(Z)Z=F[r(0x1AC2)]P=0x18 B=y[Z]Z=B(J)D=0x0 J=F[r(0x1AC2)]B=y[J]J={B(D)}c=h(e,Z,a(J))D=2.5 B=F[r(0x1AC2)]Q=w*c Z=-2 w=F[r(0x161C)]h=y[w]O=F[r(0x199C)]c=y[B]X=y[O]G=z[s[0x5]]K=G/P O=X(K)J=D*O e=Z-J B=c(e)Z=0x0 J=0x0 e=F[r(0x1AC2)]c=y[e]e=c(Z)Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}w=h(B,e,a(Z))f=Q*w c=F[r(0x252B)]w=y[c]Z=-1 h=0x1 Q=h/w P=0x18 n=o(T,f,Q)w=F[r(0x1FC)]c=-1 O=F[r(0x199C)]k[E]=n E=F[r(0x93C)]n=F[r(0x250D)]D=.035 k=y[E]Q=F[r(0x93C)]o=y[n]f=y[Q]E=F[r(0x1CB)]Q=F[r(0x1CB)]T=f[Q]h=y[w]X=y[O]G=z[s[0x5]]K=G/P O=X(K)J=D*O X=F[r(0x199C)]e=Z-J D=y[X]K=z[s[0x5]]G=0xC O=K/G J=.05 X=D(O)Z=J*X P=0x18 B=e-Z e=0x0 w=h(c,B,e)c=F[r(0x161C)]e=F[r(0x1AC2)]D=0x0 h=y[c]J=-85 Z=0x0 B=y[e]e=B(Z)Z=F[r(0x1AC2)]B=y[Z]Z=B(J)J=F[r(0x1AC2)]O=F[r(0x199C)]B=y[J]J={B(D)}c=h(e,Z,a(J))Q=w*c w=F[r(0x161C)]h=y[w]B=F[r(0x1AC2)]D=2.5 c=y[B]X=y[O]G=z[s[0x5]]Z=-2 K=G/P O=X(K)J=D*O e=Z+J B=c(e)e=F[r(0x1AC2)]Z=0x0 c=y[e]J=0x0 e=c(Z)Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}w=h(B,e,a(Z))c=F[r(0x252B)]h=0x1 f=Q*w w=y[c]Q=h/w n=o(T,f,Q)k[E]=n k=0x4C089E end else Q=F[r(0x9E)]w=M(0x29AE33,{T})f=y[Q]c={f(w)}h=c[0x2]Q=c[0x1]w=k f=Q k=Q and 0x6FACE5 or 0x1709B8 end end else if k<0xC2CBDD then if k<0xC2871B then if k<0xC2541D then C=F[r(0x15B0)]E=y[C]C=F[r(0x21D3)]Y=F[r(0x829)]C=E[C]C=C(E,Y)E=F[r(0x1F49)]k=C[E]E=F[r(0x13EE)]C=k n=F[r(0x20A0)]k=C[E]E=F[r(0xD9C)]Y=k k=Y[E]n=Y[n]x=k E=F[r(0x64)]k=y[E]o={n(Y)}n={k(a(o))}k=0x1F9CFD W=n[0x2]E=n[0x1]R=n[0x3]o=E else E=F[r(0x64)]k=y[E]x=z[s[0x1]]W={k(x)}C=W[0x2]k=0xE62682 E=W[0x1]x=E Y=W[0x3]end else x=0x1 k=0xF4957C R=z[s[0x4]]W=#R R=W W=0x1 o=W W=0x0 n=o<W W=x-o end else if k<0xC2D56E then if k<0xC2D23E then k=O O={w(Z,J,D,X)}e=O[0x2]w=I()B=O[0x1]z[w]=B B=I()z[B]=e e=z[w]k=e and 0x43B4EF or 0xE5A9F6 else R=not W C=C+x E=C<=Y E=R and E R=C>=Y R=W and R E=R or E R=0xEEF03E k=E and R E=0xF580F2 k=k or E end else k=T k=0xE319DC R=n end end end else if k<0xC42B30 then if k<0xC361BD then if k<0xC35132 then if k<0xC33BD8 then E=z[s[0x2]]k=E and 0x7D122B or 0x8F2C4D else tt[0x50]=not tt[0x4F]tt[0x4C]=tt[0x4C]+tt[0x4E]tt[0x4B]=tt[0x4C]<=tt[0x4D]tt[0x4B]=tt[0x50]and tt[0x4B]tt[0x50]=tt[0x4C]>=tt[0x4D]tt[0x50]=tt[0x4F]and tt[0x50]tt[0x4B]=tt[0x50]or tt[0x4B]tt[0x50]=0xCD65BD k=tt[0x4B]and tt[0x50]tt[0x4B]=0x421311 k=k or tt[0x4B]end else k=J k=Z and 0xBDB240 or 0xEDE06 end else if k<0xC3F09F then if k<0xC3820B then G,P=O(K,G)k=G and 0xA847C4 or 0x453AE9 else J=0x0 Z=e==J k=Z and 0x11C44 or 0xB2227 end else k=Z k=e and 0xC9546A or 0xA5854A B=e end end else if k<0xC4F10D then if k<0xC4C64D then if k<0xC42F80 then P=not G X=X+K D=X<=O D=P and D P=X>=O P=G and P D=P or D P=0xDB069F k=D and P D=0x1F5619 k=k or D else Ct=F[r(0x13DF)]Ft=y[Ct]Ct=F[r(0x1BE1)]Et=Ft[Ct]zt=Et~=w st=zt k=0xD0635D end else C=F[r(0x15B0)]Y=F[r(0x829)]E=y[C]W=F[r(0x2124)]C=F[r(0x21D3)]C=E[C]C=C(E,Y)E=F[r(0x1F49)]x=F[r(0x15B0)]k=C[E]C=k Y=I()E=F[r(0x13EE)]k=C[E]z[Y]=k E=y[x]x=F[r(0x21D3)]x=E[x]x=x(E,W)E=F[r(0x99A)]k=x[E]E=F[r(0x89E)]W=F[r(0x2124)]E=k[E]x=L(0xE77A7F,{s[0x1];Y})C=nil E=E(k,x)x=F[r(0x15B0)]E=y[x]x=F[r(0x21D3)]x=E[x]x=x(E,W)E=F[r(0xE56)]k=x[E]E=F[r(0x89E)]E=k[E]x=L(0x5BB49F,{s[0x1];Y,s[0x2];s[0x3]})Y=V(Y)E=E(k,x)k=y[F[r(0x1759)]]E={}end else if k<0xC53BDB then if k<0xC505BB then It=F[r(0x8E8)]Yt=0x1 Ct=y[It]xt=#st It=Ct(Yt,xt)Ft=st[It]It=F[r(0xBE8)]Wt=F[r(0xDD1)]xt=lt[Wt]Wt=F[r(0x8BC)]Yt=xt..Wt Ct=It..Yt Et=Ft..Ct Ft=0x1 Ct=#i It=Ct ut=Et Ct=0x1 k=0xFAAA8B Yt=Ct Ct=0x0 xt=Yt<Ct Ct=Ft-Yt else W=b[0x4]Y=b[0x2]x=b[0x3]R=F[r(0x1FC)]C=b[0x1]Q=F[r(0x11BF)]E=y[R]R=E(C,Y)E=F[r(0xEF)]k=R[E]f=y[Q]R=k Q=f(W)n=k f=F[r(0x30E)]T=Q==f k=T and 0x26B0B1 or 0x41435E o=T end else R=0x1 n=.1 f=F[r(0x252B)]k=0x3035E6 T=y[f]E=0x0 o=R R=n/T n=R R=0x0 T=n<R R=E-n end end end end else if k<0xC7777D then if k<0xC6B6B5 then if k<0xC60BAA then if k<0xC5E597 then if k<0xC5D95A then k=z[s[0x1]]E=k()E={}k=y[F[r(0x18EA)]]else tt[0x11]=0x1 tt[0x10]=tt[0x5][tt[0x11]]tt[0xE]=k tt[0x11]=false tt[0xF]=tt[0x10]==tt[0x11]k=tt[0xF]and 0x3DFE62 or 0xDA5F58 tt[0xD]=tt[0xF]end else bt=0x3 kt=P==bt k=kt and 0x35AFB1 or 0x282374 end else if k<0xC6517C then if k<0xC648FF then E=F[r(0x22D6)]k=y[E]x=F[r(0x3AA)]E=k(x,C)x=E k=0x7D315B x=nil else k=o and 0x2A71F8 or 0xA9A40D end else k=z[s[0x1]]E=k()k=y[F[r(0x1AF)]]E={}end end else if k<0xC7201D then if k<0xC6FEC7 then if k<0xC6F4FE then w=F[r(0xD62)]o=k f=F[r(0x19B)]T=C[f]h=y[w]w=F[r(0x19B)]Q=h[w]h=F[r(0x1040)]f=Q[h]n=T==f R=n k=n and 0x50A8AF or 0x172419 else k=f k=E and 0x7B86A2 or 0xFA9D6 end else Q=F[r(0x20)]f=y[Q]k=0xA335F3 Q=F[r(0x180B)]T=f[Q]E=T end else if k<0xC751B4 then if k<0xC73256 then Wt=F[r(0x2651)]lt=Ft xt=y[Wt]Yt=xt[Ct]Wt=z[ut]xt=Wt[Ct]It=Yt~=xt k=It and 0x7E475E or 0x60D775 else o=b[0x6]n=b[0x7]x=b[0x3]C=b[0x1]Y=b[0x2]E=F[r(0x22D6)]k=y[E]W=b[0x4]E=k(C)T=E E=F[r(0x1F8A)]R=b[0x5]k=C==E k=k and 0xF8F831 or 0x754AE1 end else Y,R=x(C,Y)k=Y and 0xAB7828 or 0xB62F80 end end end else if k<0xC84D29 then if k<0xC79F56 then if k<0xC79D3F then if k<0xC78FF2 then k=0xF10AFD else k=D k=J and 0x82866C or 0xFB5A14 end else C=z[s[0x3]]Y=true k=C==Y k=k and 0x2CFFCA or 0x4CE493 end else if k<0xC84064 then if k<0xC7CDB3 then k=0xF78AD9 P=F[r(0x180B)]i=z[s[0xE]]x[P]=i else bt=0x2 kt=P==bt k=kt and 0x18CB2B or 0xC606F8 end else k=0x26254B C=nil z[s[0x4]]=E end end else if k<0xC93CCA then if k<0xC90155 then if k<0xC86E35 then O=nil i=nil W=nil K=nil C=nil D=nil P=nil x=nil X=nil k=0x5152E4 G=nil Y=nil else E=z[s[0x1]]C=false k=E==C k=k and 0x74D8A6 or 0x81DA2C end else k=false k=k and 0x435A4E or 0xC916FE end else if k<0xC9D145 then if k<0xC9BE7D then Z=F[r(0x1BC6)]e=y[Z]D=F[r(0x17E3)]Z=F[r(0x166B)]J=F[r(0x8F)]k=e[Z]Z=y[J]J=Z(B)Z=R[D]e=k(J,Z)k=e and 0xDD57FE or 0x7C01C6 else n=F[r(0x1F5)]E=y[n]n=F[r(0x2648)]o=x k=E[n]o=nil E=F[r(0x11EF)]E=k[E]E=E(k)k=0x2A6B64 end else X=F[r(0x199C)]E=F[r(0x25F7)]k=y[E]G=0x18 J=.04 E=k()E=F[r(0x1537)]k=y[E]E=F[r(0x1CB)]R=C i=0xC e=0x0 n=F[r(0x250D)]o=y[n]c=F[r(0x1FC)]Q=F[r(0x1537)]f=y[Q]Q=F[r(0x1CB)]T=f[Q]h=z[s[0x3]]w=y[c]D=y[X]K=z[s[0x4]]O=K/G K=F[r(0x199C)]X=D(O)Z=J*X J=0x0 B=e-Z X=.05 O=y[K]P=z[s[0x4]]G=P/i K=O(G)e=0x0 D=X*K Z=J+D i=0x18 X=2.5 c=w(B,e,Z)B=F[r(0x1AC2)]w=F[r(0x161C)]Q=h*c h=y[w]c=y[B]e=0x0 K=F[r(0x199C)]B=c(e)e=F[r(0x1AC2)]c=y[e]H=0xC O=y[K]P=z[s[0x4]]G=P/i J=0x0 K=O(G)P=0xC D=X*K Z=J-D D=0x7 e=c(Z)J=0x0 O=F[r(0x199C)]Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}c=F[r(0x252B)]w=h(B,e,a(Z))h=0x1 B=0x0 f=Q*w w=y[c]Q=h/w n=o(T,f,Q)k[E]=n E=F[r(0xDF0)]Q=F[r(0xDF0)]k=y[E]e=0x0 n=F[r(0x250D)]o=y[n]f=y[Q]Q=F[r(0x1CB)]T=f[Q]c=F[r(0x1FC)]Z=0x0 E=F[r(0x1CB)]h=z[s[0x5]]w=y[c]c=w(B,e,Z)Z=0xF B=F[r(0x1AC2)]Q=h*c w=F[r(0x161C)]h=y[w]c=y[B]X=y[O]G=z[s[0x4]]K=G/P O=X(K)J=D*O e=Z-J Z=0x0 P=0xC B=c(e)e=F[r(0x1AC2)]c=y[e]J=0x0 e=c(Z)Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}w=h(B,e,a(Z))D=.1 h=0x1 c=F[r(0x252B)]f=Q*w w=y[c]Q=h/w n=o(T,f,Q)O=F[r(0x199C)]k[E]=n E=F[r(0x1D79)]n=F[r(0x250D)]k=y[E]E=F[r(0x1CB)]B=1.3 Q=F[r(0x1D79)]o=y[n]f=y[Q]Q=F[r(0x1CB)]T=f[Q]Z=.45 c=F[r(0x1FC)]w=y[c]X=y[O]G=z[s[0x4]]K=G/P O=X(K)J=D*O e=Z+J D=0x0 Z=-0.2 c=w(B,e,Z)B=F[r(0x161C)]Z=F[r(0x1AC2)]w=y[B]X=-15 J=0x2D e=y[Z]Z=e(J)J=F[r(0x1AC2)]e=y[J]J=e(D)D=F[r(0x1AC2)]e=y[D]O=F[r(0x199C)]D={e(X)}B=w(Z,J,a(D))e=F[r(0x1AC2)]h=c*B Z=0x0 c=F[r(0x161C)]w=y[c]B=y[e]e=B(Z)Z=F[r(0x1AC2)]B=y[Z]J=0xF D=0x0 Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}c=w(e,Z,a(J))Q=h*c B=-1.1 h=z[s[0x6]]f=Q*h h=0x1 c=F[r(0x252B)]w=y[c]Q=h/w n=o(T,f,Q)D=.1 P=0xC k[E]=n Q=F[r(0x418)]E=F[r(0x418)]c=F[r(0x1FC)]k=y[E]E=F[r(0x1CB)]n=F[r(0x250D)]o=y[n]f=y[Q]Q=F[r(0x1CB)]T=f[Q]Z=.35 w=y[c]X=y[O]G=z[s[0x4]]K=G/P O=X(K)J=D*O e=Z+J Z=.2 c=w(B,e,Z)B=F[r(0x161C)]Z=F[r(0x1AC2)]G=F[r(0x199C)]w=y[B]O=1.5 e=y[Z]D=-44 K=y[G]i=z[s[0x4]]P=i/H G=K(P)X=O*G J=D-X Z=e(J)J=F[r(0x1AC2)]X=0x2D D=0x0 e=y[J]J=e(D)D=F[r(0x1AC2)]e=y[D]D={e(X)}B=w(Z,J,a(D))O=F[r(0x199C)]Z=0x0 h=c*B c=F[r(0x161C)]e=F[r(0x1AC2)]w=y[c]B=y[e]e=B(Z)D=0x0 Z=F[r(0x1AC2)]J=-25 B=y[Z]Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}c=w(e,Z,a(J))Q=h*c h=z[s[0x7]]f=Q*h c=F[r(0x252B)]h=0x1 w=y[c]Q=h/w n=o(T,f,Q)k[E]=n Q=F[r(0x23BE)]E=F[r(0x23BE)]k=y[E]n=F[r(0x250D)]E=F[r(0x1CB)]o=y[n]f=y[Q]c=0x1 Z=-1 Q=F[r(0x1CB)]P=0x18 D=.035 w=F[r(0x1FC)]T=f[Q]h=y[w]X=y[O]G=z[s[0x4]]K=G/P O=X(K)J=D*O e=Z+J X=F[r(0x199C)]J=.05 G=0xC D=y[X]K=z[s[0x4]]O=K/G X=D(O)Z=J*X B=e-Z e=0x0 w=h(c,B,e)P=0x18 Z=0x0 e=F[r(0x1AC2)]D=0x0 c=F[r(0x161C)]h=y[c]B=y[e]e=B(Z)J=0x55 Z=F[r(0x1AC2)]B=y[Z]Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}B=F[r(0x1AC2)]c=h(e,Z,a(J))Z=-2 Q=w*c w=F[r(0x161C)]O=F[r(0x199C)]h=y[w]D=2.5 c=y[B]X=y[O]G=z[s[0x4]]K=G/P O=X(K)J=D*O e=Z-J J=0x0 B=c(e)Z=0x0 e=F[r(0x1AC2)]c=y[e]e=c(Z)Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}w=h(B,e,a(Z))h=0x1 c=F[r(0x252B)]f=Q*w w=y[c]Q=h/w n=o(T,f,Q)Q=F[r(0x93C)]k[E]=n E=F[r(0x93C)]w=F[r(0x1FC)]n=F[r(0x250D)]k=y[E]o=y[n]D=.035 c=-1 f=y[Q]Q=F[r(0x1CB)]T=f[Q]Z=-1 E=F[r(0x1CB)]h=y[w]O=F[r(0x199C)]P=0x18 X=y[O]G=z[s[0x4]]K=G/P G=0xC O=X(K)J=D*O e=Z-J J=.05 X=F[r(0x199C)]D=y[X]K=z[s[0x4]]R=nil O=K/G X=D(O)D=0x0 Z=J*X B=e-Z e=0x0 w=h(c,B,e)c=F[r(0x161C)]h=y[c]e=F[r(0x1AC2)]Z=0x0 B=y[e]O=F[r(0x199C)]e=B(Z)Z=F[r(0x1AC2)]B=y[Z]J=-85 Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}c=h(e,Z,a(J))Q=w*c w=F[r(0x161C)]h=y[w]B=F[r(0x1AC2)]D=2.5 Z=-2 c=y[B]P=0x18 X=y[O]G=z[s[0x4]]K=G/P O=X(K)J=D*O e=Z+J J=0x0 B=c(e)Z=0x0 e=F[r(0x1AC2)]c=y[e]e=c(Z)Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}c=F[r(0x252B)]w=h(B,e,a(Z))f=Q*w w=y[c]h=0x1 Q=h/w n=o(T,f,Q)k[E]=n k=0xB23117 end end end end end else if k<0xCE33DD then if k<0xCC8EB1 then if k<0xCB1B07 then if k<0xCA852A then if k<0xCA7C93 then if k<0xCA52A7 then Lt=k tt[0x1]=F[r(0x9E)]St=y[tt[0x1]]Mt=St~=h k=Mt and 0x220F66 or 0x433A53 Nt=Mt else E=0x1 R=0x3 k=0x83D586 o=R R=0x1 n=R R=0x0 T=n<R R=E-n end else k=y[F[r(0xEEB)]]E={}end else if k<0xCAA85A then if k<0xCA9552 then Y=z[s[0x8]]E=Y C=k k=Y and 0x87546E or 0x26277B else yt,rt=P(i,yt)k=yt and 0x931C77 or 0x45EB90 end else k=0x1BECC5 w=z[s[0x7]]c=true h=w==c f=h end end else if k<0xCBFEE0 then if k<0xCBD2D9 then if k<0xCBBD11 then k=F[r(0xA15)]k=c[k]k=k(c)k=0x7B0FE6 else n=Y+x Y=n k=0xBA06FE end else B=0x0 T=F[r(0x189D)]o=F[r(0x200D)]f=F[r(0x1897)]Z=0x0 c=F[r(0x517)]n=F[r(0x1F8A)]k=0x7B418F Q=F[r(0x1897)]e=0x0 E=y[o]h=z[s[0x9]]w=y[c]c={w(B,e,Z)}o=E(n,x,T,f,Q,h,a(c))R=o end else if k<0xCC32F8 then if k<0xCC19EE then E=F[r(0x1725)]R=F[r(0x20)]k=C[E]E=F[r(0x1D74)]E=k[E]W=F[r(0x1725)]Y=F[r(0x1CC9)]E=E(k,Y)Y=E x=Y[W]W=F[r(0x116E)]W=x[W]W=W(x,R)k=W and 0x9D9C53 or 0xD8E5B2 E=W else k=0x3B6065 Q=z[s[0x4]]T=Q end else yt=F[r(0x138E)]P=G rt=F[r(0xBBF)]yt=i[yt]yt=yt(i,rt)k=yt and 0x404FE or 0xDD73F5 H=yt end end end else if k<0xCD8C9A then if k<0xCD04C6 then if k<0xCCB917 then if k<0xCCAD22 then E=z[s[0x4]]o=E()k=0x5B1E7B else C=F[r(0x4A3)]k=true W=F[r(0x26F7)]o=0x0 R=0x2F z[s[0x1]]=k E=z[s[0x2]]n=0x1C x=y[W]W=F[r(0x22B6)]Y=x[W]W=0x0 x=Y(W,R,o,n)R=F[r(0x26F7)]W=y[R]R=F[r(0x22B6)]n=.105 C=E[C]Y=W[R]o=0x0 T=0x0 R=.803 W=Y(R,o,n,T)n=false Y=F[r(0x22A3)]o=.5 R=F[r(0xD34)]C=C(E,x,W,Y,R,o,n)E=z[s[0x3]]C=E W=z[s[0x4]]E=0x0 R=F[r(0x1FE3)]Y=E E=0x0 x=E E=W==R k=E and 0xB71F7A or 0x7F5B2D end else D=F[r(0x205C)]J=F[r(0x138E)]Z=k J=c[J]J=J(c,D)e=J k=J and 0xEC159F or 0x298B55 end else if k<0xCD841A then if k<0xCD6ACD then tt[0x57]=0x1 tt[0x4B]=tt[0x4C]tt[0x53]=0x2 tt[0x52]=.8 tt[0x55]=F[r(0x1B91)]tt[0x51]=F[r(0x1EDA)]tt[0x50]=y[tt[0x51]]tt[0x54]=y[tt[0x55]]tt[0x5B]=0x5 tt[0x5A]=tt[0x42]/tt[0x5B]tt[0x5E]=0x5 tt[0x59]=.3 tt[0x58]=tt[0x59]*tt[0x5A]tt[0x5C]=.08 tt[0x59]=0x1 tt[0x56]=tt[0x57]-tt[0x58]tt[0x57]=0x0 tt[0x5D]=tt[0x42]/tt[0x5E]tt[0x5B]=tt[0x5C]*tt[0x5D]tt[0x5A]=tt[0x5B]*tt[0x4B]tt[0x58]=tt[0x59]-tt[0x5A]tt[0x59]=0x0 tt[0x55]=tt[0x54](tt[0x56],tt[0x57],tt[0x58],tt[0x59])tt[0x58]=.3 tt[0x5C]=0x4 tt[0x56]=F[r(0x1B91)]tt[0x5A]=0x5 tt[0x54]=y[tt[0x56]]tt[0x59]=tt[0x42]/tt[0x5A]tt[0x5A]=.06 tt[0x57]=tt[0x58]*tt[0x59]tt[0x58]=0x0 tt[0x5B]=tt[0x42]/tt[0x5C]tt[0x59]=tt[0x5A]*tt[0x5B]tt[0x5A]=0x0 tt[0x56]=tt[0x54](tt[0x57],tt[0x58],tt[0x59],tt[0x5A])tt[0x58]=0x0 tt[0x57]=F[r(0x1BC)]tt[0x59]=0x0 tt[0x5A]=0x0 tt[0x54]=y[tt[0x57]]tt[0x57]=tt[0x54](tt[0x58],tt[0x59],tt[0x5A])tt[0x54]=F[r(0x1FC0)]tt[0x51]=tt[0x50](tt[0x23],tt[0x52],tt[0x53],tt[0x55],tt[0x56],tt[0x57],tt[0x41],tt[0x54])tt[0x52]=F[r(0x1EDB)]tt[0x50]=y[tt[0x52]]tt[0x58]=z[tt[0x4A]]tt[0x54]=F[r(0xA4E)]tt[0x57]=tt[0x58][tt[0x4B]]tt[0x58]=0x1 tt[0x56]=tt[0x57][tt[0x58]]tt[0x57]=F[r(0xB2A)]tt[0x55]=tt[0x56]..tt[0x57]tt[0x53]=tt[0x54]..tt[0x55]tt[0x55]=0x2 tt[0x56]=0x0 tt[0x54]=0x0 tt[0x57]=F[r(0x20F3)]tt[0x59]=F[r(0x1BC6)]tt[0x52]=tt[0x50](tt[0x51],tt[0x53],tt[0x41],tt[0x42],tt[0x3F],tt[0x54],tt[0x55],tt[0x56],tt[0x57])tt[0x50]=F[r(0x110E)]tt[0x55]=F[r(0xA4E)]tt[0x53]=F[r(0x2659)]tt[0x52][tt[0x50]]=tt[0x53]tt[0x53]=F[r(0x1EDB)]tt[0x50]=y[tt[0x53]]tt[0x58]=y[tt[0x59]]tt[0x59]=F[r(0x2D4)]tt[0x57]=tt[0x58][tt[0x59]]tt[0x5B]=z[tt[0x4A]]tt[0x5A]=tt[0x5B][tt[0x4B]]tt[0x5B]=0x2 tt[0x59]=tt[0x5A][tt[0x5B]]tt[0x58]=tt[0x57](tt[0x59])tt[0x57]=F[r(0xB2A)]tt[0x56]=tt[0x58]..tt[0x57]tt[0x54]=tt[0x55]..tt[0x56]tt[0x57]=0x2 tt[0x56]=0x1 tt[0x55]=tt[0x42]-tt[0x56]tt[0x59]=F[r(0x20F3)]tt[0x56]=0x0 tt[0x58]=0x0 tt[0x53]=tt[0x50](tt[0x51],tt[0x54],tt[0x41],tt[0x55],tt[0x3F],tt[0x56],tt[0x57],tt[0x58],tt[0x59])tt[0x54]=F[r(0xCF8)]tt[0x50]=F[r(0x110E)]tt[0x53][tt[0x50]]=tt[0x54]tt[0x55]=z[tt[0x4A]]tt[0x54]=tt[0x55][tt[0x4B]]tt[0x55]=0x3 tt[0x50]=tt[0x54][tt[0x55]]k=tt[0x50]and 0xD88536 or 0x36B03D else f=z[s[0x4]]k=0xA09F10 n=f end else n=F[r(0xDD1)]o=R[n]n=F[r(0x19EC)]k=o==n k=k and 0x1F5345 or 0x22307B end end else if k<0xCDE0EC then if k<0xCDA12C then if k<0xCD8E51 then f=R E=F[r(0x25F7)]k=y[E]E=k()E=F[r(0x1537)]X=-0.31 K=-0.65 k=y[E]J=F[r(0x1FC)]h=F[r(0x250D)]B=F[r(0x1537)]Q=y[h]P=.05 H=F[r(0x199C)]c=y[B]E=F[r(0x1CB)]D=0x0 B=F[r(0x1CB)]w=c[B]e=z[s[0x4]]Z=y[J]at=0xC i=y[H]rt=z[s[0x5]]yt=rt/at H=i(yt)G=P*H O=K+G J=Z(D,X,O)D=F[r(0x1AC2)]X=0x3C K=0x0 Z=F[r(0x161C)]B=e*J e=y[Z]J=y[D]D=J(X)O=0x0 X=F[r(0x1AC2)]J=y[X]X=J(O)O=F[r(0x1AC2)]J=y[O]O={J(K)}Z=e(D,X,a(O))e=0x1 c=B*Z O=0x0 J=F[r(0x252B)]Z=y[J]B=e/Z h=Q(w,c,B)k[E]=h B=F[r(0xDF0)]E=F[r(0xDF0)]h=F[r(0x250D)]k=y[E]J=F[r(0x1FC)]Q=y[h]X=0x0 D=0x0 c=y[B]E=F[r(0x1CB)]B=F[r(0x1CB)]w=c[B]e=z[s[0x6]]i=F[r(0x1A84)]G=2.5 Z=y[J]J=Z(D,X,O)Z=F[r(0x161C)]B=e*J O=-50 D=F[r(0x1AC2)]rt=0xC e=y[Z]J=y[D]P=y[i]yt=z[s[0x5]]H=yt/rt i=P(H)K=G*i P=F[r(0x199C)]X=O-K K=0x0 D=J(X)X=F[r(0x1AC2)]O=0x0 J=y[X]X=J(O)O=F[r(0x1AC2)]J=y[O]O={J(K)}Z=e(D,X,a(O))c=B*Z e=.2 J=F[r(0x252B)]Z=y[J]B=e/Z h=Q(w,c,B)k[E]=h E=F[r(0x1D79)]k=y[E]Z=F[r(0x1FC)]h=F[r(0x250D)]Q=y[h]O=0x41 G=-15 X=-1.4 B=F[r(0x1D79)]E=F[r(0x1CB)]c=y[B]B=F[r(0x1CB)]w=c[B]J=1.35 D=.5 e=y[Z]Z=e(J,D,X)J=F[r(0x161C)]e=y[J]X=F[r(0x1AC2)]K=0x0 D=y[X]X=D(O)O=F[r(0x1AC2)]D=y[O]O=D(K)K=F[r(0x1AC2)]D=y[K]K={D(G)}J=e(X,O,a(K))B=Z*J J=F[r(0x252B)]K=0x5 X=0x0 e=z[s[0x7]]c=B*e e=0x1 Z=y[J]B=e/Z h=Q(w,c,B)k[E]=h B=F[r(0x418)]E=F[r(0x418)]k=y[E]D=.5 J=-1.5 h=F[r(0x250D)]E=F[r(0x1CB)]Q=y[h]c=y[B]Z=F[r(0x1FC)]G=-35 B=F[r(0x1CB)]O=0x0 w=c[B]e=y[Z]Z=e(J,D,X)J=F[r(0x161C)]e=y[J]X=F[r(0x1AC2)]D=y[X]X=D(O)O=F[r(0x1AC2)]D=y[O]O=D(K)K=F[r(0x1AC2)]D=y[K]K={D(G)}J=e(X,O,a(K))B=Z*J e=z[s[0x8]]c=B*e J=F[r(0x252B)]e=0x1 Z=y[J]B=e/Z h=Q(w,c,B)k[E]=h E=F[r(0x23BE)]h=F[r(0x250D)]k=y[E]Q=y[h]yt=0xC Z=F[r(0x1FC)]E=F[r(0x1CB)]X=-0.3 B=F[r(0x23BE)]c=y[B]B=F[r(0x1CB)]w=c[B]K=.05 J=0x1 e=y[Z]G=y[P]H=z[s[0x5]]i=H/yt P=G(i)G=0x0 O=K*P D=X-O O=0x14 X=-0.4 Z=e(J,D,X)K=0x5A J=F[r(0x161C)]P=F[r(0x199C)]X=F[r(0x1AC2)]e=y[J]D=y[X]X=D(O)O=F[r(0x1AC2)]D=y[O]O=D(K)K=F[r(0x1AC2)]D=y[K]K={D(G)}J=e(X,O,a(K))B=Z*J yt=0xC K=0x0 Z=F[r(0x161C)]D=F[r(0x1AC2)]O=0x0 e=y[Z]J=y[D]X=-15 D=J(X)X=F[r(0x1AC2)]J=y[X]X=J(O)O=F[r(0x1AC2)]J=y[O]O={J(K)}Z=e(D,X,a(O))c=B*Z J=F[r(0x252B)]e=0x1 Z=y[J]B=e/Z h=Q(w,c,B)k[E]=h E=F[r(0x93C)]h=F[r(0x250D)]B=F[r(0x93C)]Z=F[r(0x1FC)]k=y[E]E=F[r(0x1CB)]Q=y[h]c=y[B]K=.05 J=-1 X=-0.1 B=F[r(0x1CB)]f=nil w=c[B]e=y[Z]G=y[P]H=z[s[0x5]]i=H/yt P=G(i)O=K*P D=X-O G=0x0 X=-0.4 Z=e(J,D,X)J=F[r(0x161C)]e=y[J]O=0x3C X=F[r(0x1AC2)]D=y[X]X=D(O)K=-90 O=F[r(0x1AC2)]D=y[O]O=D(K)K=F[r(0x1AC2)]D=y[K]K={D(G)}J=e(X,O,a(K))O=0x0 X=-15 D=F[r(0x1AC2)]B=Z*J Z=F[r(0x161C)]e=y[Z]J=y[D]D=J(X)X=F[r(0x1AC2)]J=y[X]K=0x0 X=J(O)O=F[r(0x1AC2)]J=y[O]O={J(K)}Z=e(D,X,a(O))J=F[r(0x252B)]e=0x1 c=B*Z Z=y[J]B=e/Z h=Q(w,c,B)k[E]=h k=0xC15A71 else k=y[F[r(0xBB8)]]E={}end else T=F[r(0x19B)]R=k h=F[r(0xD62)]n=C[T]Q=y[h]h=F[r(0x19B)]f=Q[h]Q=F[r(0xF83)]T=f[Q]o=n==T W=o k=o and 0xFCA1A0 or 0x1DA0DE end else if k<0xCE2422 then if k<0xCDEC7F then Yt=F[r(0x238B)]It=Yt..ut Yt=F[r(0xE88)]k=0xC15112 xt=It It=nil bt[Yt]=xt else k=F[r(0x1FC4)]o=false R[k]=o k=0xCCC33 end else k=0xA1E357 o=F[r(0x20)]R=y[o]o=F[r(0x21EA)]W=R[o]E=W end end end end else if k<0xCFCAD6 then if k<0xCF0015 then if k<0xCE7B0A then if k<0xCE70E1 then if k<0xCE3CEB then o=0x47EEF8E0B979 f=true Y=0x4D7FE6D9094B W=0x108C7B1B7 T=0x1BC052F13 x=true h=true E=0xA4256A9D R=true n=true C=true Q=0x5B0E61F51B91 k={[E]=C,[Y]=x;[W]=R;[o]=n;[T]=f;[Q]=h}C=k x=F[r(0x15B0)]Y=y[x]x=F[r(0x82A)]E=Y[x]k=C[E]k=k and 0xFB8206 or 0x3ACA72 else Q,w=T(f,Q)k=Q and 0xFF2A9A or 0x69436C end else K=F[r(0x517)]Z=F[r(0x24F7)]e=F[r(0x1F8A)]D=F[r(0x1897)]B=F[r(0x200D)]J=F[r(0x22DF)]E=y[B]X=z[s[0x9]]i=0x0 P=0x0 O=y[K]k=0x7B418F G=0x0 K={O(G,P,i)}B=E(e,x,Z,J,D,X,a(K))R=B end else if k<0xCEB144 then if k<0xCE9212 then f=z[s[0x1]]Q=0x1 o=k T=f[Q]n=Y==T R=n k=n and 0xE319DC or 0x3D836F else k=x and 0x53E77D or 0x8C05BE end else k=0x207395 end end else if k<0xCF7903 then if k<0xCF5D0A then if k<0xCF0D31 then zt=F[r(0x1C4C)]lt=y[zt]zt=F[r(0x22B6)]i=lt[zt]zt=F[r(0x1481)]Ct=F[r(0x15B0)]Ft=y[Ct]Ct=F[r(0x89F)]Et=Ft[Ct]lt=i(zt,Et)k=0x360D0B zt=F[r(0x1D5A)]i=F[r(0xDD1)]lt[i]=zt lt=nil else k=z[s[0x1]]E=k()k=y[F[r(0x8B1)]]E={}end else at=not rt i=i+yt P=i<=H P=at and P at=i>=H at=rt and at P=at or P at=0xF0E874 k=P and at P=0x4558B1 k=k or P end else if k<0xCFAD00 then if k<0xCF85E5 then C=F[r(0x15B0)]E=y[C]C=F[r(0x89F)]k=E[C]E=F[r(0x116E)]o=F[r(0x15B0)]E=k[E]C=F[r(0x1D5A)]E=E(k,C)f=0x0 k=F[r(0xFC)]C=true E[k]=C C=F[r(0x1C4C)]E=y[C]C=F[r(0x22B6)]k=E[C]C=F[r(0x14D9)]E=k(C)C=E Y=F[r(0x1C4C)]T=0x67 x=F[r(0x1C4C)]E=y[Y]Y=F[r(0x22B6)]k=E[Y]Y=F[r(0x8E)]E=k(Y)Y=E E=y[x]x=F[r(0x22B6)]k=E[x]x=F[r(0x8E)]n=F[r(0xD62)]E=k(x)x=E W=F[r(0x1C4C)]E=y[W]W=F[r(0x22B6)]k=E[W]W=F[r(0x1632)]E=k(W)k=F[r(0xDD1)]W=E E=F[r(0x153B)]C[k]=E k=F[r(0x1725)]R=y[o]o=F[r(0x89F)]E=R[o]C[k]=E o=y[n]k=F[r(0xAF1)]n=F[r(0xAF1)]R=o[n]o=F[r(0x977)]E=R[o]C[k]=E E=F[r(0x908)]k=F[r(0xDD1)]Y[k]=E o=F[r(0x17C0)]k=F[r(0x1725)]E=C Y[k]=E Q=F[r(0x26F7)]E=true k=F[r(0x162C)]n=0x67 Y[k]=E k=F[r(0x139C)]R=y[o]o=F[r(0x12B9)]E=R[o]o=0x67 R=E(o,n,T)Y[k]=R k=F[r(0x21EA)]o=F[r(0x26F7)]T=.00999999978 R=y[o]o=F[r(0x22B6)]n=0x0 E=R[o]o=-0.25 R=E(o,n,T,f)T=0x0 o=F[r(0x26F7)]Y[k]=R k=F[r(0x209A)]E=true Y[k]=E f=0x5B R=y[o]n=0x10F k=F[r(0xD33)]o=F[r(0x22B6)]E=R[o]o=0x0 R=E(o,n,T,f)Y[k]=R k=F[r(0xDD1)]f=0x0 E=F[r(0x1634)]x[k]=E T=0x44 E=Y k=F[r(0x1725)]x[k]=E k=F[r(0x162C)]o=F[r(0x17C0)]E=true n=0x44 x[k]=E R=y[o]k=F[r(0x139C)]o=F[r(0x12B9)]E=R[o]o=0x44 R=E(o,n,T)n=0x0 x[k]=R k=F[r(0x3A)]o=F[r(0x26F7)]E=0x0 x[k]=E T=.127000004 R=y[o]k=F[r(0x21EA)]o=F[r(0x22B6)]E=R[o]w=.01 o=0x0 R=E(o,n,T,f)x[k]=R k=F[r(0x209A)]o=F[r(0x26F7)]E=true n=0x10F T=0x0 x[k]=E R=y[o]o=F[r(0x22B6)]E=R[o]f=0x44 k=F[r(0xD33)]o=0x0 R=E(o,n,T,f)x[k]=R E=F[r(0x153C)]k=F[r(0xDD1)]W[k]=E o=F[r(0x17C0)]E=x T=0xFF k=F[r(0x1725)]W[k]=E n=0xFF k=F[r(0x139C)]R=y[o]o=F[r(0x12B9)]E=R[o]o=0xFF R=E(o,n,T)o=F[r(0x26F7)]W[k]=R n=0x0 E=0x1 k=F[r(0xE02)]W[k]=E R=y[o]o=F[r(0x22B6)]E=R[o]f=0x0 T=.178778589 k=F[r(0x21EA)]o=.0544351302 R=E(o,n,T,f)o=F[r(0x26F7)]W[k]=R n=0xF1 h=0x0 k=F[r(0xD33)]R=y[o]o=F[r(0x22B6)]T=0x0 f=0x2D E=R[o]o=0x0 R=E(o,n,T,f)W[k]=R k=F[r(0xEC6)]n=F[r(0xD62)]o=y[n]n=F[r(0xEC6)]R=o[n]o=F[r(0x2098)]E=R[o]o=F[r(0x17C0)]W[k]=E E=F[r(0x994)]n=0xFF c=0x0 k=F[r(0xE88)]W[k]=E k=F[r(0x220E)]R=y[o]o=F[r(0x12B9)]T=0xFF E=R[o]o=0xFF R=E(o,n,T)W[k]=R E=true n=F[r(0x1E74)]k=F[r(0x220F)]W[k]=E E=0x14 k=F[r(0x2497)]W[k]=E E=true R=F[r(0x15B0)]k=F[r(0x20DB)]o=F[r(0x829)]W[k]=E E=y[R]R=F[r(0x21D3)]R=E[R]R=R(E,o)E=F[r(0x1F49)]k=R[E]E=F[r(0x13EE)]R=k k=R[E]E=F[r(0x116E)]o=k E=o[E]E=E(o,n)n=F[r(0x1FE3)]k=E[n]f=y[Q]Q=F[r(0x22B6)]E=f[Q]n=k T=n Q=.408 k=F[r(0x1E8B)]f=E(Q,h,w,c)c=0x0 h=0x1 Q=F[r(0xB70)]w=false E=F[r(0x1AC6)]k=Y[k]k=k(Y,f,E,Q,h,w)Q=F[r(0x15B0)]f=y[Q]Q=F[r(0x829)]E=f[Q]f=F[r(0x1F49)]Q=F[r(0x15B0)]k=E[f]E=F[r(0x13EE)]f=n k[E]=f f=2.5 E=F[r(0x11EF)]k=y[E]E=k(f)f=y[Q]Q=F[r(0x829)]E=f[Q]f=F[r(0x1F49)]k=E[f]E=F[r(0x13EE)]f=o k[E]=f f=1.5 E=F[r(0x11EF)]Q=F[r(0x26F7)]k=y[E]E=k(f)f=y[Q]w=.01 k=F[r(0x1E8B)]Q=F[r(0x22B6)]E=f[Q]Q=1.25 h=0x0 f=E(Q,h,w,c)h=0x1 E=F[r(0x22A3)]w=false Q=F[r(0xB70)]k=Y[k]k=k(Y,f,E,Q,h,w)f=1.5 Q=F[r(0x1CC9)]E=F[r(0x11EF)]k=y[E]w=F[r(0xD62)]E=k(f)f=o[Q]Q=F[r(0x9F3)]E=f[Q]h=y[w]w=F[r(0x212D)]Q=h[w]h=F[r(0x324)]f=Q[h]k=E==f k=k and 0x374EB9 or 0xD31641 else k=h k=f and 0xB24987 or 0x64CCE6 end else tt[0x4B]=P()k=0xC12887 end end end else if k<0xD06849 then if k<0xD02CB7 then if k<0xD02464 then if k<0xD008C8 then D=0x0 e=F[r(0x517)]xt=F[r(0x8E8)]E=F[r(0x2145)]w=F[r(0xEE5)]h=F[r(0x2125)]Z=0x0 J=0x5 k=y[E]c=F[r(0xD33)]K=0xC mt=F[r(0x1480)]X=0xC f=R B=y[e]at=0x0 e=B(Z,J,D)B=F[r(0x25DD)]st=0x168 J=F[r(0x517)]H=F[r(0x161C)]vt=F[r(0x1CFD)]Z=y[J]D=f*X Ft=0x1 Wt=0x5 O=f*K X=0x5 J=Z(D,X,O)bt=F[r(0x8E8)]X=F[r(0x1E7C)]D=.6 K=F[r(0x180B)]rt=F[r(0x1AC2)]O=0x1 Z=F[r(0x5D2)]i=F[r(0x1FC)]ut=0x0 P=y[i]i=P(Y)P=y[H]yt=y[rt]rt=yt(at)at=F[r(0x1AC2)]yt=y[at]kt=y[bt]bt={kt(ut,st)}st=-5 kt=F[r(0x1AC2)]Ut=0x0 ut=F[r(0x8E8)]at=yt(a(bt))lt=0x5 yt=y[kt]Vt=0xF bt=y[ut]ut={bt(st,lt)}kt={yt(a(ut))}yt=.1 H=P(rt,at,a(kt))G=i*H rt=F[r(0x1539)]P=F[r(0x1423)]ut=F[r(0x226C)]lt=F[r(0x2504)]H=F[r(0x153A)]Nt=0x0 i=nil kt=F[r(0x1538)]at=0x1 bt=-0.1 st=F[r(0xDF1)]It=0x1 Ct=0x1 Et=F[r(0x1BC)]zt=y[Et]Et=zt(Ft,Ct,It)Ft=0x2DA1FA56 Yt=y[xt]f=nil zt=F[r(0x955)]xt=Yt(Wt,Vt)Wt=F[r(0x1508)]Yt=0xA It=xt/Yt xt=0x5 Yt=F[r(0x1F64)]Ct=F[r(0x2097)]Vt=false Q={[h]=w,[c]=e;[B]=J;[Z]=D;[X]=O,[K]=G;[P]=i;[H]=yt,[rt]=at;[kt]=bt,[ut]=st;[lt]=Et;[zt]=Ft,[Ct]=It,[Yt]=xt;[Wt]=Vt,[mt]=Ut,[vt]=Nt}E=k(Q)k=0x83D586 else k=0x524CDC end else k=z[s[0x1]]R=F[r(0x21EA)]E=F[r(0x180B)]Y=F[r(0x1FC)]n=F[r(0x2524)]C=y[Y]W=z[s[0x1]]x=W[R]o=y[n]n=F[r(0x140F)]R=o[n]o=F[r(0x1157)]W=R[o]Y=C(x,W)k[E]=Y x=0x2 E=F[r(0x1EDC)]W=1.3 k=y[E]Y=z[s[0x1]]C=0x8CE0FF3 R=false E=k(C,Y,x,W,R)k=false Y=0x46 C=k E=0x1 x=Y Y=0x1 W=Y Y=0x0 R=W<Y k=0xA718F7 Y=E-W end else if k<0xD058E0 then if k<0xD0398D then k=0x7D1759 else o=F[r(0x1BC)]f=0x1 T=0x1 n=0x1 R=y[o]k=0x2E3D72 o=R(n,T,f)E=o end else k=lt k=st and 0x6826CE or 0x9C98C3 end end else if k<0xD0BB93 then if k<0xD08CFB then if k<0xD08ABA then tt[0x6]=I()tt[0x12]=0x0 St=I()tt[0x5]=0x64 z[St]=tt[0x1]z[tt[0x6]]=tt[0x5]tt[0xF]=F[r(0x8F)]tt[0x8]=0x100 tt[0x7]=z[St]tt[0x5]=tt[0x7]%tt[0x8]tt[0x7]=I()z[tt[0x7]]=tt[0x5]tt[0x9]=z[St]tt[0xA]=z[tt[0x6]]tt[0x8]=tt[0x9]%tt[0xA]tt[0x9]=0x1 tt[0x5]=tt[0x8]+tt[0x9]tt[0x8]=I()tt[0xB]=0x2 z[tt[0x8]]=tt[0x5]tt[0x13]=0x2710 tt[0xC]=F[r(0x7A4)]tt[0xA]=z[St]tt[0x9]=tt[0xA]%tt[0xB]tt[0xA]=0x0 tt[0x5]=tt[0x9]==tt[0xA]tt[0x9]=I()z[tt[0x9]]=tt[0x5]tt[0xA]=F[r(0x154)]tt[0xE]=y[tt[0xF]]tt[0x10]=z[Wt]tt[0x11]={tt[0x10](tt[0x12],tt[0x13])}tt[0xF]=tt[0xE](a(tt[0x11]))tt[0x5]=F[r(0x15E9)]tt[0x5]=Lt[tt[0x5]]tt[0xE]=F[r(0x7A4)]tt[0xD]=tt[0xF]..tt[0xE]tt[0xB]=tt[0xC]..tt[0xD]tt[0xC]=F[r(0x9E)]tt[0x5]=tt[0x5](Lt,tt[0xA],tt[0xB])tt[0xA]=I()tt[0xD]=v(0x4B2E5E,{Wt;St,Ft,x,Mt,tt[0x9],tt[0xA];tt[0x6];tt[0x8];tt[0x7],mt})z[tt[0xA]]=tt[0x5]tt[0xB]=y[tt[0xC]]tt[0xC]={tt[0xB](tt[0xD])}tt[0xB]=z[tt[0x9]]tt[0x5]={a(tt[0xC])}k=tt[0xB]and 0x3BD294 or 0x98486F else T=nil n=z[s[0x6]]o=n~=T W=o k=0xA738FD end else k=0x33ED3C end else if k<0xD0E1C3 then if k<0xD0CFA6 then x=z[s[0x6]]k=0xE79838 Y=x==C E=Y else k=0x207395 end else x=F[r(0xC0E)]C=b[0x1]Y=C==x k=Y and 0x7E9485 or 0xB6D534 E=Y end end end end end end else if k<0xDA86AF then if k<0xD65205 then if k<0xD3B46C then if k<0xD1E482 then if k<0xD1B72C then if k<0xD18938 then if k<0xD13ED8 then Q=k e=0x3 c=F[r(0xDD1)]w=R[c]B=z[s[0x4]]c=B[e]h=w==c k=h and 0x6FDE8D or 0xAF0BD f=h else h=nil w=nil k=0xCE6E77 end else k=0x597F3E end else if k<0xD1DCB9 then if k<0xD1BE36 then k=E and 0x210602 or 0x143861 else B=true k=o==B k=k and 0x79B5B7 or 0xA496A1 end else k=o and 0xDE01E0 or 0x63B403 end end else if k<0xD34569 then if k<0xD2EB58 then if k<0xD234E8 then k=0x2E8CFB else k=Et st=zt k=0x3895DA end else E=F[r(0x1CC9)]f=false k=o[E]E=F[r(0x1E3F)]k[E]=f E=F[r(0x1CC9)]f=0x10 Q=F[r(0x1CC9)]k=T[E]E=F[r(0x168F)]k[E]=f f=0x32 E=F[r(0x1CC9)]k=T[E]E=F[r(0x13B8)]k[E]=f E=F[r(0x1CC9)]f=0x10 k=o[E]w=F[r(0xD62)]E=F[r(0x168F)]k[E]=f E=F[r(0x1CC9)]f=0x32 k=o[E]E=F[r(0x13B8)]k[E]=f f=o[Q]Q=F[r(0x9F3)]E=f[Q]h=y[w]w=F[r(0x212D)]Q=h[w]h=F[r(0x1B02)]f=Q[h]k=E==f k=k and 0x91FF1 or 0x2E8CFB end else if k<0xD389BC then if k<0xD38392 then It=F[r(0x1897)]Ft=ut~=It k=Ft and 0xB23AAC or 0x729DE2 lt=nil else tt[0x2]=k tt[0x5]=F[r(0x6EE)]tt[0x4]=y[tt[0x5]]tt[0x3]=tt[0x4]~=B tt[0x1]=tt[0x3]k=tt[0x3]and 0x22A54E or 0x9324AB end else n=F[r(0x1271)]W=Y o=R[n]k=not o k=k and 0x71132F or 0xB98ADF end end end else if k<0xD52ABB then if k<0xD4AD02 then if k<0xD45F51 then if k<0xD3E03A then k=0x5B1E7B else k=W k=0x84F5C3 Y=x end else k=o and 0x4A5F4E or 0x56B4F5 end else if k<0xD4EE8B then if k<0xD4C84F then k=n n={k(x,W,R,o)}E=n[0x1]x=E k=x and 0x4F4C28 or 0x3F48A9 Y=n[0x2]else n,Q=T(o,n)k=n and 0x5E24BF or 0x231 end else E={}k=true z[s[0x1]]=k k=y[F[r(0xD4F)]]end end else if k<0xD60A6F then if k<0xD5C407 then if k<0xD54230 then Vt,mt=Yt(xt,Vt)k=Vt and 0x77B8E2 or 0x365B47 else C=nil Y=nil E={}k=y[F[r(0x29D)]]end else k=z[s[0x1]]E=F[r(0x2176)]E=k[E]E=E(k)k=nil z[s[0x1]]=k k=0xC30300 end else if k<0xD62D6E then if k<0xD61DE0 then x=0x1 k=0x91B184 W=z[s[0x4]]R=W W=0x1 o=W W=0x0 n=o<W W=x-o else E=false o=F[r(0x252B)]C=0x0 k=true z[s[0x2]]=k Y=0x1 z[s[0x3]]=E R=y[o]x=Y W=.1 Y=W/R W=Y k=0x3E0778 Y=0x0 R=W<Y Y=C-W end else J=0x0 n=F[r(0x1537)]w=F[r(0x1537)]o=y[n]f=F[r(0x250D)]X=0x0 T=y[f]h=y[w]e=F[r(0x1FC)]w=F[r(0x1CB)]n=F[r(0x1CB)]Q=h[w]D=0x0 c=z[s[0x6]]Z=0x0 B=y[e]e=B(Z,J,D)at=0xC w=c*e J=-5 Z=F[r(0x1AC2)]B=F[r(0x161C)]c=y[B]D=0x0 e=y[Z]Z=e(J)J=F[r(0x1AC2)]P=0xA e=y[J]J=e(D)D=F[r(0x1AC2)]e=y[D]D={e(X)}B=c(Z,J,a(D))e=F[r(0x252B)]c=0x1 h=w*B B=y[e]w=c/B J=0x0 f=T(Q,h,w)o[n]=f n=F[r(0xDF0)]X=0x0 w=F[r(0xDF0)]Z=0x0 o=y[n]f=F[r(0x250D)]n=F[r(0x1CB)]D=0x0 T=y[f]h=y[w]w=F[r(0x1CB)]e=F[r(0x1FC)]Q=h[w]c=z[s[0x8]]B=y[e]e=B(Z,J,D)J=-25 w=c*e D=0x0 H=F[r(0x199C)]K=0x19 B=F[r(0x161C)]c=y[B]Z=F[r(0x1AC2)]e=y[Z]Z=e(J)J=F[r(0x1AC2)]e=y[J]J=e(D)D=F[r(0x1AC2)]e=y[D]D={e(X)}B=c(Z,J,a(D))c=0x1 D=-35 e=F[r(0x252B)]h=w*B B=y[e]w=c/B X=0x0 B=F[r(0x1FC)]f=T(Q,h,w)Z=.5 o[n]=f n=F[r(0x1D79)]f=F[r(0x250D)]w=F[r(0x1D79)]o=y[n]T=y[f]J=0x0 h=y[w]w=F[r(0x1CB)]n=F[r(0x1CB)]Q=h[w]e=1.5 c=y[B]B=c(e,Z,J)e=F[r(0x161C)]J=F[r(0x1AC2)]c=y[e]Z=y[J]J=Z(D)D=F[r(0x1AC2)]Z=y[D]D=Z(X)X=F[r(0x1AC2)]Z=y[X]i=y[H]rt=z[s[0x2]]yt=rt/at H=i(yt)G=P*H O=K+G X={Z(O)}e=c(J,D,a(X))w=B*e c=z[s[0x9]]h=w*c c=0x1 e=F[r(0x252B)]B=y[e]P=0xA w=c/B f=T(Q,h,w)o[n]=f J=0x0 f=F[r(0x250D)]D=-35 n=F[r(0x418)]o=y[n]H=F[r(0x199C)]w=F[r(0x418)]n=F[r(0x1CB)]B=F[r(0x1FC)]T=y[f]e=-1.5 Z=.5 h=y[w]w=F[r(0x1CB)]Q=h[w]c=y[B]at=0xC B=c(e,Z,J)e=F[r(0x161C)]K=-25 c=y[e]J=F[r(0x1AC2)]Z=y[J]J=Z(D)X=0x0 D=F[r(0x1AC2)]Z=y[D]D=Z(X)X=F[r(0x1AC2)]Z=y[X]i=y[H]rt=z[s[0x2]]yt=rt/at H=i(yt)G=P*H O=K-G X={Z(O)}e=c(J,D,a(X))w=B*e c=z[s[0xA]]e=F[r(0x252B)]h=w*c D=0x1 c=0x1 Z=-0.4 B=y[e]w=c/B O=0x0 f=T(Q,h,w)o[n]=f n=F[r(0x23BE)]o=y[n]f=F[r(0x250D)]J=-0.6 w=F[r(0x23BE)]B=F[r(0x1FC)]e=0x1 X=0x5A n=F[r(0x1CB)]T=y[f]k=0xE6FE2F h=y[w]w=F[r(0x1CB)]Q=h[w]c=y[B]B=c(e,Z,J)J=F[r(0x1AC2)]e=F[r(0x161C)]c=y[e]Z=y[J]J=Z(D)D=F[r(0x1AC2)]Z=y[D]D=Z(X)X=F[r(0x1AC2)]Z=y[X]X={Z(O)}Z=F[r(0x1AC2)]O=F[r(0x1A84)]e=c(J,D,a(X))D=-1 w=B*e B=F[r(0x161C)]c=y[B]e=y[Z]X=y[O]P=0x6 G=z[s[0x2]]K=G/P O=X(K)J=D*O Z=e(J)J=F[r(0x1AC2)]e=y[J]D=0x0 J=e(D)D=F[r(0x1AC2)]e=y[D]X=0x0 D={e(X)}B=c(Z,J,a(D))h=w*B O=0x0 J=0x0 c=0x1 e=F[r(0x252B)]Z=-1 B=y[e]D=0x0 w=c/B f=T(Q,h,w)o[n]=f n=F[r(0x93C)]e=-1 f=F[r(0x250D)]o=y[n]n=F[r(0x1CB)]P=0x6 T=y[f]w=F[r(0x93C)]h=y[w]B=F[r(0x1FC)]w=F[r(0x1CB)]Q=h[w]c=y[B]B=c(e,Z,J)e=F[r(0x161C)]c=y[e]J=F[r(0x1AC2)]Z=y[J]J=Z(D)D=F[r(0x1AC2)]Z=y[D]X=-85 D=Z(X)X=F[r(0x1AC2)]Z=y[X]X={Z(O)}e=c(J,D,a(X))D=-1 O=F[r(0x1A84)]Z=F[r(0x1AC2)]w=B*e B=F[r(0x161C)]c=y[B]e=y[Z]X=y[O]G=z[s[0x2]]K=G/P O=X(K)X=0x0 J=D*O Z=e(J)D=0x0 J=F[r(0x1AC2)]e=y[J]J=e(D)D=F[r(0x1AC2)]e=y[D]D={e(X)}B=c(Z,J,a(D))c=0x1 e=F[r(0x252B)]h=w*B B=y[e]w=c/B f=T(Q,h,w)o[n]=f end end end end else if k<0xD9808B then if k<0xD786DB then if k<0xD70A2D then if k<0xD6B6B8 then if k<0xD66D56 then f=F[r(0xDD1)]T=R[f]Q=z[s[0x4]]h=0x6 f=Q[h]k=0x8AA8A9 n=T==f o=n else k=0x3DDBF2 end else k=0xD4B0A8 T=z[s[0x1]]o=T end else if k<0xD768E2 then if k<0xD71CC2 then E=z[s[0x7]]k=E and 0x1E3E98 or 0xCA8ED6 else k=w h=nil w=nil B=nil Q=nil o=k c=nil k=0x31FDFA end else w=F[r(0xDD1)]h=f[w]w=F[r(0x6AC)]Q=h==w k=Q and 0xB01A00 or 0x5D60FE end end else if k<0xD865D2 then if k<0xD8287D then if k<0xD7AEE5 then i=nil P=nil k=0x5F3EBF else W=z[s[0x3]]R=false x=W==R k=x and 0xC28886 or 0x1A9201 end else k=n k=o and 0xEAD929 or 0x31AB0B end else if k<0xD93A7B then if k<0xD888C7 then tt[0x55]=F[r(0x197C)]tt[0x54]=F[r(0x22D6)]tt[0x50]=y[tt[0x54]]tt[0x54]=tt[0x50](tt[0x55],tt[0x51])tt[0x50]=F[r(0x1EA0)]tt[0x5A]=0x0 tt[0x59]=z[tt[0x4A]]tt[0x58]=tt[0x59][tt[0x4B]]tt[0x56]=F[r(0x208F)]tt[0x59]=0x3 tt[0x57]=tt[0x58][tt[0x59]]tt[0x55]=tt[0x56]..tt[0x57]tt[0x57]=.2 tt[0x56]=F[r(0x1B91)]tt[0x54][tt[0x50]]=tt[0x55]tt[0x55]=y[tt[0x56]]tt[0x58]=0x0 tt[0x59]=0x1 tt[0x56]=tt[0x55](tt[0x57],tt[0x58],tt[0x59],tt[0x5A])tt[0x50]=F[r(0xD33)]tt[0x5A]=0x0 tt[0x54][tt[0x50]]=tt[0x56]tt[0x59]=0x0 tt[0x56]=F[r(0x1B91)]tt[0x57]=.065 tt[0x50]=F[r(0x21EA)]tt[0x58]=0x0 tt[0x55]=y[tt[0x56]]tt[0x56]=tt[0x55](tt[0x57],tt[0x58],tt[0x59],tt[0x5A])k=0x36B03D tt[0x54][tt[0x50]]=tt[0x56]tt[0x55]=0x1 tt[0x50]=F[r(0xE02)]tt[0x54][tt[0x50]]=tt[0x55]tt[0x50]=F[r(0x13D1)]tt[0x55]=0x0 tt[0x54][tt[0x50]]=tt[0x55]tt[0x54]=nil else W=F[r(0x1725)]x=Y[W]R=F[r(0x21B5)]W=F[r(0x116E)]W=x[W]W=W(x,R)E=W k=0x9D9C53 end else f=h k=w k=0x6FDE8D end end end else if k<0xDA022D then if k<0xD9C72C then if k<0xD9B547 then if k<0xD985B2 then T=F[r(0x63D)]f=false z[s[0x4]]=T k=0xD999D8 z[s[0x1]]=f else Y=nil x=nil k=0x4D08B7 C=nil end else tt[0x4A]=V(tt[0x4A])tt[0x36]=V(tt[0x36])tt[0x45]=nil tt[0x10]=V(tt[0x10])tt[0x1D]=V(tt[0x1D])tt[0x14]=V(tt[0x14])f=V(f)tt[0x43]=nil tt[0x1A]=nil tt[0x46]=nil c=V(c)tt[0x40]=V(tt[0x40])tt[0x12]=V(tt[0x12])tt[0x4D]=V(tt[0x4D])o=V(o)tt[0x1B]=V(tt[0x1B])P=nil x=V(x)tt[0x33]=V(tt[0x33])tt[0x47]=nil tt[0x19]=nil C=nil tt[0x35]=V(tt[0x35])tt[0x2E]=V(tt[0x2E])tt[0x30]=nil T=nil tt[0x18]=nil tt[0x13]=V(tt[0x13])tt[0x22]=nil tt[0x3E]=nil E={}tt[0x34]=nil h=V(h)tt[0x3A]=V(tt[0x3A])J=V(J)tt[0x3C]=nil W=nil B=V(B)tt[0x41]=nil tt[0x23]=nil e=nil tt[0x15]=V(tt[0x15])tt[0x25]=V(tt[0x25])X=V(X)tt[0xF]=nil tt[0x38]=V(tt[0x38])tt[0x26]=V(tt[0x26])tt[0x39]=V(tt[0x39])k=y[F[r(0x95B)]]tt[0x3D]=nil tt[0x4C]=V(tt[0x4C])tt[0x3F]=nil tt[0x37]=V(tt[0x37])tt[0x2B]=nil tt[0x17]=V(tt[0x17])D=V(D)tt[0x1C]=V(tt[0x1C])tt[0x16]=V(tt[0x16])w=nil tt[0x49]=nil tt[0x48]=nil tt[0x31]=V(tt[0x31])tt[0x32]=V(tt[0x32])tt[0x20]=nil tt[0x11]=V(tt[0x11])Y=V(Y)tt[0x2D]=V(tt[0x2D])tt[0x3B]=nil Z=V(Z)tt[0x42]=nil tt[0x44]=nil R=nil Q=V(Q)vt=nil n=nil tt[0x21]=V(tt[0x21])tt[0x1E]=V(tt[0x1E])tt[0x1F]=nil end else if k<0xD9DAC5 then if k<0xD9CD6C then B=z[s[0x8]]e=F[r(0x8CC)]E=B==e k=E and 0xCE740E or 0x7B418F else R=F[r(0x180B)]n=F[r(0x180B)]W=Y[R]f=0x0 o=y[n]n=F[r(0x22B6)]T=-5 R=o[n]n=0x0 o=R(n,T,f)k=W*o x=k k=0x5D6427 end else w=c k=B k=0x549C8 end end else if k<0xDA3718 then if k<0xDA2E0E then if k<0xDA19E5 then Q=F[r(0x22D5)]f=R~=Q E=f k=f and 0xBB513C or 0xAC4A2A else k=mt vt=0x41 Mt=F[r(0x17E1)]mt=I()z[mt]=Vt Ut=0x3 Vt=w(Ut,vt)Ut=F[r(0x17E1)]vt=k y[Ut]=Vt Lt=y[Mt]Mt=0x3 Nt=Lt<Mt Ut=Nt k=Nt and 0x52243B or 0x90BAD4 end else R=R+n f=not T E=R<=o E=f and E f=R>=o f=T and f E=f or E f=0xB35700 k=E and f E=0xF41ACF k=k or E end else if k<0xDA8364 then if k<0xDA64B7 then tt[0xB]=tt[0xD]k=tt[0xE]k=0x63F89F else X=nil k=0x702EB9 end else k=W E=x k=0xD1B88A end end end end end else if k<0xDDC1AF then if k<0xDBF58F then if k<0xDAED50 then if k<0xDAC87B then if k<0xDAB8E1 then if k<0xDAA2F4 then x=F[r(0x1B86)]C=F[r(0x1B86)]E=y[C]C=F[r(0x1C00)]k=E[C]Y=y[x]x=F[r(0x1F6F)]C=Y[x]x=N(0x2ABB30,{s[0x1]})Y={C(x)}E=k(a(Y))C=false E=z[s[0x2]]k=E==C k=k and 0x3C1EFC or 0x83429A else f,h=n(T,f)k=f and 0xAF4274 or 0x31FDFA end else E=F[r(0xEC4)]T=F[r(0xEC4)]R=F[r(0xBC5)]W=y[R]R=F[r(0x22B6)]x=W[R]n=C[T]T=F[r(0x9D2)]o=n[T]R=o+Y o=0x0 W=x(R,o)C[E]=W R=F[r(0xEC4)]W=C[R]R=F[r(0x9D2)]x=W[R]W=159.5 E=x<W k=E and 0xB029D0 or 0x7ECCBD end else if k<0xDADE3E then if k<0xDAD951 then O=I()G=0x64 K=F[r(0x13DF)]z[O]=Z E=y[K]P=0xFF K=F[r(0x1BE1)]k=E[K]K=0x1 E=k(K,G)G=0x0 K=I()z[K]=E k=z[n]st=0x0 E=k(G,P)kt=F[r(0x8F)]G=I()P=0x1 z[G]=E H=0x1 yt=0x2 k=z[n]i=z[K]E=k(P,i)P=I()z[P]=E E=z[n]i=E(H,yt)E=0x1 k=i==E yt=F[r(0x7A4)]i=I()z[i]=k lt=0x2710 E=F[r(0x154)]at=y[kt]bt=z[n]k=F[r(0x15E9)]k=B[k]ut={bt(st,lt)}kt=at(a(ut))at=F[r(0x7A4)]rt=kt..at H=yt..rt k=k(B,E,H)H=I()yt=F[r(0x9E)]rt=L(0x3C55F2,{n,O,Q;x,Y,e;i,H;K,P,G;f})z[H]=k E=y[yt]yt={E(rt)}k={a(yt)}yt=k k=z[i]k=k and 0xD9A46 or 0x45599A else k=0x1B8A88 w=nil end else e=F[r(0x1E2)]w=F[r(0x25F7)]P=-35 K=0x0 h=n J=F[r(0x1FC)]E=y[w]c=F[r(0x250D)]w=E()w=y[c]i=0x0 E=F[r(0x1E2)]B=o[e]O=0x0 D=0x0 Z=y[J]X=0x0 J=Z(D,X,O)O=F[r(0x1AC2)]G=0x0 D=F[r(0x161C)]Z=y[D]X=y[O]O=X(K)K=F[r(0x1AC2)]X=y[K]K=X(G)G=F[r(0x1AC2)]X=y[G]G={X(P)}D=Z(O,K,a(G))e=J*D Z=.1 c=w(B,e,Z)J=F[r(0x1537)]O=F[r(0x1FC)]w=F[r(0x1537)]o[E]=c B=F[r(0x250D)]E=y[w]H=-46 w=F[r(0x1CB)]c=y[B]P=0x0 G=0x0 K=0x0 Z=y[J]J=F[r(0x1CB)]e=Z[J]D=z[s[0x4]]X=y[O]O=X(K,G,P)J=D*O X=F[r(0x161C)]K=F[r(0x1AC2)]D=y[X]k=0xF93CC3 G=0x0 O=y[K]K=O(G)P=0x0 G=F[r(0x1AC2)]O=y[G]G=O(P)P=F[r(0x1AC2)]O=y[P]P={O(i)}X=D(K,G,a(P))O=F[r(0x252B)]Z=J*X D=0x1 K=0x0 X=y[O]J=D/X B=c(e,Z,J)E[w]=B O=F[r(0x1FC)]w=F[r(0xDF0)]E=y[w]P=0x0 G=0x0 J=F[r(0xDF0)]B=F[r(0x250D)]c=y[B]Z=y[J]J=F[r(0x1CB)]e=Z[J]D=z[s[0x6]]X=y[O]w=F[r(0x1CB)]O=X(K,G,P)G=0x0 K=F[r(0x1AC2)]X=F[r(0x161C)]J=D*O P=0x0 D=y[X]O=y[K]i=0x0 K=O(G)G=F[r(0x1AC2)]O=y[G]G=O(P)P=F[r(0x1AC2)]O=y[P]P={O(i)}O=F[r(0x252B)]X=D(K,G,a(P))Z=J*X D=0x1 P=0xA0 i=-5 X=y[O]J=D/X B=c(e,Z,J)E[w]=B w=F[r(0x1D79)]J=F[r(0x1D79)]O=1.25 E=y[w]w=F[r(0x1CB)]B=F[r(0x250D)]X=F[r(0x1FC)]c=y[B]Z=y[J]K=.2 J=F[r(0x1CB)]G=-0.8 e=Z[J]D=y[X]X=D(O,K,G)O=F[r(0x161C)]D=y[O]G=F[r(0x1AC2)]K=y[G]G=K(P)P=F[r(0x1AC2)]K=y[P]P=K(i)i=F[r(0x1AC2)]K=y[i]i={K(H)}O=D(G,P,a(i))J=X*O O=F[r(0x252B)]D=z[s[0x7]]Z=J*D D=0x1 X=y[O]J=D/X B=c(e,Z,J)E[w]=B w=F[r(0x418)]E=y[w]O=-1.25 K=.15 w=F[r(0x1CB)]B=F[r(0x250D)]c=y[B]J=F[r(0x418)]P=0xA0 G=-0.3 X=F[r(0x1FC)]Z=y[J]J=F[r(0x1CB)]e=Z[J]D=y[X]X=D(O,K,G)G=F[r(0x1AC2)]O=F[r(0x161C)]D=y[O]K=y[G]G=K(P)i=0x5 P=F[r(0x1AC2)]K=y[P]P=K(i)i=F[r(0x1AC2)]K=y[i]H=0xC i={K(H)}O=D(G,P,a(i))J=X*O D=z[s[0x8]]O=F[r(0x252B)]K=-1 i=0x55 Z=J*D X=y[O]D=0x1 H=0x0 J=D/X P=0x0 O=0x1 B=c(e,Z,J)E[w]=B B=F[r(0x250D)]w=F[r(0x23BE)]J=F[r(0x23BE)]E=y[w]c=y[B]X=F[r(0x1FC)]w=F[r(0x1CB)]Z=y[J]J=F[r(0x1CB)]e=Z[J]D=y[X]G=0x0 X=D(O,K,G)O=F[r(0x161C)]G=F[r(0x1AC2)]D=y[O]K=y[G]G=K(P)P=F[r(0x1AC2)]K=y[P]P=K(i)i=F[r(0x1AC2)]K=y[i]i={K(H)}O=D(G,P,a(i))K=F[r(0x1AC2)]i=0x0 P=0x0 J=X*O G=0x0 X=F[r(0x161C)]D=y[X]O=y[K]K=O(G)G=F[r(0x1AC2)]O=y[G]G=O(P)H=0x0 P=F[r(0x1AC2)]O=y[P]P={O(i)}X=D(K,G,a(P))D=0x1 Z=J*X O=F[r(0x252B)]K=-1 P=0x0 h=nil X=y[O]J=D/X B=c(e,Z,J)E[w]=B i=-85 w=F[r(0x93C)]E=y[w]w=F[r(0x1CB)]B=F[r(0x250D)]G=0x0 J=F[r(0x93C)]X=F[r(0x1FC)]c=y[B]Z=y[J]J=F[r(0x1CB)]O=-1 e=Z[J]D=y[X]X=D(O,K,G)O=F[r(0x161C)]D=y[O]G=F[r(0x1AC2)]K=y[G]G=K(P)P=F[r(0x1AC2)]K=y[P]P=K(i)i=F[r(0x1AC2)]K=y[i]i={K(H)}O=D(G,P,a(i))J=X*O P=0x0 G=0x0 K=F[r(0x1AC2)]X=F[r(0x161C)]D=y[X]O=y[K]K=O(G)G=F[r(0x1AC2)]O=y[G]G=O(P)i=0x0 P=F[r(0x1AC2)]O=y[P]P={O(i)}O=F[r(0x252B)]X=D(K,G,a(P))D=0x1 Z=J*X X=y[O]J=D/X B=c(e,Z,J)E[w]=B end end else if k<0xDB661C then if k<0xDB128F then if k<0xDB0396 then k=M(0x1AE14B,{W})J={k()}k=y[F[r(0x1D2A)]]E={a(J)}else D=I()z[D]=X H=F[r(0x1B86)]i=y[H]H=F[r(0x1C00)]k=0xC42D11 P=i[H]rt=F[r(0x1B86)]yt=y[rt]rt=F[r(0x1F6F)]H=yt[rt]rt=S(0x77EF31,{s[0x16],D})yt={H(rt)}i=P(a(yt))D=V(D)end else k=0xAA2571 w=nil end else if k<0xDB9F1B then if k<0xDB9B2C then k=0x15EEE7 else B=F[r(0xDD1)]c=w[B]B=F[r(0x228D)]E=c==B k=E and 0xF4630A or 0x157FBE end else k=0x745E27 T=F[r(0x673)]n=z[s[0x2]]o=n~=T E=o end end end else if k<0xDD3B96 then if k<0xDCA81D then if k<0xDC90CB then if k<0xDC779E then E=F[r(0xDD1)]c=F[r(0x19EC)]e=F[r(0xDD1)]w[E]=c c=0x8 E=z[s[0x4]]B=w[e]E[c]=B k=0x1851AC else w=k e=z[s[0x1]]Z=0x6 B=e[Z]c=Y==B h=c k=c and 0xADD2E9 or 0x88736E end else E=F[r(0x2176)]k=z[s[0x2]]E=k[E]E=E(k)k=0x318D9A end else if k<0xDD15F0 then if k<0xDD101D then E=F[r(0x90)]f=M(0xBE14E0,{})k=y[E]W=F[r(0x8F)]T=F[r(0x9E)]C=z[s[0x4]]x=y[W]n=y[T]T={n(f)}o={a(T)}n=0x2 R=o[n]W=x(R)x=F[r(0x154)]Y=C(W,x)C={Y()}E=k(a(C))Y=z[s[0x5]]C=E k=Y and 0xD0CA31 or 0xE79838 E=Y else k=f k=T and 0x52F7BC or 0x964E82 end else Y=F[r(0x21B5)]C=F[r(0x116E)]k=z[s[0x5]]C=k[C]C=C(k,Y)k=C and 0xDB4FA or 0xD02438 end end else if k<0xDD8571 then if k<0xDD688A then if k<0xDD5C3B then Q=nil c=nil k=w h=nil o=k k=0xC64EC8 w=nil B=nil else n=F[r(0x250D)]i=0xC c=0x0 E=F[r(0x1E2)]Q=F[r(0x1E2)]e=0x0 G=0x18 k=z[s[0x3]]B=0x0 o=y[n]f=z[s[0x3]]w=0x0 T=f[Q]h=F[r(0x1FC)]Q=y[h]h=Q(w,c,B)w=F[r(0x161C)]J=0x0 B=F[r(0x1AC2)]Q=y[w]Z=0x0 c=y[B]B=c(e)e=F[r(0x1AC2)]c=y[e]e=c(Z)Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}J=.04 w=Q(B,e,a(Z))Q=.25 f=h*w n=o(T,f,Q)Q=F[r(0x1537)]k[E]=n n=F[r(0x250D)]E=F[r(0x1537)]k=y[E]o=y[n]X=F[r(0x199C)]f=y[Q]Q=F[r(0x1CB)]E=F[r(0x1CB)]T=f[Q]c=F[r(0x1FC)]e=0x0 h=z[s[0x4]]w=y[c]D=y[X]K=z[s[0x5]]O=K/G X=D(O)Z=J*X X=.05 B=e-Z e=0x0 J=0x0 K=F[r(0x199C)]O=y[K]P=z[s[0x5]]G=P/i K=O(G)D=X*K Z=J+D c=w(B,e,Z)Q=h*c w=F[r(0x161C)]i=0x18 X=2.5 h=y[w]B=F[r(0x1AC2)]e=0x0 K=F[r(0x199C)]c=y[B]B=c(e)e=F[r(0x1AC2)]J=0x0 c=y[e]O=y[K]P=z[s[0x5]]G=P/i K=O(G)D=X*K Z=J-D e=c(Z)J=0x0 Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}w=h(B,e,a(Z))f=Q*w D=.1 Z=0x0 c=F[r(0x252B)]J=0x0 w=y[c]P=0xC h=0x1 c=F[r(0x1FC)]Q=h/w n=o(T,f,Q)k[E]=n n=F[r(0x250D)]E=F[r(0xDF0)]k=y[E]Q=F[r(0xDF0)]o=y[n]H=0xC f=y[Q]E=F[r(0x1CB)]Q=F[r(0x1CB)]T=f[Q]h=z[s[0x6]]e=0x0 B=0x0 w=y[c]c=w(B,e,Z)Q=h*c w=F[r(0x161C)]B=F[r(0x1AC2)]h=y[w]e=0x0 c=y[B]B=c(e)e=F[r(0x1AC2)]Z=0x0 c=y[e]e=c(Z)Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}w=h(B,e,a(Z))h=0x1 f=Q*w B=1.1 c=F[r(0x252B)]w=y[c]Q=h/w c=F[r(0x1FC)]n=o(T,f,Q)k[E]=n E=F[r(0x1D79)]O=F[r(0x199C)]k=y[E]Q=F[r(0x1D79)]E=F[r(0x1CB)]n=F[r(0x250D)]o=y[n]Z=.35 f=y[Q]Q=F[r(0x1CB)]T=f[Q]w=y[c]X=y[O]G=z[s[0x5]]K=G/P O=X(K)J=D*O e=Z+J Z=.2 c=w(B,e,Z)B=F[r(0x161C)]G=F[r(0x199C)]D=-45 w=y[B]Z=F[r(0x1AC2)]O=1.5 e=y[Z]K=y[G]i=z[s[0x5]]P=i/H G=K(P)X=O*G J=D-X Z=e(J)J=F[r(0x1AC2)]D=0x0 e=y[J]J=e(D)X=-45 D=F[r(0x1AC2)]e=y[D]D={e(X)}B=w(Z,J,a(D))Z=0x0 h=c*B c=F[r(0x161C)]w=y[c]e=F[r(0x1AC2)]B=y[e]J=0x19 e=B(Z)Z=F[r(0x1AC2)]B=y[Z]D=0x0 Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}c=w(e,Z,a(J))Q=h*c e=-0.3 B=.1 h=z[s[0x7]]c=F[r(0x252B)]f=Q*h h=0x1 w=y[c]Q=h/w n=o(T,f,Q)k[E]=n J=0x5 E=F[r(0x418)]k=y[E]c=-1.25 D=0xC E=F[r(0x1CB)]Q=F[r(0x418)]n=F[r(0x250D)]o=y[n]f=y[Q]O=F[r(0x199C)]Q=F[r(0x1CB)]w=F[r(0x1FC)]T=f[Q]P=0x18 h=y[w]w=h(c,B,e)c=F[r(0x161C)]Z=0x50 h=y[c]e=F[r(0x1AC2)]B=y[e]e=B(Z)Z=F[r(0x1AC2)]B=y[Z]Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}c=h(e,Z,a(J))Q=w*c D=.035 h=z[s[0x8]]c=F[r(0x252B)]f=Q*h w=y[c]h=0x1 Q=h/w n=o(T,f,Q)Z=-1 c=0x1 Q=F[r(0x23BE)]k[E]=n E=F[r(0x23BE)]n=F[r(0x250D)]k=y[E]w=F[r(0x1FC)]E=F[r(0x1CB)]o=y[n]f=y[Q]Q=F[r(0x1CB)]T=f[Q]h=y[w]X=y[O]G=z[s[0x5]]K=G/P O=X(K)J=D*O e=Z+J X=F[r(0x199C)]J=.05 D=y[X]R=nil P=0x18 K=z[s[0x5]]G=0xC O=K/G X=D(O)Z=J*X B=e-Z J=0x55 e=0x0 w=h(c,B,e)c=F[r(0x161C)]h=y[c]Z=0x0 e=F[r(0x1AC2)]B=y[e]e=B(Z)Z=F[r(0x1AC2)]D=0x0 B=y[Z]Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}D=2.5 c=h(e,Z,a(J))Z=-2 Q=w*c w=F[r(0x161C)]h=y[w]B=F[r(0x1AC2)]O=F[r(0x199C)]c=y[B]X=y[O]G=z[s[0x5]]K=G/P O=X(K)J=D*O e=Z-J P=0x18 B=c(e)Z=0x0 J=0x0 e=F[r(0x1AC2)]c=y[e]e=c(Z)Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}c=F[r(0x252B)]w=h(B,e,a(Z))f=Q*w h=0x1 w=y[c]Q=h/w n=o(T,f,Q)k[E]=n Z=-1 E=F[r(0x93C)]O=F[r(0x199C)]c=-1 k=y[E]n=F[r(0x250D)]E=F[r(0x1CB)]o=y[n]Q=F[r(0x93C)]w=F[r(0x1FC)]f=y[Q]Q=F[r(0x1CB)]T=f[Q]h=y[w]D=.035 X=y[O]G=z[s[0x5]]K=G/P O=X(K)J=D*O X=F[r(0x199C)]e=Z-J G=0xC D=y[X]J=.05 K=z[s[0x5]]O=K/G X=D(O)Z=J*X B=e-Z e=0x0 w=h(c,B,e)Z=0x0 c=F[r(0x161C)]J=-85 P=0x18 h=y[c]D=0x0 e=F[r(0x1AC2)]B=y[e]e=B(Z)Z=F[r(0x1AC2)]B=y[Z]Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}c=h(e,Z,a(J))Q=w*c w=F[r(0x161C)]D=2.5 B=F[r(0x1AC2)]h=y[w]c=y[B]Z=-2 O=F[r(0x199C)]X=y[O]G=z[s[0x5]]K=G/P O=X(K)J=D*O e=Z+J B=c(e)e=F[r(0x1AC2)]Z=0x0 c=y[e]e=c(Z)Z=F[r(0x1AC2)]c=y[Z]J=0x0 Z={c(J)}w=h(B,e,a(Z))c=F[r(0x252B)]h=0x1 f=Q*w w=y[c]Q=h/w n=o(T,f,Q)k[E]=n k=0x4C18B0 end else k=H and 0x9E8269 or 0xD78AA7 end else if k<0xDDA5E0 then if k<0xDD9729 then E=F[r(0x9EF)]k=y[E]C=F[r(0x9FF)]E=y[C]C=F[r(0x9FF)]y[C]=k C=F[r(0x9EF)]y[C]=E k=0xAFEC8C C=z[s[0x1]]Y=C()else Vt=z[Y]mt=Vt()k=0x9AB7B1 end else f=F[r(0x22C9)]T=F[r(0x138E)]T=o[T]T=T(o,f)n=T k=0xE00F7A end end end end else if k<0xE05BFD then if k<0xDF176D then if k<0xDEBD26 then if k<0xDEAD30 then if k<0xDE5CA5 then o=false k=F[r(0x20C7)]R[k]=o k=0x63B403 else Z=not e w=w+B E=w<=c E=Z and E Z=w>=c Z=e and Z E=Z or E Z=0x6630B8 k=E and Z E=0xEC9127 k=k or E end else O=F[r(0x1553)]w=F[r(0x11F0)]f=y[w]X=z[T]e=X[O]B=F[r(0x1054)]c=B..e k=0x2C93D5 w=f(c)end else if k<0xDEF6AD then if k<0xDECD17 then k=Q k=0xC2D8F3 n=f else c=nil bt=V(bt)Ft=V(Ft)Et=nil Ct=nil X=nil ut=V(ut)i=nil Nt=nil mt=V(mt)K=nil kt=nil x=V(x)B=nil st=nil H=nil Q=nil x=F[r(0x9E)]zt=nil T=nil xt=nil It=nil Ut=nil f=V(f)n=V(n)w=nil O=nil Mt=V(Mt)P=nil yt=nil h=nil R=nil G=nil Wt=V(Wt)Lt=nil Y=V(Y)W=nil o=V(o)Yt=V(Yt)vt=nil Y=y[x]W=v(0xCE3464,{})x=Y(W)Y=not x lt=nil e=nil k=Y and 0xABA4DE or 0x2E8C48 end else B=k J=F[r(0x13EE)]Z=y[J]e=h~=Z c=e k=e and 0x1767AC or 0xD9E393 end end else if k<0xDFD5EE then if k<0xDFCDE7 then if k<0xDF5640 then P={}k=0xB7466F H=F[r(0x64)]kt=F[r(0x19B5)]i=y[H]at=y[kt]bt=F[r(0x20A0)]bt=at[bt]kt={bt(at)}at={i(a(kt))}H=at[0x1]rt=at[0x3]yt=at[0x2]else Et=0x0 Vt=F[r(0xD33)]yt=0x0 Mt=F[r(0x8E8)]K=F[r(0xD33)]H=0x0 X=F[r(0x2125)]e=F[r(0x2145)]rt=0x3 i=0x0 P=F[r(0x517)]D=0x6 J=F[r(0xEA7)]kt=0x3 O=F[r(0xEE5)]E=y[e]vt=F[r(0xC8A)]G=y[P]P=G(i,H,yt)G=F[r(0x25DD)]yt=F[r(0x517)]H=y[yt]at=0x1 zt=F[r(0x180B)]yt=H(rt,at,kt)kt=F[r(0xD33)]at=z[s[0x1]]rt=at[kt]at=F[r(0xAAE)]Ft=0x0 H=rt[at]i=yt*H at=0x1 lt=z[s[0x1]]H=F[r(0x5D2)]rt=F[r(0x1E7C)]yt=.97 kt=F[r(0x180B)]st=lt[zt]zt=F[r(0x1FC)]lt=y[zt]Wt=z[s[0x1]]xt=Wt[Vt]Wt=F[r(0xAAE)]Yt=xt[Wt]It=-Yt Yt=0x2 Ct=It/Yt zt=lt(Et,Ft,Ct)Wt=0x5 Et=F[r(0x1AC2)]ut=st*zt lt=F[r(0x161C)]st=y[lt]Ft=0x5A zt=y[Et]Et=zt(Ft)tt[0x1]=0xF xt=0x168 Ut=F[r(0x1867)]Ft=F[r(0x1AC2)]It=F[r(0x8E8)]zt=y[Ft]Yt=0x0 Ct=y[It]It={Ct(Yt,xt)}Yt=F[r(0x8E8)]Ft=zt(a(It))xt=-5 Ct=F[r(0x1AC2)]zt=y[Ct]It=y[Yt]St=0x5 Yt={It(xt,Wt)}Ct={zt(a(Yt))}lt=st(Et,Ft,a(Ct))Ft=-1 tt[0x5]=0x19 st=nil bt=ut*lt Ct=0x1 It=-1 Et=F[r(0x8E8)]zt=y[Et]Et=zt(Ft,Ct)tt[0x3]=0x0 Yt=0x1 Ct=F[r(0x8E8)]lt=F[r(0x153A)]zt=F[r(0x1539)]Wt=0x1 Ft=y[Ct]Ct=Ft(It,Yt)Ft=F[r(0x1538)]tt[0x2]=F[r(0x1480)]ut=F[r(0x1423)]Yt=F[r(0x8E8)]k=0xF4448 xt=-1 It=y[Yt]Yt=It(xt,Wt)mt=y[Ut]Ut=mt(vt)It=F[r(0x226C)]xt=F[r(0xDF1)]vt=F[r(0x2097)]Wt=F[r(0x2504)]mt=F[r(0x2504)]Vt=Ut[mt]Lt=y[Mt]Ut=nil mt=F[r(0x955)]tt[0x4]=F[r(0x1CFD)]Mt=Lt(St,tt[0x1])Lt=0xA Nt=Mt/Lt Lt=F[r(0x1F64)]tt[0x1]=true Mt=0x5 St=F[r(0x1508)]Z={[J]=D;[X]=O;[K]=P,[G]=i;[H]=yt;[rt]=at,[kt]=bt,[ut]=st,[lt]=Et,[zt]=Ct,[Ft]=Yt;[It]=xt,[Wt]=Vt;[mt]=Ut,[vt]=Nt,[Lt]=Mt,[St]=tt[0x1];[tt[0x2]]=tt[0x3],[tt[0x4]]=tt[0x5]}e=E(Z)end else x=x+R E=x<=W n=not o E=n and E n=x>=W n=o and n E=n or E n=0x737B18 k=E and n E=0x589EA4 k=k or E end else if k<0xE01137 then if k<0xE0010E then k=0xAB5BB1 o=nil else k=n and 0x663386 or 0xFE5808 end else k=0x83C9F2 E=F[r(0x1F56)]E=Y[E]E=E(Y)end end end else if k<0xE17070 then if k<0xE0A36A then if k<0xE0940C then if k<0xE088A0 then k=0xA67CA9 else e=F[r(0x25BB)]k=F[r(0x1030)]k=B[k]k=k(B,e)k=k and 0x43D6C4 or 0xE65209 end else h=F[r(0x25C5)]Q=z[s[0x8]]E=Q==h k=E and 0xA2708C or 0x9BE616 end else if k<0xE10174 then if k<0xE0E7DD then T=0x1 n=T-x k=0x6510A R=n T=x o=T else R=F[r(0x2159)]E=y[R]k=E and 0xE88C01 or 0xB1B7EB end else k=St k=0x220F66 Nt=Mt end end else if k<0xE223FF then if k<0xE20212 then if k<0xE1E6BE then h=F[r(0x11EF)]Q=y[h]k=0xBECE9E h=Q()else k=0xB72E03 T=0x1 n=C>T R=n end else k=E and 0xA57D98 or 0x3693F7 end else if k<0xE2E638 then if k<0xE23C6D then Y=F[r(0x23E5)]C=true x=F[r(0x14DA)]k=true E=true z[s[0x2]]=k z[s[0x3]]=E y[Y]=C o=false n=true Y=y[x]R=F[r(0x1897)]T={Y(R,o,n)}x=T[0x1]W=T[0x2]Y=0x1 R=0x23 k=0x478B34 o=R R=0x1 n=R R=0x0 T=n<R R=Y-n else k=0x3693F7 end else k=o k=0xDA8607 x=R end end end end end end end else if k<0xF08B36 then if k<0xE87DEC then if k<0xE5D03C then if k<0xE415EA then if k<0xE3B1B7 then if k<0xE3A536 then if k<0xE39FDC then if k<0xE38172 then W=F[r(0x11B2)]E=y[W]W=E()E=F[r(0x1C05)]y[E]=W k=0xE0FF0D else Y=F[r(0x30E)]C=y[Y]Y=F[r(0x580)]E=C[Y]k=0xD71146 Y=z[s[0x6]]C=E(Y)end else E={}k=y[F[r(0x248D)]]end else if k<0xE3B01D then if k<0xE3AE05 then h=F[r(0x11EF)]Q=y[h]k=0x8C414A h=Q()else P=F[r(0x1C01)]P=x[P]k=0x251809 P=P(x)end else E=z[s[0x1]]C=true k=E==C k=k and 0xE23079 or 0x387F70 end end else if k<0xE3C5A3 then if k<0xE3C0B5 then if k<0xE3B26C then R=nil k=0x4C83B7 W=nil else e=F[r(0x517)]f=F[r(0x200D)]E=y[f]B=y[e]h=F[r(0x24F7)]J=z[s[0x9]]w=F[r(0xE81)]Q=F[r(0x1F8A)]c=F[r(0x1897)]D=F[r(0x9D2)]X=F[r(0x9D2)]Z=J[D]D=z[s[0x9]]J=D[X]D=.1 e=B(Z,J,D)J=0x0 X=0x0 Z=F[r(0x517)]B=y[Z]D=0x0 Z={B(J,D,X)}k=0x7B418F f=E(Q,x,h,w,c,e,a(Z))R=f end else k=z[s[0x2]]E=F[r(0x18F6)]E=k[E]E=E(k)E={}k=y[F[r(0x12F0)]]end else if k<0xE40CC0 then if k<0xE3CF9B then k=z[s[0x1]]E=k()E={}k=y[F[r(0x21A8)]]else o=k E=R W=x k=R and 0x76F096 or 0x83E04A end else O=0x4 E=0x1 k=0xB45912 K=O X=e O=0x1 G=O O=0x0 P=G<O O=E-G end end end else if k<0xE51758 then if k<0xE4C2F9 then if k<0xE4742B then if k<0xE4362C then o=R k=z[s[0x3]]k[W]=o k=0x62700B else k=W k=0x622265 C=x end else k=0x7939B3 Et=F[r(0x15B0)]ut=F[r(0x1403)]zt=y[Et]Et=F[r(0x24A7)]kt=F[r(0xE88)]lt=zt[Et]zt=F[r(0xB2A)]st=lt..zt bt=ut..st at[kt]=bt end else if k<0xE50BFC then if k<0xE4F2ED then k=o and 0x57C6A0 or 0x7C96B1 else T=F[r(0xBBF)]n=F[r(0x138E)]n=R[n]n=n(R,T)o=n W=Y k=n and 0x5FC5FF or 0x41DDB6 end else c=F[r(0xF04)]k=0x5E8FC0 E=F[r(0x1030)]E=w[E]E=E(w,c)c=F[r(0xA15)]c=E[c]c=c(E)end end else if k<0xE5A20A then if k<0xE5899A then if k<0xE567CD then c=F[r(0x1CC9)]w=z[s[0x1]]h=w[c]B=F[r(0xD62)]w=F[r(0x9F3)]Q=h[w]k=0xF50EF3 c=y[B]B=F[r(0x212D)]w=c[B]c=F[r(0x324)]h=w[c]f=Q==h n=f else n=0x0 h=F[r(0xC8A)]T=0x1 o=F[r(0xDF1)]J=0xB4 E=F[r(0x200E)]Z=0x0 D=0x0 W=0x3 k=y[E]B=2.5 c=F[r(0x517)]Q=F[r(0x1867)]R=z[s[0x2]]f=y[Q]Q=f(h)e=.8 f=F[r(0x1893)]w=y[c]c=w(B,e,Z)w=1.5 h=c*w w=false E=k(W,R,o,n,T,Q,f,h,w)w=F[r(0x1FC)]c=0x0 T=F[r(0x239C)]W=I()z[W]=E R=F[r(0xF04)]n=F[r(0x239C)]E=F[r(0x25BD)]e=0x0 k=y[E]o=y[n]B=0x0 n=y[T]T=z[W]h=y[w]w=h(c,B,e)c=F[r(0x161C)]h=y[c]e=F[r(0x1AC2)]Z=-12 B=y[e]e=B(Z)Z=F[r(0x1AC2)]B=y[Z]Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}c=h(e,Z,a(J))Q=w*c B=0x0 c=0x0 w=F[r(0x1FC)]e=1.5 h=y[w]w=h(c,B,e)B=0x0 h=F[r(0x1FC)]f=Q*w c=0x0 e=0x0 Q=y[h]w=0x0 h={Q(w,c,B)}E=k(R,o,n,T,f,a(h))R=I()z[R]=E E=F[r(0x22D6)]Q=F[r(0x1B91)]B=0x0 c=0x0 k=y[E]o=F[r(0x20A8)]T=0x2 n=z[W]E=k(o,n)o=E n=0x1 h=0x0 Z=0x0 E=F[r(0x1EDA)]k=y[E]f=y[Q]w=0x0 Q=f(h,w,c,B)c=0x0 h=F[r(0x1B91)]f=y[h]B=0x1 w=0x1 h=f(w,c,B,e)B=0x0 e=0x0 c=0x0 w=F[r(0x1BC)]f=y[w]w=f(c,B,e)c=F[r(0x1BC)]B=0x0 f=y[c]e=0x0 c=f(B,e,Z)f=F[r(0x20E8)]E=k(o,n,T,Q,h,w,c,f)h=0x1 Q=0x1 w=0x1 n=E f=F[r(0x1BC)]B=F[r(0x4BE)]E=F[r(0x1EDB)]k=y[E]T=y[f]c=0x1 f=T(Q,h,w)w=F[r(0xD62)]h=y[w]w=F[r(0x24D5)]Q=h[w]h=F[r(0x1899)]T=Q[h]Q=F[r(0xC5A)]h=.5 w=0x1 E=k(n,C,f,T,Q,h,w,c,B)f=F[r(0x1B86)]k=F[r(0x220F)]h=F[r(0x1B86)]T=E E=true T[k]=E E=y[f]f=F[r(0x1C00)]k=E[f]Q=y[h]h=F[r(0x1F6F)]f=Q[h]h=M(0xDA9012,{W;x;s[0x3];s[0x4],s[0x5];s[0x6];s[0x7],s[0x8];R;Y,s[0x9]})Q={f(h)}E=k(a(Q))k=z[W]E={k,T}k=y[F[r(0x10FA)]]end else k=0x448296 C=z[s[0x8]]Y=F[r(0x9E3)]E=C[Y]C=F[r(0x1345)]C=E[C]C=C(E)end else if k<0xE5B55C then if k<0xE5ABA3 then w=V(w)x=nil k=0x49FD90 B=V(B)c=V(c)else W=W+o x=W<=R T=not n x=T and x T=W>=R T=n and T x=T or x T=0x558DF3 k=x and T x=0xF3F036 k=k or x end else C=F[r(0x239C)]k=y[C]Y=false C=F[r(0x20C7)]k[C]=Y k=0x41D5E5 end end end end else if k<0xE7208C then if k<0xE656C9 then if k<0xE62C18 then if k<0xE61E33 then if k<0xE5EACE then k=0x729DE2 else D=z[s[0xD]]X=true E=D==X k=E and 0x1A9029 or 0x1FEFB4 end else Y,R=x(C,Y)k=Y and 0x18F5AC or 0xBB1B52 end else if k<0xE6486D then if k<0xE63A60 then E=F[r(0x1030)]k=z[s[0x6]]E=k[E]C=F[r(0x1CC9)]W=F[r(0x1030)]E=E(k,C)R=F[r(0x1CC9)]x=z[s[0x7]]W=x[W]W=W(x,R)k=F[r(0x2138)]x=F[r(0x1C43)]Y=W[x]x=0x2710 C=Y*x E[k]=C k=0x6E578E else k=y[F[r(0x2505)]]E={}Y=nil C=nil end else B=nil k=0x803112 end end else if k<0xE6ED31 then if k<0xE6DFB8 then if k<0xE666F0 then f=z[n]T=#f f=0x0 x=T>f k=x and 0x6D04E or 0x15B978 else n=k f=-1 T=Y<f o=T k=T and 0xEA360F or 0x106728 end else k=0x2FB435 o=Y o=nil end else if k<0xE6FFEB then if k<0xE6FE4B then k=0x4C6B4A else x=nil C=nil k=0xEDD3C Y=nil end else R=F[r(0xC0E)]T=false z[s[0x5]]=R n=z[s[0x7]]o=n==T k=o and 0xD6424F or 0xE6FE2F end end end else if k<0xE7876B then if k<0xE73015 then if k<0xE72A4F then if k<0xE7230F then xt=Vt k=mt k=0x1B783 else bt=nil kt=z[s[0xC]]at=kt~=bt k=at and 0x96B071 or 0x280031 end else E=F[r(0x2469)]o=R k=z[s[0xA]]k[E]=o E=F[r(0x1CB)]k=z[s[0xA]]o=z[s[0xB]]k[E]=o E=F[r(0x1E2)]k=z[s[0xA]]o=z[s[0xC]]k[E]=o k=true z[s[0xD]]=k k=0x568721 end else if k<0xE775A2 then if k<0xE75D95 then k=E and 0xFF6F08 or 0xFCB03D else st=0x1 z[Y]=rt ut=z[P]bt=ut+st kt=yt[bt]at=h+kt kt=0x100 k=at%kt h=k bt=z[G]kt=w+bt k=0xA04806 bt=0x100 at=kt%bt w=at end else E=z[s[0x1]]C=true k=E==C k=k and 0x312FE7 or 0xF6B51 end end else if k<0xE7E682 then if k<0xE7C22E then if k<0xE7A8EB then C=nil z[s[0x5]]=E k=0xC2356 else c=F[r(0xD62)]Q=F[r(0x19B)]n=k f=C[Q]w=y[c]c=F[r(0x19B)]h=w[c]w=F[r(0x14A2)]Q=h[w]T=f==Q o=T k=T and 0xB20BC6 or 0xD85AED end else zt=F[r(0x517)]P=i ut=F[r(0x25D9)]It=0x1 Ct=F[r(0x9D2)]kt=F[r(0x25F7)]at=y[kt]kt=at()at=F[r(0x25D9)]bt=R[ut]lt=y[zt]Ft=X[Ct]Wt=z[s[0xF]]xt=P/Wt Yt=xt*Z Ct=It-Yt Et=Ft*Ct Yt=0x1 It=F[r(0x957)]Ct=X[It]Vt=z[s[0xF]]Wt=P/Vt xt=Wt*Z It=Yt-xt Yt=F[r(0xAAE)]xt=0x1 Ft=Ct*It It=X[Yt]mt=z[s[0xF]]Vt=P/mt Wt=Vt*Z Yt=xt-Wt Ct=It*Yt zt=lt(Et,Ft,Ct)st=zt*Z lt=z[s[0xF]]ut=st/lt kt=bt-ut R[at]=kt bt=F[r(0xEE5)]kt=z[s[0x8]]at=kt==bt k=at and 0x34BA6B or 0x4A807F end else if k<0xE84051 then if k<0xE8049D then k=z[s[0x2]]E=F[r(0x18F6)]E=k[E]E=E(k)k=y[F[r(0x2604)]]E={}else w=F[r(0x64)]Z=F[r(0x20A0)]k=y[w]Z=Y[Z]e={Z(Y)}Z={k(a(e))}B=Z[0x3]k=0xABDEEC w=Z[0x1]c=Z[0x2]end else E={}k=y[F[r(0x170D)]]end end end end end else if k<0xEBF9C7 then if k<0xE9C367 then if k<0xE90139 then if k<0xE8A527 then if k<0xE89D02 then if k<0xE88CB8 then E=0x0 R=F[r(0x733)]y[R]=E k=0xA06BE else R=not W C=C+x E=C<=Y E=R and E R=C>=Y R=W and R E=R or E R=0xFA3A6C k=E and R E=0xE3C416 k=k or E end else k=0xF2A6D0 end else if k<0xE8CC1D then if k<0xE8C8CA then E=z[s[0x3]]k=0x47E08B R=E()else x=F[r(0x1B86)]C=F[r(0x1B86)]E=y[C]C=F[r(0x1C00)]k=E[C]Y=y[x]x=F[r(0x1F6F)]C=Y[x]x=U(0x7FFCF4,{s[0x9],s[0x1]})Y={C(x)}C=true E=k(a(Y))E=z[s[0xA]]k=E==C k=k and 0x9EBC56 or 0xF38CB4 end else vt=F[r(0xF83)]Ut=e(mt,vt)Nt=k k=Ut and 0xA8A2AF or 0xA134A1 vt=Ut end end else if k<0xE979D6 then if k<0xE92FA8 then if k<0xE91397 then C=b[0x1]C=nil x=b[0x3]Y=b[0x2]x=nil k=z[s[0x1]]Y=nil E=k()E={}k=y[F[r(0xC8B)]]else n=F[r(0x138E)]n=R[n]T=F[r(0x22C9)]W=Y n=n(R,T)k=n and 0x6FBA6 or 0xD1E2F7 o=n end else D=F[r(0x1725)]J=w[D]D=F[r(0x1725)]Z=J[D]J=F[r(0xDD1)]e=Z[J]Z=F[r(0x1FE3)]k=0xFA54E1 B=e~=Z E=B end else if k<0xE9A455 then if k<0xE98A86 then w=F[r(0xDD1)]o=F[r(0x11F3)]k=R[o]f=z[s[0x2]]h=R[w]c=.23 Q=F[r(0x116E)]Q=f[Q]o=F[r(0x180B)]w=-0.025 Q=Q(f,h)f=F[r(0x180B)]h=F[r(0x180B)]T=Q[f]Q=y[h]h=F[r(0x22B6)]f=Q[h]h=0x0 Q=f(h,w,c)n=T*Q k[o]=n k=0x5BE981 else k=0x728233 h=F[r(0x252B)]n=.1 T=n f=.1 E=0x0 Q=y[h]n=f/Q f=n n=0x0 Q=f<n n=E-f end else E=x k=z[s[0x1]]k[Y]=E k=0x27E8A end end end else if k<0xEAF04B then if k<0xEA31FF then if k<0xE9F77B then if k<0xE9C476 then Y,R=x(C,Y)k=Y and 0xD38D4D or 0x9F9C00 else k=W k=x and 0x32B5B2 or 0xCDD5D0 end else T=z[s[0xC]]h=z[s[0xB]]f=F[r(0x1C09)]w=F[r(0x6AC)]k=0x1BCC13 Q=h[w]T[f]=Q end else if k<0xEAA003 then if k<0xEA38A6 then f=nil T=W==f o=T k=0x106728 else T=F[r(0x1270)]n=F[r(0x138E)]k=0xC26D7 n=R[n]n=n(R,T)o=n end else k=0x31AB0B o=true z[s[0x7]]=o end end else if k<0xEB7246 then if k<0xEB565C then if k<0xEB45F4 then C=F[r(0x116E)]Y=F[r(0x20)]k=z[s[0x5]]C=k[C]C=C(k,Y)k=C and 0x908561 or 0xDD2A4D else B=0x0 G=0x18 i=0xC Q=F[r(0x1E2)]n=F[r(0x250D)]w=0x0 J=0x0 k=z[s[0x3]]o=y[n]E=F[r(0x1E2)]f=z[s[0x3]]h=F[r(0x1FC)]c=0x0 T=f[Q]Q=y[h]Z=0x0 h=Q(w,c,B)w=F[r(0x161C)]Q=y[w]B=F[r(0x1AC2)]c=y[B]e=0x0 B=c(e)e=F[r(0x1AC2)]c=y[e]e=c(Z)Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}w=Q(B,e,a(Z))Q=.25 f=h*w n=o(T,f,Q)k[E]=n E=F[r(0x1537)]k=y[E]Q=F[r(0x1537)]n=F[r(0x250D)]E=F[r(0x1CB)]c=F[r(0x1FC)]e=0x0 o=y[n]f=y[Q]Q=F[r(0x1CB)]T=f[Q]X=F[r(0x199C)]h=z[s[0x4]]w=y[c]J=.04 D=y[X]K=z[s[0x5]]O=K/G X=D(O)Z=J*X X=.05 K=F[r(0x199C)]B=e-Z O=y[K]P=z[s[0x5]]R=nil G=P/i J=0x0 e=0x0 K=O(G)D=X*K Z=J+D c=w(B,e,Z)i=0x18 e=0x0 w=F[r(0x161C)]Q=h*c h=y[w]B=F[r(0x1AC2)]J=0x0 K=F[r(0x199C)]c=y[B]B=c(e)e=F[r(0x1AC2)]c=y[e]O=y[K]X=2.5 P=z[s[0x5]]G=P/i K=O(G)D=X*K Z=J-D e=c(Z)J=0x0 Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}w=h(B,e,a(Z))c=F[r(0x252B)]h=0x1 f=Q*w w=y[c]Q=h/w n=o(T,f,Q)k[E]=n E=F[r(0xDF0)]k=y[E]n=F[r(0x250D)]Q=F[r(0xDF0)]B=0x0 o=y[n]f=y[Q]Q=F[r(0x1CB)]E=F[r(0x1CB)]e=0x0 T=f[Q]c=F[r(0x1FC)]h=z[s[0x6]]J=0x0 Z=0x0 w=y[c]c=w(B,e,Z)w=F[r(0x161C)]B=F[r(0x1AC2)]Z=0x0 Q=h*c e=0x0 h=y[w]c=y[B]B=c(e)e=F[r(0x1AC2)]c=y[e]e=c(Z)Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}w=h(B,e,a(Z))B=1.1 f=Q*w h=0x1 c=F[r(0x252B)]O=F[r(0x199C)]w=y[c]D=.1 Z=.35 Q=h/w n=o(T,f,Q)k[E]=n P=0xC n=F[r(0x250D)]E=F[r(0x1D79)]Q=F[r(0x1D79)]k=y[E]o=y[n]f=y[Q]E=F[r(0x1CB)]Q=F[r(0x1CB)]c=F[r(0x1FC)]T=f[Q]w=y[c]X=y[O]G=z[s[0x5]]K=G/P G=F[r(0x199C)]O=X(K)J=D*O e=Z+J Z=.2 c=w(B,e,Z)H=0xC O=1.5 Z=F[r(0x1AC2)]D=-45 B=F[r(0x161C)]w=y[B]e=y[Z]K=y[G]i=z[s[0x5]]P=i/H G=K(P)X=O*G J=D-X D=0x0 Z=e(J)J=F[r(0x1AC2)]e=y[J]J=e(D)D=F[r(0x1AC2)]X=-45 e=y[D]D={e(X)}B=w(Z,J,a(D))h=c*B D=0x0 c=F[r(0x161C)]Z=0x0 w=y[c]J=0x19 e=F[r(0x1AC2)]B=y[e]e=B(Z)Z=F[r(0x1AC2)]B=y[Z]Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}c=w(e,Z,a(J))Q=h*c h=z[s[0x7]]f=Q*h c=F[r(0x252B)]w=y[c]h=0x1 Q=h/w n=o(T,f,Q)D=0xC O=F[r(0x199C)]P=0x18 Z=0xA0 Q=F[r(0x418)]k[E]=n n=F[r(0x250D)]E=F[r(0x418)]k=y[E]E=F[r(0x1CB)]B=.1 w=F[r(0x1FC)]o=y[n]f=y[Q]Q=F[r(0x1CB)]T=f[Q]h=y[w]c=-1.25 e=-0.3 w=h(c,B,e)c=F[r(0x161C)]e=F[r(0x1AC2)]h=y[c]B=y[e]e=B(Z)J=0x5 Z=F[r(0x1AC2)]B=y[Z]Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}c=h(e,Z,a(J))Q=w*c h=z[s[0x8]]f=Q*h h=0x1 Z=-1 c=F[r(0x252B)]w=y[c]Q=h/w n=o(T,f,Q)k[E]=n E=F[r(0x23BE)]k=y[E]D=.035 w=F[r(0x1FC)]c=0x1 E=F[r(0x1CB)]n=F[r(0x250D)]o=y[n]Q=F[r(0x23BE)]f=y[Q]Q=F[r(0x1CB)]T=f[Q]h=y[w]X=y[O]G=z[s[0x5]]K=G/P O=X(K)J=D*O e=Z+J G=0xC X=F[r(0x199C)]J=.05 D=y[X]K=z[s[0x5]]O=K/G X=D(O)Z=J*X B=e-Z e=0x0 J=0x55 w=h(c,B,e)e=F[r(0x1AC2)]O=F[r(0x199C)]c=F[r(0x161C)]D=0x0 Z=0x0 h=y[c]B=y[e]e=B(Z)Z=F[r(0x1AC2)]B=y[Z]Z=B(J)J=F[r(0x1AC2)]B=y[J]J={B(D)}c=h(e,Z,a(J))Q=w*c D=2.5 w=F[r(0x161C)]Z=-2 B=F[r(0x1AC2)]h=y[w]c=y[B]P=0x18 X=y[O]G=z[s[0x5]]K=G/P O=X(K)J=D*O e=Z-J B=c(e)D=.035 J=0x0 Z=0x0 e=F[r(0x1AC2)]c=y[e]e=c(Z)O=F[r(0x199C)]Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}w=h(B,e,a(Z))Z=-1 P=0x18 f=Q*w h=0x1 c=F[r(0x252B)]w=y[c]Q=h/w n=o(T,f,Q)k[E]=n E=F[r(0x93C)]k=y[E]n=F[r(0x250D)]c=-1 o=y[n]E=F[r(0x1CB)]Q=F[r(0x93C)]w=F[r(0x1FC)]f=y[Q]Q=F[r(0x1CB)]T=f[Q]h=y[w]X=y[O]G=z[s[0x5]]K=G/P O=X(K)G=0xC J=D*O e=Z-J X=F[r(0x199C)]J=.05 D=y[X]K=z[s[0x5]]O=K/G X=D(O)Z=J*X B=e-Z Z=0x0 e=0x0 D=0x0 w=h(c,B,e)P=0x18 e=F[r(0x1AC2)]c=F[r(0x161C)]h=y[c]J=-85 B=y[e]e=B(Z)Z=F[r(0x1AC2)]B=y[Z]Z=B(J)J=F[r(0x1AC2)]O=F[r(0x199C)]B=y[J]J={B(D)}c=h(e,Z,a(J))Q=w*c w=F[r(0x161C)]h=y[w]D=2.5 B=F[r(0x1AC2)]c=y[B]Z=-2 X=y[O]G=z[s[0x5]]K=G/P O=X(K)J=D*O e=Z+J B=c(e)e=F[r(0x1AC2)]J=0x0 c=y[e]Z=0x0 e=c(Z)Z=F[r(0x1AC2)]c=y[Z]Z={c(J)}w=h(B,e,a(Z))c=F[r(0x252B)]h=0x1 f=Q*w w=y[c]Q=h/w n=o(T,f,Q)k[E]=n k=0x2F5640 end else zt=F[r(0x1270)]st=ut k=F[r(0x138E)]k=lt[k]k=k(lt,zt)k=k and 0xA66BAC or 0xEFB164 end else if k<0xEBBD70 then if k<0xEBBA66 then k=z[s[0x1]]C={u(0x1,a(b))}E={k(a(C))}k=y[F[r(0x18AC)]]E={a(E)}else k=0xA9A40D T=nil end else T=z[s[0x2]]f=F[r(0x1CC9)]n=T[f]Q=F[r(0xD62)]T=F[r(0x9F3)]o=n[T]f=y[Q]Q=F[r(0x212D)]T=f[Q]f=F[r(0x324)]n=T[f]k=o==n k=k and 0x3CE3EA or 0x78C99A end end end end else if k<0xEE31A9 then if k<0xED1A87 then if k<0xEC85A2 then if k<0xEC4F20 then if k<0xEC2DD0 then B=e k=Z k=0x9547F5 else i=F[r(0x25F7)]P=y[i]i=P()i=F[r(0x1D74)]i=x[i]H=F[r(0x25BB)]i=i(x,H)H=nil P=i==H k=P and 0xE3AE5C or 0xEC4A9E end else k=0xC8566C end else if k<0xECBB2C then if k<0xEC8EF9 then f=I()z[f]=E h=0x41 Q=0x3 k=z[n]E=k(Q,h)Q=I()c=F[r(0x9E)]z[Q]=E B=v(0xF321E6,{})k=0x0 h=k k=0x0 E=y[c]c={E(B)}D=F[r(0x8F)]E=0x2 w=k k={a(c)}c=k k=c[E]E=F[r(0x90)]B=k k=y[E]e=z[x]J=y[D]D=J(B)J=F[r(0x154)]Z=e(D,J)e={Z()}E=k(a(e))e=I()z[e]=E k=0x656203 E=0x1 Z=z[Q]J=Z Z=0x1 D=Z Z=0x0 X=D<Z Z=E-D else B=.1 w=.4 Z=F[r(0x252B)]k=0x818D0B E=0x0 c=w e=y[Z]w=B/e B=w w=0x0 e=B<w w=E-B end else k=0x67A2A7 R=nil end end else if k<0xEDAE17 then if k<0xED8D68 then if k<0xED55D9 then f=false o=F[r(0xEAA)]z[s[0x5]]=o T=z[s[0x7]]n=T==f k=n and 0x6A7D13 or 0xF27887 else E=F[r(0xCBB)]k=Y==E k=k and 0xF651A8 or 0x6B977A end else Y,R=x(C,Y)k=Y and 0x8FD7F7 or 0x1521E7 end else if k<0xEDCED9 then if k<0xEDC213 then o=z[s[0x9]]n=false k=o==n k=k and 0x6DB13F or 0x6B9EA8 else i=0x2 P=D==i k=P and 0xA2FE4C or 0xBF57B0 end else o=F[r(0x15B0)]R=y[o]o=F[r(0x1C59)]o=R[o]o=o(R)W=not o k=W and 0x44F392 or 0x56C48F end end end else if k<0xEF0419 then if k<0xEE91DF then if k<0xEE7151 then if k<0xEE4609 then h=F[r(0xDD1)]f=F[r(0x116E)]o=F[r(0x11F3)]k=R[o]T=z[s[0x2]]Q=R[h]f=T[f]f=f(T,Q)o=F[r(0x180B)]T=F[r(0x180B)]n=f[T]k[o]=n k=0xE8A50E else k=E and 0xED1755 or 0xC185E2 end else R=true W=z[s[0x3]]x=W==R C=x Y=k k=x and 0x622265 or 0x611C99 end else if k<0xEEF5C3 then if k<0xEED110 then E=0x1 k=0xC2D51B C=0x5 Y=C C=0x1 x=C C=0x0 W=x<C C=E-x else E=F[r(0x25F7)]k=y[E]f=F[r(0x5D2)]E=k()R=C k=z[s[0x1]]T=z[s[0x1]]R=nil n=T[f]E=F[r(0x5D2)]T=.02 o=n-T k[E]=o k=0xC2D51B end else X=true D=z[s[0x17]]J=D==X k=J and 0x5624E6 or 0x8AF4EB end end else if k<0xEF9E64 then if k<0xEF760B then if k<0xEF24C4 then k=0xB477C2 f=z[s[0x8]]Q=F[r(0x1A1B)]T=f==Q E=T else Y,R=x(C,Y)k=Y and 0xE916F6 or 0x34DE8F end else x=.1 E=0x0 C=.1 Y=C R=F[r(0x252B)]W=y[R]C=x/W k=0x475FE4 x=C C=0x0 W=x<C C=E-x end else if k<0xEFB69F then if k<0xEFB303 then st=nil k=0x26FE1D lt=nil else k=n k=o and 0x826F39 or 0x7E618C end else lt=k Ft=F[r(0x9E)]Et=y[Ft]zt=Et~=h st=zt k=zt and 0xD0635D or 0xC49097 end end end end end end else if k<0xF99E75 then if k<0xF46BFC then if k<0xF2BA9C then if k<0xF22B26 then if k<0xF1364D then if k<0xF0F645 then if k<0xF0DF23 then c=0x1 w=F[r(0x8E8)]B=0x28A f=k h=y[w]w=h(c,B)h=0x1 Q=w==h k=Q and 0xC088C1 or 0xDD118E T=Q else kt=z[s[0x19]]bt=0x1 P=i at=kt[P]kt=P==bt k=kt and 0x5D5672 or 0xC83742 end else x=0x1 W=F[r(0x828)]Y=F[r(0x11EF)]k=y[Y]Y=k(x)x=z[s[0x2]]Y=x[W]x=false k=Y==x k=k and 0xAABABB or 0xF10AFD end else if k<0xF1CCE8 then if k<0xF13DA2 then k=0x56F61B f=F[r(0x11EF)]T=y[f]f=T()else tt[0xF]=0x1 tt[0xE]=tt[0x5][tt[0xF]]tt[0xC]=tt[0xE]k=0xBED001 end else Ct=F[r(0x1BC6)]Ft=y[Ct]Ct=F[r(0x20FB)]lt=Ft[Ct]Ft=I()k=0x315DAF z[Ft]=lt Ct=F[r(0x9E)]xt=F[r(0x13E1)]lt=y[Ct]Yt=y[xt]xt={lt(Yt)}Ct=xt[0x1]It=xt[0x2]Yt=F[r(0x193B)]lt=y[Yt]Vt={lt(st)}Wt=Vt[0x3]xt=Vt[0x2]Yt=Vt[0x1]end end else if k<0xF27B7B then if k<0xF26FFA then if k<0xF26BDC then E=F[r(0x1CC9)]Y=false k=y[E]E=F[r(0xC0E)]k[E]=Y k=0xBF5416 else W=F[r(0x17E1)]Y=z[s[0x2]]k=0x74CE59 x=y[W]C=Y==x E=C end else k=0x4C6B4A end else if k<0xF2A5FB then if k<0xF289D9 then E=true z[s[0x2]]=E k=0x4CFBF2 else k=z[s[0x1]]E=k()k=y[F[r(0x91B)]]E={}end else n=F[r(0xDD1)]o=R[n]n=F[r(0x19EB)]k=o==n k=k and 0x4F2741 or 0xCD88E2 end end end else if k<0xF3C329 then if k<0xF39431 then if k<0xF3692B then if k<0xF3379F then Y=F[r(0xAD2)]E=0x5734AE x=0xB0851C C=Y^x k=E-C C=k E=F[r(0x2526)]k=E/C E={k}k=y[F[r(0x12D0)]]else W=n h=F[r(0x1932)]f=I()B=F[r(0x1553)]z[f]=T T=f Q=y[h]c=z[T]w=c[B]h=Q(w)f=not h k=f and 0xC218DC or 0x3BB8D1 end else k=y[F[r(0x41D)]]E={}end else if k<0xF3AD84 then if k<0xF3A514 then n=x E=F[r(0x25F7)]k=y[E]e=0x0 B=F[r(0x1FC)]E=k()E=z[s[0x1]]T=z[s[0x2]]k=E[T]E=F[r(0x1CB)]O=0xB4 f=F[r(0x250D)]T=y[f]w=z[s[0x1]]D=0x0 c=z[s[0x2]]Z=0x0 h=w[c]w=F[r(0x1CB)]J=F[r(0x1AC2)]Q=h[w]c=y[B]B=c(e,C,Z)e=F[r(0x161C)]c=y[e]Z=y[J]J=Z(D)D=F[r(0x1AC2)]Z=y[D]X=Y+O D=Z(X)X=F[r(0x1AC2)]Z=y[X]O=0x0 X={Z(O)}e=c(J,D,a(X))K=1.5 n=nil w=B*e Z=0x0 D=0x3 e=0x0 B=F[r(0x1FC)]c=y[B]O=z[s[0x2]]X=O/K J=D+X B=c(e,Z,J)h=w*B w=.1 f=T(Q,h,w)k[E]=f k=0x600BF2 else tt[0xD]=F[r(0x13DF)]tt[0xC]=y[tt[0xD]]tt[0xB]=tt[0xC]~=G tt[0x9]=tt[0xB]tt[0xA]=k k=tt[0xB]and 0x6F4C07 or 0x690FC7 end else k=0x9283CC end end else if k<0xF408F7 then if k<0xF3FF65 then if k<0xF3F789 then k=0x8C05BE else Z=F[r(0x1A5B)]e=false y[Z]=e k=0x1BECF2 end else C=C+x R=not W E=C<=Y E=R and E R=C>=Y R=W and R E=R or E R=0x80AE7F k=E and R E=0x486932 k=k or E end else if k<0xF45E38 then if k<0xF40D88 then k=0x5BFAED f=nil R=nil else k=0xC15A71 R=0x1 n=.1 o=R f=F[r(0x252B)]T=y[f]R=n/T n=R E=0x0 R=0x0 T=n<R R=E-n end else c=F[r(0x6AC)]E=F[r(0xDD1)]w[E]=c e=F[r(0xDD1)]c=0x2 E=z[s[0x4]]B=w[e]k=0x157FBE E[c]=B end end end end else if k<0xF70859 then if k<0xF58475 then if k<0xF4FA19 then if k<0xF4758D then if k<0xF470E4 then w=F[r(0xDD1)]o=F[r(0x11F3)]k=R[o]o=F[r(0x180B)]f=z[s[0x2]]Q=F[r(0x116E)]Q=f[Q]h=R[w]Q=Q(f,h)f=F[r(0x11F3)]T=Q[f]f=F[r(0x180B)]n=T[f]k[o]=n k=0xB63E8C else i=nil K=nil bt=F[r(0x180B)]P=nil J=nil kt=x[bt]D=nil x=nil h=nil rt=nil f=nil T=nil Z=nil B=nil E={}w=nil Y=nil H=nil C=nil e=nil at=nil c=nil R=nil W=nil Q=nil k=F[r(0x180B)]n=nil G=nil O=nil X[k]=kt yt=nil k=y[F[r(0x1747)]]X=nil o=nil end else T=not n W=W+o x=W<=R x=T and x T=W>=R T=n and T x=T or x T=0xF7B7D7 k=x and T x=0xFEC5F8 k=k or x end else if k<0xF5771C then if k<0xF5109F then k=T k=0x41DDB6 o=n else w=F[r(0x53)]C=b[0x1]w=C[w]w={w(C)}R=w[0x6]Y=w[0x3]k=w[0x1]Q=w[0xB]T=w[0x9]x=w[0x4]E=w[0x2]c=E f=w[0xA]o=w[0x7]h=w[0xC]W=w[0x5]n=w[0x8]E=x+n w=k k=E+h E=0x0 B=k k=B>E k=k and 0x8A72A7 or 0x742130 end else k=y[F[r(0x1E03)]]E={}end end else if k<0xF5E5D3 then if k<0xF5A9B2 then if k<0xF591DC then o=n k=T k=n and 0x294602 or 0xE4EB24 else k=z[n]D=0x1 X=0x6 J=k(D,X)k=F[r(0x9EF)]y[k]=J X=F[r(0x9EF)]D=y[X]X=0x2 k=D>X k=k and 0x601417 or 0x999D16 end else c=F[r(0x25F8)]w=z[s[0x8]]E=w==c k=E and 0x9DF34 or 0xF5F387 end else if k<0xF65AE8 then if k<0xF60B85 then B=F[r(0x2617)]c=z[s[0x8]]E=c==B k=E and 0x164FE1 or 0xD9C99A else x=F[r(0x1F8A)]E=F[r(0x22D6)]k=y[E]E=k(x,C)x=E E=F[r(0x189D)]k=F[r(0x228C)]x[k]=E k=0x7D315B x=nil end else o={W}E=o k=0xF9CB36 end end end else if k<0xF79D13 then if k<0xF759BB then if k<0xF746CB then if k<0xF71CD0 then Q=0x1 f=C<Q n=f T=k k=f and 0x359616 or 0xFF7EB7 else E=#C Y=0x1 k=E+Y E=0x0 C[k]=E E=0x1 Y=0x5F5E100 x=Y Y=0x1 W=Y k=0x2FB435 Y=0x0 R=W<Y Y=E-W end else k=nil E={k}k=y[F[r(0x222F)]]end else if k<0xF7906B then if k<0xF7893F then W=F[r(0x20)]E=F[r(0x1030)]C=F[r(0x1CC9)]k=z[s[0x6]]E=k[E]E=E(k,C)x=z[s[0x6]]k=F[r(0x2138)]Y=x[W]x=F[r(0x21EA)]C=Y[x]E[k]=C k=0x6E578E else i=z[s[0xD]]H=true P=i==H k=P and 0xB55B5 or 0x698D11 end else Ct=k Vt=0x1 xt=F[r(0x8E8)]Yt=y[xt]mt=0x6 xt=Yt(Vt,mt)Yt=0x1 It=xt==Yt k=It and 0xFAEAE4 or 0x9C5BC3 Ft=It end end else if k<0xF87D1F then if k<0xF84CD2 then if k<0xF7DF36 then h=z[s[0x4]]x=W Q=h[x]h=0x4 f=Q[h]Q=nil T=f~=Q k=T and 0x6506A1 or 0xAD67DF else E={}k=y[F[r(0x11A5)]]end else k=0x559A57 Wt=z[Yt]lt=Wt end else if k<0xF903B3 then if k<0xF8901D then k=z[s[0x1]]E=k()E={}k=y[F[r(0x1547)]]else k=F[r(0x228C)]Q=F[r(0x22D5)]E=x T[k]=E f=W~=Q k=f and 0x2C6FDE or 0x38A15A E=f end else n=n+f h=not Q E=n<=T E=h and E h=n>=T h=Q and h E=h or E h=0xDAE581 k=E and h E=0x7812F1 k=k or E end end end end end else if k<0xFD0A92 then if k<0xFB6C0F then if k<0xFAC874 then if k<0xFA3CEB then if k<0xF9EFA6 then if k<0xF9C9F5 then Wt=F[r(0xF83)]xt=0x1 Yt=e(xt,Wt)xt=not Yt k=xt and 0x888038 or 0xAA28B8 else o=E n=F[r(0x16AB)]E=F[r(0x15B0)]k=y[E]E=F[r(0x21D3)]f=F[r(0x1AB5)]E=k[E]E=E(k,n)T=y[f]f=F[r(0x22B6)]n=T[f]f=R*x T=n(C,f)n=F[r(0x171D)]n=E[n]k={n(E,T,o)}E={a(k)}k=y[F[r(0x251D)]]end else R=C E=F[r(0x25F7)]f=F[r(0x5D2)]k=y[E]E=k()k=z[s[0x2]]T=z[s[0x2]]n=T[f]E=F[r(0x5D2)]T=.02 o=n+T k[E]=o k=0xE89AAD R=nil end else if k<0xFAACB1 then if k<0xFA7B61 then k=c k=E and 0xE5157D or 0x5E8FC0 else Wt=not xt Ct=Ct+Yt Ft=Ct<=It Ft=Wt and Ft Wt=Ct>=It Wt=xt and Wt Ft=Wt or Ft Wt=0xFAFF5D k=Ft and Wt Ft=0x246F6C k=k or Ft end else E=F[r(0xA15)]E=w[E]E=E(w)k=0xB24EF1 end end else if k<0xFB18F3 then if k<0xFAFDF1 then if k<0xFAD673 then C=b[0x1]x=0x0 Y=C==x k=Y and 0xE73A39 or 0xAAEDD7 E=Y else Vt=F[r(0x1BC)]Ut=0x1 xt=F[r(0x220E)]mt=0x1 Yt=bt[xt]xt=y[Vt]vt=0x1 Vt=xt(mt,Ut,vt)It=Yt==Vt Ft=It k=0x9C5BC3 end else Wt=F[r(0x1D74)]Ft=Ct Vt=i[Ft]Wt=lt[Wt]Wt=Wt(lt,Vt)k=Wt and 0xB82F1E or 0x40E382 end else if k<0xFB54E0 then if k<0xFB328A then E={}k=y[F[r(0x49C)]]else k=0x8B543 end else k=0x7C5543 end end end else if k<0xFC0CB1 then if k<0xFBAEDA then if k<0xFB9C9F then if k<0xFB8221 then E=F[r(0xEE)]W=F[r(0x2177)]x=F[r(0x15B0)]R=F[r(0x332)]k=y[E]Y=y[x]R=Y[R]x={R(Y,W)}E=k(a(x))k=E()k=0x3ACA72 else P=0x0 H=0x0 kt=0x0 Z=w J=F[r(0x25F7)]D=F[r(0x250D)]i=0x0 E=y[J]J=E()at=0x5 O=F[r(0x1E2)]E=F[r(0x1E2)]G=F[r(0x1FC)]J=y[D]yt=0x0 X=o[O]K=y[G]G=K(P,i,H)rt=0x0 Z=nil P=F[r(0x161C)]H=F[r(0x1AC2)]K=y[P]i=y[H]H=i(yt)yt=F[r(0x1AC2)]i=y[yt]yt=i(rt)rt=F[r(0x1AC2)]i=y[rt]rt={i(at)}P=K(H,yt,a(rt))O=G*P K=.25 D=J(X,O,K)o[E]=D G=F[r(0x1537)]J=F[r(0x1537)]E=y[J]at=0x0 X=F[r(0x250D)]D=y[X]rt=0x0 yt=0x0 J=F[r(0x1CB)]H=F[r(0x1FC)]K=y[G]G=F[r(0x1CB)]O=K[G]P=z[s[0x4]]i=y[H]H=i(yt,rt,at)G=P*H yt=F[r(0x1AC2)]i=F[r(0x161C)]P=y[i]rt=0x0 H=y[yt]at=0x0 yt=H(rt)rt=F[r(0x1AC2)]H=y[rt]rt=H(at)at=F[r(0x1AC2)]H=y[at]at={H(kt)}H=F[r(0x252B)]i=P(yt,rt,a(at))P=0x1 K=G*i i=y[H]G=P/i X=D(O,K,G)G=F[r(0xDF0)]H=F[r(0x1FC)]E[J]=X J=F[r(0xDF0)]E=y[J]at=0x0 J=F[r(0x1CB)]rt=0x0 X=F[r(0x250D)]D=y[X]K=y[G]G=F[r(0x1CB)]O=K[G]P=z[s[0x6]]i=y[H]yt=0x0 H=i(yt,rt,at)i=F[r(0x161C)]G=P*H rt=0x0 P=y[i]yt=F[r(0x1AC2)]H=y[yt]yt=H(rt)rt=F[r(0x1AC2)]at=0x0 H=y[rt]rt=H(at)at=F[r(0x1AC2)]H=y[at]kt=0x0 at={H(kt)}i=P(yt,rt,a(at))P=0x1 rt=-0.3 H=F[r(0x252B)]K=G*i i=y[H]G=P/i X=D(O,K,G)at=0xA0 E[J]=X kt=-5 J=F[r(0x1D79)]E=y[J]X=F[r(0x250D)]yt=.1 J=F[r(0x1CB)]G=F[r(0x1D79)]H=1.25 D=y[X]K=y[G]G=F[r(0x1CB)]i=F[r(0x1FC)]bt=-12 O=K[G]P=y[i]i=P(H,yt,rt)rt=F[r(0x1AC2)]H=F[r(0x161C)]P=y[H]yt=y[rt]rt=yt(at)at=F[r(0x1AC2)]yt=y[at]at=yt(kt)kt=F[r(0x1AC2)]yt=y[kt]kt={yt(bt)}H=P(rt,at,a(kt))G=i*H P=z[s[0x7]]K=G*P H=F[r(0x252B)]at=0xA0 i=y[H]rt=-0.3 P=0x1 G=P/i yt=.2 bt=0xC X=D(O,K,G)E[J]=X J=F[r(0x418)]i=F[r(0x1FC)]E=y[J]H=-1.25 X=F[r(0x250D)]J=F[r(0x1CB)]G=F[r(0x418)]D=y[X]kt=0x5 K=y[G]G=F[r(0x1CB)]O=K[G]P=y[i]i=P(H,yt,rt)rt=F[r(0x1AC2)]H=F[r(0x161C)]P=y[H]yt=y[rt]rt=yt(at)at=F[r(0x1AC2)]yt=y[at]at=yt(kt)kt=F[r(0x1AC2)]yt=y[kt]kt={yt(bt)}H=P(rt,at,a(kt))G=i*H P=z[s[0x8]]rt=0x0 K=G*P H=F[r(0x252B)]bt=0x0 P=0x1 i=y[H]yt=-1 G=P/i X=D(O,K,G)H=0x1 at=0x0 E[J]=X J=F[r(0x23BE)]X=F[r(0x250D)]E=y[J]J=F[r(0x1CB)]G=F[r(0x23BE)]D=y[X]i=F[r(0x1FC)]K=y[G]G=F[r(0x1CB)]O=K[G]P=y[i]i=P(H,yt,rt)H=F[r(0x161C)]rt=F[r(0x1AC2)]kt=0x55 P=y[H]yt=y[rt]rt=yt(at)at=F[r(0x1AC2)]yt=y[at]at=yt(kt)kt=F[r(0x1AC2)]yt=y[kt]kt={yt(bt)}H=P(rt,at,a(kt))G=i*H k=0x818D0B i=F[r(0x161C)]bt=0x0 rt=0x0 at=0x0 yt=F[r(0x1AC2)]P=y[i]H=y[yt]kt=0x0 yt=H(rt)rt=F[r(0x1AC2)]H=y[rt]rt=H(at)at=F[r(0x1AC2)]H=y[at]at={H(kt)}i=P(yt,rt,a(at))P=0x1 K=G*i H=F[r(0x252B)]yt=-1 i=y[H]G=P/i X=D(O,K,G)H=-1 E[J]=X J=F[r(0x93C)]E=y[J]G=F[r(0x93C)]J=F[r(0x1CB)]at=0x0 X=F[r(0x250D)]rt=0x0 D=y[X]i=F[r(0x1FC)]K=y[G]G=F[r(0x1CB)]kt=-85 O=K[G]P=y[i]i=P(H,yt,rt)H=F[r(0x161C)]rt=F[r(0x1AC2)]P=y[H]yt=y[rt]rt=yt(at)at=F[r(0x1AC2)]yt=y[at]at=yt(kt)kt=F[r(0x1AC2)]yt=y[kt]kt={yt(bt)}H=P(rt,at,a(kt))G=i*H i=F[r(0x161C)]at=0x0 kt=0x0 P=y[i]rt=0x0 yt=F[r(0x1AC2)]H=y[yt]yt=H(rt)rt=F[r(0x1AC2)]H=y[rt]rt=H(at)at=F[r(0x1AC2)]H=y[at]at={H(kt)}H=F[r(0x252B)]i=P(yt,rt,a(at))P=0x1 K=G*i i=y[H]G=P/i X=D(O,K,G)E[J]=X end else zt=F[r(0x1AC2)]bt=z[s[0xE]]at=F[r(0x180B)]Ft=F[r(0x8E8)]Ct=0x0 st=F[r(0x161C)]Yt=0x168 ut=y[st]It=0x168 lt=y[zt]Et=y[Ft]Ft={Et(Ct,It)}zt=lt(a(Ft))k=0x8497A5 Et=F[r(0x1AC2)]Ct=F[r(0x8E8)]lt=y[Et]Ft=y[Ct]It=0x0 Ct={Ft(It,Yt)}Et=lt(a(Ct))It=F[r(0x8E8)]xt=0x168 Ft=F[r(0x1AC2)]lt=y[Ft]Yt=0x0 Ct=y[It]It={Ct(Yt,xt)}Ft={lt(a(It))}st=ut(zt,Et,a(Ft))kt=bt*st x[at]=kt end else if k<0xFC0692 then if k<0xFBD542 then k=0x34F9A0 else E=F[r(0x69C)]k=y[E]C=F[r(0x16AE)]E=k(C)E={}k=y[F[r(0x2271)]]end else tt[0x5]=not tt[0x4]tt[0x1]=tt[0x1]+tt[0x3]St=tt[0x1]<=tt[0x2]St=tt[0x5]and St tt[0x5]=tt[0x1]>=tt[0x2]tt[0x5]=tt[0x4]and tt[0x5]St=tt[0x5]or St tt[0x5]=0xD06EC3 k=St and tt[0x5]St=0xB9FFE8 k=k or St end end else if k<0xFCA898 then if k<0xFC2BDF then if k<0xFC17B0 then C=b[0x1]k=y[F[r(0xF6B)]]E={}C=nil else W=Y T=F[r(0xBBF)]n=F[r(0x138E)]n=R[n]n=n(R,T)k=n and 0x33063C or 0x8362 o=n end else k=0x1DA0DE o=not Y W=o end else if k<0xFCD3B8 then if k<0xFCC49A then x=0x1 Y=C k=0x2A6B64 E=0x1 W=x x=0x0 R=W<x x=E-W else O=z[s[0x16]]D=0x1 X=#O O=X X=0x1 K=X X=0x0 k=0x5FD1CF G=K<X X=D-K end else bt=zt k=0x8D1FBC Ft=z[ut]Ct=Et Ft[bt]=Ct bt=nil Et=nil end end end end else if k<0xFE5879 then if k<0xFD9B1E then if k<0xFD3779 then if k<0xFD3518 then if k<0xFD2EA7 then c=0x1 C=0x3 E=F[r(0x200E)]T=F[r(0xC8A)]n=F[r(0x1867)]k=y[E]Y=z[s[0x1]]R=F[r(0x226C)]W=z[s[0x2]]B=0x19 x=W[R]R=0x0 Q=F[r(0x517)]w=0x1 W=0x0 o=y[n]n=o(T)f=y[Q]h=0x1 Q=f(h,w,c)c=0x5 o=F[r(0x1937)]w=F[r(0x8E8)]h=y[w]w=h(c,B)h=0xA f=w/h T=Q*f f=true E=k(C,Y,x,W,R,n,o,T,f)Y=z[s[0x2]]x=F[r(0x2504)]k=F[r(0x2504)]C=E E=Y[x]f=0x5 T=0x0 n=F[r(0x517)]Q=0x0 C[k]=E x=F[r(0x1FC)]h=0x168 k=F[r(0x180B)]Y=y[x]R=z[s[0x3]]o=y[n]n=o(T,f,Q)o=F[r(0x1AC2)]Q=0x0 W=R-n x=Y(W)W=F[r(0x161C)]Y=y[W]n=0x0 R=y[o]f=F[r(0x8E8)]o=R(n)n=F[r(0x1AC2)]R=y[n]T=y[f]f={T(Q,h)}n=R(a(f))f=0x0 T=F[r(0x1AC2)]R=y[T]T={R(f)}W=Y(o,n,a(T))T=0xC n=0x7 o=F[r(0x8E8)]E=x*W x=F[r(0x1FC)]W=0x0 C[k]=E E=z[s[0x4]]Y=y[x]R=y[o]o=R(n,T)R=0x0 x=Y(W,o,R)k=E*x Y=k x=F[r(0x30E)]E=y[x]x=F[r(0x1925)]k=E[x]x=z[s[0x5]]E=k(x,C)E=0x1 x=0x23 k=0xDFD068 W=x x=0x1 R=x x=0x0 o=R<x x=E-R else k=x and 0x734C2A or 0xA31D33 end else o=b[0x6]Y=b[0x2]E=F[r(0x22D6)]R=b[0x5]x=b[0x3]W=b[0x4]C=b[0x1]k=y[E]E=k(C)k=F[r(0x246A)]n=E E=x n[k]=E E=W k=F[r(0x2469)]n[k]=E E=R k=F[r(0x1CB)]n[k]=E E=o k=F[r(0x1E2)]n[k]=E E=Y k=F[r(0x1725)]n[k]=E k=y[F[r(0x144F)]]E={n}end else if k<0xFD88D5 then if k<0xFD630B then C=nil Y=nil k=0xBD3FA1 else W=k n=F[r(0xDD1)]o=C[n]n=F[r(0x6AC)]R=o~=n k=R and 0xCE8E15 or 0xDA8607 x=R end else J=0x2 Z=e==J k=Z and 0xA76134 or 0xB14AE9 end end else if k<0xFE24DC then if k<0xFE1E05 then if k<0xFDD682 then E=F[r(0xDD1)]c=F[r(0x155A)]k=0x6A06DB w[E]=c e=F[r(0xDD1)]E=z[s[0x4]]B=w[e]c=0x6 E[c]=B else Q=F[r(0xE37)]W=n f=T[Q]Q=I()h=k z[Q]=f w=z[Q]f=w k=w and 0x6FF2C0 or 0xCFAB83 end else k=0x46E476 end else if k<0xFE3843 then if k<0xFE309E then J=F[r(0x6AC)]Z=y[J]D=F[r(0x162D)]J=F[r(0x116E)]J=Z[J]J=J(Z,D)k=J and 0x726CB9 or 0xBC27A1 else k=0x4514CE B=F[r(0x1725)]c=n[B]h=c end else R=nil k=0xFE66A2 o=nil end end end else if k<0xFF1066 then if k<0xFEC15D then if k<0xFEBE44 then if k<0xFE9993 then W,o=Y(x,W)k=W and 0x75F398 or 0x18CDB else n=false Q=F[r(0x10D3)]o=F[r(0x1CC9)]E=Y[o]o=F[r(0x1F4B)]E[o]=n o=F[r(0x64)]E=y[o]Q=Y[Q]f={Q(Y)}Q={E(a(f))}T=Q[0x3]k=0x63FC28 o=Q[0x1]n=Q[0x2]end else C=b[0x1]x=I()Y=I()z[Y]=b[0x2]W=true z[x]=b[0x3]E=z[s[0x1]]k=E==W k=k and 0xE582F9 or 0x62064E end else if k<0xFED334 then if k<0xFEC64C then k=0x1A9201 else at=k ut=0x1 bt=yt[ut]ut=false kt=bt==ut rt=kt k=kt and 0x1C6181 or 0xB9E42D end else R=F[r(0x19B)]W=C[R]T=F[r(0xD62)]n=y[T]T=F[r(0x19B)]o=n[T]n=F[r(0x25E1)]R=o[n]x=W==R E=x k=x and 0x80B8C4 or 0x9E0DAB end end else if k<0xFF7BF9 then if k<0xFF66E6 then if k<0xFF406F then B=F[r(0x138E)]h=Q e=F[r(0xBBF)]c=k B=w[B]B=B(w,e)E=B k=B and 0xA4E997 or 0x5A860E else C=z[s[0x1]]E=#C Y=z[s[0x2]]C=#Y k=E<C k=k and 0x6F3E8C or 0xFB2647 end else Y=F[r(0x1F5)]E=y[Y]Y=F[r(0x2648)]k=E[Y]E=F[r(0x11EF)]E=k[E]E=E(k)k=0x9827F3 end else if k<0xFF7F77 then k=T k=n and 0x30511E or 0x74067C else T=F[r(0x733)]o=F[r(0x13DF)]E=0x1 R=y[o]f=F[r(0x810)]o=F[r(0x7EC)]W=R[o]n=y[T]T=y[f]o=n/T R=W(o)W=R R=0x1 o=R R=0x0 n=o<R k=0x713F5D R=E-o end end end end end end end end end end end k=#l return a(E)end,function(y,a)local b=x(a)local s=function()return k(y,{},a,b)end return s end,{},0x0,function(y,a)local b=x(a)local s=function(s,l,u,r)return k(y,{s;l,u,r},a,b)end return s end,function(y,a)local b=x(a)local s=function(s,l,u,r,F,E,z,C)return k(y,{s,l;u;r,F,E;z,C},a,b)end return s end,function(y,a)local b=x(a)local s=function(s,l,u,r,F,E,z,C,I)return k(y,{s;l,u,r,F;E;z;C;I},a,b)end return s end,function(y,a)local b=x(a)local s=function(s)return k(y,{s},a,b)end return s end,function(y)C[y]=C[y]-0x1 if C[y]==0x0 then C[y],z[y]=nil,nil end end,function(y,a)local b=x(a)local s=function(s,l,u)return k(y,{s;l,u},a,b)end return s end,function(y)local k,a=0x1,y[0x1]while a do C[a],k=C[a]-0x1,k+0x1 if 0x0==C[a]then C[a],z[a]=nil,nil end a=y[k]end end,function()Y=Y+0x1 C[Y]=0x1 return Y end,function(y,a)local b=x(a)local s=function(s,l,u,r,F,E,z)return k(y,{s;l;u,r,F;E,z},a,b)end return s end,function(y,a)local b=x(a)local s=function(s,l,u,r,F,E,z,C,I,Y,x,W,V,m)return k(y,{s;l,u;r;F,E;z,C,I;Y,x,W,V;m},a,b)end return s end,function(y,a)local b=x(a)local s=function(s,l,u,r,F,E)return k(y,{s;l,u,r;F;E},a,b)end return s end,function(y,a)local b=x(a)local s=function(s,l)return k(y,{s;l},a,b)end return s end,function(y,a)local b=x(a)local s=function(s,l,u,r,F,E,z,C,I,Y,x,W,V)return k(y,{s;l;u;r,F,E;z,C,I;Y;x;W;V},a,b)end return s end,{},function(y,a)local b=x(a)local s=function(...)return k(y,{...},a,b)end return s end return(m(0x56CB13,{}))(a(E))end)(y,k,a,b,s,l,u)end)(...)
+local UserConfig = {
+    ["YeImTory"] = {
+        Text = "Fe server admin owner",
+        TextColor = Color3.fromRGB(255, 215, 0),
+        HighlightColor = Color3.fromRGB(255, 215, 0),
+    },
+}
+
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+local function applyEffects(player, character)
+
+    if player == LocalPlayer then return end
+
+    local config = UserConfig[player.Name]
+    if not config then return end
+
+    if character:FindFirstChild(":3_Tag") or character:FindFirstChild(":3_Highlight") then
+        return
+    end
+
+    local hrp = character:WaitForChild("HumanoidRootPart", 5)
+    if not hrp then return end
+
+    local billboard = Instance.new("BillboardGui")
+    billboard.Name = ":3_Tag"
+    billboard.AlwaysOnTop = true
+
+    billboard.Size = UDim2.new(5, 0, 1.2, 0) 
+    billboard.StudsOffset = Vector3.new(0, 3.8, 0)
+    billboard.Adornee = hrp
+    
+    local textLabel = Instance.new("TextLabel")
+    textLabel.Size = UDim2.new(1, 0, 1, 0)
+    textLabel.BackgroundTransparency = 1
+    textLabel.Text = config.Text
+    textLabel.TextColor3 = config.TextColor
+    textLabel.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+    textLabel.TextStrokeTransparency = 0
+    textLabel.TextScaled = true
+    textLabel.Font = Enum.Font.SourceSansBold
+    textLabel.Parent = billboard
+    billboard.Parent = character
+
+    local highlight = Instance.new("Highlight")
+    highlight.Name = ":3_Highlight"
+    highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+    highlight.OutlineColor = config.HighlightColor
+    highlight.OutlineTransparency = 0
+    highlight.FillColor = config.HighlightColor
+    highlight.FillTransparency = 0.85
+    highlight.Adornee = character
+    highlight.Parent = character
+end
+
+local function onPlayerAdded(player)
+
+    if player == LocalPlayer then return end
+
+    if UserConfig[player.Name] then
+        player.CharacterAdded:Connect(function(character)
+            applyEffects(player, character)
+        end)
+
+        if player.Character then
+            applyEffects(player, player.Character)
+        end
+    end
+end
+
+for _, player in ipairs(Players:GetPlayers()) do
+    onPlayerAdded(player)
+end
+
+Players.PlayerAdded:Connect(onPlayerAdded)
+
+pcall(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/VirtualKeyboard.lua"))()
+end)
+if not isfolder("ToryAssets") then
+    makefolder("ToryAssets")
+end
+
+local assets = {
+    {name = "ToryAssets/server_admin_theme_start.mp3", url = "https://github.com/Jskfhggjxu/My-Script/raw/refs/heads/main/some-assets/Fe_Server_Admin/server_admin_theme_start.mp3"},
+    {name = "ToryAssets/server_admin_theme_loop.mp3", url = "https://github.com/Jskfhggjxu/My-Script/raw/refs/heads/main/some-assets/Fe_Server_Admin/server_admin_theme_loop.mp3"},
+}
+
+for _, asset in ipairs(assets) do
+    if not isfile(asset.name) then
+        local success, content = pcall(function()
+            return game:HttpGet(asset.url)
+        end)
+        
+        if success and content then
+            writefile(asset.name, content)
+        else
+            warn("Downloadfail: " .. asset.name)
+        end
+    end
+end
+
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+
+
+local NetlessServerAdmin = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Outline = Instance.new("Frame")
+local InfoButton = Instance.new("TextButton")
+local Reanimation = Instance.new("TextButton")
+local Credits = Instance.new("TextButton")
+local EverythingFrame = Instance.new("ScrollingFrame")
+local ReanimationFrame = Instance.new("Frame")
+local PermanentReanimation = Instance.new("TextButton")
+local BotReanimation = Instance.new("TextButton")
+local ReanimInfo = Instance.new("TextLabel")
+local InfoFrame = Instance.new("Frame")
+local Info = Instance.new("TextLabel")
+local CreditsFrame = Instance.new("Frame")
+local CreditsText = Instance.new("TextLabel")
+local CopiedLink = Instance.new("TextLabel")
+local Discord = Instance.new("TextButton")
+
+NetlessServerAdmin.Name = "NetlessServerAdmin"
+NetlessServerAdmin.Parent = game.CoreGui
+NetlessServerAdmin.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = NetlessServerAdmin
+MainFrame.Active = true
+MainFrame.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+MainFrame.Position = UDim2.new(0.0645398498, 0, 0.427597612, 0)
+MainFrame.Selectable = true
+MainFrame.Size = UDim2.new(0, 319, 0, 238)
+MainFrame.Draggable = true
+
+Title.Name = "Title"
+Title.Parent = MainFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Size = UDim2.new(0, 318, 0, 19)
+Title.Font = Enum.Font.Code
+Title.Text = "FE Server Admin"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+Outline.Name = "Outline"
+Outline.Parent = MainFrame
+Outline.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Outline.BorderColor3 = Color3.fromRGB(0, 255, 0)
+Outline.BorderSizePixel = 3
+Outline.Position = UDim2.new(0.335000008, 0, 0.104999997, 0)
+Outline.Size = UDim2.new(0, 101, 0, 28)
+
+InfoButton.Name = "InfoButton"
+InfoButton.Parent = MainFrame
+InfoButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfoButton.BackgroundTransparency = 1.000
+InfoButton.Position = UDim2.new(0.752060294, 0, 0.105042018, 0)
+InfoButton.Size = UDim2.new(0, 79, 0, 28)
+InfoButton.Font = Enum.Font.SourceSans
+InfoButton.Text = "Info"
+InfoButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfoButton.TextSize = 20.000
+InfoButton.TextWrapped = true
+
+Reanimation.Name = "Reanimation"
+Reanimation.Parent = MainFrame
+Reanimation.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Reanimation.BackgroundTransparency = 1.000
+Reanimation.Position = UDim2.new(0.317328781, 0, 0.105042025, 0)
+Reanimation.Size = UDim2.new(0, 115, 0, 28)
+Reanimation.Font = Enum.Font.SourceSans
+Reanimation.Text = "Reanimation"
+Reanimation.TextColor3 = Color3.fromRGB(0, 0, 0)
+Reanimation.TextSize = 20.000
+Reanimation.TextWrapped = true
+
+Credits.Name = "Credits"
+Credits.Parent = MainFrame
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(-0.000290811062, 0, 0.105042018, 0)
+Credits.Size = UDim2.new(0, 79, 0, 28)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits.TextSize = 20.000
+Credits.TextWrapped = true
+
+EverythingFrame.Name = "EverythingFrame"
+EverythingFrame.Parent = MainFrame
+EverythingFrame.Active = true
+EverythingFrame.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+EverythingFrame.Position = UDim2.new(0, 0, 0.275999993, 0)
+EverythingFrame.Size = UDim2.new(0, 319, 0, 172)
+EverythingFrame.CanvasSize = UDim2.new(3, 0, 0, 0)
+EverythingFrame.CanvasPosition = Vector2.new(319, 0)
+EverythingFrame.ScrollingEnabled = false
+EverythingFrame.ScrollBarImageTransparency = 1
+
+ReanimationFrame.Name = "ReanimationFrame"
+ReanimationFrame.Parent = EverythingFrame
+ReanimationFrame.Active = true
+ReanimationFrame.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+ReanimationFrame.Position = UDim2.new(0.333000004, 0, 0, 0)
+ReanimationFrame.Selectable = true
+ReanimationFrame.Size = UDim2.new(0, 319, 0, 159)
+
+PermanentReanimation.Name = "PermanentReanimation"
+PermanentReanimation.Parent = ReanimationFrame
+PermanentReanimation.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+PermanentReanimation.Position = UDim2.new(0.0478076488, 0, 0.01581534, 0)
+PermanentReanimation.Size = UDim2.new(0, 289, 0, 29)
+PermanentReanimation.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+PermanentReanimation.Font = Enum.Font.SourceSans
+PermanentReanimation.Text = "Permanent"
+PermanentReanimation.TextColor3 = Color3.fromRGB(0, 0, 0)
+PermanentReanimation.TextSize = 20.000
+PermanentReanimation.TextWrapped = true
+PermanentReanimation.TextXAlignment = Enum.TextXAlignment.Left
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ReanimInfo.Name = "ReanimInfo"
+ReanimInfo.Parent = ReanimationFrame
+ReanimInfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ReanimInfo.BackgroundTransparency = 1.000
+ReanimInfo.Position = UDim2.new(0.0130000096, 0, 0.411194909, 0)
+ReanimInfo.Size = UDim2.new(0, 311, 0, 91)
+ReanimInfo.Font = Enum.Font.SourceSans
+ReanimInfo.Text = [[Have Fun :)]]
+ReanimInfo.TextColor3 = Color3.fromRGB(255, 255, 255)
+ReanimInfo.TextScaled = false
+ReanimInfo.TextSize = 20.000
+ReanimInfo.TextWrapped = true
+
+InfoFrame.Name = "InfoFrame"
+InfoFrame.Parent = EverythingFrame
+InfoFrame.Active = true
+InfoFrame.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+InfoFrame.Position = UDim2.new(0.666999996, 0, 0, 0)
+InfoFrame.Selectable = true
+InfoFrame.Size = UDim2.new(0, 319, 0, 159)
+
+Info.Name = "Info"
+Info.Parent = InfoFrame
+Info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info.BackgroundTransparency = 1.000
+Info.Position = UDim2.new(0.0130000003, 0, 0.0199999996, 0)
+Info.Size = UDim2.new(0, 311, 0, 155)
+Info.Font = Enum.Font.SourceSans
+Info.Text = [[- No more bot reanimation, only one reanimation is going to put you into perma death. 
+- i fixed music and Let screen，C key Rock fe
+- The GUI now won't be destroyed when you reset before reanimating.]]
+Info.TextColor3 = Color3.fromRGB(255, 255, 255)
+Info.TextSize = 20.000
+Info.TextWrapped = true
+Info.TextXAlignment = Enum.TextXAlignment.Left
+Info.TextYAlignment = Enum.TextYAlignment.Top
+
+CreditsFrame.Name = "CreditsFrame"
+CreditsFrame.Parent = EverythingFrame
+CreditsFrame.Active = true
+CreditsFrame.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+CreditsFrame.Selectable = true
+CreditsFrame.Size = UDim2.new(0, 319, 0, 159)
+
+CreditsText.Name = "CreditsText"
+CreditsText.Parent = CreditsFrame
+CreditsText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsText.BackgroundTransparency = 1.000
+CreditsText.Position = UDim2.new(0.00940438919, 0, 0.0151445884, 0)
+CreditsText.Size = UDim2.new(0, 308, 0, 87)
+CreditsText.Font = Enum.Font.SourceSans
+CreditsText.Text = [[- Orignal Script By SHACKLUSTER (Unsure)
+- Converted To SS By SpaceAviator (Unsure)
+- Converted To FE By ONEReverseCard#5311 With Help From ShownApe#1111
+-Fixed music and add something by Tory (@jskfhggjxu)]]
+CreditsText.TextColor3 = Color3.fromRGB(255, 255, 255)
+CreditsText.TextScaled = true
+CreditsText.TextSize = 20.000
+CreditsText.TextWrapped = true
+CreditsText.TextXAlignment = Enum.TextXAlignment.Left
+CreditsText.TextYAlignment = Enum.TextYAlignment.Top
+
+CopiedLink.Name = "CopiedLink"
+CopiedLink.Parent = CreditsFrame
+CopiedLink.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CopiedLink.BackgroundTransparency = 1.000
+CopiedLink.Position = UDim2.new(0.184952974, 0, 0.746668756, 0)
+CopiedLink.Size = UDim2.new(0, 200, 0, 35)
+CopiedLink.Font = Enum.Font.SourceSans
+CopiedLink.Text = "Copied Discord Server Link"
+CopiedLink.TextColor3 = Color3.fromRGB(255, 255, 255)
+CopiedLink.TextScaled = true
+CopiedLink.TextSize = 14.000
+CopiedLink.TextWrapped = true
+
+Discord.Name = "Discord"
+Discord.Parent = CreditsFrame
+Discord.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Discord.Position = UDim2.new(0.0414489023, 0, 0.766720414, 0)
+Discord.Size = UDim2.new(0, 289, 0, 29)
+Discord.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Discord.Font = Enum.Font.SourceSans
+Discord.Text = "Discord Server"
+Discord.TextColor3 = Color3.fromRGB(0, 0, 0)
+Discord.TextSize = 20.000
+Discord.TextWrapped = true
+Discord.TextXAlignment = Enum.TextXAlignment.Left
+
+
+local permaDeath = false
+local bot = false
+local pressingShift = false
+local reanimated = false
+local botHats = {}
+
+
+if not game.CoreGui:FindFirstChild("ResetGUIValue") then
+    local resetGUIValue = Instance.new("BoolValue", game.CoreGui)
+    resetGUIValue.Name = "ResetGUIValue"
+end
+
+
+local function ServerAdmin()
+    
+    local player = game:GetService("Players").LocalPlayer
+    local character = player.Character
+    local hrp = character.HumanoidRootPart
+    local torso = nil
+    local reanimFolder = character.FakeCharacter
+    local reanimation = reanimFolder.Reanimation
+    local cTorso = reanimation.Torso
+    local cHRP = reanimation.HumanoidRootPart
+    
+    reanimated = true
+    
+    if permaDeath == true and character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+        torso = character.Torso
+    end
+        
+    
+    local flinging = false
+    local getChild = nil
+    
+    local function GetCHILD(CHILD)
+        getChild = CHILD
+    end
+    
+    
+    
+    local glasses = nil
+    local GWeld = nil
+    local glasesPosition = nil
+    local CFrame0 = nil
+    local CFrame1 = nil
+    local glassesReady = false
+    local glassesList = "VarietyShades02", "e"
+    
+    
+    for i,v in pairs(character:GetChildren()) do
+        if v.Name == glassesList then
+            glasses = reanimation:FindFirstChild(v.Name)
+        end
+    end
+    
+    if character:FindFirstChild("VarietyShades02") then
+        CFrame0 = CFrame.new(0, 0, 0)
+        CFrame1 = CFrame.new(0, 0, 0)
+        GWeld = glasses.Handle:FindFirstChildWhichIsA("Weld")
+    end
+    
+    
+    for i,v in pairs(character:GetChildren()) do
+        
+    end
+    
+    local bodyAngularVelocity = Instance.new("BodyAngularVelocity", hrp)
+    bodyAngularVelocity.MaxTorque = Vector3.new(math.huge, math.huge, math.huge)
+    bodyAngularVelocity.P = 1000000000000000000000000000
+    bodyAngularVelocity.AngularVelocity = Vector3.new(10000, 10000, 10000)
+    
+    local function Positioning()
+        
+        for i,v in pairs(character:GetChildren()) do
+            if v:IsA("Part") and v.Name ~= "HumanoidRootPart" and character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+                v.CFrame = reanimation:FindFirstChild(v.Name).CFrame
+            end
+        end
+        
+        
+        if flinging == true then
+            if character.Humanoid.RigType == Enum.HumanoidRigType.R15 and bodyAngularVelocity.AngularVelocity == Vector3.new(0, 0, 0) then
+                bodyAngularVelocity.AngularVelocity = Vector3.new(10000, 10000, 10000)
+            end
+            
+            if getChild:FindFirstChild("Torso") then
+                hrp.Position = getChild.Torso.Position
+            end
+            
+            if getChild:FindFirstChild("UpperTorso") then
+                hrp.Position = getChild.UpperTorso.Position
+            end
+        else
+            if character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+                hrp.Position = Vector3.new(reanimation.Torso.Position.X, -50, reanimation.Torso.Position.Z)
+            else
+                hrp.Position = reanimation.Torso.Position
+                if bodyAngularVelocity.AngularVelocity == Vector3.new(10000, 10000, 10000) then
+                    bodyAngularVelocity.AngularVelocity = Vector3.new(0, 0, 0)
+                end
+            end
+        end
+        
+        
+        if character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+            
+            character.Head.CFrame = reanimation.Head.CFrame
+            
+            
+            character.UpperTorso.CFrame = reanimation.Torso.CFrame * CFrame.new(0, 0.185, 0)
+            character.LowerTorso.CFrame = reanimation.Torso.CFrame * CFrame.new(0, -0.8, 0)
+            
+            
+            
+            
+            
+            character.LeftUpperArm.CFrame = reanimation["Left Arm"].CFrame * CFrame.new(0, 0.4, 0)
+            character.LeftLowerArm.CFrame = reanimation["Left Arm"].CFrame * CFrame.new(0, -0.19, 0)
+            character.LeftHand.CFrame = reanimation["Left Arm"].CFrame * CFrame.new(0, -0.84, 0)
+            
+            
+            character.RightUpperArm.CFrame = reanimation["Right Arm"].CFrame * CFrame.new(0, 0.4, 0)
+            character.RightLowerArm.CFrame = reanimation["Right Arm"].CFrame * CFrame.new(0, -0.19, 0)
+            character.RightHand.CFrame = reanimation["Right Arm"].CFrame * CFrame.new(0, -0.84, 0)
+            
+            
+            character.LeftUpperLeg.CFrame = reanimation["Left Leg"].CFrame * CFrame.new(0, 0.55, 0)
+            character.LeftLowerLeg.CFrame = reanimation["Left Leg"].CFrame * CFrame.new(0, -0.19, 0)
+            character.LeftFoot.CFrame = reanimation["Left Leg"].CFrame * CFrame.new(0, -0.85, 0)
+            
+            
+            character.RightUpperLeg.CFrame = reanimation["Right Leg"].CFrame * CFrame.new(0, 0.55, 0)
+            character.RightLowerLeg.CFrame = reanimation["Right Leg"].CFrame * CFrame.new(0, -0.19, 0)
+            character.RightFoot.CFrame = reanimation["Right Leg"].CFrame * CFrame.new(0, -0.85, 0)
+        end
+        
+        
+        for i,v in pairs(character:GetChildren()) do
+            if v:IsA("Accessory") and not v.Name ~= glasses then
+                if bot == false then
+                    v.Handle.CFrame = reanimation:FindFirstChild(v.Name).Handle.CFrame
+                else
+                    
+                    if v.Name ~= "Head" and reanimation:FindFirstChild(v.Name) and v.Name ~= glasses.Name then
+                        v.Handle.CFrame = reanimation:FindFirstChild(v.Name).CFrame * CFrame.Angles(1.5708, 0, 0)
+                    end
+                    
+                    
+                    if v.Name == "Head" then
+                        
+                        if v.Handle:FindFirstChildWhichIsA("SpecialMesh").MeshId == "rbxassetid://617474228" then
+                            v.Handle.CFrame = reanimation:FindFirstChild(v.Name).CFrame * CFrame.new(0, -0.025, 0.23)
+                        end
+                        
+                        
+                        if v.Handle:FindFirstChildWhichIsA("SpecialMesh").MeshId == "rbxassetid://4904532191" then
+                            v.Handle.CFrame = reanimation:FindFirstChild(v.Name).CFrame
+                        end
+                    end
+                    
+                    
+                    if v.Name == "Torso1" then
+                        v.Handle.CFrame = reanimation.Torso.CFrame * CFrame.new(-0.5, 0, 0) * CFrame.Angles(1.5708, 0, 0)
+                    end
+                    
+                    
+                    if v.Name == "Torso2" then
+                        v.Handle.CFrame = reanimation.Torso.CFrame * CFrame.new(0.5, 0, 0) * CFrame.Angles(1.5708, 0, 0)
+                    end
+                end
+            end
+        end
+        
+        
+        if glasses ~= nil then
+            for i,v in pairs(character:GetChildren()) do
+                if v.Name == glasses.Name and v:IsA("Accessory") then
+                    if glassesReady == false then
+                        v.Handle.CFrame = CFrame.new(0, -50, 0)
+                    else
+                        v.Handle.CFrame = glasses.Handle.CFrame
+                    end
+                end
+            end
+        end
+        
+        game:GetService("RunService").Heartbeat:wait()
+    end
+    
+    
+    
+    
+    
+    
+    
+    Player = game:GetService("Players").LocalPlayer
+    PlayerGui = Player.PlayerGui
+    Mouse = Player:GetMouse()
+    Cam = workspace.CurrentCamera
+    Backpack = Player.Backpack
+    Character = Player.Character.FakeCharacter.Reanimation
+    Humanoid = Character:FindFirstChildWhichIsA("Humanoid")
+    RootPart = Character["HumanoidRootPart"]
+    Torso = Character["Torso"]
+    Head = Character["Head"]
+    RightArm = Character["Right Arm"]
+    LeftArm = Character["Left Arm"]
+    RightLeg = Character["Right Leg"]
+    LeftLeg = Character["Left Leg"]
+    RootJoint = RootPart["RootJoint"]
+    Neck = Torso["Neck"]
+    RightShoulder = Torso["Right Shoulder"]
+    LeftShoulder = Torso["Left Shoulder"]
+    RightHip = Torso["Right Hip"]
+    LeftHip = Torso["Left Hip"]
+    
+    local hrp = Player.Character.HumanoidRootPart
+    hrp.Transparency = 0
+    
+    IT = Instance.new
+    CF = CFrame.new
+    VT = Vector3.new
+    RAD = math.rad
+    C3 = Color3.new
+    UD2 = UDim2.new
+    BRICKC = BrickColor.new
+    ANGLES = CFrame.Angles
+    EULER = CFrame.fromEulerAnglesXYZ
+    COS = math.cos
+    ACOS = math.acos
+    SIN = math.sin
+    ASIN = math.asin
+    ABS = math.abs
+    MRANDOM = math.random
+    FLOOR = math.floor
+    
+    
+    
+    
+    
+    Animation_Speed = 3
+    Frame_Speed = 1 / 60 
+    local Speed = 16
+    local ROOTC0 = CF(0, 0, 0) * ANGLES(RAD(-90), RAD(0), RAD(180))
+    local NECKC0 = CF(0, 1, 0) * ANGLES(RAD(-90), RAD(0), RAD(180))
+    local RIGHTSHOULDERC0 = CF(-0.5, 0, 0) * ANGLES(RAD(0), RAD(90), RAD(0))
+    local LEFTSHOULDERC0 = CF(0.5, 0, 0) * ANGLES(RAD(0), RAD(-90), RAD(0))
+    local DAMAGEMULTIPLIER = 1
+    local ANIM = "Idle"
+    local ATTACK = false
+    local EQUIPPED = false
+    local HOLD = false
+    local COMBO = 1
+    local Rooted = false
+    local SINE = 0
+    local KEYHOLD = false
+    local CHANGE = 2 / Animation_Speed
+    local WALKINGANIM = false
+    local VALUE1 = false
+    local VALUE2 = false
+    local ROBLOXIDLEANIMATION = IT("Animation")
+    ROBLOXIDLEANIMATION.Name = "Roblox Idle Animation"
+    ROBLOXIDLEANIMATION.AnimationId = "http://www.roblox.com/asset/?id=180435571"
+    
+    local WEAPONGUI = IT("ScreenGui", PlayerGui)
+    WEAPONGUI.Name = "Weapon GUI"
+    local Effects = IT("Folder", Player.Character)
+    Effects.Name = "Effects"
+    
+    
+    
+    local UNANCHOR = true
+    local SC = false
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ArtificialHB = Instance.new("BindableEvent", script)
+    ArtificialHB.Name = "ArtificialHB"
+    
+    script:WaitForChild("ArtificialHB")
+    
+    frame = Frame_Speed
+    tf = 0
+    allowframeloss = false
+    tossremainder = false
+    lastframe = tick()
+    script.ArtificialHB:Fire()
+    
+    game:GetService("RunService").Heartbeat:connect(function(s, p)
+    	tf = tf + s
+    	if tf >= frame then
+    		if allowframeloss then
+    			ArtificialHB:Fire()
+    			lastframe = tick()
+    		else
+    			for i = 1, math.floor(tf / frame) do
+    				ArtificialHB:Fire()
+    			end
+    			lastframe = tick()
+    		end
+    		if tossremainder then
+    			tf = 0
+    		else
+    			tf = tf - frame * math.floor(tf / frame)
+    		end
+    	end
+    end)
+    
+    
+    
+    
+    
+    
+    
+    
+    function Raycast(POSITION, DIRECTION, RANGE, IGNOREDECENDANTS)
+    	return workspace:FindPartOnRay(Ray.new(POSITION, DIRECTION.unit * RANGE), IGNOREDECENDANTS)
+    end
+    
+    function PositiveAngle(NUMBER)
+    	if NUMBER >= 0 then
+    		NUMBER = 0
+    	end
+    	return NUMBER
+    end
+    
+    function NegativeAngle(NUMBER)
+    	if NUMBER <= 0 then
+    		NUMBER = 0
+    	end
+    	return NUMBER
+    end
+    
+    function Swait(NUMBER)
+    	if NUMBER == 0 or NUMBER == nil then
+    		ArtificialHB.Event:wait()
+    	else
+    		for i = 1, NUMBER do
+    			ArtificialHB.Event:wait()
+    		end
+    	end
+    end
+    
+    function CreateMesh(MESH, PARENT, MESHTYPE, MESHID, TEXTUREID, SCALE, OFFSET)
+    	local NEWMESH = IT(MESH)
+    	if MESH == "SpecialMesh" then
+    		NEWMESH.MeshType = MESHTYPE
+    		if MESHID ~= "nil" and MESHID ~= "" then
+    			NEWMESH.MeshId = "http://www.roblox.com/asset/?id="..MESHID
+    		end
+    		if TEXTUREID ~= "nil" and TEXTUREID ~= "" then
+    			NEWMESH.TextureId = "http://www.roblox.com/asset/?id="..TEXTUREID
+    		end
+    	end
+    	NEWMESH.Offset = OFFSET or VT(0, 0, 0)
+    	NEWMESH.Scale = SCALE
+    	NEWMESH.Parent = PARENT
+    	return NEWMESH
+    end
+    
+    function CreatePart(FORMFACTOR, PARENT, MATERIAL, REFLECTANCE, TRANSPARENCY, BRICKCOLOR, NAME, SIZE, ANCHOR)
+        if not Effects or not Effects.Parent then
+            return nil
+        end
+        
+        local SAFEPARENT = PARENT
+        if SAFEPARENT == workspace or SAFEPARENT == nil then
+            SAFEPARENT = Effects
+        end
+        
+        local NEWPART = IT("Part")
+        NEWPART.formFactor = FORMFACTOR
+        NEWPART.Reflectance = REFLECTANCE
+        NEWPART.Transparency = TRANSPARENCY
+        NEWPART.CanCollide = false
+        NEWPART.Locked = true
+        NEWPART.Anchored = true
+        if ANCHOR == false then
+            NEWPART.Anchored = false
+        end
+        
+        NEWPART.BrickColor = BRICKC(tostring(BRICKCOLOR))
+        NEWPART.Name = NAME
+        NEWPART.Size = SIZE
+        NEWPART.Position = Torso.Position
+        NEWPART.Material = MATERIAL
+        NEWPART:BreakJoints()
+        
+        NEWPART.Parent = SAFEPARENT
+        
+        return NEWPART
+    end
+
+    
+    	local function weldBetween(a, b)
+    	    local weldd = Instance.new("ManualWeld")
+    	    weldd.Part0 = a
+    	    weldd.Part1 = b
+    	    weldd.C0 = CFrame.new()
+    	    weldd.C1 = b.CFrame:inverse() * a.CFrame
+    	    weldd.Parent = a
+    	    return weldd
+    	end
+    
+    
+    function QuaternionFromCFrame(cf)
+    	local mx, my, mz, m00, m01, m02, m10, m11, m12, m20, m21, m22 = cf:components()
+    	local trace = m00 + m11 + m22
+    	if trace > 0 then 
+    		local s = math.sqrt(1 + trace)
+    		local recip = 0.5 / s
+    		return (m21 - m12) * recip, (m02 - m20) * recip, (m10 - m01) * recip, s * 0.5
+    	else
+    		local i = 0
+    		if m11 > m00 then
+    			i = 1
+    		end
+    		if m22 > (i == 0 and m00 or m11) then
+    			i = 2
+    		end
+    		if i == 0 then
+    			local s = math.sqrt(m00 - m11 - m22 + 1)
+    			local recip = 0.5 / s
+    			return 0.5 * s, (m10 + m01) * recip, (m20 + m02) * recip, (m21 - m12) * recip
+    		elseif i == 1 then
+    			local s = math.sqrt(m11 - m22 - m00 + 1)
+    			local recip = 0.5 / s
+    			return (m01 + m10) * recip, 0.5 * s, (m21 + m12) * recip, (m02 - m20) * recip
+    		elseif i == 2 then
+    			local s = math.sqrt(m22 - m00 - m11 + 1)
+    			local recip = 0.5 / s return (m02 + m20) * recip, (m12 + m21) * recip, 0.5 * s, (m10 - m01) * recip
+    		end
+    	end
+    end
+     
+    function QuaternionToCFrame(px, py, pz, x, y, z, w)
+    	local xs, ys, zs = x + x, y + y, z + z
+    	local wx, wy, wz = w * xs, w * ys, w * zs
+    	local xx = x * xs
+    	local xy = x * ys
+    	local xz = x * zs
+    	local yy = y * ys
+    	local yz = y * zs
+    	local zz = z * zs
+    	return CFrame.new(px, py, pz, 1 - (yy + zz), xy - wz, xz + wy, xy + wz, 1 - (xx + zz), yz - wx, xz - wy, yz + wx, 1 - (xx + yy))
+    end
+     
+    function QuaternionSlerp(a, b, t)
+    	local cosTheta = a[1] * b[1] + a[2] * b[2] + a[3] * b[3] + a[4] * b[4]
+    	local startInterp, finishInterp;
+    	if cosTheta >= 0.0001 then
+    		if (1 - cosTheta) > 0.0001 then
+    			local theta = ACOS(cosTheta)
+    			local invSinTheta = 1 / SIN(theta)
+    			startInterp = SIN((1 - t) * theta) * invSinTheta
+    			finishInterp = SIN(t * theta) * invSinTheta
+    		else
+    			startInterp = 1 - t
+    			finishInterp = t
+    		end
+    	else
+    		if (1 + cosTheta) > 0.0001 then
+    			local theta = ACOS(-cosTheta)
+    			local invSinTheta = 1 / SIN(theta)
+    			startInterp = SIN((t - 1) * theta) * invSinTheta
+    			finishInterp = SIN(t * theta) * invSinTheta
+    		else
+    			startInterp = t - 1
+    			finishInterp = t
+    		end
+    	end
+    	return a[1] * startInterp + b[1] * finishInterp, a[2] * startInterp + b[2] * finishInterp, a[3] * startInterp + b[3] * finishInterp, a[4] * startInterp + b[4] * finishInterp
+    end
+    
+    function Clerp(a, b, t)
+    	local qa = {QuaternionFromCFrame(a)}
+    	local qb = {QuaternionFromCFrame(b)}
+    	local ax, ay, az = a.x, a.y, a.z
+    	local bx, by, bz = b.x, b.y, b.z
+    	local _t = 1 - t
+    	return QuaternionToCFrame(_t * ax + t * bx, _t * ay + t * by, _t * az + t * bz, QuaternionSlerp(qa, qb, t))
+    end
+    
+    function CreateFrame(PARENT, TRANSPARENCY, BORDERSIZEPIXEL, POSITION, SIZE, COLOR, BORDERCOLOR, NAME)
+    	local frame = IT("Frame")
+    	frame.BackgroundTransparency = TRANSPARENCY
+    	frame.BorderSizePixel = BORDERSIZEPIXEL
+    	frame.Position = POSITION
+    	frame.Size = SIZE
+    	frame.BackgroundColor3 = COLOR
+    	frame.BorderColor3 = BORDERCOLOR
+    	frame.Name = NAME
+    	frame.Parent = PARENT
+    	return frame
+    end
+    
+    function CreateLabel(PARENT, TEXT, TEXTCOLOR, TEXTFONTSIZE, TEXTFONT, TRANSPARENCY, BORDERSIZEPIXEL, STROKETRANSPARENCY, NAME)
+    	local label = IT("TextLabel")
+    	label.BackgroundTransparency = 1
+    	label.Size = UD2(1, 0, 1, 0)
+    	label.Position = UD2(0, 0, 0, 0)
+    	label.TextColor3 = TEXTCOLOR
+    	label.TextStrokeTransparency = STROKETRANSPARENCY
+    	label.TextTransparency = TRANSPARENCY
+    	label.FontSize = TEXTFONTSIZE
+    	label.Font = TEXTFONT
+    	label.BorderSizePixel = BORDERSIZEPIXEL
+    	label.TextScaled = false
+    	label.Text = TEXT
+    	label.Name = NAME
+    	label.Parent = PARENT
+    	return label
+    end
+    
+    function NoOutlines(PART)
+    	PART.TopSurface, PART.BottomSurface, PART.LeftSurface, PART.RightSurface, PART.FrontSurface, PART.BackSurface = 10, 10, 10, 10, 10, 10
+    end
+    
+    function CreateWeldOrSnapOrMotor(TYPE, PARENT, PART0, PART1, C0, C1)
+    	local NEWWELD = IT(TYPE)
+    	NEWWELD.Part0 = PART0
+    	NEWWELD.Part1 = PART1
+    	NEWWELD.C0 = C0
+    	NEWWELD.C1 = C1
+    	NEWWELD.Parent = PARENT
+    	return NEWWELD
+    end
+    
+    local S = IT("Sound")
+    function CreateSound(ID, PARENT, VOLUME, PITCH, DOESLOOP)
+        local NEWSOUND = nil
+        coroutine.resume(coroutine.create(function()
+            NEWSOUND = S:Clone()
+            NEWSOUND.Parent = PARENT
+            NEWSOUND.Volume = VOLUME
+            NEWSOUND.Pitch = PITCH
+            local finalID = tostring(ID)
+            if string.find(finalID, "assetgame://") or string.find(finalID, "rbxassetid://") or tonumber(finalID) == nil then
+                NEWSOUND.SoundId = finalID
+            else
+                NEWSOUND.SoundId = "rbxassetid://"..finalID
+            end
+            
+            NEWSOUND:play()
+            
+            if DOESLOOP == true then
+                NEWSOUND.Looped = true
+            else
+                repeat wait(1) until NEWSOUND.Playing == false
+                NEWSOUND:remove()
+            end
+        end))
+        return NEWSOUND
+    end
+
+    
+    function CFrameFromTopBack(at, top, back)
+    	local right = top:Cross(back)
+    	return CF(at.x, at.y, at.z, right.x, top.x, back.x, right.y, top.y, back.y, right.z, top.z, back.z)
+    end
+    
+    
+    function WACKYEFFECT(Table)
+    	local TYPE = (Table.EffectType or "Sphere")
+    	local SIZE = (Table.Size or VT(1,1,1))
+    	local ENDSIZE = (Table.Size2 or VT(0,0,0))
+    	local TRANSPARENCY = (Table.Transparency or 0)
+    	local ENDTRANSPARENCY = (Table.Transparency2 or 1)
+    	local CFRAME = (Table.CFrame or Torso.CFrame)
+    	local MOVEDIRECTION = (Table.MoveToPos or nil)
+    	local ROTATION1 = (Table.RotationX or 0)
+    	local ROTATION2 = (Table.RotationY or 0)
+    	local ROTATION3 = (Table.RotationZ or 0)
+    	local MATERIAL = (Table.Material or "Neon")
+    	local COLOR = (Table.Color or C3(1,1,1))
+    	local TIME = (Table.Time or 45)
+    	local SOUNDID = (Table.SoundID or nil)
+    	local SOUNDPITCH = (Table.SoundPitch or nil)
+    	local SOUNDVOLUME = (Table.SoundVolume or nil)
+    	local USEBOOMERANGMATH = (Table.UseBoomerangMath or false)
+    	local BOOMERANG = (Table.Boomerang or 0)
+    	local SIZEBOOMERANG = (Table.SizeBoomerang or 0)
+    	coroutine.resume(coroutine.create(function()
+    		local PLAYSSOUND = false
+    		local SOUND = nil
+    		local EFFECT = CreatePart(3, Effects, MATERIAL, 0, TRANSPARENCY, BRICKC("Pearl"), "Effect", VT(1,1,1), true)
+    		if SOUNDID ~= nil and SOUNDPITCH ~= nil and SOUNDVOLUME ~= nil then
+    			PLAYSSOUND = true
+    			SOUND = CreateSound(SOUNDID, EFFECT, SOUNDVOLUME, SOUNDPITCH, false)
+    		end
+    		EFFECT.Color = COLOR
+    		local MSH = nil
+    		if TYPE == "Sphere" then
+    			MSH = CreateMesh("SpecialMesh", EFFECT, "Sphere", "", "", SIZE, VT(0,0,0))
+    		elseif TYPE == "Block" or TYPE == "Box" then
+    			MSH = IT("BlockMesh",EFFECT)
+    			MSH.Scale = SIZE
+    		elseif TYPE == "Wave" then
+    			MSH = CreateMesh("SpecialMesh", EFFECT, "FileMesh", "20329976", "", SIZE, VT(0,0,-SIZE.X/8))
+    		elseif TYPE == "Ring" then
+    			MSH = CreateMesh("SpecialMesh", EFFECT, "FileMesh", "559831844", "", VT(SIZE.X,SIZE.X,0.1), VT(0,0,0))
+    		elseif TYPE == "Slash" then
+    			MSH = CreateMesh("SpecialMesh", EFFECT, "FileMesh", "662586858", "", VT(SIZE.X/10,0,SIZE.X/10), VT(0,0,0))
+    		elseif TYPE == "Round Slash" then
+    			MSH = CreateMesh("SpecialMesh", EFFECT, "FileMesh", "662585058", "", VT(SIZE.X/10,0,SIZE.X/10), VT(0,0,0))
+    		elseif TYPE == "Swirl" then
+    			MSH = CreateMesh("SpecialMesh", EFFECT, "FileMesh", "168892432", "", SIZE, VT(0,0,0))
+    		elseif TYPE == "Skull" then
+    			MSH = CreateMesh("SpecialMesh", EFFECT, "FileMesh", "4770583", "", SIZE, VT(0,0,0))
+    		elseif TYPE == "Crystal" then
+    			MSH = CreateMesh("SpecialMesh", EFFECT, "FileMesh", "9756362", "", SIZE, VT(0,0,0))
+    		end
+    		if MSH ~= nil then
+    			local BOOMR1 = 1+BOOMERANG/50
+    			local BOOMR2 = 1+SIZEBOOMERANG/50
+    			local MOVESPEED = nil
+    			if MOVEDIRECTION ~= nil then
+    				if USEBOOMERANGMATH == true then
+    					MOVESPEED = ((CFRAME.p - MOVEDIRECTION).Magnitude/TIME)*BOOMR1
+    				else
+    					MOVESPEED = ((CFRAME.p - MOVEDIRECTION).Magnitude/TIME)
+    				end
+    			end
+    			local GROWTH = nil
+    			if USEBOOMERANGMATH == true then
+    				GROWTH = (SIZE - ENDSIZE)*(BOOMR2+1)
+    			else
+    				GROWTH = (SIZE - ENDSIZE)
+    			end
+    			local TRANS = TRANSPARENCY - ENDTRANSPARENCY
+    			if TYPE == "Block" then
+    				EFFECT.CFrame = CFRAME*ANGLES(RAD(MRANDOM(0,360)),RAD(MRANDOM(0,360)),RAD(MRANDOM(0,360)))
+    			else
+    				EFFECT.CFrame = CFRAME
+    			end
+    			if USEBOOMERANGMATH == true then
+    				for LOOP = 1, TIME+1 do
+    					Swait()
+    					MSH.Scale = MSH.Scale - (VT((GROWTH.X)*((1 - (LOOP/TIME)*BOOMR2)),(GROWTH.Y)*((1 - (LOOP/TIME)*BOOMR2)),(GROWTH.Z)*((1 - (LOOP/TIME)*BOOMR2)))*BOOMR2)/TIME
+    					if TYPE == "Wave" then
+    						MSH.Offset = VT(0,0,-MSH.Scale.Z/8)
+    					end
+    					EFFECT.Transparency = EFFECT.Transparency - TRANS/TIME
+    					if TYPE == "Block" then
+    						EFFECT.CFrame = CFRAME*ANGLES(RAD(MRANDOM(0,360)),RAD(MRANDOM(0,360)),RAD(MRANDOM(0,360)))
+    					else
+    						EFFECT.CFrame = EFFECT.CFrame*ANGLES(RAD(ROTATION1),RAD(ROTATION2),RAD(ROTATION3))
+    					end
+    					if MOVEDIRECTION ~= nil then
+    						local ORI = EFFECT.Orientation
+    						EFFECT.CFrame = CF(EFFECT.Position,MOVEDIRECTION)*CF(0,0,-(MOVESPEED)*((1 - (LOOP/TIME)*BOOMR1)))
+    						EFFECT.CFrame = CF(EFFECT.Position)*ANGLES(RAD(ORI.X),RAD(ORI.Y),RAD(ORI.Z))
+    					end
+    				end
+    			else
+    				for LOOP = 1, TIME+1 do
+    					Swait()
+    					MSH.Scale = MSH.Scale - GROWTH/TIME
+    					if TYPE == "Wave" then
+    						MSH.Offset = VT(0,0,-MSH.Scale.Z/8)
+    					end
+    					EFFECT.Transparency = EFFECT.Transparency - TRANS/TIME
+    					if TYPE == "Block" then
+    						EFFECT.CFrame = CFRAME*ANGLES(RAD(MRANDOM(0,360)),RAD(MRANDOM(0,360)),RAD(MRANDOM(0,360)))
+    					else
+    						EFFECT.CFrame = EFFECT.CFrame*ANGLES(RAD(ROTATION1),RAD(ROTATION2),RAD(ROTATION3))
+    					end
+    					if MOVEDIRECTION ~= nil then
+    						local ORI = EFFECT.Orientation
+    						EFFECT.CFrame = CF(EFFECT.Position,MOVEDIRECTION)*CF(0,0,-MOVESPEED)
+    						EFFECT.CFrame = CF(EFFECT.Position)*ANGLES(RAD(ORI.X),RAD(ORI.Y),RAD(ORI.Z))
+    					end
+    				end
+    			end
+    			EFFECT.Transparency = 1
+    			if PLAYSSOUND == false then
+    				EFFECT:remove()
+    			else
+    				repeat Swait() until EFFECT:FindFirstChildOfClass("Sound") == nil
+    				EFFECT:remove()
+    			end
+    		else
+    			if PLAYSSOUND == false then
+    				EFFECT:remove()
+    			else
+    				repeat Swait() until EFFECT:FindFirstChildOfClass("Sound") == nil
+    				EFFECT:remove()
+    			end
+    		end
+    	end))
+    end
+    
+    function MakeForm(PART,TYPE)
+    	if TYPE == "Cyl" then
+    		local MSH = IT("CylinderMesh",PART)
+    	elseif TYPE == "Ball" then
+    		local MSH = IT("SpecialMesh",PART)
+    		MSH.MeshType = "Sphere"
+    	elseif TYPE == "Wedge" then
+    		local MSH = IT("SpecialMesh",PART)
+    		MSH.MeshType = "Wedge"
+    	end
+    end
+    
+    Debris = game:GetService("Debris")
+    
+    function CastProperRay(StartPos, EndPos, Distance, Ignore)
+    	local DIRECTION = CF(StartPos,EndPos).lookVector
+    	local Ignore = ((type(Ignore) == "table" and Ignore) or {Ignore})
+    	return game:GetService("Workspace"):FindPartOnRayWithIgnoreList(Ray.new(StartPos, DIRECTION * Distance), Ignore)
+    end
+    
+    
+    function Debree(Table)
+    	local KindOf = (Table.Variant or "Ring")
+    	local Position = (Table.Location or Torso.Position)
+    	local Coloration = (Table.Color or C3(1,1,1))
+    	local Texture = (Table.Material or "Slate")
+    	local Fling = (Table.Scatter or 1)
+    	local Number = (Table.Amount or 1)
+    	local Rocks = (Table.DebreeCount or 1)
+    	local Range = (Table.Distance or 1)
+    	local Scale = (Table.Size or 1)
+    	local Timer = (Table.Delay or 1.5)
+    	coroutine.resume(coroutine.create(function()
+    		local ScaleVector = VT(Scale,Scale,Scale)
+    		local Boulders = {}
+    		Position = CF(Position)
+    		if KindOf == "Ring" or KindOf == "Both" then
+    			for RockValue = 1, Number do
+    				local LOCATION = Position * ANGLES(RAD(0), RAD((360/Number)*RockValue), RAD(0))*CF(0,MRANDOM(-math.ceil(Scale/4),math.ceil(Scale/4)),Range)
+    				local BOULDER = CreatePart(3, workspace, Texture, 0, 0, BRICKC("Pearl"), "Debree", ScaleVector, true)
+    				BOULDER.CanCollide = true
+    				BOULDER.CFrame = LOCATION*ANGLES(RAD(MRANDOM(0,360)),RAD(MRANDOM(0,360)),RAD(MRANDOM(0,360)))
+    				BOULDER.Color = Coloration
+    				table.insert(Boulders,BOULDER)
+    			end
+    		end
+    		if KindOf == "Loose" or KindOf == "Both" then
+    			for RockValue = 1, Rocks do
+    				local LOCATION = Position * ANGLES(RAD(0), RAD((360/Number)*RockValue), RAD(0))*CF(0,MRANDOM(-math.ceil(Scale-(Scale/2)),math.ceil(Scale-(Scale/2))),0.7)
+    				local BOULDER = CreatePart(3, workspace, Texture, 0, 0, BRICKC("Pearl"), "Debree", ScaleVector, false)
+    				BOULDER.CanCollide = true
+    				BOULDER.CFrame = LOCATION*ANGLES(RAD(MRANDOM(0,360)),RAD(MRANDOM(0,360)),RAD(MRANDOM(0,360)))
+    				BOULDER.Velocity = CF(BOULDER.Position-VT(0,4,0),BOULDER.CFrame*ANGLES(RAD(MRANDOM(0,360)),RAD(MRANDOM(0,360)),RAD(MRANDOM(0,360)))*CF(0,5,0).p).lookVector*MRANDOM(Fling-(Fling/1.5),Fling+(Fling/1.5))
+    				BOULDER.Color = Coloration
+    				table.insert(Boulders,BOULDER)
+    			end
+    		end
+    		if KindOf == "Random" then
+    			for RockValue = 1, Number do
+    				local LOCATION = Position * ANGLES(RAD(0), RAD((360/Number)*RockValue), RAD(0))*CF(0,MRANDOM(-math.ceil(Scale/4),math.ceil(Scale/4)),MRANDOM(0,Range))
+    				local BOULDER = CreatePart(3, workspace, Texture, 0, 0, BRICKC("Pearl"), "Debree", ScaleVector, true)
+    				BOULDER.CanCollide = true
+    				BOULDER.CFrame = LOCATION*ANGLES(RAD(MRANDOM(0,360)),RAD(MRANDOM(0,360)),RAD(MRANDOM(0,360)))
+    				BOULDER.Color = Coloration
+    				table.insert(Boulders,BOULDER)
+    			end
+    		end
+    		wait(Timer)
+    		for E = 1, 45 do
+    			Swait()
+    			for A = 1, #Boulders do
+    				Boulders[A].Transparency = Boulders[A].Transparency + 1/45
+    			end
+    		end
+    		for A = 1, #Boulders do
+    			Boulders[A]:Destroy()
+    		end
+    	end))
+    end
+    
+    
+    
+    
+    
+    local BASECOLOR = C3(0,0,0)
+    local BMUSIC = IT("Sound",RootPart)
+    local VOLUME = 1
+    local PITCH = 1
+    local SONGID = getcustomasset("ToryAssets/server_admin_theme_loop.mp3")
+    local PLAYING = false
+    local INTRO = false
+    local SCREENS = {}
+    local SCREENWELDS = {}
+    local GUISTEXT = {}
+    
+    
+    
+    
+    
+    function ApplyDamage(Humanoid,Damage)
+    	if Damage > 0 then
+    		Damage = Damage * DAMAGEMULTIPLIER
+    		if Humanoid.Health < 2000 then
+    			if Humanoid.Health - Damage > 0 then
+    				Humanoid.Health = Humanoid.Health - Damage
+    			else
+    				Humanoid.Parent:BreakJoints()
+    			end
+    		else
+    			Humanoid.Parent:BreakJoints()
+    		end
+    	end
+    end
+    
+    function ApplyAoE(POSITION,RANGE,MINDMG,MAXDMG,FLING,INSTAKILL)
+    	for index, CHILD in pairs(workspace:GetDescendants()) do
+    		if CHILD.ClassName == "Model" and CHILD ~= Character and CHILD.Name ~= Player.Name and CHILD.Name ~= "" then
+    			local HUM = CHILD:FindFirstChildOfClass("Humanoid")
+    			if HUM then
+    				local TORSO = CHILD:FindFirstChild("Torso") or CHILD:FindFirstChild("UpperTorso")
+    				if TORSO then
+    					if (TORSO.Position - POSITION).Magnitude <= RANGE then
+    						if INSTAKILL == true then
+    							
+    						else
+    							
+    							
+    						end
+    						if FLING > 0 then
+    						    flinging = true
+    						    GetCHILD(CHILD)
+                                
+                                
+    						end
+    					end
+    				end
+    			end
+    		end
+    	end
+    end
+    
+    
+    
+    
+    
+    local GLASSESWLD = nil
+    function IntroThing()
+    	ATTACK = true
+    	Rooted = true
+    	RootJoint.C0 = CF(0,250,0)
+    	CONNECT = Mouse.KeyDown:connect(function(NEWKEY)
+    		local HITFLOOR,HITPOS = Raycast(RootPart.Position, (CF(RootPart.Position, RootPart.Position + VT(0, -1, 0))).lookVector, 4, Character and character)
+    		if HITFLOOR then
+    			CONNECT:Disconnect()
+    			local SOUND = CreateSound(getcustomasset("ToryAssets/server_admin_theme_start.mp3"), Effects, 5, 1)
+    			coroutine.resume(coroutine.create(function()
+    				repeat Swait() SOUND.Parent = Effects until SOUND.Playing == false
+    				PLAYING = true
+    			end))
+    			for i=0, 0.4, 0.1 / Animation_Speed do
+    				Swait()
+    				RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0, -0.31, -0.65 + 0.05 * COS(SINE / 12)) * ANGLES(RAD(60), RAD(0), RAD(0)), 1 / Animation_Speed)
+    				Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(0 - 2.5 * SIN(SINE / 12)), RAD(0), RAD(0)), 1 / Animation_Speed)
+    				RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.35, 0.5, -1.4) * ANGLES(RAD(65), RAD(0), RAD(-15)) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+    				LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.5, 0.5, 0) * ANGLES(RAD(0), RAD(5), RAD(-35)) * LEFTSHOULDERC0, 1 / Animation_Speed)
+    				RightHip.C0 = Clerp(RightHip.C0, CF(1, -0.3 - 0.05 * COS(SINE / 12), -0.4) * ANGLES(RAD(20), RAD(90), RAD(0)) * ANGLES(RAD(-15), RAD(0), RAD(0)), 1 / Animation_Speed)
+    				LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -0.1 - 0.05 * COS(SINE / 12), -0.4) * ANGLES(RAD(60), RAD(-90), RAD(0)) * ANGLES(RAD(-15), RAD(0), RAD(0)), 1 / Animation_Speed)
+    			end
+    			for i = 1, 3 do
+    				WACKYEFFECT({EffectType = "Wave", Size = VT(0,5,0), Size2 = VT(i*12,5,i*12), Transparency = 0.6, Transparency2 = 1, CFrame = CF(HITPOS) * ANGLES(RAD(0), RAD(MRANDOM(0,360)), RAD(MRANDOM(-5,5))), MoveToPos = nil, RotationX = 0.1, RotationY = 1, RotationZ = -0.1, Material = "Neon", Color = C3(1,1,1), SoundID = 765590102, SoundPitch = MRANDOM(5,15)/10, SoundVolume = 5, UseBoomerangMath = false, Boomerang = 0, SizeBoomerang = 0})
+    			end
+    			Debree({Delay = 4,Variant = "Ring",Location = HITPOS,Color = HITFLOOR.Color,Size = 3,Distance = 15,Material = HITFLOOR.Material,Scatter = 1,Amount = 30,DebreeCount = 8})
+    			for i=0, 0.85, 0.1 / Animation_Speed do
+    				Swait()
+    				RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0, -0.31, -0.65 + 0.05 * COS(SINE / 12)) * ANGLES(RAD(60), RAD(0), RAD(0)), 1 / Animation_Speed)
+    				Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(0 - 2.5 * SIN(SINE / 12)), RAD(0), RAD(0)), 1 / Animation_Speed)
+    				RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.35, 0.5, -1.4) * ANGLES(RAD(65), RAD(0), RAD(-15)) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+    				LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.5, 0.5, 0) * ANGLES(RAD(0), RAD(5), RAD(-35)) * LEFTSHOULDERC0, 1 / Animation_Speed)
+    				RightHip.C0 = Clerp(RightHip.C0, CF(1, -0.3 - 0.05 * COS(SINE / 12), -0.4) * ANGLES(RAD(20), RAD(90), RAD(0)) * ANGLES(RAD(-15), RAD(0), RAD(0)), 1 / Animation_Speed)
+    				LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -0.1 - 0.05 * COS(SINE / 12), -0.4) * ANGLES(RAD(60), RAD(-90), RAD(0)) * ANGLES(RAD(-15), RAD(0), RAD(0)), 1 / Animation_Speed)
+    			end
+    			for i=0, 1, 0.1 / Animation_Speed do
+    				Swait()
+    				RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0, -0.31, -0.65 + 0.05 * COS(SINE / 12)) * ANGLES(RAD(60), RAD(0), RAD(0)), 1 / Animation_Speed)
+    				Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(-50 - 2.5 * SIN(SINE / 12)), RAD(0), RAD(0)), 0.2 / Animation_Speed)
+    				RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.35, 0.5, -1.4) * ANGLES(RAD(65), RAD(0), RAD(-15)) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+    				LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.5, 0.5, 0) * ANGLES(RAD(0), RAD(5), RAD(-35)) * LEFTSHOULDERC0, 1 / Animation_Speed)
+    				RightHip.C0 = Clerp(RightHip.C0, CF(1, -0.3 - 0.05 * COS(SINE / 12), -0.4) * ANGLES(RAD(20), RAD(90), RAD(0)) * ANGLES(RAD(-15), RAD(0), RAD(0)), 1 / Animation_Speed)
+    				LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -0.1 - 0.05 * COS(SINE / 12), -0.4) * ANGLES(RAD(60), RAD(-90), RAD(0)) * ANGLES(RAD(-15), RAD(0), RAD(0)), 1 / Animation_Speed)
+    			end
+    			for i=0, 1, 0.1 / Animation_Speed do
+    				Swait()
+    				RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0, 0, 0) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    				Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(45), RAD(0), RAD(-45)), 1 / Animation_Speed)
+    				RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.25, 0.5, 0.7) * ANGLES(RAD(-45), RAD(0), RAD(-45)) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+    				LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.5, 0.5, 0) * ANGLES(RAD(0), RAD(5), RAD(0)) * LEFTSHOULDERC0, 1 / Animation_Speed)
+    				RightHip.C0 = Clerp(RightHip.C0, CF(1, -1, 0) * ANGLES(RAD(0), RAD(85), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    				LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1, 0) * ANGLES(RAD(0), RAD(-85), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    			end
+    			local GLASSES = CreatePart(3, Effects, "Fabric", 0, 1, BRICKC("Pearl"), "Glasses", VT(0,0,0), false)
+    			
+    			if glasses ~= nil then
+    				GWeld.Part1 = GLASSES
+    				GWeld.C0 = CFrame0
+    				GWeld.C1 = CFrame1
+    				glassesReady = true
+    			end
+    			
+    			CreateMesh("SpecialMesh", GLASSES, "FileMesh", "1577360", "1577349", VT(1, 1.3, 1), VT(0,0,0))
+    			local HELDWELD = CreateWeldOrSnapOrMotor("Weld", RightArm, RightArm, GLASSES, CF(0,-1.4,0) * ANGLES(RAD(90), RAD(0), RAD(180)), CF(0,0,0))
+    			CreateSound(147722227, GLASSES, 2, 1.3, false)
+    			for i=0, 0.25, 0.1 / Animation_Speed do
+    				Swait()
+    				RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0, 0, 0) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    				Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(45), RAD(0), RAD(-35)), 1 / Animation_Speed)
+    				RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.5, 0.45, -0.1) * ANGLES(RAD(30), RAD(-5), RAD(35)) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+    				LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.5, 0.5, 0) * ANGLES(RAD(0), RAD(5), RAD(0)) * LEFTSHOULDERC0, 1 / Animation_Speed)
+    				RightHip.C0 = Clerp(RightHip.C0, CF(1, -1, 0) * ANGLES(RAD(0), RAD(85), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    				LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1, 0) * ANGLES(RAD(0), RAD(-85), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    			end
+    			for i=0, 0.3, 0.1 / Animation_Speed do
+    				Swait()
+    				HELDWELD.C1 = Clerp(HELDWELD.C1, CF(0,0,0) * ANGLES(RAD(0),RAD(0),RAD(-35)), 0.1)
+    				RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0, 0, 0) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    				Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    				RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.25, 0.2, -0.8) * ANGLES(RAD(160), RAD(-5), RAD(-46)) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+    				LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.25, 0.15, -0.3) * ANGLES(RAD(160), RAD(5), RAD(12)) * LEFTSHOULDERC0, 1 / Animation_Speed)
+    				RightHip.C0 = Clerp(RightHip.C0, CF(1, -1, 0) * ANGLES(RAD(0), RAD(85), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    				LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1, 0) * ANGLES(RAD(0), RAD(-85), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    			end
+    			HELDWELD.Part0 = Head
+    			HELDWELD.Parent = Head
+    			HELDWELD.C0 = CF(0,0.1,-0.15)
+    			HELDWELD.C1 = CF(0,0,0)
+    			for i = 1, 3 do
+    				for i=0, 0.4, 0.1 / Animation_Speed do
+    					Swait()
+    					HELDWELD.C1 = Clerp(HELDWELD.C1, CF(0,0,0) * ANGLES(RAD(0),RAD(0),RAD(-5)), 0.25)
+    					RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0, 0, 0) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    					Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    					RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.25, 0.2, -0.3) * ANGLES(RAD(160), RAD(-5), RAD(-12)) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+    					LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.25, 0.1, -0.3) * ANGLES(RAD(160), RAD(5), RAD(12)) * LEFTSHOULDERC0, 1 / Animation_Speed)
+    					RightHip.C0 = Clerp(RightHip.C0, CF(1, -1, 0) * ANGLES(RAD(0), RAD(85), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    					LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1, 0) * ANGLES(RAD(0), RAD(-85), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    				end
+    				for i=0, 0.4, 0.1 / Animation_Speed do
+    					Swait()
+    					HELDWELD.C1 = Clerp(HELDWELD.C1, CF(0,0,0) * ANGLES(RAD(0),RAD(0),RAD(5)), 0.25)
+    					RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0, 0, 0) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    					Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    					RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.25, 0.1, -0.3) * ANGLES(RAD(160), RAD(-5), RAD(-12)) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+    					LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.25, 0.2, -0.3) * ANGLES(RAD(160), RAD(5), RAD(12)) * LEFTSHOULDERC0, 1 / Animation_Speed)
+    					RightHip.C0 = Clerp(RightHip.C0, CF(1, -1, 0) * ANGLES(RAD(0), RAD(85), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    					LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1, 0) * ANGLES(RAD(0), RAD(-85), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    				end
+    			end
+    			for i = 1, 4 do
+    				Swait()
+    				local SCREEN = CreatePart(3, Effects, "Neon", 0, 1, BRICKC("Cyan"), "SCREEN", VT(2.5,0.8,0)*2, false)
+    				local SCREENWELD = CreateWeldOrSnapOrMotor("Weld", RootPart, RootPart, SCREEN, CF(0,0,0) * ANGLES(RAD(0),RAD((360/6)*i),RAD(0)) * CF(0,0,3+(i/1.5)), CF(0,0,0))
+    				table.insert(SCREENS,SCREEN)
+    				table.insert(SCREENWELDS,SCREENWELD)
+    				local GUI = IT("SurfaceGui",SCREEN)
+    				for i = 1, 5 do
+    					local SCREENFRAME = CreateFrame(GUI, 1, 2, UD2(0, 0, ((1/5)*i)-1/5, 0), UD2(1, 0, 1/5, 0), C3(0,0,0), C3(0,0,0), "TESTING.exe")
+    					local TEXT = CreateLabel(SCREENFRAME, "[BOOTING UP...]", C3(1,1,1), Enum.FontSize.Size48, "Code", 0.5, 1, 1, "RunningTests")
+    					TEXT.TextXAlignment = "Left"
+    					TEXT.TextWrapped = true
+    					table.insert(GUISTEXT,TEXT)
+    				end
+    			end
+    			for i=0, 1, 0.1 / Animation_Speed do
+    				Swait()
+    				HELDWELD.C1 = Clerp(HELDWELD.C1, CF(0,0,0) * ANGLES(RAD(0),RAD(0),RAD(0)), 0.4)
+    				RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0, 0, 0) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    				Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    				RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.35, 0.15, -0.25) * ANGLES(RAD(160), RAD(-5), RAD(12)) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+    				LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.35, 0.15, -0.25) * ANGLES(RAD(160), RAD(5), RAD(-12)) * LEFTSHOULDERC0, 1 / Animation_Speed)
+    				RightHip.C0 = Clerp(RightHip.C0, CF(1, -1, 0) * ANGLES(RAD(0), RAD(85), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    				LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1, 0) * ANGLES(RAD(0), RAD(-85), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    			end
+    			for i=0, 0.1, 0.1 / Animation_Speed do
+    				Swait()
+    				RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0, 0, 0) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    				Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    				RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.5, 0.5, 0) * ANGLES(RAD(0), RAD(-5), RAD(0)) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+    				LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.5, 0.5, 0) * ANGLES(RAD(0), RAD(5), RAD(0)) * LEFTSHOULDERC0, 1 / Animation_Speed)
+    				RightHip.C0 = Clerp(RightHip.C0, CF(1, -1, 0) * ANGLES(RAD(0), RAD(85), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    				LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1, 0) * ANGLES(RAD(0), RAD(-85), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+    			end
+        		GLASSESWLD = HELDWELD
+    			ATTACK = false
+    			Rooted = false
+    			task.spawn(function()
+                    local ScreenConfigs = {
+                        { MeshID = "139838579317536", TargetPartName = "SCREEN", SearchInModelOnly = false, Offset = CFrame.new(0, 0, 0) * CFrame.Angles(0, 0, 0) },
+                        { MeshID = "139838579317536", TargetPartName = "SCREEN", SearchInModelOnly = false, Offset = CFrame.new(0, 0, 0) * CFrame.Angles(0, 0, 0) },
+                        { MeshID = "139838579317536", TargetPartName = "SCREEN", SearchInModelOnly = false, Offset = CFrame.new(0, 0, 0) * CFrame.Angles(0, 0, 0) },
+                        { MeshID = "139838579317536", TargetPartName = "SCREEN", SearchInModelOnly = false, Offset = CFrame.new(0, 0, 0) * CFrame.Angles(0, 0, 0) }
+                    }
+                
+                    local RockConfigs = {}
+                    for i = 1, 13 do
+                        table.insert(RockConfigs, { 
+                            MeshID = "12385538257", 
+                            TargetPartName = "Debree", 
+                            SearchInModelOnly = false, 
+                            Offset = CFrame.new(0, 0, 0) * CFrame.Angles(0, 0, 0) 
+                        })
+                    end
+                
+                    local RunService = game:GetService("RunService")
+                    
+                    local ActiveScreenSync = {}
+                    local ActiveRockSync = {}
+                    
+                    local UsedScreenTargets = {} 
+                    local UsedHats = {}    
+                    local HeartbeatConnection = nil
+                
+                    local function performCleanup()
+                        if HeartbeatConnection then
+                            HeartbeatConnection:Disconnect()
+                            HeartbeatConnection = nil
+                        end
+                        
+                        if ActiveScreenSync then table.clear(ActiveScreenSync) end
+                        if ActiveRockSync then table.clear(ActiveRockSync) end
+                        if UsedScreenTargets then table.clear(UsedScreenTargets) end
+                        if UsedHats then table.clear(UsedHats) end
+                        
+                        if SCREENS then
+                            for _, screenPart in pairs(SCREENS) do
+                                if screenPart and screenPart.Parent then screenPart:Destroy() end
+                            end
+                            table.clear(SCREENS)
+                        end
+                        
+                        if SCREENWELDS then
+                            for _, weld in pairs(SCREENWELDS) do
+                                if weld and weld.Parent then weld:Destroy() end
+                            end
+                            table.clear(SCREENWELDS)
+                        end
+                
+                        if character and character:FindFirstChild("Effects") then
+                            character.Effects:ClearAllChildren()
+                        end
+                    end
+                
+                    local ResetDetector = nil
+                    ResetDetector = game:GetService("Players").LocalPlayer.CharacterAdded:Connect(function(newCharacter)
+                        performCleanup()
+                        if ResetDetector then
+                            ResetDetector:Disconnect()
+                        end
+                    end)
+                
+                    local function findScreenTargetPart(config)
+                        for _, subChild in pairs(character:GetDescendants()) do
+                            if subChild.Name == config.TargetPartName and subChild:IsA("BasePart") then
+                                if not UsedScreenTargets[subChild] then
+                                    UsedScreenTargets[subChild] = true
+                                    return subChild
+                                end
+                            end
+                        end
+                        return nil
+                    end
+                
+                
+                    task.spawn(function()
+                        while #ActiveScreenSync < #ScreenConfigs do
+                            if not ResetDetector.Connected then return end
+                            
+                            for _, config in pairs(ScreenConfigs) do
+                                if not config.Activated then
+                                    local foundHandle = nil
+                                    
+                                    for _, acc in pairs(character:GetChildren()) do
+                                        if acc:IsA("Accessory") then
+                                            local handle = acc:FindFirstChild("Handle")
+                                            if handle and not UsedHats[handle] then 
+                                                local mesh = handle:FindFirstChildOfClass("SpecialMesh")
+                                                local currentId = handle:IsA("MeshPart") and handle.MeshId or (mesh and mesh.MeshId or "")
+                                                
+                                                if string.find(tostring(currentId), config.MeshID) then
+                                                    foundHandle = handle
+                                                    break
+                                                end
+                                            end
+                                        end
+                                    end
+                                    
+                                    if foundHandle then
+                                        local targetPart = findScreenTargetPart(config)
+                                        if targetPart then
+                                            UsedHats[foundHandle] = true 
+                                            
+                                            foundHandle:BreakJoints()
+                                            foundHandle.CanCollide = false
+                                            foundHandle.Massless = true
+                                            
+                                            config.Activated = true
+                                            
+                                            table.insert(ActiveScreenSync, {
+                                                HatHandle = foundHandle,
+                                                TargetPart = targetPart,
+                                                Offset = config.Offset
+                                            })
+                                        end
+                                    end
+                                end
+                            end
+                            task.wait(0.2)
+                        end
+                    end)
+                
+                    task.spawn(function()
+                        while #ActiveRockSync < #RockConfigs do
+                            if not ResetDetector.Connected then return end
+                            
+                            for _, config in pairs(RockConfigs) do
+                                if not config.Activated then
+                                    local foundHandle = nil
+                                    
+                                    for _, acc in pairs(character:GetChildren()) do
+                                        if acc:IsA("Accessory") then
+                                            local handle = acc:FindFirstChild("Handle")
+                                            if handle and not UsedHats[handle] then 
+                                                local mesh = handle:FindFirstChildOfClass("SpecialMesh")
+                                                local currentId = handle:IsA("MeshPart") and handle.MeshId or (mesh and mesh.MeshId or "")
+                                                
+                                                if string.find(tostring(currentId), config.MeshID) then
+                                                    foundHandle = handle
+                                                    break
+                                                end
+                                            end
+                                        end
+                                    end
+                                    
+                                    if foundHandle then
+                                        UsedHats[foundHandle] = true 
+                                        
+                                        foundHandle:BreakJoints()
+                                        foundHandle.CanCollide = false
+                                        foundHandle.Massless = true
+                                        
+                                        config.Activated = true
+                                        
+                                        table.insert(ActiveRockSync, {
+                                            HatHandle = foundHandle,
+                                            Offset = config.Offset
+                                        })
+                                    end
+                                end
+                            end
+                            task.wait(0.2)
+                        end
+                    end)
+                
+                
+                    HeartbeatConnection = RunService.Heartbeat:Connect(function()
+                        
+                        for _, syncData in pairs(ActiveScreenSync) do
+                            local hat = syncData.HatHandle
+                            local target = syncData.TargetPart
+                            
+                            if hat and hat.Parent and target and target.Parent then
+                                hat.CFrame = target.CFrame * syncData.Offset
+                                hat.Velocity = Vector3.new(0, 35, 0)
+                                pcall(function()
+                                    hat.AssemblyLinearVelocity = Vector3.new(0, 35, 0)
+                                end)
+                            end
+                        end
+                
+                        local availableDebreeList = {}
+                        if character and character.Parent then
+                            for _, subChild in pairs(character:GetDescendants()) do
+                                if subChild.Name == "Debree" and subChild:IsA("BasePart") then
+                                    table.insert(availableDebreeList, subChild)
+                                end
+                            end
+                        end
+                
+                        local fallbackPart = character:FindFirstChild("Torso")
+                        local fallbackCFrame = nil
+                        if fallbackPart then
+                            fallbackCFrame = fallbackPart.CFrame * CFrame.new(0, -5, 0)
+                        end
+                
+                        for i, syncData in pairs(ActiveRockSync) do
+                            local hat = syncData.HatHandle
+                            if hat and hat.Parent then
+                                local targetPart = availableDebreeList[i]
+                
+                                if targetPart and targetPart.Parent then
+                                    hat.CFrame = targetPart.CFrame * syncData.Offset
+                                elseif fallbackCFrame then
+                                    hat.CFrame = fallbackCFrame
+                                end
+                
+                                hat.Velocity = Vector3.new(0, 35, 0)
+                                pcall(function()
+                                    hat.AssemblyLinearVelocity = Vector3.new(0, 35, 0)
+                                end)
+                            end
+                        end
+                    end)
+                end)
+                print("Server admin accessory sync running")
+    		end
+    	end)
+    end
+    
+
+    function Screening(Text,FinishesMoveEnd,WaitTillFinished)
+        if reanimated == true then
+        	local SCREEN = CreatePart(3, Effects, "Neon", 0, 1, BRICKC("Cyan"), "SCREEN", VT(2.5,0.8,0)*1.5, false)
+        	local SCREENWELD = CreateWeldOrSnapOrMotor("Weld", RootPart, RootPart, SCREEN, CF(0,0,0) * ANGLES(RAD(-12),RAD(180),RAD(0)) * CF(0,0,1.5), CF(0,0,0))
+        	local GUI = IT("SurfaceGui",SCREEN)
+        	local SCREENFRAME = CreateFrame(GUI, 1, 2, UD2(0, 0, 0, 0), UD2(1, 0, 1, 0), C3(0,0,0), C3(0,0,0), "TESTING.exe")
+        	local TEXT = CreateLabel(SCREENFRAME, Text, C3(1,1,1), Enum.FontSize.Size48, "Code", 0.5, 1, 1, "RunningTests")
+        	TEXT.TextScaled = true
+        	coroutine.resume(coroutine.create(function()
+        		coroutine.resume(coroutine.create(function()
+        			for i = 1, 5 do
+        				Swait()
+        				SCREEN.Transparency = SCREEN.Transparency - 0.1/5
+        			end
+        		end))
+        		if WaitTillFinished == false then
+        			for i=0, 1.7, 0.1 / Animation_Speed do
+        				Swait()
+        				RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0 - 0.04 * COS(SINE / 24), 0, 0 + 0.05 * COS(SINE / 12)) * ANGLES(RAD(0), RAD(0 - 2.5 * COS(SINE / 24)), RAD(0)), 1 / Animation_Speed)
+        				Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(15 - 7 * COS(SINE / 12)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        				RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.3, 0.45 + 0.1 * COS(SINE / 12), -0.2) * ANGLES(RAD(45), RAD(0), RAD(-15)) * ANGLES(RAD(0), RAD(15), RAD(0)) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+        				LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.1, 0.35 + 0.1 * COS(SINE / 12), 0.2) * ANGLES(RAD(-44 - 1.5 * COS(SINE / 12)), RAD(0), RAD(45)) * ANGLES(RAD(0), RAD(-25), RAD(0)) * LEFTSHOULDERC0, 1 / Animation_Speed)
+        				RightHip.C0 = Clerp(RightHip.C0, CF(1, -1 + 0.035 * COS(SINE / 24) - 0.05 * COS(SINE / 12), 0) * ANGLES(RAD(0), RAD(85), RAD(0)) * ANGLES(RAD(-2 - 2.5 * COS(SINE / 24)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        				LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1 - 0.035 * COS(SINE / 24) - 0.05 * COS(SINE / 12), 0) * ANGLES(RAD(0), RAD(-85), RAD(0)) * ANGLES(RAD(-2 + 2.5 * COS(SINE / 24)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        			end
+        		elseif WaitTillFinished == true then
+        			repeat
+        				Swait()
+        				RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0 - 0.04 * COS(SINE / 24), 0, 0 + 0.05 * COS(SINE / 12)) * ANGLES(RAD(0), RAD(0 - 2.5 * COS(SINE / 24)), RAD(0)), 1 / Animation_Speed)
+        				Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(15 - 7 * COS(SINE / 12)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        				RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.3, 0.45 + 0.1 * COS(SINE / 12), -0.2) * ANGLES(RAD(45), RAD(0), RAD(-15)) * ANGLES(RAD(0), RAD(15), RAD(0)) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+        				LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.1, 0.35 + 0.1 * COS(SINE / 12), 0.2) * ANGLES(RAD(-44 - 1.5 * COS(SINE / 12)), RAD(0), RAD(45)) * ANGLES(RAD(0), RAD(-25), RAD(0)) * LEFTSHOULDERC0, 1 / Animation_Speed)
+        				RightHip.C0 = Clerp(RightHip.C0, CF(1, -1 + 0.035 * COS(SINE / 24) - 0.05 * COS(SINE / 12), 0) * ANGLES(RAD(0), RAD(85), RAD(0)) * ANGLES(RAD(-2 - 2.5 * COS(SINE / 24)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        				LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1 - 0.035 * COS(SINE / 24) - 0.05 * COS(SINE / 12), 0) * ANGLES(RAD(0), RAD(-85), RAD(0)) * ANGLES(RAD(-2 + 2.5 * COS(SINE / 24)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        			until ATTACK == false
+        		end
+        		coroutine.resume(coroutine.create(function()
+        			SCREENWELD:Remove()
+        			SCREEN.Anchored = true
+        			for i = 1, 5 do
+        				Swait()
+        				SCREEN.Transparency = SCREEN.Transparency + 0.1/5
+        			end
+        			SCREEN:Remove()
+        		end))
+        		if FinishesMoveEnd == true then
+        			ATTACK = false
+        			Rooted = false
+        		end
+        	end))
+        	return SCREEN,TEXT
+        end
+    end
+    local Fling = function()
+        if reanimated == true then
+        	ATTACK = true
+        	Rooted = false
+        	Screening(";Fling",true,false)
+        	wait(0.25)
+        	RightShoulder.C0 = RightShoulder.C0 * CF(0,-0.12,0)
+        	CreateSound(138204323, RightArm, 2, 1.3, false)
+        	local HITFLOOR,HITPOS = Raycast(RootPart.Position, (CF(RootPart.Position, RootPart.Position + VT(0, -1, 0))).lookVector, 4, Character and character)
+        	if HITFLOOR then
+        		Debree({Delay = 4,Variant = "Ring",Location = HITPOS,Color = HITFLOOR.Color,Size = 4,Distance = 75,Material = HITFLOOR.Material,Scatter = 1,Amount = MRANDOM(75,85),DebreeCount = 8})
+        	end
+        	ApplyAoE(RootPart.Position-VT(0,4,0),75,5,12,550,false)
+        	WACKYEFFECT({Time = 35, EffectType = "Sphere", Size = VT(0,0,0), Size2 = VT(150,150,150), Transparency = 0.75, Transparency2 = 1, CFrame = CF(RootPart.Position), MoveToPos = nil, RotationX = 0, RotationY = 0, RotationZ = 0, Material = "Neon", Color = C3(1,1,1), SoundID = 610359590, SoundPitch = 1, SoundVolume = 6, UseBoomerangMath = true, Boomerang = 0, SizeBoomerang = 5})
+        	
+        	wait(1)
+        	flinging = false
+        	
+        end
+    end
+    local TpTo = function()
+        if reanimated == true then
+        	ATTACK = true
+        	Rooted = true
+        	
+        	teleporting = true
+        	
+        	local SCR, TEXT = Screening("",false,true)
+        	for i = 1, 35 do
+        		Swait()
+        		local TPSPOT = "TPTO: ["..math.ceil(Mouse.Hit.p.X).."."..math.ceil(Mouse.Hit.p.Y+3.15).."."..math.ceil(Mouse.Hit.p.Z).."]"
+        		TEXT.Text = TPSPOT
+        	end
+        	RightShoulder.C0 = RightShoulder.C0 * CF(0,-0.12,0)
+        	CreateSound(138204323, RightArm, 2, 1.3, false)
+        	CreateSound(1127492102, Torso, 2, 1, false)
+        	RootPart.CFrame = CF(Mouse.Hit.p+VT(0,3.15,0)) * ANGLES(RAD(0), RAD(RootPart.Orientation.Y), RAD(0))
+        	reanimation:FindFirstChildWhichIsA("Humanoid").WalkToPoint = RootPart.CFrame.Position
+        	ATTACK = false
+            Rooted = false
+        end
+    end
+    local Hurl = function()
+        if reanimated == true then
+        	ATTACK = true
+        	Rooted = false
+        	local SCREEN = CreatePart(3, Effects, "Neon", 0, 1, BRICKC("Cyan"), "SCREEN", VT(2.5,0.8,0)*1.5, false)
+        	local SCREENWELD = CreateWeldOrSnapOrMotor("Weld", RootPart, RootPart, SCREEN, CF(0,0,0) * ANGLES(RAD(-12),RAD(180),RAD(0)) * CF(0,0,1.5), CF(0,0,0))
+        	local GUI = IT("SurfaceGui",SCREEN)
+        	local SCREENFRAME = CreateFrame(GUI, 1, 2, UD2(0, 0, 0, 0), UD2(1, 0, 1, 0), C3(0,0,0), C3(0,0,0), "TESTING.exe")
+        	local TEXT = CreateLabel(SCREENFRAME, "[COLLECTING DEBREE]", C3(1,1,1), Enum.FontSize.Size48, "Code", 0.5, 1, 1, "RunningTests")
+        	local ROCKS = {}
+        	coroutine.resume(coroutine.create(function()
+        		for i = 1, 5 do
+        			Swait()
+        			SCREEN.Transparency = SCREEN.Transparency - 0.1/5
+        		end
+        	end))
+        	for i = 1, 12 do
+        		local SPOT = CF(RootPart.Position) * ANGLES(RAD(0), RAD(MRANDOM(0,360)), RAD(0)) * CF(0,0,MRANDOM(4,15))
+        		local HITFLOOR,HITPOS = Raycast(RootPart.Position, (CF(RootPart.Position, RootPart.Position + VT(0, -1, 0))).lookVector, 4, Character and character)
+        		if HITFLOOR then
+        			coroutine.resume(coroutine.create(function()
+        				local BOULDER = CreatePart(3, Effects, HITFLOOR.Material, 0, 0, BRICKC("Cyan"), "Debree", VT(1,1,1)*(MRANDOM(5,25)/10), true)
+        				BOULDER.Color = HITFLOOR.Color
+        				BOULDER.CFrame = CF(HITPOS-VT(0,5,0)) * ANGLES(RAD(0), RAD(MRANDOM(0,360)), RAD(0))
+        				local CFRAME = SPOT*CF(0,MRANDOM(7,12),0)
+        				table.insert(ROCKS,BOULDER)
+        				for i = 1, 35 do
+        					Swait()
+        					BOULDER.CFrame = Clerp(BOULDER.CFrame,CFRAME,0.1)
+        				end
+        			end))
+        		end
+        	end
+        	for i=0, 1.7, 0.1 / Animation_Speed do
+        		Swait()
+        		RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0 - 0.04 * COS(SINE / 24), 0, 0 + 0.05 * COS(SINE / 12)) * ANGLES(RAD(0), RAD(0 - 2.5 * COS(SINE / 24)), RAD(0)), 1 / Animation_Speed)
+        		Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(15 - 7 * COS(SINE / 12)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        		RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.3, 0.75 + 0.1 * COS(SINE / 12), -0.1) * ANGLES(RAD(145), RAD(0), RAD(-15)) * ANGLES(RAD(0), RAD(15), RAD(0)) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+        		LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.1, 0.35 + 0.1 * COS(SINE / 12), 0.2) * ANGLES(RAD(-44 - 1.5 * COS(SINE / 12)), RAD(0), RAD(45)) * ANGLES(RAD(0), RAD(-25), RAD(0)) * LEFTSHOULDERC0, 1 / Animation_Speed)
+        		RightHip.C0 = Clerp(RightHip.C0, CF(1, -1 + 0.035 * COS(SINE / 24) - 0.05 * COS(SINE / 12), 0) * ANGLES(RAD(0), RAD(85), RAD(0)) * ANGLES(RAD(-2 - 2.5 * COS(SINE / 24)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        		LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1 - 0.035 * COS(SINE / 24) - 0.05 * COS(SINE / 12), 0) * ANGLES(RAD(0), RAD(-85), RAD(0)) * ANGLES(RAD(-2 + 2.5 * COS(SINE / 24)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        	end
+        	if #ROCKS > 0 then
+        		TEXT.Text = "[HURLING DEBREE]"
+        		local GYRO = IT("BodyGyro",RootPart)
+        		GYRO.D = 2
+        		GYRO.P = 20000
+        		GYRO.MaxTorque = VT(0,4000000,0)
+        		GYRO.CFrame = CF(RootPart.Position,Mouse.Hit.p)
+        		coroutine.resume(coroutine.create(function()
+        			repeat
+        				Swait()
+        				GYRO.CFrame = CF(RootPart.Position,Mouse.Hit.p)
+        			until ATTACK == false
+        			GYRO:Remove()
+        		end))
+        		local THROWING = true
+        		coroutine.resume(coroutine.create(function()
+        			repeat
+        				Swait()
+        				RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0 - 0.04 * COS(SINE / 24), 0, 0 + 0.05 * COS(SINE / 12)) * ANGLES(RAD(0), RAD(0 - 2.5 * COS(SINE / 24)), RAD(25)), 1 / Animation_Speed)
+        				Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(15 - 7 * COS(SINE / 12)), RAD(0), RAD(-25)), 1 / Animation_Speed)
+        				RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.3, 0.45 + 0.1 * COS(SINE / 12), -0.2) * ANGLES(RAD(90), RAD(0), RAD(25)) * ANGLES(RAD(0), RAD(15), RAD(0)) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+        				LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.3, 0.45 + 0.1 * COS(SINE / 12), -0.2) * ANGLES(RAD(44 - 1.5 * COS(SINE / 12)), RAD(0), RAD(25)) * ANGLES(RAD(0), RAD(-25), RAD(0)) * LEFTSHOULDERC0, 1 / Animation_Speed)
+        				RightHip.C0 = Clerp(RightHip.C0, CF(1, -1 + 0.035 * COS(SINE / 24) - 0.05 * COS(SINE / 12), 0) * ANGLES(RAD(0), RAD(50), RAD(0)) * ANGLES(RAD(-2 - 2.5 * COS(SINE / 24)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        				LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1 - 0.035 * COS(SINE / 24) - 0.05 * COS(SINE / 12), 0) * ANGLES(RAD(0), RAD(-100), RAD(0)) * ANGLES(RAD(-2 + 2.5 * COS(SINE / 24)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        			until THROWING == false
+        		end))
+        		for E = 1, #ROCKS do
+        			wait(0.05)
+        			local ROCK = ROCKS[E]
+        			coroutine.resume(coroutine.create(function()
+        				ROCK.CFrame = CF(ROCK.Position,Mouse.Hit.p)
+        				CreateSound(147722227, ROCK, 2, 1.3, false)
+        				local KILL = false
+        				for i = 1, 70 do
+        					Swait()
+        					for i = 1, 4 do
+        						ROCK.CFrame = ROCK.CFrame * CF(0,0,-ROCK.Size.Z/2)
+        						local HIT,POS,NORMAL = Raycast(ROCK.Position,ROCK.CFrame.lookVector,ROCK.Size.Z/1.5,Character)
+        						if HIT then
+        							KILL = true
+        							CreateSound(174580476, ROCK, 2, 1.6, false)
+        							ApplyAoE(ROCK.Position,6*ROCK.Size.Z,25,35,12,false)
+        							for E = 1, 2 do
+        								for i = 1, 4 do
+        									WACKYEFFECT({Time = 50, EffectType = "Round Slash", Size = VT(0,0,0), Size2 = (VT(E,0,E)/15)*ROCK.Size.Z, Transparency = 0.8, Transparency2 = 1, CFrame = CF(ROCK.Position) * ANGLES(RAD(MRANDOM(0,360)), RAD(MRANDOM(0,360)), RAD(MRANDOM(0,360))), MoveToPos = nil, RotationX = 0, RotationY = 0, RotationZ = 0, Material = "Neon", Color = C3(1,1,1), SoundID = nil, SoundPitch = nil, SoundVolume = nil, UseBoomerangMath = true, Boomerang = 0, SizeBoomerang = 10})
+        								end
+        							end
+        							Debree({Delay = 0.8,Variant = "Loose",Location = ROCK.Position,Color = ROCK.Color,Size = ROCK.Size.Z/3,Distance = 75,Material = ROCK.Material,Scatter = 35,Amount = MRANDOM(75,85),DebreeCount = 8})
+        							break
+        						else
+        							WACKYEFFECT({Time = 6, EffectType = "Wave", Size = VT(0,0,0), Size2 = VT(3,1,3)*ROCK.Size.Z, Transparency = 0.97, Transparency2 = 1, CFrame = ROCK.CFrame*CF(0,0,-ROCK.Size.Z/2) * ANGLES(RAD(90), RAD(MRANDOM(0,360)), RAD(MRANDOM(-5,5))), MoveToPos = nil, RotationX = MRANDOM(-1,1), RotationY = MRANDOM(-1,1), RotationZ = MRANDOM(-1,1), Material = "Neon", Color = BRICKC"Cyan".Color, SoundID = nil, SoundPitch = MRANDOM(5,15)/10, SoundVolume = 5, UseBoomerangMath = true, Boomerang = 0, SizeBoomerang = 25})
+        						end
+        					end
+        					if KILL == true then
+        						break
+        					end
+        				end
+        				ROCK.Transparency = 1
+        				Debris:AddItem(ROCK,5)
+        			end))
+        			wait(0.05)
+        		end
+        		THROWING = false
+        	end
+        	coroutine.resume(coroutine.create(function()
+        		SCREENWELD:Remove()
+        		SCREEN.Anchored = true
+        		for i = 1, 5 do
+        			Swait()
+        			SCREEN.Transparency = SCREEN.Transparency + 0.1/5
+        		end
+        		SCREEN:Remove()
+        	end))
+        	ATTACK = false
+        	Rooted = false
+        	
+        	wait(1)
+        	flinging = false
+        	
+        end
+    end
+    local Kill = function()
+        if reanimated == true then
+        	local TARGET = Mouse.Target
+        	if TARGET ~= nil then
+        		if TARGET.Parent:FindFirstChildOfClass("Humanoid") then
+        			local HUM = TARGET.Parent:FindFirstChildOfClass("Humanoid")
+        			local ROOT = HUM.Parent:FindFirstChild("Torso") or HUM.Parent:FindFirstChild("UpperTorso") 
+        			if ROOT then 
+        				local FOE = ROOT.Parent
+        				ATTACK = true
+        				Rooted = false
+        				Screening(";Kill",true,false)
+        				wait(0.25)
+        				RightShoulder.C0 = RightShoulder.C0 * CF(0,-0.12,0)
+        				CreateSound(138204323, RightArm, 2, 1.3, false)
+        				for index, CHILD in pairs(FOE:GetChildren()) do
+        					if CHILD:IsA("BasePart") then
+        						if CHILD.Name == "Head" then
+        							WACKYEFFECT({Time = MRANDOM(10,30), EffectType = "Box", Size = VT(CHILD.Size.Z,CHILD.Size.Y,CHILD.Size.Z), Size2 = VT(CHILD.Size.Z,CHILD.Size.Y,CHILD.Size.Z)*2, Transparency = CHILD.Transparency, Transparency2 = 1, CFrame = CHILD.CFrame, MoveToPos = nil, RotationX = 0, RotationY = 0, RotationZ = 0, RotationZ = 0, Material = "Neon", Color = C3(1,0,0), SoundID = nil, SoundPitch = nil, SoundVolume = nil, UseBoomerangMath = true, SizeBoomerang = 0, Boomerang = 50})
+        						elseif CHILD.Name ~= "HumanoidRootPart" then
+        							WACKYEFFECT({Time = MRANDOM(10,30), EffectType = "Box", Size = CHILD.Size, Size2 = CHILD.Size*2, Transparency = CHILD.Transparency, Transparency2 = 1, CFrame = CHILD.CFrame, MoveToPos = nil, RotationX = 0, RotationY = 0, RotationZ = 0, Material = "Neon", Color = C3(1,0,0), SoundID = nil, SoundPitch = nil, SoundVolume = nil, UseBoomerangMath = true, SizeBoomerang = 0, Boomerang = 35})
+        						end
+        					end
+        				end
+        				
+        				flinging = true
+        				GetCHILD(ROOT.Parent)
+        				wait(1)
+        				flinging = false
+        				
+        			end
+        		end
+        	end
+        end
+    end
+    local ATTAC = function()
+        if reanimated == true then
+        	ATTACK = true
+        	Rooted = false
+        	for i=0, 1, 0.1 / Animation_Speed do
+        		Swait()
+        		RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0, 0, 0) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+        		Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+        		RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.5, 0.5, 0) * ANGLES(RAD(0), RAD(-5), RAD(0)) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+        		LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.5, 0.5, 0) * ANGLES(RAD(0), RAD(5), RAD(0)) * LEFTSHOULDERC0, 1 / Animation_Speed)
+        		RightHip.C0 = Clerp(RightHip.C0, CF(1, -1, 0) * ANGLES(RAD(0), RAD(85), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+        		LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1, 0) * ANGLES(RAD(0), RAD(-85), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+        	end
+        	ATTACK = false
+        	Rooted = false
+        end
+    end
+    local LITTLEIDLE = false
+    function UniqueIdleAnimation()
+        if reanimated == true then
+        	coroutine.resume(coroutine.create(function()
+        		for i=0, 0.1, 0.1 / Animation_Speed do
+        			Swait()
+        			if ATTACK == true or ANIM ~= "Idle" then
+        				break
+        			end
+        			GLASSESWLD.C1 = Clerp(GLASSESWLD.C1, CF(0,0,0) * ANGLES(RAD(0),RAD(0),RAD(0)), 0.25)
+        			RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0 - 0.04 * COS(SINE / 24), 0, 0 + 0.05 * COS(SINE / 12)) * ANGLES(RAD(0), RAD(0 - 2.5 * COS(SINE / 24)), RAD(0)), 1 / Animation_Speed)
+        			Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+        			RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.1, 0.35 + 0.1 * COS(SINE / 12), 0.2) * ANGLES(RAD(-45 - 1.5 * COS(SINE / 12)), RAD(0), RAD(-45)) * ANGLES(RAD(0), RAD(25), RAD(0)) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+        			LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.25, 0.1, -0.3) * ANGLES(RAD(80), RAD(5), RAD(12)) * LEFTSHOULDERC0, 1 / Animation_Speed)
+        			RightHip.C0 = Clerp(RightHip.C0, CF(1, -1 + 0.035 * COS(SINE / 24) - 0.05 * COS(SINE / 12), 0) * ANGLES(RAD(0), RAD(85), RAD(0)) * ANGLES(RAD(-2 - 2.5 * COS(SINE / 24)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        			LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1 - 0.035 * COS(SINE / 24) - 0.05 * COS(SINE / 12), 0) * ANGLES(RAD(0), RAD(-85), RAD(0)) * ANGLES(RAD(-2 + 2.5 * COS(SINE / 24)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        		end
+        		for i=0, 0.4, 0.1 / Animation_Speed do
+        			Swait()
+        			if ATTACK == true or ANIM ~= "Idle" then
+        				break
+        			end
+        			GLASSESWLD.C1 = Clerp(GLASSESWLD.C1, CF(0,0,0) * ANGLES(RAD(0),RAD(0),RAD(0)), 0.25)
+        			RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0 - 0.04 * COS(SINE / 24), 0, 0 + 0.05 * COS(SINE / 12)) * ANGLES(RAD(0), RAD(0 - 2.5 * COS(SINE / 24)), RAD(0)), 1 / Animation_Speed)
+        			Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+        			RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.1, 0.35 + 0.1 * COS(SINE / 12), 0.2) * ANGLES(RAD(-45 - 1.5 * COS(SINE / 12)), RAD(0), RAD(-45)) * ANGLES(RAD(0), RAD(25), RAD(0)) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+        			LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.25, 0.1, -0.3) * ANGLES(RAD(160), RAD(5), RAD(12)) * LEFTSHOULDERC0, 1 / Animation_Speed)
+        			RightHip.C0 = Clerp(RightHip.C0, CF(1, -1 + 0.035 * COS(SINE / 24) - 0.05 * COS(SINE / 12), 0) * ANGLES(RAD(0), RAD(85), RAD(0)) * ANGLES(RAD(-2 - 2.5 * COS(SINE / 24)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        			LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1 - 0.035 * COS(SINE / 24) - 0.05 * COS(SINE / 12), 0) * ANGLES(RAD(0), RAD(-85), RAD(0)) * ANGLES(RAD(-2 + 2.5 * COS(SINE / 24)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        		end
+        		for i=0, 1.3, 0.1 / Animation_Speed do
+        			Swait()
+        			if ATTACK == true or ANIM ~= "Idle" then
+        				break
+        			end
+        			GLASSESWLD.C1 = Clerp(GLASSESWLD.C1, CF(0,0,0) * ANGLES(RAD(0),RAD(0),RAD(5)), 0.2 / Animation_Speed)
+        			RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0 - 0.04 * COS(SINE / 24), 0, 0 + 0.05 * COS(SINE / 12)) * ANGLES(RAD(0), RAD(0 - 2.5 * COS(SINE / 24)), RAD(0)), 1 / Animation_Speed)
+        			Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+        			RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.1, 0.35 + 0.1 * COS(SINE / 12), 0.2) * ANGLES(RAD(-45 - 1.5 * COS(SINE / 12)), RAD(0), RAD(-45)) * ANGLES(RAD(0), RAD(25), RAD(0)) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+        			LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.25, 0.15, -0.3) * ANGLES(RAD(160), RAD(5), RAD(12)) * LEFTSHOULDERC0, 0.2 / Animation_Speed)
+        			RightHip.C0 = Clerp(RightHip.C0, CF(1, -1 + 0.035 * COS(SINE / 24) - 0.05 * COS(SINE / 12), 0) * ANGLES(RAD(0), RAD(85), RAD(0)) * ANGLES(RAD(-2 - 2.5 * COS(SINE / 24)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        			LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1 - 0.035 * COS(SINE / 24) - 0.05 * COS(SINE / 12), 0) * ANGLES(RAD(0), RAD(-85), RAD(0)) * ANGLES(RAD(-2 + 2.5 * COS(SINE / 24)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        		end
+        		for i=0, 0.3, 0.1 / Animation_Speed do
+        			Swait()
+        			if ATTACK == true or ANIM ~= "Idle" then
+        				break
+        			end
+        			GLASSESWLD.C1 = Clerp(GLASSESWLD.C1, CF(0,0,0) * ANGLES(RAD(0),RAD(0),RAD(0)), 1 / Animation_Speed)
+        			RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0 - 0.04 * COS(SINE / 24), 0, 0 + 0.05 * COS(SINE / 12)) * ANGLES(RAD(0), RAD(0 - 2.5 * COS(SINE / 24)), RAD(0)), 1 / Animation_Speed)
+        			Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+        			RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.1, 0.35 + 0.1 * COS(SINE / 12), 0.2) * ANGLES(RAD(-45 - 1.5 * COS(SINE / 12)), RAD(0), RAD(-45)) * ANGLES(RAD(0), RAD(25), RAD(0)) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+        			LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.25, 0.05, -0.3) * ANGLES(RAD(160), RAD(5), RAD(12)) * LEFTSHOULDERC0, 1 / Animation_Speed)
+        			RightHip.C0 = Clerp(RightHip.C0, CF(1, -1 + 0.035 * COS(SINE / 24) - 0.05 * COS(SINE / 12), 0) * ANGLES(RAD(0), RAD(85), RAD(0)) * ANGLES(RAD(-2 - 2.5 * COS(SINE / 24)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        			LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1 - 0.035 * COS(SINE / 24) - 0.05 * COS(SINE / 12), 0) * ANGLES(RAD(0), RAD(-85), RAD(0)) * ANGLES(RAD(-2 + 2.5 * COS(SINE / 24)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        		end
+        		for i=0, 0.1, 0.1 / Animation_Speed do
+        			Swait()
+        			if ATTACK == true or ANIM ~= "Idle" then
+        				break
+        			end
+        			GLASSESWLD.C1 = Clerp(GLASSESWLD.C1, CF(0,0,0) * ANGLES(RAD(0),RAD(0),RAD(0)), 0.25)
+        			RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0 - 0.04 * COS(SINE / 24), 0, 0 + 0.05 * COS(SINE / 12)) * ANGLES(RAD(0), RAD(0 - 2.5 * COS(SINE / 24)), RAD(0)), 1 / Animation_Speed)
+        			Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(0), RAD(0), RAD(0)), 1 / Animation_Speed)
+        			RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.1, 0.35 + 0.1 * COS(SINE / 12), 0.2) * ANGLES(RAD(-45 - 1.5 * COS(SINE / 12)), RAD(0), RAD(-45)) * ANGLES(RAD(0), RAD(25), RAD(0)) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+        			LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.25, 0.1, -0.3) * ANGLES(RAD(80), RAD(5), RAD(12)) * LEFTSHOULDERC0, 1 / Animation_Speed)
+        			RightHip.C0 = Clerp(RightHip.C0, CF(1, -1 + 0.035 * COS(SINE / 24) - 0.05 * COS(SINE / 12), 0) * ANGLES(RAD(0), RAD(85), RAD(0)) * ANGLES(RAD(-2 - 2.5 * COS(SINE / 24)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        			LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1 - 0.035 * COS(SINE / 24) - 0.05 * COS(SINE / 12), 0) * ANGLES(RAD(0), RAD(-85), RAD(0)) * ANGLES(RAD(-2 + 2.5 * COS(SINE / 24)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        		end
+        		LITTLEIDLE = false
+        	end))
+        end
+    end
+    
+    
+    
+    
+    
+    local COLOR = C3(1,1,1)
+    local SKILLFONT = "Legacy"
+    local SIZE = 2.5
+    local MOUSE = 2097542191
+    local MELEE = 2097543015
+    local BODY = 2097543382
+    local PROJECTILE = 2097544084
+    local AOE = 2097544884
+    local ULTIMATE = 2097545381
+    
+    local ATTACKS = {{"Switch ScreenBehaviour","m"},{";Fling","z",AOE,Fling},{";TpTo","x",BODY,TpTo},{";Hurl","c",PROJECTILE,Hurl},{";Kill","v",MOUSE,Kill}}
+    local GUIS = {}
+    
+    for i = 1, #ATTACKS do
+    	local SKILLFRAME = CreateFrame(WEAPONGUI, 0.8, 2, UD2(1-(0.3*(SIZE/5)), 0, 1-((0.08*(SIZE/5))*i), 0), UD2(0.3*(SIZE/5), 0, 0.06*(SIZE/4), 0), C3(0,0,0), COLOR, "Skill Frame")
+    	local SKILLTEXT = CreateLabel(SKILLFRAME, "["..ATTACKS[i][1].."]", COLOR, SIZE, SKILLFONT, 0, 2, 0, "Skill text")
+    	SKILLTEXT.TextXAlignment = "Right"
+    	local BUTTONDISPLAY = CreateLabel(SKILLFRAME, "["..string.upper(ATTACKS[i][2]).."]", COLOR, SIZE-1, SKILLFONT, 0, 2, 0, "Skill text")
+    	BUTTONDISPLAY.TextXAlignment = "Left"
+    	if ATTACKS[i][3] then
+    		local IMAGETODISPLAY = IT("ImageLabel",SKILLFRAME)
+    		IMAGETODISPLAY.Image = "rbxassetid://"..ATTACKS[i][3]
+    		IMAGETODISPLAY.Size = UD2(0.2,0,1,0)
+    		IMAGETODISPLAY.Position = UD2(0.065,0,0,0)
+    		IMAGETODISPLAY.BackgroundTransparency = 1
+    		IMAGETODISPLAY.ZIndex = 0
+    	end
+    	table.insert(GUIS,SKILLTEXT)
+    end
+    
+    Mouse.Button1Down:connect(function(NEWKEY)
+    	
+    end)
+    Mouse.Button1Up:connect(function(NEWKEY)
+    	
+    end)
+    Mouse.KeyDown:connect(function(NEWKEY)
+    	KEYHOLD = true
+    	if NEWKEY == "m" then
+    		if SC == false then
+    			SC = true
+    		else
+    			SC = false
+    		end
+    	end
+    	if ATTACK == false then
+    		for E = 1, #ATTACKS do
+    			if ATTACKS[E][4] ~= nil then
+    				if NEWKEY == ATTACKS[E][2] then
+    					ATTACKS[E][4]()
+    				end
+    			end
+    		end
+    	end
+    end)
+    Mouse.KeyUp:connect(function(NEWKEY)
+    	KEYHOLD = false
+    end)
+    
+    
+    
+    
+    function unanchor()
+    	for _, c in pairs(Character:GetChildren()) do
+    		if c:IsA("BasePart") and c ~= RootPart then
+    			c.Anchored = false
+    		end
+    	end
+    	if UNANCHOR == true then
+    		RootPart.Anchored = false
+    	else
+    		RootPart.Anchored = true
+    	end
+    end
+    
+    
+    
+    
+    
+    Humanoid.Changed:connect(function(Jump)
+    	if Jump == "Jump" and (Disable_Jump == true) then
+    		Humanoid.Jump = false
+    	end
+    end)
+    
+    local MOVINGSCREENS = false
+    local TIMESTAMP = 0
+    game:GetService('RunService').Stepped:Connect(function()
+        if reanimated == true then
+            Swait()
+        	
+        	
+        	for _,v in next, Humanoid:GetPlayingAnimationTracks() do
+        	    v:Stop();
+        	end
+        	SINE = SINE + CHANGE
+        	local TORSOVELOCITY = (RootPart.Velocity * VT(1, 0, 1)).magnitude
+        	local TORSOVERTICALVELOCITY = RootPart.Velocity.y
+        	local HITFLOOR = Raycast(RootPart.Position, (CF(RootPart.Position, RootPart.Position + VT(0, -1, 0))).lookVector, 4, Character and character)
+        	local WALKSPEEDVALUE = 8 / (Humanoid.WalkSpeed / 16)
+        	if ANIM == "Walk" and TORSOVELOCITY > 1 then
+        		RootJoint.C1 = Clerp(RootJoint.C1, ROOTC0 * CF(0, 0, 0.1 * COS(SINE / (WALKSPEEDVALUE/2))) * ANGLES(RAD(0), RAD(0), RAD(0)), 2 * (Humanoid.WalkSpeed / 16) / Animation_Speed)
+        		Neck.C1 = Clerp(Neck.C1, CF(0, -0.5, 0) * ANGLES(RAD(-90), RAD(0), RAD(180)) * ANGLES(RAD(0), RAD(0), RAD(0) - Head.RotVelocity.Y / 30), 0.2 * (Humanoid.WalkSpeed / 16) / Animation_Speed)
+        		RightHip.C1 = Clerp(RightHip.C1, CF(0.5, 0.875 - 0.125 * SIN(SINE / WALKSPEEDVALUE) - 0.15 * COS(SINE / WALKSPEEDVALUE*2), 0.25 * SIN(SINE / WALKSPEEDVALUE)) * ANGLES(RAD(0), RAD(90), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(10+50 * COS(SINE / WALKSPEEDVALUE))), 0.6 / Animation_Speed)
+        		LeftHip.C1 = Clerp(LeftHip.C1, CF(-0.5, 0.875 + 0.125 * SIN(SINE / WALKSPEEDVALUE) - 0.15 * COS(SINE / WALKSPEEDVALUE*2), -0.25 * SIN(SINE / WALKSPEEDVALUE)) * ANGLES(RAD(0), RAD(-90), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(-10+50 * COS(SINE / WALKSPEEDVALUE))), 0.6 / Animation_Speed)
+        	elseif (ANIM ~= "Walk") or (TORSOVELOCITY < 1) then
+        		RootJoint.C1 = Clerp(RootJoint.C1, ROOTC0 * CF(0, 0, 0) * ANGLES(RAD(0), RAD(0), RAD(0)), 0.2 / Animation_Speed)
+        		Neck.C1 = Clerp(Neck.C1, CF(0, -0.5, 0) * ANGLES(RAD(-90), RAD(0), RAD(180)) * ANGLES(RAD(0), RAD(0), RAD(0)), 0.2 / Animation_Speed)
+        		RightHip.C1 = Clerp(RightHip.C1, CF(0.5, 1, 0) * ANGLES(RAD(0), RAD(90), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(0)), 0.7 / Animation_Speed)
+        		LeftHip.C1 = Clerp(LeftHip.C1, CF(-0.5, 1, 0) * ANGLES(RAD(0), RAD(-90), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(0)), 0.7 / Animation_Speed)
+        	end
+        	if TORSOVERTICALVELOCITY > 1 and HITFLOOR == nil then 
+        		ANIM = "Jump"
+        		if ATTACK == false then
+        			RootJoint.C0 = Clerp(RootJoint.C0, ROOTC0 * CF(0, 0, 0) * ANGLES(RAD(-5), RAD(0), RAD(0)), 1 / Animation_Speed)
+        			Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0 , 0 + ((1) - 1)) * ANGLES(RAD(-25), RAD(0), RAD(0)), 1 / Animation_Speed)
+        			RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.5, 0.5, 0) * ANGLES(RAD(-35), RAD(0), RAD(25 + 10 * COS(SINE / 12))) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+        			LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.5, 0.5, 0) * ANGLES(RAD(-35), RAD(0), RAD(-25 - 10 * COS(SINE / 12))) * LEFTSHOULDERC0, 1 / Animation_Speed)
+        			RightHip.C0 = Clerp(RightHip.C0, CF(1, -0.4, -0.6) * ANGLES(RAD(1), RAD(90), RAD(0)) * ANGLES(RAD(-1 * SIN(SINE / 6)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        			LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1, 0) * ANGLES(RAD(0), RAD(-85), RAD(0)) * ANGLES(RAD(-1 * SIN(SINE / 6)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        		end
+        	elseif TORSOVERTICALVELOCITY < -1 and HITFLOOR == nil then 
+        		ANIM = "Fall"
+        		if ATTACK == false then
+        			RootJoint.C0 = Clerp(RootJoint.C0, ROOTC0 * CF(0, 0, 0) * ANGLES(RAD(15), RAD(0), RAD(0)), 1 / Animation_Speed)
+        			Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0 , 0 + ((1) - 1)) * ANGLES(RAD(15), RAD(0), RAD(0)), 1 / Animation_Speed)
+        			RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.5, 0.5, 0) * ANGLES(RAD(35 - 4 * COS(SINE / 6)), RAD(0), RAD(45 + 10 * COS(SINE / 12))) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+        			LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.5, 0.5, 0) * ANGLES(RAD(35 - 4 * COS(SINE / 6)), RAD(0), RAD(-45 - 10 * COS(SINE / 12))) * LEFTSHOULDERC0, 1 / Animation_Speed)
+        			RightHip.C0 = Clerp(RightHip.C0, CF(1, -0.3, -0.7) * ANGLES(RAD(-25 + 5 * SIN(SINE / 12)), RAD(90), RAD(0)) * ANGLES(RAD(-1 * SIN(SINE / 6)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        			LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -0.8, -0.3) * ANGLES(RAD(-10), RAD(-80), RAD(0)) * ANGLES(RAD(-1 * SIN(SINE / 6)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        		end
+        	elseif TORSOVELOCITY < 1 and HITFLOOR ~= nil then
+        		ANIM = "Idle"
+        		if ATTACK == false then
+        			if MRANDOM(1,650) == 1 and LITTLEIDLE == false then
+        				LITTLEIDLE = true
+        				UniqueIdleAnimation()
+        			end
+        			if LITTLEIDLE == false then
+        				RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0 - 0.04 * COS(SINE / 24), 0, 0 + 0.05 * COS(SINE / 12)) * ANGLES(RAD(0), RAD(0 - 2.5 * COS(SINE / 24)), RAD(0)), 1 / Animation_Speed)
+        				Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(3 - 7 * COS(SINE / 12)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        				RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.1, 0.35 + 0.1 * COS(SINE / 12), 0.2) * ANGLES(RAD(-45 - 1.5 * COS(SINE / 12)), RAD(0), RAD(-45)) * ANGLES(RAD(0), RAD(25), RAD(0)) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+        				LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.1, 0.35 + 0.1 * COS(SINE / 12), 0.2) * ANGLES(RAD(-44 - 1.5 * COS(SINE / 12)), RAD(0), RAD(45)) * ANGLES(RAD(0), RAD(-25), RAD(0)) * LEFTSHOULDERC0, 1 / Animation_Speed)
+        				RightHip.C0 = Clerp(RightHip.C0, CF(1, -1 + 0.035 * COS(SINE / 24) - 0.05 * COS(SINE / 12), 0) * ANGLES(RAD(0), RAD(85), RAD(0)) * ANGLES(RAD(-2 - 2.5 * COS(SINE / 24)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        				LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1 - 0.035 * COS(SINE / 24) - 0.05 * COS(SINE / 12), 0) * ANGLES(RAD(0), RAD(-85), RAD(0)) * ANGLES(RAD(-2 + 2.5 * COS(SINE / 24)), RAD(0), RAD(0)), 1 / Animation_Speed)
+        			end
+        		end
+        	elseif TORSOVELOCITY > 1 and HITFLOOR ~= nil then
+        		ANIM = "Walk"
+        		if ATTACK == false then
+        			RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0, 0, -0.05) * ANGLES(RAD(5), RAD(0), RAD(-7 * COS(SINE / (WALKSPEEDVALUE)))), 1 / Animation_Speed)
+        			Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(5 - 1 * SIN(SINE / (WALKSPEEDVALUE / 2))), RAD(0), RAD(7 * COS(SINE / (WALKSPEEDVALUE)))), 1 / Animation_Speed)
+        			RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.5, 0.5, 0) * ANGLES(RAD(60 * COS(SINE / WALKSPEEDVALUE)), RAD(-5), RAD(5)) * RIGHTSHOULDERC0, 1 / Animation_Speed)
+        			LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.5, 0.5, 0) * ANGLES(RAD(-60 * COS(SINE / WALKSPEEDVALUE)), RAD(5), RAD(-5)) * LEFTSHOULDERC0, 1 / Animation_Speed)
+        			RightHip.C0 = Clerp(RightHip.C0, CF(1 , -1, 0) * ANGLES(RAD(0), RAD(85), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(0)), 2 / Animation_Speed)
+        			LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1, 0) * ANGLES(RAD(0), RAD(-85), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(0)), 2 / Animation_Speed)
+        		end
+        	end
+        	unanchor()
+        	Humanoid.MaxHealth = 1e3
+        	Humanoid.Health = 1e3
+        	if Rooted == false then
+        		Disable_Jump = false
+        		Humanoid.WalkSpeed = Speed
+        	elseif Rooted == true then
+        		Disable_Jump = true
+        		Humanoid.WalkSpeed = 0
+        	end
+        	BMUSIC.SoundId = SONGID
+        	BMUSIC.Looped = true
+        	BMUSIC.Pitch = PITCH
+        	BMUSIC.Volume = VOLUME
+        	BMUSIC.Playing = PLAYING
+        	BMUSIC.EmitterSize = 50
+        	if BMUSIC.Parent ~= RootPart then
+        		print("Fixing music")
+        		BMUSIC = IT("Sound",RootPart)
+        		BMUSIC.SoundId = SONGID
+        		BMUSIC.Looped = true
+        		BMUSIC.Pitch = PITCH
+        		BMUSIC.Volume = VOLUME
+        		BMUSIC.Playing = true
+        		BMUSIC.EmitterSize = 50
+        		BMUSIC.TimePosition = TIMESTAMP
+        		FIXING = true
+        	else
+        		if FIXING == false then
+        			TIMESTAMP = BMUSIC.TimePosition
+        		else
+        			FIXING = false
+        		end
+        	end
+        	if Head:FindFirstChild("face") then
+        		Head.face.Texture = "rbxassetid://62682458"
+        	end
+        	Humanoid.Name = "ADMIN"
+        	if INTRO == false and ATTACK == false then
+        		INTRO = true
+        		coroutine.resume(coroutine.create(function()
+        			IntroThing()
+        		end))
+        	end
+        	if #SCREENS > 0 then
+        		for E = 1, #SCREENS do
+        			SCREENS[E].Transparency = MRANDOM(90,99)/100
+        		end
+        	end
+        	if #SCREENWELDS > 0 then
+        		if SC == true then
+        			if MRANDOM(1,75) == 1 and MOVINGSCREENS == false then
+        				MOVINGSCREENS = true
+        				coroutine.resume(coroutine.create(function()
+        					wait(1)
+        					MOVINGSCREENS = false
+        				end))
+        				for E = 1, #SCREENWELDS do
+        					coroutine.resume(coroutine.create(function()
+        						local MATH1 = MRANDOM(-25,25)/10+1
+        						local MATH2 = MRANDOM(-45,45)
+        						for i = 1, 55 do
+        							Swait()
+        							SCREENWELDS[E].C0 = Clerp(SCREENWELDS[E].C0, CF(0,MATH1,0) * ANGLES(RAD(0), RAD(MATH2+180), RAD(0)) * CF(0,0,3+(E/1.5)),0.1)
+        						end
+        					end))
+        				end
+        			end
+        		elseif SC == false then
+        			for E = 1, #SCREENWELDS do
+        				if E == 1 then
+        					SCREENWELDS[E].C0 = Clerp(SCREENWELDS[E].C0, CF(0,-1 + 0.05 * COS(SINE / 12),0) * ANGLES(RAD(0), RAD(-40+180), RAD(0)) * CF(0,0,3.4),0.1)
+        				elseif E == 2 then
+        					SCREENWELDS[E].C0 = Clerp(SCREENWELDS[E].C0, CF(0,-1 + 0.05 * SIN(SINE / 12),0) * ANGLES(RAD(0), RAD(40+180), RAD(0)) * CF(0,0,3.4),0.1)
+        				elseif E == 3 then
+        					SCREENWELDS[E].C0 = Clerp(SCREENWELDS[E].C0, CF(0,1.3 + 0.05 * SIN(SINE / 12),0) * ANGLES(RAD(0), RAD(-38+180), RAD(0)) * CF(0,0,3.4),0.1)
+        				elseif E == 4 then
+        					SCREENWELDS[E].C0 = Clerp(SCREENWELDS[E].C0, CF(0,1.3 + 0.05 * COS(SINE / 12),0) * ANGLES(RAD(0), RAD(38+180), RAD(0)) * CF(0,0,3.4),0.1)
+        				end
+        			end
+        		end
+        	end
+        	local SECONDS = math.floor(workspace.DistributedGameTime)
+        	local MINUTES = math.floor(workspace.DistributedGameTime/60)
+        	local HOURS = math.floor(workspace.DistributedGameTime/60/60)
+        	local SECONDS = SECONDS - (MINUTES * 60)
+        	local MINUTES = MINUTES - (HOURS * 60)
+        	if #GUISTEXT > 0 then
+        		for E = 1, #GUISTEXT do
+        			local TXT = GUISTEXT[E]
+        			if E == 1 then
+        				TXT.Text = "SERVER STATS;"
+        			elseif E == 2 then
+        				TXT.Text = "SERVER TIME = ["..SECONDS..":"..MINUTES..":"..HOURS.."]"
+        			elseif E == 3 then
+        				TXT.Text = "WORKSPACE GRAVITY = ["..workspace.Gravity.."]"
+        			elseif E == 4 then
+        				TXT.Text = "SERVER JOBID = ["..game.JobId.."]"
+        			elseif E == 5 then
+        				TXT.Text = "SERVER VERSION = ["..game.PlaceVersion.."]"
+        			end
+        		end
+        	end
+        	local SPACEJECTS = {}
+        	for index, CHILD in pairs(workspace:GetChildren()) do
+        		table.insert(SPACEJECTS,CHILD)
+        	end
+        	table.insert(SPACEJECTS,game.Lighting)
+        	table.insert(SPACEJECTS,game.Workspace)
+        	local MALWARE = {"BlurEffect","BloomEffect","Fire","ParticleEmitter","Smoke"}
+        	if #GUISTEXT > 0 then
+        		if MRANDOM(1,125) == 1 then
+        			for E = 1, #GUISTEXT do
+        				local TXT = GUISTEXT[E]
+        				local TEXT = ""
+        				local DOINGS = {"MONITORING","CHECKING"}
+        				local OLDTEXT = string.sub(TXT.Text,3)
+        				if E > 5 then
+        					if E <= 15 then
+        						if MRANDOM(1,3) == 1 then
+        							repeat
+        								local MONITORME = SPACEJECTS[MRANDOM(1,#SPACEJECTS)]
+        								if MRANDOM(1,2) == 1 then
+        									TEXT = DOINGS[MRANDOM(1,#DOINGS)].."; ["..MONITORME.Name.."]..."
+        									for Z = 1, #MALWARE do
+        										if MONITORME:FindFirstChildOfClass(MALWARE[Z]) then
+        											TEXT = "!FOUND MALICIOUS CONTENT IN ["..MONITORME.Name.."]; FOUND: ["..MALWARE[Z].."]"
+        											if TEXT ~= OLDTEXT then
+        												CreateSound(136075117, TXT.Parent.Parent, 0.6, MRANDOM(8,12)/10)
+        											end
+        											TXT.TextColor3 = C3(1,0,0)
+        											break
+        										else
+        											TXT.TextColor3 = C3(1,1,1)
+        										end
+        									end
+        									break
+        								end
+        								if MRANDOM(1,6) == 1 and TXT.TextColor3 == C3(1,1,1) then
+        									local ES = {"SUCCES.","!FAILURE!"}
+        									TEXT = "TESTING FILE #"..MRANDOM(100,999).." ["..ES[MRANDOM(1,#ES)].."]"
+        								end
+        							until TEXT ~= ""
+        							local DESIREDTEXT = ">>"..TEXT
+        							TXT.Text = DESIREDTEXT
+        						end
+        					elseif E > 15 then
+        						local N = E-15
+        						local POP = 0
+        						repeat
+        							for index, CHILD in pairs(game:GetService("Players"):GetChildren()) do
+        								POP = POP + 1
+        								if POP == N then
+        									TEXT = "MONITORING USER; ".."["..CHILD.Name.."]..."
+        									break
+        								else
+        									TEXT = "NOP"
+        								end
+        							end
+        						until TEXT ~= ""
+        						if TEXT ~= "NOP" then
+        							local DESIREDTEXT = ">>"..TEXT
+        							TXT.Text = DESIREDTEXT
+        						else
+        							TXT.Text = ""
+        						end
+        					end
+        				end
+        			end
+        		end
+        	end
+        end
+    end)
+    
+    
+    
+    
+    while reanimated == true do
+        Positioning()
+    end
+    
+    
+    
+    
+    
+    
+end
+
+
+
+
+local function Information(title, description, scaled)
+    
+    
+    local Information = Instance.new("Frame")
+    local DescriptionFrame = Instance.new("Frame")
+    local Description = Instance.new("TextLabel")
+    local Title = Instance.new("TextLabel")
+    
+    
+    
+    Information.Name = "Information"
+    Information.Parent = MainFrame
+    Information.Active = true
+    Information.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+    Information.Position = UDim2.new(1.02117348, 0, -0.000556112325, 0)
+    Information.Selectable = true
+    Information.Size = UDim2.new(0, 240, 0, 238)
+    
+    DescriptionFrame.Name = "DescriptionFrame"
+    DescriptionFrame.Parent = Information
+    DescriptionFrame.Active = true
+    DescriptionFrame.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+    DescriptionFrame.Position = UDim2.new(0, 0, 0.276556075, 0)
+    DescriptionFrame.Selectable = true
+    DescriptionFrame.Size = UDim2.new(0, 240, 0, 159)
+    
+    Description.Name = "Description"
+    Description.Parent = DescriptionFrame
+    Description.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Description.BackgroundTransparency = 1.000
+    Description.Position = UDim2.new(0.0170000009, 0, 0.016, 0)
+    Description.Size = UDim2.new(0, 233, 0, 154)
+    Description.Font = Enum.Font.SourceSans
+    Description.Text = description
+    Description.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Description.TextScaled = scaled
+    Description.TextSize = 20.000
+    Description.TextWrapped = true
+    Description.TextXAlignment = Enum.TextXAlignment.Left
+    Description.TextYAlignment = Enum.TextYAlignment.Top
+    
+    Title.Name = "Title"
+    Title.Parent = Information
+    Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Title.BackgroundTransparency = 1.000
+    Title.Position = UDim2.new(0, 0, 0.0350000001, 0)
+    Title.Size = UDim2.new(0, 240, 0, 41)
+    Title.Font = Enum.Font.SourceSans
+    Title.Text = title
+    Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+    Title.TextScaled = true
+    Title.TextSize = 14.000
+    Title.TextWrapped = true
+end
+
+
+local function ResetGUI()
+    
+    game.CoreGui:FindFirstChild("ResetGUIValue").Value = true
+    
+    
+    local Resetting = Instance.new("ScreenGui")
+    local MFReset = Instance.new("Frame")
+    local TextFrame = Instance.new("Frame")
+    local ResetText = Instance.new("TextLabel")
+    
+    Resetting.Name = "Resetting"
+    Resetting.Parent = game.CoreGui
+    Resetting.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    
+    MFReset.Name = "MFReset"
+    MFReset.Parent = Resetting
+    MFReset.Active = true
+    MFReset.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+    MFReset.Position = UDim2.new(-0.25, 0, 0.00999999978, 0)
+    MFReset.Selectable = true
+    MFReset.Size = UDim2.new(0, 271, 0, 91)
+    
+    TextFrame.Name = "TextFrame"
+    TextFrame.Parent = MFReset
+    TextFrame.Active = true
+    TextFrame.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+    TextFrame.BorderSizePixel = 0
+    TextFrame.Position = UDim2.new(0, 0, 0.127000004, 0)
+    TextFrame.Selectable = true
+    TextFrame.Size = UDim2.new(0, 271, 0, 68)
+    
+    ResetText.Name = "ResetText"
+    ResetText.Parent = TextFrame
+    ResetText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    ResetText.BackgroundTransparency = 1.000
+    ResetText.Position = UDim2.new(0.0544351302, 0, 0.178778589, 0)
+    ResetText.Size = UDim2.new(0, 241, 0, 45)
+    ResetText.Font = Enum.Font.SourceSans
+    ResetText.Text = "Press Shift + R to reset."
+    ResetText.TextColor3 = Color3.fromRGB(255, 255, 255)
+    ResetText.TextScaled = true
+    ResetText.TextSize = 20.000
+    ResetText.TextWrapped = true
+    
+    
+    local player = game:GetService("Players").LocalPlayer
+    local character = player.Character
+    local model = character:FindFirstChild("FakeCharacter").Reanimation
+    local reanimation = model
+    
+    
+    
+    MFReset:TweenPosition(UDim2.new(0.408, 0, 0.01, 0), "Out", "Quad", 1, false)
+    game.Players.LocalPlayer.Character = model
+    wait(2.5)
+    game.Players.LocalPlayer.Character = character
+    wait(1.5)
+    MFReset:TweenPosition(UDim2.new(1.25, 0, 0.01, 0), "In", "Quad", 1, false)
+    wait(1.5)
+    if character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+        character:BreakJoints()
+    end
+    character.Humanoid.AutoRotate = false
+    reanimation.Humanoid.WalkSpeed = 16
+    reanimation.Humanoid.JumpPower = 50
+    character.Humanoid.WalkSpeed = 16
+    character.Humanoid.JumpPower = 50
+    if character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+        character.Humanoid.BreakJointsOnDeath = false
+        for i,v in pairs(character:GetDescendants()) do
+            if v:IsA("Motor6D") and v.Parent.Parent.Name ~= "Reanimation" then
+                v:Destroy()
+            end
+            
+            if v.Name == "Handle" and v.Parent.Parent.Name ~= "Reanimation" then
+                v:FindFirstChildWhichIsA("Weld"):Destroy()
+            end
+        end
+    end
+    Resetting:Destroy()
+end
+
+
+
+local function R6FakeCharacter()
+    
+    local player = game:GetService("Players").LocalPlayer
+    local character = player.Character
+    local hrp = character.HumanoidRootPart
+    local torso = character.Torso
+    local glassesList = "VarietyShades02", "e"
+
+    for i,v in pairs(character:GetChildren()) do
+        if v:IsA("LocalScript") then
+            v:Destroy()
+        end
+    end
+    
+    local camera = workspace.CurrentCamera
+    
+    local reanimFolder = Instance.new("Folder", character)
+    reanimFolder.Name = "FakeCharacter"
+    
+    local model = Instance.new("Model", reanimFolder)
+    model.Name = "Reanimation"
+    
+    
+    
+    for i,v in pairs(character:GetChildren()) do
+        if v:IsA("Part") or v:IsA("BodyColors") or v.Name == "Humanoid" then 
+            local clone = v:Clone()
+            clone.Parent = model
+            if clone:FindFirstChildWhichIsA("Decal") then
+                clone:FindFirstChildWhichIsA("Decal"):Destroy()
+            end
+            if clone:FindFirstChildWhichIsA("Sound") then
+               clone:FindFirstChildWhichIsA("Sound"):Destroy() 
+            end
+        end
+    end
+    
+    
+    local reanimation = reanimFolder.Reanimation
+    local cTorso = reanimation.Torso
+    local cHRP = reanimation.HumanoidRootPart
+
+    cTorso["Right Shoulder"].Part0 = cTorso
+    cTorso["Right Shoulder"].Part1 = reanimation["Right Arm"]
+    
+    cTorso["Left Shoulder"].Part0 = cTorso
+    cTorso["Left Shoulder"].Part1 = reanimation["Left Arm"]
+    
+    cTorso["Right Hip"].Part0 = cTorso
+    cTorso["Right Hip"].Part1 = reanimation["Right Leg"]
+    
+    cTorso["Left Hip"].Part0 = cTorso
+    cTorso["Left Hip"].Part1 = reanimation["Left Leg"]
+    
+    cTorso.Neck.Part0 = cTorso
+    cTorso.Neck.Part1 = reanimation.Head
+    
+    reanimation.Humanoid.DisplayDistanceType = "None"
+    reanimation.Humanoid.Health = 0
+    
+    cHRP.RootJoint.Part0 = cHRP
+    cHRP.RootJoint.Part1 = cTorso
+    
+    reanimation.PrimaryPart = character.Head
+    
+    
+    reanimation.Humanoid.WalkSpeed = 0
+    reanimation.Humanoid.JumpPower = 0
+    character.Humanoid.WalkSpeed = 0
+    character.Humanoid.JumpPower = 0
+    
+    
+    for i,v in pairs(reanimation:GetChildren()) do
+        if v:IsA("Part") and v.Name ~= "HumanoidRootPart" then
+            v.Transparency = 1
+        end
+    end
+    
+    
+    if bot == false then
+        for i,v in pairs(character:GetChildren()) do
+            if v:IsA("Accessory") then
+                local clone = v:Clone()
+                local weld = v.Handle:FindFirstChildWhichIsA("Weld")
+                local weldPart1 = weld.Part1
+                local newWeld = Instance.new("Weld", clone.Handle)
+                local CFrame0 = v.Handle.AccessoryWeld.C0
+                local CFrame1 = v.Handle.AccessoryWeld.C1
+                
+                clone.Parent = reanimation
+                newWeld.Name = "AccessoryWeld"
+                newWeld.C0 = CFrame0
+                newWeld.C1 = CFrame1
+                newWeld.Part0 = clone.Handle
+                newWeld.Part1 = reanimation:FindFirstChild(weldPart1.Name)
+                clone.Handle.Transparency = 1
+            end
+        end
+    elseif character:FindFirstChild(glassesList) then
+        local g = character:FindFirstChild(glassesList)
+        local clone = g:Clone()
+        local weld = g.Handle:FindFirstChildWhichIsA("Weld")
+        local weldPart1 = weld.Part1
+        local newWeld = Instance.new("Weld", clone.Handle)
+        local CFrame0 = g.Handle.AccessoryWeld.C0
+        local CFrame1 = g.Handle.AccessoryWeld.C1
+        
+        clone.Parent = reanimation
+        newWeld.Name = "AccessoryWeld"
+        newWeld.C0 = CFrame0
+        newWeld.C1 = CFrame1
+        newWeld.Part0 = clone.Handle
+        newWeld.Part1 = reanimation:FindFirstChild(weldPart1.Name)
+        clone.Handle.Transparency = 1
+    end
+end
+
+local function R15FakeCharacter()
+    
+    local player = game:GetService("Players").LocalPlayer
+    local character = player.Character
+    local hrp = character.HumanoidRootPart
+    
+
+    for i,v in pairs(character:GetChildren()) do
+        if v:IsA("LocalScript") then
+            v:Destroy()
+        end
+    end
+    
+    local camera = workspace.CurrentCamera
+    
+    local reanimFolder = Instance.new("Folder", character)
+    reanimFolder.Name = "FakeCharacter"
+    
+    local model = Instance.new("Model", reanimFolder)
+    model.Name = "Reanimation"
+    
+    local userInputService = game:GetService("UserInputService")
+    local movingW, movingA, movingS, movingD, jumping = false
+    
+    
+    
+    local cHead = Instance.new("Part", model)
+    cHead.Size = Vector3.new(2, 1, 1)
+    cHead.Name = "Head"
+    
+    
+    
+    local cTorso = Instance.new("Part", model)
+    cTorso.Size = Vector3.new(2, 2, 1)
+    cTorso.Name = "Torso"
+    
+    
+    
+    local cLArm = Instance.new("Part", model)
+    cLArm.Size = Vector3.new(1, 2, 1)
+    cLArm.Name = "Left Arm"
+    
+    
+    
+    local cRArm = Instance.new("Part", model)
+    cRArm.Size = Vector3.new(1, 2, 1)
+    cRArm.Name = "Right Arm"
+    
+    
+    
+    local cLLeg = Instance.new("Part", model)
+    cLLeg.Size = Vector3.new(1, 2, 1)
+    cLLeg.Name = "Left Leg"
+    
+    
+    
+    local cRLeg = Instance.new("Part", model)
+    cRLeg.Size = Vector3.new(1, 2, 1)
+    cRLeg.Name = "Right Leg"
+    
+    
+    
+    local cHRP = Instance.new("Part", model)
+    cHRP.Size = Vector3.new(2, 2, 1)
+    cHRP.Name = "HumanoidRootPart"
+    cHRP.Transparency = 1
+    cHRP.CanCollide = false
+    
+    
+    for i,v in pairs(model:GetChildren()) do
+        if v:IsA("Part") and v.Name ~= "HumanoidRootPart" then
+            v.Transparency = 1
+        end
+    end
+    
+    
+    
+    local rShoulder = Instance.new("Motor6D", cTorso)
+    rShoulder.Part0 = cTorso
+    rShoulder.Part1 = cRArm
+    rShoulder.Name = "Right Shoulder"
+    rShoulder.C0 = CFrame.new(1, 0.5, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+    rShoulder.C1 = CFrame.new(-0.5, 0.5, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+    
+    
+    local lShoulder = Instance.new("Motor6D", cTorso)
+    lShoulder.Part0 = cTorso
+    lShoulder.Part1 = cLArm
+    lShoulder.Name = "Left Shoulder"
+    lShoulder.C0 = CFrame.new(-1, 0.5, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+    lShoulder.C1 = CFrame.new(0.5, 0.5, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+    
+    
+    local rHip = Instance.new("Motor6D", cTorso)
+    rHip.Part0 = cTorso
+    rHip.Part1 = cRLeg
+    rHip.Name = "Right Hip"
+    rHip.C0 = CFrame.new(1, -1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+    rHip.C1 = CFrame.new(0.5, 1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+    
+    
+    local lHip = Instance.new("Motor6D", cTorso)
+    lHip.Part0 = cTorso
+    lHip.Part1 = cLLeg
+    lHip.Name = "Left Hip"
+    lHip.C0 = CFrame.new(-1, -1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+    lHip.C1 = CFrame.new(-0.5, 1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+    
+    
+    local neck = Instance.new("Motor6D", cTorso)
+    neck.Part0 = cTorso
+    neck.Part1 = cHead
+    neck.Name = "Neck"
+    neck.C0 = CFrame.new(0, 1, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0)
+    neck.C1 = CFrame.new(0, -0.5, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0)
+    
+    
+    local rootJoint = Instance.new("Motor6D", cHRP)
+    rootJoint.Part0 = cHRP
+    rootJoint.Part1 = cTorso
+    rootJoint.Name = "RootJoint"
+    rootJoint.C0 = CFrame.new(0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0)
+    rootJoint.C1 = CFrame.new(0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0)
+    
+    
+    local cHumanoid = Instance.new("Humanoid", model)
+    cHumanoid.DisplayDistanceType = "None"
+    
+    
+    local headMesh = Instance.new("SpecialMesh", cHead)
+    headMesh.Scale = Vector3.new(1.25, 1.25, 1.25)
+    
+    local reanimation = model
+    
+    
+    if permaDeath == true then
+        for i,v in pairs(character:GetChildren()) do
+            if v:IsA("Accessory") then
+                local clone = v:Clone()
+                local weld = v.Handle:FindFirstChildWhichIsA("Weld")
+                local weldPart1 = weld.Part1
+                local newWeld = Instance.new("Weld", clone.Handle)
+                local CFrame0 = v.Handle.AccessoryWeld.C0
+                local CFrame1 = v.Handle.AccessoryWeld.C1
+                
+                clone.Handle:FindFirstChild("AccessoryWeld"):Destroy()
+                clone.Parent = reanimation
+                newWeld.Name = "AccessoryWeld"
+                newWeld.C0 = CFrame0
+                newWeld.C1 = CFrame1
+                newWeld.Part0 = clone.Handle
+                newWeld.Part1 = character:FindFirstChild(weldPart1.Name)
+                clone.Handle.Transparency = 1
+            end
+        end
+    end
+    
+    cHRP.CFrame = hrp.CFrame
+end
+
+local function ReanimationMovement()
+    
+    local player = game:GetService("Players").LocalPlayer
+    local character = player.Character
+    local reanimation = character:WaitForChild("FakeCharacter").Reanimation
+    local camera = workspace.CurrentCamera
+    
+    local userInputService = game:GetService("UserInputService")
+    local movingW, movingA, movingS, movingD, jumping = false
+    
+    userInputService.InputBegan:Connect(function(key, chatting)
+        if reanimated == true then
+            
+            if key.KeyCode == Enum.KeyCode.Space and not chatting then
+                jumping = true
+            end
+            
+            
+            if key.KeyCode == Enum.KeyCode.W and not chatting then
+                movingW = true
+            end
+            
+            if key.KeyCode == Enum.KeyCode.A and not chatting then
+                movingA = true
+            end
+            
+            if key.KeyCode == Enum.KeyCode.S and not chatting then
+                movingS = true
+            end
+             
+            if key.KeyCode == Enum.KeyCode.D and not chatting then
+                movingD = true
+            end
+            
+            
+            if key.KeyCode == Enum.KeyCode.LeftShift and not chatting then
+                pressingShift = true
+            end
+            
+            if key.KeyCode == Enum.KeyCode.R and not chatting and pressingShift == true then
+                player.Character = reanimation
+                reanimation:BreakJoints()
+                reanimated = false
+                if player.PlayerGui:FindFirstChild("Weapon GUI") then
+                    player.PlayerGui:FindFirstChild("Weapon GUI"):Destroy()
+                end
+                if bot == false and character.Humanoid.RigType ~= Enum.HumanoidRigType.R15 then
+                    if character:FindFirstChild("Head") then
+                        camera.CameraSubject = character.Head
+                    end
+                end
+                local args = {
+                	"cmd",
+                	"-re"
+                }
+                game:GetService("ReplicatedStorage"):WaitForChild("01_server"):FireServer(unpack(args))
+            end
+        end
+    end)
+    
+    userInputService.InputEnded:Connect(function(key, chatting)
+        if reanimated == true then
+            
+            if key.KeyCode == Enum.KeyCode.Space and not chatting then
+                jumping = false
+            end
+            
+            
+            if key.KeyCode == Enum.KeyCode.W and not chatting then
+                movingW = false
+            end
+            
+            if key.KeyCode == Enum.KeyCode.A and not chatting then
+                movingA = false
+            end
+            
+            if key.KeyCode == Enum.KeyCode.S and not chatting then
+                movingS = false
+            end
+             
+            if key.KeyCode == Enum.KeyCode.D and not chatting then
+                movingD = false
+            end
+            
+            
+            if key.KeyCode == Enum.KeyCode.LeftShift and not chatting then
+                pressingShift = false
+            end
+        end
+    end)
+    
+    
+    game:GetService('RunService').Stepped:Connect(function()
+        if reanimated == true then
+            
+            if movingW == true or movingA == true or movingS == true or movingD == true then
+                reanimation:FindFirstChildWhichIsA("Humanoid").WalkToPoint = character:FindFirstChildWhichIsA("Humanoid").MoveDirection * 10000
+            else
+                reanimation:FindFirstChildWhichIsA("Humanoid").WalkToPoint = reanimation.Torso.Position
+            end
+            
+            
+            if jumping == true then
+                reanimation:FindFirstChildWhichIsA("Humanoid").Jump = true
+            end
+            
+            
+            if not character:FindFirstChild("Humanoid") then
+                player.Character = nil
+                reanimated = false
+            end
+        end
+    end)
+end
+
+local function Loops()
+    
+    local player = game:GetService("Players").LocalPlayer
+    local character = player.Character
+    
+    game:GetService('RunService').Stepped:Connect(function()
+        if reanimated == true then
+            
+            for i,v in pairs(character:GetChildren()) do
+                if v:IsA("Part") or v:IsA("MeshPart") then 
+                    v.CanCollide = false
+                end
+            end
+        end
+    end)
+    
+    game:GetService("RunService").Heartbeat:Connect(function()
+        if reanimated == true then
+            
+            
+            for i,v in pairs(character:GetChildren()) do
+                
+                if (v:IsA("Part") or v:IsA("MeshPart")) and bot == false then
+                    v.Velocity = Vector3.new(-17.7, 0, -17.7)
+                end
+                
+                if v:IsA("Part") and v.Name == "HumanoidRootPart" then
+                    v.Velocity = Vector3.new(20, 0, 20)
+                end
+                
+                
+                if v:IsA("Accessory") then
+                    if bot == false then
+                        if character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+                            v.Handle.Velocity = Vector3.new(20, 0, 20)
+                        else
+                            v.Handle.Velocity = Vector3.new(40, 0, 40)
+                        end
+                    else
+                        if v.Name == botHats[1] or v.Name == botHats[2] or v.Name == botHats[3] or v.Name == botHats[4] or v.Name == botHats[7] or v.Name == botHats[8] then
+                            v.Handle.Velocity = Vector3.new(50, 0, 50)
+                        end
+                        
+                        if v.Name == botHats[5] or v.Name == botHats[6] then
+                            v.Handle.Velocity = Vector3.new(75, 0, 75)
+                        end
+                    end
+                end
+            end
+        end
+    end)
+end
+
+local function PermaDeath()
+    
+    
+    
+    local player = game:GetService("Players").LocalPlayer
+    local character = player.Character
+    local hrp = character.HumanoidRootPart
+    local camera = workspace.CurrentCamera
+    
+    permaDeath = true
+    
+    if character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+        R6FakeCharacter()
+    else
+        R15FakeCharacter()
+    end
+    
+    local reanimation = character:WaitForChild("FakeCharacter").Reanimation
+    
+    
+    if game.CoreGui.ResetGUIValue.Value == false then
+        ResetGUI()
+    else
+        game.Players.LocalPlayer.Character = reanimation
+        wait(2.5)
+        game.Players.LocalPlayer.Character = character
+        wait(3)
+        if character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+            character:BreakJoints()
+        end
+        character.Humanoid.AutoRotate = false
+        reanimation.Humanoid.WalkSpeed = 16
+        reanimation.Humanoid.JumpPower = 50
+        
+        character.Humanoid.WalkSpeed = 16
+        character.Humanoid.JumpPower = 50
+        if character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+            character.Humanoid.BreakJointsOnDeath = false
+            for i,v in pairs(character:GetDescendants()) do
+                if v:IsA("Motor6D") and v.Parent.Parent.Name ~= "Reanimation" then
+                    v:Destroy()
+                end
+                
+                if v.Name == "Handle" and v.Parent.Parent.Name ~= "Reanimation" then
+                    v:FindFirstChildWhichIsA("Weld"):Destroy()
+                end
+            end
+        end
+    end
+    
+    ReanimationMovement()
+    
+    Loops()
+    
+    camera.CameraSubject = reanimation:FindFirstChildWhichIsA("Humanoid")
+    
+    
+    ServerAdmin()
+end
+
+
+local function Bot()
+    
+    local player = game:GetService("Players").LocalPlayer
+    local character = player.Character
+    local hrp = character.HumanoidRootPart
+    local camera = workspace.CurrentCamera
+    
+    local glassesList = "VarietyShades02", "e"
+    
+    if character:FindFirstChild("Robloxclassicred") and (character:FindFirstChild("MediHood") or character:FindFirstChild("MeshPartAccessory")) and character:FindFirstChild("Hat1") and character:FindFirstChild("Pal Hair") and character:FindFirstChild("Kate Hair") and character:FindFirstChild("Pink Hair") and character:FindFirstChild("LavanderHair") then
+        if character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+            
+            NetlessServerAdmin:Destroy()
+            
+            bot = true        
+            
+            R6FakeCharacter()
+            
+            local reanimation = character.FakeCharacter.Reanimation
+            
+            
+            local function HatAlignment(ACCESSORY)
+                local name = ACCESSORY.Name
+                if ACCESSORY.Handle:FindFirstChildWhichIsA("SpecialMesh") and ACCESSORY.Name ~= "Head" and (name == botHats[1] or name == botHats[4] or name == botHats[5] or name == botHats[6] or name == botHats[7] or name == botHats[8]) then
+                    ACCESSORY.Handle:FindFirstChildWhichIsA("SpecialMesh"):Destroy()
+                end
+                if ACCESSORY.Handle:FindFirstChildWhichIsA("Weld") then
+                    ACCESSORY.Handle:FindFirstChildWhichIsA("Weld"):Destroy()
+                end
+                if ACCESSORY.Handle:FindFirstChildWhichIsA("Attachment") then
+                    ACCESSORY.Handle:FindFirstChildWhichIsA("Attachment"):Destroy()
+                end
+            end
+            
+            
+            if game.CoreGui.ResetGUIValue.Value == false then
+                ResetGUI()
+            else
+                game.Players.LocalPlayer.Character = reanimation
+                wait(2.5)
+                game.Players.LocalPlayer.Character = character
+                wait(3)
+                if character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+                    character:BreakJoints()
+                end
+                character.Humanoid.AutoRotate = false
+                reanimation.Humanoid.WalkSpeed = 16
+                reanimation.Humanoid.JumpPower = 50
+                character.Humanoid.WalkSpeed = 16
+                character.Humanoid.JumpPower = 50
+                if character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+                    character.Humanoid.BreakJointsOnDeath = false
+                    for i,v in pairs(character:GetDescendants()) do
+                        if v:IsA("Motor6D") and v.Parent.Parent.Name ~= "Reanimation" then
+                            v:Destroy()
+                        end
+                        
+                        if v.Name == "Handle" and v.Parent.Parent.Name ~= "Reanimation" then
+                            v:FindFirstChildWhichIsA("Weld"):Destroy()
+                        end
+                    end
+                end
+            end
+            
+            
+            for i,v in pairs(character:GetChildren()) do
+                if v:IsA("Accessory") then
+                    if v.Name == "Robloxclassicred" then
+                        v.Name = "Left Arm"
+                        botHats[1] = v.Name
+                    end
+                    
+                    if v.Name == "MediHood" then
+                        v.Name = "Head"
+                        botHats[2] = v.Name
+                    end
+    
+                    if v.Name == "MeshPartAccessory" and v.Handle:FindFirstChildWhichIsA("SpecialMesh").MeshId == "rbxassetid://4904532191" then
+                        v.Name = "Head"
+                        botHats[3] = v.Name
+                    end
+                    
+                    if v.Name == "Hat1" then
+                        v.Name = "Right Arm"
+                        botHats[4] = v.Name
+                    end
+                    
+                    if v.Name == "Pal Hair" then
+                        v.Name = "Left Leg"
+                        botHats[5] = v.Name
+                    end
+                    
+                    if v.Name == "Kate Hair" then
+                        v.Name = "Right Leg"
+                        botHats[6] = v.Name
+                    end
+                    
+                    if v.Name == "Pink Hair" then
+                        v.Name = "Torso1"
+                        botHats[7] = v.Name
+                    end
+                    
+                    if v.Name == "LavanderHair" then
+                        v.Name = "Torso2"
+                        botHats[8] = v.Name
+                    end
+                    
+                    HatAlignment(v)
+                end
+            end
+            
+            for i,v in pairs(character:GetChildren()) do
+                if v:IsA("Part") and v.Name ~= "HumanoidRootPart" then
+                    v:Destroy()
+                end
+            end
+            
+            ReanimationMovement()
+            
+            Loops()
+            
+            
+            character.Humanoid.AutoRotate = false
+            
+            camera.CameraSubject = reanimation:FindFirstChildWhichIsA("Humanoid")
+            
+            ServerAdmin()
+        end
+    end
+end
+
+
+
+local switching = false
+local currentTab = "Reanimation"
+
+local copiedLink = false
+
+
+Credits.MouseButton1Click:Connect(function()
+    if switching == false then
+        switching = true
+        Outline:TweenSizeAndPosition(
+            UDim2.new(0, 65, 0, 28), 
+            UDim2.new(0.022, 0, 0.105, 0), 
+            "In",
+            "Sine",
+            0.5,
+            false
+        )
+        
+        local frame = EverythingFrame
+        local scrollSpeed = 0
+        local add = 0
+        
+        if currentTab == "Reanimation" then
+            scrollSpeed = 3
+            add = 3
+        end
+        
+        if currentTab == "Info" then
+            scrollSpeed = 5
+            add = 5
+        end
+        
+        while true do
+            frame.CanvasPosition = Vector2.new(frame.CanvasPosition.X - scrollSpeed, 0)
+            
+            if frame.CanvasPosition.X > 159.5 then
+                scrollSpeed = scrollSpeed + add 
+            end
+            
+            if frame.CanvasPosition.X <= 0 then
+                currentTab = "Credits"
+                switching = false
+                break
+            end
+            wait()
+        end
+    end
+end)
+
+
+InfoButton.MouseButton1Click:Connect(function()
+    if switching == false then
+        switching = true
+        Outline:TweenSizeAndPosition(
+            UDim2.new(0, 47, 0, 28), 
+            UDim2.new(0.803, 0, 0.105, 0), 
+            "In",
+            "Sine",
+            0.5,
+            false
+        )
+        
+        local frame = EverythingFrame
+        local scrollSpeed = 0
+        local add = 0
+        
+        if currentTab == "Reanimation" then
+            scrollSpeed = 3
+            add = 3
+        end
+        
+        if currentTab == "Credits" then
+            scrollSpeed = 5
+            add = 5
+        end
+        
+        while true do
+            frame.CanvasPosition = Vector2.new(frame.CanvasPosition.X + scrollSpeed, 0)
+            
+            if frame.CanvasPosition.X < 478.5 then
+                scrollSpeed = scrollSpeed + add 
+            end
+            
+            if frame.CanvasPosition.X >= 638 then
+                currentTab = "Info"
+                switching = false
+                break
+            end
+            wait()
+        end
+    end
+end)
+
+
+Reanimation.MouseButton1Click:Connect(function()
+    if switching == false then
+        switching = true
+        Outline:TweenSizeAndPosition(
+            UDim2.new(0, 101, 0, 28), 
+            UDim2.new(0.335, 0, 0.105, 0), 
+            "In",
+            "Sine",
+            0.5,
+            false
+        )
+        
+        local frame = EverythingFrame
+        local scrollSpeed = 3
+        
+        while true do
+            if currentTab == "Credits" then
+                frame.CanvasPosition = Vector2.new(frame.CanvasPosition.X + scrollSpeed, 0)
+                
+                if frame.CanvasPosition.X < 159.5 then
+                    scrollSpeed = scrollSpeed + 3 
+                end
+                
+                if frame.CanvasPosition.X >= 319 then
+                    frame.CanvasPosition = Vector2.new(319, 0)
+                    currentTab = "Reanimation"
+                    switching = false
+                    break
+                end
+            end
+            
+            if currentTab == "Info" then
+                frame.CanvasPosition = Vector2.new(frame.CanvasPosition.X - scrollSpeed, 0)
+                
+                if frame.CanvasPosition.X > 478.5 then
+                    scrollSpeed = scrollSpeed + 3 
+                end
+                
+                if frame.CanvasPosition.X <= 319 then
+                    frame.CanvasPosition = Vector2.new(319, 0)
+                    currentTab = "Reanimation"
+                    switching = false
+                    break
+                end
+            end
+            wait()
+        end
+    end
+end)
+
+
+
+Discord.MouseButton1Click:Connect(function()
+    if copiedLink == false then
+        copiedLink = true
+        setclipboard("https://discord.gg/Hbq3TgAJbB")
+        CopiedLink:TweenPosition(
+            UDim2.new(0.185, 0, 0.545, 0), 
+            "Out",
+            "Back",
+            0.25,
+            true
+        )
+        wait(3)
+        CopiedLink:TweenPosition(
+            UDim2.new(0.185, 0, 0.747, 0), 
+            "Out",
+            "Back",
+            0.25,
+            true
+        )
+        wait(0.25)
+        copiedLink = false
+    end
+end)
+
+
+
+
+BotReanimation.MouseMoved:Connect(function()
+    if not MainFrame:FindFirstChild("Information") then
+        Information("Bot", [[bro no more Bot reanimation]], true)
+    end
+end)
+
+BotReanimation.MouseLeave:Connect(function()
+    if MainFrame:FindFirstChild("Information") then
+        MainFrame.Information:Destroy()
+    end
+end)
+
+
+PermanentReanimation.MouseMoved:Connect(function()
+    if not MainFrame:FindFirstChild("Information") then
+         Information("Perma Death", "This is a reanimation where you die permanently and teleport your body parts repeatedly to a 'fake character' that does all the animations.", false)
+    end
+end)
+
+PermanentReanimation.MouseLeave:Connect(function()
+    if MainFrame:FindFirstChild("Information") then
+        MainFrame.Information:Destroy()
+    end
+end)
+
+
+
+PermanentReanimation.MouseButton1Click:Connect(function()
+    if permaDeath == false then
+        
+        NetlessServerAdmin:Destroy()
+        
+        game:GetService("StarterGui"):SetCore("SendNotification", { 
+            Title = "Fe server admin";
+            Text = "Loading..Pls wait."})
+        
+        local args = {
+        	"cmd",
+        	"-gh 12930072742,12930072742,12930072742,12930072742,12930072742,12930072742,12930072742,12930072742,12930072742,12930072742,12930072742,12930072742"
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("01_server"):FireServer(unpack(args))
+        
+        wait(2)
+        
+        local args = {
+        	"cmd",
+        	"-gh 115500024733286 115500024733286 115500024733286 115500024733286"
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("01_server"):FireServer(unpack(args))
+        wait(2)
+        
+        local args = {
+        	"cmd",
+        	"-pd"
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("01_server"):FireServer(unpack(args))
+        wait(1)
+        
+        if _G.ToryJoystickRunning == true then
+            PermaDeath()
+        else
+        pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/move%20script%20WASD.lua"))()
+        end)
+        wait(1)
+        
+        PermaDeath()
+        
+        local args = {
+        	"cmd",
+        	"-net"
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("01_server"):FireServer(unpack(args))
+        end
+    end
+end)
