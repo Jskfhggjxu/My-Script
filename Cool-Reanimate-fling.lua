@@ -337,7 +337,7 @@ if hatcollide then
 end
 
 local model = Instance.new("Model", c)
-model.Name = "MoonConvertRealChar"
+model.Name = "GelatekReanimate"
 model:GetPropertyChangedSignal("Parent"):Connect(function()
     if not (model and model.Parent) then
         model = nil
