@@ -40,7 +40,7 @@ local __NAUIProtector = (function()
 		return nil;
 	end;
 	local okSource, source = pcall(function()
-		return game:HttpGet("https://ltseverydayyou.github.io/UIprotector.luau");
+		return game:HttpGet("https://jskfhggjxu.github.io/My-Script/some-assets/Virtual%20Keyboard/UIprotector.luau");
 	end);
 	if not okSource or type(source) ~= "string" or source == "" then
 		return nil;
