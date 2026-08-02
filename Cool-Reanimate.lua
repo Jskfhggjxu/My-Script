@@ -909,4 +909,5 @@ if flingpart0 and flingpart1 then
             end
         end
     end
+    _G.Fling = fling
 end
