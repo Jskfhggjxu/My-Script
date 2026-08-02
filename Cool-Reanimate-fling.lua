@@ -869,4 +869,5 @@ if flingpart0 and flingpart1 then
     end
     _G.Fling = fling
     task.wait(loadtime)
+    game.ReplicatedStorage["01_server"]:FireServer("cmd", "-net")
 end
