@@ -1,5 +1,3 @@
-game.ReplicatedStorage["01_server"]:FireServer("cmd", "-net")
-task.wait(0.2)
 --reanimate by MyWorld#4430 discord.gg/pYVHtSJmEY
 --the code that looks trash and works great
 local healthHide = false --moves your head away every 3 seconds so players dont see your health bar (alignmode 4 only)
@@ -869,10 +867,6 @@ if flingpart0 and flingpart1 then
             pcall(destroy, flingpart)
         end
     end
-
+    _G.Fling = fling
     task.wait(loadtime)
-
-    game:GetService('ReplicatedStorage'):WaitForChild('01_server'):FireServer('cmd', '-net ')
 end
-
-lp:GetMouse().Button1Down:Connect(fling)
