@@ -1,6 +1,6 @@
 local UserConfig = {
     ["YeImTory"] = {
-        Text = "Fe server admin owner",
+        Text = "Fe server admin modifier",
         TextColor = Color3.fromRGB(255, 215, 0),
         HighlightColor = Color3.fromRGB(255, 215, 0),
     },
@@ -75,7 +75,7 @@ end
 
 Players.PlayerAdded:Connect(onPlayerAdded)
 
-pcall(function()
+task.spawn(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/VirtualKeyboard.lua"))()
 end)
 if not isfolder("ToryAssets") then
@@ -1346,6 +1346,24 @@ local function ServerAdmin()
                     local UsedHats = {}    
                     local HeartbeatConnection = nil
                 
+                    local function setupSafety(handle)
+                        handle.CanCollide = false
+                        handle.Massless = true
+                        local attachment = handle:FindFirstChildOfClass("Attachment") or Instance.new("Attachment", handle)
+                        local alignPos = handle:FindFirstChild("SyncAlignPos")
+                        if not alignPos then
+                            alignPos = Instance.new("AlignPosition")
+                            alignPos.Name = "SyncAlignPos"
+                            alignPos.Mode = Enum.PositionAlignmentMode.OneAttachment
+                            alignPos.Attachment0 = attachment
+                            alignPos.MaxForce = math.huge
+                            alignPos.MaxVelocity = math.huge
+                            alignPos.Responsiveness = 500
+                            pcall(function() alignPos.RigidityEnabled = true end)
+                            alignPos.Parent = handle
+                        end
+                    end
+                
                     local function performCleanup()
                         if HeartbeatConnection then
                             HeartbeatConnection:Disconnect()
@@ -1428,6 +1446,7 @@ local function ServerAdmin()
                                             foundHandle:BreakJoints()
                                             foundHandle.CanCollide = false
                                             foundHandle.Massless = true
+                                            setupSafety(foundHandle) -- [防掉落] 绑定约束兜底
                                             
                                             config.Activated = true
                                             
@@ -1473,6 +1492,7 @@ local function ServerAdmin()
                                         foundHandle:BreakJoints()
                                         foundHandle.CanCollide = false
                                         foundHandle.Massless = true
+                                        setupSafety(foundHandle)
                                         
                                         config.Activated = true
                                         
@@ -1495,7 +1515,10 @@ local function ServerAdmin()
                             local target = syncData.TargetPart
                             
                             if hat and hat.Parent and target and target.Parent then
-                                hat.CFrame = target.CFrame * syncData.Offset
+                                local targetCF = target.CFrame * syncData.Offset
+                                hat.CFrame = targetCF
+                                local saPos = hat:FindFirstChild("SyncAlignPos")
+                                if saPos then saPos.Position = targetCF.Position end
                                 hat.Velocity = Vector3.new(0, 35, 0)
                                 pcall(function()
                                     hat.AssemblyLinearVelocity = Vector3.new(0, 35, 0)
@@ -1522,11 +1545,18 @@ local function ServerAdmin()
                             local hat = syncData.HatHandle
                             if hat and hat.Parent then
                                 local targetPart = availableDebreeList[i]
+                                local usedCF = nil
                 
                                 if targetPart and targetPart.Parent then
-                                    hat.CFrame = targetPart.CFrame * syncData.Offset
+                                    usedCF = targetPart.CFrame * syncData.Offset
                                 elseif fallbackCFrame then
-                                    hat.CFrame = fallbackCFrame
+                                    usedCF = fallbackCFrame
+                                end
+                
+                                if usedCF then
+                                    hat.CFrame = usedCF
+                                    local saPos = hat:FindFirstChild("SyncAlignPos")
+                                    if saPos then saPos.Position = usedCF.Position end
                                 end
                 
                                 hat.Velocity = Vector3.new(0, 35, 0)
