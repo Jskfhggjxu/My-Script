@@ -305,9 +305,18 @@ end
 
 local notified = { }
 
+local ignoredMonsters = {
+	["Vent Cover"] = true,
+	["Friend Part"] = true,
+}
+
 local function onMonster(obj)
 	if notified[obj] then return end
 	notified[obj] = true
+
+	if ignoredMonsters[obj.Name] then
+		return
+	end
 	
 	if obj:IsA("Part") then -- is node monster
 		table.insert(monsters, obj)
@@ -317,6 +326,10 @@ local function onMonster(obj)
 
 	if vals.NotifyMonsters then
 		task.spawn(lib.Notifications.Notification, lib.Notifications, { Title = "Monster spawned", Text = insertCum(obj.Name) })
+	end
+	
+	if vals.NotifyMonstersChat then
+		game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("[警告]" ..insertCum(obj.Name).. "已生成")
 	end
 	
 	if (obj.Name:lower():match("eyefestation") or obj.Parent.Name:lower():match("eyefestation")) and vals.AntiEyefestation then
@@ -537,7 +550,6 @@ end
 page:AddToggle({Caption = "自动躲藏", Default = false, Callback = function(b)
 	vals.AutoHide = b
 end})
-page:AddLabel({Caption = "注:请在使用虚拟朋友电话前请关闭这个，否则出现bug"})
 page:AddToggle({Caption = "自动躲藏时查看怪物", Default = false, Callback = function(b)
 	vals.SpectateEntity = b
 end})
@@ -560,8 +572,11 @@ page:AddSeparator()
 page:AddToggle({Caption = "秒互动", Default = false, Callback = function(b)
 	vals.InstantInteract = b
 end})
-page:AddToggle({Caption = "通知怪物(不是在聊天上)", Default = false, Callback = function(b)
+page:AddToggle({Caption = "通知怪物", Default = false, Callback = function(b)
 	vals.NotifyMonsters = b
+end})
+page:AddToggle({Caption = "聊天上通知怪物", Default = false, Callback = function(b)
+	vals.NotifyMonstersChat = b
 end})
 page:AddSlider({Caption = "额外的互动范围", Default = 0, Min = 0, Max = 100, Step = 0.25, Callback = function(b)
 	vals.ExtraPrompt = b
@@ -620,5 +635,3 @@ for i, v in vals.ESP do
         end
     }) 
 end
-
-local page = window:AddPage({Title = "整蛊(没东西)"})
