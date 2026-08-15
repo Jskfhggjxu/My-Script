@@ -1390,5 +1390,3 @@ Connect(Heartbeat, function()
 		StopAnim(Jason, Animations.Idle)
 	end
 end)
-
-print("Jason (Limb Reanimation v2) loaded in " .. string.sub(tostring(tick() - StartTime), 1, 5) .. "s")
