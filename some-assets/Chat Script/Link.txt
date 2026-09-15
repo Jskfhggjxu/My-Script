@@ -1,1 +1,1 @@
-https://wolf-vehicle-speed-laptops.trycloudflare.com
+https://api.trycloudflare.com
