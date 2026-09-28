@@ -3781,6 +3781,93 @@ local VFXPostConn = nil
 local ActiveVFX = nil
 local IsSitting=false
 
+-- ===== [[FIX-B2]] kill real-body animation + humanoid, only while Running =====
+local BodyFix_Active=false
+local BodyFix_Conn=nil
+
+local function BodyFix_Apply(char)
+	if not char then return end
+	-- stop the default Animate script so the engine stops feeding animation tracks
+	pcall(function()
+		local a=char:FindFirstChild("Animate")
+		if a then a.Disabled=true end
+		for _,v in ipairs(char:GetDescendants()) do
+			if (v:IsA("LocalScript") or v:IsA("Script")) and (v.Name=="Animate" or v.Name=="Animate2") then
+				v.Disabled=true
+			end
+		end
+	end)
+	local hum=char:FindFirstChildOfClass("Humanoid")
+	if hum then
+		-- inert humanoid: no state machine, no neck death, no auto-rotate
+		pcall(function()
+			hum.EvaluateStateMachine=false
+			hum.RequiresNeck=false
+			hum.BreakJointsOnDeath=false
+			hum.AutoRotate=false
+		end)
+		-- kill whatever is currently playing (idle/walk/etc.)
+		pcall(function()
+			for _,tr in ipairs(hum:GetPlayingAnimationTracks()) do tr:Stop(0) end
+		end)
+		pcall(function()
+			local an=hum:FindFirstChildOfClass("Animator")
+			if an then
+				for _,tr in ipairs(an:GetPlayingAnimationTracks()) do tr:Stop(0) end
+			end
+		end)
+		-- park it in Physics so it never fights the forced CFrames again
+		pcall(function()
+			hum:ChangeState(e.HumanoidStateType.Physics)
+			hum:SetStateEnabled(e.HumanoidStateType.Seated,false)
+		end)
+	end
+end
+
+local function BodyFix_Start()
+	if BodyFix_Active then return end
+	if not UsePlayerBody then return end
+	BodyFix_Active=true
+	BodyFix_Apply(ws:FindFirstChild(YourName))
+	if BodyFix_Conn then BodyFix_Conn:Disconnect() end
+	-- re-apply on every respawn ...
+	BodyFix_Conn=lp.CharacterAdded:Connect(function()
+		BodyFix_Apply(ws:FindFirstChild(YourName))
+	end)
+	-- ... and keep it applied in case the character gets re-added without CharacterAdded
+	task.spawn(function()
+		while BodyFix_Active do
+			BodyFix_Apply(ws:FindFirstChild(YourName))
+			task.wait(0.5)
+		end
+	end)
+end
+
+local function BodyFix_Stop()
+	if not BodyFix_Active then return end
+	BodyFix_Active=false
+	if BodyFix_Conn then BodyFix_Conn:Disconnect() BodyFix_Conn=nil end
+	local char=ws:FindFirstChild(YourName)
+	if not char then return end
+	pcall(function()
+		for _,v in ipairs(char:GetDescendants()) do
+			if (v:IsA("LocalScript") or v:IsA("Script")) and v.Name=="Animate" then
+				v.Disabled=false
+			end
+		end
+	end)
+	local hum=char:FindFirstChildOfClass("Humanoid")
+	if hum then
+		pcall(function()
+			hum.EvaluateStateMachine=true
+			hum.RequiresNeck=true
+			hum.AutoRotate=true
+			hum:ChangeState(e.HumanoidStateType.GettingUp)
+		end)
+	end
+end
+-- ===== end [[FIX-B2]] =====
+
 local LastTick=tick()
 Weld=nil
 Animate1=nil
@@ -3825,6 +3912,7 @@ if type(t)~="table" then
 print("Script Already Running")
 return 
 end
+BodyFix_Start() -- [[FIX-B2]] disable Animate + Humanoid while running
 --// Necessary Variables
 local walking=false
 local idle=true 
@@ -4364,7 +4452,7 @@ end
 ]]
 
 
-local setclientparts=function()
+local setclientparts=function(dtReal) -- [[FIX]] real RenderStepped dt from MainAnimations
 workspace.CurrentCamera.CameraSubject=head
 if ws:WaitForChild(lp.Name) and ws[lp.Name]:WaitForChild("Humanoid").RigType==Enum.HumanoidRigType.R15 or game.PlaceId==72703488034867 then 
 lp.Character=ws:FindFirstChild(lp.Name)
@@ -4388,9 +4476,13 @@ insSet(leftleg,"CFrame",leftlegcf)
 
 if UsePlayerBody and ws[YourName] then
     local char = ws[YourName]
-    local dt = deltaTime or 0.016
+    -- [[FIX]] deltaTime is frame-normalised (~0.5-1), not seconds; use the real frame delta
+    local dt = (type(dtReal) == "number" and dtReal > 0) and dtReal or 0.016
     local V3_0 = v3_0
-    local netlessY = v3_0 + v3(0, 25.1, 0)
+    -- [[FIX]] was v3_0 + v3(0, 25.1, 0). That constant +Y "netless" velocity belongs to the
+    -- accessory fake body; on the networked real limbs it is broadcast to the server so other
+    -- clients extrapolate the limbs upward each frame -> "pulled up" + jitter.
+    local netlessY = v3_0
 
     local partPairs = {
         {"HumanoidRootPart", rootpart},
@@ -18160,21 +18252,9 @@ local posi1=math.clamp(xd1*5,-5,60)
 local posi2=math.clamp(xd1*1.5,-5,100)
 local ps=5-posi
 refreshjoints()
-setclientparts()
-local i = nil
-while true do
-    local k, v = next(cframes, i)
-    if not k then break end
-    i = k
-    local part = k.p
-    if part and part:IsA("BasePart") then
-        pcall(function()
-            insSet(part, "CFrame", v)
-            insSet(part, "AssemblyLinearVelocity", v3(0, 25.1, 0))
-            insSet(part, "AssemblyAngularVelocity", v3_0)
-        end)
-    end
-end
+setclientparts(dt) -- [[FIX]] pass real frame delta
+-- [[FIX-B]] Duplicate writer removed. The reanimate's own Heartbeat mainFunction is now the
+-- only writer for cframes[i].p, so nothing fights over CFrame/AssemblyLinearVelocity anymore.
 local possin=29*cos(sine*.5)
 local possin1=-5*cos(sine*1)
 local u=sound.PlaybackLoudness
@@ -20001,6 +20081,7 @@ if stopreanimate then
 stopreanimate()
 notify("Stopping script")
 end
+pcall(BodyFix_Stop) -- [[FIX-B2]] re-enable Animate + Humanoid
 --repeat oswait() until not IsHatDropped
 IsSitting=false
 Retroify=false
