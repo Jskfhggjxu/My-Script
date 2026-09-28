@@ -181,6 +181,17 @@ Global.Config={
 --//real Options
 local Global=(getgenv and getgenv()) or shared
 if not Global.Config then Global.Config={} end
+-- ===== [[AXFIX]] 调参开关：改完重跑脚本，一次只改一个再测 =====
+Global.AXFIX={
+["KillHum"]=true,          -- ① Run 时禁用真角色 Animate+Humnoid，Stop 还原
+["HumPhysics"]=false,      -- ① 额外把 Humanoid 打进 Physics(ragdoll) 状态（更狠，也可能反而抖）
+["RealLimbNetlessY"]=0,    -- ② 真肢体速度里的"常量Y"：0=不加(推荐) / 25.1=原版(会往上飘) / -26=Admin那套
+["RealLimbRealDt"]=false,  -- ② true=用真实帧间隔算补偿速度(会放大30~60倍，容易过冲=更抖)
+["RealLimbVelCap"]=200,    -- ② 真肢体补偿速度上限
+["KeepWriterB"]=true,      -- ③ 保留 RenderStepped 的 B 写入者（假体/剑靠它保持平滑）
+["FakeBodyNetlessY"]=25.1, -- ③ B 写给假体的常量Y（原版 25.1）
+}
+-- =============================================================
 --local HTarget=Global.Config["CameraFocus"]  -- Actual Accessory name
 local INTROANIM=Global.Config["Intro"]  or false--set it to true if want an intro animation
 local SmoothCamera=false
@@ -3781,13 +3792,16 @@ local VFXPostConn = nil
 local ActiveVFX = nil
 local IsSitting=false
 
--- ===== [[FIX-B2]] kill real-body animation + humanoid, only while Running =====
-local BodyFix_Active=false
+-- ===== [[AXFIX]] 真角色 Animate/Humanoid 处理：只在 Run 时生效，Stop 还原 =====
+local BodyFix_Active=false      -- false | 1(仅关动画/状态机) | 2(还进了 Physics)
 local BodyFix_Conn=nil
 
 local function BodyFix_Apply(char)
 	if not char then return end
-	-- stop the default Animate script so the engine stops feeding animation tracks
+	if not BodyFix_Active then return end
+	local AX=Global.AXFIX
+	if not AX["KillHum"] then return end
+	-- 关掉默认 Animate 脚本（用 Disabled 便于 Stop 还原，不 Destroy）
 	pcall(function()
 		local a=char:FindFirstChild("Animate")
 		if a then a.Disabled=true end
@@ -3799,14 +3813,13 @@ local function BodyFix_Apply(char)
 	end)
 	local hum=char:FindFirstChildOfClass("Humanoid")
 	if hum then
-		-- inert humanoid: no state machine, no neck death, no auto-rotate
 		pcall(function()
 			hum.EvaluateStateMachine=false
 			hum.RequiresNeck=false
 			hum.BreakJointsOnDeath=false
 			hum.AutoRotate=false
 		end)
-		-- kill whatever is currently playing (idle/walk/etc.)
+		-- 把正在播的动画轨道全部停掉
 		pcall(function()
 			for _,tr in ipairs(hum:GetPlayingAnimationTracks()) do tr:Stop(0) end
 		end)
@@ -3816,25 +3829,25 @@ local function BodyFix_Apply(char)
 				for _,tr in ipairs(an:GetPlayingAnimationTracks()) do tr:Stop(0) end
 			end
 		end)
-		-- park it in Physics so it never fights the forced CFrames again
-		pcall(function()
-			hum:ChangeState(e.HumanoidStateType.Physics)
-			hum:SetStateEnabled(e.HumanoidStateType.Seated,false)
-		end)
+		if AX["HumPhysics"] and BodyFix_Active==2 then
+			pcall(function()
+				hum:ChangeState(e.HumanoidStateType.Physics)
+				hum:SetStateEnabled(e.HumanoidStateType.Seated,false)
+			end)
+		end
 	end
 end
 
 local function BodyFix_Start()
-	if BodyFix_Active then return end
+	if not Global.AXFIX["KillHum"] then return end
 	if not UsePlayerBody then return end
-	BodyFix_Active=true
+	if BodyFix_Active then return end
+	BodyFix_Active=Global.AXFIX["HumPhysics"] and 2 or 1
 	BodyFix_Apply(ws:FindFirstChild(YourName))
 	if BodyFix_Conn then BodyFix_Conn:Disconnect() end
-	-- re-apply on every respawn ...
 	BodyFix_Conn=lp.CharacterAdded:Connect(function()
 		BodyFix_Apply(ws:FindFirstChild(YourName))
 	end)
-	-- ... and keep it applied in case the character gets re-added without CharacterAdded
 	task.spawn(function()
 		while BodyFix_Active do
 			BodyFix_Apply(ws:FindFirstChild(YourName))
@@ -3844,7 +3857,8 @@ local function BodyFix_Start()
 end
 
 local function BodyFix_Stop()
-	if not BodyFix_Active then return end
+	local was=BodyFix_Active
+	if not was then return end
 	BodyFix_Active=false
 	if BodyFix_Conn then BodyFix_Conn:Disconnect() BodyFix_Conn=nil end
 	local char=ws:FindFirstChild(YourName)
@@ -3862,11 +3876,13 @@ local function BodyFix_Stop()
 			hum.EvaluateStateMachine=true
 			hum.RequiresNeck=true
 			hum.AutoRotate=true
-			hum:ChangeState(e.HumanoidStateType.GettingUp)
+			if was==2 then
+				hum:ChangeState(e.HumanoidStateType.GettingUp)
+			end
 		end)
 	end
 end
--- ===== end [[FIX-B2]] =====
+-- ===== end [[AXFIX]] =====
 
 local LastTick=tick()
 Weld=nil
@@ -3912,7 +3928,7 @@ if type(t)~="table" then
 print("Script Already Running")
 return 
 end
-BodyFix_Start() -- [[FIX-B2]] disable Animate + Humanoid while running
+BodyFix_Start() -- [[AXFIX]] Run 时才禁用 Animate/Humanoid
 --// Necessary Variables
 local walking=false
 local idle=true 
@@ -4452,7 +4468,7 @@ end
 ]]
 
 
-local setclientparts=function(dtReal) -- [[FIX]] real RenderStepped dt from MainAnimations
+local setclientparts=function(dtReal) -- [[AXFIX]] 接收 RenderStepped 真实间隔
 workspace.CurrentCamera.CameraSubject=head
 if ws:WaitForChild(lp.Name) and ws[lp.Name]:WaitForChild("Humanoid").RigType==Enum.HumanoidRigType.R15 or game.PlaceId==72703488034867 then 
 lp.Character=ws:FindFirstChild(lp.Name)
@@ -4476,13 +4492,12 @@ insSet(leftleg,"CFrame",leftlegcf)
 
 if UsePlayerBody and ws[YourName] then
     local char = ws[YourName]
-    -- [[FIX]] deltaTime is frame-normalised (~0.5-1), not seconds; use the real frame delta
-    local dt = (type(dtReal) == "number" and dtReal > 0) and dtReal or 0.016
+    local AX=Global.AXFIX
+    -- [[AXFIX]] dt 默认沿原版（deltaTime 是"帧归一化"值不是秒）；RealLimbRealDt=true 才用真实间隔
+    local dt=AX["RealLimbRealDt"] and ((type(dtReal)=="number" and dtReal>0) and dtReal or 0.016) or (deltaTime or 0.016)
     local V3_0 = v3_0
-    -- [[FIX]] was v3_0 + v3(0, 25.1, 0). That constant +Y "netless" velocity belongs to the
-    -- accessory fake body; on the networked real limbs it is broadcast to the server so other
-    -- clients extrapolate the limbs upward each frame -> "pulled up" + jitter.
-    local netlessY = v3_0
+    -- [[AXFIX]] 原式 v3_0 + v3(0,25.1,0)：这个"上行常量"加在真肢体上就会被别人看到往上拉扯
+    local netlessY = v3_0 + v3(0, AX["RealLimbNetlessY"], 0)
 
     local partPairs = {
         {"HumanoidRootPart", rootpart},
@@ -4505,8 +4520,9 @@ if UsePlayerBody and ws[YourName] then
             local vel = posDiff / dt
 
             local mag = vmagnitude(vel)
-            if mag > 200 then
-                vel = vnormalize(vel) * 200
+            local velCap = AX["RealLimbVelCap"] or 200
+            if mag > velCap then
+                vel = vnormalize(vel) * velCap
             end
 
             insSet(realPart, "CFrame", fakeCF)
@@ -18252,9 +18268,24 @@ local posi1=math.clamp(xd1*5,-5,60)
 local posi2=math.clamp(xd1*1.5,-5,100)
 local ps=5-posi
 refreshjoints()
-setclientparts(dt) -- [[FIX]] pass real frame delta
--- [[FIX-B]] Duplicate writer removed. The reanimate's own Heartbeat mainFunction is now the
--- only writer for cframes[i].p, so nothing fights over CFrame/AssemblyLinearVelocity anymore.
+setclientparts(dt)
+-- [[AXFIX]] B 写入者：默认保留（假体/剑靠它保持平滑）。KeepWriterB=false 才整段删掉
+if Global.AXFIX["KeepWriterB"] then
+local i = nil
+while true do
+    local k, v = next(cframes, i)
+    if not k then break end
+    i = k
+    local part = k.p
+    if part and part:IsA("BasePart") then
+        pcall(function()
+            insSet(part, "CFrame", v)
+            insSet(part, "AssemblyLinearVelocity", v3_0 + v3(0, Global.AXFIX["FakeBodyNetlessY"], 0))
+            insSet(part, "AssemblyAngularVelocity", v3_0)
+        end)
+    end
+end
+end
 local possin=29*cos(sine*.5)
 local possin1=-5*cos(sine*1)
 local u=sound.PlaybackLoudness
@@ -20081,7 +20112,7 @@ if stopreanimate then
 stopreanimate()
 notify("Stopping script")
 end
-pcall(BodyFix_Stop) -- [[FIX-B2]] re-enable Animate + Humanoid
+pcall(BodyFix_Stop) -- [[AXFIX]] Stop 时还原 Animate/Humanoid
 --repeat oswait() until not IsHatDropped
 IsSitting=false
 Retroify=false
