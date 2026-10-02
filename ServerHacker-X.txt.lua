@@ -197,9 +197,9 @@ rl.Weld.C1 = CFrame.new(0, 1, 0)
 -------------------------------------------------------
 --Start HeartBeat--
 -------------------------------------------------------
-ArtificialHB = Instance.new("BindableEvent", script)
+ArtificialHB = Instance.new("BindableEvent")
 ArtificialHB.Name = "Heartbeat"
-script:WaitForChild("Heartbeat")
+-- [FIX] 原来的 script:WaitForChild("Heartbeat") 已删除：在多数执行器里 script 是 nil
 
 frame = 1 / 60
 tf = 0
@@ -208,18 +208,18 @@ tossremainder = false
 
 
 lastframe = tick()
-script.Heartbeat:Fire()
+ArtificialHB:Fire()
 
 
-game:GetService("RunService").Heartbeat:connect(function(s, p)
+game:GetService("RunService").Heartbeat:Connect(function(s, p)
 	tf = tf + s
 	if tf >= frame then
 		if allowframeloss then
-			script.Heartbeat:Fire()
+			ArtificialHB:Fire()
 			lastframe = tick()
 		else
 			for i = 1, math.floor(tf / frame) do
-				script.Heartbeat:Fire()
+				ArtificialHB:Fire()
 			end
 			lastframe = tick()
 		end
