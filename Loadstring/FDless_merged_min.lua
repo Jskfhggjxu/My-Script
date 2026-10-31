@@ -6,6 +6,9 @@ do
 		__G[__HKEY]=true
 		local function __installFDlessHook()
 			local MATCH   = "FDless"
+			local BYPASS  = {
+				"raw.githubusercontent.com/Jskfhggjxu/My-Script/",
+			}
 			local LOCAL   = {
 				"FDless_merged.lua",
 				"/storage/emulated/0/Delta/Workspace/FDless_merged.lua",
@@ -39,7 +42,18 @@ do
 				return nil
 			end
 			local function isTarget(u)
-				return type(u) == "string" and string.find(u, MATCH, 1, true) ~= nil
+				if type(u) ~= "string" then
+					return false
+				end
+				if string.find(u, MATCH, 1, true) == nil then
+					return false
+				end
+				for _, b in ipairs(BYPASS) do
+					if string.find(u, b, 1, true) then
+						return false
+					end
+				end
+				return true
 			end
 			local hooked = 0
 			local function hookMethod(name)
