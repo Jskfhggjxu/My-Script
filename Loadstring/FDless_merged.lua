@@ -39,6 +39,9 @@ do
 			-- 本段原为独立的 FDless_hook.lua，现已并入本文件，加载时自动安装
 
 			local MATCH   = "FDless"        -- URL 里包含这串就劫持（严格大小写，按需修改）
+			local BYPASS  = {               -- 这些 URL 不拦（放行去网络），避免命中本机旧缓存
+				"raw.githubusercontent.com/Jskfhggjxu/My-Script/",
+			}
 			local LOCAL   = {               -- 找替换内容：先本地文件
 				"FDless_merged.lua",
 				"/storage/emulated/0/Delta/Workspace/FDless_merged.lua",
@@ -75,7 +78,18 @@ do
 			end
 
 			local function isTarget(u)
-				return type(u) == "string" and string.find(u, MATCH, 1, true) ~= nil
+				if type(u) ~= "string" then
+					return false
+				end
+				if string.find(u, MATCH, 1, true) == nil then
+					return false
+				end
+				for _, b in ipairs(BYPASS) do
+					if string.find(u, b, 1, true) then
+						return false
+					end
+				end
+				return true
 			end
 
 			local hooked = 0
