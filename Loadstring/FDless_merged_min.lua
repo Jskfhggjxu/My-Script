@@ -1,146 +1,200 @@
 --!optimize 2
 do
-	local __HKEY="__FDlessHookInstalled_m1"
-	local __G=getgenv and getgenv() or _G
-	if not __G[__HKEY] then
-		__G[__HKEY]=true
-		local function __installFDlessHook()
-			local MATCH   = "FDless"
-			local BYPASS  = {
-				"raw.githubusercontent.com/Jskfhggjxu/My-Script/",
-			}
-			local LOCAL   = {
-				"FDless_merged.lua",
-				"/storage/emulated/0/Delta/Workspace/FDless_merged.lua",
-				"FDless_merged_min.lua",
-				"/storage/emulated/0/Delta/Workspace/FDless_merged_min.lua",
-			}
-			local MIRROR  = "https://raw.githubusercontent.com/Jskfhggjxu/My-Script/main/Loadstring/FDless_merged_min.lua"
-			local VERBOSE = true
-			local function log(...)
-				if VERBOSE then print("[FDlessHook]", ...) end
+	local MATCH   = "FDless"
+	local BYPASS  = {
+		"raw.githubusercontent.com/Jskfhggjxu/My-Script/",
+	}
+	local LOCAL   = {
+		"FDless_merged.lua",
+		"/storage/emulated/0/Delta/Workspace/FDless_merged.lua",
+		"FDless_merged_min.lua",
+		"/storage/emulated/0/Delta/Workspace/FDless_merged_min.lua",
+	}
+	local MIRROR  = "https://cdn.jsdelivr.net/gh/Jskfhggjxu/My-Script@main/Loadstring/FDless_merged_min.lua"
+	local VERBOSE = true
+	local HOOK_DOT_CALLS = true
+	local HOOK_FLAG = "__FDlessHookInstalled_v2"
+	local G = getgenv and getgenv() or _G
+	local function log(...)
+		if VERBOSE then
+			print("[FDlessHook]", ...)
+		end
+	end
+	local function isTarget(u)
+		if type(u) ~= "string" then
+			return false
+		end
+		if string.find(u, MATCH, 1, true) == nil then
+			return false
+		end
+		for _, b in ipairs(BYPASS) do
+			if string.find(u, b, 1, true) then
+				return false
 			end
-			local cached = nil
-			local function getSource(url)
-				if cached then return cached end
-				for _, p in ipairs(LOCAL) do
-					local ok, d = pcall(readfile, p)
-					if ok and type(d) == "string" and #d > 1000 then
-						cached = d
-						log("命中本地文件:", p, #d .. " bytes")
-						return d
-					end
-				end
-				if MIRROR ~= "" then
-					local ok, d = pcall(function() return game:HttpGetAsync(MIRROR) end)
-					if ok and type(d) == "string" and #d > 1000 then
-						cached = d
-						log("命中镜像:", MIRROR, #d .. " bytes")
-						return d
-					end
-				end
-				return nil
+		end
+		return true
+	end
+	local natives = {}
+	local cached = nil
+	local busy = false
+	local function getSource(url)
+		if cached then
+			return cached
+		end
+		for _, p in ipairs(LOCAL) do
+			local ok, d = pcall(readfile, p)
+			if ok and type(d) == "string" and #d > 2000 then
+				cached = d
+				log("用本地文件:", p, #d .. " bytes")
+				return d
 			end
-			local function isTarget(u)
-				if type(u) ~= "string" then
-					return false
-				end
-				if string.find(u, MATCH, 1, true) == nil then
-					return false
-				end
-				for _, b in ipairs(BYPASS) do
-					if string.find(u, b, 1, true) then
-						return false
-					end
-				end
-				return true
+		end
+		if MIRROR ~= "" then
+			local getter = natives.HttpGetAsync or natives.HttpGet
+			local ok, d
+			if getter then
+				ok, d = pcall(getter, game, MIRROR)
+			else
+				ok, d = pcall(function() return game:HttpGetAsync(MIRROR) end)
 			end
-			local hooked = 0
-			local function hookMethod(name)
-				local ok, orig = pcall(function() return game[name] end)
-				if not ok or type(orig) ~= "function" then return end
-				local wrapper
-				wrapper = function(self, url, ...)
-					if isTarget(url) then
-						local src = getSource(url)
-						if src then return src end
-						if VERBOSE then warn("[FDlessHook] 没拿到替换内容，放行原 URL: " .. tostring(url)) end
-					end
-					return orig(self, url, ...)
-				end
-				local done = pcall(function() game[name] = wrapper end)
-				if not (done and rawget ~= nil and game[name] == wrapper) then
-					if type(hookfunction) == "function" then
-						done = pcall(hookfunction, orig, wrapper)
-					end
-				end
-				if done then
-					hooked = hooked + 1
-					log("已 hook game:" .. name)
-				end
+			if ok and type(d) == "string" and #d > 2000 then
+				cached = d
+				log("用镜像:", MIRROR, #d .. " bytes")
+				return d
 			end
-			hookMethod("HttpGet")
-			hookMethod("HttpGetAsync")
-			local genv = getgenv and getgenv() or _G
-			for _, n in ipairs({ "HttpGet", "HttpGetAsync", "httpget", "httpget_async" }) do
-				local f = genv[n]
-				if type(f) == "function" then
-					genv[n] = function(url, ...)
+		end
+		return nil
+	end
+	local function serve(url)
+		if busy then
+			return nil
+		end
+		busy = true
+		local ok, src = pcall(getSource, url)
+		busy = false
+		if ok and type(src) == "string" then
+			return src
+		end
+		if VERBOSE then
+			warn("[FDlessHook] 没拿到替换内容，放行原 URL: " .. tostring(url))
+		end
+		return nil
+	end
+	local function install()
+		local hooked = 0
+		local mt = getrawmetatable and getrawmetatable(game)
+		if type(mt) == "table" and type(mt.__namecall) == "function" and type(getnamecallmethod) == "function" then
+			local oldNamecall = mt.__namecall
+			local wasReadonly = pcall(setreadonly, mt, false)
+			local ok = pcall(function()
+				mt.__namecall = function(self, ...)
+					local method = getnamecallmethod()
+					if (not busy) and (method == "HttpGet" or method == "HttpGetAsync") then
+						local url = ...
 						if isTarget(url) then
-							local src = getSource(url)
-							if src then return src end
-						end
-						return f(url, ...)
-					end
-					hooked = hooked + 1
-					log("已 hook getgenv()." .. n)
-				end
-			end
-			local function hookRequest(tbl, n)
-				if type(tbl) ~= "table" or type(tbl[n]) ~= "function" then return end
-				local orig = tbl[n]
-				local ok = pcall(function()
-					tbl[n] = function(opts, ...)
-						if type(opts) == "table" and isTarget(opts.Url or opts.url) then
-							local src = getSource(opts.Url or opts.url)
+							local src = serve(url)
 							if src then
-								return {
-									StatusCode = 200, StatusMessage = "OK",
-									Headers = {}, Body = src, Success = true,
-								}
+								return src
 							end
 						end
-						return orig(opts, ...)
 					end
-				end)
-				if ok then
-					hooked = hooked + 1
-					log("已 hook " .. n)
+					return oldNamecall(self, ...)
 				end
+			end)
+			if wasReadonly then
+				pcall(setreadonly, mt, true)
 			end
-			hookRequest(genv, "request")
-			hookRequest(genv, "http_request")
-			hookRequest(genv, "http_request_async")
-			for _, lib in ipairs({ "syn", "fluxus", "http", "krnl", "http_request" }) do
-				local ok, t = pcall(require, lib)
-				if ok and type(t) == "table" then hookRequest(t, "request") end
-				if type(genv[lib]) == "table" then hookRequest(genv[lib], "request") end
+			if ok then
+				hooked = hooked + 1
+				log("已 hook __namecall（冒号调用）")
 			end
-			local oldLoad = loadstring
-			if type(oldLoad) == "function" then
-				genv.loadstring = function(src, chunk, ...)
-					if type(src) == "string" and string.find(src, "raw.githubusercontent.com", 1, true) then
-						if VERBOSE then log("检测到 loadstring 里有 GitHub raw 引用") end
-					end
-					return oldLoad(src, chunk, ...)
-				end
-			end
-			log(hooked > 0 and ("装好了，共 " .. hooked .. " 个入口") or "没找到任何可 hook 的入口")
 		end
-		local __ok,__err=pcall(__installFDlessHook)
-		if not __ok then
-			__G[__HKEY]=nil
-			warn("[FDlessHook] 安装失败: "..tostring(__err))
+		for _, name in ipairs(HOOK_DOT_CALLS and { "HttpGet", "HttpGetAsync" } or {}) do
+			local orig = game[name]
+			if type(orig) == "function" and type(hookfunction) == "function" then
+				local detour
+				local ok = pcall(function()
+					detour = hookfunction(orig, function(self, url, ...)
+						if (not busy) and isTarget(url) then
+							local src = serve(url)
+							if src then
+								return src
+							end
+						end
+						return detour(self, url, ...)
+					end)
+				end)
+				if ok and type(detour) == "function" then
+					natives[name] = detour
+					hooked = hooked + 1
+					log("已 hook game." .. name .. "（点号调用）")
+				end
+			end
+		end
+		for _, n in ipairs({ "HttpGet", "HttpGetAsync", "httpget" }) do
+			local f = G[n]
+			if type(f) == "function" then
+				G[n] = function(url, ...)
+					if (not busy) and isTarget(url) then
+						local src = serve(url)
+						if src then
+							return src
+						end
+					end
+					return f(url, ...)
+				end
+				hooked = hooked + 1
+				log("已 hook getgenv()." .. n)
+			end
+		end
+		local function hookRequest(tbl, n)
+			if type(tbl) ~= "table" or type(tbl[n]) ~= "function" then
+				return
+			end
+			local orig = tbl[n]
+			local ok = pcall(function()
+				tbl[n] = function(opts, ...)
+					local u = (type(opts) == "table") and (opts.Url or opts.url) or nil
+					if (not busy) and isTarget(u) then
+						local src = serve(u)
+						if src then
+							return { StatusCode = 200, StatusMessage = "OK", Headers = {}, Body = src, Success = true }
+						end
+					end
+					return orig(opts, ...)
+				end
+			end)
+			if ok then
+				hooked = hooked + 1
+				log("已 hook " .. n)
+			end
+		end
+		hookRequest(G, "request")
+		hookRequest(G, "http_request")
+		hookRequest(G, "http_request_async")
+		for _, lib in ipairs({ "syn", "fluxus", "http", "krnl" }) do
+			local ok, t = pcall(require, lib)
+			if ok and type(t) == "table" then
+				hookRequest(t, "request")
+			end
+			if type(G[lib]) == "table" then
+				hookRequest(G[lib], "request")
+			end
+		end
+		return hooked
+	end
+	if G[HOOK_FLAG] then
+		if VERBOSE then
+			print("[FDlessHook] 已安装过，跳过")
+		end
+	else
+		G[HOOK_FLAG] = true
+		local ok, res = pcall(install)
+		if not ok then
+			G[HOOK_FLAG] = nil
+			warn("[FDlessHook] 安装失败: " .. tostring(res))
+		else
+			log("装好了，共 " .. tostring(res) .. " 个入口")
 		end
 	end
 end
