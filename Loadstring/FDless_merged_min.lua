@@ -1,205 +1,53 @@
+--[[
+	FDless URL 重定向钩子 v2
+	────────────────────────────────────────────────────────
+	Delta (Android) 实测结论，上一版崩游戏就是踩了这两条：
+
+	  1) game.HttpGet = fn           → 直接抛 "not a valid member of DataModel"，永远失败
+	  2) game:HttpGet(url)           → 走 __namecall，hookfunction 拦不到（depth=0）
+	  3) game.HttpGet(game, url)     → 走函数调用，能拦到；
+	                                   但如果 wrapper 里调 hook 前抓的 orig，会又跳回 wrapper
+	                                   → 无限递归 → 爆栈 → 游戏直接退出
+
+	所以 v2 的做法：
+	  · 冒号调用：hook 实例元表的 __namecall，game.HttpGet 本身一个字节都不动
+	  · 点号调用：hookfunction(game.HttpGet, ...)，**用它的返回值当原函数**
+	  · 再加一层 busy 熔断，任何意外重入都直接 fail-open 放行，不会再炸
+]]
+
+local MATCH   = "FDless"        -- URL 里包含这串就劫持（严格大小写）
+local BYPASS  = {               -- 这些 URL 放行去网络（自己的仓库，不能拦自己的 launcher）
+	"raw.githubusercontent.com/Jskfhggjxu/My-Script/",
+	"cdn.jsdelivr.net/gh/Jskfhggjxu/My-Script",
+	"github.com/Jskfhggjxu/My-Script/",
+}
+local LOCAL   = {               -- 替换内容：先找本地文件
+	"FDless_merged.lua",
+	"/storage/emulated/0/Delta/Workspace/FDless_merged.lua",
+	"FDless_merged_min.lua",
+	"/storage/emulated/0/Delta/Workspace/FDless_merged_min.lua",
+}
+local MIRROR  = "https://cdn.jsdelivr.net/gh/Jskfhggjxu/My-Script@main/Loadstring/FDless_merged_min.lua"
+local VERBOSE = true
+-- 点号调用（game.HttpGet(game,url) / 被缓存成局部变量后再调）必须 hookfunction 才能拦到，
+-- 但会让 game.HttpGet 变成 Lua 闭包（debug.info 不再是 "[C]"）。如果哪个脚本在查这个指纹，
+-- 把下面改成 false：冒号调用照样拦得住，点号调用则放行原版。
+-- 是否需要 hook __namecall（HTTP 直拦）。
+-- 默认 false：换源在 loadstring 那层就能拦到，不管脚本是 HTTP 拉还是内嵌，
+-- 最终都要 loadstring，所以 namecall 是冗余的；而它会留下可被探测的指纹
+-- （debug.info(getrawmetatable(game).__namecall,"s") 从 "[C]" 变成 chunk 名）。
+-- 只有当目标脚本把 loadstring 引用提前缓存、导致换源拦不到时，才需要打开这个。
+local HOOK_NAMECALL = false
+local HOOK_DOT_CALLS = false
+local HOOK_FLAG = "__FDlessHookInstalled_v2"
+
+local G = getgenv and getgenv() or _G
+
+-- ===== 内嵌正文（由 build_loader.py 生成，勿手改）=====
+-- 只有 FDless + 帽子表 + 重生重绑；不含 hookfunction/getgenv/setreadonly 等关键字，
+-- 所以目标脚本就算扫描源码也抓不到把柄。
+local BODY=[====[
 --!optimize 2
-do
-	local MATCH   = "FDless"
-	local BYPASS  = {
-		"raw.githubusercontent.com/Jskfhggjxu/My-Script/",
-	}
-	local LOCAL   = {
-		"FDless_merged.lua",
-		"/storage/emulated/0/Delta/Workspace/FDless_merged.lua",
-		"FDless_merged_min.lua",
-		"/storage/emulated/0/Delta/Workspace/FDless_merged_min.lua",
-	}
-	local MIRROR  = "https://cdn.jsdelivr.net/gh/Jskfhggjxu/My-Script@main/Loadstring/FDless_merged_min.lua"
-	local VERBOSE = true
-	local HOOK_DOT_CALLS = true
-	local HOOK_FLAG = "__FDlessHookInstalled_v2"
-	local G = getgenv and getgenv() or _G
-	local function log(...)
-		if VERBOSE then
-			print("[FDlessHook]", ...)
-		end
-	end
-	local function isTarget(u)
-		if type(u) ~= "string" then
-			return false
-		end
-		if string.find(u, MATCH, 1, true) == nil then
-			return false
-		end
-		for _, b in ipairs(BYPASS) do
-			if string.find(u, b, 1, true) then
-				return false
-			end
-		end
-		return true
-	end
-	local natives = {}
-	local cached = nil
-	local busy = false
-	local function getSource(url)
-		if cached then
-			return cached
-		end
-		for _, p in ipairs(LOCAL) do
-			local ok, d = pcall(readfile, p)
-			if ok and type(d) == "string" and #d > 2000 then
-				cached = d
-				log("用本地文件:", p, #d .. " bytes")
-				return d
-			end
-		end
-		if MIRROR ~= "" then
-			local getter = natives.HttpGetAsync or natives.HttpGet
-			local ok, d
-			if getter then
-				ok, d = pcall(getter, game, MIRROR)
-			else
-				ok, d = pcall(function() return game:HttpGetAsync(MIRROR) end)
-			end
-			if ok and type(d) == "string" and #d > 2000 then
-				cached = d
-				log("用镜像:", MIRROR, #d .. " bytes")
-				return d
-			end
-		end
-		return nil
-	end
-	local function serve(url)
-		if busy then
-			return nil
-		end
-		busy = true
-		local ok, src = pcall(getSource, url)
-		busy = false
-		if ok and type(src) == "string" then
-			return src
-		end
-		if VERBOSE then
-			warn("[FDlessHook] 没拿到替换内容，放行原 URL: " .. tostring(url))
-		end
-		return nil
-	end
-	local function install()
-		local hooked = 0
-		local mt = getrawmetatable and getrawmetatable(game)
-		if type(mt) == "table" and type(mt.__namecall) == "function" and type(getnamecallmethod) == "function" then
-			local oldNamecall = mt.__namecall
-			local wasReadonly = pcall(setreadonly, mt, false)
-			local ok = pcall(function()
-				mt.__namecall = function(self, ...)
-					local method = getnamecallmethod()
-					if (not busy) and (method == "HttpGet" or method == "HttpGetAsync") then
-						local url = ...
-						if isTarget(url) then
-							local src = serve(url)
-							if src then
-								return src
-							end
-						end
-					end
-					return oldNamecall(self, ...)
-				end
-			end)
-			if wasReadonly then
-				pcall(setreadonly, mt, true)
-			end
-			if ok then
-				hooked = hooked + 1
-				log("已 hook __namecall（冒号调用）")
-			end
-		end
-		for _, name in ipairs(HOOK_DOT_CALLS and { "HttpGet", "HttpGetAsync" } or {}) do
-			local orig = game[name]
-			if type(orig) == "function" and type(hookfunction) == "function" then
-				local detour
-				local ok = pcall(function()
-					detour = hookfunction(orig, function(self, url, ...)
-						if (not busy) and isTarget(url) then
-							local src = serve(url)
-							if src then
-								return src
-							end
-						end
-						return detour(self, url, ...)
-					end)
-				end)
-				if ok and type(detour) == "function" then
-					natives[name] = detour
-					hooked = hooked + 1
-					log("已 hook game." .. name .. "（点号调用）")
-				end
-			end
-		end
-		for _, n in ipairs({ "HttpGet", "HttpGetAsync", "httpget" }) do
-			local f = G[n]
-			if type(f) == "function" then
-				G[n] = function(url, ...)
-					if (not busy) and isTarget(url) then
-						local src = serve(url)
-						if src then
-							return src
-						end
-					end
-					return f(url, ...)
-				end
-				hooked = hooked + 1
-				log("已 hook getgenv()." .. n)
-			end
-		end
-		local function hookRequest(tbl, n)
-			if type(tbl) ~= "table" or type(tbl[n]) ~= "function" then
-				return
-			end
-			local orig = tbl[n]
-			local ok = pcall(function()
-				tbl[n] = function(opts, ...)
-					local u = (type(opts) == "table") and (opts.Url or opts.url) or nil
-					if (not busy) and isTarget(u) then
-						local src = serve(u)
-						if src then
-							return { StatusCode = 200, StatusMessage = "OK", Headers = {}, Body = src, Success = true }
-						end
-					end
-					return orig(opts, ...)
-				end
-			end)
-			if ok then
-				hooked = hooked + 1
-				log("已 hook " .. n)
-			end
-		end
-		hookRequest(G, "request")
-		hookRequest(G, "http_request")
-		hookRequest(G, "http_request_async")
-		for _, lib in ipairs({ "syn", "fluxus", "http", "krnl" }) do
-			local ok, t = pcall(require, lib)
-			if ok and type(t) == "table" then
-				hookRequest(t, "request")
-			end
-			if type(G[lib]) == "table" then
-				hookRequest(G[lib], "request")
-			end
-		end
-		return hooked
-	end
-	if G[HOOK_FLAG] then
-		if VERBOSE then
-			print("[FDlessHook] 已安装过，跳过")
-		end
-	else
-		G[HOOK_FLAG] = true
-		local ok, res = pcall(install)
-		if not ok then
-			G[HOOK_FLAG] = nil
-			warn("[FDlessHook] 安装失败: " .. tostring(res))
-		else
-			log("装好了，共 " .. tostring(res) .. " 个入口")
-		end
-	end
-end
-local SESSION_KEY="FDlessMerged"
-local SESSION_VERSION="hatmap-m1"
 local osclock=os.clock
 local tspawn=task.spawn
 local twait=task.wait
@@ -1124,6 +972,7 @@ local reanimate=function()
 	local rootparts={}
 	for i,v in next,accessorylimbs do
 		v.p=getPart(v.Name)
+		v.gen=c
 		if not v.meshid then
 			v.meshid=""
 		end
@@ -1133,6 +982,7 @@ local reanimate=function()
 	end
 	for i,v in next,hatnamelimbs do
 		v.p=getPart(v.Name)
+		v.gen=c
 	end
 	local makePartCons=function(p,t)
 		if (t.p==p) and insGet(p,"Anchored") then
@@ -1166,6 +1016,10 @@ local reanimate=function()
 				local p=insGet(v,"Parent")
 				if insGet(p,"Parent")~=c then
 					local nl=hatnamelimb(p)
+					if nl and nl.gen~=c then
+						nl.gen=c
+						nl.p=getPart(nl.Name)
+					end
 					if nl and nl.p then
 						local t={Name=insGet(p,"Name"),l=insGet(p,"Position"),p=p}
 						makePartCons(p,t)
@@ -1225,6 +1079,10 @@ local reanimate=function()
 						end
 					end
 					for i,l in next,accessorylimbs do
+						if l.gen~=c then
+							l.gen=c
+							l.p=getPart(l.Name)
+						end
 						if l.p and sfind(meshid,l.meshid) and sfind(textureid,l.textureid) then
 							local t={Name=insGet(p,"Name"),l=insGet(p,"Position"),m=meshid,t=textureid,p=p}
 							makePartCons(p,t)
@@ -1284,6 +1142,10 @@ local reanimate=function()
 			if v1 then
 				if insGet(p,"Parent")~=c then
 					local nl=hatnamelimb(p)
+					if nl and nl.gen~=c then
+						nl.gen=c
+						nl.p=getPart(nl.Name)
+					end
 					if nl and nl.p then
 						local t={Name=insGet(p,"Name"),l=insGet(p,"Position"),p=p}
 						makePartCons(p,t)
@@ -1343,6 +1205,10 @@ local reanimate=function()
 						end
 					end
 					for i,l in next,accessorylimbs do
+						if l.gen~=c then
+							l.gen=c
+							l.p=getPart(l.Name)
+						end
 						if l.p and sfind(meshid,l.meshid) and sfind(textureid,l.textureid) then
 							local t={Name=insGet(p,"Name"),l=insGet(p,"Position"),m=meshid,t=textureid,p=p}
 							makePartCons(p,t)
@@ -3000,71 +2866,245 @@ local reanimate=function()
 	}
 	return currenttable
 end
-local lib={reanimate=reanimate,stopreanimate=stopreanimate,timeQueryDescendants=timeQueryDescendants,getMetamethodFromErrorStack=getMetamethodFromErrorStack,insSet=insSet,insGet=insGet,cfGet=cfGet,cfMul=cfMul,cfAdd=cfAdd,v3Get=v3Get,v2Get=v2Get,rs=rs,mouse=mouse,emptyfunction=emptyfunction,Draggable=Draggable,applysettings=applysettings,returnDelta=returnDelta,getcharacter=getcharacter,cleantable=cleantable,onstopcallback=onstopcallback,currenttable=function() return currenttable end,pdfunc=emptyfunction,availableSettings=availableSettings,addSecrets=emptyfunction}
-do
-	local G=getgenv and getgenv() or _G
-	local running=false
-	local origReanimate=lib.reanimate
-	local origStop=lib.stopreanimate
-	local function clearSelf()
-		local s=G[SESSION_KEY]
-		if (type(s)=="table") and (s.lib==lib) then
-			G[SESSION_KEY]=nil
-		end
-	end
-	local function killOthers()
-		local old=G[SESSION_KEY]
-		if (type(old)=="table") and (old.lib~=lib) and (type(old.stop)=="function") then
-			pcall(old.stop)
-			G[SESSION_KEY]=nil
-			return true
-		end
-		return false
-	end
-	lib.reanimate=function(...)
-		killOthers()
-		if running then
-			return
-		end
-		running=true
-		local ok,err=pcall(origReanimate,...)
-		if not ok then
-			running=false
-			clearSelf()
-			error(err,0)
-		end
-		if not lib.getcharacter() then
-			running=false
-			clearSelf()
-			return
-		end
-		G[SESSION_KEY]={lib=lib,stop=lib.stopreanimate,version=SESSION_VERSION,started=os.clock()}
-	end
-	lib.stopreanimate=function(...)
-		running=false
-		local r=origStop(...)
-		clearSelf()
-		return r
-	end
-	G.FDlessMergedInfo=function()
-		local s=G[SESSION_KEY]
-		if type(s)~="table" then
-			return "当前没有正在运行的实例"
-		end
-		return {
-			version=s.version,
-			seconds=os.clock()-s.started,
-			alive=(s.lib.getcharacter()~=nil),
-			mine=(s.lib==lib)
-		}
-	end
-	G.FDlessMergedKill=function()
-		local s=G[SESSION_KEY]
-		if type(s)=="table" and type(s.stop)=="function" then
-			pcall(s.stop)
-		end
-		G[SESSION_KEY]=nil
-		return true
+return {reanimate=reanimate,stopreanimate=stopreanimate,timeQueryDescendants=timeQueryDescendants,getMetamethodFromErrorStack=getMetamethodFromErrorStack,insSet=insSet,insGet=insGet,cfGet=cfGet,cfMul=cfMul,cfAdd=cfAdd,v3Get=v3Get,v2Get=v2Get,rs=rs,mouse=mouse,emptyfunction=emptyfunction,Draggable=Draggable,applysettings=applysettings,returnDelta=returnDelta,getcharacter=getcharacter,cleantable=cleantable,onstopcallback=onstopcallback,currenttable=function() return currenttable end,pdfunc=emptyfunction,availableSettings=availableSettings,addSecrets=emptyfunction}
+]====]
+
+local function log(...)
+	if VERBOSE then
+		print("[FDlessHook]", ...)
 	end
 end
-return lib
+
+local function isTarget(u)
+	if type(u) ~= "string" then
+		return false
+	end
+	if string.find(u, MATCH, 1, true) == nil then
+		return false
+	end
+	for _, b in ipairs(BYPASS) do
+		if string.find(u, b, 1, true) then
+			return false
+		end
+	end
+	return true
+end
+
+-- 原函数备份（点号形式 hook 之后，这里存的是「脱钩」的原函数）
+local natives = {}
+
+local cached = nil
+local busy = false
+
+local function getSource(url)
+	if cached then
+		return cached
+	end
+	-- 优先用内嵌正文：保证喂给目标脚本的一定是"纯净正文"（无钩子关键字）
+	if BODY and #BODY > 2000 then
+		cached = BODY
+		log("用内嵌正文", #BODY .. " bytes")
+		return cached
+	end
+	for _, p in ipairs(LOCAL) do
+		local ok, d = pcall(readfile, p)
+		if ok and type(d) == "string" and #d > 2000 then
+			cached = d
+			log("用本地文件:", p, #d .. " bytes")
+			return d
+		end
+	end
+	if MIRROR ~= "" then
+		local getter = natives.HttpGetAsync or natives.HttpGet
+		local ok, d
+		if getter then
+			ok, d = pcall(getter, game, MIRROR)
+		else
+			ok, d = pcall(function() return game:HttpGetAsync(MIRROR) end)
+		end
+		if ok and type(d) == "string" and #d > 2000 then
+			cached = d
+			log("用镜像:", MIRROR, #d .. " bytes")
+			return d
+		end
+	end
+	return nil
+end
+
+-- 统一出口：带熔断，取不到就放行原逻辑
+local function serve(url)
+	if busy then
+		return nil
+	end
+	busy = true
+	local ok, src = pcall(getSource, url)
+	busy = false
+	if ok and type(src) == "string" then
+		return src
+	end
+	if VERBOSE then
+		warn("[FDlessHook] 没拿到替换内容，放行原 URL: " .. tostring(url))
+	end
+	return nil
+end
+
+local function install()
+	local hooked = 0
+
+	-- 1) 冒号调用：hook 实例元表的 __namecall（game.HttpGet 保持原样，无法被 debug.info 看穿）
+	local mt = getrawmetatable and getrawmetatable(game)
+	if HOOK_NAMECALL and type(mt) == "table" and type(mt.__namecall) == "function" and type(getnamecallmethod) == "function" then
+		local oldNamecall = mt.__namecall
+		local wasReadonly = pcall(setreadonly, mt, false)
+		local ok = pcall(function()
+			mt.__namecall = function(self, ...)
+				local method = getnamecallmethod()
+				if (not busy) and (method == "HttpGet" or method == "HttpGetAsync") then
+					local url = ...
+					if isTarget(url) then
+						local src = serve(url)
+						if src then
+							return src
+						end
+					end
+				end
+				return oldNamecall(self, ...)
+			end
+		end)
+		if wasReadonly then
+			pcall(setreadonly, mt, true)
+		end
+		if ok then
+			hooked = hooked + 1
+			log("已 hook __namecall（冒号调用）")
+		end
+	end
+
+	-- 2) 点号调用：hookfunction，返回值才是脱钩的原函数
+	for _, name in ipairs(HOOK_DOT_CALLS and { "HttpGet", "HttpGetAsync" } or {}) do
+		local orig = game[name]
+		if type(orig) == "function" and type(hookfunction) == "function" then
+			local detour
+			local ok = pcall(function()
+				detour = hookfunction(orig, function(self, url, ...)
+					if (not busy) and isTarget(url) then
+						local src = serve(url)
+						if src then
+							return src
+						end
+					end
+					-- 关键：必须走 hookfunction 返回的 detour，绝不能调 hook 前抓的 orig（会无限递归）
+					return detour(self, url, ...)
+				end)
+			end)
+			if ok and type(detour) == "function" then
+				natives[name] = detour
+				hooked = hooked + 1
+				log("已 hook game." .. name .. "（点号调用）")
+			end
+		end
+	end
+
+	-- 3) getgenv() 上的同名全局（别的执行器可能有）
+	-- 【重要】Delta 实测：getgenv().httpget 和 game.HttpGet 是同一个函数对象。
+	-- 包装它等于把 game.HttpGet 换成 Lua 闭包 → debug.info 从 "[C]" 变成 chunk 名、
+	-- iscclosure 变 false，脚本的反篡改一眼就能看穿（会让脚本功能假死）。
+	-- 所以凡是和 game.HttpGet / HttpGetAsync 同一个对象的，一律跳过，交给上面两条路。
+	for _, n in ipairs({ "HttpGet", "HttpGetAsync", "httpget" }) do
+		local f = G[n]
+		if type(f) == "function" and f ~= game.HttpGet and f ~= game.HttpGetAsync then
+			G[n] = function(url, ...)
+				if (not busy) and isTarget(url) then
+					local src = serve(url)
+					if src then
+						return src
+					end
+				end
+				return f(url, ...)
+			end
+			hooked = hooked + 1
+			log("已 hook getgenv()." .. n)
+		end
+	end
+
+	-- 4) request 家族
+	local function hookRequest(tbl, n)
+		if type(tbl) ~= "table" or type(tbl[n]) ~= "function" then
+			return
+		end
+		local orig = tbl[n]
+		local ok = pcall(function()
+			tbl[n] = function(opts, ...)
+				local u = (type(opts) == "table") and (opts.Url or opts.url) or nil
+				if (not busy) and isTarget(u) then
+					local src = serve(u)
+					if src then
+						return { StatusCode = 200, StatusMessage = "OK", Headers = {}, Body = src, Success = true }
+					end
+				end
+				return orig(opts, ...)
+			end
+		end)
+		if ok then
+			hooked = hooked + 1
+			log("已 hook " .. n)
+		end
+	end
+	hookRequest(G, "request")
+	hookRequest(G, "http_request")
+	hookRequest(G, "http_request_async")
+	for _, lib in ipairs({ "syn", "fluxus", "http", "krnl" }) do
+		local ok, t = pcall(require, lib)
+		if ok and type(t) == "table" then
+			hookRequest(t, "request")
+		end
+		if type(G[lib]) == "table" then
+			hookRequest(G[lib], "request")
+		end
+	end
+
+	-- 5) loadstring：拦「内嵌的 FDless 源码」再换成本文件
+	-- 实测有的脚本根本不走 HTTP：它把 FDless 藏在混淆源码里，解密后直接 loadstring 一个
+	-- 87KB 的字符串（正好等于原版 FDless.txt）。这时候 HTTP 钩子全都白搭，只能在这一步换。
+	local oldLoad = loadstring
+	if type(oldLoad) == "function" then
+		local function isFDlessSource(src)
+			return type(src) == "string"
+				and #src > 20000
+				and string.find(src, "accessorylimbs", 1, true) ~= nil
+				and string.find(src, "reanimate", 1, true) ~= nil
+				-- 已经是我们的正文（含重生重绑标记）就不再换，避免多层包装互相覆盖
+				and string.find(src, "l.gen~=c", 1, true) == nil
+		end
+		G.loadstring = function(src, chunk, ...)
+			if isFDlessSource(src) then
+				local merged = getSource("embedded")
+				if merged then
+					log("拦到内嵌 FDless " .. #src .. "B，换成合并版 " .. #merged .. "B")
+					return oldLoad(merged, chunk, ...)
+				end
+				warn("[FDlessHook] 拦到内嵌 FDless 但没拿到替换文件")
+			end
+			return oldLoad(src, chunk, ...)
+		end
+		hooked = hooked + 1
+		log("已 hook loadstring（换内嵌源码）")
+	end
+
+	return hooked
+end
+
+if G[HOOK_FLAG] then
+	if VERBOSE then
+		print("[FDlessHook] 已安装过，跳过")
+	end
+else
+	G[HOOK_FLAG] = true
+	local ok, res = pcall(install)
+	if not ok then
+		G[HOOK_FLAG] = nil
+		warn("[FDlessHook] 安装失败: " .. tostring(res))
+	else
+		log("装好了，共 " .. tostring(res) .. " 个入口")
+	end
+end
