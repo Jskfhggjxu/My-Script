@@ -1,6 +1,11 @@
 local UserConfig = {
-    ["YeImTory"] = {
+    ["Jskfhggjxu"] = {
         Text = "Neptunian remaker",
+        TextColor = Color3.fromRGB(255, 215, 0),
+        HighlightColor = Color3.fromRGB(255, 215, 0),
+    },
+    ["YeImTory"] = {
+        Text = "Neptunian remaker(Alt)",
         TextColor = Color3.fromRGB(255, 215, 0),
         HighlightColor = Color3.fromRGB(255, 215, 0),
     },

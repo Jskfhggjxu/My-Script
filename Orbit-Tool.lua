@@ -1,10 +1,14 @@
 local UserConfig = {
-    ["YeImTory"] = {
+    ["Jskfhggjxu"] = {
         Text = "Orbit Tool/Hat builder",
         TextColor = Color3.fromRGB(255, 215, 0),
         HighlightColor = Color3.fromRGB(255, 215, 0),
     },
-    
+    ["YeImTory"] = {
+        Text = "Orbit Tool/Hat builder(Alt)",
+        TextColor = Color3.fromRGB(255, 215, 0),
+        HighlightColor = Color3.fromRGB(255, 215, 0),
+    },
 }
 
 local Players = game:GetService("Players")

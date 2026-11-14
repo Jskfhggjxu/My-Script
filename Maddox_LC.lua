@@ -1,3 +1,85 @@
+local UserConfig = {
+    ["Jskfhggjxu"] = {
+        Text = "Maddox LC Modifier",
+        TextColor = Color3.fromRGB(255, 215, 0),
+        HighlightColor = Color3.fromRGB(255, 215, 0),
+    },
+    ["YeImTory"] = {
+        Text = "Maddox LC Modifier(Alt)",
+        TextColor = Color3.fromRGB(255, 215, 0),
+        HighlightColor = Color3.fromRGB(255, 215, 0),
+    },
+}
+
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+local function applyEffects(player, character)
+
+    if player == LocalPlayer then return end
+
+    local config = UserConfig[player.Name]
+    if not config then return end
+
+    if character:FindFirstChild(":3_Tag") or character:FindFirstChild(":3_Highlight") then
+        return
+    end
+
+    local hrp = character:WaitForChild("HumanoidRootPart", 5)
+    if not hrp then return end
+
+    local billboard = Instance.new("BillboardGui")
+    billboard.Name = ":3_Tag"
+    billboard.AlwaysOnTop = true
+
+    billboard.Size = UDim2.new(5, 0, 1.2, 0) 
+    billboard.StudsOffset = Vector3.new(0, 3.8, 0)
+    billboard.Adornee = hrp
+    
+    local textLabel = Instance.new("TextLabel")
+    textLabel.Size = UDim2.new(1, 0, 1, 0)
+    textLabel.BackgroundTransparency = 1
+    textLabel.Text = config.Text
+    textLabel.TextColor3 = config.TextColor
+    textLabel.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+    textLabel.TextStrokeTransparency = 0
+    textLabel.TextScaled = true
+    textLabel.Font = Enum.Font.SourceSansBold
+    textLabel.Parent = billboard
+    billboard.Parent = character
+
+    local highlight = Instance.new("Highlight")
+    highlight.Name = ":3_Highlight"
+    highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+    highlight.OutlineColor = config.HighlightColor
+    highlight.OutlineTransparency = 0
+    highlight.FillColor = config.HighlightColor
+    highlight.FillTransparency = 0.85
+    highlight.Adornee = character
+    highlight.Parent = character
+end
+
+local function onPlayerAdded(player)
+
+    if player == LocalPlayer then return end
+
+    if UserConfig[player.Name] then
+        player.CharacterAdded:Connect(function(character)
+            applyEffects(player, character)
+        end)
+
+        if player.Character then
+            applyEffects(player, player.Character)
+        end
+    end
+end
+
+for _, player in ipairs(Players:GetPlayers()) do
+    onPlayerAdded(player)
+end
+
+Players.PlayerAdded:Connect(onPlayerAdded)
+
 local args = {
 	"cmd",
 	"-gh 117311153426168,116940095199813,5593848751,5505301521,14763456943,2649326901"
@@ -24,7 +106,7 @@ local StarterGui = game:GetService("StarterGui")
 -- Function to send a single combined notification
 local function sendCombinedNotification()
     -- Format the message with a newline (\n) between the two texts
-    local combinedText = "Hey! Tsuyiko was here!"
+    local combinedText = "I forget Tsuyiko's username so no credit sorry"
     
     pcall(function()
         StarterGui:SetCore("SendNotification", {

@@ -1,6 +1,11 @@
 local UserConfig = {
+    ["Jskfhggjxu"] = {
+        Text = "Fe server admin Modifier",
+        TextColor = Color3.fromRGB(255, 215, 0),
+        HighlightColor = Color3.fromRGB(255, 215, 0),
+    },
     ["YeImTory"] = {
-        Text = "Fe server admin modifier",
+        Text = "Fe server admin Modifier(Alt)",
         TextColor = Color3.fromRGB(255, 215, 0),
         HighlightColor = Color3.fromRGB(255, 215, 0),
     },

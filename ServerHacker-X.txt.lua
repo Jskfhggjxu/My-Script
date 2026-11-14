@@ -1,6 +1,11 @@
 local UserConfig = {
-    ["YeImTory"] = {
+    ["Jskfhggjxu"] = {
         Text = "Fe Hacker-X modifier",
+        TextColor = Color3.fromRGB(293, 115, 222),
+        HighlightColor = Color3.fromRGB(293, 155, 222),
+    },
+    ["YeImTory"] = {
+        Text = "Fe Hacker-X modifier(Alt)",
         TextColor = Color3.fromRGB(293, 115, 222),
         HighlightColor = Color3.fromRGB(293, 155, 222),
     },

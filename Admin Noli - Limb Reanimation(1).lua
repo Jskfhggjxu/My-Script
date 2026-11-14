@@ -1,6 +1,11 @@
 local UserConfig = {
-    ["YeImTory"] = {
+    ["Jskfhggjxu"] = {
         Text = "Fe Admin Noli Modifier",
+        TextColor = Color3.fromRGB(255, 215, 0),
+        HighlightColor = Color3.fromRGB(255, 215, 0),
+    },
+    ["YeImTory"] = {
+        Text = "Fe Admin Noli Modifier(Alt)",
         TextColor = Color3.fromRGB(255, 215, 0),
         HighlightColor = Color3.fromRGB(255, 215, 0),
     },

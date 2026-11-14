@@ -6,8 +6,13 @@
     },
 ]]
 local UserConfig = {
-    ["YeImTory"] = {
+    ["Jskfhggjxu"] = {
         Text = "axirian glitcher modifier",
+        TextColor = Color3.fromRGB(293, 115, 222),
+        HighlightColor = Color3.fromRGB(293, 155, 222),
+    },
+    ["YeImTory"] = {
+        Text = "axirian glitcher modifier(Alt)",
         TextColor = Color3.fromRGB(293, 115, 222),
         HighlightColor = Color3.fromRGB(293, 155, 222),
     },
